@@ -32,7 +32,7 @@
         "60°",
         "80°"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The sum of angles in a triangle is 180°. Therefore, the third angle is 180° - 60° - 80° = 40°."
     },
     {
@@ -68,7 +68,7 @@
         "60°",
         "90°"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The sum of exterior angles of any polygon is 360°. For a regular octagon, each exterior angle is 360°/8 = 45°."
     },
     {
@@ -80,7 +80,7 @@
         "20",
         "36"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Since the sum of exterior angles is 360°, the number of sides is 360° / 20° = 18."
     },
     {
@@ -308,7 +308,7 @@
         "180°",
         "270°"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "East corresponds to a bearing of 90 degrees."
     },
     {
@@ -320,7 +320,7 @@
         "180°",
         "270°"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "South corresponds to a bearing of 180 degrees."
     },
     {
@@ -428,7 +428,7 @@
         "8",
         "9"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Exterior angle = 180° - 135° = 45°. Number of sides = 360° / 45° = 8."
     },
     {
@@ -471,13 +471,13 @@
       "id": 39,
       "question": "Two angles are in the ratio 2:3 and are supplementary. What is the larger angle?",
       "options": [
-        "60°",
-        "90°",
+        "72°",
+        "108°",
         "120°",
         "150°"
       ],
-      "answer": 2,
-      "explanation": "Let the angles be 2x and 3x. 2x + 3x = 180°. 5x = 180°. x = 36°. Larger angle = 3 * 36° = 108°."
+      "answer": 1,
+      "explanation": "Let the angles be 2x and 3x. 2x + 3x = 180°. 5x = 180°, x = 36°. Larger angle = 3 × 36° = 108°."
     },
     {
       "id": 40,

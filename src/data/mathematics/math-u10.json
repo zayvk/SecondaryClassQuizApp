@@ -43,7 +43,7 @@
         "4",
         "5"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Gradient is calculated as (change in y) / (change in x). Here, (8-5)/(2-1) = 3."
     },
     {
@@ -79,20 +79,20 @@
         "9",
         "10"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "Substitute x = 4 into the equation: y = 2(4) + 1 = 9."
     },
     {
       "id": 7,
       "question": "The point (5, -1) lies on the line y = mx + 3. What is the value of m?",
       "options": [
+        "-4/5",
         "-2/5",
         "2/5",
-        "-8/5",
-        "8/5"
+        "4/5"
       ],
       "answer": 0,
-      "explanation": "Substitute x=5 and y=-1 into the equation: -1 = 5m + 3, so 5m = -4, and m = -4/5."
+      "explanation": "Substitute x=5, y=-1: -1 = 5m + 3, so 5m = -4, m = -4/5."
     },
     {
       "id": 8,
@@ -254,13 +254,13 @@
       "id": 21,
       "question": "If f(x) = 4x - 3 and g(x) = x + 2, what is f(g(2))?",
       "options": [
-        "5",
-        "7",
         "9",
-        "11"
+        "11",
+        "13",
+        "15"
       ],
-      "answer": 3,
-      "explanation": "First, g(2) = 2 + 2 = 4. Then, f(g(2)) = f(4) = 4(4) - 3 = 16 - 3 = 13."
+      "answer": 2,
+      "explanation": "g(2) = 2 + 2 = 4. Then f(4) = 4(4) - 3 = 16 - 3 = 13."
     },
     {
       "id": 22,
@@ -283,7 +283,7 @@
         "2",
         "-2"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "Gradient = (-5 - 1) / (4 - (-2)) = -6 / 6 = -1."
     },
     {
@@ -343,7 +343,7 @@
         "6",
         "0"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "To find the y-intercept, set x = 0: 2(0) + 3y = 6, so 3y = 6, and y = 2."
     },
     {
@@ -487,7 +487,7 @@
         "y = 2x + 0",
         "y = -3x + 5"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Gradient = (8-2)/(3-1) = 3. Using point-slope form, y - 2 = 3(x - 1), which simplifies to y = 3x - 1."
     }
   ]

@@ -258,7 +258,7 @@
         "85 pounds",
         "0.85 pounds"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "10 US dollars * 0.85 pounds/dollar = 8.5 pounds."
     },
     {
@@ -294,7 +294,7 @@
         "32°F",
         "212°F"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "F = (C * 9/5) + 32, so (45 * 9/5) + 32 = 77°F."
     },
     {

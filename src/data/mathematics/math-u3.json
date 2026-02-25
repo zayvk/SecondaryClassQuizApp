@@ -55,7 +55,7 @@
         "789",
         "7890"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "Dividing by 10<sup>-2</sup> is the same as multiplying by 10<sup>2</sup> (100), resulting in 7890."
     },
     {
@@ -103,7 +103,7 @@
         "33.33%",
         "40%"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "A 10% increase followed by a 20% increase is not simply 30%. Calculate the new price after each increase."
     },
     {
@@ -134,13 +134,13 @@
       "id": 11,
       "question": "A value is increased by 50% and then decreased by 20%. What is the net percentage change?",
       "options": [
-        "30% increase",
+        "20% increase",
         "30% decrease",
         "15% increase",
         "15% decrease"
       ],
       "answer": 0,
-      "explanation": "An increase of 50% followed by a 20% decrease results in a net increase of 30%."
+      "explanation": "A 50% increase followed by a 20% decrease: 1.5 × 0.8 = 1.2, which is a net increase of 20%."
     },
     {
       "id": 12,
@@ -398,13 +398,13 @@
       "id": 33,
       "question": "A salary is increased by 8% and then decreased by 2%. What is the overall percentage change?",
       "options": [
-        "6% increase",
+        "5.84% increase",
         "6.24% increase",
         "6% decrease",
-        "6.24% decrease"
+        "5.84% decrease"
       ],
-      "answer": 1,
-      "explanation": "Calculate the net effect of the two percentage changes."
+      "answer": 0,
+      "explanation": "An 8% increase then 2% decrease: 1.08 × 0.98 = 1.0584, a net increase of 5.84%."
     },
     {
       "id": 34,

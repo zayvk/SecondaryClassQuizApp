@@ -66,7 +66,7 @@
         "6",
         "8"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "Distribute the 4: 4x - 8 = 16. Add 8 to both sides: 4x = 24. Divide by 4: x = 6."
     },
     {
@@ -78,7 +78,7 @@
         "6",
         "8"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Subtract 2x from both sides and add 3 to both sides: 3x = 12. Divide by 3: x = 4."
     },
     {
@@ -114,7 +114,7 @@
         "4",
         "5"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Substitute x = 1 into the first equation: 1 + 2y = 7. Subtract 1 from both sides: 2y = 6. Divide by 2: y = 3."
     },
     {
@@ -210,7 +210,7 @@
         "5",
         "6"
       ],
-      "answer": 3,
+      "answer": 0,
       "explanation": "2x < 8, so x < 4. The largest integer less than 4 is 3."
     },
     {
@@ -378,7 +378,7 @@
         "4",
         "5"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Subtract 2x from both sides: 4x + 5 = 17. Subtract 5 from both sides: 4x = 12. Divide by 4: x = 3."
     },
     {
@@ -426,7 +426,7 @@
         "6",
         "7"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Distribute the 5: 10x - 15 = 25. Add 15 to both sides: 10x = 40. Divide by 10: x = 4."
     },
     {
@@ -486,7 +486,7 @@
         "x > -3",
         "x < -3"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Add 2 to both sides: -4x ≤ 12. Divide by -4 (and reverse the inequality sign): x ≥ -3."
     }
   ]

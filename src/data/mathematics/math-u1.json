@@ -66,7 +66,7 @@
         "6.7 x 10⁵",
         "670 x 10²"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "To write in standard form, move the decimal point until there's one non-zero digit to the left, then multiply by 10 raised to the power of how many places you moved the decimal."
     },
     {
@@ -138,7 +138,7 @@
         "13",
         "35"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "2³ = 8 and 3² = 9, so 8 + 9 = 17."
     },
     {
@@ -174,7 +174,7 @@
         "b⁸",
         "b¹⁶"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "(b¹⁰) / (b⁴ × b²) = b¹⁰ / b⁶ = b^(10-6) = b⁴."
     },
     {
@@ -198,7 +198,7 @@
         "5",
         "6"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "4² = 16 and 5² = 25. 20 is closer to 16, so √20 is approximately 4."
     },
     {
@@ -258,7 +258,7 @@
         "5.6 x 10⁻⁶",
         "56 x 10⁻⁷"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "Move the decimal point 5 places to the right to get 5.6, so the exponent is -5."
     },
     {
@@ -294,7 +294,7 @@
         "6",
         "7"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "5² = 25 and 6² = 36. 30 is closer to 25, so √30 is approximately 5."
     },
     {
@@ -402,7 +402,7 @@
         "9.88 x 10⁹",
         "988 x 10⁶"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Rounding to 3 significant figures gives 9.88, and the exponent is 8."
     },
     {
@@ -458,7 +458,7 @@
       "question": "Simplify: (s¹⁵) / (s⁷ × s⁻¹)",
       "options": [
         "s⁻⁸",
-        "s⁸",
+        "s⁹",
         "s¹⁶",
         "s²³"
       ],
