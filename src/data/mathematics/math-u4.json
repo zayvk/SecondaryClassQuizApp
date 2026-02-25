@@ -1,0 +1,493 @@
+{
+  "subject": "Mathematics",
+  "unit": "Unit 4: Equations and Inequalities",
+  "unitId": "math-u4",
+  "topics": [
+    "Constructing and solving equations",
+    "Simultaneous equations",
+    "Inequalities"
+  ],
+  "generatedAt": "2026-02-25T01:42:46Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Solve for x: x + 7 = 12",
+      "options": [
+        "5",
+        "19",
+        "-5",
+        "3"
+      ],
+      "answer": 0,
+      "explanation": "To isolate x, subtract 7 from both sides of the equation: x = 12 - 7 = 5."
+    },
+    {
+      "id": 2,
+      "question": "Which equation represents 'a number increased by 5 is equal to 18'?",
+      "options": [
+        "5x = 18",
+        "x - 5 = 18",
+        "x + 5 = 18",
+        "x/5 = 18"
+      ],
+      "answer": 2,
+      "explanation": "‘Increased by’ means addition, so the equation is x + 5 = 18."
+    },
+    {
+      "id": 3,
+      "question": "Solve for y: 3y - 2 = 10",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "Add 2 to both sides: 3y = 12. Then divide by 3: y = 4."
+    },
+    {
+      "id": 4,
+      "question": "If 2x + 5 = 15, what is the value of x?",
+      "options": [
+        "2",
+        "5",
+        "10",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "Subtract 5 from both sides: 2x = 10. Divide by 2: x = 5."
+    },
+    {
+      "id": 5,
+      "question": "Solve the equation: 4(x - 2) = 16",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "explanation": "Distribute the 4: 4x - 8 = 16. Add 8 to both sides: 4x = 24. Divide by 4: x = 6."
+    },
+    {
+      "id": 6,
+      "question": "What is the solution to 5x - 3 = 2x + 9?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "Subtract 2x from both sides and add 3 to both sides: 3x = 12. Divide by 3: x = 4."
+    },
+    {
+      "id": 7,
+      "question": "Solve the simultaneous equations: x + y = 5 and x - y = 1",
+      "options": [
+        "x=3, y=2",
+        "x=2, y=3",
+        "x=4, y=1",
+        "x=1, y=4"
+      ],
+      "answer": 0,
+      "explanation": "Adding the two equations eliminates y: 2x = 6, so x = 3. Substituting into the first equation: 3 + y = 5, so y = 2."
+    },
+    {
+      "id": 8,
+      "question": "Solve: 2x + y = 8 and x - y = 1",
+      "options": [
+        "x=3, y=2",
+        "x=2, y=4",
+        "x=1, y=6",
+        "x=4, y=0"
+      ],
+      "answer": 0,
+      "explanation": "Adding the two equations gives 3x = 9, so x = 3. Substituting into the second equation: 3 - y = 1, so y = 2."
+    },
+    {
+      "id": 9,
+      "question": "If x + 2y = 7 and x = 1, what is the value of y?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "Substitute x = 1 into the first equation: 1 + 2y = 7. Subtract 1 from both sides: 2y = 6. Divide by 2: y = 3."
+    },
+    {
+      "id": 10,
+      "question": "Solve the simultaneous equations: y = x + 1 and 2x + y = 7",
+      "options": [
+        "x=2, y=3",
+        "x=1, y=2",
+        "x=3, y=4",
+        "x=0, y=1"
+      ],
+      "answer": 0,
+      "explanation": "Substitute y = x + 1 into the second equation: 2x + (x + 1) = 7. Simplify: 3x + 1 = 7. Subtract 1: 3x = 6. Divide by 3: x = 2. Then y = 2 + 1 = 3."
+    },
+    {
+      "id": 11,
+      "question": "Which inequality represents 'x is greater than 3'?",
+      "options": [
+        "x < 3",
+        "x > 3",
+        "x ≤ 3",
+        "x ≥ 3"
+      ],
+      "answer": 1,
+      "explanation": "‘Greater than’ is represented by the > symbol."
+    },
+    {
+      "id": 12,
+      "question": "Solve the inequality: x + 4 < 9",
+      "options": [
+        "x < 5",
+        "x > 5",
+        "x ≤ 5",
+        "x ≥ 5"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 4 from both sides of the inequality: x < 5."
+    },
+    {
+      "id": 13,
+      "question": "What is the solution to 2x > 6?",
+      "options": [
+        "x < 3",
+        "x > 3",
+        "x ≤ 3",
+        "x ≥ 3"
+      ],
+      "answer": 1,
+      "explanation": "Divide both sides of the inequality by 2: x > 3."
+    },
+    {
+      "id": 14,
+      "question": "Solve the inequality: 3x - 5 ≤ 10",
+      "options": [
+        "x ≤ 5",
+        "x ≥ 5",
+        "x < 5",
+        "x > 5"
+      ],
+      "answer": 0,
+      "explanation": "Add 5 to both sides: 3x ≤ 15. Divide by 3: x ≤ 5."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following represents 'x is less than or equal to 7'?",
+      "options": [
+        "x < 7",
+        "x > 7",
+        "x ≤ 7",
+        "x ≥ 7"
+      ],
+      "answer": 2,
+      "explanation": "‘Less than or equal to’ is represented by the ≤ symbol."
+    },
+    {
+      "id": 16,
+      "question": "Solve the inequality: 4x + 2 ≥ 18",
+      "options": [
+        "x ≥ 4",
+        "x ≤ 4",
+        "x > 4",
+        "x < 4"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 2 from both sides: 4x ≥ 16. Divide by 4: x ≥ 4."
+    },
+    {
+      "id": 17,
+      "question": "What is the largest integer value of x that satisfies the inequality 2x + 1 < 9?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 3,
+      "explanation": "2x < 8, so x < 4. The largest integer less than 4 is 3."
+    },
+    {
+      "id": 18,
+      "question": "Solve the inequality: -2x > 8",
+      "options": [
+        "x > -4",
+        "x < -4",
+        "x ≥ -4",
+        "x ≤ -4"
+      ],
+      "answer": 1,
+      "explanation": "Divide both sides by -2 (and reverse the inequality sign): x < -4."
+    },
+    {
+      "id": 19,
+      "question": "Which inequality is equivalent to x - 3 > 5?",
+      "options": [
+        "x > 2",
+        "x < 2",
+        "x > 8",
+        "x < 8"
+      ],
+      "answer": 2,
+      "explanation": "Add 3 to both sides of the inequality: x > 8."
+    },
+    {
+      "id": 20,
+      "question": "Solve the simultaneous equations: x + y = 6 and 2x - y = 3",
+      "options": [
+        "x=3, y=3",
+        "x=1, y=5",
+        "x=2, y=4",
+        "x=4, y=2"
+      ],
+      "answer": 0,
+      "explanation": "Adding the two equations gives 3x = 9, so x = 3. Substituting into the first equation: 3 + y = 6, so y = 3."
+    },
+    {
+      "id": 21,
+      "question": "If 3(x + 2) = 18, what is the value of x?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 0,
+      "explanation": "Distribute the 3: 3x + 6 = 18. Subtract 6 from both sides: 3x = 12. Divide by 3: x = 4."
+    },
+    {
+      "id": 22,
+      "question": "Solve for x: 7x - 4 = 17",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Add 4 to both sides: 7x = 21. Divide by 7: x = 3."
+    },
+    {
+      "id": 23,
+      "question": "Solve the inequality: 5x - 10 ≤ 0",
+      "options": [
+        "x ≤ 2",
+        "x ≥ 2",
+        "x < 2",
+        "x > 2"
+      ],
+      "answer": 0,
+      "explanation": "Add 10 to both sides: 5x ≤ 10. Divide by 5: x ≤ 2."
+    },
+    {
+      "id": 24,
+      "question": "Which inequality represents 'a number is at least 10'?",
+      "options": [
+        "x < 10",
+        "x > 10",
+        "x ≤ 10",
+        "x ≥ 10"
+      ],
+      "answer": 3,
+      "explanation": "'At least' means greater than or equal to, represented by ≥."
+    },
+    {
+      "id": 25,
+      "question": "Solve the simultaneous equations: x - y = 2 and x + y = 8",
+      "options": [
+        "x=5, y=3",
+        "x=3, y=5",
+        "x=4, y=4",
+        "x=6, y=2"
+      ],
+      "answer": 0,
+      "explanation": "Adding the two equations gives 2x = 10, so x = 5. Substituting into the first equation: 5 - y = 2, so y = 3."
+    },
+    {
+      "id": 26,
+      "question": "Solve for x: (x/2) + 3 = 8",
+      "options": [
+        "5",
+        "10",
+        "11",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Subtract 3 from both sides: x/2 = 5. Multiply both sides by 2: x = 10."
+    },
+    {
+      "id": 27,
+      "question": "Solve the inequality: -3x < 12",
+      "options": [
+        "x > -4",
+        "x < -4",
+        "x ≥ -4",
+        "x ≤ -4"
+      ],
+      "answer": 0,
+      "explanation": "Divide both sides by -3 (and reverse the inequality sign): x > -4."
+    },
+    {
+      "id": 28,
+      "question": "If 4x - 7 = 5, what is the value of 2x?",
+      "options": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Add 7 to both sides: 4x = 12. Divide by 4: x = 3. Then 2x = 2 * 3 = 6."
+    },
+    {
+      "id": 29,
+      "question": "Solve the inequality: x/3 + 1 ≥ 4",
+      "options": [
+        "x ≥ 9",
+        "x ≤ 9",
+        "x > 9",
+        "x < 9"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 1 from both sides: x/3 ≥ 3. Multiply both sides by 3: x ≥ 9."
+    },
+    {
+      "id": 30,
+      "question": "Solve the simultaneous equations: x + 3y = 10 and x - y = 2",
+      "options": [
+        "x=4, y=2",
+        "x=2, y=4",
+        "x=1, y=3",
+        "x=3, y=1"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the second equation from the first: 4y = 8, so y = 2. Substituting into the second equation: x - 2 = 2, so x = 4."
+    },
+    {
+      "id": 31,
+      "question": "Solve for x: 6x + 5 = 2x + 17",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "Subtract 2x from both sides: 4x + 5 = 17. Subtract 5 from both sides: 4x = 12. Divide by 4: x = 3."
+    },
+    {
+      "id": 32,
+      "question": "Solve the inequality: 2(x - 1) > 6",
+      "options": [
+        "x > 4",
+        "x < 4",
+        "x ≥ 4",
+        "x ≤ 4"
+      ],
+      "answer": 0,
+      "explanation": "Distribute the 2: 2x - 2 > 6. Add 2 to both sides: 2x > 8. Divide by 2: x > 4."
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is the solution to the inequality 4 - x ≥ 1?",
+      "options": [
+        "x ≥ 3",
+        "x ≤ 3",
+        "x > 3",
+        "x < 3"
+      ],
+      "answer": 1,
+      "explanation": "Subtract 4 from both sides: -x ≥ -3. Multiply by -1 (and reverse the inequality sign): x ≤ 3."
+    },
+    {
+      "id": 34,
+      "question": "Solve the simultaneous equations: y = 2x and x + y = 9",
+      "options": [
+        "x=3, y=6",
+        "x=6, y=3",
+        "x=4, y=8",
+        "x=2, y=4"
+      ],
+      "answer": 0,
+      "explanation": "Substitute y = 2x into the second equation: x + 2x = 9. Simplify: 3x = 9. Divide by 3: x = 3. Then y = 2 * 3 = 6."
+    },
+    {
+      "id": 35,
+      "question": "Solve for x: 5(2x - 3) = 25",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "Distribute the 5: 10x - 15 = 25. Add 15 to both sides: 10x = 40. Divide by 10: x = 4."
+    },
+    {
+      "id": 36,
+      "question": "Solve the inequality: 3x + 2 < 11",
+      "options": [
+        "x < 3",
+        "x > 3",
+        "x ≤ 3",
+        "x ≥ 3"
+      ],
+      "answer": 0,
+      "explanation": "Subtract 2 from both sides: 3x < 9. Divide by 3: x < 3."
+    },
+    {
+      "id": 37,
+      "question": "Which inequality represents 'twice a number plus 4 is less than 10'?",
+      "options": [
+        "2x + 4 > 10",
+        "2x + 4 < 10",
+        "2x - 4 > 10",
+        "2x - 4 < 10"
+      ],
+      "answer": 1,
+      "explanation": "‘Twice a number’ is 2x, ‘plus 4’ is +4, and ‘less than 10’ is < 10."
+    },
+    {
+      "id": 38,
+      "question": "Solve the simultaneous equations: 2x + y = 5 and x - y = 1",
+      "options": [
+        "x=2, y=1",
+        "x=1, y=3",
+        "x=3, y=-1",
+        "x=4, y=-3"
+      ],
+      "answer": 0,
+      "explanation": "Adding the two equations gives 3x = 6, so x = 2. Substituting into the second equation: 2 - y = 1, so y = 1."
+    },
+    {
+      "id": 39,
+      "question": "Solve for x: (x + 1)/3 = 2",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "Multiply both sides by 3: x + 1 = 6. Subtract 1 from both sides: x = 5."
+    },
+    {
+      "id": 40,
+      "question": "Solve the inequality: -4x - 2 ≤ 10",
+      "options": [
+        "x ≥ -3",
+        "x ≤ -3",
+        "x > -3",
+        "x < -3"
+      ],
+      "answer": 1,
+      "explanation": "Add 2 to both sides: -4x ≤ 12. Divide by -4 (and reverse the inequality sign): x ≥ -3."
+    }
+  ]
+}

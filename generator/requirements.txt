@@ -1,0 +1,3 @@
+google-genai
+json-repair
+python-dotenv

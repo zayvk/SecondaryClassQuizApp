@@ -1,0 +1,159 @@
+{
+  "curriculum": "Cambridge Lower Secondary",
+  "stage": 9,
+  "subjects": [
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "icon": "📐",
+      "units": [
+        {
+          "id": "math-u1",
+          "name": "Unit 1: Number and Calculation",
+          "topics": [
+            "Irrational numbers",
+            "Standard form",
+            "Indices"
+          ]
+        },
+        {
+          "id": "math-u2",
+          "name": "Unit 2: Expressions and Formulae",
+          "topics": [
+            "Substituting into expressions",
+            "Constructing expressions",
+            "Expressions and indices",
+            "Expanding the product of two linear expressions",
+            "Simplifying algebraic fractions",
+            "Deriving and using formulae"
+          ]
+        },
+        {
+          "id": "math-u3",
+          "name": "Unit 3: Decimals, Percentages and Rounding",
+          "topics": [
+            "Multiplying and dividing by powers of 10",
+            "Multiplying and dividing decimals",
+            "Understanding compound percentages",
+            "Understanding upper and lower bounds"
+          ]
+        },
+        {
+          "id": "math-u4",
+          "name": "Unit 4: Equations and Inequalities",
+          "topics": [
+            "Constructing and solving equations",
+            "Simultaneous equations",
+            "Inequalities"
+          ]
+        },
+        {
+          "id": "math-u5",
+          "name": "Unit 5: Angles",
+          "topics": [
+            "Calculating angles",
+            "Interior angles of polygons",
+            "Exterior angles of polygons",
+            "Constructions",
+            "Pythagoras' theorem"
+          ]
+        },
+        {
+          "id": "math-u6",
+          "name": "Unit 6: Statistical Investigations",
+          "topics": [
+            "Data collection and sampling",
+            "Bias"
+          ]
+        },
+        {
+          "id": "math-u7",
+          "name": "Unit 7: Shapes and Measurements",
+          "topics": [
+            "Circumference and area of a circle",
+            "Areas of compound shapes",
+            "Large and small units"
+          ]
+        },
+        {
+          "id": "math-u8",
+          "name": "Unit 8: Fractions",
+          "topics": [
+            "Fractions and recurring decimals",
+            "Fractions and the correct order of operations",
+            "Multiplying fractions",
+            "Dividing fractions",
+            "Making calculations easier"
+          ]
+        },
+        {
+          "id": "math-u9",
+          "name": "Unit 9: Sequences and Functions",
+          "topics": [
+            "Generating sequences",
+            "Using the nth term",
+            "Representing functions"
+          ]
+        },
+        {
+          "id": "math-u10",
+          "name": "Unit 10: Graphs",
+          "topics": [
+            "Functions",
+            "Plotting graphs",
+            "Gradient and intercept",
+            "Interpreting graphs"
+          ]
+        },
+        {
+          "id": "math-u11",
+          "name": "Unit 11: Ratio and Proportion",
+          "topics": [
+            "Using ratios",
+            "Direct and inverse proportion"
+          ]
+        },
+        {
+          "id": "math-u12",
+          "name": "Unit 12: Probability",
+          "topics": [
+            "Mutually exclusive events",
+            "Independent events",
+            "Combined events",
+            "Chance experiments"
+          ]
+        },
+        {
+          "id": "math-u13",
+          "name": "Unit 13: Position and Transformation",
+          "topics": [
+            "Bearings and scale drawings",
+            "Points on a line segment",
+            "Transformations",
+            "Enlarging shapes"
+          ]
+        },
+        {
+          "id": "math-u14",
+          "name": "Unit 14: Volume, Surface Area and Symmetry",
+          "topics": [
+            "Calculating the volume of prisms",
+            "Calculating the surface area of triangular prisms, pyramids and cylinders",
+            "Symmetry in three-dimensional shapes"
+          ]
+        },
+        {
+          "id": "math-u15",
+          "name": "Unit 15: Interpreting and Discussing Results",
+          "topics": [
+            "Interpreting and drawing frequency polygons",
+            "Scatter graphs",
+            "Back-to-back stem-and-leaf diagrams",
+            "Calculating statistics for grouped data",
+            "Representing data"
+          ]
+        }
+      ]
+    }
+  ]
+}

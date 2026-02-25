@@ -1,0 +1,494 @@
+{
+  "subject": "Mathematics",
+  "unit": "Unit 13: Position and Transformation",
+  "unitId": "math-u13",
+  "topics": [
+    "Bearings and scale drawings",
+    "Points on a line segment",
+    "Transformations",
+    "Enlarging shapes"
+  ],
+  "generatedAt": "2026-02-25T01:55:01Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the bearing of point B from point A if B is directly east of A?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "0°"
+      ],
+      "answer": 3,
+      "explanation": "East corresponds to a bearing of 0°, measured clockwise from North."
+    },
+    {
+      "id": 2,
+      "question": "On a map with a scale of 1:50,000, a distance of 7cm represents what actual distance in kilometers?",
+      "options": [
+        "3.5 km",
+        "7 km",
+        "35 km",
+        "350 km"
+      ],
+      "answer": 0,
+      "explanation": "7cm * 50,000 = 350,000cm = 3.5km."
+    },
+    {
+      "id": 3,
+      "question": "Point P lies on a line segment AB. If AP:PB = 2:3 and AB = 10cm, what is the length of AP?",
+      "options": [
+        "2cm",
+        "3cm",
+        "4cm",
+        "5cm"
+      ],
+      "answer": 2,
+      "explanation": "AP represents 2 parts out of a total of 5 parts (2+3). Therefore, AP = (2/5) * 10cm = 4cm."
+    },
+    {
+      "id": 4,
+      "question": "Which transformation does NOT change the size of a shape?",
+      "options": [
+        "Enlargement",
+        "Reduction",
+        "Translation",
+        "Scale Factor"
+      ],
+      "answer": 2,
+      "explanation": "Translation only moves a shape without altering its dimensions."
+    },
+    {
+      "id": 5,
+      "question": "A shape is reflected in the line y = x. What happens to the coordinates of a point (a, b)?",
+      "options": [
+        "(a, -b)",
+        "(-a, b)",
+        "(-a, -b)",
+        "(b, a)"
+      ],
+      "answer": 3,
+      "explanation": "Reflection in y=x swaps the x and y coordinates, so (a,b) becomes (b,a)."
+    },
+    {
+      "id": 6,
+      "question": "What is the bearing of a point 30° east of north?",
+      "options": [
+        "30°",
+        "60°",
+        "120°",
+        "150°"
+      ],
+      "answer": 0,
+      "explanation": "Bearings are measured clockwise from North, so 30° east of north is a bearing of 30°."
+    },
+    {
+      "id": 7,
+      "question": "A scale drawing uses a scale of 1cm : 20m. If a building is 4cm long on the drawing, what is its actual length?",
+      "options": [
+        "20m",
+        "40m",
+        "60m",
+        "80m"
+      ],
+      "answer": 3,
+      "explanation": "4cm * 20m/cm = 80m."
+    },
+    {
+      "id": 8,
+      "question": "Point M divides the line segment PQ in the ratio 1:4. If PQ = 15cm, what is the length of MQ?",
+      "options": [
+        "3cm",
+        "5cm",
+        "10cm",
+        "12cm"
+      ],
+      "answer": 3,
+      "explanation": "MQ represents 4 parts out of a total of 5 parts (1+4). Therefore, MQ = (4/5) * 15cm = 12cm."
+    },
+    {
+      "id": 9,
+      "question": "Which of these is a rotation?",
+      "options": [
+        "Flipping a shape",
+        "Changing the size of a shape",
+        "Turning a shape around a point",
+        "Sliding a shape"
+      ],
+      "answer": 2,
+      "explanation": "Rotation involves turning a shape around a fixed point."
+    },
+    {
+      "id": 10,
+      "question": "A triangle is enlarged by a scale factor of 3. If the original triangle had an area of 5cm², what is the area of the enlarged triangle?",
+      "options": [
+        "8cm²",
+        "15cm²",
+        "45cm²",
+        "135cm²"
+      ],
+      "answer": 2,
+      "explanation": "Area is scaled by the square of the scale factor. So, 5cm² * 3² = 45cm²."
+    },
+    {
+      "id": 11,
+      "question": "What is the bearing from North to South-West?",
+      "options": [
+        "135°",
+        "225°",
+        "315°",
+        "45°"
+      ],
+      "answer": 1,
+      "explanation": "South-West is 45 degrees past South (180°) which makes it 225°."
+    },
+    {
+      "id": 12,
+      "question": "On a map, two towns are 6cm apart. The map scale is 1:250,000. What is the actual distance between the towns in kilometers?",
+      "options": [
+        "1.5 km",
+        "15 km",
+        "150 km",
+        "25 km"
+      ],
+      "answer": 0,
+      "explanation": "6cm * 250,000 = 1,500,000cm = 15km."
+    },
+    {
+      "id": 13,
+      "question": "If point R divides line segment ST in the ratio 3:2, and ST = 20cm, find the length of SR.",
+      "options": [
+        "8cm",
+        "10cm",
+        "12cm",
+        "15cm"
+      ],
+      "answer": 2,
+      "explanation": "SR represents 3 parts out of a total of 5 parts (3+2). Therefore, SR = (3/5) * 20cm = 12cm."
+    },
+    {
+      "id": 14,
+      "question": "Which transformation preserves both the shape and size of an object?",
+      "options": [
+        "Enlargement",
+        "Reflection",
+        "Rotation",
+        "Reduction"
+      ],
+      "answer": 1,
+      "explanation": "Reflection (like rotation and translation) preserves the shape and size of an object."
+    },
+    {
+      "id": 15,
+      "question": "A shape is enlarged with a centre of enlargement at the origin (0,0) and a scale factor of 0.5. What effect does this have on the size of the shape?",
+      "options": [
+        "It doubles in size",
+        "It halves in size",
+        "It remains the same size",
+        "It disappears"
+      ],
+      "answer": 1,
+      "explanation": "A scale factor of 0.5 reduces the size of the shape by half."
+    },
+    {
+      "id": 16,
+      "question": "What bearing would you travel to go from point A to point B if point B is due North of point A?",
+      "options": [
+        "0°",
+        "90°",
+        "180°",
+        "270°"
+      ],
+      "answer": 0,
+      "explanation": "North corresponds to a bearing of 0°."
+    },
+    {
+      "id": 17,
+      "question": "A map has a scale of 1:100,000. Two cities are 8.5cm apart on the map. What is the actual distance between the cities in meters?",
+      "options": [
+        "850 m",
+        "8500 m",
+        "85000 m",
+        "85 m"
+      ],
+      "answer": 1,
+      "explanation": "8.5cm * 100,000 = 850,000cm = 8500m."
+    },
+    {
+      "id": 18,
+      "question": "Point C lies on line segment DE such that DC:CE = 1:3. If DE = 16cm, what is the length of CE?",
+      "options": [
+        "4cm",
+        "8cm",
+        "12cm",
+        "16cm"
+      ],
+      "answer": 2,
+      "explanation": "CE represents 3 parts out of a total of 4 parts (1+3). Therefore, CE = (3/4) * 16cm = 12cm."
+    },
+    {
+      "id": 19,
+      "question": "Which transformation creates a mirror image of a shape?",
+      "options": [
+        "Translation",
+        "Rotation",
+        "Reflection",
+        "Enlargement"
+      ],
+      "answer": 2,
+      "explanation": "Reflection creates a mirror image by flipping the shape across a line."
+    },
+    {
+      "id": 20,
+      "question": "A square has sides of length 4cm. It is enlarged by a scale factor of 2. What is the area of the enlarged square?",
+      "options": [
+        "8cm²",
+        "16cm²",
+        "32cm²",
+        "64cm²"
+      ],
+      "answer": 3,
+      "explanation": "The enlarged square has sides of 8cm (4cm * 2). Area = 8cm * 8cm = 64cm²."
+    },
+    {
+      "id": 21,
+      "question": "What is the bearing of North-East?",
+      "options": [
+        "45°",
+        "135°",
+        "225°",
+        "315°"
+      ],
+      "answer": 0,
+      "explanation": "North-East is 45 degrees clockwise from North."
+    },
+    {
+      "id": 22,
+      "question": "A scale drawing has a scale of 1:200. A road is 5.5cm long on the drawing. What is the actual length of the road in meters?",
+      "options": [
+        "11 m",
+        "110 m",
+        "1100 m",
+        "1.1 m"
+      ],
+      "answer": 1,
+      "explanation": "5.5cm * 200 = 1100cm = 11m."
+    },
+    {
+      "id": 23,
+      "question": "Point X divides the line segment YZ in the ratio 2:1. If YZ = 9cm, what is the length of XY?",
+      "options": [
+        "3cm",
+        "4cm",
+        "6cm",
+        "8cm"
+      ],
+      "answer": 2,
+      "explanation": "XY represents 2 parts out of a total of 3 parts (2+1). Therefore, XY = (2/3) * 9cm = 6cm."
+    },
+    {
+      "id": 24,
+      "question": "Which transformation involves sliding a shape without changing its orientation?",
+      "options": [
+        "Rotation",
+        "Reflection",
+        "Translation",
+        "Enlargement"
+      ],
+      "answer": 2,
+      "explanation": "Translation involves moving a shape in a specific direction without rotating or flipping it."
+    },
+    {
+      "id": 25,
+      "question": "A rectangle is enlarged by a scale factor of 1.5. If the original rectangle had a perimeter of 20cm, what is the perimeter of the enlarged rectangle?",
+      "options": [
+        "10cm",
+        "20cm",
+        "30cm",
+        "40cm"
+      ],
+      "answer": 2,
+      "explanation": "Perimeter is scaled by the scale factor. So, 20cm * 1.5 = 30cm."
+    },
+    {
+      "id": 26,
+      "question": "What is the bearing of South from North?",
+      "options": [
+        "0°",
+        "90°",
+        "180°",
+        "270°"
+      ],
+      "answer": 2,
+      "explanation": "South is directly opposite North, which is a bearing of 180°."
+    },
+    {
+      "id": 27,
+      "question": "On a map with a scale of 1:50,000, a lake covers an area of 4cm². What is the actual area of the lake in square kilometers?",
+      "options": [
+        "0.04 km²",
+        "0.4 km²",
+        "4 km²",
+        "40 km²"
+      ],
+      "answer": 0,
+      "explanation": "Area is scaled by the square of the scale factor. 4cm² * (50,000)² = 10,000,000,000cm² = 0.04km²."
+    },
+    {
+      "id": 28,
+      "question": "Point A divides line segment BC in the ratio 5:2. If BC = 21cm, what is the length of AC?",
+      "options": [
+        "9cm",
+        "12cm",
+        "15cm",
+        "18cm"
+      ],
+      "answer": 2,
+      "explanation": "AC represents 5 parts out of a total of 7 parts (5+2). Therefore, AC = (5/7) * 21cm = 15cm."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following transformations can change the orientation of a shape?",
+      "options": [
+        "Translation",
+        "Rotation",
+        "Reflection",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Reflection changes the orientation of a shape, while translation and rotation do not."
+    },
+    {
+      "id": 30,
+      "question": "A shape is enlarged by a scale factor of 4. If the original shape had an area of 3cm², what is the area of the enlarged shape?",
+      "options": [
+        "6cm²",
+        "9cm²",
+        "12cm²",
+        "48cm²"
+      ],
+      "answer": 3,
+      "explanation": "Area is scaled by the square of the scale factor. So, 3cm² * 4² = 48cm²."
+    },
+    {
+      "id": 31,
+      "question": "What is the bearing of West?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "0°"
+      ],
+      "answer": 2,
+      "explanation": "West is 270 degrees clockwise from North."
+    },
+    {
+      "id": 32,
+      "question": "A map scale is 1cm : 10km. Two towns are 3.7cm apart on the map. What is the actual distance between the towns?",
+      "options": [
+        "3.7 km",
+        "37 km",
+        "370 km",
+        "10 km"
+      ],
+      "answer": 1,
+      "explanation": "3.7cm * 10km/cm = 37km."
+    },
+    {
+      "id": 33,
+      "question": "Point P divides the line segment QR in the ratio 1:2. If QR = 18cm, what is the length of PR?",
+      "options": [
+        "6cm",
+        "8cm",
+        "12cm",
+        "15cm"
+      ],
+      "answer": 0,
+      "explanation": "PR represents 1 part out of a total of 3 parts (1+2). Therefore, PR = (1/3) * 18cm = 6cm."
+    },
+    {
+      "id": 34,
+      "question": "What type of transformation is a slide?",
+      "options": [
+        "Rotation",
+        "Reflection",
+        "Translation",
+        "Enlargement"
+      ],
+      "answer": 2,
+      "explanation": "A slide is a translation, moving a shape without changing its size or orientation."
+    },
+    {
+      "id": 35,
+      "question": "A triangle is enlarged with a scale factor of 0.25. What happens to its size?",
+      "options": [
+        "It gets bigger",
+        "It gets smaller",
+        "It stays the same size",
+        "It disappears"
+      ],
+      "answer": 1,
+      "explanation": "A scale factor less than 1 reduces the size of the shape."
+    },
+    {
+      "id": 36,
+      "question": "What is the bearing of South-East?",
+      "options": [
+        "45°",
+        "135°",
+        "225°",
+        "315°"
+      ],
+      "answer": 1,
+      "explanation": "South-East is 45 degrees past South (180°) which makes it 135°."
+    },
+    {
+      "id": 37,
+      "question": "A map has a scale of 1:25,000. A river is 7.2cm long on the map. What is the actual length of the river in kilometers?",
+      "options": [
+        "1.8 km",
+        "18 km",
+        "180 km",
+        "0.18 km"
+      ],
+      "answer": 1,
+      "explanation": "7.2cm * 25,000 = 180,000cm = 1.8km."
+    },
+    {
+      "id": 38,
+      "question": "Point M divides line segment NO in the ratio 4:1. If NO = 10cm, what is the length of NM?",
+      "options": [
+        "2cm",
+        "4cm",
+        "6cm",
+        "8cm"
+      ],
+      "answer": 3,
+      "explanation": "NM represents 4 parts out of a total of 5 parts (4+1). Therefore, NM = (4/5) * 10cm = 8cm."
+    },
+    {
+      "id": 39,
+      "question": "Which transformation preserves the angles of a shape?",
+      "options": [
+        "Enlargement",
+        "Reduction",
+        "Translation",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Translation, rotation, and reflection all preserve the angles of a shape."
+    },
+    {
+      "id": 40,
+      "question": "A square with side length 5cm is enlarged by a scale factor of 2. What is the perimeter of the enlarged square?",
+      "options": [
+        "10cm",
+        "20cm",
+        "30cm",
+        "40cm"
+      ],
+      "answer": 2,
+      "explanation": "The enlarged square has sides of 10cm (5cm * 2). Perimeter = 4 * 10cm = 40cm."
+    }
+  ]
+}

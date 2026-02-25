@@ -1,0 +1,25 @@
+[
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "icon": "📐",
+    "units": 15,
+    "unitList": [
+      { "id": "math-u1",  "name": "Number and Calculation" },
+      { "id": "math-u2",  "name": "Expressions and Formulae" },
+      { "id": "math-u3",  "name": "Decimals, Percentages and Rounding" },
+      { "id": "math-u4",  "name": "Equations and Inequalities" },
+      { "id": "math-u5",  "name": "Angles" },
+      { "id": "math-u6",  "name": "Statistical Investigations" },
+      { "id": "math-u7",  "name": "Shapes and Measurements" },
+      { "id": "math-u8",  "name": "Fractions" },
+      { "id": "math-u9",  "name": "Sequences and Functions" },
+      { "id": "math-u10", "name": "Graphs" },
+      { "id": "math-u11", "name": "Ratio and Proportion" },
+      { "id": "math-u12", "name": "Probability" },
+      { "id": "math-u13", "name": "Position and Transformation" },
+      { "id": "math-u14", "name": "Volume, Surface Area and Symmetry" },
+      { "id": "math-u15", "name": "Interpreting and Discussing Results" }
+    ]
+  }
+]

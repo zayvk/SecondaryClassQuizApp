@@ -1,0 +1,492 @@
+{
+  "subject": "Mathematics",
+  "unit": "Unit 6: Statistical Investigations",
+  "unitId": "math-u6",
+  "topics": [
+    "Data collection and sampling",
+    "Bias"
+  ],
+  "generatedAt": "2026-02-25T01:45:17Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the first step in conducting a statistical investigation?",
+      "options": [
+        "Analyze the data",
+        "Collect the data",
+        "Define the problem",
+        "Draw conclusions"
+      ],
+      "answer": 2,
+      "explanation": "Defining the problem clearly sets the focus and direction for the entire investigation."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is an example of primary data?",
+      "options": [
+        "Data from a newspaper article",
+        "Data collected from a survey you conduct",
+        "Data from a government website",
+        "Data from a textbook"
+      ],
+      "answer": 1,
+      "explanation": "Primary data is data collected directly from the source, like through a survey."
+    },
+    {
+      "id": 3,
+      "question": "What is a population in a statistical investigation?",
+      "options": [
+        "A small group of people",
+        "The entire group you are interested in",
+        "A sample taken from a larger group",
+        "The results of your investigation"
+      ],
+      "answer": 1,
+      "explanation": "The population is the complete set of individuals or objects about which you want to draw conclusions."
+    },
+    {
+      "id": 4,
+      "question": "Why is it often impractical to survey an entire population?",
+      "options": [
+        "Populations are always too small",
+        "It is always cheaper to survey a sample",
+        "Populations are often too large or inaccessible",
+        "It is more accurate to survey a sample"
+      ],
+      "answer": 2,
+      "explanation": "Entire populations can be too large, expensive, or difficult to reach, making sampling more practical."
+    },
+    {
+      "id": 5,
+      "question": "What is a sample?",
+      "options": [
+        "The entire group being studied",
+        "A part of the population",
+        "The average of a dataset",
+        "A type of graph"
+      ],
+      "answer": 1,
+      "explanation": "A sample is a subset of the population used to represent the whole group."
+    },
+    {
+      "id": 6,
+      "question": "Which sampling method involves selecting every nth member of a population?",
+      "options": [
+        "Random sampling",
+        "Stratified sampling",
+        "Systematic sampling",
+        "Convenience sampling"
+      ],
+      "answer": 2,
+      "explanation": "Systematic sampling uses a regular interval to select members from the population."
+    },
+    {
+      "id": 7,
+      "question": "What is the main advantage of random sampling?",
+      "options": [
+        "It is the quickest method",
+        "It guarantees a representative sample",
+        "It avoids bias",
+        "It is the cheapest method"
+      ],
+      "answer": 2,
+      "explanation": "Random sampling minimizes bias by giving every member of the population an equal chance of being selected."
+    },
+    {
+      "id": 8,
+      "question": "A researcher only surveys people at a local gym to find out about exercise habits. What type of bias is this?",
+      "options": [
+        "Response bias",
+        "Selection bias",
+        "Non-response bias",
+        "Leading question bias"
+      ],
+      "answer": 1,
+      "explanation": "Selection bias occurs when the sample is not representative of the population due to the method of selection."
+    },
+    {
+      "id": 9,
+      "question": "What is response bias?",
+      "options": [
+        "When people don't answer the survey",
+        "When the questions are poorly worded",
+        "When participants give inaccurate answers",
+        "When the sample is too small"
+      ],
+      "answer": 2,
+      "explanation": "Response bias happens when participants provide answers that are not truthful or accurate."
+    },
+    {
+      "id": 10,
+      "question": "A survey question is worded as 'Don't you agree that chocolate is the best flavor?'. What type of bias is present?",
+      "options": [
+        "Response bias",
+        "Selection bias",
+        "Leading question bias",
+        "Non-response bias"
+      ],
+      "answer": 2,
+      "explanation": "A leading question suggests a desired answer, influencing the respondent's choice."
+    },
+    {
+      "id": 11,
+      "question": "What does 'non-response bias' occur when?",
+      "options": [
+        "People give false answers",
+        "People refuse to participate in the survey",
+        "The sample is not random",
+        "The questions are confusing"
+      ],
+      "answer": 1,
+      "explanation": "Non-response bias happens when a significant number of selected participants do not respond, potentially skewing the results."
+    },
+    {
+      "id": 12,
+      "question": "Why is it important to consider potential biases in a statistical investigation?",
+      "options": [
+        "To make the investigation faster",
+        "To ensure the results are accurate and reliable",
+        "To make the results more interesting",
+        "To avoid having to analyze the data"
+      ],
+      "answer": 1,
+      "explanation": "Identifying and addressing biases is crucial for ensuring the validity and trustworthiness of the investigation's findings."
+    },
+    {
+      "id": 13,
+      "question": "Stratified sampling is useful when you want to ensure...",
+      "options": [
+        "Everyone has an equal chance of selection",
+        "The sample accurately reflects the proportions of subgroups in the population",
+        "The sample is as large as possible",
+        "The sample is easy to collect"
+      ],
+      "answer": 1,
+      "explanation": "Stratified sampling ensures that different subgroups within the population are represented in the sample proportionally."
+    },
+    {
+      "id": 14,
+      "question": "A school wants to survey students about their favorite lunch options. They put a box in the cafeteria and ask students to submit their choices. What type of sampling is this?",
+      "options": [
+        "Random sampling",
+        "Stratified sampling",
+        "Systematic sampling",
+        "Convenience sampling"
+      ],
+      "answer": 3,
+      "explanation": "Convenience sampling uses readily available participants, which in this case are students who visit the cafeteria."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of a pilot study?",
+      "options": [
+        "To analyze the final data",
+        "To test the data collection methods and identify potential problems",
+        "To present the findings to the public",
+        "To choose the sample size"
+      ],
+      "answer": 1,
+      "explanation": "A pilot study is a small-scale preliminary study used to test and refine the data collection process."
+    },
+    {
+      "id": 16,
+      "question": "A researcher asks 'Do you think our excellent new product is worth the price?'. This is an example of…",
+      "options": [
+        "A neutral question",
+        "A clear question",
+        "A leading question",
+        "An unbiased question"
+      ],
+      "answer": 2,
+      "explanation": "The question is leading because it uses positive language ('excellent') that suggests a desired response."
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between a census and a sample?",
+      "options": [
+        "A census is faster than a sample",
+        "A census includes the entire population, while a sample includes a subset",
+        "A sample is more accurate than a census",
+        "A census is cheaper than a sample"
+      ],
+      "answer": 1,
+      "explanation": "A census collects data from every member of the population, while a sample collects data from a portion of it."
+    },
+    {
+      "id": 18,
+      "question": "If a sample is not representative of the population, what might happen?",
+      "options": [
+        "The results will be perfectly accurate",
+        "The results may be biased and inaccurate",
+        "The investigation will be faster",
+        "The investigation will be cheaper"
+      ],
+      "answer": 1,
+      "explanation": "A non-representative sample can lead to biased results that do not accurately reflect the population."
+    },
+    {
+      "id": 19,
+      "question": "A town has 60% female and 40% male residents. A stratified sample of 100 residents should have how many females?",
+      "options": [
+        "40",
+        "50",
+        "60",
+        "70"
+      ],
+      "answer": 2,
+      "explanation": "60% of 100 is 60, ensuring the sample reflects the population's gender distribution."
+    },
+    {
+      "id": 20,
+      "question": "What is the best way to minimize non-response bias?",
+      "options": [
+        "Ignore the non-respondents",
+        "Offer incentives for participation",
+        "Make the survey very long",
+        "Ask leading questions"
+      ],
+      "answer": 1,
+      "explanation": "Offering incentives can encourage more people to participate, reducing the impact of non-response bias."
+    },
+    {
+      "id": 21,
+      "question": "A researcher wants to study the reading habits of teenagers. They survey students in a library. What is a potential bias?",
+      "options": [
+        "Random bias",
+        "Selection bias",
+        "Response bias",
+        "No bias"
+      ],
+      "answer": 1,
+      "explanation": "Students in a library are more likely to enjoy reading, creating a selection bias."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of clearly defining the target population before starting a statistical investigation?",
+      "options": [
+        "To make the data analysis easier",
+        "To ensure the sample is large enough",
+        "To avoid collecting irrelevant data",
+        "To reduce the cost of the investigation"
+      ],
+      "answer": 2,
+      "explanation": "A clear definition of the population ensures that data collected is relevant to the research question."
+    },
+    {
+      "id": 23,
+      "question": "A survey asks 'How many hours of television do you watch per week?'. What type of data is this?",
+      "options": [
+        "Categorical data",
+        "Discrete data",
+        "Continuous data",
+        "Qualitative data"
+      ],
+      "answer": 2,
+      "explanation": "Hours of television watched can be any value within a range, making it continuous data."
+    },
+    {
+      "id": 24,
+      "question": "What is the main difference between discrete and continuous data?",
+      "options": [
+        "Discrete data is easier to collect",
+        "Continuous data can only take whole number values",
+        "Discrete data can only take whole number values",
+        "Continuous data is always more accurate"
+      ],
+      "answer": 2,
+      "explanation": "Discrete data can only take specific, separate values (like whole numbers), while continuous data can take any value within a range."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is an example of categorical data?",
+      "options": [
+        "Height in centimeters",
+        "Age in years",
+        "Eye color",
+        "Temperature in degrees Celsius"
+      ],
+      "answer": 2,
+      "explanation": "Eye color is a category or label, making it categorical data."
+    },
+    {
+      "id": 26,
+      "question": "A researcher wants to investigate the relationship between exercise and stress levels. What is the independent variable?",
+      "options": [
+        "Stress levels",
+        "Exercise",
+        "Age",
+        "Gender"
+      ],
+      "answer": 1,
+      "explanation": "Exercise is the variable being manipulated or changed by the researcher."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of a questionnaire in a statistical investigation?",
+      "options": [
+        "To analyze the data",
+        "To collect data from a sample",
+        "To define the problem",
+        "To draw conclusions"
+      ],
+      "answer": 1,
+      "explanation": "A questionnaire is a tool used to gather information from a sample of the population."
+    },
+    {
+      "id": 28,
+      "question": "A researcher suspects that people are underreporting their alcohol consumption. What type of bias is this?",
+      "options": [
+        "Selection bias",
+        "Response bias",
+        "Non-response bias",
+        "Leading question bias"
+      ],
+      "answer": 1,
+      "explanation": "This is response bias, specifically social desirability bias, where people answer in a way they believe is more socially acceptable."
+    },
+    {
+      "id": 29,
+      "question": "What is the importance of using a large enough sample size?",
+      "options": [
+        "It makes the investigation faster",
+        "It reduces the margin of error",
+        "It makes the data easier to analyze",
+        "It reduces the cost of the investigation"
+      ],
+      "answer": 1,
+      "explanation": "A larger sample size generally leads to a smaller margin of error, making the results more reliable."
+    },
+    {
+      "id": 30,
+      "question": "A school principal wants to know the opinion of parents about a new school policy. They send a survey home with students, but only 20% of parents return it. What is a potential issue?",
+      "options": [
+        "Selection bias",
+        "Response bias",
+        "Non-response bias",
+        "Leading question bias"
+      ],
+      "answer": 2,
+      "explanation": "The low response rate suggests non-response bias, as the opinions of those who didn't return the survey are not represented."
+    },
+    {
+      "id": 31,
+      "question": "What is the best way to ensure anonymity in a survey?",
+      "options": [
+        "Ask for participants' names and addresses",
+        "Use a unique code for each participant",
+        "Share the data with everyone involved",
+        "Conduct the survey in a public place"
+      ],
+      "answer": 1,
+      "explanation": "Using a unique code protects participants' identities while allowing data to be tracked."
+    },
+    {
+      "id": 32,
+      "question": "A researcher wants to compare the test scores of students who received tutoring with those who didn't. What type of study would be most appropriate?",
+      "options": [
+        "Observational study",
+        "Experiment",
+        "Survey",
+        "Census"
+      ],
+      "answer": 1,
+      "explanation": "An experiment allows the researcher to control the independent variable (tutoring) and observe its effect on the dependent variable (test scores)."
+    },
+    {
+      "id": 33,
+      "question": "What is a confounding variable?",
+      "options": [
+        "A variable that is intentionally manipulated",
+        "A variable that influences both the independent and dependent variables",
+        "A variable that is not relevant to the study",
+        "A variable that is easily measured"
+      ],
+      "answer": 1,
+      "explanation": "A confounding variable can distort the relationship between the independent and dependent variables."
+    },
+    {
+      "id": 34,
+      "question": "A survey asks 'Do you agree that our city needs more parks and recreational facilities?'. This question is likely to…",
+      "options": [
+        "Get unbiased responses",
+        "Encourage honest answers",
+        "Lead to a positive response",
+        "Be easy to analyze"
+      ],
+      "answer": 2,
+      "explanation": "The question is phrased in a way that suggests a positive response, leading to bias."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of a control group in an experiment?",
+      "options": [
+        "To receive the treatment being tested",
+        "To provide a baseline for comparison",
+        "To make the experiment faster",
+        "To reduce the cost of the experiment"
+      ],
+      "answer": 1,
+      "explanation": "The control group does not receive the treatment, allowing researchers to compare its results to the treatment group."
+    },
+    {
+      "id": 36,
+      "question": "A researcher wants to study the effect of a new fertilizer on plant growth. They divide plants into two groups: one receives the fertilizer, and the other does not. What is the dependent variable?",
+      "options": [
+        "The type of fertilizer",
+        "The amount of water given to the plants",
+        "Plant growth",
+        "The number of plants"
+      ],
+      "answer": 2,
+      "explanation": "Plant growth is the variable being measured to see if it is affected by the fertilizer."
+    },
+    {
+      "id": 37,
+      "question": "What is the difference between qualitative and quantitative data?",
+      "options": [
+        "Qualitative data is numerical, while quantitative data is descriptive",
+        "Quantitative data is numerical, while qualitative data is descriptive",
+        "They are the same thing",
+        "Qualitative data is easier to analyze"
+      ],
+      "answer": 1,
+      "explanation": "Quantitative data involves numbers and measurements, while qualitative data involves descriptions and observations."
+    },
+    {
+      "id": 38,
+      "question": "A researcher wants to study the opinions of voters about a new law. They randomly select voters from a list of registered voters. This is an example of…",
+      "options": [
+        "Convenience sampling",
+        "Stratified sampling",
+        "Random sampling",
+        "Systematic sampling"
+      ],
+      "answer": 2,
+      "explanation": "Random sampling ensures that every voter has an equal chance of being selected."
+    },
+    {
+      "id": 39,
+      "question": "What is the importance of ethical considerations in a statistical investigation?",
+      "options": [
+        "To make the investigation faster",
+        "To ensure the safety and privacy of participants",
+        "To guarantee accurate results",
+        "To reduce the cost of the investigation"
+      ],
+      "answer": 1,
+      "explanation": "Ethical considerations prioritize the well-being and rights of participants."
+    },
+    {
+      "id": 40,
+      "question": "A researcher finds that the results of their survey are very different from what they expected. What should they do?",
+      "options": [
+        "Ignore the results",
+        "Change the results to match their expectations",
+        "Investigate potential sources of bias",
+        "Stop the investigation"
+      ],
+      "answer": 2,
+      "explanation": "Unexpected results should prompt a review of the methodology to identify and address potential biases."
+    }
+  ]
+}

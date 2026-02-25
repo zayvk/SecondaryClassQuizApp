@@ -1,0 +1,495 @@
+{
+  "subject": "Mathematics",
+  "unit": "Unit 5: Angles",
+  "unitId": "math-u5",
+  "topics": [
+    "Calculating angles",
+    "Interior angles of polygons",
+    "Exterior angles of polygons",
+    "Constructions",
+    "Pythagoras' theorem"
+  ],
+  "generatedAt": "2026-02-25T01:44:01Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the sum of angles in a triangle?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 1,
+      "explanation": "The sum of the interior angles of any triangle is always 180 degrees."
+    },
+    {
+      "id": 2,
+      "question": "Two angles in a triangle are 60° and 80°. What is the third angle?",
+      "options": [
+        "20°",
+        "40°",
+        "60°",
+        "80°"
+      ],
+      "answer": 0,
+      "explanation": "The sum of angles in a triangle is 180°. Therefore, the third angle is 180° - 60° - 80° = 40°."
+    },
+    {
+      "id": 3,
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": [
+        "360°",
+        "540°",
+        "720°",
+        "900°"
+      ],
+      "answer": 1,
+      "explanation": "The formula for the sum of interior angles of a polygon is (n-2) * 180°, where n is the number of sides. For a pentagon (n=5), it's (5-2) * 180° = 540°."
+    },
+    {
+      "id": 4,
+      "question": "Each interior angle of a regular hexagon is how many degrees?",
+      "options": [
+        "60°",
+        "90°",
+        "120°",
+        "150°"
+      ],
+      "answer": 2,
+      "explanation": "A hexagon has 6 sides. The sum of interior angles is (6-2)*180 = 720°. Each angle in a regular hexagon is 720°/6 = 120°."
+    },
+    {
+      "id": 5,
+      "question": "What is the measure of an exterior angle of a regular octagon?",
+      "options": [
+        "30°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "answer": 0,
+      "explanation": "The sum of exterior angles of any polygon is 360°. For a regular octagon, each exterior angle is 360°/8 = 45°."
+    },
+    {
+      "id": 6,
+      "question": "If an exterior angle of a regular polygon is 20°, how many sides does it have?",
+      "options": [
+        "12",
+        "18",
+        "20",
+        "36"
+      ],
+      "answer": 0,
+      "explanation": "Since the sum of exterior angles is 360°, the number of sides is 360° / 20° = 18."
+    },
+    {
+      "id": 7,
+      "question": "Using a protractor, which of these is the most accurate way to measure an angle?",
+      "options": [
+        "Estimate visually",
+        "Align the base with one side and read the other",
+        "Use a ruler",
+        "Guess and check"
+      ],
+      "answer": 1,
+      "explanation": "A protractor is designed to accurately measure angles by aligning its base with one side and reading the angle where the other side intersects."
+    },
+    {
+      "id": 8,
+      "question": "Which tool is best for constructing a perpendicular bisector of a line segment?",
+      "options": [
+        "Ruler",
+        "Protractor",
+        "Compass",
+        "Set square"
+      ],
+      "answer": 2,
+      "explanation": "A compass is used to create arcs that intersect, allowing for the construction of a perpendicular bisector."
+    },
+    {
+      "id": 9,
+      "question": "In a right-angled triangle, the side opposite the right angle is called the...",
+      "options": [
+        "Adjacent",
+        "Opposite",
+        "Hypotenuse",
+        "Base"
+      ],
+      "answer": 2,
+      "explanation": "The hypotenuse is the longest side of a right-angled triangle and is always opposite the right angle."
+    },
+    {
+      "id": 10,
+      "question": "What is Pythagoras' theorem?",
+      "options": [
+        "a + b = c",
+        "a² + b² = c²",
+        "a² - b² = c²",
+        "a/b = c"
+      ],
+      "answer": 1,
+      "explanation": "Pythagoras' theorem states that in a right-angled triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two sides (a and b)."
+    },
+    {
+      "id": 11,
+      "question": "A triangle has sides of length 3cm, 4cm, and 5cm. Is it a right-angled triangle?",
+      "options": [
+        "Yes",
+        "No",
+        "Maybe",
+        "Cannot be determined"
+      ],
+      "answer": 0,
+      "explanation": "3² + 4² = 9 + 16 = 25 = 5². Since it satisfies Pythagoras' theorem, it is a right-angled triangle."
+    },
+    {
+      "id": 12,
+      "question": "What is the length of the hypotenuse in a right-angled triangle with sides 6cm and 8cm?",
+      "options": [
+        "7cm",
+        "10cm",
+        "14cm",
+        "100cm"
+      ],
+      "answer": 1,
+      "explanation": "Using Pythagoras' theorem: c² = 6² + 8² = 36 + 64 = 100. Therefore, c = √100 = 10cm."
+    },
+    {
+      "id": 13,
+      "question": "What is a complementary angle?",
+      "options": [
+        "Angles that add up to 180°",
+        "Angles that add up to 90°",
+        "Angles that are equal",
+        "Angles that are opposite"
+      ],
+      "answer": 1,
+      "explanation": "Complementary angles are two angles whose measures add up to 90 degrees."
+    },
+    {
+      "id": 14,
+      "question": "What is a supplementary angle?",
+      "options": [
+        "Angles that add up to 90°",
+        "Angles that add up to 180°",
+        "Angles that are equal",
+        "Angles that are opposite"
+      ],
+      "answer": 1,
+      "explanation": "Supplementary angles are two angles whose measures add up to 180 degrees."
+    },
+    {
+      "id": 15,
+      "question": "If one angle is 30° and it's complementary, what is the other angle?",
+      "options": [
+        "60°",
+        "90°",
+        "150°",
+        "30°"
+      ],
+      "answer": 0,
+      "explanation": "Complementary angles add up to 90°. Therefore, the other angle is 90° - 30° = 60°."
+    },
+    {
+      "id": 16,
+      "question": "If one angle is 120° and it's supplementary, what is the other angle?",
+      "options": [
+        "60°",
+        "90°",
+        "30°",
+        "120°"
+      ],
+      "answer": 0,
+      "explanation": "Supplementary angles add up to 180°. Therefore, the other angle is 180° - 120° = 60°."
+    },
+    {
+      "id": 17,
+      "question": "What type of angle is 90°?",
+      "options": [
+        "Acute",
+        "Obtuse",
+        "Right",
+        "Reflex"
+      ],
+      "answer": 2,
+      "explanation": "A right angle is exactly 90 degrees."
+    },
+    {
+      "id": 18,
+      "question": "What type of angle is less than 90°?",
+      "options": [
+        "Acute",
+        "Obtuse",
+        "Right",
+        "Reflex"
+      ],
+      "answer": 0,
+      "explanation": "An acute angle is less than 90 degrees."
+    },
+    {
+      "id": 19,
+      "question": "What type of angle is greater than 90° but less than 180°?",
+      "options": [
+        "Acute",
+        "Obtuse",
+        "Right",
+        "Reflex"
+      ],
+      "answer": 1,
+      "explanation": "An obtuse angle is greater than 90 degrees but less than 180 degrees."
+    },
+    {
+      "id": 20,
+      "question": "What is vertically opposite angles?",
+      "options": [
+        "Equal",
+        "Supplementary",
+        "Complementary",
+        "Different"
+      ],
+      "answer": 0,
+      "explanation": "Vertically opposite angles are equal in measure."
+    },
+    {
+      "id": 21,
+      "question": "The angles around a point add up to...",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 3,
+      "explanation": "The angles around a point always add up to 360 degrees."
+    },
+    {
+      "id": 22,
+      "question": "What is the name of a triangle with all sides equal?",
+      "options": [
+        "Scalene",
+        "Isosceles",
+        "Equilateral",
+        "Right-angled"
+      ],
+      "answer": 2,
+      "explanation": "An equilateral triangle has all three sides equal in length."
+    },
+    {
+      "id": 23,
+      "question": "What is the name of a triangle with two sides equal?",
+      "options": [
+        "Scalene",
+        "Isosceles",
+        "Equilateral",
+        "Right-angled"
+      ],
+      "answer": 1,
+      "explanation": "An isosceles triangle has two sides of equal length."
+    },
+    {
+      "id": 24,
+      "question": "A triangle has sides 5cm, 7cm, and 9cm. What type of triangle is it?",
+      "options": [
+        "Equilateral",
+        "Isosceles",
+        "Scalene",
+        "Right-angled"
+      ],
+      "answer": 2,
+      "explanation": "A scalene triangle has all sides of different lengths."
+    },
+    {
+      "id": 25,
+      "question": "What is the bearing of point B from point A if B is directly east of A?",
+      "options": [
+        "0°",
+        "90°",
+        "180°",
+        "270°"
+      ],
+      "answer": 0,
+      "explanation": "East corresponds to a bearing of 90 degrees."
+    },
+    {
+      "id": 26,
+      "question": "What is the bearing of point B from point A if B is directly south of A?",
+      "options": [
+        "0°",
+        "90°",
+        "180°",
+        "270°"
+      ],
+      "answer": 1,
+      "explanation": "South corresponds to a bearing of 180 degrees."
+    },
+    {
+      "id": 27,
+      "question": "A ladder leans against a wall. The ladder is 5m long and the base is 3m from the wall. How high up the wall does the ladder reach?",
+      "options": [
+        "2m",
+        "4m",
+        "6m",
+        "8m"
+      ],
+      "answer": 1,
+      "explanation": "Using Pythagoras: h² = 5² - 3² = 25 - 9 = 16. Therefore, h = √16 = 4m."
+    },
+    {
+      "id": 28,
+      "question": "What is the angle between North and East?",
+      "options": [
+        "0°",
+        "45°",
+        "90°",
+        "135°"
+      ],
+      "answer": 2,
+      "explanation": "North and East are perpendicular to each other, forming a 90-degree angle."
+    },
+    {
+      "id": 29,
+      "question": "If two parallel lines are cut by a transversal, what is the relationship between corresponding angles?",
+      "options": [
+        "They are equal",
+        "They are supplementary",
+        "They are complementary",
+        "They are different"
+      ],
+      "answer": 0,
+      "explanation": "Corresponding angles are equal when two parallel lines are cut by a transversal."
+    },
+    {
+      "id": 30,
+      "question": "What is the sum of angles in a quadrilateral?",
+      "options": [
+        "180°",
+        "360°",
+        "540°",
+        "720°"
+      ],
+      "answer": 1,
+      "explanation": "The sum of the interior angles of any quadrilateral is always 360 degrees."
+    },
+    {
+      "id": 31,
+      "question": "A rectangle has angles of 90 degrees. What is the sum of its interior angles?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "540°"
+      ],
+      "answer": 2,
+      "explanation": "A rectangle is a quadrilateral, and the sum of interior angles in a quadrilateral is 360°."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of a set square?",
+      "options": [
+        "Measuring angles",
+        "Drawing circles",
+        "Drawing right angles",
+        "Measuring length"
+      ],
+      "answer": 2,
+      "explanation": "A set square is specifically designed to help draw accurate right angles."
+    },
+    {
+      "id": 33,
+      "question": "In a right-angled triangle, if the opposite side is 8cm and the hypotenuse is 10cm, what is the length of the adjacent side?",
+      "options": [
+        "4cm",
+        "6cm",
+        "8cm",
+        "10cm"
+      ],
+      "answer": 1,
+      "explanation": "Using Pythagoras: a² = 10² - 8² = 100 - 64 = 36. Therefore, a = √36 = 6cm."
+    },
+    {
+      "id": 34,
+      "question": "What is the name of a polygon with 7 sides?",
+      "options": [
+        "Hexagon",
+        "Heptagon",
+        "Octagon",
+        "Nonagon"
+      ],
+      "answer": 1,
+      "explanation": "A heptagon is a polygon with seven sides."
+    },
+    {
+      "id": 35,
+      "question": "If the interior angle of a regular polygon is 135°, how many sides does it have?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "answer": 0,
+      "explanation": "Exterior angle = 180° - 135° = 45°. Number of sides = 360° / 45° = 8."
+    },
+    {
+      "id": 36,
+      "question": "What is the angle between the North and South directions?",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "answer": 1,
+      "explanation": "North and South are opposite directions, forming a 180-degree angle."
+    },
+    {
+      "id": 37,
+      "question": "A ship sails 5km North and then 12km East. How far is the ship from its starting point?",
+      "options": [
+        "7km",
+        "13km",
+        "17km",
+        "60km"
+      ],
+      "answer": 1,
+      "explanation": "Using Pythagoras: distance² = 5² + 12² = 25 + 144 = 169. Therefore, distance = √169 = 13km."
+    },
+    {
+      "id": 38,
+      "question": "What is the smallest angle in a right-angled triangle (excluding the right angle)?",
+      "options": [
+        "0°",
+        "45°",
+        "60°",
+        "90°"
+      ],
+      "answer": 1,
+      "explanation": "In a right-angled triangle, the other two angles must be less than 90°. The smallest possible angle is greater than 0°."
+    },
+    {
+      "id": 39,
+      "question": "Two angles are in the ratio 2:3 and are supplementary. What is the larger angle?",
+      "options": [
+        "60°",
+        "90°",
+        "120°",
+        "150°"
+      ],
+      "answer": 2,
+      "explanation": "Let the angles be 2x and 3x. 2x + 3x = 180°. 5x = 180°. x = 36°. Larger angle = 3 * 36° = 108°."
+    },
+    {
+      "id": 40,
+      "question": "What is the name of a line that intersects a circle at two points?",
+      "options": [
+        "Radius",
+        "Diameter",
+        "Chord",
+        "Secant"
+      ],
+      "answer": 3,
+      "explanation": "A secant is a line that intersects a circle at two distinct points."
+    }
+  ]
+}
