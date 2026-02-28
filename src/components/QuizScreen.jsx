@@ -201,7 +201,7 @@ export default function QuizScreen() {
             {skipped.has(current) && <span className="skipped-tag">skipped</span>}
           </span>
         </div>
-        <p className="question-text">{q.question}</p>
+        <p className="question-text" dangerouslySetInnerHTML={{ __html: q.question }} />
       </div>
 
       {/* ── Options ── */}
@@ -216,7 +216,7 @@ export default function QuizScreen() {
           return (
             <button key={index} className={cls} onClick={() => handleSelect(index)}>
               <span className="option-letter">{['A','B','C','D'][index]}</span>
-              <span className="option-text">{option}</span>
+              <span className="option-text" dangerouslySetInnerHTML={{ __html: option }} />
               {answered && index === q.answer                             && <span className="option-tick">✓</span>}
               {answered && index === answers[current] && index !== q.answer && <span className="option-cross">✗</span>}
             </button>
@@ -228,7 +228,7 @@ export default function QuizScreen() {
       {answered && (
         <div className={`explanation-box ${isCorrect ? 'expl-correct' : 'expl-wrong'}`}>
           <span className="expl-icon">{isCorrect ? '✅' : '❌'}</span>
-          <p className="expl-text">{q.explanation}</p>
+          <p className="expl-text" dangerouslySetInnerHTML={{ __html: q.explanation }} />
         </div>
       )}
 
