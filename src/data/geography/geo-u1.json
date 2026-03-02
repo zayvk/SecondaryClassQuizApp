@@ -1,0 +1,665 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 1: From Rock to Soil",
+  "unitId": "geo-u1",
+  "topics": [
+    "Our rocky home",
+    "What are the three rock groups?",
+    "What is weathering?",
+    "What is the rock cycle?",
+    "The British Isles on their travels",
+    "Rock and relief around the UK",
+    "What's the link between rock and landscape?",
+    "How are you linked to soil?"
+  ],
+  "generatedAt": "2026-03-02T11:52:17Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the Earth's crust primarily composed of?",
+      "options": [
+        "Water",
+        "Gases",
+        "Rocks and Minerals",
+        "Organic Matter"
+      ],
+      "answer": 2,
+      "explanation": "The Earth's crust is the outermost solid shell and is made up of various types of rocks and the minerals within them.",
+      "hint": "Think about what makes up mountains and the ground beneath your feet."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is NOT a main rock group?",
+      "options": [
+        "Igneous",
+        "Sedimentary",
+        "Metamorphic",
+        "Liquid"
+      ],
+      "answer": 3,
+      "explanation": "Igneous, sedimentary, and metamorphic are the three main rock groups, classified by their formation processes. Liquid is not a rock type.",
+      "hint": "Recall the three categories we discussed in class."
+    },
+    {
+      "id": 3,
+      "question": "How are igneous rocks formed?",
+      "options": [
+        "From cooled lava or magma",
+        "From compressed sediments",
+        "From altered existing rocks",
+        "From plant remains"
+      ],
+      "answer": 0,
+      "explanation": "Igneous rocks are formed when molten rock (magma or lava) cools and solidifies.",
+      "hint": "Think about volcanoes and what comes out of them."
+    },
+    {
+      "id": 4,
+      "question": "What process involves the breakdown of rocks at the Earth's surface?",
+      "options": [
+        "Erosion",
+        "Weathering",
+        "Deposition",
+        "Melting"
+      ],
+      "answer": 1,
+      "explanation": "Weathering is the process of breaking down rocks into smaller pieces through physical and chemical means at the surface.",
+      "hint": "Consider what happens to rocks exposed to rain, wind, and ice."
+    },
+    {
+      "id": 5,
+      "question": "Which type of weathering involves the physical disintegration of rocks?",
+      "options": [
+        "Chemical Weathering",
+        "Biological Weathering",
+        "Mechanical Weathering",
+        "Organic Weathering"
+      ],
+      "answer": 2,
+      "explanation": "Mechanical weathering breaks rocks into smaller pieces without changing their chemical composition, like freeze-thaw action.",
+      "hint": "Think about forces that physically break things apart."
+    },
+    {
+      "id": 6,
+      "question": "The rock cycle describes…",
+      "options": "The life cycle of plants on rocks",
+      "The continuous process of rock formation, breakdown, and reformation": "The movement of tectonic plates",
+      "The formation of mountains": "",
+      "answer": 1,
+      "explanation": "The rock cycle is a continuous process where rocks are created, changed, and destroyed over time.",
+      "hint": "Consider how rocks can change from one type to another."
+    },
+    {
+      "id": 7,
+      "question": "Sedimentary rocks are often formed from…",
+      "options": [
+        "Cooled magma",
+        "Volcanic ash",
+        "Accumulated sediments",
+        "Metamorphosed rocks"
+      ],
+      "answer": 2,
+      "explanation": "Sedimentary rocks are formed from the accumulation and cementation of sediments like sand, silt, and clay.",
+      "hint": "Think about layers of sand and mud building up over time."
+    },
+    {
+      "id": 8,
+      "question": "Metamorphic rocks are formed when…",
+      "options": [
+        "Lava cools quickly",
+        "Sediments are compressed",
+        "Existing rocks are changed by heat and pressure",
+        "Organic matter decomposes"
+      ],
+      "answer": 2,
+      "explanation": "Metamorphic rocks are formed when existing rocks are transformed by heat, pressure, or chemical reactions.",
+      "hint": "Consider what happens to rocks deep underground."
+    },
+    {
+      "id": 9,
+      "question": "What is the main geological feature of the Scottish Highlands?",
+      "options": [
+        "Low-lying plains",
+        "Granite mountains",
+        "Chalk cliffs",
+        "Sandstone valleys"
+      ],
+      "answer": 1,
+      "explanation": "The Scottish Highlands are characterized by ancient granite mountains, formed from igneous activity.",
+      "hint": "Think about the type of rock that forms strong, mountainous landscapes."
+    },
+    {
+      "id": 10,
+      "question": "The White Cliffs of Dover are primarily made of…",
+      "options": [
+        "Granite",
+        "Basalt",
+        "Chalk",
+        "Slate"
+      ],
+      "answer": 2,
+      "explanation": "The White Cliffs of Dover are famous for their bright white color, which comes from the sedimentary rock chalk.",
+      "hint": "Consider the color and texture of the cliffs."
+    },
+    {
+      "id": 11,
+      "question": "What type of rock is commonly found in the Lake District?",
+      "options": [
+        "Chalk",
+        "Limestone",
+        "Granite",
+        "Sandstone"
+      ],
+      "answer": 2,
+      "explanation": "The Lake District is largely composed of volcanic rocks, including granite, formed during ancient volcanic activity.",
+      "hint": "Think about the rugged, mountainous terrain of the Lake District."
+    },
+    {
+      "id": 12,
+      "question": "Which process is responsible for the formation of V-shaped valleys?",
+      "options": [
+        "Glacial erosion",
+        "Wind erosion",
+        "River erosion",
+        "Volcanic activity"
+      ],
+      "answer": 2,
+      "explanation": "River erosion, particularly through hydraulic action and abrasion, carves out V-shaped valleys over time.",
+      "hint": "Think about how rivers shape the land."
+    },
+    {
+      "id": 13,
+      "question": "U-shaped valleys are typically formed by…",
+      "options": [
+        "River erosion",
+        "Wind erosion",
+        "Glacial erosion",
+        "Wave erosion"
+      ],
+      "answer": 2,
+      "explanation": "Glaciers carve out U-shaped valleys due to their immense weight and erosive power.",
+      "hint": "Consider the shape of a glacier and how it moves."
+    },
+    {
+      "id": 14,
+      "question": "How does rock type influence the shape of a coastline?",
+      "options": [
+        "It doesn't",
+        "Harder rocks form steep cliffs, softer rocks form bays",
+        "Softer rocks form steep cliffs, harder rocks form bays",
+        "Rock type only affects the color of the coastline"
+      ],
+      "answer": 1,
+      "explanation": "Harder, more resistant rocks form steep cliffs, while softer rocks are eroded more easily, creating bays.",
+      "hint": "Think about how different materials resist erosion."
+    },
+    {
+      "id": 15,
+      "question": "What is the role of soil in supporting plant life?",
+      "options": [
+        "Provides oxygen",
+        "Provides water",
+        "Provides nutrients and anchorage",
+        "Provides sunlight"
+      ],
+      "answer": 2,
+      "explanation": "Soil provides essential nutrients, water, and physical support for plant roots to grow.",
+      "hint": "Think about what plants need to survive."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is a component of soil?",
+      "options": [
+        "Only minerals",
+        "Only organic matter",
+        "Minerals, organic matter, water, and air",
+        "Only water"
+      ],
+      "answer": 2,
+      "explanation": "Soil is a complex mixture of minerals, organic matter (humus), water, and air.",
+      "hint": "Consider what you find when you dig in the garden."
+    },
+    {
+      "id": 17,
+      "question": "What is humus?",
+      "options": [
+        "A type of rock",
+        "Decomposed organic matter",
+        "A type of mineral",
+        "A type of water"
+      ],
+      "answer": 1,
+      "explanation": "Humus is the dark, organic material formed by the decomposition of plant and animal matter.",
+      "hint": "Think about what happens to leaves and dead plants in the soil."
+    },
+    {
+      "id": 18,
+      "question": "What is the process by which rocks are broken down into smaller pieces by ice?",
+      "options": [
+        "Chemical weathering",
+        "Biological weathering",
+        "Freeze-thaw weathering",
+        "Oxidation"
+      ],
+      "answer": 2,
+      "explanation": "Freeze-thaw weathering occurs when water enters cracks in rocks, freezes, expands, and breaks the rock apart.",
+      "hint": "Think about what happens to water when it freezes."
+    },
+    {
+      "id": 19,
+      "question": "Which rock group is most likely to contain fossils?",
+      "options": [
+        "Igneous",
+        "Metamorphic",
+        "Sedimentary",
+        "All rock groups equally"
+      ],
+      "answer": 2,
+      "explanation": "Sedimentary rocks are formed from layers of sediment, which can preserve the remains of ancient organisms as fossils.",
+      "hint": "Think about how fossils are formed and where they would be found."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between lava and magma?",
+      "options": [
+        "They are the same thing",
+        "Lava is underground, magma is on the surface",
+        "Magma is underground, lava is on the surface",
+        "Lava is cooler than magma"
+      ],
+      "answer": 2,
+      "explanation": "Magma is molten rock beneath the Earth's surface, while lava is molten rock that has erupted onto the surface.",
+      "hint": "Think about where volcanoes erupt."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is an example of chemical weathering?",
+      "options": [
+        "A rock breaking apart due to freezing water",
+        "Plant roots growing into cracks in a rock",
+        "Acid rain dissolving limestone",
+        "Rocks colliding with each other"
+      ],
+      "answer": 2,
+      "explanation": "Acid rain dissolving limestone is an example of chemical weathering, as it alters the rock's chemical composition.",
+      "hint": "Think about how chemicals can change the composition of rocks."
+    },
+    {
+      "id": 22,
+      "question": "What is the role of plants in weathering?",
+      "options": [
+        "They have no role",
+        "They provide shade",
+        "Their roots can break rocks apart",
+        "They absorb water"
+      ],
+      "answer": 2,
+      "explanation": "Plant roots can grow into cracks in rocks and exert pressure, causing them to break apart (biological weathering).",
+      "hint": "Think about the power of growing roots."
+    },
+    {
+      "id": 23,
+      "question": "What is the significance of the rock cycle in terms of Earth's resources?",
+      "options": [
+        "It creates new planets",
+        "It replenishes Earth's resources over time",
+        "It destroys all resources",
+        "It only affects volcanoes"
+      ],
+      "answer": 1,
+      "explanation": "The rock cycle continuously creates and recycles Earth's resources, such as minerals and building materials.",
+      "hint": "Think about how resources are formed and renewed."
+    },
+    {
+      "id": 24,
+      "question": "How does the permeability of soil affect plant growth?",
+      "options": [
+        "It doesn't affect plant growth",
+        "High permeability allows for better drainage and root growth",
+        "Low permeability allows for better drainage and root growth",
+        "Permeability only affects the color of the soil"
+      ],
+      "answer": 1,
+      "explanation": "Permeability refers to how easily water can flow through soil. High permeability allows for good drainage, which is essential for healthy root growth.",
+      "hint": "Think about what plants need to survive and how water plays a role."
+    },
+    {
+      "id": 25,
+      "question": "What is the main difference between intrusive and extrusive igneous rocks?",
+      "options": [
+        "Intrusive rocks are formed on the surface, extrusive rocks are formed underground",
+        "Extrusive rocks are formed on the surface, intrusive rocks are formed underground",
+        "They are formed from different types of magma",
+        "They have the same composition"
+      ],
+      "answer": 1,
+      "explanation": "Intrusive igneous rocks cool slowly underground, forming large crystals, while extrusive rocks cool quickly on the surface, forming small crystals.",
+      "hint": "Think about how cooling rate affects crystal size."
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is an example of a landscape formed by glacial erosion?",
+      "options": [
+        "V-shaped valley",
+        "Delta",
+        "Fjord",
+        "Sand dune"
+      ],
+      "answer": 2,
+      "explanation": "Fjords are long, narrow inlets with steep sides, formed by glacial erosion.",
+      "hint": "Think about the landscapes found in cold, mountainous regions."
+    },
+    {
+      "id": 27,
+      "question": "What is the process of deposition?",
+      "options": [
+        "The breaking down of rocks",
+        "The movement of rocks",
+        "The dropping of sediment",
+        "The melting of rocks"
+      ],
+      "answer": 2,
+      "explanation": "Deposition is the process where sediment, soil, and rocks are added to a landform or land mass.",
+      "hint": "Think about where rivers and glaciers leave behind materials."
+    },
+    {
+      "id": 28,
+      "question": "What type of rock is slate?",
+      "options": [
+        "Igneous",
+        "Sedimentary",
+        "Metamorphic",
+        "Extrusive"
+      ],
+      "answer": 2,
+      "explanation": "Slate is a metamorphic rock formed from the alteration of shale or mudstone by heat and pressure.",
+      "hint": "Think about rocks that are formed under intense pressure."
+    },
+    {
+      "id": 29,
+      "question": "What is the role of microorganisms in soil formation?",
+      "options": [
+        "They have no role",
+        "They break down organic matter",
+        "They provide sunlight",
+        "They absorb minerals"
+      ],
+      "answer": 1,
+      "explanation": "Microorganisms, like bacteria and fungi, decompose organic matter, releasing nutrients into the soil.",
+      "hint": "Think about what happens to dead plants and animals in the soil."
+    },
+    {
+      "id": 30,
+      "question": "What is the term for the gradual wearing away of land by natural forces?",
+      "options": [
+        "Weathering",
+        "Erosion",
+        "Deposition",
+        "Compaction"
+      ],
+      "answer": 1,
+      "explanation": "Erosion is the process by which soil and rock particles are worn away and transported by wind, water, or ice.",
+      "hint": "Think about how rivers carry sediment downstream."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is a characteristic of igneous rocks?",
+      "options": [
+        "Often contains fossils",
+        "Formed in layers",
+        "Interlocking crystals",
+        "Easily eroded"
+      ],
+      "answer": 2,
+      "explanation": "Igneous rocks typically have interlocking crystals due to the slow cooling of magma or lava.",
+      "hint": "Think about the texture of rocks formed from molten material."
+    },
+    {
+      "id": 32,
+      "question": "What is the main cause of mass movement (landslides)?",
+      "options": [
+        "Strong winds",
+        "Heavy rainfall",
+        "Low temperatures",
+        "Lack of vegetation"
+      ],
+      "answer": 1,
+      "explanation": "Heavy rainfall saturates the soil, making it heavier and less stable, leading to landslides.",
+      "hint": "Think about what makes slopes unstable."
+    },
+    {
+      "id": 33,
+      "question": "What is the difference between physical and chemical properties of rocks?",
+      "options": [
+        "Physical properties are about composition, chemical are about appearance",
+        "Physical properties are about appearance, chemical are about composition",
+        "They are the same thing",
+        "Only igneous rocks have both"
+      ],
+      "answer": 1,
+      "explanation": "Physical properties describe a rock's appearance (color, texture), while chemical properties describe its composition (minerals).",
+      "hint": "Think about how you would describe a rock to someone."
+    },
+    {
+      "id": 34,
+      "question": "What is the role of soil pH in plant growth?",
+      "options": [
+        "It doesn't affect plant growth",
+        "It affects nutrient availability",
+        "It affects water retention",
+        "It affects soil color"
+      ],
+      "answer": 1,
+      "explanation": "Soil pH affects the availability of nutrients to plants. Different plants thrive in different pH levels.",
+      "hint": "Think about how acidity or alkalinity can affect plant health."
+    },
+    {
+      "id": 35,
+      "question": "What is a fault line?",
+      "options": [
+        "A type of sedimentary rock",
+        "A crack in the Earth's crust where movement occurs",
+        "A volcanic crater",
+        "A river valley"
+      ],
+      "answer": 1,
+      "explanation": "A fault line is a fracture in the Earth's crust where rocks have moved past each other.",
+      "hint": "Think about earthquakes and where they occur."
+    },
+    {
+      "id": 36,
+      "question": "Which of the following is a renewable resource derived from the rock cycle?",
+      "options": [
+        "Coal",
+        "Oil",
+        "Sand",
+        "Diamonds"
+      ],
+      "answer": 2,
+      "explanation": "Sand is constantly being created through the weathering and erosion of rocks, making it a renewable resource.",
+      "hint": "Think about resources that are replenished over time."
+    },
+    {
+      "id": 37,
+      "question": "What is the process of oxidation in weathering?",
+      "options": [
+        "Rocks dissolving in water",
+        "Rocks breaking down due to ice",
+        "Rocks reacting with oxygen",
+        "Rocks being worn away by wind"
+      ],
+      "answer": 2,
+      "explanation": "Oxidation is a chemical weathering process where rocks react with oxygen, often causing rusting.",
+      "hint": "Think about what happens to iron when it's exposed to air."
+    },
+    {
+      "id": 38,
+      "question": "What is the significance of soil texture (sand, silt, clay)?",
+      "options": [
+        "It only affects soil color",
+        "It affects water drainage and nutrient retention",
+        "It only affects plant height",
+        "It doesn't matter"
+      ],
+      "answer": 1,
+      "explanation": "Soil texture affects how well water drains and how well the soil retains nutrients, impacting plant growth.",
+      "hint": "Think about how different types of soil feel and how they hold water."
+    },
+    {
+      "id": 39,
+      "question": "What is a moraine?",
+      "options": [
+        "A type of igneous rock",
+        "A ridge formed by glacial deposits",
+        "A volcanic peak",
+        "A river delta"
+      ],
+      "answer": 1,
+      "explanation": "A moraine is a ridge or mound of sediment deposited by a glacier.",
+      "hint": "Think about what glaciers leave behind as they melt."
+    },
+    {
+      "id": 40,
+      "question": "What is the role of gravity in erosion?",
+      "options": [
+        "It has no role",
+        "It pulls rocks and sediment downhill",
+        "It creates wind",
+        "It heats up rocks"
+      ],
+      "answer": 1,
+      "explanation": "Gravity pulls rocks and sediment downhill, contributing to erosion and mass movement.",
+      "hint": "Think about why things fall down, not up."
+    },
+    {
+      "id": 41,
+      "question": "Which rock type is commonly used for building materials due to its durability?",
+      "options": [
+        "Chalk",
+        "Sandstone",
+        "Shale",
+        "Pumice"
+      ],
+      "answer": 1,
+      "explanation": "Sandstone is a durable sedimentary rock often used in construction.",
+      "hint": "Think about buildings and what they are made of."
+    },
+    {
+      "id": 42,
+      "question": "What is the process of leaching in soil?",
+      "options": [
+        "Adding nutrients to the soil",
+        "Removing nutrients from the soil",
+        "Improving soil texture",
+        "Increasing soil pH"
+      ],
+      "answer": 1,
+      "explanation": "Leaching is the process where water dissolves and carries away nutrients from the soil.",
+      "hint": "Think about how water can wash things away."
+    },
+    {
+      "id": 43,
+      "question": "What is a caldera?",
+      "options": [
+        "A type of sedimentary rock",
+        "A large volcanic crater",
+        "A river valley",
+        "A mountain peak"
+      ],
+      "answer": 1,
+      "explanation": "A caldera is a large, cauldron-like volcanic crater formed by the collapse of a volcano.",
+      "hint": "Think about what happens after a massive volcanic eruption."
+    },
+    {
+      "id": 44,
+      "question": "What is the main difference between a delta and an estuary?",
+      "options": [
+        "Deltas are formed by glaciers, estuaries by rivers",
+        "Deltas are formed at the mouth of rivers, estuaries where rivers meet the sea",
+        "They are the same thing",
+        "Estuaries are formed by volcanoes"
+      ],
+      "answer": 1,
+      "explanation": "Deltas are formed where rivers deposit sediment as they enter a body of water, while estuaries are where rivers meet the sea.",
+      "hint": "Think about where rivers flow and what happens at their mouths."
+    },
+    {
+      "id": 45,
+      "question": "What is the role of organic matter in soil fertility?",
+      "options": [
+        "It decreases fertility",
+        "It provides nutrients and improves soil structure",
+        "It only affects soil color",
+        "It has no effect"
+      ],
+      "answer": 1,
+      "explanation": "Organic matter provides essential nutrients and improves soil structure, making it more fertile.",
+      "hint": "Think about what plants need to grow and where those nutrients come from."
+    },
+    {
+      "id": 46,
+      "question": "What is the term for the bending of rock layers due to stress?",
+      "options": [
+        "Faulting",
+        "Folding",
+        "Weathering",
+        "Erosion"
+      ],
+      "answer": 1,
+      "explanation": "Folding occurs when rock layers are bent and deformed due to compressional stress.",
+      "hint": "Think about what happens to a piece of paper when you push on it from both sides."
+    },
+    {
+      "id": 47,
+      "question": "What is the significance of soil horizons?",
+      "options": [
+        "They only affect soil color",
+        "They represent different layers of soil with varying properties",
+        "They only affect plant growth",
+        "They are not important"
+      ],
+      "answer": 1,
+      "explanation": "Soil horizons are distinct layers of soil with different compositions, textures, and properties.",
+      "hint": "Think about digging a hole and seeing different layers of soil."
+    },
+    {
+      "id": 48,
+      "question": "What is a volcanic plug?",
+      "options": [
+        "A type of sedimentary rock",
+        "A solidified lava dome in a volcano's vent",
+        "A river valley",
+        "A mountain peak"
+      ],
+      "answer": 1,
+      "explanation": "A volcanic plug is formed when viscous lava solidifies within the vent of a volcano.",
+      "hint": "Think about what happens when lava cools and hardens inside a volcano."
+    },
+    {
+      "id": 49,
+      "question": "How does deforestation contribute to erosion?",
+      "options": [
+        "It has no effect",
+        "It increases erosion by removing vegetation cover",
+        "It decreases erosion",
+        "It only affects soil pH"
+      ],
+      "answer": 1,
+      "explanation": "Deforestation removes vegetation cover, leaving the soil exposed to erosion by wind and water.",
+      "hint": "Think about how tree roots hold soil in place."
+    },
+    {
+      "id": 50,
+      "question": "What is the primary source of energy that drives the rock cycle?",
+      "options": [
+        "Wind energy",
+        "Solar energy",
+        "Geothermal energy",
+        "Hydro energy"
+      ],
+      "answer": 2,
+      "explanation": "The Earth's internal heat (geothermal energy) and solar energy drive the processes of the rock cycle, such as plate tectonics and weathering.",
+      "hint": "Think about what powers volcanic activity and weathering processes."
+    }
+  ]
+}

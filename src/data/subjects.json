@@ -38,5 +38,20 @@
       { "id": "sci-u8", "name": "Unit 8: Rates of Reaction" },
       { "id": "sci-u9", "name": "Unit 9: Electricity" }
     ]
+  },
+  {
+    "id": "geography",
+    "name": "Geography",
+    "icon": "🌍",
+    "units": 7,
+    "unitList": [
+      { "id": "geo-u1", "name": "Unit 1: From Rock to Soil" },
+      { "id": "geo-u2", "name": "Unit 2: Using Earth's Resources" },
+      { "id": "geo-u3", "name": "Unit 3: Earning a Living" },
+      { "id": "geo-u4", "name": "Unit 4: International Development" },
+      { "id": "geo-u5", "name": "Unit 5: Our Restless Planet" },
+      { "id": "geo-u6", "name": "Unit 6: About Russia" },
+      { "id": "geo-u7", "name": "Unit 7: The Middle East" }
+    ]
   }
 ]

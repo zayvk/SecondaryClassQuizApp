@@ -1,0 +1,669 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 5: Our Restless Planet",
+  "unitId": "geo-u5",
+  "topics": [
+    "What's Earth like inside?",
+    "A cracked Earth?",
+    "A closer look at plate movements",
+    "What is an earthquake?",
+    "An earthquake in Southwest China",
+    "Tsunami!",
+    "What is a volcano?",
+    "The most dangerous volcano in the world?",
+    "So why live in a danger zone?"
+  ],
+  "generatedAt": "2026-03-02T13:15:00Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which layer of the Earth is made up of solid iron and nickel?",
+      "options": [
+        "Crust",
+        "Mantle",
+        "Outer Core",
+        "Inner Core"
+      ],
+      "answer": 3,
+      "explanation": "The inner core is extremely dense and solid due to immense pressure, despite the high temperatures, and is primarily composed of iron and nickel.",
+      "hint": "Think about what materials would be heavy enough to sink to the very center of the Earth."
+    },
+    {
+      "id": 2,
+      "question": "The Earth's crust is broken into large pieces called…?",
+      "options": [
+        "Magma chambers",
+        "Fault lines",
+        "Tectonic plates",
+        "Volcanic vents"
+      ],
+      "answer": 2,
+      "explanation": "Tectonic plates are the massive, irregularly shaped slabs of solid rock that make up the Earth's lithosphere.",
+      "hint": "These pieces are constantly moving, causing many geological events."
+    },
+    {
+      "id": 3,
+      "question": "What is the asthenosphere?",
+      "options": [
+        "A solid part of the Earth's core",
+        "A rigid layer of the Earth's crust",
+        "A partially molten layer of the mantle",
+        "The outermost layer of the Earth"
+      ],
+      "answer": 2,
+      "explanation": "The asthenosphere is a highly viscous, mechanically weak and ductile region of the upper mantle, allowing the plates to move.",
+      "hint": "Consider what would allow the plates to 'float' and move around."
+    },
+    {
+      "id": 4,
+      "question": "What type of plate boundary is formed when plates move towards each other?",
+      "options": [
+        "Divergent",
+        "Transform",
+        "Convergent",
+        "Subduction"
+      ],
+      "answer": 2,
+      "explanation": "Convergent boundaries occur where plates collide, leading to features like mountains or volcanic arcs.",
+      "hint": "Think about what happens when two cars crash into each other."
+    },
+    {
+      "id": 5,
+      "question": "What is a fault line?",
+      "options": [
+        "A type of volcano",
+        "A crack in the Earth's crust where movement occurs",
+        "A large deposit of magma",
+        "A boundary between the mantle and core"
+      ],
+      "answer": 1,
+      "explanation": "Fault lines are fractures in the Earth's crust where rocks have moved past each other, often causing earthquakes.",
+      "hint": "Earthquakes often happen along these breaks in the Earth's surface."
+    },
+    {
+      "id": 6,
+      "question": "Earthquakes are caused by the release of energy from…?",
+      "options": [
+        "Volcanic eruptions",
+        "Weather patterns",
+        "Sudden movement along fault lines",
+        "Ocean currents"
+      ],
+      "answer": 2,
+      "explanation": "Earthquakes are primarily caused by the sudden release of energy in the Earth's lithosphere that creates seismic waves.",
+      "hint": "Think about what happens when stress builds up in rocks."
+    },
+    {
+      "id": 7,
+      "question": "The point on the Earth's surface directly above the focus of an earthquake is called the…?",
+      "options": [
+        "Focus",
+        "Epicenter",
+        "Magnitude",
+        "Seismic wave"
+      ],
+      "answer": 1,
+      "explanation": "The epicenter is the point on the Earth's surface directly above the hypocenter (focus) where the earthquake originates.",
+      "hint": "This is the location where the earthquake's effects are first felt."
+    },
+    {
+      "id": 8,
+      "question": "What scale is used to measure the magnitude of an earthquake?",
+      "options": [
+        "Celsius scale",
+        "Fahrenheit scale",
+        "Richter scale",
+        "Beaufort scale"
+      ],
+      "answer": 2,
+      "explanation": "The Richter scale measures the magnitude of an earthquake based on the amplitude of seismic waves.",
+      "hint": "This scale tells us how powerful an earthquake is."
+    },
+    {
+      "id": 9,
+      "question": "The 2008 earthquake in Sichuan, China, was caused by movement along which fault?",
+      "options": [
+        "San Andreas Fault",
+        "Longmenshan Fault",
+        "Alpine Fault",
+        "Anatolian Fault"
+      ],
+      "answer": 1,
+      "explanation": "The Longmenshan Fault was the primary cause of the devastating 2008 Sichuan earthquake.",
+      "hint": "This fault is located in the mountainous region of southwestern China."
+    },
+    {
+      "id": 10,
+      "question": "What is a tsunami?",
+      "options": [
+        "A type of volcanic eruption",
+        "A large ocean wave caused by an underwater earthquake",
+        "A powerful hurricane",
+        "A sudden landslide"
+      ],
+      "answer": 1,
+      "explanation": "Tsunamis are giant waves caused by large-scale disturbances of the ocean, most commonly underwater earthquakes.",
+      "hint": "These waves can travel across entire oceans."
+    },
+    {
+      "id": 11,
+      "question": "What is the main cause of tsunamis?",
+      "options": [
+        "High winds",
+        "Underwater landslides",
+        "Volcanic eruptions",
+        "Underwater earthquakes"
+      ],
+      "answer": 3,
+      "explanation": "Underwater earthquakes, particularly those occurring at subduction zones, are the most common cause of tsunamis.",
+      "hint": "Think about what could suddenly displace a large volume of water."
+    },
+    {
+      "id": 12,
+      "question": "What is a volcano?",
+      "options": [
+        "A mountain formed by erosion",
+        "A vent in the Earth's crust through which magma erupts",
+        "A large lake",
+        "A type of glacier"
+      ],
+      "answer": 1,
+      "explanation": "A volcano is a rupture in the Earth's crust that allows hot lava, volcanic ash, and gases to escape from a magma chamber below the surface.",
+      "hint": "These landforms are often cone-shaped and associated with fiery eruptions."
+    },
+    {
+      "id": 13,
+      "question": "What is magma?",
+      "options": [
+        "Solid rock",
+        "Molten rock beneath the Earth's surface",
+        "Cooling lava",
+        "Volcanic ash"
+      ],
+      "answer": 1,
+      "explanation": "Magma is molten rock found beneath the Earth's surface, and it is the source of lava during volcanic eruptions.",
+      "hint": "This is what comes *out* of a volcano when it erupts."
+    },
+    {
+      "id": 14,
+      "question": "What type of volcano is Mount Vesuvius?",
+      "options": [
+        "Shield volcano",
+        "Cinder cone volcano",
+        "Composite volcano",
+        "Caldera volcano"
+      ],
+      "answer": 2,
+      "explanation": "Mount Vesuvius is a composite volcano, known for its steep slopes and explosive eruptions.",
+      "hint": "This type of volcano is built up of layers of lava and ash."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is a potential hazard associated with volcanic eruptions?",
+      "options": [
+        "Heavy rainfall",
+        "Strong winds",
+        "Lava flows and ashfall",
+        "Ocean currents"
+      ],
+      "answer": 2,
+      "explanation": "Volcanic eruptions can release lava flows, ashfall, pyroclastic flows, and toxic gases, all of which pose significant hazards.",
+      "hint": "Think about what comes out of a volcano during an eruption."
+    },
+    {
+      "id": 16,
+      "question": "What is a pyroclastic flow?",
+      "options": [
+        "A slow-moving lava flow",
+        "A fast-moving current of hot gas and volcanic matter",
+        "A type of earthquake",
+        "A large tsunami"
+      ],
+      "answer": 1,
+      "explanation": "Pyroclastic flows are extremely dangerous, fast-moving currents of hot gas and volcanic debris.",
+      "hint": "These are one of the most deadly aspects of a volcanic eruption."
+    },
+    {
+      "id": 17,
+      "question": "What is a caldera?",
+      "options": [
+        "A small volcanic cone",
+        "A large volcanic crater formed by a collapsed volcano",
+        "A type of lava flow",
+        "A vent for volcanic gases"
+      ],
+      "answer": 1,
+      "explanation": "A caldera is a large, cauldron-like volcanic feature formed by the collapse of a volcano into its emptied magma chamber.",
+      "hint": "Think about what happens when a volcano's 'roof' collapses."
+    },
+    {
+      "id": 18,
+      "question": "Why do people continue to live in areas prone to volcanic eruptions or earthquakes?",
+      "options": [
+        "They are unaware of the risks",
+        "The land is often fertile and resources are available",
+        "They have no other options",
+        "They enjoy the excitement"
+      ],
+      "answer": 1,
+      "explanation": "Volcanic areas often have fertile soil due to volcanic ash, and geothermal energy resources, making them attractive for agriculture and energy production.",
+      "hint": "Consider the benefits that might outweigh the risks."
+    },
+    {
+      "id": 19,
+      "question": "What is the Ring of Fire?",
+      "options": [
+        "A chain of volcanoes around the Atlantic Ocean",
+        "A region of intense volcanic and earthquake activity around the Pacific Ocean",
+        "A desert in Africa",
+        "A mountain range in Europe"
+      ],
+      "answer": 1,
+      "explanation": "The Ring of Fire is a major area in the basin of the Pacific Ocean where a large number of earthquakes and volcanic eruptions occur.",
+      "hint": "This area is shaped like a ring around a large ocean."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between lava and magma?",
+      "options": [
+        "They are the same thing",
+        "Lava is molten rock on the surface, magma is molten rock below the surface",
+        "Magma is cooler than lava",
+        "Lava is found in the mantle"
+      ],
+      "answer": 1,
+      "explanation": "Magma is molten rock *under* the Earth's surface, while lava is molten rock that has erupted *onto* the surface.",
+      "hint": "Think about where each one is located."
+    },
+    {
+      "id": 21,
+      "question": "Which type of seismic wave travels fastest?",
+      "options": [
+        "Surface waves",
+        "S-waves",
+        "P-waves",
+        "Love waves"
+      ],
+      "answer": 2,
+      "explanation": "P-waves (primary waves) are compressional waves that travel fastest through the Earth.",
+      "hint": "These waves arrive first at seismographs."
+    },
+    {
+      "id": 22,
+      "question": "What does the term 'subduction' refer to?",
+      "options": [
+        "The creation of new crust",
+        "The sinking of one tectonic plate under another",
+        "The collision of two continental plates",
+        "The sliding of plates past each other"
+      ],
+      "answer": 1,
+      "explanation": "Subduction occurs when one tectonic plate slides beneath another, often at convergent boundaries.",
+      "hint": "This process often happens at ocean trenches."
+    },
+    {
+      "id": 23,
+      "question": "What is a hot spot?",
+      "options": [
+        "A region of intense volcanic activity not associated with plate boundaries",
+        "A type of earthquake",
+        "A cold ocean current",
+        "A desert oasis"
+      ],
+      "answer": 0,
+      "explanation": "A hot spot is an area in the mantle from which heat rises as a plume, forming volcanoes on the Earth's surface.",
+      "hint": "Hawaii is a famous example of a location formed by one."
+    },
+    {
+      "id": 24,
+      "question": "What is the lithosphere?",
+      "options": [
+        "The Earth's core",
+        "The Earth's mantle",
+        "The rigid outer layer of the Earth",
+        "The liquid outer layer of the Earth"
+      ],
+      "answer": 2,
+      "explanation": "The lithosphere includes the crust and the uppermost part of the mantle, and it is broken into tectonic plates.",
+      "hint": "This is the layer that includes the Earth's crust."
+    },
+    {
+      "id": 25,
+      "question": "What is the main difference between P-waves and S-waves?",
+      "options": [
+        "P-waves are faster than S-waves",
+        "S-waves can travel through liquids, P-waves cannot",
+        "P-waves are surface waves, S-waves are body waves",
+        "S-waves are more destructive than P-waves"
+      ],
+      "answer": 0,
+      "explanation": "P-waves are compressional waves and travel faster than S-waves, which are shear waves. S-waves cannot travel through liquids.",
+      "hint": "Think about how these waves move through different materials."
+    },
+    {
+      "id": 26,
+      "question": "What is a seismic gap?",
+      "options": [
+        "A region with frequent earthquakes",
+        "A section of a fault line that has not experienced an earthquake for a long time",
+        "A volcanic crater",
+        "A type of tsunami"
+      ],
+      "answer": 1,
+      "explanation": "A seismic gap is a segment of an active fault line that has not ruptured in a significant earthquake for a long period, suggesting potential for future activity.",
+      "hint": "This area is considered to be building up stress."
+    },
+    {
+      "id": 27,
+      "question": "What is the Mercalli scale used to measure?",
+      "options": [
+        "Earthquake magnitude",
+        "Earthquake intensity",
+        "Volcanic eruption strength",
+        "Tsunami wave height"
+      ],
+      "answer": 1,
+      "explanation": "The Mercalli scale measures the intensity of an earthquake based on observed effects on people, structures, and the environment.",
+      "hint": "This scale focuses on what people *feel* and see."
+    },
+    {
+      "id": 28,
+      "question": "What is the relationship between plate tectonics and mountain formation?",
+      "options": [
+        "Plate tectonics have no effect on mountain formation",
+        "Mountains are formed by erosion",
+        "Mountains are formed when plates collide",
+        "Mountains are formed by volcanic eruptions only"
+      ],
+      "answer": 2,
+      "explanation": "Mountains are often formed when tectonic plates collide, causing the crust to buckle and fold.",
+      "hint": "Think about what happens when you push two rugs together."
+    },
+    {
+      "id": 29,
+      "question": "What is the role of water in the formation of magma?",
+      "options": [
+        "Water cools the mantle",
+        "Water increases the melting point of rocks",
+        "Water lowers the melting point of rocks",
+        "Water has no effect on magma formation"
+      ],
+      "answer": 2,
+      "explanation": "Water lowers the melting point of rocks in the mantle, facilitating magma formation, especially at subduction zones.",
+      "hint": "Think about how adding salt to ice lowers its freezing point."
+    },
+    {
+      "id": 30,
+      "question": "What is a transform boundary?",
+      "options": [
+        "Where plates collide",
+        "Where plates move apart",
+        "Where plates slide past each other horizontally",
+        "Where one plate goes under another"
+      ],
+      "answer": 2,
+      "explanation": "Transform boundaries are where tectonic plates slide past each other horizontally, often causing earthquakes.",
+      "hint": "The San Andreas Fault is a famous example of this type of boundary."
+    },
+    {
+      "id": 31,
+      "question": "What is the primary way scientists monitor volcanoes for potential eruptions?",
+      "options": [
+        "Observing animal behavior",
+        "Measuring changes in gas emissions and ground deformation",
+        "Predicting weather patterns",
+        "Studying historical records only"
+      ],
+      "answer": 1,
+      "explanation": "Scientists monitor volcanoes by tracking changes in gas emissions, ground deformation, and seismic activity to detect signs of an impending eruption.",
+      "hint": "Changes in the volcano itself are key indicators."
+    },
+    {
+      "id": 32,
+      "question": "What is the difference between an active, dormant, and extinct volcano?",
+      "options": [
+        "Active volcanoes are always erupting",
+        "Dormant volcanoes will never erupt again",
+        "Extinct volcanoes are currently erupting",
+        "Active volcanoes have erupted recently, dormant may erupt in the future, extinct are unlikely to erupt"
+      ],
+      "answer": 3,
+      "explanation": "Active volcanoes have erupted recently, dormant volcanoes haven't erupted for a while but could again, and extinct volcanoes are unlikely to erupt.",
+      "hint": "Think about the volcano's history and potential for future activity."
+    },
+    {
+      "id": 33,
+      "question": "What is the role of the mantle in plate tectonics?",
+      "options": [
+        "It provides the rigid plates",
+        "It is the source of heat driving plate movement",
+        "It prevents plate movement",
+        "It has no role in plate tectonics"
+      ],
+      "answer": 1,
+      "explanation": "The mantle's convection currents, driven by heat from the Earth's core, are believed to be the primary driving force behind plate movement.",
+      "hint": "Think about how heat rises and falls in a fluid."
+    },
+    {
+      "id": 34,
+      "question": "What is a lahar?",
+      "options": [
+        "A type of lava flow",
+        "A mudflow composed of volcanic ash and water",
+        "A volcanic gas",
+        "A type of earthquake"
+      ],
+      "answer": 1,
+      "explanation": "A lahar is a destructive mudflow or debris flow composed of volcanic ash, rock, and water, often triggered by rainfall or melting snow.",
+      "hint": "These flows can be very fast and dangerous."
+    },
+    {
+      "id": 35,
+      "question": "What is the main reason why scientists study past earthquakes and volcanic eruptions?",
+      "options": [
+        "To predict the exact time of future events",
+        "To understand the patterns and risks associated with these events",
+        "To prevent these events from happening",
+        "To create new types of volcanoes"
+      ],
+      "answer": 1,
+      "explanation": "Studying past events helps scientists understand patterns, assess risks, and develop strategies for mitigation and preparedness.",
+      "hint": "Learning from the past can help us prepare for the future."
+    },
+    {
+      "id": 36,
+      "question": "What is the difference between focus and epicenter of an earthquake?",
+      "options": [
+        "They are the same point",
+        "Focus is on the surface, epicenter is underground",
+        "Epicenter is where the earthquake originates, focus is directly above it",
+        "Focus is where the earthquake originates, epicenter is directly above it"
+      ],
+      "answer": 3,
+      "explanation": "The focus is the point *within* the Earth where the earthquake originates, and the epicenter is the point on the Earth's surface directly above the focus.",
+      "hint": "Think about where the energy starts versus where it's first felt."
+    },
+    {
+      "id": 37,
+      "question": "What is a shadow zone?",
+      "options": [
+        "An area with no volcanic activity",
+        "An area where seismic waves are blocked",
+        "A region of intense rainfall",
+        "A type of fault line"
+      ],
+      "answer": 1,
+      "explanation": "A shadow zone is an area on the Earth's surface where seismic waves from an earthquake are not detected due to the Earth's structure.",
+      "hint": "This helps scientists understand what's inside the Earth."
+    },
+    {
+      "id": 38,
+      "question": "What is the main benefit of building codes in earthquake-prone areas?",
+      "options": [
+        "They make buildings look more attractive",
+        "They reduce the cost of construction",
+        "They ensure buildings are more resistant to earthquake damage",
+        "They prevent earthquakes from happening"
+      ],
+      "answer": 2,
+      "explanation": "Building codes in earthquake-prone areas are designed to ensure that structures are built to withstand seismic forces, reducing damage and saving lives.",
+      "hint": "These codes focus on safety and resilience."
+    },
+    {
+      "id": 39,
+      "question": "What is the role of convection currents in the Earth's mantle?",
+      "options": [
+        "They cool the Earth",
+        "They create magnetic fields",
+        "They drive plate tectonics",
+        "They cause volcanic eruptions directly"
+      ],
+      "answer": 2,
+      "explanation": "Convection currents in the mantle, driven by heat from the Earth's core, are believed to be the primary driving force behind plate movement.",
+      "hint": "Think about how heat rises and falls in a fluid."
+    },
+    {
+      "id": 40,
+      "question": "What is a rift valley?",
+      "options": [
+        "A deep canyon carved by a river",
+        "A valley formed by the sinking of land between parallel faults",
+        "A volcanic crater",
+        "A mountain range"
+      ],
+      "answer": 1,
+      "explanation": "A rift valley is a linear lowland between several highlands, often formed by the movement of tectonic plates pulling apart.",
+      "hint": "The East African Rift Valley is a famous example."
+    },
+    {
+      "id": 41,
+      "question": "What is the difference between a shield volcano and a composite volcano?",
+      "options": [
+        "Shield volcanoes are explosive, composite volcanoes are gentle",
+        "Shield volcanoes are steep-sided, composite volcanoes are broad",
+        "Shield volcanoes are built from lava flows, composite volcanoes are built from layers of ash and lava",
+        "Shield volcanoes are found underwater, composite volcanoes are on land"
+      ],
+      "answer": 2,
+      "explanation": "Shield volcanoes are built from fluid lava flows, resulting in broad, gently sloping sides, while composite volcanoes are built from alternating layers of ash and lava, creating steep sides.",
+      "hint": "Think about the type of lava and how it flows."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of a tsunami warning system?",
+      "options": [
+        "To predict earthquakes",
+        "To prevent tsunamis from forming",
+        "To detect tsunamis and alert coastal communities",
+        "To study volcanic eruptions"
+      ],
+      "answer": 2,
+      "explanation": "Tsunami warning systems use sensors to detect tsunamis and provide alerts to coastal communities, allowing them to evacuate.",
+      "hint": "These systems are crucial for saving lives."
+    },
+    {
+      "id": 43,
+      "question": "What is the relationship between subduction zones and volcanic arcs?",
+      "options": [
+        "Subduction zones prevent volcanic arcs from forming",
+        "Volcanic arcs cause subduction zones",
+        "Volcanic arcs often form parallel to subduction zones",
+        "There is no relationship between them"
+      ],
+      "answer": 2,
+      "explanation": "Volcanic arcs often form parallel to subduction zones as magma rises from the melting plate to the surface.",
+      "hint": "Think about where volcanoes are commonly found."
+    },
+    {
+      "id": 44,
+      "question": "What is the main reason why people might choose to live near a volcano despite the risks?",
+      "options": [
+        "They enjoy the danger",
+        "The soil is fertile for farming",
+        "There are no other places to live",
+        "They believe volcanoes are harmless"
+      ],
+      "answer": 1,
+      "explanation": "Volcanic soil is often very fertile due to the presence of minerals, making it ideal for agriculture.",
+      "hint": "Consider the benefits of living in a volcanic area."
+    },
+    {
+      "id": 45,
+      "question": "What is the difference between weathering and erosion?",
+      "options": [
+        "They are the same process",
+        "Weathering breaks down rocks, erosion moves them",
+        "Erosion breaks down rocks, weathering moves them",
+        "Weathering only happens underwater"
+      ],
+      "answer": 1,
+      "explanation": "Weathering is the breakdown of rocks, while erosion is the process of transporting those broken-down materials.",
+      "hint": "One breaks it down, the other takes it away."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of seismic waves in understanding the Earth's interior?",
+      "options": [
+        "They create earthquakes",
+        "They travel through the Earth and provide information about its layers",
+        "They cause volcanic eruptions",
+        "They have no role in understanding the Earth's interior"
+      ],
+      "answer": 1,
+      "explanation": "By studying how seismic waves travel through the Earth, scientists can determine the composition and structure of its different layers.",
+      "hint": "How these waves behave tells us what's inside."
+    },
+    {
+      "id": 47,
+      "question": "What is the main difference between a divergent and convergent plate boundary?",
+      "options": [
+        "Divergent boundaries create mountains, convergent boundaries create valleys",
+        "Divergent boundaries move apart, convergent boundaries move together",
+        "Divergent boundaries cause earthquakes, convergent boundaries cause volcanoes",
+        "Divergent boundaries are on land, convergent boundaries are in the ocean"
+      ],
+      "answer": 1,
+      "explanation": "Divergent boundaries are where plates move apart, while convergent boundaries are where plates collide.",
+      "hint": "Think about the direction the plates are moving."
+    },
+    {
+      "id": 48,
+      "question": "What is the significance of the Moho discontinuity?",
+      "options": [
+        "It marks the boundary between the mantle and the core",
+        "It marks the boundary between the crust and the mantle",
+        "It is a type of fault line",
+        "It is a volcanic vent"
+      ],
+      "answer": 1,
+      "explanation": "The Moho discontinuity represents the boundary between the Earth's crust and the mantle, characterized by a change in seismic wave velocity.",
+      "hint": "This boundary separates two major layers of the Earth."
+    },
+    {
+      "id": 49,
+      "question": "What is the primary way scientists predict volcanic eruptions?",
+      "options": [
+        "By observing cloud formations",
+        "By monitoring changes in animal behavior",
+        "By tracking changes in gas emissions and ground deformation",
+        "By studying historical records only"
+      ],
+      "answer": 2,
+      "explanation": "Scientists monitor volcanoes for changes in gas emissions, ground deformation, and seismic activity to detect signs of an impending eruption.",
+      "hint": "Changes in the volcano itself are key indicators."
+    },
+    {
+      "id": 50,
+      "question": "What is the main purpose of earthquake drills?",
+      "options": [
+        "To practice building earthquake-resistant structures",
+        "To learn how to predict earthquakes",
+        "To prepare people for what to do during and after an earthquake",
+        "To study the effects of earthquakes"
+      ],
+      "answer": 2,
+      "explanation": "Earthquake drills are designed to prepare people for what to do during and after an earthquake, increasing their chances of survival.",
+      "hint": "These drills focus on safety and preparedness."
+    }
+  ]
+}

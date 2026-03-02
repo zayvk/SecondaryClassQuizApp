@@ -1,0 +1,666 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 7: The Middle East",
+  "unitId": "geo-u7",
+  "topics": [
+    "Introducing the Middle East",
+    "The Middle East: physical geography",
+    "The Middle East: climate zones and biomes",
+    "The people, and economies",
+    "Challenges in the Arabian Peninsula",
+    "Conflict in the Middle East"
+  ],
+  "generatedAt": "2026-03-02T13:18:56Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best defines the geographical region known as the Middle East?",
+      "options": [
+        "A region solely comprised of Arab nations",
+        "The landmass between Europe and Africa",
+        "A culturally and geographically diverse region spanning parts of Asia, Africa, and Europe",
+        "A region defined only by its oil reserves"
+      ],
+      "answer": 2,
+      "explanation": "The Middle East is a transcontinental region, bridging Asia, Africa, and Europe, and is characterized by cultural and geographical diversity.",
+      "hint": "Think about the location of countries like Egypt, Iran, and Turkey – do they all fit neatly into just one continent?"
+    },
+    {
+      "id": 2,
+      "question": "The Rub' al Khali, also known as the 'Empty Quarter', is a significant geographical feature of the Middle East. What is it?",
+      "options": [
+        "A fertile river valley",
+        "A large mountain range",
+        "A vast sand desert",
+        "A network of ancient trade routes"
+      ],
+      "answer": 2,
+      "explanation": "The Rub' al Khali is one of the largest sand deserts in the world, located primarily in Saudi Arabia, Oman, UAE and Yemen.",
+      "hint": "The name 'Empty Quarter' suggests a lack of something… what might that be?"
+    },
+    {
+      "id": 3,
+      "question": "What is a wadi?",
+      "options": [
+        "A type of traditional Middle Eastern boat",
+        "A dry riverbed that temporarily fills with water after rainfall",
+        "A fortified settlement in the desert",
+        "A type of Middle Eastern musical instrument"
+      ],
+      "answer": 1,
+      "explanation": "Wadis are crucial for water collection and temporary agriculture in arid regions of the Middle East.",
+      "hint": "Consider the climate of the Middle East – what happens to water sources when it doesn't rain for long periods?"
+    },
+    {
+      "id": 4,
+      "question": "Which climate zone is most prevalent in the Arabian Peninsula?",
+      "options": [
+        "Tropical rainforest",
+        "Temperate",
+        "Arid/Desert",
+        "Mediterranean"
+      ],
+      "answer": 2,
+      "explanation": "The Arabian Peninsula experiences extremely high temperatures and very little rainfall, defining it as an arid or desert climate.",
+      "hint": "Think about the images you've seen of the Arabian Peninsula – what kind of landscape dominates?"
+    },
+    {
+      "id": 5,
+      "question": "What type of biome is typically found in areas with hot, dry climates like parts of the Middle East?",
+      "options": [
+        "Tundra",
+        "Deciduous forest",
+        "Desert",
+        "Grassland"
+      ],
+      "answer": 2,
+      "explanation": "Deserts are characterized by low precipitation and specialized plant and animal life adapted to survive in harsh conditions.",
+      "hint": "What kind of plants and animals would you expect to find in a very hot, dry environment?"
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a major language family spoken throughout the Middle East?",
+      "options": [
+        "Sino-Tibetan",
+        "Indo-European",
+        "Afro-Asiatic",
+        "Austronesian"
+      ],
+      "answer": 2,
+      "explanation": "The Afro-Asiatic language family includes Arabic and Hebrew, which are widely spoken in the Middle East.",
+      "hint": "Think about the languages spoken in countries like Egypt, Saudi Arabia, and Israel."
+    },
+    {
+      "id": 7,
+      "question": "What is the significance of the Tigris and Euphrates rivers?",
+      "options": [
+        "They are major sources of oil",
+        "They are important for hydroelectric power",
+        "They were the cradle of ancient Mesopotamian civilizations",
+        "They are known for their rapid currents and white-water rafting"
+      ],
+      "answer": 2,
+      "explanation": "The Tigris and Euphrates rivers provided water and fertile land for the development of early civilizations like Sumer, Akkad, and Babylon.",
+      "hint": "Consider the term 'Fertile Crescent' – where was this located?"
+    },
+    {
+      "id": 8,
+      "question": "What is an oasis?",
+      "options": [
+        "A type of desert animal",
+        "A fertile spot in a desert where water is found",
+        "A traditional Middle Eastern garment",
+        "A form of desert transportation"
+      ],
+      "answer": 1,
+      "explanation": "Oases are vital for life in the desert, providing water for drinking, agriculture, and supporting settlements.",
+      "hint": "Imagine you are travelling through a vast desert – what would be the most important thing to find?"
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is a major economic activity in many Middle Eastern countries?",
+      "options": [
+        "Manufacturing of electronics",
+        "Tourism and financial services",
+        "Agriculture focused on wheat and barley",
+        "Oil and gas extraction"
+      ],
+      "answer": 3,
+      "explanation": "The Middle East holds a significant portion of the world's oil and gas reserves, making it a major exporter.",
+      "hint": "Think about what the Middle East is most famous for exporting."
+    },
+    {
+      "id": 10,
+      "question": "How has oil wealth impacted the economies of some Middle Eastern countries?",
+      "options": [
+        "Led to diversified economies and reduced reliance on a single resource",
+        "Created significant income inequality and dependence on oil prices",
+        "Promoted sustainable development and environmental protection",
+        "Resulted in equal distribution of wealth among all citizens"
+      ],
+      "answer": 1,
+      "explanation": "While oil wealth has brought prosperity, it has also created economic vulnerabilities and social disparities in some countries.",
+      "hint": "What happens to a country's economy when the price of its main export suddenly drops?"
+    },
+    {
+      "id": 11,
+      "question": "What is desalination?",
+      "options": [
+        "A method of farming in the desert",
+        "The process of removing salt from seawater to make it drinkable",
+        "A type of traditional Middle Eastern architecture",
+        "A religious practice common in the Middle East"
+      ],
+      "answer": 1,
+      "explanation": "Desalination is crucial for providing freshwater in arid regions where access to natural freshwater sources is limited.",
+      "hint": "Many Middle Eastern countries lack sufficient freshwater – how might they overcome this challenge?"
+    },
+    {
+      "id": 12,
+      "question": "What is a major challenge facing agriculture in the Arabian Peninsula?",
+      "options": [
+        "Excessive rainfall",
+        "Fertile soil",
+        "Water scarcity",
+        "Cold temperatures"
+      ],
+      "answer": 2,
+      "explanation": "The Arabian Peninsula receives very little rainfall, making irrigation and water management essential for agriculture.",
+      "hint": "Think about the climate of the Arabian Peninsula – is it wet or dry?"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a significant environmental concern in the Middle East due to oil extraction?",
+      "options": [
+        "Deforestation",
+        "Acid rain",
+        "Oil spills and pollution",
+        "Glacier melting"
+      ],
+      "answer": 2,
+      "explanation": "Oil spills and pollution from extraction and transportation pose a serious threat to marine ecosystems and coastal areas.",
+      "hint": "What could happen if an oil tanker were to leak its cargo into the sea?"
+    },
+    {
+      "id": 14,
+      "question": "What is a key factor contributing to water scarcity in the Middle East?",
+      "options": [
+        "Overpopulation",
+        "Deforestation",
+        "Inefficient irrigation practices",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Inefficient irrigation, combined with a naturally arid climate and growing populations, exacerbates water scarcity.",
+      "hint": "Think about how water is used in agriculture – is it always used efficiently?"
+    },
+    {
+      "id": 15,
+      "question": "What is the main religious group in Iran?",
+      "options": [
+        "Sunni Muslim",
+        "Christian",
+        "Jewish",
+        "Shia Muslim"
+      ],
+      "answer": 3,
+      "explanation": "Iran is predominantly a Shia Muslim country, with Shia Islam being the official religion.",
+      "hint": "Consider the differences between Sunni and Shia Islam."
+    },
+    {
+      "id": 16,
+      "question": "What is a common form of government in the Middle East?",
+      "options": [
+        "Direct democracy",
+        "Constitutional monarchy",
+        "Absolute monarchy",
+        "Communist state"
+      ],
+      "answer": 2,
+      "explanation": "Many countries in the Middle East are ruled by absolute monarchs, where the ruler holds supreme power.",
+      "hint": "Think about the ruling families in countries like Saudi Arabia and Qatar."
+    },
+    {
+      "id": 17,
+      "question": "What is the significance of the Suez Canal?",
+      "options": [
+        "It is a major oil pipeline",
+        "It is a vital waterway connecting the Red Sea and the Mediterranean Sea",
+        "It is a historical trade route for spices",
+        "It is a source of freshwater for Egypt"
+      ],
+      "answer": 1,
+      "explanation": "The Suez Canal is a crucial shipping route, significantly reducing travel time between Asia and Europe.",
+      "hint": "Imagine a ship travelling from India to Europe – what is the shortest route?"
+    },
+    {
+      "id": 18,
+      "question": "What is a major cause of conflict in the Middle East?",
+      "options": [
+        "Abundant natural resources",
+        "Religious differences",
+        "Political instability",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "A complex interplay of religious, political, and economic factors contributes to ongoing conflicts in the region.",
+      "hint": "Think about the historical and current tensions in the region."
+    },
+    {
+      "id": 19,
+      "question": "What is the Israeli-Palestinian conflict primarily about?",
+      "options": [
+        "Control of oil reserves",
+        "Religious differences",
+        "Land and self-determination",
+        "Water rights"
+      ],
+      "answer": 2,
+      "explanation": "The conflict centers around competing claims to land and the right to self-determination for both Israelis and Palestinians.",
+      "hint": "Consider the historical claims to the land of Palestine."
+    },
+    {
+      "id": 20,
+      "question": "What role do international organizations play in addressing conflicts in the Middle East?",
+      "options": [
+        "They have no involvement",
+        "They provide humanitarian aid and attempt to mediate peace negotiations",
+        "They primarily support one side of the conflict",
+        "They focus solely on economic development"
+      ],
+      "answer": 1,
+      "explanation": "Organizations like the UN and various NGOs provide aid, mediate disputes, and work towards peaceful resolutions.",
+      "hint": "Think about the role of the United Nations in global conflicts."
+    },
+    {
+      "id": 21,
+      "question": "What is a refugee?",
+      "options": [
+        "A tourist",
+        "A person forced to leave their home due to conflict or persecution",
+        "A migrant worker",
+        "A diplomat"
+      ],
+      "answer": 1,
+      "explanation": "Many people in the Middle East have been displaced from their homes due to conflict, becoming refugees.",
+      "hint": "Think about what might force someone to leave their home country permanently."
+    },
+    {
+      "id": 22,
+      "question": "What is the impact of conflict on the economies of Middle Eastern countries?",
+      "options": [
+        "Economic growth and prosperity",
+        "Destruction of infrastructure and disruption of trade",
+        "Increased foreign investment",
+        "Improved living standards"
+      ],
+      "answer": 1,
+      "explanation": "Conflict leads to the destruction of infrastructure, displacement of people, and disruption of economic activity.",
+      "hint": "How would a war affect a country's ability to produce goods and services?"
+    },
+    {
+      "id": 23,
+      "question": "What is the Dead Sea known for?",
+      "options": [
+        "Its abundant marine life",
+        "Its extremely high salt content",
+        "Its freshwater springs",
+        "Its sandy beaches"
+      ],
+      "answer": 1,
+      "explanation": "The Dead Sea has an exceptionally high salt concentration, making it impossible for most living organisms to survive.",
+      "hint": "The name 'Dead Sea' suggests a lack of something… what might that be?"
+    },
+    {
+      "id": 24,
+      "question": "What is a major challenge to sustainable development in the Middle East?",
+      "options": [
+        "An abundance of natural resources",
+        "A stable political climate",
+        "Rapid population growth and urbanization",
+        "A lack of technological innovation"
+      ],
+      "answer": 2,
+      "explanation": "Rapid population growth and urbanization put strain on resources and infrastructure, hindering sustainable development.",
+      "hint": "Think about the challenges of providing resources like water and energy to a growing population."
+    },
+    {
+      "id": 25,
+      "question": "What is the role of traditional souks (markets) in Middle Eastern economies?",
+      "options": [
+        "They are primarily tourist attractions",
+        "They are centers of trade and commerce",
+        "They are government-owned department stores",
+        "They are used for agricultural production"
+      ],
+      "answer": 1,
+      "explanation": "Souks have historically been and continue to be important centers for trade, commerce, and social interaction.",
+      "hint": "Think about what you might find for sale in a traditional Middle Eastern market."
+    },
+    {
+      "id": 26,
+      "question": "Which of these countries is NOT located in the Middle East?",
+      "options": [
+        "Egypt",
+        "Afghanistan",
+        "Brazil",
+        "Saudi Arabia"
+      ],
+      "answer": 2,
+      "explanation": "Brazil is located in South America, while Egypt, Afghanistan, and Saudi Arabia are all part of the Middle East.",
+      "hint": "Consider the continents where each country is located."
+    },
+    {
+      "id": 27,
+      "question": "What is the Hajj?",
+      "options": [
+        "A type of Middle Eastern dance",
+        "A pilgrimage to Mecca, Saudi Arabia",
+        "A traditional Middle Eastern meal",
+        "A form of Islamic art"
+      ],
+      "answer": 1,
+      "explanation": "The Hajj is one of the Five Pillars of Islam, requiring Muslims to make a pilgrimage to Mecca at least once in their lifetime.",
+      "hint": "Think about important religious practices in Islam."
+    },
+    {
+      "id": 28,
+      "question": "What is a sharia?",
+      "options": [
+        "A type of desert plant",
+        "Islamic law",
+        "A traditional Middle Eastern garment",
+        "A form of Arabic calligraphy"
+      ],
+      "answer": 1,
+      "explanation": "Sharia is a comprehensive legal system derived from the Quran and the teachings of the Prophet Muhammad.",
+      "hint": "Consider the role of religion in the legal systems of some Middle Eastern countries."
+    },
+    {
+      "id": 29,
+      "question": "What is a major challenge to food security in the Middle East?",
+      "options": [
+        "Overproduction of crops",
+        "Fertile land",
+        "Limited arable land and water resources",
+        "A surplus of agricultural labor"
+      ],
+      "answer": 2,
+      "explanation": "The Middle East has limited arable land and water resources, making it difficult to produce enough food to meet the needs of its population.",
+      "hint": "Think about the climate and geography of the region – are they ideal for farming?"
+    },
+    {
+      "id": 30,
+      "question": "What is a nomad?",
+      "options": [
+        "A settled farmer",
+        "A person who moves from place to place",
+        "A government official",
+        "A religious leader"
+      ],
+      "answer": 1,
+      "explanation": "Nomads traditionally move from place to place in search of resources, often herding animals.",
+      "hint": "Think about how people might have lived in the desert before modern technology."
+    },
+    {
+      "id": 31,
+      "question": "What is the main purpose of the Gulf Cooperation Council (GCC)?",
+      "options": [
+        "To promote trade with Europe",
+        "To address common political, economic, and security challenges",
+        "To provide humanitarian aid to Africa",
+        "To regulate oil prices globally"
+      ],
+      "answer": 1,
+      "explanation": "The GCC is a political and economic alliance of six countries in the Arabian Gulf, aiming to foster cooperation and stability.",
+      "hint": "Think about the shared interests of countries like Saudi Arabia, Kuwait, and the UAE."
+    },
+    {
+      "id": 32,
+      "question": "What is a major factor contributing to urbanization in the Middle East?",
+      "options": [
+        "Declining birth rates",
+        "Rural-to-urban migration",
+        "Increased agricultural opportunities",
+        "A preference for rural lifestyles"
+      ],
+      "answer": 1,
+      "explanation": "People are moving from rural areas to cities in search of better economic opportunities and services.",
+      "hint": "Think about why people might choose to move from the countryside to a city."
+    },
+    {
+      "id": 33,
+      "question": "What is a majlis?",
+      "options": [
+        "A type of Middle Eastern sword",
+        "A traditional gathering place for social and political discussions",
+        "A form of Islamic architecture",
+        "A traditional Middle Eastern musical instrument"
+      ],
+      "answer": 1,
+      "explanation": "The majlis is an important part of social and political life in many Middle Eastern countries.",
+      "hint": "Think about how people in the Middle East traditionally make decisions and share information."
+    },
+    {
+      "id": 34,
+      "question": "What is a key characteristic of the Mediterranean climate zone found in parts of the Middle East?",
+      "options": [
+        "Hot, dry summers and mild, wet winters",
+        "Cold, snowy winters and warm, dry summers",
+        "Hot and humid year-round",
+        "Cold and dry year-round"
+      ],
+      "answer": 0,
+      "explanation": "The Mediterranean climate is characterized by distinct wet and dry seasons, with mild winters and hot, dry summers.",
+      "hint": "Think about the climate of countries like Lebanon and Israel."
+    },
+    {
+      "id": 35,
+      "question": "What is a significant challenge related to rapid urbanization in the Middle East?",
+      "options": [
+        "Decreased pollution levels",
+        "Improved access to healthcare",
+        "Strain on infrastructure and resources",
+        "Increased agricultural production"
+      ],
+      "answer": 2,
+      "explanation": "Rapid urbanization puts a strain on infrastructure, such as water, electricity, and transportation.",
+      "hint": "Think about what happens when a city grows too quickly."
+    },
+    {
+      "id": 36,
+      "question": "What is the primary source of freshwater for many countries in the Middle East?",
+      "options": [
+        "Rivers originating in the region",
+        "Groundwater",
+        "Rainfall",
+        "Glaciers"
+      ],
+      "answer": 1,
+      "explanation": "Groundwater is a crucial source of freshwater, but it is being depleted at an unsustainable rate in many areas.",
+      "hint": "Think about where water is stored underground."
+    },
+    {
+      "id": 37,
+      "question": "What is a key factor driving the demand for desalination plants in the Middle East?",
+      "options": [
+        "Abundant rainfall",
+        "Large rivers",
+        "Water scarcity",
+        "Low population density"
+      ],
+      "answer": 2,
+      "explanation": "The Middle East faces severe water scarcity, making desalination a necessary solution for providing freshwater.",
+      "hint": "Think about the climate of the region and the availability of freshwater sources."
+    },
+    {
+      "id": 38,
+      "question": "What is a common architectural feature of buildings in hot, arid climates of the Middle East?",
+      "options": [
+        "Large windows",
+        "Dark-colored roofs",
+        "Thick walls and small windows",
+        "Glass facades"
+      ],
+      "answer": 2,
+      "explanation": "Thick walls and small windows help to keep buildings cool by reducing heat gain.",
+      "hint": "Think about how to keep a building cool without air conditioning."
+    },
+    {
+      "id": 39,
+      "question": "What is a major economic challenge facing many Middle Eastern countries beyond oil dependence?",
+      "options": [
+        "Lack of skilled labor",
+        "High levels of education",
+        "Diversifying their economies",
+        "Abundant natural resources"
+      ],
+      "answer": 2,
+      "explanation": "Many Middle Eastern countries are trying to diversify their economies to reduce their reliance on oil revenues.",
+      "hint": "Think about the risks of relying on a single export."
+    },
+    {
+      "id": 40,
+      "question": "What is a key factor contributing to the displacement of people in the Middle East?",
+      "options": [
+        "Economic prosperity",
+        "Political stability",
+        "Armed conflict and persecution",
+        "Environmental conservation efforts"
+      ],
+      "answer": 2,
+      "explanation": "Armed conflict and persecution are major drivers of displacement, forcing people to flee their homes.",
+      "hint": "Think about the causes of refugee crises in the region."
+    },
+    {
+      "id": 41,
+      "question": "What is the significance of the Strait of Hormuz?",
+      "options": [
+        "It is a major tourist destination",
+        "It is a narrow waterway through which a large percentage of the world’s oil supply passes",
+        "It is a historical site of ancient civilizations",
+        "It is a source of freshwater"
+      ],
+      "answer": 1,
+      "explanation": "The Strait of Hormuz is a strategically important waterway for global oil trade.",
+      "hint": "Think about the importance of oil to the world economy."
+    },
+    {
+      "id": 42,
+      "question": "What is a common type of agriculture practiced in oases?",
+      "options": [
+        "Large-scale wheat farming",
+        "Dairy farming",
+        "Date palm cultivation",
+        "Cattle ranching"
+      ],
+      "answer": 2,
+      "explanation": "Date palms thrive in the oasis environment, providing food and shade.",
+      "hint": "Think about what kind of fruit grows well in a hot, dry climate."
+    },
+    {
+      "id": 43,
+      "question": "What is a key challenge to preserving cultural heritage sites in conflict zones in the Middle East?",
+      "options": [
+        "Lack of funding",
+        "Vandalism and intentional destruction",
+        "Natural erosion",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Conflict zones are particularly vulnerable to the destruction of cultural heritage sites.",
+      "hint": "Think about what might happen to ancient monuments during a war."
+    },
+    {
+      "id": 44,
+      "question": "What is a 'falaj'?",
+      "options": [
+        "A type of Middle Eastern bread",
+        "An ancient irrigation system used in the Arabian Peninsula",
+        "A traditional Middle Eastern dance",
+        "A type of desert vehicle"
+      ],
+      "answer": 1,
+      "explanation": "Falaj systems are ingenious channels that transport water from mountains to agricultural areas.",
+      "hint": "Think about how people in the desert might have managed to irrigate their crops."
+    },
+    {
+      "id": 45,
+      "question": "What is a major environmental consequence of overgrazing in arid regions of the Middle East?",
+      "options": [
+        "Increased biodiversity",
+        "Desertification",
+        "Improved soil fertility",
+        "Increased rainfall"
+      ],
+      "answer": 1,
+      "explanation": "Overgrazing can lead to the degradation of vegetation cover, resulting in desertification.",
+      "hint": "Think about what happens when too many animals graze in the same area."
+    },
+    {
+      "id": 46,
+      "question": "What is a 'muezzin'?",
+      "options": [
+        "A type of Middle Eastern spice",
+        "The person who calls Muslims to prayer from the minaret",
+        "A traditional Middle Eastern garment",
+        "A type of Arabic poetry"
+      ],
+      "answer": 1,
+      "explanation": "The muezzin's call to prayer is a distinctive sound in many Muslim communities.",
+      "hint": "Think about the sounds you might hear from a mosque."
+    },
+    {
+      "id": 47,
+      "question": "What is a key factor influencing the location of cities in the Middle East?",
+      "options": [
+        "Proximity to glaciers",
+        "Access to freshwater sources",
+        "High altitudes",
+        "Dense forests"
+      ],
+      "answer": 1,
+      "explanation": "Cities have historically developed near reliable sources of water, such as rivers and oases.",
+      "hint": "Think about what is essential for a settlement to thrive in a desert environment."
+    },
+    {
+      "id": 48,
+      "question": "What is a 'caravan'?",
+      "options": [
+        "A type of Middle Eastern boat",
+        "A group of travelers journeying together, often across a desert",
+        "A traditional Middle Eastern musical instrument",
+        "A type of desert animal"
+      ],
+      "answer": 1,
+      "explanation": "Caravans were essential for trade and transportation across the deserts of the Middle East.",
+      "hint": "Think about how goods were transported across the desert before modern vehicles."
+    },
+    {
+      "id": 49,
+      "question": "What is a major challenge to sustainable tourism in the Middle East?",
+      "options": [
+        "Lack of historical sites",
+        "Environmental degradation and cultural preservation",
+        "Abundant water resources",
+        "Political stability"
+      ],
+      "answer": 1,
+      "explanation": "Tourism can put a strain on resources and threaten cultural heritage if not managed sustainably.",
+      "hint": "Think about the potential negative impacts of large numbers of tourists."
+    },
+    {
+      "id": 50,
+      "question": "What is a 'sheikh'?",
+      "options": [
+        "A type of Middle Eastern food",
+        "A leader or ruler, often in Arab societies",
+        "A traditional Middle Eastern dance",
+        "A type of desert plant"
+      ],
+      "answer": 1,
+      "explanation": "Sheikhs often hold positions of authority and influence in traditional Arab societies.",
+      "hint": "Think about the leadership structures in countries like Saudi Arabia and the UAE."
+    }
+  ]
+}

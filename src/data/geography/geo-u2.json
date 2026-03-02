@@ -1,0 +1,671 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 2: Using Earth's Resources",
+  "unitId": "geo-u2",
+  "topics": [
+    "Earth's natural resources",
+    "Water part 1 - Do we have enough?",
+    "Water part 2 - Emptying the Ogallala",
+    "Water part 3 - Tackling water stress",
+    "Food part 1 - Feeding the UK",
+    "Food part 2 - Food insecurity, a global issue",
+    "Food part 3 - Tackling food insecurity",
+    "Energy part 1 - Goodbye to the fossil fuels?",
+    "Energy part 2 - Renewables in the UK",
+    "Energy part 3 - Is solar power the solution?",
+    "Why must we change our ways?"
+  ],
+  "generatedAt": "2026-03-02T11:54:07Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is an example of a renewable resource?",
+      "options": [
+        "Coal",
+        "Oil",
+        "Solar energy",
+        "Natural gas"
+      ],
+      "answer": 2,
+      "explanation": "Solar energy is constantly replenished by the sun, making it a renewable resource.",
+      "hint": "Think about resources that won't run out."
+    },
+    {
+      "id": 2,
+      "question": "What is 'water stress'?",
+      "options": [
+        "Too much rainfall causing floods",
+        "A situation where water demand exceeds the available supply",
+        "Water being polluted by chemicals",
+        "Water being used for recreational activities"
+      ],
+      "answer": 1,
+      "explanation": "Water stress occurs when there isn't enough water to meet the needs of people and the environment.",
+      "hint": "Consider what happens when there isn't enough water for everyone."
+    },
+    {
+      "id": 3,
+      "question": "The Ogallala Aquifer is being depleted primarily due to…",
+      "options": [
+        "Increased rainfall",
+        "Sustainable farming practices",
+        "Over-pumping for irrigation",
+        "Natural recharge"
+      ],
+      "answer": 2,
+      "explanation": "Farmers are pumping water from the Ogallala Aquifer faster than it can be replenished, leading to its depletion.",
+      "hint": "Think about how water is used in agriculture in dry areas."
+    },
+    {
+      "id": 4,
+      "question": "What is food insecurity?",
+      "options": [
+        "Having a variety of food choices",
+        "Having reliable access to a sufficient quantity of affordable, nutritious food",
+        "Eating only processed foods",
+        "Growing your own food"
+      ],
+      "answer": 1,
+      "explanation": "Food insecurity means lacking consistent access to enough food for an active, healthy life.",
+      "hint": "Consider what it means to not know where your next meal is coming from."
+    },
+    {
+      "id": 5,
+      "question": "Which of these is a fossil fuel?",
+      "options": [
+        "Wind",
+        "Hydroelectric",
+        "Coal",
+        "Geothermal"
+      ],
+      "answer": 2,
+      "explanation": "Coal is formed from the remains of ancient plants and animals, making it a fossil fuel.",
+      "hint": "Think about fuels formed over millions of years."
+    },
+    {
+      "id": 6,
+      "question": "What is a key advantage of using renewable energy sources?",
+      "options": [
+        "They are always cheap",
+        "They produce large amounts of pollution",
+        "They are sustainable and do not run out",
+        "They are easy to transport"
+      ],
+      "answer": 2,
+      "explanation": "Renewable energy sources, like solar and wind, are naturally replenished and won't be depleted.",
+      "hint": "Think about the long-term impact on the environment."
+    },
+    {
+      "id": 7,
+      "question": "What is a 'carbon footprint'?",
+      "options": [
+        "The amount of water used by a person",
+        "The amount of land a person owns",
+        "The total greenhouse gas emissions caused by an individual or activity",
+        "The amount of food a person eats"
+      ],
+      "answer": 2,
+      "explanation": "A carbon footprint measures the impact our activities have on the climate through greenhouse gas emissions.",
+      "hint": "Consider how our actions contribute to climate change."
+    },
+    {
+      "id": 8,
+      "question": "Which farming practice can help reduce food insecurity?",
+      "options": [
+        "Monoculture",
+        "Intensive pesticide use",
+        "Crop rotation",
+        "Deforestation for farmland"
+      ],
+      "answer": 2,
+      "explanation": "Crop rotation improves soil health and reduces the need for fertilizers, leading to more sustainable food production.",
+      "hint": "Think about farming methods that improve the land."
+    },
+    {
+      "id": 9,
+      "question": "What is desalination?",
+      "options": [
+        "The process of cleaning polluted water",
+        "The process of removing salt from seawater to make it drinkable",
+        "The process of collecting rainwater",
+        "The process of irrigating crops"
+      ],
+      "answer": 1,
+      "explanation": "Desalination removes salt and minerals from seawater, providing a source of freshwater.",
+      "hint": "Think about how to get freshwater from the ocean."
+    },
+    {
+      "id": 10,
+      "question": "Why is the UK reliant on importing food?",
+      "options": [
+        "The UK has a very long growing season",
+        "The UK has limited land suitable for growing certain crops",
+        "The UK population prefers imported food",
+        "The UK has a surplus of agricultural land"
+      ],
+      "answer": 1,
+      "explanation": "The UK's climate and limited land area restrict the types of food it can produce efficiently.",
+      "hint": "Consider the UK's climate and geography."
+    },
+    {
+      "id": 11,
+      "question": "What is a major disadvantage of using fossil fuels?",
+      "options": [
+        "They are renewable",
+        "They are inexpensive",
+        "They contribute to climate change",
+        "They are readily available everywhere"
+      ],
+      "answer": 2,
+      "explanation": "Burning fossil fuels releases greenhouse gases, contributing to global warming and climate change.",
+      "hint": "Think about the environmental impact of burning coal, oil, and gas."
+    },
+    {
+      "id": 12,
+      "question": "What is 'greywater'?",
+      "options": [
+        "Highly polluted industrial wastewater",
+        "Rainwater collected from roofs",
+        "Slightly dirty water from sinks, showers, and washing machines",
+        "Water from rivers and lakes"
+      ],
+      "answer": 2,
+      "explanation": "Greywater is wastewater from domestic activities that can be reused for non-potable purposes.",
+      "hint": "Think about water you use at home that isn't toilet water."
+    },
+    {
+      "id": 13,
+      "question": "What is a potential solution to food insecurity in developing countries?",
+      "options": [
+        "Increasing meat consumption",
+        "Promoting monoculture farming",
+        "Investing in agricultural research and technology",
+        "Relying on food aid"
+      ],
+      "answer": 2,
+      "explanation": "Investing in research and technology can improve crop yields and resilience to climate change.",
+      "hint": "Think about long-term solutions, not just temporary fixes."
+    },
+    {
+      "id": 14,
+      "question": "Which renewable energy source relies on the sun's heat?",
+      "options": [
+        "Wind power",
+        "Hydroelectric power",
+        "Solar power",
+        "Geothermal power"
+      ],
+      "answer": 2,
+      "explanation": "Solar power directly converts sunlight into electricity or heat.",
+      "hint": "Think about the source of energy for this type of power."
+    },
+    {
+      "id": 15,
+      "question": "What is the main purpose of water conservation?",
+      "options": [
+        "To increase water bills",
+        "To waste less water and protect this valuable resource",
+        "To encourage more industrial use of water",
+        "To pollute water sources"
+      ],
+      "answer": 1,
+      "explanation": "Water conservation aims to reduce water usage and protect this essential resource for future generations.",
+      "hint": "Think about why it's important to save water."
+    },
+    {
+      "id": 16,
+      "question": "What is a potential drawback of large-scale hydroelectric power?",
+      "options": [
+        "It produces greenhouse gases",
+        "It can disrupt river ecosystems",
+        "It is a non-renewable resource",
+        "It is very expensive to operate"
+      ],
+      "answer": 1,
+      "explanation": "Large dams can alter river flows, impacting fish migration and other aquatic life.",
+      "hint": "Think about the impact of dams on the natural environment."
+    },
+    {
+      "id": 17,
+      "question": "What does 'sustainable agriculture' mean?",
+      "options": [
+        "Farming that focuses solely on maximizing profits",
+        "Farming practices that meet current food needs without compromising future generations",
+        "Farming that relies heavily on pesticides and fertilizers",
+        "Farming that only grows one type of crop"
+      ],
+      "answer": 1,
+      "explanation": "Sustainable agriculture aims to produce food in a way that protects the environment and ensures long-term food security.",
+      "hint": "Think about farming that can continue for a long time."
+    },
+    {
+      "id": 18,
+      "question": "What is a 'food mile'?",
+      "options": [
+        "The distance a farmer walks to market",
+        "The distance food travels from where it's grown to where it's consumed",
+        "The amount of food a person eats in a day",
+        "The distance between two farms"
+      ],
+      "answer": 1,
+      "explanation": "Food miles measure the environmental impact of transporting food over long distances.",
+      "hint": "Consider the journey your food takes to reach your plate."
+    },
+    {
+      "id": 19,
+      "question": "What is a benefit of using wind energy?",
+      "options": [
+        "It produces a lot of pollution",
+        "It is available everywhere",
+        "It is a clean and renewable energy source",
+        "It is very cheap to build wind farms"
+      ],
+      "answer": 2,
+      "explanation": "Wind energy harnesses the power of the wind to generate electricity without producing harmful emissions.",
+      "hint": "Think about the environmental benefits of wind power."
+    },
+    {
+      "id": 20,
+      "question": "What is the role of irrigation?",
+      "options": [
+        "To flood farmland",
+        "To supply water to crops",
+        "To remove water from farmland",
+        "To pollute water sources"
+      ],
+      "answer": 1,
+      "explanation": "Irrigation provides water to crops in areas with insufficient rainfall.",
+      "hint": "Think about how farmers provide water to their crops."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is NOT a way to reduce your water footprint?",
+      "options": [
+        "Taking shorter showers",
+        "Fixing leaky faucets",
+        "Washing your car frequently",
+        "Using water-efficient appliances"
+      ],
+      "answer": 2,
+      "explanation": "Washing your car frequently increases water consumption, rather than reducing it.",
+      "hint": "Think about activities that use a lot of water."
+    },
+    {
+      "id": 22,
+      "question": "What is a 'rain shadow'?",
+      "options": [
+        "An area that receives a lot of rainfall",
+        "A dry area on the leeward side of a mountain range",
+        "A type of cloud formation",
+        "A period of drought"
+      ],
+      "answer": 1,
+      "explanation": "A rain shadow is created when mountains block moisture-laden air, resulting in a dry area on the opposite side.",
+      "hint": "Think about how mountains affect rainfall patterns."
+    },
+    {
+      "id": 23,
+      "question": "What is 'vertical farming'?",
+      "options": [
+        "Farming on steep hillsides",
+        "Growing crops in vertically stacked layers, often indoors",
+        "Farming using only organic methods",
+        "Farming that relies on heavy machinery"
+      ],
+      "answer": 1,
+      "explanation": "Vertical farming maximizes space and resource efficiency by growing crops in stacked layers.",
+      "hint": "Think about farming in a city or a small space."
+    },
+    {
+      "id": 24,
+      "question": "What is a geothermal energy?",
+      "options": [
+        "Energy from the sun",
+        "Energy from the wind",
+        "Energy from the Earth's internal heat",
+        "Energy from flowing water"
+      ],
+      "answer": 2,
+      "explanation": "Geothermal energy utilizes the heat from within the Earth to generate electricity or provide heating.",
+      "hint": "Think about where the heat comes from in this type of energy."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of a 'water table'?",
+      "options": [
+        "To store rainwater",
+        "The upper surface of groundwater",
+        "To prevent flooding",
+        "To filter pollutants from water"
+      ],
+      "answer": 1,
+      "explanation": "The water table represents the boundary between the saturated zone (where groundwater fills spaces) and the unsaturated zone.",
+      "hint": "Think about where underground water is stored."
+    },
+    {
+      "id": 26,
+      "question": "What is a potential consequence of deforestation?",
+      "options": [
+        "Increased biodiversity",
+        "Improved soil quality",
+        "Increased risk of flooding and soil erosion",
+        "Decreased carbon dioxide levels"
+      ],
+      "answer": 2,
+      "explanation": "Deforestation removes trees that help anchor soil and absorb water, leading to increased erosion and flood risk.",
+      "hint": "Think about the role of trees in the environment."
+    },
+    {
+      "id": 27,
+      "question": "What is 'peak oil'?",
+      "options": [
+        "The point when oil prices are at their lowest",
+        "The point when oil production reaches its maximum rate and then begins to decline",
+        "The discovery of a new oil reserve",
+        "The point when oil becomes too expensive to extract"
+      ],
+      "answer": 1,
+      "explanation": "Peak oil refers to the point in time when the maximum rate of global petroleum extraction is reached, after which the rate of production enters terminal decline.",
+      "hint": "Think about the limited supply of oil."
+    },
+    {
+      "id": 28,
+      "question": "What is a 'drought'?",
+      "options": [
+        "A period of heavy rainfall",
+        "A long period of abnormally low rainfall",
+        "A sudden flood",
+        "A period of mild weather"
+      ],
+      "answer": 1,
+      "explanation": "A drought is a prolonged period of below-average precipitation, leading to water shortages.",
+      "hint": "Think about what happens when it doesn't rain for a long time."
+    },
+    {
+      "id": 29,
+      "question": "What is the main benefit of using biofuels?",
+      "options": [
+        "They are always cheaper than fossil fuels",
+        "They are non-renewable",
+        "They can reduce reliance on fossil fuels",
+        "They produce a lot of pollution"
+      ],
+      "answer": 2,
+      "explanation": "Biofuels are derived from renewable organic matter, offering a potential alternative to fossil fuels.",
+      "hint": "Think about fuels made from plants."
+    },
+    {
+      "id": 30,
+      "question": "What is 'food waste'?",
+      "options": [
+        "Food that is intentionally spoiled",
+        "Food that is lost or discarded throughout the food supply chain",
+        "Food that is eaten by animals",
+        "Food that is grown organically"
+      ],
+      "answer": 1,
+      "explanation": "Food waste includes food that is thrown away by consumers, retailers, and during production and transportation.",
+      "hint": "Think about food that ends up in the trash."
+    },
+    {
+      "id": 31,
+      "question": "What is a 'reservoir'?",
+      "options": [
+        "A natural spring",
+        "An artificial lake used for storing water",
+        "A type of river",
+        "A groundwater source"
+      ],
+      "answer": 1,
+      "explanation": "A reservoir is created by building a dam across a river or stream to store water.",
+      "hint": "Think about where water is stored for later use."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of 'terracing' in agriculture?",
+      "options": [
+        "To increase the speed of water runoff",
+        "To create flat areas for farming on steep slopes",
+        "To encourage soil erosion",
+        "To reduce sunlight exposure"
+      ],
+      "answer": 1,
+      "explanation": "Terracing creates level platforms on hillsides to prevent soil erosion and allow for farming.",
+      "hint": "Think about farming on hillsides."
+    },
+    {
+      "id": 33,
+      "question": "What is 'biomass' energy?",
+      "options": [
+        "Energy from the sun",
+        "Energy from the wind",
+        "Energy from burning organic matter",
+        "Energy from nuclear reactions"
+      ],
+      "answer": 2,
+      "explanation": "Biomass energy is derived from burning organic materials like wood, crops, and waste.",
+      "hint": "Think about energy from living or recently living things."
+    },
+    {
+      "id": 34,
+      "question": "What is a 'catchment area'?",
+      "options": [
+        "An area where fish are caught",
+        "The area of land where rainfall collects and drains into a river or lake",
+        "A protected wildlife area",
+        "A farming region"
+      ],
+      "answer": 1,
+      "explanation": "A catchment area is the land area that contributes water to a river or lake.",
+      "hint": "Think about where water comes from to fill a river."
+    },
+    {
+      "id": 35,
+      "question": "What is 'organic farming'?",
+      "options": [
+        "Farming that uses synthetic pesticides and fertilizers",
+        "Farming that relies on natural processes and avoids synthetic chemicals",
+        "Farming that focuses on maximizing yields",
+        "Farming that uses genetically modified crops"
+      ],
+      "answer": 1,
+      "explanation": "Organic farming emphasizes natural methods and avoids the use of synthetic chemicals.",
+      "hint": "Think about farming that is environmentally friendly."
+    },
+    {
+      "id": 36,
+      "question": "What is a 'carbon sink'?",
+      "options": [
+        "A place where carbon dioxide is released into the atmosphere",
+        "A natural reservoir that absorbs more carbon than it releases",
+        "A type of fossil fuel",
+        "A source of pollution"
+      ],
+      "answer": 1,
+      "explanation": "Carbon sinks, like forests and oceans, absorb more carbon dioxide from the atmosphere than they release.",
+      "hint": "Think about places that help remove carbon dioxide from the air."
+    },
+    {
+      "id": 37,
+      "question": "What is 'aquaculture'?",
+      "options": [
+        "Farming on dry land",
+        "The cultivation of aquatic organisms",
+        "The study of rivers and lakes",
+        "The process of purifying water"
+      ],
+      "answer": 1,
+      "explanation": "Aquaculture is the farming of aquatic animals and plants, such as fish, shellfish, and seaweed.",
+      "hint": "Think about farming in water."
+    },
+    {
+      "id": 38,
+      "question": "What is a 'hydro dam' used for?",
+      "options": [
+        "To store oil",
+        "To generate electricity from flowing water",
+        "To prevent earthquakes",
+        "To control air pollution"
+      ],
+      "answer": 1,
+      "explanation": "Hydro dams use the power of flowing water to turn turbines and generate electricity.",
+      "hint": "Think about how water can be used to create energy."
+    },
+    {
+      "id": 39,
+      "question": "What is 'permaculture'?",
+      "options": [
+        "A type of intensive agriculture",
+        "A system of agricultural and social design principles centered around simulated or directly utilizing the patterns and features observed in natural ecosystems",
+        "A method of growing crops in greenhouses",
+        "A type of irrigation system"
+      ],
+      "answer": 1,
+      "explanation": "Permaculture aims to create sustainable human settlements and agricultural systems modeled on natural ecosystems.",
+      "hint": "Think about farming that works with nature."
+    },
+    {
+      "id": 40,
+      "question": "What is the main environmental concern with plastic packaging?",
+      "options": [
+        "It is biodegradable",
+        "It is easily recycled",
+        "It contributes to pollution and takes a long time to decompose",
+        "It is a renewable resource"
+      ],
+      "answer": 2,
+      "explanation": "Plastic packaging is a major source of pollution and can persist in the environment for hundreds of years.",
+      "hint": "Think about the impact of plastic on the environment."
+    },
+    {
+      "id": 41,
+      "question": "What is a 'groundwater'?",
+      "options": [
+        "Water found on the surface of the Earth",
+        "Water stored underground in permeable rock",
+        "Water found in rivers and lakes",
+        "Water in the atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "Groundwater is water held underground in the soil and in pores and crevices in rock.",
+      "hint": "Think about water that is hidden beneath the surface."
+    },
+    {
+      "id": 42,
+      "question": "What is 'food processing'?",
+      "options": [
+        "Growing food in a field",
+        "Transforming raw agricultural products into food",
+        "Selling food at a market",
+        "Eating food"
+      ],
+      "answer": 1,
+      "explanation": "Food processing involves transforming raw agricultural products into edible food items.",
+      "hint": "Think about what happens to food before it reaches your plate."
+    },
+    {
+      "id": 43,
+      "question": "What is a 'tidal barrage'?",
+      "options": [
+        "A type of dam built to prevent flooding",
+        "A dam built across a tidal estuary to generate electricity",
+        "A system for collecting rainwater",
+        "A type of irrigation system"
+      ],
+      "answer": 1,
+      "explanation": "A tidal barrage harnesses the energy of tides to generate electricity.",
+      "hint": "Think about energy from the ocean's tides."
+    },
+    {
+      "id": 44,
+      "question": "What is 'salinization'?",
+      "options": [
+        "The process of cleaning salt water",
+        "The buildup of salt in the soil",
+        "The removal of salt from the soil",
+        "The process of irrigating crops"
+      ],
+      "answer": 1,
+      "explanation": "Salinization occurs when salt accumulates in the soil, making it difficult for plants to grow.",
+      "hint": "Think about what happens when too much salt gets into the soil."
+    },
+    {
+      "id": 45,
+      "question": "What is 'composting'?",
+      "options": [
+        "Burning organic waste",
+        "Recycling plastic",
+        "Decomposing organic matter to create fertilizer",
+        "Using chemical fertilizers"
+      ],
+      "answer": 2,
+      "explanation": "Composting is a natural process that breaks down organic matter into a nutrient-rich soil amendment.",
+      "hint": "Think about turning food scraps into something useful for the garden."
+    },
+    {
+      "id": 46,
+      "question": "What is a 'wind turbine'?",
+      "options": [
+        "A device for pumping water",
+        "A device for generating electricity from wind",
+        "A type of solar panel",
+        "A device for measuring wind speed"
+      ],
+      "answer": 1,
+      "explanation": "A wind turbine converts the kinetic energy of wind into electricity.",
+      "hint": "Think about how wind can be used to create power."
+    },
+    {
+      "id": 47,
+      "question": "What is 'desertification'?",
+      "options": [
+        "The process of creating deserts",
+        "The process by which fertile land becomes desert",
+        "The process of irrigating deserts",
+        "The process of planting trees in deserts"
+      ],
+      "answer": 1,
+      "explanation": "Desertification is the process by which fertile land turns into desert, typically as a result of drought, deforestation, or overgrazing.",
+      "hint": "Think about land becoming drier and less productive."
+    },
+    {
+      "id": 48,
+      "question": "What is 'grey infrastructure'?",
+      "options": [
+        "Natural systems like forests and wetlands",
+        "Man-made structures like dams and roads",
+        "Sustainable farming practices",
+        "Renewable energy sources"
+      ],
+      "answer": 1,
+      "explanation": "Grey infrastructure refers to traditional, man-made structures used for managing resources.",
+      "hint": "Think about structures built by humans."
+    },
+    {
+      "id": 49,
+      "question": "What is 'food labeling' important for?",
+      "options": [
+        "Making food look more appealing",
+        "Providing information about the nutritional content and origin of food",
+        "Reducing the cost of food",
+        "Increasing food waste"
+      ],
+      "answer": 1,
+      "explanation": "Food labeling provides consumers with important information about the food they are buying.",
+      "hint": "Think about what information you find on a food package."
+    },
+    {
+      "id": 50,
+      "question": "What is 'peak water'?",
+      "options": [
+        "The highest level of a reservoir",
+        "The point when water demand consistently exceeds supply",
+        "A period of heavy rainfall",
+        "The lowest level of a river"
+      ],
+      "answer": 1,
+      "explanation": "Peak water is the point when the maximum rate of water extraction is reached, after which the rate of extraction enters terminal decline.",
+      "hint": "Think about the limited availability of freshwater."
+    }
+  ]
+}

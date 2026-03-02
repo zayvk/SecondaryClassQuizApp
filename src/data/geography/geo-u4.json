@@ -1,0 +1,670 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 4: International Development",
+  "unitId": "geo-u4",
+  "topics": [
+    "An unequal world",
+    "So what is development?",
+    "How is development measured?",
+    "How is Malawi doing?",
+    "How did the development gap grow? - part 1",
+    "How did the development gap grow? - part 2",
+    "Globalisation, development, and TNCs",
+    "Covid-19 and vaccine inequality",
+    "Escaping from poverty",
+    "Can we put an end to poverty?"
+  ],
+  "generatedAt": "2026-03-02T13:13:01Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following BEST describes the 'development gap'?",
+      "options": [
+        "The physical distance between rich and poor countries",
+        "The difference in wealth and living standards between countries",
+        "The amount of aid given from rich to poor countries",
+        "The number of people living in poverty globally"
+      ],
+      "answer": 1,
+      "explanation": "The development gap refers to the significant differences in wealth, income, and quality of life between developed and developing countries.",
+      "hint": "Think about what 'development' means in a broad sense."
+    },
+    {
+      "id": 2,
+      "question": "What is a key characteristic of a country with high human development?",
+      "options": [
+        "Low life expectancy and limited access to education",
+        "High levels of industrialisation and pollution",
+        "High life expectancy, access to education, and a good standard of living",
+        "A large agricultural sector and low GDP"
+      ],
+      "answer": 2,
+      "explanation": "High human development is indicated by factors like long life expectancy, good health, education, and a decent standard of living.",
+      "hint": "Consider what makes a good quality of life."
+    },
+    {
+      "id": 3,
+      "question": "GDP per capita is a measure of…",
+      "options": [
+        "Total wealth of a country",
+        "Average income of a country’s citizens",
+        "Total value of goods and services produced in a country",
+        "The value of a country’s exports"
+      ],
+      "answer": 1,
+      "explanation": "GDP per capita divides a country's GDP by its population, giving an average income per person.",
+      "hint": "Think about what 'per capita' means."
+    },
+    {
+      "id": 4,
+      "question": "Which of these is a social indicator of development?",
+      "options": [
+        "Gross National Income",
+        "Literacy rate",
+        "Exports of manufactured goods",
+        "Foreign Direct Investment"
+      ],
+      "answer": 1,
+      "explanation": "Literacy rate reflects access to education and is a key indicator of social progress and development.",
+      "hint": "Social indicators relate to people's well-being."
+    },
+    {
+      "id": 5,
+      "question": "Malawi faces challenges in development. Which of these is a significant issue for Malawi?",
+      "options": [
+        "High levels of technological innovation",
+        "A diversified economy with strong manufacturing",
+        "Dependence on agriculture and vulnerability to climate change",
+        "A highly skilled workforce and low unemployment"
+      ],
+      "answer": 2,
+      "explanation": "Malawi's economy heavily relies on agriculture, making it susceptible to droughts, floods, and fluctuating commodity prices.",
+      "hint": "Recall what we learned about Malawi's economic structure."
+    },
+    {
+      "id": 6,
+      "question": "Colonialism contributed to the development gap by…",
+      "options": [
+        "Investing heavily in education and infrastructure in colonies",
+        "Promoting fair trade practices with colonies",
+        "Extracting resources and exploiting labour in colonies",
+        "Encouraging industrialisation in colonies"
+      ],
+      "answer": 2,
+      "explanation": "Colonial powers often exploited colonies for resources and labour, hindering their long-term development.",
+      "hint": "Think about the historical relationship between colonisers and colonies."
+    },
+    {
+      "id": 7,
+      "question": "The transatlantic slave trade had a lasting negative impact on…",
+      "options": [
+        "Europe's economic growth",
+        "North America's industrial development",
+        "The development of many African countries",
+        "Australia's agricultural sector"
+      ],
+      "answer": 2,
+      "explanation": "The slave trade resulted in a massive loss of population and disrupted social and economic structures in Africa.",
+      "hint": "Consider the long-term consequences of losing a large portion of your population."
+    },
+    {
+      "id": 8,
+      "question": "What is globalisation?",
+      "options": [
+        "The process of countries becoming more isolated",
+        "The increasing interconnectedness of countries through trade, communication, and culture",
+        "The decline of international trade",
+        "The strengthening of national borders"
+      ],
+      "answer": 1,
+      "explanation": "Globalisation refers to the growing interdependence of the world's economies, cultures, and populations.",
+      "hint": "Think about how easily we can connect with people and places around the world today."
+    },
+    {
+      "id": 9,
+      "question": "Transnational Corporations (TNCs) can contribute to development by…",
+      "options": [
+        "Always paying fair wages and providing good working conditions",
+        "Creating jobs and bringing investment to developing countries",
+        "Only benefiting the home country of the TNC",
+        "Avoiding paying taxes in developing countries"
+      ],
+      "answer": 1,
+      "explanation": "TNCs can bring foreign investment, create employment opportunities, and transfer technology to developing countries.",
+      "hint": "Consider the potential benefits of large companies investing in poorer countries."
+    },
+    {
+      "id": 10,
+      "question": "A potential negative impact of TNCs on developing countries is…",
+      "options": [
+        "Increased tax revenue for the host country",
+        "Improved environmental regulations",
+        "Exploitation of workers and resources",
+        "Fair trade practices"
+      ],
+      "answer": 2,
+      "explanation": "TNCs may exploit workers, deplete natural resources, and avoid paying fair taxes in developing countries.",
+      "hint": "Think about the potential downsides of a powerful company operating in a less regulated environment."
+    },
+    {
+      "id": 11,
+      "question": "How did the COVID-19 pandemic highlight vaccine inequality?",
+      "options": [
+        "Vaccines were distributed equally across all countries",
+        "Rich countries secured the majority of vaccine doses, leaving poorer countries with limited access",
+        "Developing countries were able to produce their own vaccines quickly",
+        "The pandemic had no impact on global health inequalities"
+      ],
+      "answer": 1,
+      "explanation": "Wealthy nations pre-purchased most of the available vaccine doses, leaving many developing countries struggling to access them.",
+      "hint": "Think about which countries had the resources to buy vaccines first."
+    },
+    {
+      "id": 12,
+      "question": "Microfinance schemes aim to…",
+      "options": [
+        "Provide large loans to TNCs",
+        "Offer small loans to individuals and small businesses",
+        "Fund large-scale infrastructure projects",
+        "Provide grants to governments"
+      ],
+      "answer": 1,
+      "explanation": "Microfinance provides small loans to individuals, particularly in developing countries, to help them start or expand businesses.",
+      "hint": "The 'micro' part of the name is a clue!"
+    },
+    {
+      "id": 13,
+      "question": "Fair Trade aims to…",
+      "options": [
+        "Lower prices for consumers",
+        "Ensure producers receive a fair price for their goods",
+        "Increase the profits of large corporations",
+        "Promote free trade without any regulations"
+      ],
+      "answer": 1,
+      "explanation": "Fair Trade ensures that producers in developing countries receive a fair price for their products, improving their livelihoods.",
+      "hint": "Think about what 'fair' means in the context of trade."
+    },
+    {
+      "id": 14,
+      "question": "What is 'bottom-up' development?",
+      "options": [
+        "Development planned and controlled by international organisations",
+        "Development initiated and led by local communities",
+        "Development imposed by wealthy countries",
+        "Development focused solely on economic growth"
+      ],
+      "answer": 1,
+      "explanation": "'Bottom-up' development empowers local communities to identify their own needs and implement solutions.",
+      "hint": "Think about where the initiative starts in this approach."
+    },
+    {
+      "id": 15,
+      "question": "Debt relief can help developing countries by…",
+      "options": [
+        "Increasing their debt burden",
+        "Freeing up funds for investment in essential services",
+        "Making it easier to borrow more money",
+        "Reducing their economic growth"
+      ],
+      "answer": 1,
+      "explanation": "Debt relief reduces the amount of money a country owes, allowing it to invest in healthcare, education, and infrastructure.",
+      "hint": "Consider what a country could do with money it doesn't have to pay back."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is an example of conditional aid?",
+      "options": [
+        "Aid given with no strings attached",
+        "Aid given to support a specific project chosen by the recipient country",
+        "Aid given with requirements for the recipient country to implement certain policies",
+        "Aid given anonymously"
+      ],
+      "answer": 2,
+      "explanation": "Conditional aid requires recipient countries to meet certain conditions, such as adopting specific economic policies.",
+      "hint": "The word 'conditional' is a key clue."
+    },
+    {
+      "id": 17,
+      "question": "What role does education play in escaping poverty?",
+      "options": [
+        "It has no impact on earning potential",
+        "It limits opportunities for employment",
+        "It increases skills and earning potential",
+        "It is only important for wealthy families"
+      ],
+      "answer": 2,
+      "explanation": "Education equips individuals with the skills and knowledge needed to secure better jobs and improve their economic prospects.",
+      "hint": "Think about how education can open doors to new opportunities."
+    },
+    {
+      "id": 18,
+      "question": "Access to healthcare is crucial for development because…",
+      "options": [
+        "It increases the spread of disease",
+        "It reduces productivity and economic growth",
+        "It improves health, increases productivity, and reduces poverty",
+        "It is only important for the wealthy"
+      ],
+      "answer": 2,
+      "explanation": "Healthy populations are more productive and contribute more to economic growth, reducing poverty and improving overall development.",
+      "hint": "Consider how health impacts a person's ability to work and learn."
+    },
+    {
+      "id": 19,
+      "question": "What is a major challenge to ending global poverty?",
+      "options": [
+        "Lack of resources in developing countries",
+        "Unequal distribution of wealth and power",
+        "Political instability and conflict",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "A combination of factors, including resource scarcity, inequality, and conflict, makes ending global poverty a complex challenge.",
+      "hint": "Think about the many interconnected issues that contribute to poverty."
+    },
+    {
+      "id": 20,
+      "question": "Sustainable Development Goals (SDGs) are…",
+      "options": [
+        "A set of targets set by individual countries",
+        "A collection of 17 global goals designed to achieve a better and more sustainable future",
+        "A plan to increase economic growth at any cost",
+        "A set of rules for international trade"
+      ],
+      "answer": 1,
+      "explanation": "The SDGs are a universal call to action to address global challenges such as poverty, inequality, and climate change.",
+      "hint": "Think about what 'sustainable' means in the context of development."
+    },
+    {
+      "id": 21,
+      "question": "What does 'food security' mean?",
+      "options": [
+        "Having enough food to sell for profit",
+        "Having consistent access to sufficient, safe, and nutritious food",
+        "Importing food from other countries",
+        "Relying on food aid"
+      ],
+      "answer": 1,
+      "explanation": "Food security means that all people at all times have access to enough safe and nutritious food to maintain a healthy and active life.",
+      "hint": "Think about what people need to survive and thrive."
+    },
+    {
+      "id": 22,
+      "question": "What is the Demographic Transition Model used for?",
+      "options": [
+        "Predicting weather patterns",
+        "Analyzing economic growth",
+        "Understanding population change over time",
+        "Mapping geographical features"
+      ],
+      "answer": 2,
+      "explanation": "The Demographic Transition Model shows how birth and death rates change over time as countries develop.",
+      "hint": "The word 'demographic' relates to population."
+    },
+    {
+      "id": 23,
+      "question": "What is a 'brain drain'?",
+      "options": [
+        "Increased investment in education",
+        "The emigration of highly trained or intelligent people from a country",
+        "A decline in agricultural production",
+        "A surplus of skilled workers"
+      ],
+      "answer": 1,
+      "explanation": "Brain drain refers to the emigration of skilled workers, which can hinder development in their home country.",
+      "hint": "Think about what happens when a country loses its most talented people."
+    },
+    {
+      "id": 24,
+      "question": "What is the role of remittances in development?",
+      "options": [
+        "They decrease the income of families in developing countries",
+        "They are taxes paid to the government",
+        "They are money sent home by migrants working abroad",
+        "They are loans from international banks"
+      ],
+      "answer": 2,
+      "explanation": "Remittances provide a significant source of income for families in developing countries, contributing to economic development.",
+      "hint": "Think about where migrants send their earnings."
+    },
+    {
+      "id": 25,
+      "question": "What is a 'multiplier effect' in economics?",
+      "options": [
+        "A decrease in economic activity",
+        "An increase in economic activity due to initial investment",
+        "A stable economic situation",
+        "A decline in population growth"
+      ],
+      "answer": 1,
+      "explanation": "The multiplier effect describes how an initial investment can lead to a larger increase in overall economic activity.",
+      "hint": "Think about how money can circulate and create more money."
+    },
+    {
+      "id": 26,
+      "question": "What is the main purpose of foreign aid?",
+      "options": [
+        "To increase the donor country's political influence",
+        "To provide financial assistance to developing countries",
+        "To promote trade between countries",
+        "To exploit resources in developing countries"
+      ],
+      "answer": 1,
+      "explanation": "Foreign aid is intended to provide financial and technical assistance to developing countries to support their development efforts.",
+      "hint": "Think about the stated goals of countries giving aid."
+    },
+    {
+      "id": 27,
+      "question": "What is a 'push factor' in migration?",
+      "options": [
+        "Better job opportunities in a new country",
+        "Political freedom in a new country",
+        "Poverty and lack of opportunities in a home country",
+        "A desire for a better climate"
+      ],
+      "answer": 2,
+      "explanation": "Push factors are the negative aspects of a home country that encourage people to migrate.",
+      "hint": "Think about what would make someone *want* to leave their home."
+    },
+    {
+      "id": 28,
+      "question": "What is a 'pull factor' in migration?",
+      "options": [
+        "War and conflict in a home country",
+        "Lack of education in a home country",
+        "Job opportunities and a better quality of life in a new country",
+        "High taxes in a new country"
+      ],
+      "answer": 2,
+      "explanation": "Pull factors are the positive aspects of a new country that attract migrants.",
+      "hint": "Think about what would make someone *want* to move to a new place."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between GDP and GNI?",
+      "options": [
+        "GDP includes income earned by citizens abroad, GNI does not",
+        "GNI includes income earned by citizens abroad, GDP does not",
+        "GDP measures social progress, GNI measures economic progress",
+        "GNI is always higher than GDP"
+      ],
+      "answer": 1,
+      "explanation": "GNI (Gross National Income) includes income earned by a country's citizens both domestically and abroad, while GDP (Gross Domestic Product) only includes income earned within the country's borders.",
+      "hint": "Think about where the income is coming from."
+    },
+    {
+      "id": 30,
+      "question": "What is the role of NGOs (Non-Governmental Organizations) in development?",
+      "options": [
+        "They are controlled by governments",
+        "They provide aid and support to communities, often focusing on specific issues",
+        "They are primarily focused on profit-making",
+        "They only operate in developed countries"
+      ],
+      "answer": 1,
+      "explanation": "NGOs work independently of governments to address social, economic, and environmental issues, often providing aid and support to communities in need.",
+      "hint": "Think about organizations that aren't part of the government."
+    },
+    {
+      "id": 31,
+      "question": "What is 'urbanisation'?",
+      "options": [
+        "The growth of agricultural land",
+        "The decline of cities",
+        "The increasing proportion of people living in urban areas",
+        "The spread of deserts"
+      ],
+      "answer": 2,
+      "explanation": "Urbanisation is the process of population shift from rural areas to urban areas, resulting in the growth of cities.",
+      "hint": "Think about where people are moving to."
+    },
+    {
+      "id": 32,
+      "question": "What is a 'slum'?",
+      "options": [
+        "A wealthy residential area",
+        "A planned housing development",
+        "A densely populated urban area with substandard housing",
+        "A rural farming community"
+      ],
+      "answer": 2,
+      "explanation": "Slums are characterized by poor living conditions, overcrowding, and lack of access to basic services.",
+      "hint": "Think about the challenges faced by people living in poverty in cities."
+    },
+    {
+      "id": 33,
+      "question": "What is 'desertification'?",
+      "options": [
+        "The growth of forests",
+        "The process by which fertile land becomes desert",
+        "The melting of glaciers",
+        "The increase in rainfall"
+      ],
+      "answer": 1,
+      "explanation": "Desertification is the degradation of land in arid, semi-arid, and dry sub-humid areas, leading to the loss of vegetation and soil fertility.",
+      "hint": "Think about what happens when land becomes too dry to support life."
+    },
+    {
+      "id": 34,
+      "question": "What is 'deforestation'?",
+      "options": [
+        "The planting of trees",
+        "The clearing of forests for other land uses",
+        "The conservation of forests",
+        "The growth of new forests"
+      ],
+      "answer": 1,
+      "explanation": "Deforestation is the clearing of forests for other land uses, such as agriculture, logging, and urban development.",
+      "hint": "Think about what happens when trees are cut down."
+    },
+    {
+      "id": 35,
+      "question": "What is 'climate change'?",
+      "options": [
+        "Natural variations in weather patterns",
+        "Long-term shifts in temperatures and weather patterns",
+        "Seasonal changes in temperature",
+        "Short-term weather events"
+      ],
+      "answer": 1,
+      "explanation": "Climate change refers to long-term shifts in temperatures and weather patterns, primarily caused by human activities.",
+      "hint": "Think about the Earth's overall temperature."
+    },
+    {
+      "id": 36,
+      "question": "What is 'carbon footprint'?",
+      "options": [
+        "The amount of water used by a person",
+        "The amount of carbon dioxide released into the atmosphere by a person or activity",
+        "The amount of energy consumed by a country",
+        "The size of a person's house"
+      ],
+      "answer": 1,
+      "explanation": "A carbon footprint measures the total greenhouse gas emissions caused by an individual, organization, event, or product.",
+      "hint": "Think about gases that contribute to climate change."
+    },
+    {
+      "id": 37,
+      "question": "What is 'sustainable agriculture'?",
+      "options": [
+        "Farming practices that deplete soil nutrients",
+        "Farming practices that rely heavily on pesticides",
+        "Farming practices that protect the environment and ensure long-term food security",
+        "Farming practices that focus solely on maximizing yields"
+      ],
+      "answer": 2,
+      "explanation": "Sustainable agriculture aims to produce food in a way that protects the environment, conserves resources, and ensures long-term food security.",
+      "hint": "Think about farming that can continue for generations."
+    },
+    {
+      "id": 38,
+      "question": "What is 'renewable energy'?",
+      "options": [
+        "Energy from fossil fuels",
+        "Energy from sources that are replenished naturally",
+        "Energy from nuclear power",
+        "Energy that is expensive and difficult to obtain"
+      ],
+      "answer": 1,
+      "explanation": "Renewable energy comes from sources that are naturally replenished, such as solar, wind, and hydro power.",
+      "hint": "Think about energy sources that won't run out."
+    },
+    {
+      "id": 39,
+      "question": "What is 'ecotourism'?",
+      "options": [
+        "Tourism that damages the environment",
+        "Tourism that focuses on luxury resorts",
+        "Responsible travel to natural areas that conserves the environment and improves the well-being of local people",
+        "Tourism that avoids interacting with local communities"
+      ],
+      "answer": 2,
+      "explanation": "Ecotourism promotes responsible travel to natural areas, aiming to conserve the environment and benefit local communities.",
+      "hint": "Think about tourism that is environmentally friendly."
+    },
+    {
+      "id": 40,
+      "question": "What is 'capacity building'?",
+      "options": [
+        "Destroying infrastructure",
+        "Providing financial aid without any training",
+        "Developing the skills and abilities of individuals and communities",
+        "Imposing external solutions on local problems"
+      ],
+      "answer": 2,
+      "explanation": "Capacity building focuses on empowering individuals and communities by developing their skills and abilities to address their own challenges.",
+      "hint": "Think about helping people help themselves."
+    },
+    {
+      "id": 41,
+      "question": "What is a 'trade bloc'?",
+      "options": [
+        "A group of countries that agree to reduce trade barriers with each other",
+        "A country that restricts all trade with other nations",
+        "A group of countries that compete with each other",
+        "A single country with a large economy"
+      ],
+      "answer": 0,
+      "explanation": "A trade bloc is an agreement between countries to reduce or eliminate trade barriers, fostering economic integration.",
+      "hint": "Think about countries working together on trade."
+    },
+    {
+      "id": 42,
+      "question": "What is 'protectionism'?",
+      "options": [
+        "Encouraging free trade",
+        "Protecting domestic industries through tariffs and quotas",
+        "Promoting international cooperation",
+        "Reducing government intervention in the economy"
+      ],
+      "answer": 1,
+      "explanation": "Protectionism involves implementing policies like tariffs and quotas to protect domestic industries from foreign competition.",
+      "hint": "Think about policies that shield local businesses."
+    },
+    {
+      "id": 43,
+      "question": "What is a 'tariff'?",
+      "options": [
+        "A subsidy for exporters",
+        "A tax on imported goods",
+        "A grant for domestic producers",
+        "A reduction in trade barriers"
+      ],
+      "answer": 1,
+      "explanation": "A tariff is a tax imposed on imported goods, making them more expensive and protecting domestic industries.",
+      "hint": "Think about taxes on goods coming from other countries."
+    },
+    {
+      "id": 44,
+      "question": "What is a 'quota'?",
+      "options": [
+        "A limit on the amount of goods that can be imported",
+        "A subsidy for exporters",
+        "A tax on exported goods",
+        "A free trade agreement"
+      ],
+      "answer": 0,
+      "explanation": "A quota is a limit on the quantity of a specific good that can be imported into a country during a certain period.",
+      "hint": "Think about limiting the amount of something."
+    },
+    {
+      "id": 45,
+      "question": "What is 'micro-credit'?",
+      "options": [
+        "Large loans to corporations",
+        "Small loans to individuals and small businesses",
+        "Loans with high interest rates",
+        "Loans from international banks"
+      ],
+      "answer": 1,
+      "explanation": "Micro-credit provides small loans to individuals and small businesses, particularly in developing countries, to help them start or expand their ventures.",
+      "hint": "Think about small-scale financial assistance."
+    },
+    {
+      "id": 46,
+      "question": "What is 'food miles'?",
+      "options": [
+        "The distance food travels from farm to plate",
+        "The amount of food produced in a country",
+        "The cost of transporting food",
+        "The nutritional value of food"
+      ],
+      "answer": 0,
+      "explanation": "Food miles refer to the distance food travels from where it is produced to where it is consumed, impacting environmental sustainability.",
+      "hint": "Think about how far your food has travelled."
+    },
+    {
+      "id": 47,
+      "question": "What is 'fair trade coffee'?",
+      "options": [
+        "Coffee grown using pesticides",
+        "Coffee sold at the lowest possible price",
+        "Coffee produced by farmers who receive a fair price for their beans",
+        "Coffee imported from large corporations"
+      ],
+      "answer": 2,
+      "explanation": "Fair trade coffee ensures that farmers receive a fair price for their beans, promoting sustainable farming practices and improving their livelihoods.",
+      "hint": "Think about ethical sourcing of coffee."
+    },
+    {
+      "id": 48,
+      "question": "What is 'sustainable consumption'?",
+      "options": [
+        "Buying as many products as possible",
+        "Using resources responsibly to meet current needs without compromising future generations",
+        "Ignoring the environmental impact of our choices",
+        "Focusing solely on economic growth"
+      ],
+      "answer": 1,
+      "explanation": "Sustainable consumption involves using resources responsibly to meet current needs without compromising the ability of future generations to meet their own needs.",
+      "hint": "Think about using resources wisely."
+    },
+    {
+      "id": 49,
+      "question": "What is 'social entrepreneurship'?",
+      "options": [
+        "Starting a business solely for profit",
+        "Using business principles to solve social problems",
+        "Working for a large corporation",
+        "Avoiding any social responsibility"
+      ],
+      "answer": 1,
+      "explanation": "Social entrepreneurship involves using business principles to create solutions to social and environmental problems.",
+      "hint": "Think about businesses with a social mission."
+    },
+    {
+      "id": 50,
+      "question": "What is 'empowerment' in the context of development?",
+      "options": [
+        "Giving people money without any training",
+        "Helping people gain control over their own lives and destinies",
+        "Imposing solutions on communities",
+        "Ignoring the needs of local people"
+      ],
+      "answer": 1,
+      "explanation": "Empowerment involves helping people gain control over their own lives and destinies, enabling them to participate fully in society.",
+      "hint": "Think about giving people the power to make their own choices."
+    }
+  ]
+}

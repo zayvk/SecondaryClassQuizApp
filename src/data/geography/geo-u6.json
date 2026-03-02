@@ -1,0 +1,667 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 6: About Russia",
+  "unitId": "geo-u6",
+  "topics": [
+    "Meet Russia!",
+    "What are Russia's main physical features?",
+    "Russia's climate zones and biomes",
+    "What about the Russian people?",
+    "A tour of European Russia",
+    "Climate change in Yakutia",
+    "What is Russia doing in the Arctic Ocean?"
+  ],
+  "generatedAt": "2026-03-02T13:16:54Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Russia is the largest country in the world by land area. Approximately how much of the Earth’s total land area does it cover?",
+      "options": [
+        "1/5",
+        "1/10",
+        "1/20",
+        "1/30"
+      ],
+      "answer": 0,
+      "explanation": "Russia covers approximately one-fifth of the Earth’s total land area, making it significantly larger than any other country.",
+      "hint": "Think about how many continents Russia spans."
+    },
+    {
+      "id": 2,
+      "question": "Which major mountain range forms a natural border between Europe and Asia in Russia?",
+      "options": [
+        "The Alps",
+        "The Himalayas",
+        "The Ural Mountains",
+        "The Andes"
+      ],
+      "answer": 2,
+      "explanation": "The Ural Mountains run north to south through western Russia and are traditionally considered the dividing line between Europe and Asia.",
+      "hint": "Consider the geographical location of the border between the two continents."
+    },
+    {
+      "id": 3,
+      "question": "What is the longest river entirely within Russia?",
+      "options": [
+        "Volga",
+        "Ob",
+        "Yenisey",
+        "Lena"
+      ],
+      "answer": 0,
+      "explanation": "The Volga River is the longest river in Europe and is entirely within Russia, playing a crucial role in transportation and irrigation.",
+      "hint": "Think about rivers that are central to European Russia."
+    },
+    {
+      "id": 4,
+      "question": "Which climate zone is predominantly found in the southern regions of European Russia?",
+      "options": [
+        "Tundra",
+        "Subarctic",
+        "Temperate",
+        "Desert"
+      ],
+      "answer": 2,
+      "explanation": "Southern European Russia experiences a temperate climate with warm summers and cool winters, suitable for agriculture.",
+      "hint": "Consider the latitude and proximity to the Black Sea."
+    },
+    {
+      "id": 5,
+      "question": "The Taiga biome is characterized by what type of vegetation?",
+      "options": [
+        "Deciduous forests",
+        "Tropical rainforests",
+        "Coniferous forests",
+        "Grasslands"
+      ],
+      "answer": 2,
+      "explanation": "The Taiga, or boreal forest, is dominated by coniferous trees like pine, spruce, and fir, adapted to cold climates.",
+      "hint": "Think about trees that can survive long, cold winters."
+    },
+    {
+      "id": 6,
+      "question": "Approximately what percentage of Russia’s population identifies as Russian?",
+      "options": [
+        "60%",
+        "81%",
+        "92%",
+        "55%"
+      ],
+      "answer": 1,
+      "explanation": "Around 81% of Russia’s population identifies as ethnically Russian, making it the dominant ethnic group.",
+      "hint": "Consider Russia's history and the distribution of ethnic groups."
+    },
+    {
+      "id": 7,
+      "question": "What is a 'dacha' in Russian culture?",
+      "options": [
+        "A traditional Russian hat",
+        "A type of Russian folk dance",
+        "A country house or cottage",
+        "A Russian musical instrument"
+      ],
+      "answer": 2,
+      "explanation": "A dacha is a seasonal or year-round country house, often used as a retreat from city life and for gardening.",
+      "hint": "Think about how Russians spend their leisure time."
+    },
+    {
+      "id": 8,
+      "question": "Moscow, the capital of Russia, is located in which part of the country?",
+      "options": [
+        "Siberia",
+        "Far East",
+        "European Russia",
+        "Central Russia"
+      ],
+      "answer": 2,
+      "explanation": "Moscow is situated in the western part of Russia, within the European Russia region.",
+      "hint": "Consider the location of major European cities."
+    },
+    {
+      "id": 9,
+      "question": "St. Petersburg is known for its canals and architecture. Which empire heavily influenced its design?",
+      "options": [
+        "British",
+        "French",
+        "German",
+        "Dutch"
+      ],
+      "answer": 0,
+      "explanation": "St. Petersburg was founded by Peter the Great and heavily influenced by Western European, particularly British, architectural styles.",
+      "hint": "Think about Peter the Great's efforts to modernize Russia."
+    },
+    {
+      "id": 10,
+      "question": "What is permafrost, and why is it a concern in regions like Yakutia?",
+      "options": [
+        "A type of volcanic rock",
+        "Permanently frozen ground",
+        "A dense forest",
+        "A large lake"
+      ],
+      "answer": 1,
+      "explanation": "Permafrost is ground that remains frozen for at least two consecutive years. Thawing permafrost releases greenhouse gases and destabilizes infrastructure.",
+      "hint": "Think about the impact of rising temperatures in cold regions."
+    },
+    {
+      "id": 11,
+      "question": "What is the Northern Sea Route, and why is Russia interested in developing it?",
+      "options": [
+        "A railway connecting Moscow to Vladivostok",
+        "A shipping route along Russia's Arctic coast",
+        "A pipeline for transporting oil",
+        "A series of military bases"
+      ],
+      "answer": 1,
+      "explanation": "The Northern Sea Route is a shipping lane along Russia’s Arctic coast, offering a shorter route between Europe and Asia, especially as ice melts.",
+      "hint": "Consider the benefits of a shorter shipping route."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a major natural resource found in Siberia?",
+      "options": [
+        "Diamonds",
+        "Coal",
+        "Oil and Natural Gas",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Siberia is rich in natural resources, including diamonds, coal, oil, and natural gas, contributing significantly to Russia’s economy.",
+      "hint": "Think about what resources are needed for industrial development."
+    },
+    {
+      "id": 13,
+      "question": "What is the main language spoken in Russia?",
+      "options": [
+        "Ukrainian",
+        "Belarusian",
+        "Russian",
+        "Kazakh"
+      ],
+      "answer": 2,
+      "explanation": "Russian is the official language of Russia and is spoken by the vast majority of the population.",
+      "hint": "Consider the country's name."
+    },
+    {
+      "id": 14,
+      "question": "What type of government does Russia currently have?",
+      "options": [
+        "Constitutional Monarchy",
+        "Parliamentary Republic",
+        "Federal Semi-Presidential Republic",
+        "Direct Democracy"
+      ],
+      "answer": 2,
+      "explanation": "Russia operates as a Federal Semi-Presidential Republic, where power is shared between the president and the prime minister.",
+      "hint": "Think about the roles of the president and parliament."
+    },
+    {
+      "id": 15,
+      "question": "Lake Baikal is famous for what unique characteristic?",
+      "options": [
+        "Its volcanic origin",
+        "Being the saltiest lake in the world",
+        "Containing approximately 20% of the world’s unfrozen freshwater",
+        "Its pink color"
+      ],
+      "answer": 2,
+      "explanation": "Lake Baikal holds approximately 20% of the world’s unfrozen freshwater, making it the largest freshwater lake by volume.",
+      "hint": "Think about the importance of freshwater resources."
+    },
+    {
+      "id": 16,
+      "question": "What is the significance of the Trans-Siberian Railway?",
+      "options": [
+        "It connects Russia to Europe",
+        "It is the longest railway line in the world",
+        "It primarily transports oil",
+        "It is used for military purposes only"
+      ],
+      "answer": 1,
+      "explanation": "The Trans-Siberian Railway is the longest railway line in the world, connecting Moscow with the Russian Far East.",
+      "hint": "Consider the vast distances within Russia."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following best describes the climate of the Russian Arctic?",
+      "options": [
+        "Warm and humid",
+        "Mild and rainy",
+        "Cold and dry",
+        "Hot and sunny"
+      ],
+      "answer": 2,
+      "explanation": "The Russian Arctic experiences a cold and dry climate with long, harsh winters and short, cool summers.",
+      "hint": "Think about the latitude and proximity to the North Pole."
+    },
+    {
+      "id": 18,
+      "question": "What is a key challenge facing the indigenous peoples of Siberia?",
+      "options": [
+        "Overpopulation",
+        "Lack of access to education",
+        "Loss of traditional culture and livelihoods",
+        "Excessive rainfall"
+      ],
+      "answer": 2,
+      "explanation": "Indigenous peoples in Siberia face challenges related to preserving their traditional cultures and livelihoods due to modernization and climate change.",
+      "hint": "Consider the impact of external forces on traditional communities."
+    },
+    {
+      "id": 19,
+      "question": "What is the main economic activity in the Russian Far East?",
+      "options": [
+        "Agriculture",
+        "Tourism",
+        "Fishing and resource extraction",
+        "Manufacturing"
+      ],
+      "answer": 2,
+      "explanation": "The Russian Far East's economy is largely based on fishing, forestry, and the extraction of natural resources like oil, gas, and minerals.",
+      "hint": "Think about the natural resources available in the region."
+    },
+    {
+      "id": 20,
+      "question": "What is the impact of climate change on the permafrost in Yakutia?",
+      "options": [
+        "It is causing the permafrost to expand",
+        "It is having no effect on the permafrost",
+        "It is causing the permafrost to thaw, releasing methane and carbon dioxide",
+        "It is causing the permafrost to become more stable"
+      ],
+      "answer": 2,
+      "explanation": "Climate change is causing the permafrost in Yakutia to thaw, releasing greenhouse gases like methane and carbon dioxide, contributing to further warming.",
+      "hint": "Think about the greenhouse effect and the impact of thawing ice."
+    },
+    {
+      "id": 21,
+      "question": "What is a biome?",
+      "options": [
+        "A type of rock formation",
+        "A large naturally occurring community of flora and fauna occupying a major habitat",
+        "A political boundary",
+        "A type of weather pattern"
+      ],
+      "answer": 1,
+      "explanation": "A biome is a large naturally occurring community of flora and fauna occupying a major habitat, such as forests, grasslands, or deserts.",
+      "hint": "Think about large-scale ecosystems."
+    },
+    {
+      "id": 22,
+      "question": "What is the main religion practiced in Russia today?",
+      "options": [
+        "Islam",
+        "Buddhism",
+        "Russian Orthodox Christianity",
+        "Judaism"
+      ],
+      "answer": 2,
+      "explanation": "Russian Orthodox Christianity is the dominant religion in Russia, with a long history and cultural significance.",
+      "hint": "Consider Russia's historical ties to Eastern Europe."
+    },
+    {
+      "id": 23,
+      "question": "What is the significance of Vladivostok?",
+      "options": [
+        "It is the oldest city in Russia",
+        "It is a major port city on the Pacific Ocean",
+        "It is located in the heart of Siberia",
+        "It is a major agricultural center"
+      ],
+      "answer": 1,
+      "explanation": "Vladivostok is a major port city on the Pacific Ocean, serving as a gateway for trade with Asia.",
+      "hint": "Think about Russia's access to the Pacific Ocean."
+    },
+    {
+      "id": 24,
+      "question": "What is the main challenge to developing the Arctic Ocean resources?",
+      "options": [
+        "Lack of resources",
+        "Political instability",
+        "Harsh climate and ice conditions",
+        "Overpopulation"
+      ],
+      "answer": 2,
+      "explanation": "The harsh climate and ice conditions in the Arctic Ocean pose significant challenges to developing its resources.",
+      "hint": "Think about the difficulties of operating in extremely cold environments."
+    },
+    {
+      "id": 25,
+      "question": "What is a 'kolkhoz'?",
+      "options": [
+        "A type of Russian folk song",
+        "A traditional Russian winter sport",
+        "A collective farm in the Soviet Union",
+        "A Russian military rank"
+      ],
+      "answer": 2,
+      "explanation": "A kolkhoz was a collective farm in the Soviet Union, where peasants pooled their resources and worked together.",
+      "hint": "Think about the agricultural policies of the Soviet era."
+    },
+    {
+      "id": 26,
+      "question": "Which of these is NOT a major export of Russia?",
+      "options": [
+        "Oil",
+        "Wheat",
+        "Diamonds",
+        "Bananas"
+      ],
+      "answer": 3,
+      "explanation": "Russia is a major exporter of oil, wheat, and diamonds, but not bananas due to its climate.",
+      "hint": "Consider what grows well in Russia's climate."
+    },
+    {
+      "id": 27,
+      "question": "What is the Volga-Don Canal used for?",
+      "options": [
+        "Connecting the Baltic Sea to the Black Sea",
+        "Connecting the Arctic Ocean to the Pacific Ocean",
+        "Connecting the Volga River to the Don River",
+        "Irrigating agricultural lands"
+      ],
+      "answer": 2,
+      "explanation": "The Volga-Don Canal connects the Volga River to the Don River, providing a navigable waterway between the Caspian Sea and the Black Sea.",
+      "hint": "Think about the major river systems in European Russia."
+    },
+    {
+      "id": 28,
+      "question": "What is the main reason for Russia's interest in controlling the Arctic region?",
+      "options": [
+        "To establish a military base",
+        "To control shipping routes and access to natural resources",
+        "To promote tourism",
+        "To protect endangered species"
+      ],
+      "answer": 1,
+      "explanation": "Russia is interested in controlling the Arctic region to secure shipping routes and access to valuable natural resources like oil and gas.",
+      "hint": "Think about the economic and strategic importance of the Arctic."
+    },
+    {
+      "id": 29,
+      "question": "What is the 'Taiga Shield'?",
+      "options": [
+        "A type of Russian armor",
+        "A vast area of coniferous forest and wetlands in Siberia",
+        "A mountain range in the Ural Mountains",
+        "A historical fortress"
+      ],
+      "answer": 1,
+      "explanation": "The Taiga Shield is a vast area of coniferous forest and wetlands in Siberia, characterized by its rugged terrain and harsh climate.",
+      "hint": "Think about the dominant vegetation in Siberia."
+    },
+    {
+      "id": 30,
+      "question": "What is the demographic challenge facing many regions of Russia?",
+      "options": [
+        "Overpopulation",
+        "High birth rates",
+        "Aging population and declining birth rates",
+        "Mass immigration"
+      ],
+      "answer": 2,
+      "explanation": "Russia faces a demographic challenge of an aging population and declining birth rates, leading to a shrinking workforce.",
+      "hint": "Think about the long-term consequences of low birth rates."
+    },
+    {
+      "id": 31,
+      "question": "What is the Kamchatka Peninsula known for?",
+      "options": [
+        "Its vast wheat fields",
+        "Its active volcanoes and geysers",
+        "Its ancient ruins",
+        "Its sandy beaches"
+      ],
+      "answer": 1,
+      "explanation": "The Kamchatka Peninsula is known for its high concentration of active volcanoes, geysers, and hot springs.",
+      "hint": "Think about volcanic activity and plate tectonics."
+    },
+    {
+      "id": 32,
+      "question": "What is the main purpose of the Yamal LNG project?",
+      "options": [
+        "To build a new railway line",
+        "To extract and liquefy natural gas",
+        "To develop a new agricultural region",
+        "To construct a large dam"
+      ],
+      "answer": 1,
+      "explanation": "The Yamal LNG project is focused on extracting and liquefying natural gas from the Yamal Peninsula in Siberia.",
+      "hint": "Think about Russia's energy resources."
+    },
+    {
+      "id": 33,
+      "question": "What is a 'babushka'?",
+      "options": [
+        "A type of Russian doll",
+        "A traditional Russian scarf",
+        "A grandmother",
+        "A Russian folk tale"
+      ],
+      "answer": 2,
+      "explanation": "A 'babushka' is the Russian word for grandmother, often associated with traditional Russian clothing and wisdom.",
+      "hint": "Think about family roles in Russian culture."
+    },
+    {
+      "id": 34,
+      "question": "What is the main type of vegetation found in the tundra biome?",
+      "options": [
+        "Tall trees",
+        "Grasses and shrubs",
+        "Cacti",
+        "Tropical flowers"
+      ],
+      "answer": 1,
+      "explanation": "The tundra biome is characterized by low-growing vegetation like grasses, shrubs, mosses, and lichens, adapted to the cold and permafrost conditions.",
+      "hint": "Think about plants that can survive in extremely cold environments."
+    },
+    {
+      "id": 35,
+      "question": "What is the significance of the city of Sochi?",
+      "options": [
+        "It is the oldest city in Russia",
+        "It hosted the 2014 Winter Olympics",
+        "It is a major industrial center",
+        "It is located in Siberia"
+      ],
+      "answer": 1,
+      "explanation": "Sochi is a popular resort city on the Black Sea coast and hosted the 2014 Winter Olympics.",
+      "hint": "Think about recent international events held in Russia."
+    },
+    {
+      "id": 36,
+      "question": "What is the main challenge to agriculture in Siberia?",
+      "options": [
+        "Lack of water",
+        "Short growing season and permafrost",
+        "Excessive rainfall",
+        "Lack of fertile soil"
+      ],
+      "answer": 1,
+      "explanation": "The short growing season and presence of permafrost pose significant challenges to agriculture in Siberia.",
+      "hint": "Think about the climate and soil conditions in Siberia."
+    },
+    {
+      "id": 37,
+      "question": "What is the main purpose of the Northern Fleet?",
+      "options": [
+        "To protect Russia's southern borders",
+        "To patrol the Arctic Ocean",
+        "To transport goods along the Volga River",
+        "To conduct search and rescue operations in Siberia"
+      ],
+      "answer": 1,
+      "explanation": "The Northern Fleet is Russia's main naval force in the Arctic Ocean, responsible for protecting its interests in the region.",
+      "hint": "Think about Russia's military presence in the Arctic."
+    },
+    {
+      "id": 38,
+      "question": "What is a 'matryoshka' doll?",
+      "options": [
+        "A type of Russian musical instrument",
+        "A traditional Russian hat",
+        "A set of wooden dolls of decreasing size placed one inside another",
+        "A Russian folk dance"
+      ],
+      "answer": 2,
+      "explanation": "A matryoshka doll is a set of wooden dolls of decreasing size placed one inside another, a popular Russian souvenir.",
+      "hint": "Think about traditional Russian crafts."
+    },
+    {
+      "id": 39,
+      "question": "What is the main environmental concern related to oil extraction in Siberia?",
+      "options": [
+        "Deforestation",
+        "Air pollution",
+        "Oil spills and contamination of waterways",
+        "Overfishing"
+      ],
+      "answer": 2,
+      "explanation": "Oil extraction in Siberia poses a risk of oil spills and contamination of waterways, impacting the fragile ecosystem.",
+      "hint": "Think about the potential consequences of oil spills."
+    },
+    {
+      "id": 40,
+      "question": "What is the main reason for the development of special economic zones in the Russian Far East?",
+      "options": [
+        "To promote tourism",
+        "To attract foreign investment and boost economic growth",
+        "To preserve traditional cultures",
+        "To control migration"
+      ],
+      "answer": 1,
+      "explanation": "Special economic zones in the Russian Far East are designed to attract foreign investment and stimulate economic growth in the region.",
+      "hint": "Think about economic incentives for investment."
+    },
+    {
+      "id": 41,
+      "question": "What is the significance of the city of Kazan?",
+      "options": [
+        "It is the oldest city in Russia",
+        "It is a major center for Islamic culture in Russia",
+        "It is located in Siberia",
+        "It is a major port city on the Pacific Ocean"
+      ],
+      "answer": 1,
+      "explanation": "Kazan is a major center for Islamic culture in Russia, with a rich history and diverse population.",
+      "hint": "Think about the religious diversity within Russia."
+    },
+    {
+      "id": 42,
+      "question": "What is the main challenge to infrastructure development in Siberia?",
+      "options": [
+        "Lack of funding",
+        "Harsh climate and vast distances",
+        "Lack of skilled labor",
+        "Political instability"
+      ],
+      "answer": 1,
+      "explanation": "The harsh climate and vast distances in Siberia pose significant challenges to infrastructure development, making it expensive and difficult.",
+      "hint": "Think about the logistical difficulties of building in remote areas."
+    },
+    {
+      "id": 43,
+      "question": "What is the main purpose of the Russian space program?",
+      "options": [
+        "To explore Mars",
+        "To develop new weapons",
+        "To conduct scientific research and maintain a presence in space",
+        "To promote tourism"
+      ],
+      "answer": 2,
+      "explanation": "The Russian space program focuses on conducting scientific research, maintaining a presence in space, and launching satellites.",
+      "hint": "Think about Russia's historical achievements in space exploration."
+    },
+    {
+      "id": 44,
+      "question": "What is a 'samovar'?",
+      "options": [
+        "A type of Russian folk song",
+        "A traditional Russian tea urn",
+        "A Russian winter coat",
+        "A Russian musical instrument"
+      ],
+      "answer": 1,
+      "explanation": "A samovar is a traditional Russian heated metal container used to boil water for tea.",
+      "hint": "Think about Russian tea culture."
+    },
+    {
+      "id": 45,
+      "question": "What is the main impact of climate change on the Arctic tundra?",
+      "options": [
+        "Increased snowfall",
+        "Expansion of forests",
+        "Thawing permafrost and changes in vegetation",
+        "Decreased temperatures"
+      ],
+      "answer": 2,
+      "explanation": "Climate change is causing permafrost to thaw in the Arctic tundra, leading to changes in vegetation and ecosystem dynamics.",
+      "hint": "Think about the effects of warming temperatures on frozen ground."
+    },
+    {
+      "id": 46,
+      "question": "What is the main economic activity in the city of Norilsk?",
+      "options": [
+        "Tourism",
+        "Agriculture",
+        "Mining and metal smelting",
+        "Fishing"
+      ],
+      "answer": 2,
+      "explanation": "Norilsk is a major industrial city in Siberia, known for its mining and metal smelting operations.",
+      "hint": "Think about the natural resources found in Siberia."
+    },
+    {
+      "id": 47,
+      "question": "What is the main challenge to developing tourism in Siberia?",
+      "options": [
+        "Lack of attractions",
+        "Poor infrastructure and accessibility",
+        "Political instability",
+        "High crime rates"
+      ],
+      "answer": 1,
+      "explanation": "Poor infrastructure and accessibility pose significant challenges to developing tourism in Siberia due to its remote location and harsh climate.",
+      "hint": "Think about the difficulties of traveling in Siberia."
+    },
+    {
+      "id": 48,
+      "question": "What is the significance of the Lena River?",
+      "options": [
+        "It is the longest river in Europe",
+        "It flows into the Black Sea",
+        "It is a major river in Siberia, known for its delta",
+        "It is located in European Russia"
+      ],
+      "answer": 2,
+      "explanation": "The Lena River is a major river in Siberia, known for its vast delta and important role in the region's ecosystem.",
+      "hint": "Think about the major rivers of Siberia."
+    },
+    {
+      "id": 49,
+      "question": "What is the main goal of Russia's Arctic strategy?",
+      "options": [
+        "To ban all economic activity in the Arctic",
+        "To promote international cooperation in the Arctic",
+        "To assert its sovereignty and develop the Arctic region's resources",
+        "To turn the Arctic into a nature reserve"
+      ],
+      "answer": 2,
+      "explanation": "Russia's Arctic strategy aims to assert its sovereignty over the Arctic region and develop its vast natural resources.",
+      "hint": "Think about Russia's geopolitical interests in the Arctic."
+    },
+    {
+      "id": 50,
+      "question": "What is a 'pirozhki'?",
+      "options": [
+        "A type of Russian doll",
+        "A traditional Russian soup",
+        "A baked or fried bun with a savory or sweet filling",
+        "A Russian folk dance"
+      ],
+      "answer": 2,
+      "explanation": "Pirozhki are small baked or fried buns with a savory or sweet filling, a popular snack in Russia.",
+      "hint": "Think about Russian cuisine."
+    }
+  ]
+}

@@ -255,6 +255,114 @@
           ]
         }
       ]
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "icon": "🌍",
+      "units": [
+        {
+          "id": "geo-u1",
+          "name": "Unit 1: From Rock to Soil",
+          "topics": [
+            "Our rocky home",
+            "What are the three rock groups?",
+            "What is weathering?",
+            "What is the rock cycle?",
+            "The British Isles on their travels",
+            "Rock and relief around the UK",
+            "What's the link between rock and landscape?",
+            "How are you linked to soil?"
+          ]
+        },
+        {
+          "id": "geo-u2",
+          "name": "Unit 2: Using Earth's Resources",
+          "topics": [
+            "Earth's natural resources",
+            "Water part 1 - Do we have enough?",
+            "Water part 2 - Emptying the Ogallala",
+            "Water part 3 - Tackling water stress",
+            "Food part 1 - Feeding the UK",
+            "Food part 2 - Food insecurity, a global issue",
+            "Food part 3 - Tackling food insecurity",
+            "Energy part 1 - Goodbye to the fossil fuels?",
+            "Energy part 2 - Renewables in the UK",
+            "Energy part 3 - Is solar power the solution?",
+            "Why must we change our ways?"
+          ]
+        },
+        {
+          "id": "geo-u3",
+          "name": "Unit 3: Earning a Living",
+          "topics": [
+            "What kind of work do we do in the UK?",
+            "The UK's changing pattern of employment",
+            "Example: change in and around Doncaster",
+            "Why do employment patterns change?",
+            "A closer look at globalisation and the UK",
+            "Is your mobile linked to globalisation?",
+            "Employment and the shock of Covid-19",
+            "So what kind of work will you do?"
+          ]
+        },
+        {
+          "id": "geo-u4",
+          "name": "Unit 4: International Development",
+          "topics": [
+            "An unequal world",
+            "So what is development?",
+            "How is development measured?",
+            "How is Malawi doing?",
+            "How did the development gap grow? - part 1",
+            "How did the development gap grow? - part 2",
+            "Globalisation, development, and TNCs",
+            "Covid-19 and vaccine inequality",
+            "Escaping from poverty",
+            "Can we put an end to poverty?"
+          ]
+        },
+        {
+          "id": "geo-u5",
+          "name": "Unit 5: Our Restless Planet",
+          "topics": [
+            "What's Earth like inside?",
+            "A cracked Earth?",
+            "A closer look at plate movements",
+            "What is an earthquake?",
+            "An earthquake in Southwest China",
+            "Tsunami!",
+            "What is a volcano?",
+            "The most dangerous volcano in the world?",
+            "So why live in a danger zone?"
+          ]
+        },
+        {
+          "id": "geo-u6",
+          "name": "Unit 6: About Russia",
+          "topics": [
+            "Meet Russia!",
+            "What are Russia's main physical features?",
+            "Russia's climate zones and biomes",
+            "What about the Russian people?",
+            "A tour of European Russia",
+            "Climate change in Yakutia",
+            "What is Russia doing in the Arctic Ocean?"
+          ]
+        },
+        {
+          "id": "geo-u7",
+          "name": "Unit 7: The Middle East",
+          "topics": [
+            "Introducing the Middle East",
+            "The Middle East: physical geography",
+            "The Middle East: climate zones and biomes",
+            "The people, and economies",
+            "Challenges in the Arabian Peninsula",
+            "Conflict in the Middle East"
+          ]
+        }
+      ]
     }
   ]
 }

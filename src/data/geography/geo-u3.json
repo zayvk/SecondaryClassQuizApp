@@ -1,0 +1,668 @@
+{
+  "subject": "Geography",
+  "unit": "Unit 3: Earning a Living",
+  "unitId": "geo-u3",
+  "topics": [
+    "What kind of work do we do in the UK?",
+    "The UK's changing pattern of employment",
+    "Example: change in and around Doncaster",
+    "Why do employment patterns change?",
+    "A closer look at globalisation and the UK",
+    "Is your mobile linked to globalisation?",
+    "Employment and the shock of Covid-19",
+    "So what kind of work will you do?"
+  ],
+  "generatedAt": "2026-03-02T13:11:03Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a primary sector job?",
+      "options": [
+        "Teacher",
+        "Farmer",
+        "Doctor",
+        "Accountant"
+      ],
+      "answer": 1,
+      "explanation": "The primary sector involves the extraction of raw materials, and farming directly extracts resources from the land.",
+      "hint": "Think about where our food *originally* comes from."
+    },
+    {
+      "id": 2,
+      "question": "What is a key characteristic of the secondary sector?",
+      "options": [
+        "Providing services to the public",
+        "Extracting raw materials",
+        "Manufacturing goods",
+        "Research and development"
+      ],
+      "answer": 2,
+      "explanation": "The secondary sector focuses on transforming raw materials into finished products through manufacturing.",
+      "hint": "Consider what happens to the materials a farmer grows *after* they are harvested."
+    },
+    {
+      "id": 3,
+      "question": "Which sector has seen the largest growth in employment in the UK in recent decades?",
+      "options": [
+        "Primary",
+        "Secondary",
+        "Tertiary",
+        "Quaternary"
+      ],
+      "answer": 2,
+      "explanation": "The tertiary sector, which includes services, has grown significantly as the UK economy has developed.",
+      "hint": "Think about the types of jobs most people have today – are they making things, or *doing* things for others?"
+    },
+    {
+      "id": 4,
+      "question": "Doncaster historically relied heavily on which industry?",
+      "options": [
+        "Tourism",
+        "Finance",
+        "Coal Mining",
+        "Technology"
+      ],
+      "answer": 2,
+      "explanation": "Doncaster was a major coal mining centre, but this industry declined significantly in the late 20th century.",
+      "hint": "Consider what resources were plentiful in that area of the UK."
+    },
+    {
+      "id": 5,
+      "question": "What is 'deindustrialisation'?",
+      "options": [
+        "The growth of new industries",
+        "The decline of manufacturing industries",
+        "An increase in agricultural production",
+        "The expansion of the service sector"
+      ],
+      "answer": 1,
+      "explanation": "Deindustrialisation refers to the decline of manufacturing and heavy industry in a country or region.",
+      "hint": "The prefix 'de-' often means 'removal' or 'reduction'."
+    },
+    {
+      "id": 6,
+      "question": "Why might employment patterns change from one sector to another?",
+      "options": [
+        "Changes in consumer demand",
+        "Technological advancements",
+        "Global competition",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All these factors contribute to shifts in employment patterns as economies evolve.",
+      "hint": "Think about how things are made now compared to 50 years ago."
+    },
+    {
+      "id": 7,
+      "question": "What is globalisation?",
+      "options": [
+        "The process of countries becoming more isolated",
+        "The increasing interconnectedness of countries through trade and culture",
+        "The decline of international travel",
+        "The strengthening of national borders"
+      ],
+      "answer": 1,
+      "explanation": "Globalisation is the process by which the world is becoming increasingly interconnected.",
+      "hint": "Think about how easily goods and information travel around the world today."
+    },
+    {
+      "id": 8,
+      "question": "How has globalisation affected employment in the UK?",
+      "options": [
+        "Increased jobs in manufacturing",
+        "Decreased jobs in the service sector",
+        "Increased competition for jobs",
+        "No significant impact"
+      ],
+      "answer": 2,
+      "explanation": "Globalisation has led to increased competition, sometimes resulting in job losses in certain sectors.",
+      "hint": "Consider where products are made now compared to 30 years ago."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an example of a multinational corporation (MNC)?",
+      "options": [
+        "A local bakery",
+        "A family-run farm",
+        "Apple",
+        "A small independent bookstore"
+      ],
+      "answer": 2,
+      "explanation": "Apple operates in many countries and has headquarters in multiple locations, making it an MNC.",
+      "hint": "Think about companies you've heard of that operate in many different countries."
+    },
+    {
+      "id": 10,
+      "question": "What is outsourcing?",
+      "options": [
+        "Selling products to other countries",
+        "Hiring workers from other countries",
+        "Moving production to a cheaper location",
+        "Investing in new technology"
+      ],
+      "answer": 2,
+      "explanation": "Outsourcing involves contracting out business processes to another company, often in a country with lower labour costs.",
+      "hint": "Think about companies trying to reduce their costs."
+    },
+    {
+      "id": 11,
+      "question": "How are mobile phones linked to globalisation?",
+      "options": [
+        "They are made entirely in the UK",
+        "Their components are sourced from around the world",
+        "They have no connection to global trade",
+        "They are only used within individual countries"
+      ],
+      "answer": 1,
+      "explanation": "Mobile phones are assembled from components manufactured in various countries, demonstrating global supply chains.",
+      "hint": "Think about where the different parts of your phone might come from."
+    },
+    {
+      "id": 12,
+      "question": "What was a major impact of the Covid-19 pandemic on employment in the UK?",
+      "options": [
+        "Increased employment in all sectors",
+        "A shift towards more manufacturing jobs",
+        "Widespread job losses, particularly in the service sector",
+        "No significant impact on employment"
+      ],
+      "answer": 2,
+      "explanation": "The pandemic led to lockdowns and reduced demand for services, resulting in significant job losses.",
+      "hint": "Think about which businesses were forced to close during lockdowns."
+    },
+    {
+      "id": 13,
+      "question": "Which sector was particularly affected by job losses during the Covid-19 pandemic?",
+      "options": [
+        "Agriculture",
+        "Manufacturing",
+        "Tourism and Hospitality",
+        "Construction"
+      ],
+      "answer": 2,
+      "explanation": "Tourism and hospitality were severely impacted by travel restrictions and social distancing measures.",
+      "hint": "Think about what activities were restricted during the pandemic."
+    },
+    {
+      "id": 14,
+      "question": "What is the 'gig economy'?",
+      "options": [
+        "A traditional employment model with fixed hours",
+        "A labour market characterized by short-term contracts and freelance work",
+        "A system of government-provided employment",
+        "A type of agricultural cooperative"
+      ],
+      "answer": 1,
+      "explanation": "The gig economy relies on short-term contracts and freelance work, often facilitated by digital platforms.",
+      "hint": "Think about jobs like delivering food or driving for a ride-sharing service."
+    },
+    {
+      "id": 15,
+      "question": "What skills are likely to be in high demand in the future job market?",
+      "options": [
+        "Basic literacy and numeracy",
+        "Manual labour skills",
+        "Digital literacy and problem-solving",
+        "Traditional manufacturing skills"
+      ],
+      "answer": 2,
+      "explanation": "The future job market will require strong digital skills and the ability to solve complex problems.",
+      "hint": "Think about how technology is changing the way we work."
+    },
+    {
+      "id": 16,
+      "question": "What is the quaternary sector?",
+      "options": [
+        "Extracting raw materials",
+        "Manufacturing goods",
+        "Providing information and research",
+        "Delivering services"
+      ],
+      "answer": 2,
+      "explanation": "The quaternary sector focuses on knowledge-based activities like research, development, and information technology.",
+      "hint": "Think about jobs that require a lot of education and specialized knowledge."
+    },
+    {
+      "id": 17,
+      "question": "How can investment in education and training help address changing employment patterns?",
+      "options": [
+        "It has no impact on employment",
+        "It prepares workers for new jobs",
+        "It encourages people to stay in declining industries",
+        "It reduces the need for skilled workers"
+      ],
+      "answer": 1,
+      "explanation": "Education and training equip workers with the skills needed for emerging industries and changing job requirements.",
+      "hint": "Think about how learning new skills can help you get a job."
+    },
+    {
+      "id": 18,
+      "question": "What is a 'trade deficit'?",
+      "options": [
+        "When a country exports more than it imports",
+        "When a country imports more than it exports",
+        "When a country has balanced trade",
+        "When a country doesn't trade at all"
+      ],
+      "answer": 1,
+      "explanation": "A trade deficit occurs when a country imports more goods and services than it exports.",
+      "hint": "Think about the difference between 'import' and 'export'."
+    },
+    {
+      "id": 19,
+      "question": "What is the role of foreign direct investment (FDI)?",
+      "options": [
+        "It discourages economic growth",
+        "It involves investment by one country in another",
+        "It only benefits the investing country",
+        "It has no impact on employment"
+      ],
+      "answer": 1,
+      "explanation": "FDI involves investment made by a company or individual in one country into business interests located in another country.",
+      "hint": "Think about companies building factories or buying businesses in other countries."
+    },
+    {
+      "id": 20,
+      "question": "What is a 'commuter belt'?",
+      "options": [
+        "An area with high unemployment",
+        "An area surrounding a major city with many commuters",
+        "A rural area with limited access to services",
+        "A region focused on agricultural production"
+      ],
+      "answer": 1,
+      "explanation": "A commuter belt is an area surrounding a major city where many people live and commute to work in the city.",
+      "hint": "Think about where people live who work in a big city but can't afford to live there."
+    },
+    {
+      "id": 21,
+      "question": "Which of these is an example of a service industry job?",
+      "options": [
+        "Coal Miner",
+        "Car Manufacturer",
+        "Teacher",
+        "Wheat Farmer"
+      ],
+      "answer": 2,
+      "explanation": "Teachers provide a service – education – rather than producing a physical product.",
+      "hint": "Think about jobs that involve helping people or providing expertise."
+    },
+    {
+      "id": 22,
+      "question": "What is the main reason for the growth of the service sector in the UK?",
+      "options": [
+        "Increased demand for manufactured goods",
+        "Rising wages in manufacturing",
+        "Increased wealth and disposable income",
+        "Decreased population"
+      ],
+      "answer": 2,
+      "explanation": "As people become wealthier, they spend more on services like healthcare, education, and leisure.",
+      "hint": "Think about what people spend their money on when they have more of it."
+    },
+    {
+      "id": 23,
+      "question": "How did the decline of coal mining affect communities like Doncaster?",
+      "options": [
+        "It led to economic growth",
+        "It created new job opportunities",
+        "It resulted in high unemployment and social problems",
+        "It had no significant impact"
+      ],
+      "answer": 2,
+      "explanation": "The closure of coal mines led to widespread job losses and economic hardship in mining communities.",
+      "hint": "Think about what happened when the main employer in a town closed down."
+    },
+    {
+      "id": 24,
+      "question": "What is 'reshoring'?",
+      "options": [
+        "Moving production to another country",
+        "Bringing production back to the home country",
+        "Investing in foreign markets",
+        "Reducing production levels"
+      ],
+      "answer": 1,
+      "explanation": "Reshoring is the practice of bringing manufacturing or other business processes back to the home country.",
+      "hint": "The prefix 're-' often means 'again' or 'back'."
+    },
+    {
+      "id": 25,
+      "question": "What is a 'supply chain'?",
+      "options": [
+        "The process of selling goods to consumers",
+        "The network of businesses involved in producing and distributing a product",
+        "The government regulations affecting trade",
+        "The transportation of goods by ship"
+      ],
+      "answer": 1,
+      "explanation": "A supply chain encompasses all the steps involved in getting a product from raw materials to the end consumer.",
+      "hint": "Think about all the steps involved in making your favourite product."
+    },
+    {
+      "id": 26,
+      "question": "What is the impact of automation on employment?",
+      "options": [
+        "It always creates more jobs",
+        "It can lead to job displacement in some sectors",
+        "It has no impact on employment levels",
+        "It only affects low-skilled jobs"
+      ],
+      "answer": 1,
+      "explanation": "Automation can replace human workers in certain tasks, leading to job losses in those areas.",
+      "hint": "Think about robots and machines doing jobs that people used to do."
+    },
+    {
+      "id": 27,
+      "question": "What is the role of the government in supporting employment?",
+      "options": [
+        "To have no involvement in the labour market",
+        "To provide education and training",
+        "To discourage foreign investment",
+        "To limit job creation"
+      ],
+      "answer": 1,
+      "explanation": "Governments can invest in education, infrastructure, and policies to promote job creation and economic growth.",
+      "hint": "Think about what the government can do to help people find work."
+    },
+    {
+      "id": 28,
+      "question": "What is a 'knowledge economy'?",
+      "options": [
+        "An economy based on agricultural production",
+        "An economy based on manufacturing",
+        "An economy based on information, innovation, and skills",
+        "An economy based on natural resources"
+      ],
+      "answer": 2,
+      "explanation": "A knowledge economy relies on the creation and dissemination of knowledge and information.",
+      "hint": "Think about the importance of education and research in modern economies."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between 'imports' and 'exports'?",
+      "options": [
+        "Imports are goods sold to other countries, exports are goods bought from other countries",
+        "Imports are goods bought from other countries, exports are goods sold to other countries",
+        "Imports and exports are the same thing",
+        "Imports are only raw materials, exports are only finished goods"
+      ],
+      "answer": 1,
+      "explanation": "Imports are goods and services brought *into* a country, while exports are goods and services sent *out* of a country.",
+      "hint": "Think about the direction of the goods – are they coming in or going out?"
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of a 'free trade agreement'?",
+      "options": [
+        "To increase tariffs between countries",
+        "To reduce barriers to trade between countries",
+        "To limit international trade",
+        "To protect domestic industries from competition"
+      ],
+      "answer": 1,
+      "explanation": "Free trade agreements aim to reduce tariffs and other barriers to trade, promoting economic cooperation.",
+      "hint": "Think about what 'free' means in this context."
+    },
+    {
+      "id": 31,
+      "question": "Which sector typically employs the highest number of people in the UK today?",
+      "options": [
+        "Primary",
+        "Secondary",
+        "Tertiary",
+        "Quaternary"
+      ],
+      "answer": 2,
+      "explanation": "The tertiary sector, encompassing services like retail, healthcare, and education, is the largest employer in the UK.",
+      "hint": "Consider what most people do for a living."
+    },
+    {
+      "id": 32,
+      "question": "What is the impact of globalisation on cultural exchange?",
+      "options": [
+        "It leads to cultural isolation",
+        "It promotes the spread of ideas and customs",
+        "It eliminates cultural diversity",
+        "It has no impact on culture"
+      ],
+      "answer": 1,
+      "explanation": "Globalisation facilitates the exchange of ideas, customs, and traditions between different cultures.",
+      "hint": "Think about how easily we can access information about other cultures today."
+    },
+    {
+      "id": 33,
+      "question": "What is a 'brownfield site'?",
+      "options": [
+        "A previously undeveloped area of land",
+        "Land used for agricultural purposes",
+        "Land that has been previously developed",
+        "A protected natural area"
+      ],
+      "answer": 2,
+      "explanation": "A brownfield site is land that has been previously used for industrial or commercial purposes and may be contaminated.",
+      "hint": "Think about old factories or industrial areas."
+    },
+    {
+      "id": 34,
+      "question": "What is the role of technology in the quaternary sector?",
+      "options": [
+        "It has no role",
+        "It is used for manual labour",
+        "It is essential for research, development, and information processing",
+        "It is only used for communication"
+      ],
+      "answer": 2,
+      "explanation": "Technology is fundamental to the quaternary sector, enabling research, data analysis, and innovation.",
+      "hint": "Think about the tools used by scientists and researchers."
+    },
+    {
+      "id": 35,
+      "question": "What is 'fair trade'?",
+      "options": [
+        "A system of unrestricted trade",
+        "A system that ensures producers in developing countries receive a fair price",
+        "A system that prioritizes low prices",
+        "A system that only benefits developed countries"
+      ],
+      "answer": 1,
+      "explanation": "Fair trade aims to ensure that producers in developing countries receive a fair price for their goods and have better working conditions.",
+      "hint": "Think about ethical considerations in global trade."
+    },
+    {
+      "id": 36,
+      "question": "How can the UK government encourage growth in the quaternary sector?",
+      "options": [
+        "By reducing investment in education",
+        "By limiting funding for research and development",
+        "By supporting innovation and providing funding for universities",
+        "By increasing taxes on technology companies"
+      ],
+      "answer": 2,
+      "explanation": "Government support for education, research, and innovation is crucial for fostering growth in the quaternary sector.",
+      "hint": "Think about what helps scientists and researchers do their work."
+    },
+    {
+      "id": 37,
+      "question": "What is the main challenge of an aging population in the UK?",
+      "options": [
+        "A decrease in the workforce",
+        "An increase in the birth rate",
+        "A surplus of skilled workers",
+        "A reduction in healthcare costs"
+      ],
+      "answer": 0,
+      "explanation": "An aging population leads to a smaller workforce and increased demand for healthcare and social care.",
+      "hint": "Think about what happens when more people retire and fewer young people enter the workforce."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of 'regional policy'?",
+      "options": [
+        "To promote economic growth in all regions of the country",
+        "To focus investment in only the wealthiest regions",
+        "To discourage migration between regions",
+        "To limit economic activity in certain areas"
+      ],
+      "answer": 0,
+      "explanation": "Regional policy aims to reduce economic disparities between different regions of a country.",
+      "hint": "Think about trying to make sure all parts of the country benefit from economic growth."
+    },
+    {
+      "id": 39,
+      "question": "What is a 'footloose industry'?",
+      "options": [
+        "An industry tied to a specific location",
+        "An industry that can locate anywhere with minimal constraints",
+        "An industry that relies on local resources",
+        "An industry that is always located in rural areas"
+      ],
+      "answer": 1,
+      "explanation": "A footloose industry is one that is not dependent on specific resources or locations and can easily move.",
+      "hint": "Think about industries that don't need to be near raw materials or specific markets."
+    },
+    {
+      "id": 40,
+      "question": "What is the role of trade unions?",
+      "options": [
+        "To represent the interests of employers",
+        "To negotiate with employers on behalf of workers",
+        "To regulate international trade",
+        "To provide financial assistance to businesses"
+      ],
+      "answer": 1,
+      "explanation": "Trade unions represent the interests of workers and negotiate with employers on issues such as wages and working conditions.",
+      "hint": "Think about who speaks up for workers' rights."
+    },
+    {
+      "id": 41,
+      "question": "What is the 'digital divide'?",
+      "options": [
+        "The gap between those who have access to technology and those who don't",
+        "The difference between urban and rural areas",
+        "The separation between different industries",
+        "The inequality in income levels"
+      ],
+      "answer": 0,
+      "explanation": "The digital divide refers to the gap between those who have access to and can effectively use digital technologies and those who do not.",
+      "hint": "Think about who might not have access to the internet or computers."
+    },
+    {
+      "id": 42,
+      "question": "What is the impact of globalisation on the environment?",
+      "options": [
+        "It always leads to environmental improvement",
+        "It can contribute to pollution and resource depletion",
+        "It has no impact on the environment",
+        "It only affects developing countries"
+      ],
+      "answer": 1,
+      "explanation": "Globalisation can lead to increased pollution, resource depletion, and environmental degradation due to increased production and transportation.",
+      "hint": "Think about the environmental costs of global trade."
+    },
+    {
+      "id": 43,
+      "question": "What is 'sustainable development'?",
+      "options": [
+        "Development that ignores environmental concerns",
+        "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs",
+        "Development that focuses solely on economic growth",
+        "Development that prioritizes short-term profits"
+      ],
+      "answer": 1,
+      "explanation": "Sustainable development aims to balance economic growth, social equity, and environmental protection.",
+      "hint": "Think about leaving a healthy planet for future generations."
+    },
+    {
+      "id": 44,
+      "question": "What is the role of entrepreneurship in the economy?",
+      "options": [
+        "It discourages innovation",
+        "It creates new businesses and jobs",
+        "It relies on government funding",
+        "It has no impact on economic growth"
+      ],
+      "answer": 1,
+      "explanation": "Entrepreneurship drives innovation, creates new businesses, and generates employment opportunities.",
+      "hint": "Think about people who start their own companies."
+    },
+    {
+      "id": 45,
+      "question": "What is the difference between 'gross domestic product (GDP)' and 'gross national product (GNP)'?",
+      "options": [
+        "GDP measures the value of goods and services produced within a country's borders, while GNP includes income earned by citizens abroad",
+        "GNP measures the value of goods and services produced within a country's borders, while GDP includes income earned by citizens abroad",
+        "GDP and GNP are the same thing",
+        "GDP only includes manufacturing output, while GNP includes service sector output"
+      ],
+      "answer": 0,
+      "explanation": "GDP focuses on production within a country's borders, while GNP includes income earned by its citizens regardless of location.",
+      "hint": "Think about where the production takes place versus where the income goes."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of 'planning permission'?",
+      "options": [
+        "To allow anyone to build anything anywhere",
+        "To regulate development and ensure it is appropriate for the location",
+        "To encourage unlimited construction",
+        "To prevent any new buildings from being built"
+      ],
+      "answer": 1,
+      "explanation": "Planning permission is required to ensure that new developments are appropriate for their location and comply with regulations.",
+      "hint": "Think about why there are rules about what can be built where."
+    },
+    {
+      "id": 47,
+      "question": "What is the impact of automation on the skills required for future jobs?",
+      "options": [
+        "It reduces the need for any skills",
+        "It increases the demand for routine manual skills",
+        "It increases the demand for creative, problem-solving, and technical skills",
+        "It only affects low-skilled jobs"
+      ],
+      "answer": 2,
+      "explanation": "Automation increases the demand for skills that machines cannot easily replicate, such as creativity, critical thinking, and technical expertise.",
+      "hint": "Think about what skills will be valuable when robots can do many jobs."
+    },
+    {
+      "id": 48,
+      "question": "What is a 'multi-skilled worker'?",
+      "options": [
+        "A worker who only performs one task",
+        "A worker who can perform a variety of tasks",
+        "A worker who is only qualified in one industry",
+        "A worker who is unemployed"
+      ],
+      "answer": 1,
+      "explanation": "A multi-skilled worker possesses a range of skills, making them adaptable and valuable in a changing job market.",
+      "hint": "Think about being able to do more than one thing well."
+    },
+    {
+      "id": 49,
+      "question": "What is the role of the service sector in a post-industrial economy?",
+      "options": [
+        "It declines in importance",
+        "It becomes the dominant sector",
+        "It remains unchanged",
+        "It focuses solely on providing basic services"
+      ],
+      "answer": 1,
+      "explanation": "In a post-industrial economy, the service sector becomes the dominant force, driving economic growth and employment.",
+      "hint": "Think about the types of jobs that are most common in developed countries today."
+    },
+    {
+      "id": 50,
+      "question": "What is the concept of 'circular economy'?",
+      "options": [
+        "A traditional 'take-make-dispose' model",
+        "An economic system aimed at eliminating waste and the continual use of resources",
+        "An economy focused solely on manufacturing",
+        "An economy that ignores environmental concerns"
+      ],
+      "answer": 1,
+      "explanation": "A circular economy aims to minimize waste and maximize the use of resources by reusing, repairing, and recycling products.",
+      "hint": "Think about reducing waste and reusing materials."
+    }
+  ]
+}
