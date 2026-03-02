@@ -21,5 +21,22 @@
       { "id": "math-u14", "name": "Volume, Surface Area and Symmetry" },
       { "id": "math-u15", "name": "Interpreting and Discussing Results" }
     ]
+  },
+  {
+    "id": "science",
+    "name": "Science",
+    "icon": "🔬",
+    "units": 9,
+    "unitList": [
+      { "id": "sci-u1", "name": "Unit 1: Photosynthesis and the Carbon Cycle" },
+      { "id": "sci-u2", "name": "Unit 2: Properties of Materials" },
+      { "id": "sci-u3", "name": "Unit 3: Forces and Energy" },
+      { "id": "sci-u4", "name": "Unit 4: Maintaining Life" },
+      { "id": "sci-u5", "name": "Unit 5: Reactivity" },
+      { "id": "sci-u6", "name": "Unit 6: Sound and Space" },
+      { "id": "sci-u7", "name": "Unit 7: Genes and Inheritance" },
+      { "id": "sci-u8", "name": "Unit 8: Rates of Reaction" },
+      { "id": "sci-u9", "name": "Unit 9: Electricity" }
+    ]
   }
 ]

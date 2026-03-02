@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import subjects from '../data/subjects.json'
 
-const QUESTION_OPTIONS = [10, 15, 20, 'All']
+const QUESTION_OPTIONS = [10, 15, 20, 40]
 
 export default function ChapterList() {
   const { subjectId }                 = useParams()
