@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 4: Maintaining Life",
+  "unitId": "sci-u4",
+  "topics": [
+    "Plants and water",
+    "Transpiration",
+    "Excretion in humans",
+    "Keeping a fetus healthy"
+  ],
+  "generatedAt": "2026-03-02T09:06:32Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary role of water in plants?",
+      "options": [
+        "Providing structural support",
+        "Facilitating photosynthesis",
+        "Regulating temperature",
+        "Protecting against herbivores"
+      ],
+      "answer": 1,
+      "explanation": "Water is a key reactant in photosynthesis, providing electrons and hydrogen ions needed to create glucose.",
+      "hint": "Think about what plants *need* to make their own food."
+    },
+    {
+      "id": 2,
+      "question": "Which part of a plant is primarily responsible for water absorption?",
+      "options": [
+        "Leaves",
+        "Stem",
+        "Flowers",
+        "Roots"
+      ],
+      "answer": 3,
+      "explanation": "Roots have root hair cells which increase the surface area for water absorption from the soil.",
+      "hint": "Where do plants get water from?"
+    },
+    {
+      "id": 3,
+      "question": "What is transpiration?",
+      "options": [
+        "The uptake of water by roots",
+        "The loss of water from leaves",
+        "The transport of sugars in plants",
+        "The process of pollination"
+      ],
+      "answer": 1,
+      "explanation": "Transpiration is the evaporation of water from plant leaves, primarily through stomata.",
+      "hint": "It involves water and leaves – what happens when leaves are exposed to air?"
+    },
+    {
+      "id": 4,
+      "question": "What causes water to move up the xylem in plants?",
+      "options": [
+        "Root pressure only",
+        "Transpiration pull only",
+        "Both root pressure and transpiration pull",
+        "Gravity"
+      ],
+      "answer": 2,
+      "explanation": "Both root pressure and transpiration pull contribute to water movement, with transpiration pull being the dominant force.",
+      "hint": "Consider how water gets from the roots to the leaves against gravity."
+    },
+    {
+      "id": 5,
+      "question": "Stomata play a crucial role in transpiration. What is the main function of stomata?",
+      "options": [
+        "Absorbing sunlight",
+        "Exchanging gases",
+        "Transporting water",
+        "Providing structural support"
+      ],
+      "answer": 1,
+      "explanation": "Stomata are pores on leaves that allow for gas exchange (CO2 in, O2 out) and regulate water loss during transpiration.",
+      "hint": "Think about what plants need from the air and what they release."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is NOT an excretory product in humans?",
+      "options": [
+        "Carbon dioxide",
+        "Urea",
+        "Sweat",
+        "Oxygen"
+      ],
+      "answer": 3,
+      "explanation": "Oxygen is a product of respiration, not excretion. Excretion removes metabolic waste products.",
+      "hint": "What do we breathe *out* that isn't a waste product?"
+    },
+    {
+      "id": 7,
+      "question": "What is the main function of the kidneys?",
+      "options": [
+        "Digesting food",
+        "Filtering blood and producing urine",
+        "Pumping blood around the body",
+        "Absorbing nutrients"
+      ],
+      "answer": 1,
+      "explanation": "The kidneys filter waste products from the blood and regulate water and electrolyte balance, producing urine.",
+      "hint": "Where does urine come from?"
+    },
+    {
+      "id": 8,
+      "question": "What is the role of the lungs in excretion?",
+      "options": [
+        "Filtering blood",
+        "Producing urine",
+        "Removing carbon dioxide",
+        "Absorbing oxygen"
+      ],
+      "answer": 2,
+      "explanation": "The lungs excrete carbon dioxide, a waste product of cellular respiration.",
+      "hint": "What gas do we breathe out?"
+    },
+    {
+      "id": 9,
+      "question": "Sweat glands contribute to excretion by removing which substances?",
+      "options": [
+        "Urea and water",
+        "Carbon dioxide and oxygen",
+        "Glucose and amino acids",
+        "Vitamins and minerals"
+      ],
+      "answer": 0,
+      "explanation": "Sweat contains water, salts, and small amounts of urea, contributing to waste removal and temperature regulation.",
+      "hint": "What happens when you get hot?"
+    },
+    {
+      "id": 10,
+      "question": "What is the function of the ureter?",
+      "options": [
+        "Filtering blood",
+        "Storing urine",
+        "Transporting urine from the kidneys to the bladder",
+        "Transporting urine from the bladder to the outside"
+      ],
+      "answer": 2,
+      "explanation": "The ureter is a tube that carries urine from the kidneys to the urinary bladder.",
+      "hint": "It's a tube connecting a filtering organ to a storage organ."
+    },
+    {
+      "id": 11,
+      "question": "A fetus receives oxygen from its mother through which structure?",
+      "options": [
+        "Umbilical cord",
+        "Placenta",
+        "Amniotic sac",
+        "Fallopian tube"
+      ],
+      "answer": 1,
+      "explanation": "The placenta facilitates the exchange of oxygen, nutrients, and waste products between the mother and fetus.",
+      "hint": "Think about the organ that connects the mother and baby."
+    },
+    {
+      "id": 12,
+      "question": "What is the role of the amniotic sac?",
+      "options": [
+        "Providing nutrients to the fetus",
+        "Protecting the fetus and providing a cushioning environment",
+        "Filtering waste products from the fetus",
+        "Regulating the fetus's temperature"
+      ],
+      "answer": 1,
+      "explanation": "The amniotic sac is a fluid-filled sac that cushions and protects the developing fetus.",
+      "hint": "What protects the baby inside the mother?"
+    },
+    {
+      "id": 13,
+      "question": "Why is folic acid important during pregnancy?",
+      "options": [
+        "It strengthens bones",
+        "It prevents neural tube defects",
+        "It boosts the immune system",
+        "It improves vision"
+      ],
+      "answer": 1,
+      "explanation": "Folic acid is crucial for the development of the neural tube, which forms the brain and spinal cord.",
+      "hint": "It's important for the development of the baby's brain and spine."
+    },
+    {
+      "id": 14,
+      "question": "What is the danger of consuming alcohol during pregnancy?",
+      "options": [
+        "It provides nutrients to the fetus",
+        "It can cause fetal alcohol syndrome",
+        "It strengthens the fetus's immune system",
+        "It has no harmful effects"
+      ],
+      "answer": 1,
+      "explanation": "Alcohol can cross the placenta and harm the developing fetus, leading to fetal alcohol syndrome.",
+      "hint": "Alcohol can have serious consequences for the baby's development."
+    },
+    {
+      "id": 15,
+      "question": "Why is it important for pregnant women to avoid certain types of fish?",
+      "options": [
+        "They lack essential nutrients",
+        "They may contain high levels of mercury",
+        "They are difficult to digest",
+        "They cause allergic reactions"
+      ],
+      "answer": 1,
+      "explanation": "Some fish contain high levels of mercury, which can harm the developing nervous system of the fetus.",
+      "hint": "Think about a heavy metal that can be harmful."
+    },
+    {
+      "id": 16,
+      "question": "What is the function of xylem tissue in plants?",
+      "options": [
+        "Transporting water and minerals",
+        "Transporting sugars",
+        "Storing food",
+        "Providing support"
+      ],
+      "answer": 0,
+      "explanation": "Xylem tissue is responsible for the upward transport of water and dissolved minerals from the roots to the rest of the plant.",
+      "hint": "What does a plant need to move from the roots to the leaves?"
+    },
+    {
+      "id": 17,
+      "question": "Which environmental factor most directly affects the rate of transpiration?",
+      "options": [
+        "Soil pH",
+        "Air pressure",
+        "Temperature",
+        "Wind speed"
+      ],
+      "answer": 3,
+      "explanation": "Wind speed increases the rate of transpiration by removing humid air around the leaves, creating a steeper water potential gradient.",
+      "hint": "What can speed up evaporation?"
+    },
+    {
+      "id": 18,
+      "question": "What is the role of the bladder in the human excretory system?",
+      "options": [
+        "Filtering blood",
+        "Producing urine",
+        "Storing urine",
+        "Transporting urine"
+      ],
+      "answer": 2,
+      "explanation": "The bladder is a muscular sac that stores urine until it is eliminated from the body.",
+      "hint": "Where does urine go before it leaves the body?"
+    },
+    {
+      "id": 19,
+      "question": "What is the function of the placenta?",
+      "options": [
+        "Protecting the fetus",
+        "Providing nutrients and oxygen to the fetus",
+        "Filtering waste products from the mother",
+        "Producing amniotic fluid"
+      ],
+      "answer": 1,
+      "explanation": "The placenta provides a vital link between the mother and fetus, facilitating the exchange of nutrients, oxygen, and waste products.",
+      "hint": "It's the organ that feeds the baby."
+    },
+    {
+      "id": 20,
+      "question": "What is the importance of regular prenatal check-ups during pregnancy?",
+      "options": [
+        "To determine the baby's gender",
+        "To monitor the health of the mother and fetus",
+        "To plan the baby's education",
+        "To choose a baby name"
+      ],
+      "answer": 1,
+      "explanation": "Prenatal check-ups allow healthcare professionals to monitor the mother's and fetus's health, identify potential problems, and provide appropriate care.",
+      "hint": "They help doctors make sure everything is going well."
+    },
+    {
+      "id": 21,
+      "question": "How does the concentration of carbon dioxide in the air affect transpiration rates?",
+      "options": [
+        "Higher CO2 increases transpiration",
+        "Higher CO2 decreases transpiration",
+        "CO2 has no effect on transpiration",
+        "CO2 only affects transpiration at night"
+      ],
+      "answer": 1,
+      "explanation": "Higher CO2 concentrations cause stomata to close, reducing water loss through transpiration.",
+      "hint": "Think about how plants regulate their stomata."
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is a waste product excreted by the skin?",
+      "options": [
+        "Urea",
+        "Carbon dioxide",
+        "Glucose",
+        "Oxygen"
+      ],
+      "answer": 0,
+      "explanation": "Sweat contains small amounts of urea, which is a waste product of protein metabolism.",
+      "hint": "What's in sweat besides water and salt?"
+    },
+    {
+      "id": 23,
+      "question": "What is the role of the umbilical cord?",
+      "options": [
+        "Protecting the fetus",
+        "Providing oxygen to the mother",
+        "Connecting the mother and fetus for nutrient and waste exchange",
+        "Regulating the fetus's temperature"
+      ],
+      "answer": 2,
+      "explanation": "The umbilical cord contains blood vessels that transport nutrients and oxygen from the mother to the fetus and waste products from the fetus to the mother.",
+      "hint": "It's the lifeline between mother and baby."
+    },
+    {
+      "id": 24,
+      "question": "Why is iron important during pregnancy?",
+      "options": [
+        "It strengthens bones",
+        "It prevents neural tube defects",
+        "It helps produce red blood cells",
+        "It improves vision"
+      ],
+      "answer": 2,
+      "explanation": "Iron is essential for producing red blood cells, which carry oxygen to the mother and fetus.",
+      "hint": "What do red blood cells carry?"
+    },
+    {
+      "id": 25,
+      "question": "What happens to the rate of transpiration on a very humid day?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays the same",
+        "It fluctuates randomly"
+      ],
+      "answer": 1,
+      "explanation": "High humidity reduces the water potential gradient between the leaf and the air, slowing down transpiration.",
+      "hint": "Think about how humidity affects evaporation."
+    },
+    {
+      "id": 26,
+      "question": "What is the functional unit of the kidney?",
+      "options": [
+        "Ureter",
+        "Bladder",
+        "Nephron",
+        "Urethra"
+      ],
+      "answer": 2,
+      "explanation": "The nephron is the basic structural and functional unit of the kidney, responsible for filtering blood and forming urine.",
+      "hint": "It's where the actual filtering happens."
+    },
+    {
+      "id": 27,
+      "question": "What is the primary function of the villi in the placenta?",
+      "options": [
+        "Protecting the fetus",
+        "Increasing the surface area for exchange",
+        "Filtering waste products",
+        "Producing amniotic fluid"
+      ],
+      "answer": 1,
+      "explanation": "The villi are finger-like projections that increase the surface area of the placenta, maximizing the exchange of nutrients, oxygen, and waste products.",
+      "hint": "Think about how to maximize absorption."
+    },
+    {
+      "id": 28,
+      "question": "What nutrient is crucial for brain development in a fetus?",
+      "options": [
+        "Calcium",
+        "Vitamin D",
+        "Omega-3 fatty acids",
+        "Vitamin C"
+      ],
+      "answer": 2,
+      "explanation": "Omega-3 fatty acids, particularly DHA, are essential for brain and eye development in the fetus.",
+      "hint": "It's a type of fat important for brain health."
+    },
+    {
+      "id": 29,
+      "question": "How does increased light intensity generally affect transpiration rates?",
+      "options": [
+        "Decreases transpiration",
+        "Increases transpiration",
+        "Has no effect",
+        "Causes stomata to close immediately"
+      ],
+      "answer": 1,
+      "explanation": "Increased light intensity causes stomata to open, increasing transpiration rates.",
+      "hint": "Think about what light signals plants to do."
+    },
+    {
+      "id": 30,
+      "question": "What is the role of the urethra?",
+      "options": [
+        "Filtering blood",
+        "Storing urine",
+        "Transporting urine from the bladder to the outside",
+        "Producing urine"
+      ],
+      "answer": 2,
+      "explanation": "The urethra is the tube that carries urine from the bladder to the outside of the body.",
+      "hint": "It's the final pathway for urine."
+    },
+    {
+      "id": 31,
+      "question": "What is the function of root hairs?",
+      "options": [
+        "Anchoring the plant",
+        "Absorbing water and minerals",
+        "Transporting sugars",
+        "Providing support"
+      ],
+      "answer": 1,
+      "explanation": "Root hairs are extensions of root epidermal cells that increase the surface area for efficient absorption of water and minerals.",
+      "hint": "They're tiny and increase absorption."
+    },
+    {
+      "id": 32,
+      "question": "Which of the following is a sign of dehydration in a plant?",
+      "options": [
+        "Stiff leaves",
+        "Wilting leaves",
+        "Rapid growth",
+        "Bright green color"
+      ],
+      "answer": 1,
+      "explanation": "Wilting leaves indicate a loss of turgor pressure due to a lack of water.",
+      "hint": "What happens to plants when they don't get enough water?"
+    },
+    {
+      "id": 33,
+      "question": "What is the main function of ADH (antidiuretic hormone)?",
+      "options": [
+        "Increasing urine production",
+        "Decreasing urine production",
+        "Regulating blood sugar",
+        "Controlling body temperature"
+      ],
+      "answer": 1,
+      "explanation": "ADH regulates water reabsorption in the kidneys, decreasing urine production and conserving water.",
+      "hint": "It helps the body hold onto water."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the chorionic villi sampling during pregnancy?",
+      "options": [
+        "To determine the baby's gender",
+        "To screen for genetic disorders",
+        "To monitor fetal growth",
+        "To check the mother's blood pressure"
+      ],
+      "answer": 1,
+      "explanation": "Chorionic villi sampling is a prenatal test used to detect chromosomal abnormalities and genetic disorders in the fetus.",
+      "hint": "It's a test to check the baby's genes."
+    },
+    {
+      "id": 35,
+      "question": "How does a plant regulate water loss during hot, dry conditions?",
+      "options": [
+        "Opening stomata",
+        "Closing stomata",
+        "Increasing transpiration",
+        "Decreasing root growth"
+      ],
+      "answer": 1,
+      "explanation": "Plants close their stomata to reduce water loss through transpiration during hot, dry conditions.",
+      "hint": "What would a plant do to conserve water?"
+    },
+    {
+      "id": 36,
+      "question": "What is the role of the Bowman's capsule in the nephron?",
+      "options": [
+        "Reabsorbing water",
+        "Filtering blood",
+        "Producing urine",
+        "Transporting urine"
+      ],
+      "answer": 1,
+      "explanation": "The Bowman's capsule is a cup-like structure that surrounds the glomerulus and filters blood.",
+      "hint": "It's the first step in urine formation."
+    },
+    {
+      "id": 37,
+      "question": "What is the function of the amniotic fluid?",
+      "options": [
+        "Providing nutrients",
+        "Protecting against infection",
+        "Cushioning the fetus",
+        "Filtering waste products"
+      ],
+      "answer": 2,
+      "explanation": "Amniotic fluid cushions the fetus, protecting it from physical injury and maintaining a stable temperature.",
+      "hint": "It's a protective liquid around the baby."
+    },
+    {
+      "id": 38,
+      "question": "Why is it important for pregnant women to get enough calcium?",
+      "options": [
+        "For brain development",
+        "For bone and teeth development",
+        "For immune system function",
+        "For energy production"
+      ],
+      "answer": 1,
+      "explanation": "Calcium is essential for the development of the fetus's bones and teeth.",
+      "hint": "What builds strong bones and teeth?"
+    },
+    {
+      "id": 39,
+      "question": "What would happen if a plant's xylem was blocked?",
+      "options": [
+        "The plant would grow faster",
+        "The plant would be unable to transport water",
+        "The plant would produce more sugars",
+        "The plant would absorb more nutrients"
+      ],
+      "answer": 1,
+      "explanation": "If the xylem is blocked, water cannot be transported from the roots to the rest of the plant, leading to wilting and eventually death.",
+      "hint": "What does xylem transport?"
+    },
+    {
+      "id": 40,
+      "question": "What is the role of the collecting duct in the nephron?",
+      "options": [
+        "Filtering blood",
+        "Reabsorbing water and salts",
+        "Producing urine",
+        "Transporting glucose"
+      ],
+      "answer": 1,
+      "explanation": "The collecting duct collects urine from multiple nephrons and transports it to the renal pelvis.",
+      "hint": "It's the final stage of urine concentration."
+    },
+    {
+      "id": 41,
+      "question": "What is the danger of rubella (German measles) during pregnancy?",
+      "options": [
+        "It causes premature labor",
+        "It can lead to birth defects",
+        "It has no effect on the fetus",
+        "It only affects the mother"
+      ],
+      "answer": 1,
+      "explanation": "Rubella infection during pregnancy can cause serious birth defects, including deafness, blindness, and heart problems.",
+      "hint": "It's a disease that can harm the developing baby."
+    },
+    {
+      "id": 42,
+      "question": "How does increasing humidity affect the water potential gradient in transpiration?",
+      "options": [
+        "Increases the gradient",
+        "Decreases the gradient",
+        "Has no effect",
+        "Reverses the gradient"
+      ],
+      "answer": 1,
+      "explanation": "Increasing humidity decreases the water potential gradient between the leaf and the air, slowing down transpiration.",
+      "hint": "Think about how water moves from areas of high to low potential."
+    },
+    {
+      "id": 43,
+      "question": "What is the function of the glomerulus?",
+      "options": [
+        "Reabsorbing water",
+        "Filtering blood",
+        "Producing hormones",
+        "Transporting urine"
+      ],
+      "answer": 1,
+      "explanation": "The glomerulus is a network of capillaries within the nephron that filters blood.",
+      "hint": "It's where the blood is first filtered."
+    },
+    {
+      "id": 44,
+      "question": "What is the role of the placenta in providing immunity to the fetus?",
+      "options": [
+        "Producing antibodies",
+        "Filtering out toxins",
+        "Providing nutrients",
+        "Regulating temperature"
+      ],
+      "answer": 0,
+      "explanation": "The placenta allows some antibodies from the mother to pass to the fetus, providing passive immunity.",
+      "hint": "It helps protect the baby from illness."
+    },
+    {
+      "id": 45,
+      "question": "Why is it important for pregnant women to avoid raw or undercooked meat?",
+      "options": [
+        "It lacks essential nutrients",
+        "It may contain harmful bacteria",
+        "It is difficult to digest",
+        "It causes allergic reactions"
+      ],
+      "answer": 1,
+      "explanation": "Raw or undercooked meat can contain bacteria like Listeria and Toxoplasma, which can harm the developing fetus.",
+      "hint": "Think about food poisoning."
+    },
+    {
+      "id": 46,
+      "question": "What is guttation?",
+      "options": [
+        "Transpiration at night",
+        "Water loss through stomata",
+        "Water droplets on leaf tips",
+        "Water absorption by roots"
+      ],
+      "answer": 2,
+      "explanation": "Guttation is the process where water is forced out of leaf tips due to root pressure when transpiration is low.",
+      "hint": "It happens when there's a lot of water and low evaporation."
+    },
+    {
+      "id": 47,
+      "question": "What is the function of the proximal convoluted tubule?",
+      "options": [
+        "Filtering blood",
+        "Reabsorbing glucose and amino acids",
+        "Producing hormones",
+        "Transporting urine"
+      ],
+      "answer": 1,
+      "explanation": "The proximal convoluted tubule reabsorbs essential nutrients like glucose, amino acids, and water back into the bloodstream.",
+      "hint": "It reclaims important substances from the filtrate."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of genetic counseling during pregnancy?",
+      "options": [
+        "To determine the baby's gender",
+        "To assess the risk of genetic disorders",
+        "To monitor fetal growth",
+        "To choose a baby name"
+      ],
+      "answer": 1,
+      "explanation": "Genetic counseling helps parents understand the risk of inherited genetic disorders and make informed decisions.",
+      "hint": "It helps understand family history and potential risks."
+    },
+    {
+      "id": 49,
+      "question": "How does a waxy cuticle on a leaf affect transpiration?",
+      "options": [
+        "Increases transpiration",
+        "Decreases transpiration",
+        "Has no effect",
+        "Causes stomata to open"
+      ],
+      "answer": 1,
+      "explanation": "A waxy cuticle reduces water loss from the leaf surface, decreasing transpiration.",
+      "hint": "It's a waterproof layer."
+    },
+    {
+      "id": 50,
+      "question": "What is the role of the distal convoluted tubule?",
+      "options": [
+        "Filtering blood",
+        "Reabsorbing water and salts",
+        "Producing hormones",
+        "Transporting glucose"
+      ],
+      "answer": 1,
+      "explanation": "The distal convoluted tubule fine-tunes the reabsorption of water and salts, helping to regulate blood pressure and electrolyte balance.",
+      "hint": "It's involved in final adjustments to urine composition."
+    }
+  ]
+}

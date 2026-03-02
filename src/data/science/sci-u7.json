@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 7: Genes and Inheritance",
+  "unitId": "sci-u7",
+  "topics": [
+    "Chromosomes, genes and DNA",
+    "Gametes and inheritance",
+    "Variation",
+    "Natural selection"
+  ],
+  "generatedAt": "2026-03-02T09:12:02Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the main function of DNA?",
+      "options": [
+        "To provide energy for the cell",
+        "To control the cell's activities",
+        "To transport materials in the cell",
+        "To build the cell wall"
+      ],
+      "answer": 1,
+      "explanation": "DNA contains the genetic instructions for an organism's development and functioning, controlling all cell activities.",
+      "hint": "Think about what makes you, *you* – what carries that information?"
+    },
+    {
+      "id": 2,
+      "question": "Where are genes located?",
+      "options": [
+        "In the cytoplasm",
+        "On the ribosomes",
+        "On the chromosomes",
+        "In the cell membrane"
+      ],
+      "answer": 2,
+      "explanation": "Genes are segments of DNA and are found on chromosomes within the nucleus of a cell.",
+      "hint": "Recall the structures found inside the cell's nucleus."
+    },
+    {
+      "id": 3,
+      "question": "What are gametes?",
+      "options": [
+        "Body cells",
+        "Muscle cells",
+        "Sex cells",
+        "Nerve cells"
+      ],
+      "answer": 2,
+      "explanation": "Gametes are sex cells (sperm and egg) that contain half the number of chromosomes as body cells.",
+      "hint": "Consider what cells are involved in reproduction."
+    },
+    {
+      "id": 4,
+      "question": "How many chromosomes are typically found in a human gamete?",
+      "options": [
+        "46",
+        "23",
+        "92",
+        "12"
+      ],
+      "answer": 1,
+      "explanation": "Human gametes contain 23 chromosomes, half the number found in body cells (46), to ensure the correct number after fertilization.",
+      "hint": "Think about what happens when sperm and egg combine."
+    },
+    {
+      "id": 5,
+      "question": "What is variation?",
+      "options": [
+        "The process of cell division",
+        "Differences in characteristics among individuals",
+        "The passing of traits from parents to offspring",
+        "The creation of new species"
+      ],
+      "answer": 1,
+      "explanation": "Variation refers to the differences in characteristics, such as height or eye color, observed among individuals within a population.",
+      "hint": "Think about why everyone looks a little different, even siblings."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is an example of continuous variation?",
+      "options": [
+        "Blood type",
+        "Eye color",
+        "Height",
+        "Attached or detached earlobes"
+      ],
+      "answer": 2,
+      "explanation": "Height is a continuous variation because it can take on a range of values, rather than being in distinct categories.",
+      "hint": "Consider traits that can be measured on a scale."
+    },
+    {
+      "id": 7,
+      "question": "What is natural selection?",
+      "options": [
+        "The process of artificial breeding",
+        "The survival and reproduction of individuals with advantageous traits",
+        "The random change in gene frequency",
+        "The creation of identical organisms"
+      ],
+      "answer": 1,
+      "explanation": "Natural selection is the process where organisms with traits better suited to their environment are more likely to survive and reproduce.",
+      "hint": "Think about 'survival of the fittest'."
+    },
+    {
+      "id": 8,
+      "question": "A population of beetles has variations in color, from light brown to dark brown. If the environment changes to a darker color, which beetles are most likely to survive?",
+      "options": [
+        "Light brown beetles",
+        "Dark brown beetles",
+        "Beetles of average color",
+        "All beetles will survive equally"
+      ],
+      "answer": 1,
+      "explanation": "Dark brown beetles will be better camouflaged in a darker environment, increasing their chances of survival and reproduction.",
+      "hint": "Consider how camouflage helps organisms."
+    },
+    {
+      "id": 9,
+      "question": "What is the role of chromosomes in inheritance?",
+      "options": [
+        "They provide energy for the cell",
+        "They carry genes from parents to offspring",
+        "They build proteins",
+        "They regulate temperature"
+      ],
+      "answer": 1,
+      "explanation": "Chromosomes carry genes, which are the units of heredity, and are passed from parents to offspring during reproduction.",
+      "hint": "Think about how traits are passed down through families."
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between genotype and phenotype?",
+      "options": [
+        "Genotype is the physical appearance, phenotype is the genetic makeup",
+        "Genotype is the genetic makeup, phenotype is the physical appearance",
+        "They are the same thing",
+        "Genotype refers to environmental factors, phenotype to genetic factors"
+      ],
+      "answer": 1,
+      "explanation": "Genotype refers to the genetic makeup of an organism, while phenotype refers to the observable characteristics resulting from the genotype.",
+      "hint": "Think about what you can *see* versus what's inside the genes."
+    },
+    {
+      "id": 11,
+      "question": "If a plant with the genotype TT (tall) is crossed with a plant with the genotype tt (short), what is the genotype of all the offspring?",
+      "options": [
+        "TT",
+        "tt",
+        "Tt",
+        "Ttt"
+      ],
+      "answer": 2,
+      "explanation": "Each parent contributes one allele, so all offspring will receive one T allele and one t allele, resulting in the genotype Tt.",
+      "hint": "Consider what each parent can contribute."
+    },
+    {
+      "id": 12,
+      "question": "What is a recessive allele?",
+      "options": [
+        "An allele that always shows its effect",
+        "An allele that only shows its effect when two copies are present",
+        "An allele that is dominant",
+        "An allele that is never inherited"
+      ],
+      "answer": 1,
+      "explanation": "A recessive allele only expresses its trait when an individual has two copies of that allele.",
+      "hint": "Think about how some traits seem to 'skip' a generation."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of meiosis?",
+      "options": [
+        "To create identical body cells",
+        "To create gametes with half the number of chromosomes",
+        "To repair damaged tissues",
+        "To increase the size of an organism"
+      ],
+      "answer": 1,
+      "explanation": "Meiosis is a type of cell division that produces gametes (sex cells) with half the number of chromosomes as the parent cell.",
+      "hint": "Think about the need to reduce chromosome number during sexual reproduction."
+    },
+    {
+      "id": 14,
+      "question": "What is mutation?",
+      "options": [
+        "A planned change in DNA",
+        "A random change in DNA",
+        "A change in RNA",
+        "A change in protein structure"
+      ],
+      "answer": 1,
+      "explanation": "Mutation is a random change in the DNA sequence, which can sometimes lead to variation.",
+      "hint": "Think about errors that can occur when copying information."
+    },
+    {
+      "id": 15,
+      "question": "How can mutations be beneficial?",
+      "options": [
+        "They always cause harm",
+        "They can create new traits that are advantageous in a changing environment",
+        "They always lead to disease",
+        "They have no effect"
+      ],
+      "answer": 1,
+      "explanation": "While many mutations are harmful, some can introduce new traits that help an organism survive and reproduce better in its environment.",
+      "hint": "Consider how environments change over time."
+    },
+    {
+      "id": 16,
+      "question": "What is the role of ribosomes in relation to genes?",
+      "options": [
+        "Ribosomes contain DNA",
+        "Ribosomes read the genetic code to build proteins",
+        "Ribosomes protect the DNA",
+        "Ribosomes replicate DNA"
+      ],
+      "answer": 1,
+      "explanation": "Ribosomes use the information encoded in genes (via mRNA) to assemble proteins.",
+      "hint": "Think about how genetic information is *used* to create something."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is NOT a factor that contributes to variation?",
+      "options": [
+        "Mutations",
+        "Environmental factors",
+        "Sexual reproduction",
+        "Identical DNA replication"
+      ],
+      "answer": 3,
+      "explanation": "Identical DNA replication would *reduce* variation, not contribute to it.",
+      "hint": "Think about what creates differences between individuals."
+    },
+    {
+      "id": 18,
+      "question": "What is the significance of fossil records in understanding natural selection?",
+      "options": [
+        "They show that species never change",
+        "They provide evidence of extinct species and how life has evolved",
+        "They prove that natural selection is incorrect",
+        "They only show the current species"
+      ],
+      "answer": 1,
+      "explanation": "Fossil records demonstrate how species have changed over time, providing evidence for the process of natural selection.",
+      "hint": "Think about what fossils tell us about the past."
+    },
+    {
+      "id": 19,
+      "question": "What is the function of DNA polymerase?",
+      "options": [
+        "To break down proteins",
+        "To replicate DNA",
+        "To translate RNA",
+        "To transport oxygen"
+      ],
+      "answer": 1,
+      "explanation": "DNA polymerase is an enzyme that plays a crucial role in replicating DNA, ensuring accurate copying of the genetic code.",
+      "hint": "Think about how DNA needs to be copied before cell division."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between homozygous and heterozygous?",
+      "options": [
+        "Homozygous has two different alleles, heterozygous has two identical alleles",
+        "Homozygous has two identical alleles, heterozygous has two different alleles",
+        "They are the same thing",
+        "Homozygous refers to physical traits, heterozygous to genetic traits"
+      ],
+      "answer": 1,
+      "explanation": "Homozygous means having two identical alleles for a trait, while heterozygous means having two different alleles.",
+      "hint": "Think about the 'same' versus 'different' alleles."
+    },
+    {
+      "id": 21,
+      "question": "A farmer breeds cows that produce a lot of milk. This is an example of…",
+      "options": [
+        "Natural selection",
+        "Mutation",
+        "Artificial selection",
+        "Genetic drift"
+      ],
+      "answer": 2,
+      "explanation": "Artificial selection is when humans intentionally breed organisms for desired traits.",
+      "hint": "Who is doing the selecting in this scenario?"
+    },
+    {
+      "id": 22,
+      "question": "What is the role of mRNA?",
+      "options": [
+        "To store genetic information",
+        "To carry genetic information from the nucleus to the ribosomes",
+        "To build proteins directly",
+        "To replicate DNA"
+      ],
+      "answer": 1,
+      "explanation": "mRNA (messenger RNA) carries the genetic code from DNA in the nucleus to the ribosomes, where proteins are made.",
+      "hint": "Think about how the information in DNA gets to where proteins are built."
+    },
+    {
+      "id": 23,
+      "question": "What is the central dogma of molecular biology?",
+      "options": [
+        "RNA -> Protein -> DNA",
+        "DNA -> RNA -> Protein",
+        "Protein -> RNA -> DNA",
+        "RNA -> DNA -> Protein"
+      ],
+      "answer": 1,
+      "explanation": "The central dogma describes the flow of genetic information: DNA is transcribed into RNA, which is then translated into protein.",
+      "hint": "Think about the order of information transfer."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of genetic screening?",
+      "options": [
+        "To create new genes",
+        "To identify individuals at risk of genetic disorders",
+        "To cure genetic disorders",
+        "To clone organisms"
+      ],
+      "answer": 1,
+      "explanation": "Genetic screening helps identify individuals who may carry genes for certain genetic disorders, allowing for informed decisions about health and family planning.",
+      "hint": "Think about detecting potential health risks."
+    },
+    {
+      "id": 25,
+      "question": "What is a pedigree chart used for?",
+      "options": [
+        "To show the structure of DNA",
+        "To track traits through generations of a family",
+        "To map chromosomes",
+        "To analyze protein structure"
+      ],
+      "answer": 1,
+      "explanation": "Pedigree charts are diagrams that show the inheritance of traits within a family over multiple generations.",
+      "hint": "Think about family trees and how traits are passed down."
+    },
+    {
+      "id": 26,
+      "question": "Which of the following best describes a dominant trait?",
+      "options": [
+        "Only expressed when homozygous",
+        "Always hidden by a recessive trait",
+        "Expressed even when only one copy is present",
+        "Only found in males"
+      ],
+      "answer": 2,
+      "explanation": "A dominant trait is expressed even if an individual only has one copy of the dominant allele.",
+      "hint": "Think about how a trait can show up even if it's not the only one present."
+    },
+    {
+      "id": 27,
+      "question": "What is the role of tRNA?",
+      "options": [
+        "To carry genetic code from DNA to ribosomes",
+        "To build ribosomes",
+        "To transport amino acids to the ribosomes",
+        "To replicate DNA"
+      ],
+      "answer": 2,
+      "explanation": "tRNA (transfer RNA) carries amino acids to the ribosomes, where they are assembled into proteins based on the mRNA code.",
+      "hint": "Think about what's needed to *build* proteins."
+    },
+    {
+      "id": 28,
+      "question": "What is the function of a gene?",
+      "options": [
+        "To store energy",
+        "To control cell division",
+        "To determine a trait",
+        "To provide structural support"
+      ],
+      "answer": 2,
+      "explanation": "A gene is a segment of DNA that codes for a specific trait or characteristic.",
+      "hint": "Think about what genes *do* – what do they influence?"
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between mitosis and meiosis?",
+      "options": [
+        "Mitosis produces gametes, meiosis produces body cells",
+        "Mitosis produces body cells, meiosis produces gametes",
+        "They are the same process",
+        "Mitosis only occurs in plants"
+      ],
+      "answer": 1,
+      "explanation": "Mitosis results in two identical daughter cells for growth and repair, while meiosis produces four genetically different gametes for sexual reproduction.",
+      "hint": "Think about the purpose of each type of cell division."
+    },
+    {
+      "id": 30,
+      "question": "What is the role of natural selection in antibiotic resistance?",
+      "options": [
+        "Antibiotics cause mutations",
+        "Bacteria with resistance survive and reproduce",
+        "Bacteria learn to resist antibiotics",
+        "Antibiotics destroy all bacteria"
+      ],
+      "answer": 1,
+      "explanation": "Bacteria with genes that provide resistance to antibiotics are more likely to survive and reproduce in the presence of antibiotics, leading to an increase in resistant populations.",
+      "hint": "Think about 'survival of the fittest' in the context of antibiotics."
+    },
+    {
+      "id": 31,
+      "question": "What is the shape of a DNA molecule?",
+      "options": [
+        "Linear",
+        "Circular",
+        "Double helix",
+        "Square"
+      ],
+      "answer": 2,
+      "explanation": "DNA is famous for its double helix shape, resembling a twisted ladder.",
+      "hint": "Think of the iconic image of DNA."
+    },
+    {
+      "id": 32,
+      "question": "What is the function of a codon?",
+      "options": [
+        "A building block of DNA",
+        "A sequence of three nucleotides that codes for an amino acid",
+        "A type of enzyme",
+        "A component of a ribosome"
+      ],
+      "answer": 1,
+      "explanation": "A codon is a three-nucleotide sequence on mRNA that specifies a particular amino acid to be added to a growing protein chain.",
+      "hint": "Think about how the genetic code is 'read'."
+    },
+    {
+      "id": 33,
+      "question": "What is the role of the cell membrane in relation to DNA?",
+      "options": [
+        "It contains DNA",
+        "It protects DNA",
+        "It transports DNA",
+        "It replicates DNA"
+      ],
+      "answer": 1,
+      "explanation": "The cell membrane controls what enters and leaves the cell, protecting the DNA within.",
+      "hint": "Think about what surrounds and protects the cell's contents."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of gel electrophoresis?",
+      "options": [
+        "To replicate DNA",
+        "To separate DNA fragments by size",
+        "To translate RNA",
+        "To build proteins"
+      ],
+      "answer": 1,
+      "explanation": "Gel electrophoresis is a technique used to separate DNA fragments based on their size, allowing scientists to analyze genetic material.",
+      "hint": "Think about sorting DNA pieces."
+    },
+    {
+      "id": 35,
+      "question": "What is the role of enzymes in DNA replication?",
+      "options": [
+        "To provide energy",
+        "To build the DNA molecule",
+        "To speed up the replication process",
+        "To transport DNA"
+      ],
+      "answer": 2,
+      "explanation": "Enzymes, like DNA polymerase, are essential for speeding up the DNA replication process and ensuring accuracy.",
+      "hint": "Think about how reactions happen faster with catalysts."
+    },
+    {
+      "id": 36,
+      "question": "What is the difference between a gene and an allele?",
+      "options": [
+        "They are the same thing",
+        "A gene is a specific version of an allele",
+        "An allele is a specific version of a gene",
+        "Genes are found in RNA, alleles in DNA"
+      ],
+      "answer": 2,
+      "explanation": "A gene is a segment of DNA that codes for a trait, while an allele is a specific version of that gene (e.g., blue eyes vs. brown eyes).",
+      "hint": "Think about different forms of the same trait."
+    },
+    {
+      "id": 37,
+      "question": "What is the role of the nucleus in protecting DNA?",
+      "options": [
+        "It provides energy for DNA",
+        "It transports DNA",
+        "It physically encloses and protects DNA",
+        "It replicates DNA"
+      ],
+      "answer": 2,
+      "explanation": "The nucleus is a membrane-bound organelle that houses and protects the cell's DNA.",
+      "hint": "Think about where DNA is located within the cell."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of cloning?",
+      "options": [
+        "To create genetic variation",
+        "To create a genetically identical copy of an organism",
+        "To cure genetic diseases",
+        "To speed up evolution"
+      ],
+      "answer": 1,
+      "explanation": "Cloning is the process of creating a genetically identical copy of an organism.",
+      "hint": "Think about making an exact duplicate."
+    },
+    {
+      "id": 39,
+      "question": "What is the role of restriction enzymes?",
+      "options": [
+        "To replicate DNA",
+        "To cut DNA at specific sequences",
+        "To translate RNA",
+        "To build proteins"
+      ],
+      "answer": 1,
+      "explanation": "Restriction enzymes are used to cut DNA at specific sequences, which is useful in genetic engineering and DNA analysis.",
+      "hint": "Think about 'cutting' DNA in specific places."
+    },
+    {
+      "id": 40,
+      "question": "What is the relationship between genes and proteins?",
+      "options": [
+        "Genes are made of proteins",
+        "Proteins are made based on instructions from genes",
+        "Genes and proteins are the same thing",
+        "Proteins control gene expression"
+      ],
+      "answer": 1,
+      "explanation": "Genes contain the instructions for building proteins, and proteins carry out most of the functions in the cell.",
+      "hint": "Think about how genetic information is used to create something functional."
+    },
+    {
+      "id": 41,
+      "question": "What is the function of a chromosome?",
+      "options": [
+        "To produce energy",
+        "To carry genetic information in the form of genes",
+        "To build proteins",
+        "To regulate cell temperature"
+      ],
+      "answer": 1,
+      "explanation": "Chromosomes are structures that carry genetic information in the form of genes.",
+      "hint": "Think about what carries the instructions for an organism."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of a Punnett square?",
+      "options": [
+        "To show the structure of DNA",
+        "To predict the probability of offspring inheriting certain traits",
+        "To map chromosomes",
+        "To analyze protein structure"
+      ],
+      "answer": 1,
+      "explanation": "A Punnett square is a diagram used to predict the possible genotypes and phenotypes of offspring from a genetic cross.",
+      "hint": "Think about predicting inheritance patterns."
+    },
+    {
+      "id": 43,
+      "question": "What is the role of DNA ligase?",
+      "options": [
+        "To cut DNA",
+        "To replicate DNA",
+        "To join DNA fragments together",
+        "To translate RNA"
+      ],
+      "answer": 2,
+      "explanation": "DNA ligase is an enzyme that joins DNA fragments together, often used in genetic engineering.",
+      "hint": "Think about 'gluing' DNA pieces together."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between incomplete dominance and codominance?",
+      "options": [
+        "Incomplete dominance shows a blended phenotype, codominance shows both phenotypes",
+        "Codominance shows a blended phenotype, incomplete dominance shows both phenotypes",
+        "They are the same thing",
+        "Incomplete dominance only occurs in plants"
+      ],
+      "answer": 0,
+      "explanation": "In incomplete dominance, the heterozygous phenotype is a blend of the two homozygous phenotypes, while in codominance, both phenotypes are expressed simultaneously.",
+      "hint": "Think about how traits are expressed in heterozygotes."
+    },
+    {
+      "id": 45,
+      "question": "What is the role of ribosomes in protein synthesis?",
+      "options": [
+        "They store genetic information",
+        "They replicate DNA",
+        "They translate mRNA into proteins",
+        "They transport amino acids"
+      ],
+      "answer": 2,
+      "explanation": "Ribosomes are the sites of protein synthesis, where mRNA is translated into a chain of amino acids.",
+      "hint": "Think about where proteins are actually *made*."
+    },
+    {
+      "id": 46,
+      "question": "What is the function of a promoter region in DNA?",
+      "options": [
+        "It codes for a protein",
+        "It signals the start of gene transcription",
+        "It protects the DNA from damage",
+        "It replicates the DNA"
+      ],
+      "answer": 1,
+      "explanation": "The promoter region is a DNA sequence that signals the start of gene transcription, initiating the process of making RNA.",
+      "hint": "Think about how gene expression is 'turned on'."
+    },
+    {
+      "id": 47,
+      "question": "What is the role of natural selection in the evolution of species?",
+      "options": [
+        "It creates new species instantly",
+        "It favors individuals with traits that increase their survival and reproduction",
+        "It prevents species from changing",
+        "It only affects plants"
+      ],
+      "answer": 1,
+      "explanation": "Natural selection drives evolution by favoring individuals with traits that make them better adapted to their environment, leading to changes in populations over time.",
+      "hint": "Think about how populations change over generations."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of gene therapy?",
+      "options": [
+        "To clone organisms",
+        "To replace or repair faulty genes",
+        "To create new genes",
+        "To study DNA structure"
+      ],
+      "answer": 1,
+      "explanation": "Gene therapy aims to treat genetic disorders by replacing or repairing faulty genes.",
+      "hint": "Think about fixing genetic problems."
+    },
+    {
+      "id": 49,
+      "question": "What is the role of a vector in genetic engineering?",
+      "options": [
+        "To cut DNA",
+        "To replicate DNA",
+        "To carry foreign DNA into a host cell",
+        "To translate RNA"
+      ],
+      "answer": 2,
+      "explanation": "A vector, such as a plasmid, is used to carry foreign DNA into a host cell for genetic engineering purposes.",
+      "hint": "Think about how genes are delivered into cells."
+    },
+    {
+      "id": 50,
+      "question": "What is the significance of genetic diversity within a population?",
+      "options": [
+        "It makes the population more vulnerable to disease",
+        "It increases the population's ability to adapt to changing environments",
+        "It reduces the rate of mutation",
+        "It leads to a decrease in variation"
+      ],
+      "answer": 1,
+      "explanation": "Genetic diversity increases a population's ability to adapt to changing environments because individuals with different traits are more likely to survive and reproduce under new conditions.",
+      "hint": "Think about how variation helps populations survive challenges."
+    }
+  ]
+}

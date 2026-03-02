@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 9: Electricity",
+  "unitId": "sci-u9",
+  "topics": [
+    "Parallel circuits",
+    "Current and voltage in parallel circuits",
+    "Resistance",
+    "Practical circuits"
+  ],
+  "generatedAt": "2026-03-02T09:16:01Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What happens to the overall resistance in a parallel circuit when more resistors are added?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays the same",
+        "It becomes infinite"
+      ],
+      "answer": 1,
+      "explanation": "Adding more parallel paths provides more routes for current, effectively reducing the overall resistance.",
+      "hint": "Think about how adding more lanes to a highway affects traffic flow."
+    },
+    {
+      "id": 2,
+      "question": "In a parallel circuit, the voltage across each resistor is…",
+      "options": [
+        "Different",
+        "The same",
+        "Zero",
+        "Dependent on the current"
+      ],
+      "answer": 1,
+      "explanation": "In a parallel circuit, each resistor is directly connected to the voltage source, so they all experience the same potential difference.",
+      "hint": "Consider how electrical outlets are wired in your home."
+    },
+    {
+      "id": 3,
+      "question": "What unit is used to measure electrical resistance?",
+      "options": [
+        "Amperes (A)",
+        "Volts (V)",
+        "Ohms (Ω)",
+        "Watts (W)"
+      ],
+      "answer": 2,
+      "explanation": "The ohm (Ω) is the standard unit of electrical resistance, representing the opposition to current flow.",
+      "hint": "Think about what property opposes the flow of charge."
+    },
+    {
+      "id": 4,
+      "question": "If a 12V battery is connected to a 4Ω resistor, what is the current flowing through the resistor?",
+      "options": [
+        "3A",
+        "48A",
+        "0.33A",
+        "16A"
+      ],
+      "answer": 0,
+      "explanation": "Using Ohm's Law (V=IR), I = V/R = 12V / 4Ω = 3A.",
+      "hint": "Remember Ohm's Law: Voltage = Current x Resistance."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a practical application of a parallel circuit?",
+      "options": [
+        "A single light bulb",
+        "Christmas lights",
+        "A series of batteries",
+        "A simple switch"
+      ],
+      "answer": 1,
+      "explanation": "Christmas lights are wired in parallel so that if one bulb fails, the others continue to light up.",
+      "hint": "Think about what happens when one bulb burns out on a string of lights."
+    },
+    {
+      "id": 6,
+      "question": "In a parallel circuit with two resistors, if one resistor is removed, what happens to the total current?",
+      "options": [
+        "It decreases",
+        "It increases",
+        "It stays the same",
+        "It becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "Removing a resistor increases the overall resistance, allowing more current to flow from the source.",
+      "hint": "Consider how the number of paths for current changes."
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of a resistor in a circuit?",
+      "options": [
+        "To increase voltage",
+        "To decrease voltage",
+        "To control current flow",
+        "To store electrical energy"
+      ],
+      "answer": 2,
+      "explanation": "Resistors limit the flow of current, protecting other components and controlling the circuit's behavior.",
+      "hint": "Think about what 'resistance' actually means in terms of electricity."
+    },
+    {
+      "id": 8,
+      "question": "Two resistors, 10Ω and 20Ω, are connected in parallel. What is the combined resistance?",
+      "options": [
+        "30Ω",
+        "10Ω",
+        "6.67Ω",
+        "200Ω"
+      ],
+      "answer": 2,
+      "explanation": "The formula for parallel resistance is 1/Rtotal = 1/R1 + 1/R2.  1/Rtotal = 1/10 + 1/20 = 3/20, so Rtotal = 20/3 = 6.67Ω",
+      "hint": "You'll need to use the formula for calculating the total resistance of parallel resistors."
+    },
+    {
+      "id": 9,
+      "question": "What happens to the brightness of a bulb if the voltage across it increases?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It flickers"
+      ],
+      "answer": 2,
+      "explanation": "Brightness is related to power, and power increases with voltage (P=V²/R).",
+      "hint": "Think about the relationship between voltage, power, and brightness."
+    },
+    {
+      "id": 10,
+      "question": "Which statement best describes current in a parallel circuit?",
+      "options": [
+        "It is the same through all branches",
+        "It divides between the branches",
+        "It is zero in all branches",
+        "It only flows through one branch"
+      ],
+      "answer": 1,
+      "explanation": "The total current entering a parallel circuit splits into different paths, with each branch receiving a portion of the current.",
+      "hint": "Imagine water flowing through multiple pipes connected to a single source."
+    },
+    {
+      "id": 11,
+      "question": "A component has a resistance of 50Ω and a current of 0.2A flowing through it. What is the voltage across it?",
+      "options": [
+        "10V",
+        "250V",
+        "0.004V",
+        "2.5V"
+      ],
+      "answer": 0,
+      "explanation": "Using Ohm's Law (V=IR), V = 0.2A * 50Ω = 10V.",
+      "hint": "Remember Ohm's Law and rearrange it to solve for voltage."
+    },
+    {
+      "id": 12,
+      "question": "What is the main advantage of using a parallel circuit for household wiring?",
+      "options": [
+        "Simplicity",
+        "Lower cost",
+        "Independent operation of appliances",
+        "Higher voltage"
+      ],
+      "answer": 2,
+      "explanation": "Parallel circuits allow each appliance to operate independently; if one fails, the others continue to function.",
+      "hint": "Think about what would happen if all your appliances went off when one bulb blew."
+    },
+    {
+      "id": 13,
+      "question": "If you add another identical resistor in parallel to an existing resistor, what happens to the total resistance?",
+      "options": [
+        "It doubles",
+        "It halves",
+        "It remains the same",
+        "It quadruples"
+      ],
+      "answer": 2,
+      "explanation": "Adding an identical resistor in parallel always halves the total resistance.",
+      "hint": "Consider the formula for calculating total resistance in a parallel circuit."
+    },
+    {
+      "id": 14,
+      "question": "What does a voltmeter measure?",
+      "options": [
+        "Current",
+        "Resistance",
+        "Voltage",
+        "Power"
+      ],
+      "answer": 2,
+      "explanation": "A voltmeter measures the potential difference (voltage) between two points in a circuit.",
+      "hint": "Think about what 'voltage' represents in an electrical circuit."
+    },
+    {
+      "id": 15,
+      "question": "In a parallel circuit, which of the following is true about the total current?",
+      "options": [
+        "It is equal to the current through any single branch",
+        "It is less than the current through any single branch",
+        "It is the sum of the currents through each branch",
+        "It is zero"
+      ],
+      "answer": 2,
+      "explanation": "Kirchhoff's Current Law states that the total current entering a junction equals the total current leaving it.",
+      "hint": "Think about how current 'splits' at a junction in a parallel circuit."
+    },
+    {
+      "id": 16,
+      "question": "A resistor has a color code of Red, Red, Brown, Gold. What is its resistance?",
+      "options": [
+        "2.2 kΩ ± 5%",
+        "22 Ω ± 5%",
+        "220 Ω ± 10%",
+        "2.2 Ω ± 20%"
+      ],
+      "answer": 0,
+      "explanation": "Red=2, Red=2, Brown=10^1, Gold=±5%. Therefore, 22 x 10^1 = 220 Ω, but the brown band is the multiplier, so it's 22 x 10 = 220 Ohms. The gold band indicates a 5% tolerance.",
+      "hint": "You'll need to know the resistor color code."
+    },
+    {
+      "id": 17,
+      "question": "What is the function of a fuse in an electrical circuit?",
+      "options": [
+        "To increase voltage",
+        "To decrease current",
+        "To protect the circuit from overcurrent",
+        "To store electrical energy"
+      ],
+      "answer": 2,
+      "explanation": "A fuse contains a wire that melts and breaks the circuit if the current exceeds a safe level, preventing damage.",
+      "hint": "Think about what can happen if too much current flows through a circuit."
+    },
+    {
+      "id": 18,
+      "question": "Two 6Ω resistors are connected in parallel. What is the equivalent resistance?",
+      "options": [
+        "12Ω",
+        "3Ω",
+        "6Ω",
+        "0Ω"
+      ],
+      "answer": 1,
+      "explanation": "For identical resistors in parallel, the equivalent resistance is R/n, where n is the number of resistors. 6Ω / 2 = 3Ω.",
+      "hint": "There's a shortcut for calculating the equivalent resistance of identical parallel resistors."
+    },
+    {
+      "id": 19,
+      "question": "What is the relationship between power, voltage, and resistance?",
+      "options": [
+        "P = V/R",
+        "P = VR",
+        "P = V²/R",
+        "P = R²/V"
+      ],
+      "answer": 2,
+      "explanation": "Power (P) is calculated as P = V²/R, where V is voltage and R is resistance.",
+      "hint": "Recall the formula for electrical power."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following materials is a good conductor of electricity?",
+      "options": [
+        "Rubber",
+        "Plastic",
+        "Copper",
+        "Wood"
+      ],
+      "answer": 2,
+      "explanation": "Copper is a metal with free electrons, allowing it to conduct electricity efficiently.",
+      "hint": "Think about what materials are commonly used in electrical wires."
+    },
+    {
+      "id": 21,
+      "question": "In a parallel circuit, if one branch is opened (e.g., a bulb burns out), what happens to the other branches?",
+      "options": [
+        "They also stop working",
+        "They continue to work normally",
+        "The current in them decreases",
+        "The voltage in them increases"
+      ],
+      "answer": 1,
+      "explanation": "Because each branch has its own independent path to the voltage source, the other branches are unaffected.",
+      "hint": "Think about the definition of a parallel circuit."
+    },
+    {
+      "id": 22,
+      "question": "What unit is used to measure electrical power?",
+      "options": [
+        "Amperes (A)",
+        "Volts (V)",
+        "Ohms (Ω)",
+        "Watts (W)"
+      ],
+      "answer": 3,
+      "explanation": "The watt (W) is the standard unit of power, representing the rate at which energy is transferred.",
+      "hint": "Think about what 'power' represents in terms of energy and time."
+    },
+    {
+      "id": 23,
+      "question": "A 9V battery is connected to two 4.5Ω resistors in parallel. What is the total current flowing from the battery?",
+      "options": [
+        "2A",
+        "4A",
+        "9A",
+        "0.5A"
+      ],
+      "answer": 1,
+      "explanation": "The equivalent resistance of two 4.5Ω resistors in parallel is 2.25Ω.  I = V/R = 9V / 2.25Ω = 4A.",
+      "hint": "First calculate the equivalent resistance of the parallel resistors."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of an ammeter in a circuit?",
+      "options": [
+        "To measure voltage",
+        "To measure resistance",
+        "To measure current",
+        "To measure power"
+      ],
+      "answer": 2,
+      "explanation": "An ammeter measures the rate of flow of electric charge (current) in a circuit.",
+      "hint": "Think about what 'current' represents in an electrical circuit."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following statements is true about insulators?",
+      "options": [
+        "They allow current to flow easily",
+        "They have many free electrons",
+        "They resist the flow of current",
+        "They are always metals"
+      ],
+      "answer": 2,
+      "explanation": "Insulators have very few free electrons and therefore resist the flow of electric current.",
+      "hint": "Think about what materials are used to cover electrical wires."
+    },
+    {
+      "id": 26,
+      "question": "If a resistor's power rating is 1W and it dissipates 1.5W of power, what will happen?",
+      "options": [
+        "It will work normally",
+        "It will overheat and likely fail",
+        "The current will decrease",
+        "The voltage will increase"
+      ],
+      "answer": 1,
+      "explanation": "Exceeding a resistor's power rating causes it to overheat and potentially burn out.",
+      "hint": "Think about what happens when a component is pushed beyond its limits."
+    },
+    {
+      "id": 27,
+      "question": "Two resistors, 20Ω and 30Ω, are connected in parallel across a 12V source. What is the voltage across the 30Ω resistor?",
+      "options": [
+        "6V",
+        "12V",
+        "10V",
+        "24V"
+      ],
+      "answer": 1,
+      "explanation": "In a parallel circuit, the voltage across each branch is the same as the source voltage.",
+      "hint": "Remember the properties of a parallel circuit."
+    },
+    {
+      "id": 28,
+      "question": "What is the effect of increasing the length of a wire on its resistance?",
+      "options": [
+        "It decreases the resistance",
+        "It increases the resistance",
+        "It has no effect",
+        "It depends on the material"
+      ],
+      "answer": 1,
+      "explanation": "Longer wires have more resistance because electrons collide with more atoms as they travel through the wire.",
+      "hint": "Think about how the path length affects the difficulty of moving through something."
+    },
+    {
+      "id": 29,
+      "question": "A circuit contains a 6V battery and a 12Ω resistor. What is the current flowing through the resistor?",
+      "options": [
+        "0.5A",
+        "2A",
+        "18A",
+        "72A"
+      ],
+      "answer": 0,
+      "explanation": "Using Ohm's Law (I = V/R), I = 6V / 12Ω = 0.5A.",
+      "hint": "Apply Ohm's Law to find the current."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of a switch in a circuit?",
+      "options": [
+        "To increase voltage",
+        "To decrease current",
+        "To open or close the circuit",
+        "To store electrical energy"
+      ],
+      "answer": 2,
+      "explanation": "A switch controls the flow of current by creating an open or closed path.",
+      "hint": "Think about how you turn a light on and off."
+    },
+    {
+      "id": 31,
+      "question": "What is the total resistance of three 10Ω resistors connected in parallel?",
+      "options": [
+        "30Ω",
+        "10Ω",
+        "3.33Ω",
+        "0.33Ω"
+      ],
+      "answer": 2,
+      "explanation": "1/Rtotal = 1/10 + 1/10 + 1/10 = 3/10, so Rtotal = 10/3 = 3.33Ω",
+      "hint": "Use the formula for parallel resistance with three resistors."
+    },
+    {
+      "id": 32,
+      "question": "What is the difference between AC and DC current?",
+      "options": [
+        "AC flows in one direction, DC flows in both",
+        "AC flows in both directions, DC flows in one",
+        "AC is safer than DC",
+        "DC is used in power plants"
+      ],
+      "answer": 1,
+      "explanation": "Direct Current (DC) flows in one direction, while Alternating Current (AC) periodically reverses direction.",
+      "hint": "Think about batteries versus the electricity from a wall outlet."
+    },
+    {
+      "id": 33,
+      "question": "A 100W light bulb is connected to a 120V power supply. What is the current flowing through the bulb?",
+      "options": [
+        "0.83A",
+        "12A",
+        "1200A",
+        "0.0083A"
+      ],
+      "answer": 0,
+      "explanation": "Using P = VI, I = P/V = 100W / 120V = 0.83A.",
+      "hint": "Rearrange the power formula to solve for current."
+    },
+    {
+      "id": 34,
+      "question": "What is the function of a variable resistor (rheostat)?",
+      "options": [
+        "To provide a fixed resistance",
+        "To change the voltage",
+        "To change the resistance",
+        "To store electrical energy"
+      ],
+      "answer": 2,
+      "explanation": "A variable resistor allows you to adjust the resistance in a circuit.",
+      "hint": "The name gives you a clue!"
+    },
+    {
+      "id": 35,
+      "question": "In a parallel circuit, if the voltage is constant, increasing the number of resistors will…",
+      "options": [
+        "Increase the current in each resistor",
+        "Decrease the current in each resistor",
+        "Keep the current constant",
+        "Increase the voltage"
+      ],
+      "answer": 1,
+      "explanation": "Adding more parallel paths reduces the overall resistance, allowing more current to flow.",
+      "hint": "Think about Ohm's Law and how resistance affects current."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of earthing in electrical systems?",
+      "options": [
+        "To increase voltage",
+        "To provide a path for fault current",
+        "To reduce resistance",
+        "To store energy"
+      ],
+      "answer": 1,
+      "explanation": "Earthing provides a low-resistance path for fault current to flow, protecting users from electric shock.",
+      "hint": "Think about safety features in electrical appliances."
+    },
+    {
+      "id": 37,
+      "question": "Two resistors, 5Ω and 15Ω, are connected in parallel. What is the voltage across the 5Ω resistor if the total voltage is 10V?",
+      "options": [
+        "10V",
+        "5V",
+        "2.5V",
+        "7.5V"
+      ],
+      "answer": 0,
+      "explanation": "In a parallel circuit, the voltage across each branch is the same as the source voltage.",
+      "hint": "Remember the properties of a parallel circuit."
+    },
+    {
+      "id": 38,
+      "question": "What is the effect of decreasing the temperature on the resistance of most metals?",
+      "options": [
+        "It increases the resistance",
+        "It decreases the resistance",
+        "It has no effect",
+        "It depends on the voltage"
+      ],
+      "answer": 1,
+      "explanation": "As temperature decreases, the atoms in the metal vibrate less, reducing the resistance to electron flow.",
+      "hint": "Think about how temperature affects the movement of atoms."
+    },
+    {
+      "id": 39,
+      "question": "A circuit has a current of 2A and a resistance of 10Ω. What is the power dissipated by the resistor?",
+      "options": [
+        "20W",
+        "40W",
+        "0.2W",
+        "5W"
+      ],
+      "answer": 0,
+      "explanation": "Using P = I²R, P = (2A)² * 10Ω = 40W.",
+      "hint": "Use the power formula involving current and resistance."
+    },
+    {
+      "id": 40,
+      "question": "What is the function of a circuit breaker?",
+      "options": [
+        "To increase voltage",
+        "To decrease current",
+        "To interrupt the circuit when overcurrent occurs",
+        "To store electrical energy"
+      ],
+      "answer": 2,
+      "explanation": "A circuit breaker automatically interrupts the circuit if the current exceeds a safe level, preventing damage.",
+      "hint": "Think about what happens during a power outage."
+    },
+    {
+      "id": 41,
+      "question": "What is the equivalent resistance of two 5Ω resistors connected in parallel?",
+      "options": [
+        "10Ω",
+        "2.5Ω",
+        "5Ω",
+        "0Ω"
+      ],
+      "answer": 1,
+      "explanation": "For identical resistors in parallel, the equivalent resistance is R/n, where n is the number of resistors. 5Ω / 2 = 2.5Ω",
+      "hint": "Think about how parallel paths affect overall resistance."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of insulation around electrical wires?",
+      "options": [
+        "To conduct electricity",
+        "To prevent short circuits",
+        "To increase current flow",
+        "To reduce voltage"
+      ],
+      "answer": 1,
+      "explanation": "Insulation prevents electricity from escaping the wire and causing short circuits or shocks.",
+      "hint": "Think about safety when dealing with electricity."
+    },
+    {
+      "id": 43,
+      "question": "A 6Ω resistor is connected in parallel with a 12Ω resistor. What is the total resistance of the combination?",
+      "options": [
+        "18Ω",
+        "4Ω",
+        "6Ω",
+        "12Ω"
+      ],
+      "answer": 1,
+      "explanation": "1/Rtotal = 1/6 + 1/12 = 3/12, so Rtotal = 12/3 = 4Ω",
+      "hint": "Use the formula for calculating the total resistance of parallel resistors."
+    },
+    {
+      "id": 44,
+      "question": "What is the relationship between voltage, current, and resistance, as described by Ohm's Law?",
+      "options": [
+        "V = I/R",
+        "I = VR",
+        "R = VI",
+        "V = IR"
+      ],
+      "answer": 3,
+      "explanation": "Ohm's Law states that Voltage (V) equals Current (I) multiplied by Resistance (R).",
+      "hint": "Recall the fundamental equation relating these three quantities."
+    },
+    {
+      "id": 45,
+      "question": "What happens to the total current in a parallel circuit if one of the resistors is replaced with a resistor of lower resistance?",
+      "options": [
+        "The total current decreases",
+        "The total current increases",
+        "The total current remains the same",
+        "The voltage decreases"
+      ],
+      "answer": 1,
+      "explanation": "A lower resistance provides an easier path for current, increasing the total current flow.",
+      "hint": "Think about how resistance affects current flow."
+    },
+    {
+      "id": 46,
+      "question": "What is the function of a diode in a circuit?",
+      "options": [
+        "To amplify current",
+        "To allow current to flow in only one direction",
+        "To store electrical energy",
+        "To increase voltage"
+      ],
+      "answer": 1,
+      "explanation": "A diode acts as a one-way valve for current, allowing it to flow in only one direction.",
+      "hint": "Think about the term 'one-way street'."
+    },
+    {
+      "id": 47,
+      "question": "Two resistors, 8Ω and 16Ω, are connected in parallel. What is the current through the 8Ω resistor if the total voltage is 24V?",
+      "options": [
+        "3A",
+        "6A",
+        "12A",
+        "24A"
+      ],
+      "answer": 0,
+      "explanation": "The voltage across the 8Ω resistor is 24V. Using Ohm's Law, I = V/R = 24V / 8Ω = 3A.",
+      "hint": "Remember that voltage is the same across parallel branches."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of a potentiometer?",
+      "options": [
+        "To measure voltage",
+        "To provide a variable resistance",
+        "To store electrical energy",
+        "To amplify current"
+      ],
+      "answer": 1,
+      "explanation": "A potentiometer is a type of variable resistor that allows you to adjust the resistance continuously.",
+      "hint": "Think about volume controls on audio devices."
+    },
+    {
+      "id": 49,
+      "question": "A 10Ω resistor and a 20Ω resistor are connected in parallel. The total current flowing through the circuit is 3A. What is the voltage across the parallel combination?",
+      "options": [
+        "10V",
+        "20V",
+        "30V",
+        "60V"
+      ],
+      "answer": 0,
+      "explanation": "The equivalent resistance is (10 * 20) / (10 + 20) = 6.67Ω.  V = IR = 3A * 6.67Ω = 20V.",
+      "hint": "First calculate the equivalent resistance of the parallel combination."
+    },
+    {
+      "id": 50,
+      "question": "What is the main difference between a series and a parallel circuit?",
+      "options": [
+        "Series circuits have multiple paths for current, parallel circuits have one",
+        "Series circuits have one path for current, parallel circuits have multiple",
+        "Series circuits use AC, parallel circuits use DC",
+        "Series circuits are safer than parallel circuits"
+      ],
+      "answer": 1,
+      "explanation": "In a series circuit, components are connected end-to-end, providing only one path for current. In a parallel circuit, components are connected side-by-side, providing multiple paths.",
+      "hint": "Think about how the components are arranged in each type of circuit."
+    }
+  ]
+}

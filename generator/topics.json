@@ -154,6 +154,107 @@
           ]
         }
       ]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "icon": "🔬",
+      "units": [
+        {
+          "id": "sci-u1",
+          "name": "Unit 1: Photosynthesis and the Carbon Cycle",
+          "topics": [
+            "Photosynthesis",
+            "More about photosynthesis",
+            "The carbon cycle",
+            "Climate change"
+          ]
+        },
+        {
+          "id": "sci-u2",
+          "name": "Unit 2: Properties of Materials",
+          "topics": [
+            "Atomic structure and the Periodic Table",
+            "Trends in groups within the Periodic Table",
+            "Why elements react to form compounds",
+            "Simple and giant structures"
+          ]
+        },
+        {
+          "id": "sci-u3",
+          "name": "Unit 3: Forces and Energy",
+          "topics": [
+            "Density",
+            "Heat and temperature",
+            "Conservation of energy",
+            "Moving from hot to cold",
+            "Ways of transferring thermal energy",
+            "Cooling by evaporation"
+          ]
+        },
+        {
+          "id": "sci-u4",
+          "name": "Unit 4: Maintaining Life",
+          "topics": [
+            "Plants and water",
+            "Transpiration",
+            "Excretion in humans",
+            "Keeping a fetus healthy"
+          ]
+        },
+        {
+          "id": "sci-u5",
+          "name": "Unit 5: Reactivity",
+          "topics": [
+            "Reactivity and displacement reactions",
+            "Using the reactivity series and displacement reactions",
+            "Salts",
+            "Other ways of making salts",
+            "Rearranging atoms"
+          ]
+        },
+        {
+          "id": "sci-u6",
+          "name": "Unit 6: Sound and Space",
+          "topics": [
+            "Loudness and pitch of sound",
+            "Interference of sound",
+            "Formation of the Moon",
+            "Nebulae",
+            "Tectonics"
+          ]
+        },
+        {
+          "id": "sci-u7",
+          "name": "Unit 7: Genes and Inheritance",
+          "topics": [
+            "Chromosomes, genes and DNA",
+            "Gametes and inheritance",
+            "Variation",
+            "Natural selection"
+          ]
+        },
+        {
+          "id": "sci-u8",
+          "name": "Unit 8: Rates of Reaction",
+          "topics": [
+            "Measuring the rate of reaction",
+            "Surface area and the rate of reaction",
+            "Temperature and the rate of reaction",
+            "Concentration and the rate of reaction"
+          ]
+        },
+        {
+          "id": "sci-u9",
+          "name": "Unit 9: Electricity",
+          "topics": [
+            "Parallel circuits",
+            "Current and voltage in parallel circuits",
+            "Resistance",
+            "Practical circuits"
+          ]
+        }
+      ]
     }
   ]
 }

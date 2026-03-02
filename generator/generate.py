@@ -20,7 +20,7 @@ load_dotenv()
 # Config
 GEMINI_API_KEY     = os.getenv("GEMINI_API_KEY")
 MODEL              = "gemma-3-27b-it"
-QUESTIONS_PER_UNIT = 40
+QUESTIONS_PER_UNIT = 50
 OUTPUT_DIR         = Path("../src/data")
 TOPICS_FILE        = Path("./topics.json")
 DELAY_SECONDS      = 3
@@ -122,6 +122,8 @@ Rules:
 - Cover ALL topics listed, do not focus on just one
 - Do NOT repeat questions
 
+- Each question must include a "hint" field — a short nudge (1 sentence) that helps the student think in the right direction WITHOUT giving away the answer
+
 Return ONLY a valid JSON array with no extra text, no markdown, no code fences.
 Each object must follow this exact structure:
 {{
@@ -129,7 +131,8 @@ Each object must follow this exact structure:
   "question": "Question text here?",
   "options": ["Option A", "Option B", "Option C", "Option D"],
   "answer": 0,
-  "explanation": "Brief explanation of why the answer is correct."
+  "explanation": "Brief explanation of why the answer is correct.",
+  "hint": "A short nudge to help the student think in the right direction."
 }}
 
 The "answer" field is the index (0, 1, 2, or 3) of the correct option.

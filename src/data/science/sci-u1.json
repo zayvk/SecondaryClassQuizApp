@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 1: Photosynthesis and the Carbon Cycle",
+  "unitId": "sci-u1",
+  "topics": [
+    "Photosynthesis",
+    "More about photosynthesis",
+    "The carbon cycle",
+    "Climate change"
+  ],
+  "generatedAt": "2026-03-02T09:01:07Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the overall purpose of photosynthesis?",
+      "options": [
+        "To release carbon dioxide into the atmosphere",
+        "To convert light energy into chemical energy",
+        "To absorb oxygen from the air",
+        "To break down glucose for energy"
+      ],
+      "answer": 1,
+      "explanation": "Photosynthesis uses light energy to create glucose, a form of chemical energy, from carbon dioxide and water.",
+      "hint": "Think about what plants *make* during this process."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a reactant in the process of photosynthesis?",
+      "options": [
+        "Oxygen",
+        "Glucose",
+        "Carbon dioxide",
+        "Protein"
+      ],
+      "answer": 2,
+      "explanation": "Carbon dioxide is taken in from the atmosphere and used, along with water, to produce glucose and oxygen.",
+      "hint": "Reactants are the things that go *into* a chemical reaction."
+    },
+    {
+      "id": 3,
+      "question": "Where does photosynthesis primarily take place in a plant?",
+      "options": [
+        "Roots",
+        "Stem",
+        "Leaves",
+        "Flowers"
+      ],
+      "answer": 2,
+      "explanation": "Leaves contain chloroplasts, which are the organelles where photosynthesis occurs.",
+      "hint": "Consider which part of the plant is green and broad."
+    },
+    {
+      "id": 4,
+      "question": "What is the role of chlorophyll in photosynthesis?",
+      "options": [
+        "To transport water to the leaves",
+        "To absorb light energy",
+        "To release oxygen",
+        "To provide structural support"
+      ],
+      "answer": 1,
+      "explanation": "Chlorophyll is a pigment that absorbs light energy, particularly red and blue light, which drives photosynthesis.",
+      "hint": "Think about why plants are green."
+    },
+    {
+      "id": 5,
+      "question": "What is the main product of photosynthesis?",
+      "options": [
+        "Carbon dioxide",
+        "Water",
+        "Glucose",
+        "Nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "Glucose is a sugar that plants use as food, and it's created during photosynthesis.",
+      "hint": "Plants need food to grow, and photosynthesis makes it."
+    },
+    {
+      "id": 6,
+      "question": "What happens to glucose produced during photosynthesis?",
+      "options": [
+        "It is immediately released into the atmosphere",
+        "It is used for respiration or stored as starch",
+        "It is used to absorb water",
+        "It is used to create chlorophyll"
+      ],
+      "answer": 1,
+      "explanation": "Glucose can be used immediately for energy through respiration, or it can be stored as starch for later use.",
+      "hint": "Plants need energy to live, just like us."
+    },
+    {
+      "id": 7,
+      "question": "What is the source of carbon atoms in glucose molecules?",
+      "options": [
+        "Soil",
+        "Water",
+        "Air",
+        "Sunlight"
+      ],
+      "answer": 2,
+      "explanation": "Plants obtain carbon atoms from carbon dioxide in the air.",
+      "hint": "Think about what plants 'breathe in'."
+    },
+    {
+      "id": 8,
+      "question": "What is the role of stomata in photosynthesis?",
+      "options": [
+        "To absorb sunlight",
+        "To transport water",
+        "To allow gas exchange",
+        "To provide structural support"
+      ],
+      "answer": 2,
+      "explanation": "Stomata are small pores on leaves that allow carbon dioxide to enter and oxygen to exit.",
+      "hint": "Plants need to take things in and let things out."
+    },
+    {
+      "id": 9,
+      "question": "Which environmental factor can limit the rate of photosynthesis?",
+      "options": [
+        "Temperature",
+        "Wind speed",
+        "Humidity",
+        "Soil type"
+      ],
+      "answer": 0,
+      "explanation": "Photosynthesis has an optimal temperature range; too high or too low can slow down the process.",
+      "hint": "Think about conditions that might make a plant struggle to grow."
+    },
+    {
+      "id": 10,
+      "question": "What is the chemical equation for photosynthesis?",
+      "options": [
+        "6O2 + C6H12O6 → 6CO2 + 6H2O",
+        "6CO2 + 6H2O → C6H12O6 + 6O2",
+        "C6H12O6 + 6O2 → 6CO2 + 6H2O",
+        "6CO2 + O2 → C6H12O6 + 6H2O"
+      ],
+      "answer": 1,
+      "explanation": "This equation shows carbon dioxide and water being converted into glucose and oxygen using light energy.",
+      "hint": "Remember the reactants and products of photosynthesis."
+    },
+    {
+      "id": 11,
+      "question": "What is the carbon cycle?",
+      "options": [
+        "The movement of water through the environment",
+        "The continuous exchange of carbon between the atmosphere, land, and oceans",
+        "The process of nitrogen fixation",
+        "The breakdown of rocks"
+      ],
+      "answer": 1,
+      "explanation": "The carbon cycle describes how carbon atoms move between different reservoirs on Earth.",
+      "hint": "Think about where carbon is found and how it moves around."
+    },
+    {
+      "id": 12,
+      "question": "Which process removes carbon dioxide from the atmosphere?",
+      "options": [
+        "Respiration",
+        "Combustion",
+        "Photosynthesis",
+        "Decomposition"
+      ],
+      "answer": 2,
+      "explanation": "Photosynthesis uses carbon dioxide, reducing its concentration in the atmosphere.",
+      "hint": "What process do plants use that takes in CO2?"
+    },
+    {
+      "id": 13,
+      "question": "What role do decomposers play in the carbon cycle?",
+      "options": [
+        "They release oxygen into the atmosphere",
+        "They absorb carbon dioxide from the air",
+        "They break down dead organisms and release carbon back into the environment",
+        "They convert carbon into nitrogen"
+      ],
+      "answer": 2,
+      "explanation": "Decomposers break down organic matter, releasing carbon back into the soil and atmosphere.",
+      "hint": "What happens to dead plants and animals?"
+    },
+    {
+      "id": 14,
+      "question": "How does the burning of fossil fuels affect the carbon cycle?",
+      "options": [
+        "It removes carbon from the atmosphere",
+        "It adds carbon to the atmosphere",
+        "It has no effect on the carbon cycle",
+        "It converts carbon into oxygen"
+      ],
+      "answer": 1,
+      "explanation": "Burning fossil fuels releases large amounts of carbon dioxide into the atmosphere, disrupting the natural carbon cycle.",
+      "hint": "What happens when you burn something like coal or oil?"
+    },
+    {
+      "id": 15,
+      "question": "What is a carbon sink?",
+      "options": [
+        "A source of carbon emissions",
+        "A reservoir that absorbs more carbon than it releases",
+        "A type of fossil fuel",
+        "A process that releases carbon"
+      ],
+      "answer": 1,
+      "explanation": "Carbon sinks, like forests and oceans, absorb and store carbon, helping to regulate the carbon cycle.",
+      "hint": "Think about places where carbon can be 'stored'."
+    },
+    {
+      "id": 16,
+      "question": "Deforestation impacts the carbon cycle by…",
+      "options": [
+        "Increasing photosynthesis",
+        "Decreasing carbon dioxide levels",
+        "Reducing the amount of carbon dioxide absorbed from the atmosphere",
+        "Increasing the rate of decomposition"
+      ],
+      "answer": 2,
+      "explanation": "Trees absorb carbon dioxide; removing them reduces the planet's capacity to absorb this greenhouse gas.",
+      "hint": "What does a tree do with carbon dioxide?"
+    },
+    {
+      "id": 17,
+      "question": "What is climate change?",
+      "options": [
+        "A natural fluctuation in weather patterns",
+        "A long-term change in global or regional climate patterns",
+        "A short-term change in temperature",
+        "A change in ocean currents"
+      ],
+      "answer": 1,
+      "explanation": "Climate change refers to significant, long-lasting changes in temperature and weather patterns.",
+      "hint": "Think about changes happening over many years, not just days."
+    },
+    {
+      "id": 18,
+      "question": "How is climate change related to the carbon cycle?",
+      "options": [
+        "Climate change has no connection to the carbon cycle",
+        "Increased carbon dioxide in the atmosphere due to human activities is enhancing the greenhouse effect",
+        "Changes in ocean currents are affecting the carbon cycle",
+        "Volcanic eruptions are causing climate change"
+      ],
+      "answer": 1,
+      "explanation": "Human activities have increased carbon dioxide levels, trapping heat and causing global warming.",
+      "hint": "What gas is released when we burn fossil fuels?"
+    },
+    {
+      "id": 19,
+      "question": "What is the greenhouse effect?",
+      "options": [
+        "The cooling of the Earth's surface",
+        "The trapping of heat by gases in the atmosphere",
+        "The reflection of sunlight back into space",
+        "The absorption of sunlight by plants"
+      ],
+      "answer": 1,
+      "explanation": "Certain gases in the atmosphere trap heat, warming the Earth.",
+      "hint": "Think about how a greenhouse keeps plants warm."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a greenhouse gas?",
+      "options": [
+        "Oxygen",
+        "Nitrogen",
+        "Carbon dioxide",
+        "Hydrogen"
+      ],
+      "answer": 2,
+      "explanation": "Carbon dioxide is a major greenhouse gas that contributes to global warming.",
+      "hint": "What gas is increasing in the atmosphere due to human activity?"
+    },
+    {
+      "id": 21,
+      "question": "What is a potential consequence of rising global temperatures?",
+      "options": [
+        "Decreased sea levels",
+        "Increased biodiversity",
+        "Melting glaciers and ice caps",
+        "More stable weather patterns"
+      ],
+      "answer": 2,
+      "explanation": "Rising temperatures cause glaciers and ice caps to melt, contributing to sea level rise.",
+      "hint": "What happens to ice when it gets warmer?"
+    },
+    {
+      "id": 22,
+      "question": "What is one way to reduce your carbon footprint?",
+      "options": [
+        "Drive a larger car",
+        "Use more electricity",
+        "Recycle and conserve energy",
+        "Eat more meat"
+      ],
+      "answer": 2,
+      "explanation": "Recycling and conserving energy reduce the demand for resources and lower carbon emissions.",
+      "hint": "Think about actions that use less energy."
+    },
+    {
+      "id": 23,
+      "question": "What is the role of oceans in the carbon cycle?",
+      "options": [
+        "Oceans release carbon dioxide into the atmosphere only",
+        "Oceans absorb and release carbon dioxide",
+        "Oceans have no role in the carbon cycle",
+        "Oceans convert carbon into oxygen"
+      ],
+      "answer": 1,
+      "explanation": "Oceans absorb a significant amount of carbon dioxide from the atmosphere, but also release it back.",
+      "hint": "Think about how gases can dissolve in water."
+    },
+    {
+      "id": 24,
+      "question": "What is meant by 'carbon neutrality'?",
+      "options": [
+        "Completely eliminating all carbon emissions",
+        "Balancing carbon emissions with carbon removal",
+        "Increasing carbon emissions",
+        "Using only fossil fuels"
+      ],
+      "answer": 1,
+      "explanation": "Carbon neutrality means achieving a balance between emitting carbon and absorbing carbon from the atmosphere.",
+      "hint": "Think about offsetting carbon emissions."
+    },
+    {
+      "id": 25,
+      "question": "How does increased atmospheric carbon dioxide affect ocean acidity?",
+      "options": [
+        "It decreases ocean acidity",
+        "It has no effect on ocean acidity",
+        "It increases ocean acidity",
+        "It stabilizes ocean acidity"
+      ],
+      "answer": 2,
+      "explanation": "Increased carbon dioxide dissolves in the ocean, forming carbonic acid and lowering the pH.",
+      "hint": "Think about what happens when you add a gas to water."
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between weather and climate?",
+      "options": [
+        "Weather is long-term, climate is short-term",
+        "Weather is short-term, climate is long-term",
+        "They are the same thing",
+        "Weather is global, climate is local"
+      ],
+      "answer": 1,
+      "explanation": "Weather refers to short-term atmospheric conditions, while climate describes long-term patterns.",
+      "hint": "Think about what you check daily versus what you expect over years."
+    },
+    {
+      "id": 27,
+      "question": "What is a positive feedback loop in the context of climate change?",
+      "options": [
+        "A process that reduces warming",
+        "A process that amplifies warming",
+        "A process that has no effect on warming",
+        "A process that stabilizes the climate"
+      ],
+      "answer": 1,
+      "explanation": "A positive feedback loop amplifies the initial change, leading to further warming.",
+      "hint": "Think about a snowball rolling downhill."
+    },
+    {
+      "id": 28,
+      "question": "Which of the following is NOT a renewable energy source?",
+      "options": [
+        "Solar energy",
+        "Wind energy",
+        "Fossil fuels",
+        "Hydroelectric energy"
+      ],
+      "answer": 2,
+      "explanation": "Fossil fuels are finite resources that take millions of years to form.",
+      "hint": "Think about resources that can be replenished naturally."
+    },
+    {
+      "id": 29,
+      "question": "What is the role of plants in mitigating climate change?",
+      "options": [
+        "They release carbon dioxide",
+        "They absorb carbon dioxide",
+        "They have no role",
+        "They increase global temperatures"
+      ],
+      "answer": 1,
+      "explanation": "Plants absorb carbon dioxide during photosynthesis, helping to reduce greenhouse gas concentrations.",
+      "hint": "What do plants need to grow?"
+    },
+    {
+      "id": 30,
+      "question": "What is the albedo effect?",
+      "options": [
+        "The absorption of sunlight by dark surfaces",
+        "The reflection of sunlight by bright surfaces",
+        "The trapping of heat by greenhouse gases",
+        "The emission of infrared radiation"
+      ],
+      "answer": 1,
+      "explanation": "Albedo refers to the reflectivity of a surface; bright surfaces reflect more sunlight, reducing warming.",
+      "hint": "Think about why wearing white clothes keeps you cooler."
+    },
+    {
+      "id": 31,
+      "question": "During photosynthesis, water is primarily absorbed by plants through their…",
+      "options": [
+        "Leaves",
+        "Stem",
+        "Roots",
+        "Flowers"
+      ],
+      "answer": 2,
+      "explanation": "Roots are specialized for absorbing water and nutrients from the soil.",
+      "hint": "Where do plants get water from?"
+    },
+    {
+      "id": 32,
+      "question": "What is the limiting factor in photosynthesis when there is plenty of light and water, but low carbon dioxide?",
+      "options": [
+        "Light intensity",
+        "Water availability",
+        "Carbon dioxide concentration",
+        "Temperature"
+      ],
+      "answer": 2,
+      "explanation": "If carbon dioxide is scarce, it will limit the rate of photosynthesis, even if other factors are optimal.",
+      "hint": "What is missing in this scenario?"
+    },
+    {
+      "id": 33,
+      "question": "What type of energy conversion occurs during photosynthesis?",
+      "options": [
+        "Chemical to light energy",
+        "Light to chemical energy",
+        "Thermal to mechanical energy",
+        "Mechanical to electrical energy"
+      ],
+      "answer": 1,
+      "explanation": "Photosynthesis converts light energy from the sun into chemical energy stored in glucose.",
+      "hint": "What form of energy does the plant *start* with?"
+    },
+    {
+      "id": 34,
+      "question": "Which of the following best describes the flow of energy in the carbon cycle?",
+      "options": [
+        "Carbon flows in a circular pattern",
+        "Energy is created and destroyed",
+        "Energy flows in one direction",
+        "Carbon is the primary source of energy"
+      ],
+      "answer": 2,
+      "explanation": "Energy flows through the carbon cycle as carbon compounds are created and broken down.",
+      "hint": "Think about how energy moves through an ecosystem."
+    },
+    {
+      "id": 35,
+      "question": "What is the main difference between aerobic and anaerobic respiration?",
+      "options": [
+        "Aerobic respiration requires oxygen, anaerobic does not",
+        "Anaerobic respiration requires oxygen, aerobic does not",
+        "They produce the same amount of energy",
+        "They both occur in plants only"
+      ],
+      "answer": 0,
+      "explanation": "Aerobic respiration uses oxygen to break down glucose, while anaerobic respiration does not.",
+      "hint": "Think about what we need to breathe."
+    },
+    {
+      "id": 36,
+      "question": "How does the melting of permafrost contribute to climate change?",
+      "options": [
+        "It absorbs carbon dioxide",
+        "It releases methane, a potent greenhouse gas",
+        "It increases albedo",
+        "It has no effect on climate change"
+      ],
+      "answer": 1,
+      "explanation": "Permafrost contains large amounts of organic matter that releases methane when thawed.",
+      "hint": "What is trapped inside permafrost?"
+    },
+    {
+      "id": 37,
+      "question": "What is carbon sequestration?",
+      "options": [
+        "Releasing carbon into the atmosphere",
+        "Capturing and storing carbon dioxide",
+        "Burning fossil fuels",
+        "Deforestation"
+      ],
+      "answer": 1,
+      "explanation": "Carbon sequestration involves capturing and storing carbon dioxide to prevent it from entering the atmosphere.",
+      "hint": "Think about 'sequestering' something away."
+    },
+    {
+      "id": 38,
+      "question": "What is the role of phytoplankton in the carbon cycle?",
+      "options": [
+        "They release carbon dioxide",
+        "They absorb carbon dioxide through photosynthesis",
+        "They decompose organic matter",
+        "They have no role in the carbon cycle"
+      ],
+      "answer": 1,
+      "explanation": "Phytoplankton are microscopic marine plants that absorb carbon dioxide during photosynthesis.",
+      "hint": "What are tiny plants in the ocean called?"
+    },
+    {
+      "id": 39,
+      "question": "What is a carbon footprint?",
+      "options": [
+        "The amount of carbon stored in a forest",
+        "The total greenhouse gas emissions caused by an individual, organization, or product",
+        "The amount of carbon in the ocean",
+        "The size of a carbon atom"
+      ],
+      "answer": 1,
+      "explanation": "A carbon footprint represents the total greenhouse gas emissions associated with a particular activity.",
+      "hint": "Think about the impact of your actions on the environment."
+    },
+    {
+      "id": 40,
+      "question": "What is the primary source of energy for almost all life on Earth?",
+      "options": [
+        "Chemical energy",
+        "Nuclear energy",
+        "Geothermal energy",
+        "Solar energy"
+      ],
+      "answer": 3,
+      "explanation": "The sun provides the energy that drives photosynthesis and supports most ecosystems.",
+      "hint": "What powers plants?"
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is an example of a negative feedback loop related to climate change?",
+      "options": [
+        "Melting ice reducing albedo",
+        "Increased water vapor amplifying warming",
+        "Increased plant growth absorbing more CO2",
+        "Permafrost thaw releasing methane"
+      ],
+      "answer": 2,
+      "explanation": "Increased plant growth absorbs more CO2, reducing the greenhouse effect and slowing warming.",
+      "hint": "Think about a process that would *reduce* warming."
+    },
+    {
+      "id": 42,
+      "question": "What is the role of decomposers in releasing carbon back into the atmosphere?",
+      "options": [
+        "They absorb carbon dioxide during decomposition",
+        "They convert carbon into oxygen",
+        "They break down organic matter through respiration",
+        "They store carbon in the soil"
+      ],
+      "answer": 2,
+      "explanation": "Decomposers use respiration to break down organic matter, releasing carbon dioxide as a byproduct.",
+      "hint": "What gas do organisms release when they break down food?"
+    },
+    {
+      "id": 43,
+      "question": "How does deforestation contribute to soil erosion?",
+      "options": [
+        "Trees absorb excess water",
+        "Tree roots hold the soil together",
+        "Deforestation increases biodiversity",
+        "Deforestation improves soil quality"
+      ],
+      "answer": 1,
+      "explanation": "Tree roots bind the soil, preventing it from being washed away by rain or wind.",
+      "hint": "What do tree roots do for the soil?"
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between mitigation and adaptation in the context of climate change?",
+      "options": [
+        "Mitigation reduces emissions, adaptation adjusts to the effects",
+        "Adaptation reduces emissions, mitigation adjusts to the effects",
+        "They are the same thing",
+        "Mitigation focuses on the past, adaptation on the future"
+      ],
+      "answer": 0,
+      "explanation": "Mitigation aims to reduce greenhouse gas emissions, while adaptation focuses on adjusting to the unavoidable effects of climate change.",
+      "hint": "Think about preventing versus dealing with the consequences."
+    },
+    {
+      "id": 45,
+      "question": "What is the role of the ocean in absorbing heat from the atmosphere?",
+      "options": [
+        "The ocean reflects heat back into the atmosphere",
+        "The ocean has a low heat capacity",
+        "The ocean absorbs a significant amount of heat due to its high heat capacity",
+        "The ocean releases heat into the atmosphere"
+      ],
+      "answer": 2,
+      "explanation": "Water has a high heat capacity, meaning it can absorb a lot of heat without a significant temperature change.",
+      "hint": "Think about why the ocean doesn't heat up as quickly as land."
+    },
+    {
+      "id": 46,
+      "question": "What is the impact of ocean acidification on marine organisms with shells?",
+      "options": [
+        "It strengthens their shells",
+        "It has no effect on their shells",
+        "It makes it harder for them to build and maintain their shells",
+        "It increases their growth rate"
+      ],
+      "answer": 2,
+      "explanation": "Ocean acidification reduces the availability of carbonate ions, which are essential for shell formation.",
+      "hint": "What do shells need to be made of?"
+    },
+    {
+      "id": 47,
+      "question": "What is the concept of 'planetary boundaries'?",
+      "options": [
+        "The limits of space exploration",
+        "The safe operating space for humanity, defining limits to human impact on Earth's systems",
+        "The boundaries of national parks",
+        "The limits of technological advancement"
+      ],
+      "answer": 1,
+      "explanation": "Planetary boundaries define a safe operating space for humanity, identifying limits to avoid irreversible environmental changes.",
+      "hint": "Think about the limits of what the Earth can handle."
+    },
+    {
+      "id": 48,
+      "question": "What is the role of international agreements like the Paris Agreement?",
+      "options": [
+        "To promote fossil fuel use",
+        "To establish a global framework for combating climate change",
+        "To ignore the issue of climate change",
+        "To focus solely on economic growth"
+      ],
+      "answer": 1,
+      "explanation": "The Paris Agreement aims to limit global warming to well below 2 degrees Celsius above pre-industrial levels.",
+      "hint": "What are countries trying to achieve by working together on climate change?"
+    },
+    {
+      "id": 49,
+      "question": "What is the difference between point source and non-point source pollution?",
+      "options": [
+        "Point source pollution is widespread, non-point source is localized",
+        "Point source pollution comes from a single identifiable source, non-point source is diffuse",
+        "They are the same thing",
+        "Point source pollution is always more harmful"
+      ],
+      "answer": 1,
+      "explanation": "Point source pollution comes from a specific location (e.g., a factory pipe), while non-point source pollution comes from many diffuse sources (e.g., agricultural runoff).",
+      "hint": "Think about where the pollution is coming from."
+    },
+    {
+      "id": 50,
+      "question": "What is the importance of biodiversity in mitigating climate change?",
+      "options": [
+        "Biodiversity has no impact on climate change",
+        "Diverse ecosystems are more resilient to climate change and can absorb more carbon",
+        "Biodiversity increases greenhouse gas emissions",
+        "Biodiversity only affects local weather patterns"
+      ],
+      "answer": 1,
+      "explanation": "Diverse ecosystems are more resilient to climate change and can store more carbon, helping to regulate the climate.",
+      "hint": "Think about how different species contribute to a healthy ecosystem."
+    }
+  ]
+}

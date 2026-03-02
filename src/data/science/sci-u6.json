@@ -1,0 +1,665 @@
+{
+  "subject": "Science",
+  "unit": "Unit 6: Sound and Space",
+  "unitId": "sci-u6",
+  "topics": [
+    "Loudness and pitch of sound",
+    "Interference of sound",
+    "Formation of the Moon",
+    "Nebulae",
+    "Tectonics"
+  ],
+  "generatedAt": "2026-03-02T09:10:14Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What determines the loudness of a sound?",
+      "options": [
+        "Frequency",
+        "Wavelength",
+        "Amplitude",
+        "Speed"
+      ],
+      "answer": 2,
+      "explanation": "Loudness is determined by the amplitude of the sound wave; a larger amplitude means a louder sound.",
+      "hint": "Think about how a bigger vibration would affect the sound."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following describes pitch?",
+      "options": [
+        "How soft or loud a sound is",
+        "The speed of the sound wave",
+        "How high or low a sound is",
+        "The distance between wave crests"
+      ],
+      "answer": 2,
+      "explanation": "Pitch refers to how high or low a sound seems, which is determined by the frequency of the sound wave.",
+      "hint": "Consider the difference between a high-pitched whistle and a low-pitched rumble."
+    },
+    {
+      "id": 3,
+      "question": "What happens when two sound waves interfere constructively?",
+      "options": [
+        "The amplitude decreases",
+        "The amplitude increases",
+        "The waves cancel each other out",
+        "The frequency changes"
+      ],
+      "answer": 1,
+      "explanation": "Constructive interference occurs when waves combine in phase, resulting in a larger amplitude and a louder sound.",
+      "hint": "Think about what happens when two pushes happen at the same time in the same direction."
+    },
+    {
+      "id": 4,
+      "question": "What is the most widely accepted theory about the Moon's formation?",
+      "options": [
+        "It formed alongside Earth",
+        "It was captured by Earth's gravity",
+        "It formed from a collision between Earth and a Mars-sized object",
+        "It was ejected from a volcano on Earth"
+      ],
+      "answer": 2,
+      "explanation": "The Giant Impact Hypothesis suggests the Moon formed from debris after a collision between Earth and Theia.",
+      "hint": "Consider events that would create a large amount of debris in space."
+    },
+    {
+      "id": 5,
+      "question": "What are nebulae?",
+      "options": [
+        "Dead stars",
+        "Clusters of galaxies",
+        "Clouds of gas and dust in space",
+        "Large, rocky planets"
+      ],
+      "answer": 2,
+      "explanation": "Nebulae are interstellar clouds of dust, hydrogen, helium and other ionized gases.",
+      "hint": "Think about what materials stars are born from."
+    },
+    {
+      "id": 6,
+      "question": "A sound wave has a high frequency. What does this mean?",
+      "options": [
+        "It is a loud sound",
+        "It is a quiet sound",
+        "It has a high pitch",
+        "It has a low pitch"
+      ],
+      "answer": 2,
+      "explanation": "Higher frequency sound waves are perceived as having a higher pitch.",
+      "hint": "Relate frequency to how quickly the air is vibrating."
+    },
+    {
+      "id": 7,
+      "question": "What unit is used to measure the loudness of sound?",
+      "options": [
+        "Hertz (Hz)",
+        "Watts (W)",
+        "Decibels (dB)",
+        "Meters (m)"
+      ],
+      "answer": 2,
+      "explanation": "Decibels (dB) are used to measure the intensity of sound, which we perceive as loudness.",
+      "hint": "Think about what you see when looking at sound level meters."
+    },
+    {
+      "id": 8,
+      "question": "Destructive interference of sound waves results in…",
+      "options": [
+        "A louder sound",
+        "A quieter sound",
+        "No change in sound",
+        "A change in pitch"
+      ],
+      "answer": 1,
+      "explanation": "Destructive interference occurs when waves combine out of phase, reducing the amplitude and making the sound quieter.",
+      "hint": "What happens when two forces act in opposite directions?"
+    },
+    {
+      "id": 9,
+      "question": "What evidence supports the theory of plate tectonics?",
+      "options": [
+        "The shape of continents",
+        "Fossil distribution",
+        "Earthquake and volcano patterns",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "All of these pieces of evidence support the theory that Earth's lithosphere is divided into plates that move.",
+      "hint": "Consider how the continents seem to fit together like a puzzle."
+    },
+    {
+      "id": 10,
+      "question": "What is a planetary nebula?",
+      "options": [
+        "A nebula where planets are forming",
+        "The remnants of a dying star",
+        "A dark nebula blocking light",
+        "A nebula containing only dust"
+      ],
+      "answer": 1,
+      "explanation": "A planetary nebula is a glowing shell of gas ejected from a dying star.",
+      "hint": "Think about what happens to stars at the end of their lives."
+    },
+    {
+      "id": 11,
+      "question": "If you increase the amplitude of a sound wave, what happens to the sound?",
+      "options": [
+        "It gets higher pitched",
+        "It gets lower pitched",
+        "It gets louder",
+        "It gets quieter"
+      ],
+      "answer": 2,
+      "explanation": "Amplitude directly correlates to the loudness of a sound; a larger amplitude means a louder sound.",
+      "hint": "Think about how much energy is in the wave."
+    },
+    {
+      "id": 12,
+      "question": "What causes the tides on Earth?",
+      "options": [
+        "The Sun's gravity",
+        "The Moon's gravity",
+        "Earth's rotation",
+        "Wind patterns"
+      ],
+      "answer": 1,
+      "explanation": "The Moon's gravitational pull is the primary cause of tides on Earth.",
+      "hint": "Consider which celestial body is closest to Earth."
+    },
+    {
+      "id": 13,
+      "question": "What type of plate boundary is formed when two plates collide?",
+      "options": [
+        "Convergent boundary",
+        "Divergent boundary",
+        "Transform boundary",
+        "Subduction zone"
+      ],
+      "answer": 0,
+      "explanation": "A convergent boundary is where two plates move towards each other, often resulting in mountains or volcanoes.",
+      "hint": "Think about what happens when two cars crash into each other."
+    },
+    {
+      "id": 14,
+      "question": "What is a light-year a measure of?",
+      "options": [
+        "Time",
+        "Distance",
+        "Speed",
+        "Brightness"
+      ],
+      "answer": 1,
+      "explanation": "A light-year is the distance light travels in one year, used to measure vast distances in space.",
+      "hint": "The name includes the word 'light' - what does light travel?"
+    },
+    {
+      "id": 15,
+      "question": "What happens at a divergent plate boundary?",
+      "options": [
+        "Plates collide",
+        "Plates slide past each other",
+        "Plates move apart",
+        "Plates subduct"
+      ],
+      "answer": 2,
+      "explanation": "At a divergent boundary, plates move away from each other, often creating new crust.",
+      "hint": "Think about what happens when you pull two pieces of tape apart."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is NOT a type of nebula?",
+      "options": [
+        "Emission nebula",
+        "Reflection nebula",
+        "Dark nebula",
+        "Solid nebula"
+      ],
+      "answer": 3,
+      "explanation": "Nebulae are composed of gas and dust, not solid matter.",
+      "hint": "Consider what makes up interstellar space."
+    },
+    {
+      "id": 17,
+      "question": "What is the relationship between frequency and wavelength?",
+      "options": [
+        "They are directly proportional",
+        "They are inversely proportional",
+        "They are unrelated",
+        "They are equal"
+      ],
+      "answer": 1,
+      "explanation": "Frequency and wavelength are inversely proportional; as frequency increases, wavelength decreases.",
+      "hint": "Think about how many waves can fit into a certain distance."
+    },
+    {
+      "id": 18,
+      "question": "What is the main cause of earthquakes?",
+      "options": [
+        "Volcanic eruptions",
+        "Meteorite impacts",
+        "Movement of tectonic plates",
+        "Changes in the Earth's magnetic field"
+      ],
+      "answer": 2,
+      "explanation": "Earthquakes are primarily caused by the sudden release of energy when tectonic plates move.",
+      "hint": "Think about the forces acting within the Earth's crust."
+    },
+    {
+      "id": 19,
+      "question": "What is the 'redshift' of light from distant galaxies evidence of?",
+      "options": [
+        "The galaxies are moving towards us",
+        "The galaxies are moving away from us",
+        "The galaxies are stationary",
+        "The galaxies are changing color"
+      ],
+      "answer": 1,
+      "explanation": "Redshift indicates that galaxies are moving away from us, supporting the theory of an expanding universe.",
+      "hint": "Think about the Doppler effect with sound, and how it applies to light."
+    },
+    {
+      "id": 20,
+      "question": "What is a transform boundary?",
+      "options": [
+        "Where plates collide",
+        "Where plates separate",
+        "Where plates slide past each other",
+        "Where one plate goes under another"
+      ],
+      "answer": 2,
+      "explanation": "A transform boundary is where two plates slide horizontally past each other, often causing earthquakes.",
+      "hint": "Think about what happens when you rub your hands together."
+    },
+    {
+      "id": 21,
+      "question": "If a sound wave's amplitude is halved, what happens to its loudness?",
+      "options": [
+        "It doubles",
+        "It is halved",
+        "It remains the same",
+        "It quadruples"
+      ],
+      "answer": 1,
+      "explanation": "Loudness is related to the square of the amplitude, so halving the amplitude reduces the loudness.",
+      "hint": "Consider the mathematical relationship between amplitude and loudness."
+    },
+    {
+      "id": 22,
+      "question": "What is the core of the Earth primarily made of?",
+      "options": [
+        "Granite",
+        "Basalt",
+        "Iron and Nickel",
+        "Silicate rocks"
+      ],
+      "answer": 2,
+      "explanation": "The Earth's core is primarily composed of iron and nickel.",
+      "hint": "Think about what metals are dense and heavy."
+    },
+    {
+      "id": 23,
+      "question": "What is the main difference between a star and a planet?",
+      "options": [
+        "Stars are smaller than planets",
+        "Stars emit light, planets reflect light",
+        "Planets are hotter than stars",
+        "Stars orbit planets"
+      ],
+      "answer": 1,
+      "explanation": "Stars generate their own light through nuclear fusion, while planets reflect light from stars.",
+      "hint": "Think about what makes the Sun shine."
+    },
+    {
+      "id": 24,
+      "question": "What is the asthenosphere?",
+      "options": [
+        "The Earth's crust",
+        "The Earth's core",
+        "A partially molten layer of the mantle",
+        "The Earth's outer layer"
+      ],
+      "answer": 2,
+      "explanation": "The asthenosphere is a highly viscous, mechanically weak and ductile region of the upper mantle.",
+      "hint": "Think about what allows the tectonic plates to move."
+    },
+    {
+      "id": 25,
+      "question": "What is the Doppler effect?",
+      "options": [
+        "The bending of light around massive objects",
+        "The change in frequency of a wave due to the motion of the source or observer",
+        "The absorption of light by dust clouds",
+        "The emission of light by excited atoms"
+      ],
+      "answer": 1,
+      "explanation": "The Doppler effect describes the change in frequency of a wave (sound or light) due to relative motion.",
+      "hint": "Think about how the pitch of a siren changes as it moves towards or away from you."
+    },
+    {
+      "id": 26,
+      "question": "What is a seismograph used for?",
+      "options": [
+        "Measuring air pressure",
+        "Detecting and measuring earthquakes",
+        "Measuring temperature",
+        "Observing stars"
+      ],
+      "answer": 1,
+      "explanation": "A seismograph is an instrument used to detect and record seismic waves produced by earthquakes.",
+      "hint": "Think about what scientists use to study earthquakes."
+    },
+    {
+      "id": 27,
+      "question": "What is the primary source of energy for stars?",
+      "options": [
+        "Chemical reactions",
+        "Nuclear fission",
+        "Nuclear fusion",
+        "Gravity"
+      ],
+      "answer": 2,
+      "explanation": "Stars generate energy through nuclear fusion, where hydrogen atoms combine to form helium.",
+      "hint": "Think about what powers the Sun."
+    },
+    {
+      "id": 28,
+      "question": "What is the lithosphere?",
+      "options": [
+        "The Earth's core",
+        "The Earth's mantle",
+        "The Earth's crust and upper mantle",
+        "The Earth's atmosphere"
+      ],
+      "answer": 2,
+      "explanation": "The lithosphere is the rigid outer layer of Earth, consisting of the crust and the uppermost part of the mantle.",
+      "hint": "Think about the solid, rocky outer shell of the Earth."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between a reflection nebula and an emission nebula?",
+      "options": [
+        "Reflection nebulae emit their own light, emission nebulae reflect light",
+        "Reflection nebulae reflect light, emission nebulae emit their own light",
+        "They are the same thing",
+        "Reflection nebulae are brighter than emission nebulae"
+      ],
+      "answer": 1,
+      "explanation": "Reflection nebulae reflect the light of nearby stars, while emission nebulae emit their own light due to ionized gases.",
+      "hint": "Consider how the light interacts with the nebula."
+    },
+    {
+      "id": 30,
+      "question": "What is the mantle?",
+      "options": [
+        "The Earth's outermost layer",
+        "The Earth's liquid outer layer",
+        "The layer between the crust and the core",
+        "The Earth's solid inner core"
+      ],
+      "answer": 2,
+      "explanation": "The mantle is the mostly-solid bulk of Earth's interior, lying between the crust and the core.",
+      "hint": "Think about what layer makes up the majority of Earth's volume."
+    },
+    {
+      "id": 31,
+      "question": "A tuning fork vibrates at 440 Hz. What does this measure?",
+      "options": [
+        "Loudness",
+        "Pitch",
+        "Amplitude",
+        "Wavelength"
+      ],
+      "answer": 1,
+      "explanation": "Hertz (Hz) is the unit of frequency, which determines the pitch of a sound.",
+      "hint": "Think about what 'Hz' represents in sound waves."
+    },
+    {
+      "id": 32,
+      "question": "What is a volcano?",
+      "options": [
+        "A mountain formed by erosion",
+        "A vent in the Earth's crust through which molten rock erupts",
+        "A large body of water",
+        "A type of cloud"
+      ],
+      "answer": 1,
+      "explanation": "A volcano is a rupture in the Earth's crust that allows hot lava, volcanic ash, and gases to escape from magma below the surface.",
+      "hint": "Think about what happens when molten rock comes to the surface."
+    },
+    {
+      "id": 33,
+      "question": "What is the Big Bang theory?",
+      "options": [
+        "The theory that the universe is static",
+        "The theory that the universe began from a single point and has been expanding ever since",
+        "The theory that the universe is contracting",
+        "The theory that the universe was created by a collision"
+      ],
+      "answer": 1,
+      "explanation": "The Big Bang theory is the prevailing cosmological model for the universe, stating it expanded from an extremely dense and hot state.",
+      "hint": "Think about the origin of the universe."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between a crest and a trough of a wave?",
+      "options": [
+        "They are the same thing",
+        "A crest is the highest point, a trough is the lowest point",
+        "A crest is the lowest point, a trough is the highest point",
+        "They represent the wavelength"
+      ],
+      "answer": 1,
+      "explanation": "A crest is the highest point of a wave, while a trough is the lowest point.",
+      "hint": "Visualize a wave – what are the high and low points called?"
+    },
+    {
+      "id": 35,
+      "question": "What is the name of the scale used to measure earthquake magnitude?",
+      "options": [
+        "Celsius scale",
+        "Fahrenheit scale",
+        "Richter scale",
+        "Beaufort scale"
+      ],
+      "answer": 2,
+      "explanation": "The Richter scale measures the magnitude of earthquakes.",
+      "hint": "Think about what scale is commonly reported in news about earthquakes."
+    },
+    {
+      "id": 36,
+      "question": "What is a galaxy?",
+      "options": [
+        "A single star",
+        "A planet and its moons",
+        "A large system of stars, gas, and dust held together by gravity",
+        "A type of nebula"
+      ],
+      "answer": 2,
+      "explanation": "A galaxy is a massive, gravitationally bound system consisting of stars, stellar remnants, interstellar gas, dust, and dark matter.",
+      "hint": "Think about the Milky Way."
+    },
+    {
+      "id": 37,
+      "question": "What is the role of convection currents in the mantle?",
+      "options": [
+        "They cause tides",
+        "They drive plate tectonics",
+        "They create the Earth's magnetic field",
+        "They regulate Earth's temperature"
+      ],
+      "answer": 1,
+      "explanation": "Convection currents in the mantle are thought to be a major driving force behind plate tectonics.",
+      "hint": "Think about how heat transfer within the mantle affects the plates."
+    },
+    {
+      "id": 38,
+      "question": "What is the speed of sound in air approximately?",
+      "options": [
+        "343 m/s",
+        "300,000 km/s",
+        "1500 m/s",
+        "10 m/s"
+      ],
+      "answer": 0,
+      "explanation": "The speed of sound in air at room temperature is approximately 343 meters per second.",
+      "hint": "Think about how quickly you hear thunder after seeing lightning."
+    },
+    {
+      "id": 39,
+      "question": "What is a black hole?",
+      "options": [
+        "A dead star",
+        "A region of space with extremely strong gravity",
+        "A type of nebula",
+        "A planet with no atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "A black hole is a region of spacetime exhibiting such strong gravitational effects that nothing, not even light, can escape from inside it.",
+      "hint": "Think about what happens when gravity is incredibly strong."
+    },
+    {
+      "id": 40,
+      "question": "What is the difference between weathering and erosion?",
+      "options": [
+        "They are the same thing",
+        "Weathering breaks down rocks, erosion carries them away",
+        "Erosion breaks down rocks, weathering carries them away",
+        "Weathering only affects mountains"
+      ],
+      "answer": 1,
+      "explanation": "Weathering is the breakdown of rocks, while erosion is the transport of those broken-down materials.",
+      "hint": "Think about how rocks are broken down and then moved."
+    },
+    {
+      "id": 41,
+      "question": "What is the main difference between a star and a comet?",
+      "options": [
+        "Stars are made of ice, comets are made of gas",
+        "Stars emit light, comets reflect light and have a tail",
+        "Comets are larger than stars",
+        "Stars orbit comets"
+      ],
+      "answer": 1,
+      "explanation": "Stars generate their own light through nuclear fusion, while comets are icy bodies that reflect sunlight and develop a tail as they approach the Sun.",
+      "hint": "Think about what comets look like in the night sky."
+    },
+    {
+      "id": 42,
+      "question": "What is the cause of the seasons on Earth?",
+      "options": [
+        "Earth's distance from the Sun",
+        "Earth's rotation",
+        "Earth's tilt on its axis",
+        "Changes in the Sun's energy output"
+      ],
+      "answer": 2,
+      "explanation": "Earth's seasons are caused by the 23.5-degree tilt of its axis of rotation relative to its orbital plane.",
+      "hint": "Think about how different parts of Earth receive more direct sunlight at different times of the year."
+    },
+    {
+      "id": 43,
+      "question": "What is the role of the ozone layer?",
+      "options": [
+        "To trap heat",
+        "To reflect sunlight",
+        "To absorb harmful UV radiation",
+        "To create clouds"
+      ],
+      "answer": 2,
+      "explanation": "The ozone layer absorbs most of the Sun's harmful ultraviolet (UV) radiation.",
+      "hint": "Think about what protects us from sunburn."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between a lunar eclipse and a solar eclipse?",
+      "options": [
+        "A lunar eclipse happens when the Moon passes between the Sun and Earth, a solar eclipse happens when Earth passes between the Sun and Moon",
+        "A lunar eclipse happens when Earth passes between the Sun and Moon, a solar eclipse happens when the Moon passes between the Sun and Earth",
+        "They are the same thing",
+        "Both happen at the same time"
+      ],
+      "answer": 1,
+      "explanation": "A solar eclipse occurs when the Moon blocks the Sun's light, while a lunar eclipse occurs when Earth blocks the Sun's light from reaching the Moon.",
+      "hint": "Think about which object is doing the blocking in each case."
+    },
+    {
+      "id": 45,
+      "question": "What is the greenhouse effect?",
+      "options": [
+        "The cooling of the Earth's atmosphere",
+        "The trapping of heat by gases in the Earth's atmosphere",
+        "The reflection of sunlight by clouds",
+        "The absorption of UV radiation by the ozone layer"
+      ],
+      "answer": 1,
+      "explanation": "The greenhouse effect is the process by which certain gases in the Earth's atmosphere trap heat, warming the planet.",
+      "hint": "Think about how a greenhouse works."
+    },
+    {
+      "id": 46,
+      "question": "What is the main component of the Earth's atmosphere?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Nitrogen",
+        "Hydrogen"
+      ],
+      "answer": 2,
+      "explanation": "Nitrogen makes up approximately 78% of the Earth's atmosphere.",
+      "hint": "Think about what gas is most abundant in the air we breathe."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between a meteoroid, a meteor, and a meteorite?",
+      "options": [
+        "They are all the same thing",
+        "A meteoroid is in space, a meteor is in the atmosphere, a meteorite is on Earth",
+        "A meteor is in space, a meteoroid is in the atmosphere, a meteorite is on Earth",
+        "A meteorite is in space, a meteoroid is in the atmosphere, a meteor is on Earth"
+      ],
+      "answer": 1,
+      "explanation": "A meteoroid is a small rocky or metallic body in space, a meteor is the streak of light it creates when entering the atmosphere, and a meteorite is what remains if it reaches the Earth's surface.",
+      "hint": "Think about where each one is located."
+    },
+    {
+      "id": 48,
+      "question": "What is the role of the Sun in the water cycle?",
+      "options": [
+        "It causes precipitation",
+        "It causes condensation",
+        "It provides the energy for evaporation",
+        "It creates clouds"
+      ],
+      "answer": 2,
+      "explanation": "The Sun provides the energy that drives evaporation, the process by which water changes from a liquid to a gas.",
+      "hint": "Think about what makes water turn into vapor."
+    },
+    {
+      "id": 49,
+      "question": "What is the difference between a star cluster and a galaxy?",
+      "options": [
+        "A star cluster is larger than a galaxy",
+        "A galaxy contains many star clusters",
+        "A star cluster contains many galaxies",
+        "They are the same thing"
+      ],
+      "answer": 1,
+      "explanation": "A galaxy is a vast system of stars, gas, and dust, while a star cluster is a group of stars held together by gravity.",
+      "hint": "Think about the scale of each one."
+    },
+    {
+      "id": 50,
+      "question": "What is the main cause of wind?",
+      "options": [
+        "Differences in air pressure",
+        "The Earth's rotation",
+        "Ocean currents",
+        "Changes in temperature"
+      ],
+      "answer": 0,
+      "explanation": "Wind is caused by differences in air pressure, which are often created by uneven heating of the Earth's surface.",
+      "hint": "Think about how air moves from areas of high pressure to areas of low pressure."
+    }
+  ]
+}

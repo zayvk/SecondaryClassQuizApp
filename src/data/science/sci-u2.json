@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 2: Properties of Materials",
+  "unitId": "sci-u2",
+  "topics": [
+    "Atomic structure and the Periodic Table",
+    "Trends in groups within the Periodic Table",
+    "Why elements react to form compounds",
+    "Simple and giant structures"
+  ],
+  "generatedAt": "2026-03-02T09:02:58Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What are the three main subatomic particles found in an atom?",
+      "options": [
+        "Protons, neutrons, electrons",
+        "Quarks, leptons, bosons",
+        "Isotopes, ions, molecules",
+        "Alpha particles, beta particles, gamma rays"
+      ],
+      "answer": 0,
+      "explanation": "Protons, neutrons, and electrons are the fundamental particles that make up an atom. Protons and neutrons are in the nucleus, while electrons orbit it.",
+      "hint": "Think about what makes up the core of an atom and what surrounds it."
+    },
+    {
+      "id": 2,
+      "question": "Where are electrons found within an atom?",
+      "options": [
+        "In the nucleus",
+        "Orbiting the nucleus in shells",
+        "Combined with protons",
+        "Stuck to neutrons"
+      ],
+      "answer": 1,
+      "explanation": "Electrons occupy specific energy levels or shells around the nucleus of an atom. These shells determine the electron configuration.",
+      "hint": "Consider the structure of the atom – what part is constantly moving?"
+    },
+    {
+      "id": 3,
+      "question": "What does the atomic number of an element represent?",
+      "options": [
+        "The number of neutrons",
+        "The number of protons",
+        "The atomic mass",
+        "The number of electrons and neutrons"
+      ],
+      "answer": 1,
+      "explanation": "The atomic number defines the element and is equal to the number of protons in the nucleus. This number uniquely identifies each element.",
+      "hint": "This number is what defines an element and its position on the Periodic Table."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is arranged in order of increasing atomic number in the Periodic Table?",
+      "options": [
+        "Groups",
+        "Periods",
+        "Blocks",
+        "Isotopes"
+      ],
+      "answer": 1,
+      "explanation": "Periods in the Periodic Table represent horizontal rows, and elements within a period increase in atomic number from left to right.",
+      "hint": "Think about how the Periodic Table is structured – are elements arranged randomly?"
+    },
+    {
+      "id": 5,
+      "question": "Elements in the same group of the Periodic Table have similar…",
+      "options": [
+        "Atomic mass",
+        "Number of neutrons",
+        "Chemical properties",
+        "Number of protons"
+      ],
+      "answer": 2,
+      "explanation": "Elements in the same group have the same number of valence electrons, leading to similar chemical behavior and properties.",
+      "hint": "What determines how an element reacts with others?"
+    },
+    {
+      "id": 6,
+      "question": "As you move down Group 1 (alkali metals) in the Periodic Table, what generally happens to the reactivity of the elements?",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Stays the same",
+        "Becomes unpredictable"
+      ],
+      "answer": 1,
+      "explanation": "Reactivity increases down Group 1 because the outermost electron is further from the nucleus and easier to lose.",
+      "hint": "Consider how easily an atom loses an electron as you move down the group."
+    },
+    {
+      "id": 7,
+      "question": "Why do atoms form chemical bonds?",
+      "options": [
+        "To increase their mass",
+        "To achieve a stable electron configuration",
+        "To become heavier",
+        "To change their atomic number"
+      ],
+      "answer": 1,
+      "explanation": "Atoms bond to achieve a full outer electron shell, which is the most stable electron configuration, often resembling noble gases.",
+      "hint": "Think about what makes an atom 'happy' and stable."
+    },
+    {
+      "id": 8,
+      "question": "What type of chemical bond involves the sharing of electrons?",
+      "options": [
+        "Ionic bond",
+        "Metallic bond",
+        "Covalent bond",
+        "Hydrogen bond"
+      ],
+      "answer": 2,
+      "explanation": "Covalent bonds are formed when atoms share electrons to achieve a stable electron configuration.",
+      "hint": "This bond doesn't involve transferring electrons, but rather sharing them."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following is an example of an ionic compound?",
+      "options": [
+        "Water (H₂O)",
+        "Carbon dioxide (CO₂)",
+        "Sodium chloride (NaCl)",
+        "Methane (CH₄)"
+      ],
+      "answer": 2,
+      "explanation": "Sodium chloride (NaCl) is formed by the transfer of electrons between sodium and chlorine, creating ions and an ionic bond.",
+      "hint": "Think about which elements readily give and take electrons."
+    },
+    {
+      "id": 10,
+      "question": "What holds metal atoms together in a metallic bond?",
+      "options": [
+        "Shared electrons",
+        "Transferred electrons",
+        "A 'sea' of delocalized electrons",
+        "Strong nuclear forces"
+      ],
+      "answer": 2,
+      "explanation": "Metallic bonds are formed by the attraction between metal ions and a 'sea' of delocalized electrons.",
+      "hint": "Metals are good conductors – what allows electrons to move freely?"
+    },
+    {
+      "id": 11,
+      "question": "What is a simple molecular structure?",
+      "options": [
+        "A lattice of ions",
+        "Individual molecules held by weak forces",
+        "A network of covalent bonds",
+        "A metallic lattice"
+      ],
+      "answer": 1,
+      "explanation": "Simple molecular structures consist of individual molecules held together by weak intermolecular forces.",
+      "hint": "Think about substances that have low melting and boiling points."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following substances has a simple molecular structure?",
+      "options": [
+        "Sodium chloride",
+        "Diamond",
+        "Water",
+        "Iron"
+      ],
+      "answer": 2,
+      "explanation": "Water (H₂O) exists as individual molecules with weak intermolecular forces.",
+      "hint": "Consider which substance is a liquid at room temperature."
+    },
+    {
+      "id": 13,
+      "question": "What is a giant ionic structure?",
+      "options": [
+        "Individual ions",
+        "A lattice of positive and negative ions",
+        "Molecules held by covalent bonds",
+        "A sea of electrons"
+      ],
+      "answer": 1,
+      "explanation": "Giant ionic structures are formed by a regular, repeating arrangement of ions held together by strong electrostatic forces.",
+      "hint": "These structures are typically very hard and have high melting points."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following is an example of a substance with a giant ionic structure?",
+      "options": [
+        "Sugar",
+        "Oxygen",
+        "Magnesium oxide",
+        "Carbon dioxide"
+      ],
+      "answer": 2,
+      "explanation": "Magnesium oxide (MgO) forms a giant ionic lattice with strong electrostatic forces between Mg²⁺ and O²⁻ ions.",
+      "hint": "Think about compounds formed between metals and non-metals."
+    },
+    {
+      "id": 15,
+      "question": "What is a giant covalent structure?",
+      "options": [
+        "Individual molecules",
+        "A lattice of ions",
+        "A network of atoms held by covalent bonds",
+        "A metallic lattice"
+      ],
+      "answer": 2,
+      "explanation": "Giant covalent structures consist of a vast network of atoms linked by strong covalent bonds throughout the entire structure.",
+      "hint": "These structures are known for their extreme hardness and high melting points."
+    },
+    {
+      "id": 16,
+      "question": "Diamond and graphite are both made of carbon, but have different properties. Why?",
+      "options": [
+        "Different atomic numbers",
+        "Different arrangements of carbon atoms",
+        "Different numbers of neutrons",
+        "Different numbers of protons"
+      ],
+      "answer": 1,
+      "explanation": "Diamond and graphite are allotropes of carbon with different arrangements of carbon atoms, leading to different properties.",
+      "hint": "The same element can exist in different forms – what causes these differences?"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following has a giant metallic structure?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Iron",
+        "Water"
+      ],
+      "answer": 2,
+      "explanation": "Iron (Fe) has a metallic structure with a lattice of positive ions surrounded by a 'sea' of delocalized electrons.",
+      "hint": "Think about metals and their properties like conductivity."
+    },
+    {
+      "id": 18,
+      "question": "What is an isotope?",
+      "options": [
+        "Atoms with different numbers of protons",
+        "Atoms with different numbers of electrons",
+        "Atoms of the same element with different numbers of neutrons",
+        "Atoms of different elements"
+      ],
+      "answer": 2,
+      "explanation": "Isotopes are atoms of the same element (same number of protons) but with different numbers of neutrons, resulting in different mass numbers.",
+      "hint": "What changes within the atom to create an isotope?"
+    },
+    {
+      "id": 19,
+      "question": "What is an ion?",
+      "options": [
+        "An atom with a neutral charge",
+        "An atom with a different number of protons",
+        "An atom that has gained or lost electrons",
+        "An atom with a different number of neutrons"
+      ],
+      "answer": 2,
+      "explanation": "An ion is formed when an atom gains or loses electrons, resulting in a net electrical charge.",
+      "hint": "What happens to the balance of positive and negative charges in an atom to form an ion?"
+    },
+    {
+      "id": 20,
+      "question": "What is the charge of a positive ion?",
+      "options": [
+        "Negative",
+        "Neutral",
+        "Positive",
+        "Variable"
+      ],
+      "answer": 2,
+      "explanation": "A positive ion, called a cation, is formed when an atom loses electrons.",
+      "hint": "What happens when an atom loses electrons?"
+    },
+    {
+      "id": 21,
+      "question": "Which group in the Periodic Table is known as the noble gases?",
+      "options": [
+        "Group 1",
+        "Group 2",
+        "Group 17",
+        "Group 18"
+      ],
+      "answer": 3,
+      "explanation": "Group 18, the noble gases, are very unreactive because they have a full outer electron shell.",
+      "hint": "These gases are known for their stability and lack of reactivity."
+    },
+    {
+      "id": 22,
+      "question": "What is the trend in electronegativity across a period (from left to right)?",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Stays the same",
+        "Fluctuates randomly"
+      ],
+      "answer": 1,
+      "explanation": "Electronegativity generally increases across a period because the nuclear charge increases, attracting electrons more strongly.",
+      "hint": "Think about how the pull on electrons changes as you move across the Periodic Table."
+    },
+    {
+      "id": 23,
+      "question": "What is the valency of an element?",
+      "options": [
+        "The number of protons",
+        "The number of neutrons",
+        "The number of electrons in the outermost shell",
+        "The atomic mass"
+      ],
+      "answer": 2,
+      "explanation": "Valency refers to the number of electrons an atom needs to gain, lose, or share to achieve a stable electron configuration.",
+      "hint": "This number determines how an element will bond with others."
+    },
+    {
+      "id": 24,
+      "question": "Why are metals good conductors of electricity?",
+      "options": [
+        "They have fixed electrons",
+        "They have delocalized electrons",
+        "They have a full outer shell",
+        "They have a high atomic mass"
+      ],
+      "answer": 1,
+      "explanation": "Metals have delocalized electrons that are free to move throughout the structure, allowing for the easy flow of electric current.",
+      "hint": "Think about how electrons move in a metallic structure."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following properties is typical of ionic compounds?",
+      "options": [
+        "Low melting point",
+        "Poor electrical conductivity",
+        "Brittle and hard",
+        "Soluble in non-polar solvents"
+      ],
+      "answer": 2,
+      "explanation": "Ionic compounds are typically brittle and hard due to the strong electrostatic forces holding the ions together.",
+      "hint": "Consider the strength of the bonds in an ionic lattice."
+    },
+    {
+      "id": 26,
+      "question": "What type of structure does sugar (sucrose) have?",
+      "options": [
+        "Giant ionic",
+        "Giant covalent",
+        "Simple molecular",
+        "Metallic"
+      ],
+      "answer": 2,
+      "explanation": "Sugar has a simple molecular structure, consisting of individual molecules held together by weak intermolecular forces.",
+      "hint": "Think about the melting and boiling point of sugar."
+    },
+    {
+      "id": 27,
+      "question": "What is the role of intermolecular forces in simple molecular structures?",
+      "options": [
+        "They are very strong and hold atoms together",
+        "They determine the chemical properties of the substance",
+        "They are weak and easily overcome",
+        "They create a giant lattice structure"
+      ],
+      "answer": 2,
+      "explanation": "Intermolecular forces are relatively weak and easily overcome, resulting in low melting and boiling points for simple molecular substances.",
+      "hint": "These forces are responsible for the physical state of the substance."
+    },
+    {
+      "id": 28,
+      "question": "Why is graphite a good lubricant?",
+      "options": [
+        "It is very hard",
+        "It has layers that can slide over each other",
+        "It is a good conductor of electricity",
+        "It has a giant ionic structure"
+      ],
+      "answer": 1,
+      "explanation": "Graphite's layered structure allows the layers to slide over each other easily, reducing friction and making it a good lubricant.",
+      "hint": "Think about the arrangement of carbon atoms in graphite."
+    },
+    {
+      "id": 29,
+      "question": "What is the main difference between a physical change and a chemical change?",
+      "options": [
+        "Physical changes involve a change in substance, chemical changes do not",
+        "Chemical changes involve a change in substance, physical changes do not",
+        "Physical changes are always reversible, chemical changes are not",
+        "Chemical changes always involve heat"
+      ],
+      "answer": 1,
+      "explanation": "A chemical change results in the formation of new substances, while a physical change alters the form or appearance of a substance without changing its chemical composition.",
+      "hint": "Does the substance become something new?"
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is an example of a chemical change?",
+      "options": [
+        "Melting ice",
+        "Boiling water",
+        "Burning wood",
+        "Dissolving sugar in water"
+      ],
+      "answer": 2,
+      "explanation": "Burning wood involves a chemical reaction that produces new substances (ash, gases), indicating a chemical change.",
+      "hint": "Is a new substance formed?"
+    },
+    {
+      "id": 31,
+      "question": "What is the atomic mass unit (amu) based on?",
+      "options": [
+        "The mass of a proton",
+        "The mass of an electron",
+        "One-twelfth the mass of a carbon-12 atom",
+        "The average mass of all isotopes"
+      ],
+      "answer": 2,
+      "explanation": "The atomic mass unit (amu) is defined as one-twelfth the mass of a carbon-12 atom.",
+      "hint": "This unit is used to measure the mass of atoms and molecules."
+    },
+    {
+      "id": 32,
+      "question": "What happens to the number of protons in an atom during a chemical reaction?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays the same",
+        "It fluctuates randomly"
+      ],
+      "answer": 2,
+      "explanation": "The number of protons in an atom remains constant during a chemical reaction; only electrons are rearranged.",
+      "hint": "What defines an element?"
+    },
+    {
+      "id": 33,
+      "question": "Which of the following elements is a halogen?",
+      "options": [
+        "Sodium",
+        "Oxygen",
+        "Chlorine",
+        "Argon"
+      ],
+      "answer": 2,
+      "explanation": "Chlorine is a halogen, belonging to Group 17 of the Periodic Table and known for its high reactivity.",
+      "hint": "Halogens are very reactive non-metals."
+    },
+    {
+      "id": 34,
+      "question": "What is the trend in atomic radius down a group in the Periodic Table?",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Stays the same",
+        "Fluctuates randomly"
+      ],
+      "answer": 1,
+      "explanation": "Atomic radius increases down a group because the number of electron shells increases.",
+      "hint": "Think about how the size of an atom changes as you add more electron shells."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the noble gas configuration in chemical bonding?",
+      "options": [
+        "To increase the atomic mass",
+        "To achieve a stable electron arrangement",
+        "To create ions",
+        "To break covalent bonds"
+      ],
+      "answer": 1,
+      "explanation": "Atoms bond to achieve a noble gas configuration, which is a stable electron arrangement with a full outer shell.",
+      "hint": "What makes an atom stable?"
+    },
+    {
+      "id": 36,
+      "question": "Which of the following is a property of metals?",
+      "options": [
+        "Brittle",
+        "Poor conductor of heat",
+        "Dull appearance",
+        "Malleable"
+      ],
+      "answer": 3,
+      "explanation": "Metals are malleable, meaning they can be hammered into shape without breaking.",
+      "hint": "Think about how metals are shaped and used."
+    },
+    {
+      "id": 37,
+      "question": "What is the difference between a compound and a mixture?",
+      "options": [
+        "Compounds are physically combined, mixtures are chemically combined",
+        "Compounds are chemically combined, mixtures are physically combined",
+        "Compounds are always homogeneous, mixtures are always heterogeneous",
+        "Compounds are always liquids, mixtures are always solids"
+      ],
+      "answer": 1,
+      "explanation": "Compounds are formed by chemical bonds between elements, while mixtures are physical combinations of substances.",
+      "hint": "Is a chemical reaction involved?"
+    },
+    {
+      "id": 38,
+      "question": "What is the role of valence electrons in determining an element's reactivity?",
+      "options": [
+        "They determine the atomic mass",
+        "They determine the number of neutrons",
+        "They participate in chemical bonding",
+        "They determine the number of protons"
+      ],
+      "answer": 2,
+      "explanation": "Valence electrons are the outermost electrons and are involved in forming chemical bonds, thus determining reactivity.",
+      "hint": "Which electrons are involved in bonding?"
+    },
+    {
+      "id": 39,
+      "question": "Why do ionic compounds have high melting and boiling points?",
+      "options": [
+        "Weak intermolecular forces",
+        "Strong covalent bonds",
+        "Strong electrostatic forces between ions",
+        "Delocalized electrons"
+      ],
+      "answer": 2,
+      "explanation": "Ionic compounds have strong electrostatic forces between oppositely charged ions, requiring a lot of energy to break.",
+      "hint": "Think about the strength of the bonds holding the ions together."
+    },
+    {
+      "id": 40,
+      "question": "What is the relationship between the number of protons and the element's identity?",
+      "options": [
+        "The number of protons can change",
+        "The number of protons determines the element's identity",
+        "The number of protons is equal to the number of neutrons",
+        "The number of protons is irrelevant"
+      ],
+      "answer": 1,
+      "explanation": "The number of protons defines the element; changing the number of protons changes the element itself.",
+      "hint": "What uniquely identifies an element?"
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is a good conductor of heat and electricity?",
+      "options": [
+        "Wood",
+        "Plastic",
+        "Copper",
+        "Rubber"
+      ],
+      "answer": 2,
+      "explanation": "Copper is a metal and metals are excellent conductors of both heat and electricity due to their delocalized electrons.",
+      "hint": "Think about materials used in electrical wiring."
+    },
+    {
+      "id": 42,
+      "question": "What is the trend in ionization energy across a period?",
+      "options": [
+        "Decreases",
+        "Increases",
+        "Stays the same",
+        "Fluctuates randomly"
+      ],
+      "answer": 1,
+      "explanation": "Ionization energy generally increases across a period because the nuclear charge increases, making it harder to remove an electron.",
+      "hint": "Think about how tightly electrons are held by the nucleus."
+    },
+    {
+      "id": 43,
+      "question": "What type of bond is formed when two atoms share electrons equally?",
+      "options": [
+        "Polar covalent",
+        "Nonpolar covalent",
+        "Ionic",
+        "Metallic"
+      ],
+      "answer": 1,
+      "explanation": "A nonpolar covalent bond is formed when electrons are shared equally between two atoms, typically when the atoms have similar electronegativity.",
+      "hint": "Consider the electronegativity of the atoms involved."
+    },
+    {
+      "id": 44,
+      "question": "What is the main characteristic of a giant covalent network?",
+      "options": [
+        "Weak intermolecular forces",
+        "High electrical conductivity",
+        "Extremely hard and high melting point",
+        "Low density"
+      ],
+      "answer": 2,
+      "explanation": "Giant covalent networks have a vast network of strong covalent bonds, resulting in extreme hardness and high melting points.",
+      "hint": "Think about diamond and graphite."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of using the Periodic Table?",
+      "options": [
+        "To list all known elements",
+        "To predict the properties of elements",
+        "To organize elements based on their atomic mass",
+        "To identify isotopes"
+      ],
+      "answer": 1,
+      "explanation": "The Periodic Table organizes elements based on their atomic structure and properties, allowing for predictions about their behavior.",
+      "hint": "How does the Periodic Table help scientists understand elements?"
+    },
+    {
+      "id": 46,
+      "question": "Which group of elements is known for being very unreactive?",
+      "options": [
+        "Alkali metals",
+        "Halogens",
+        "Noble gases",
+        "Transition metals"
+      ],
+      "answer": 2,
+      "explanation": "Noble gases have a full outer electron shell, making them very stable and unreactive.",
+      "hint": "These gases don't readily form compounds."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between a molecule and a compound?",
+      "options": [
+        "A molecule is always a compound",
+        "A compound is always a molecule",
+        "A molecule is a group of atoms bonded together, a compound is made of different elements",
+        "A compound is a group of atoms bonded together, a molecule is made of the same element"
+      ],
+      "answer": 3,
+      "explanation": "A molecule is formed when two or more atoms are chemically bonded, while a compound is formed when two or more *different* elements are chemically bonded.",
+      "hint": "Consider the composition of the substance."
+    },
+    {
+      "id": 48,
+      "question": "Why are metals generally ductile?",
+      "options": [
+        "They have weak bonds",
+        "Their electrons are localized",
+        "Their atoms can slide past each other without breaking bonds",
+        "They are brittle"
+      ],
+      "answer": 2,
+      "explanation": "The delocalized electrons in metals allow the atoms to slide past each other without breaking the metallic bonds, making them ductile.",
+      "hint": "Think about how metals can be drawn into wires."
+    },
+    {
+      "id": 49,
+      "question": "What is the role of neutrons in an atom?",
+      "options": [
+        "They determine the element's charge",
+        "They determine the element's mass",
+        "They participate in chemical bonding",
+        "They orbit the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Neutrons contribute to the mass of the atom and help stabilize the nucleus.",
+      "hint": "What is found in the nucleus along with protons?"
+    },
+    {
+      "id": 50,
+      "question": "Which of the following statements best describes the relationship between electronegativity and bond type?",
+      "options": [
+        "High electronegativity difference leads to covalent bonds",
+        "Low electronegativity difference leads to ionic bonds",
+        "High electronegativity difference leads to ionic bonds",
+        "Electronegativity has no effect on bond type"
+      ],
+      "answer": 2,
+      "explanation": "A large difference in electronegativity between two atoms results in the transfer of electrons and the formation of an ionic bond.",
+      "hint": "Think about how electrons are shared or transferred based on electronegativity."
+    }
+  ]
+}

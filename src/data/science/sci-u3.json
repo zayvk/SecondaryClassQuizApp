@@ -1,0 +1,666 @@
+{
+  "subject": "Science",
+  "unit": "Unit 3: Forces and Energy",
+  "unitId": "sci-u3",
+  "topics": [
+    "Density",
+    "Heat and temperature",
+    "Conservation of energy",
+    "Moving from hot to cold",
+    "Ways of transferring thermal energy",
+    "Cooling by evaporation"
+  ],
+  "generatedAt": "2026-03-02T09:04:45Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is density?",
+      "options": [
+        "Mass divided by volume",
+        "Volume divided by mass",
+        "Mass plus volume",
+        "Volume minus mass"
+      ],
+      "answer": 0,
+      "explanation": "Density is defined as mass per unit volume, indicating how much 'stuff' is packed into a given space.",
+      "hint": "Think about how tightly packed something is."
+    },
+    {
+      "id": 2,
+      "question": "Which of these would have the highest density?",
+      "options": [
+        "100g of air",
+        "100g of feathers",
+        "100g of water",
+        "100g of lead"
+      ],
+      "answer": 3,
+      "explanation": "Lead is much more dense than air, feathers, or water, meaning it packs more mass into the same volume.",
+      "hint": "Consider which material feels the heaviest for the same amount."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between heat and temperature?",
+      "options": [
+        "Heat is the energy, temperature is how hot or cold something is",
+        "Temperature is the energy, heat is how hot or cold something is",
+        "They are the same thing",
+        "Heat is measured in Celsius, temperature in Joules"
+      ],
+      "answer": 0,
+      "explanation": "Heat is the transfer of thermal energy, while temperature is a measure of the average kinetic energy of the particles within a substance.",
+      "hint": "One is a measure of energy, the other is a measure of how that energy feels."
+    },
+    {
+      "id": 4,
+      "question": "What unit is used to measure heat energy?",
+      "options": [
+        "Celsius (°C)",
+        "Fahrenheit (°F)",
+        "Kelvin (K)",
+        "Joule (J)"
+      ],
+      "answer": 3,
+      "explanation": "The Joule (J) is the standard unit of energy, including thermal energy or heat.",
+      "hint": "Think about the standard units for all forms of energy."
+    },
+    {
+      "id": 5,
+      "question": "The law of conservation of energy states that…",
+      "options": [
+        "Energy can be created and destroyed",
+        "Energy can only be created",
+        "Energy can only be destroyed",
+        "Energy cannot be created or destroyed, only transformed"
+      ],
+      "answer": 3,
+      "explanation": "The law of conservation of energy is a fundamental principle stating that the total energy in an isolated system remains constant.",
+      "hint": "Think about what happens to energy when you use it – does it disappear?"
+    },
+    {
+      "id": 6,
+      "question": "A ball is dropped. As it falls, what energy transformation takes place?",
+      "options": [
+        "Chemical to kinetic",
+        "Kinetic to potential",
+        "Potential to kinetic",
+        "Thermal to kinetic"
+      ],
+      "answer": 2,
+      "explanation": "As the ball falls, its height decreases (potential energy decreases) and its speed increases (kinetic energy increases).",
+      "hint": "Consider the ball's position and movement."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is an example of energy transfer by conduction?",
+      "options": [
+        "Feeling the warmth of a fire",
+        "Boiling water in a kettle",
+        "The sun warming the Earth",
+        "A metal spoon heating up in hot soup"
+      ],
+      "answer": 3,
+      "explanation": "Conduction involves the transfer of heat through direct contact between materials.",
+      "hint": "Think about how heat travels through solids."
+    },
+    {
+      "id": 8,
+      "question": "How does heat transfer occur through convection?",
+      "options": [
+        "Through direct contact",
+        "Through electromagnetic waves",
+        "Through the movement of fluids",
+        "Through a vacuum"
+      ],
+      "answer": 2,
+      "explanation": "Convection involves the transfer of heat through the movement of fluids (liquids or gases).",
+      "hint": "Think about how hot air rises."
+    },
+    {
+      "id": 9,
+      "question": "What type of energy transfer occurs when the sun warms the Earth?",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "Insulation"
+      ],
+      "answer": 2,
+      "explanation": "Radiation is the transfer of heat through electromagnetic waves, which can travel through a vacuum like space.",
+      "hint": "The sun's energy reaches us without any material between us."
+    },
+    {
+      "id": 10,
+      "question": "Why does evaporation cause cooling?",
+      "options": [
+        "It absorbs heat from the surroundings",
+        "It releases heat into the surroundings",
+        "It changes the color of the liquid",
+        "It increases the density of the liquid"
+      ],
+      "answer": 0,
+      "explanation": "Evaporation requires energy to change a liquid into a gas, and this energy is taken from the surroundings, causing cooling.",
+      "hint": "Think about what happens to the fastest-moving particles in a liquid during evaporation."
+    },
+    {
+      "id": 11,
+      "question": "What is the density of water?",
+      "options": [
+        "1 g/cm³",
+        "10 g/cm³",
+        "0.5 g/cm³",
+        "2 g/cm³"
+      ],
+      "answer": 0,
+      "explanation": "The density of pure water is approximately 1 gram per cubic centimeter.",
+      "hint": "This is a commonly known value in science."
+    },
+    {
+      "id": 12,
+      "question": "If an object floats in water, what does this tell you about its density?",
+      "options": [
+        "It is denser than water",
+        "It is less dense than water",
+        "It has the same density as water",
+        "Density doesn't affect whether something floats"
+      ],
+      "answer": 1,
+      "explanation": "An object floats if its density is less than the density of the fluid it is placed in.",
+      "hint": "Think about why a log floats but a rock sinks."
+    },
+    {
+      "id": 13,
+      "question": "What happens to the temperature of water when it boils?",
+      "options": [
+        "It increases indefinitely",
+        "It stays constant at 100°C",
+        "It decreases",
+        "It fluctuates randomly"
+      ],
+      "answer": 1,
+      "explanation": "During boiling, the temperature of water remains constant at 100°C (at standard pressure) as energy is used to change the state from liquid to gas.",
+      "hint": "Think about what happens to the energy being added during boiling."
+    },
+    {
+      "id": 14,
+      "question": "Which material is a good conductor of heat?",
+      "options": [
+        "Wood",
+        "Plastic",
+        "Metal",
+        "Air"
+      ],
+      "answer": 2,
+      "explanation": "Metals are excellent conductors of heat due to their free electrons, which efficiently transfer thermal energy.",
+      "hint": "Think about what pots and pans are made of."
+    },
+    {
+      "id": 15,
+      "question": "What is thermal insulation used for?",
+      "options": [
+        "To speed up heat transfer",
+        "To slow down heat transfer",
+        "To create heat",
+        "To destroy heat"
+      ],
+      "answer": 1,
+      "explanation": "Thermal insulation is used to reduce the rate of heat transfer, keeping things warm or cold.",
+      "hint": "Think about what materials are used in winter coats."
+    },
+    {
+      "id": 16,
+      "question": "A hot cup of tea cools down over time. Which process is primarily responsible for this?",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "Evaporation"
+      ],
+      "answer": 3,
+      "explanation": "The hot tea radiates heat energy into the surroundings, causing it to cool down.",
+      "hint": "Think about how you can feel the heat from a hot object without touching it."
+    },
+    {
+      "id": 17,
+      "question": "What happens to the kinetic energy of particles as temperature increases?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It becomes zero"
+      ],
+      "answer": 2,
+      "explanation": "Temperature is a measure of the average kinetic energy of particles; therefore, as temperature increases, so does the kinetic energy.",
+      "hint": "Think about how particles move when they are heated."
+    },
+    {
+      "id": 18,
+      "question": "A cyclist rides uphill. What energy transformation is happening?",
+      "options": [
+        "Kinetic to potential",
+        "Potential to kinetic",
+        "Chemical to kinetic",
+        "Thermal to kinetic"
+      ],
+      "answer": 0,
+      "explanation": "As the cyclist gains height, their kinetic energy (energy of motion) is converted into potential energy (energy of position).",
+      "hint": "Consider the cyclist's height and speed."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a way to transfer thermal energy?",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "Reflection"
+      ],
+      "answer": 3,
+      "explanation": "Reflection involves bouncing light or other waves off a surface, not transferring heat energy.",
+      "hint": "Think about the three main ways heat moves."
+    },
+    {
+      "id": 20,
+      "question": "Why do we sweat when we are hot?",
+      "options": [
+        "To increase our body temperature",
+        "To decrease our body temperature through evaporation",
+        "To protect our skin from the sun",
+        "To make us feel more comfortable"
+      ],
+      "answer": 1,
+      "explanation": "Sweat evaporates from our skin, and evaporation requires heat, which is taken from our body, cooling us down.",
+      "hint": "Think about what happens when sweat dries on your skin."
+    },
+    {
+      "id": 21,
+      "question": "Two blocks of different materials are left in the sun. One is metal, the other is wood. Which will heat up faster?",
+      "options": [
+        "Metal",
+        "Wood",
+        "They will heat up at the same rate",
+        "It depends on their size"
+      ],
+      "answer": 0,
+      "explanation": "Metal has a lower specific heat capacity than wood, meaning it requires less energy to raise its temperature.",
+      "hint": "Think about which material feels hotter to the touch when both are in the sun."
+    },
+    {
+      "id": 22,
+      "question": "What is the formula for density?",
+      "options": [
+        "Density = Volume / Mass",
+        "Density = Mass x Volume",
+        "Density = Mass / Volume",
+        "Density = 1 / (Mass x Volume)"
+      ],
+      "answer": 2,
+      "explanation": "Density is calculated by dividing the mass of an object by its volume.",
+      "hint": "Remember what 'density' means in terms of how much 'stuff' is packed into a space."
+    },
+    {
+      "id": 23,
+      "question": "A 50g piece of metal has a volume of 10cm³. What is its density?",
+      "options": [
+        "5 g/cm³",
+        "500 g/cm³",
+        "0.2 g/cm³",
+        "10 g/cm³"
+      ],
+      "answer": 0,
+      "explanation": "Density = Mass / Volume = 50g / 10cm³ = 5 g/cm³",
+      "hint": "Use the formula you just learned!"
+    },
+    {
+      "id": 24,
+      "question": "What is the freezing point of water in Celsius?",
+      "options": [
+        "0°C",
+        "100°C",
+        "32°C",
+        "212°C"
+      ],
+      "answer": 0,
+      "explanation": "Water freezes at 0°C (32°F).",
+      "hint": "This is a very common temperature to know."
+    },
+    {
+      "id": 25,
+      "question": "Which of these is an example of potential energy?",
+      "options": [
+        "A rolling ball",
+        "A stretched rubber band",
+        "A burning candle",
+        "A flowing river"
+      ],
+      "answer": 1,
+      "explanation": "A stretched rubber band stores potential energy due to its deformation.",
+      "hint": "Think about energy that is 'stored' rather than being used."
+    },
+    {
+      "id": 26,
+      "question": "What happens to the speed of molecules as heat is added?",
+      "options": [
+        "They slow down",
+        "They stay the same",
+        "They speed up",
+        "They disappear"
+      ],
+      "answer": 2,
+      "explanation": "Adding heat increases the kinetic energy of molecules, causing them to move faster.",
+      "hint": "Think about what happens when you heat something up – does it become more or less energetic?"
+    },
+    {
+      "id": 27,
+      "question": "A black surface absorbs…",
+      "options": [
+        "More radiation than a white surface",
+        "Less radiation than a white surface",
+        "The same amount of radiation as a white surface",
+        "No radiation"
+      ],
+      "answer": 0,
+      "explanation": "Darker surfaces absorb more radiation than lighter surfaces.",
+      "hint": "Think about what color clothing you wear on a hot day."
+    },
+    {
+      "id": 28,
+      "question": "What is the process by which a solid changes directly into a gas called?",
+      "options": [
+        "Melting",
+        "Boiling",
+        "Sublimation",
+        "Condensation"
+      ],
+      "answer": 2,
+      "explanation": "Sublimation is the process where a solid changes directly into a gas without passing through the liquid phase.",
+      "hint": "Think about dry ice."
+    },
+    {
+      "id": 29,
+      "question": "A kettle heats water by…",
+      "options": [
+        "Conduction",
+        "Convection",
+        "Radiation",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "The heating element conducts heat to the water, which then circulates by convection, and some radiation also occurs.",
+      "hint": "Consider all the ways heat can travel."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of a vacuum flask?",
+      "options": [
+        "To allow heat to escape quickly",
+        "To prevent heat transfer",
+        "To create heat",
+        "To absorb heat"
+      ],
+      "answer": 1,
+      "explanation": "A vacuum flask minimizes heat transfer by conduction, convection, and radiation.",
+      "hint": "Think about how a thermos keeps drinks hot or cold."
+    },
+    {
+      "id": 31,
+      "question": "If you increase the mass of an object while keeping the volume the same, what happens to its density?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It becomes zero"
+      ],
+      "answer": 2,
+      "explanation": "Density is mass divided by volume. Increasing the mass while keeping the volume constant will increase the density.",
+      "hint": "Refer back to the density formula."
+    },
+    {
+      "id": 32,
+      "question": "What is the unit of measurement for temperature?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Celsius",
+        "Newton"
+      ],
+      "answer": 2,
+      "explanation": "Celsius, Fahrenheit, and Kelvin are common units for measuring temperature.",
+      "hint": "Think about what you see on a thermometer."
+    },
+    {
+      "id": 33,
+      "question": "A car engine gets hot when it runs. What is the main form of energy being wasted?",
+      "options": [
+        "Kinetic energy",
+        "Potential energy",
+        "Thermal energy",
+        "Chemical energy"
+      ],
+      "answer": 2,
+      "explanation": "A significant portion of the energy from burning fuel in a car engine is released as thermal energy (heat), which is often wasted.",
+      "hint": "Think about what you feel when you touch the hood of a car after it's been running."
+    },
+    {
+      "id": 34,
+      "question": "Which of the following materials is the best insulator?",
+      "options": [
+        "Copper",
+        "Aluminum",
+        "Wood",
+        "Iron"
+      ],
+      "answer": 2,
+      "explanation": "Wood is a poor conductor of heat, making it a good insulator.",
+      "hint": "Think about materials used in building construction to keep homes warm."
+    },
+    {
+      "id": 35,
+      "question": "What happens to the particles in a liquid when it is heated?",
+      "options": [
+        "They slow down and move closer together",
+        "They speed up and move further apart",
+        "They disappear",
+        "They change color"
+      ],
+      "answer": 1,
+      "explanation": "Heating a liquid increases the kinetic energy of its particles, causing them to move faster and spread out.",
+      "hint": "Think about what happens when you boil water."
+    },
+    {
+      "id": 36,
+      "question": "A student measures the mass of a rock as 200g and its volume as 50cm³. What is the density of the rock?",
+      "options": [
+        "4 g/cm³",
+        "10 g/cm³",
+        "250 g/cm³",
+        "150 g/cm³"
+      ],
+      "answer": 0,
+      "explanation": "Density = Mass / Volume = 200g / 50cm³ = 4 g/cm³",
+      "hint": "Remember the formula for density."
+    },
+    {
+      "id": 37,
+      "question": "What is the process of changing a gas into a liquid called?",
+      "options": [
+        "Evaporation",
+        "Condensation",
+        "Sublimation",
+        "Melting"
+      ],
+      "answer": 1,
+      "explanation": "Condensation is the process where a gas changes into a liquid.",
+      "hint": "Think about what happens to water vapor when it cools down."
+    },
+    {
+      "id": 38,
+      "question": "Why do radiators usually have a large surface area?",
+      "options": [
+        "To reduce heat transfer",
+        "To increase heat transfer by radiation and convection",
+        "To make them look nicer",
+        "To make them easier to clean"
+      ],
+      "answer": 1,
+      "explanation": "A larger surface area allows for more efficient heat transfer through radiation and convection.",
+      "hint": "Think about how heat radiates from a surface."
+    },
+    {
+      "id": 39,
+      "question": "What type of energy is stored in food?",
+      "options": [
+        "Kinetic energy",
+        "Potential energy",
+        "Chemical energy",
+        "Thermal energy"
+      ],
+      "answer": 2,
+      "explanation": "Food stores energy in the chemical bonds of its molecules.",
+      "hint": "Think about how your body gets energy from eating."
+    },
+    {
+      "id": 40,
+      "question": "A metal spoon feels cold to the touch, even though it is at room temperature. Why?",
+      "options": [
+        "The metal is actually colder than your hand",
+        "The metal is a good conductor of heat and draws heat away from your hand",
+        "The metal is a poor conductor of heat",
+        "The metal is reflecting heat"
+      ],
+      "answer": 1,
+      "explanation": "Metal is a good conductor, so it quickly draws heat away from your hand, making it feel cold.",
+      "hint": "Think about how heat flows from warmer objects to cooler objects."
+    },
+    {
+      "id": 41,
+      "question": "What is the main difference between a renewable and a non-renewable energy source?",
+      "options": [
+        "Renewable sources are cheaper",
+        "Renewable sources are always more efficient",
+        "Renewable sources can be replenished naturally, while non-renewable sources cannot",
+        "Non-renewable sources are better for the environment"
+      ],
+      "answer": 2,
+      "explanation": "Renewable energy sources, like solar and wind, are naturally replenished, while non-renewable sources, like fossil fuels, have a limited supply.",
+      "hint": "Think about whether a resource can be replaced quickly."
+    },
+    {
+      "id": 42,
+      "question": "Which of the following is an example of energy transformation from chemical to thermal energy?",
+      "options": [
+        "A light bulb glowing",
+        "A car moving",
+        "Burning wood",
+        "Water flowing downhill"
+      ],
+      "answer": 2,
+      "explanation": "Burning wood releases chemical energy stored in the wood, which is converted into thermal energy (heat).",
+      "hint": "Think about what happens when you burn something."
+    },
+    {
+      "id": 43,
+      "question": "What happens to the density of a gas when it is heated?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays the same",
+        "It becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "Heating a gas causes its particles to move faster and spread out, decreasing its density.",
+      "hint": "Think about how hot air rises."
+    },
+    {
+      "id": 44,
+      "question": "A student wants to keep a drink cold for a picnic. Which container would be the best choice?",
+      "options": [
+        "A metal can",
+        "A glass bottle",
+        "A plastic container with insulation",
+        "A thin cardboard box"
+      ],
+      "answer": 2,
+      "explanation": "Insulation slows down heat transfer, keeping the drink cold for longer.",
+      "hint": "Think about what materials are used in coolers."
+    },
+    {
+      "id": 45,
+      "question": "What is the role of convection currents in boiling water?",
+      "options": [
+        "They prevent the water from heating up",
+        "They distribute heat evenly throughout the water",
+        "They cause the water to freeze",
+        "They change the color of the water"
+      ],
+      "answer": 1,
+      "explanation": "Convection currents circulate the heated water, distributing heat evenly throughout the pot.",
+      "hint": "Think about how you see the water moving when it boils."
+    },
+    {
+      "id": 46,
+      "question": "If two objects are in thermal contact, heat will flow from the…",
+      "options": [
+        "Colder object to the warmer object",
+        "Warmer object to the colder object",
+        "Objects will not exchange heat",
+        "Objects will exchange heat at the same rate"
+      ],
+      "answer": 1,
+      "explanation": "Heat always flows from a warmer object to a colder object until they reach thermal equilibrium.",
+      "hint": "Think about what happens when you hold an ice cube in your hand."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of a radiator in a car?",
+      "options": [
+        "To generate electricity",
+        "To cool the engine by dissipating heat",
+        "To increase the engine's power",
+        "To store fuel"
+      ],
+      "answer": 1,
+      "explanation": "The radiator removes excess heat from the engine to prevent overheating.",
+      "hint": "Think about why an engine gets hot."
+    },
+    {
+      "id": 48,
+      "question": "Which of the following is an example of radiation?",
+      "options": [
+        "Touching a hot stove",
+        "Feeling the warmth of a campfire",
+        "Boiling water in a pot",
+        "A fan cooling you down"
+      ],
+      "answer": 1,
+      "explanation": "You feel the warmth of a campfire without touching it, which is heat transfer through radiation.",
+      "hint": "Think about how you can feel heat from a distance."
+    },
+    {
+      "id": 49,
+      "question": "A block of ice melts. What happens to its temperature during the melting process?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It stays constant",
+        "It fluctuates randomly"
+      ],
+      "answer": 2,
+      "explanation": "During melting, the temperature remains constant as energy is used to change the state from solid to liquid.",
+      "hint": "Think about what happens to the energy being added during melting."
+    },
+    {
+      "id": 50,
+      "question": "What is the relationship between thermal energy and temperature?",
+      "options": [
+        "Thermal energy is a measure of temperature",
+        "Temperature is a measure of thermal energy",
+        "Thermal energy causes temperature to decrease",
+        "They are unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Thermal energy is the total kinetic energy of the particles in a substance, and temperature is a measure of the average kinetic energy.",
+      "hint": "Think about how adding heat affects the temperature of an object."
+    }
+  ]
+}

@@ -1,0 +1,664 @@
+{
+  "subject": "Science",
+  "unit": "Unit 8: Rates of Reaction",
+  "unitId": "sci-u8",
+  "topics": [
+    "Measuring the rate of reaction",
+    "Surface area and the rate of reaction",
+    "Temperature and the rate of reaction",
+    "Concentration and the rate of reaction"
+  ],
+  "generatedAt": "2026-03-02T09:14:00Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a common way to measure the rate of a chemical reaction?",
+      "options": [
+        "Measuring the mass of reactants",
+        "Measuring the colour change",
+        "Measuring the temperature increase",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "The rate of reaction can be measured by observing changes in any of the reactants or products, including mass, colour, or temperature.",
+      "hint": "Think about what changes happen *during* a reaction."
+    },
+    {
+      "id": 2,
+      "question": "What happens to the rate of reaction as temperature increases?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It fluctuates randomly"
+      ],
+      "answer": 2,
+      "explanation": "Higher temperatures provide more energy to the reactant particles, leading to more frequent and successful collisions.",
+      "hint": "Consider how heat affects the movement of particles."
+    },
+    {
+      "id": 3,
+      "question": "Increasing the concentration of reactants generally…",
+      "options": [
+        "Decreases the rate of reaction",
+        "Has no effect on the rate of reaction",
+        "Increases the rate of reaction",
+        "Makes the reaction stop"
+      ],
+      "answer": 2,
+      "explanation": "Higher concentration means more reactant particles in the same volume, leading to more frequent collisions.",
+      "hint": "Think about how many particles are available to react."
+    },
+    {
+      "id": 4,
+      "question": "Which of these would NOT increase the rate of reaction between a solid and a liquid?",
+      "options": [
+        "Crushing the solid",
+        "Increasing the temperature",
+        "Stirring the mixture",
+        "Decreasing the concentration of the liquid"
+      ],
+      "answer": 3,
+      "explanation": "Decreasing the concentration of the liquid would reduce the number of reactant particles, slowing down the reaction.",
+      "hint": "Consider what factors affect how often particles collide."
+    },
+    {
+      "id": 5,
+      "question": "What is the collision theory?",
+      "options": [
+        "Particles must collide with enough energy to react",
+        "Reactions only happen at high temperatures",
+        "Reactions only happen in solutions",
+        "Particles repel each other"
+      ],
+      "answer": 0,
+      "explanation": "The collision theory states that for a reaction to occur, reactant particles must collide with sufficient energy and the correct orientation.",
+      "hint": "Think about what needs to happen for particles to actually *change* during a reaction."
+    },
+    {
+      "id": 6,
+      "question": "A student is investigating the reaction between marble chips and hydrochloric acid. They measure the volume of gas produced over time. What are they measuring?",
+      "options": [
+        "The activation energy",
+        "The rate of reaction",
+        "The equilibrium constant",
+        "The enthalpy change"
+      ],
+      "answer": 1,
+      "explanation": "Measuring the volume of gas produced over time directly indicates how quickly the reaction is proceeding, which is the rate of reaction.",
+      "hint": "What does the amount of gas produced tell you about the reaction?"
+    },
+    {
+      "id": 7,
+      "question": "Powdering a solid reactant increases the rate of reaction because it…",
+      "options": [
+        "Lowers the temperature",
+        "Increases the concentration",
+        "Increases the surface area",
+        "Decreases the activation energy"
+      ],
+      "answer": 2,
+      "explanation": "Powdering increases the surface area of the solid, providing more points of contact for the reaction to occur.",
+      "hint": "Think about how much of the solid is exposed to the other reactant."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a unit for measuring the rate of reaction?",
+      "options": [
+        "Degrees Celsius",
+        "Grams per second",
+        "Moles per liter",
+        "Joules"
+      ],
+      "answer": 1,
+      "explanation": "Rate of reaction is often expressed as the change in mass, volume, or concentration per unit of time, such as grams per second.",
+      "hint": "Rate is always a change *over time*."
+    },
+    {
+      "id": 9,
+      "question": "What is activation energy?",
+      "options": [
+        "The energy released during a reaction",
+        "The energy required to start a reaction",
+        "The energy of the products",
+        "The energy of the reactants"
+      ],
+      "answer": 1,
+      "explanation": "Activation energy is the minimum amount of energy that reactant particles must possess for a collision to result in a reaction.",
+      "hint": "Think about what 'activates' the reaction."
+    },
+    {
+      "id": 10,
+      "question": "If you double the concentration of one reactant, how will this affect the rate of reaction (assuming the reaction is first order with respect to that reactant)?",
+      "options": [
+        "The rate will stay the same",
+        "The rate will double",
+        "The rate will quadruple",
+        "The rate will halve"
+      ],
+      "answer": 1,
+      "explanation": "For a first-order reaction, the rate is directly proportional to the concentration of the reactant.",
+      "hint": "Consider the relationship between concentration and reaction speed."
+    },
+    {
+      "id": 11,
+      "question": "A reaction is carried out at 20°C and then repeated at 40°C. What will you observe?",
+      "options": [
+        "The reaction will be slower at 40°C",
+        "The reaction will be faster at 40°C",
+        "The reaction will take the same amount of time",
+        "The reaction will stop at 40°C"
+      ],
+      "answer": 1,
+      "explanation": "Increasing the temperature provides more kinetic energy to the particles, leading to more frequent and successful collisions.",
+      "hint": "Think about how temperature affects particle movement."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is an example of increasing surface area?",
+      "options": [
+        "Dissolving a solid in water",
+        "Heating a liquid",
+        "Cutting a piece of paper into smaller pieces",
+        "Adding a catalyst"
+      ],
+      "answer": 2,
+      "explanation": "Cutting a piece of paper increases the total surface area exposed.",
+      "hint": "What changes when you make something smaller?"
+    },
+    {
+      "id": 13,
+      "question": "What is a catalyst?",
+      "options": [
+        "A reactant that is used up in the reaction",
+        "A substance that speeds up a reaction without being used up",
+        "A substance that slows down a reaction",
+        "A product of the reaction"
+      ],
+      "answer": 1,
+      "explanation": "A catalyst provides an alternative reaction pathway with a lower activation energy, speeding up the reaction without being consumed.",
+      "hint": "Think about how a catalyst affects the energy needed for the reaction."
+    },
+    {
+      "id": 14,
+      "question": "If a reaction produces a precipitate (a solid), how could you measure its rate?",
+      "options": [
+        "Measure the volume of gas produced",
+        "Measure the change in pH",
+        "Measure the time taken for the precipitate to become visible",
+        "Measure the temperature change"
+      ],
+      "answer": 2,
+      "explanation": "The time taken for the precipitate to become visible indicates how quickly the reaction is proceeding.",
+      "hint": "What visual change can you observe as the reaction happens?"
+    },
+    {
+      "id": 15,
+      "question": "What happens to the rate of reaction as the concentration of reactants decreases?",
+      "options": [
+        "It increases",
+        "It stays the same",
+        "It decreases",
+        "It becomes unpredictable"
+      ],
+      "answer": 2,
+      "explanation": "Lower concentration means fewer reactant particles, leading to fewer collisions and a slower reaction rate.",
+      "hint": "Think about how many particles are available to react."
+    },
+    {
+      "id": 16,
+      "question": "A student adds a catalyst to a reaction. What will happen to the activation energy?",
+      "options": [
+        "It will increase",
+        "It will decrease",
+        "It will stay the same",
+        "It will become zero"
+      ],
+      "answer": 1,
+      "explanation": "A catalyst lowers the activation energy by providing an alternative reaction pathway.",
+      "hint": "How does a catalyst speed up a reaction?"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following factors does NOT affect the rate of a reaction?",
+      "options": [
+        "Pressure (for gases)",
+        "Surface area",
+        "Colour of the reactants",
+        "Temperature"
+      ],
+      "answer": 2,
+      "explanation": "The colour of reactants does not directly affect the rate of reaction; it's the particle interactions that matter.",
+      "hint": "Think about what factors influence particle collisions."
+    },
+    {
+      "id": 18,
+      "question": "What is the effect of stirring a solution on the rate of reaction?",
+      "options": [
+        "It decreases the rate",
+        "It has no effect",
+        "It increases the rate",
+        "It stops the reaction"
+      ],
+      "answer": 2,
+      "explanation": "Stirring ensures that reactants are well mixed, increasing the frequency of collisions.",
+      "hint": "How does mixing affect the distribution of reactants?"
+    },
+    {
+      "id": 19,
+      "question": "A reaction between two gases is carried out in a closed container. Increasing the pressure will…",
+      "options": [
+        "Decrease the rate of reaction",
+        "Increase the rate of reaction",
+        "Have no effect on the rate of reaction",
+        "Stop the reaction"
+      ],
+      "answer": 1,
+      "explanation": "Increasing the pressure increases the concentration of the gases, leading to more frequent collisions.",
+      "hint": "How does pressure relate to concentration?"
+    },
+    {
+      "id": 20,
+      "question": "What does the term 'rate' generally mean in science?",
+      "options": [
+        "The amount of something",
+        "The change in something over time",
+        "The temperature of something",
+        "The colour of something"
+      ],
+      "answer": 1,
+      "explanation": "Rate refers to how quickly something changes, usually expressed as the amount of change per unit of time.",
+      "hint": "Think about how we describe speed or how fast something happens."
+    },
+    {
+      "id": 21,
+      "question": "If you heat a reaction mixture, what happens to the kinetic energy of the particles?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It becomes zero"
+      ],
+      "answer": 2,
+      "explanation": "Heating a mixture increases the kinetic energy of the particles, causing them to move faster.",
+      "hint": "What does heat do to the movement of particles?"
+    },
+    {
+      "id": 22,
+      "question": "A student wants to speed up a reaction between a solid and a liquid. Which of these would be the *most* effective?",
+      "options": [
+        "Cooling the mixture",
+        "Using a larger beaker",
+        "Powdering the solid",
+        "Adding water"
+      ],
+      "answer": 2,
+      "explanation": "Powdering the solid significantly increases the surface area, leading to a much faster reaction rate.",
+      "hint": "Which factor has the biggest impact on reactions involving solids?"
+    },
+    {
+      "id": 23,
+      "question": "What is the role of collisions in a chemical reaction?",
+      "options": [
+        "Collisions prevent reactions from happening",
+        "Collisions provide the energy for reactions",
+        "Collisions are necessary for reactions to occur",
+        "Collisions only affect the colour of the reaction"
+      ],
+      "answer": 2,
+      "explanation": "Reactant particles must collide in order to react, but not all collisions result in a reaction.",
+      "hint": "What needs to happen for particles to interact and change?"
+    },
+    {
+      "id": 24,
+      "question": "Which of the following statements about catalysts is true?",
+      "options": [
+        "Catalysts are consumed during the reaction",
+        "Catalysts change the products of the reaction",
+        "Catalysts only work at high temperatures",
+        "Catalysts do not affect the equilibrium of the reaction"
+      ],
+      "answer": 3,
+      "explanation": "Catalysts lower the activation energy, speeding up the reaction without being used up or changing the products.",
+      "hint": "What happens to the catalyst itself during the reaction?"
+    },
+    {
+      "id": 25,
+      "question": "A reaction produces a gas. How could you measure the rate of reaction using this information?",
+      "options": [
+        "Measure the mass of the reactants",
+        "Measure the volume of gas produced over time",
+        "Measure the temperature of the mixture",
+        "Measure the pH of the mixture"
+      ],
+      "answer": 1,
+      "explanation": "Measuring the volume of gas produced over time directly indicates how quickly the reaction is proceeding.",
+      "hint": "What changes as the reaction produces more gas?"
+    },
+    {
+      "id": 26,
+      "question": "What is the effect of increasing the temperature on the frequency of collisions?",
+      "options": [
+        "It decreases the frequency",
+        "It has no effect",
+        "It increases the frequency",
+        "It makes the collisions less energetic"
+      ],
+      "answer": 2,
+      "explanation": "Higher temperatures cause particles to move faster, leading to more frequent collisions.",
+      "hint": "Think about how heat affects particle movement."
+    },
+    {
+      "id": 27,
+      "question": "A student is investigating the reaction between zinc and hydrochloric acid. They use different concentrations of acid. What will happen as the concentration increases?",
+      "options": [
+        "The reaction will slow down",
+        "The reaction will speed up",
+        "The reaction will stop",
+        "The reaction will produce a different product"
+      ],
+      "answer": 1,
+      "explanation": "Higher concentration means more acid particles, leading to more frequent collisions and a faster reaction.",
+      "hint": "How does the amount of acid affect the reaction?"
+    },
+    {
+      "id": 28,
+      "question": "What is the relationship between surface area and reaction rate?",
+      "options": [
+        "They are inversely proportional",
+        "They are directly proportional",
+        "They are unrelated",
+        "Surface area only affects reactions in solutions"
+      ],
+      "answer": 1,
+      "explanation": "As surface area increases, the reaction rate increases because more reactant particles are exposed.",
+      "hint": "Think about how much of the solid is in contact with the other reactant."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is an example of a reaction that would be significantly affected by surface area?",
+      "options": [
+        "Mixing two liquids",
+        "Reacting two gases",
+        "Burning a piece of wood",
+        "Dissolving sugar in water"
+      ],
+      "answer": 2,
+      "explanation": "Burning wood involves a reaction between the wood (solid) and oxygen (gas), making surface area a crucial factor.",
+      "hint": "Which of these reactions involves a solid reacting with something else?"
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of measuring the rate of reaction?",
+      "options": [
+        "To determine the products of the reaction",
+        "To understand how quickly the reaction happens",
+        "To calculate the activation energy",
+        "To change the reaction"
+      ],
+      "answer": 1,
+      "explanation": "Measuring the rate of reaction helps us understand how quickly reactants are converted into products.",
+      "hint": "What does 'rate' tell us about a process?"
+    },
+    {
+      "id": 31,
+      "question": "If a reaction is exothermic, what happens to the temperature of the reaction mixture?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It fluctuates randomly"
+      ],
+      "answer": 2,
+      "explanation": "Exothermic reactions release heat, causing the temperature of the mixture to increase.",
+      "hint": "What does 'exothermic' mean?"
+    },
+    {
+      "id": 32,
+      "question": "A student is investigating the effect of concentration on reaction rate. They keep all other factors constant. Why is this important?",
+      "options": [
+        "To make the experiment easier",
+        "To ensure only concentration affects the rate",
+        "To save time",
+        "To make the results more colourful"
+      ],
+      "answer": 1,
+      "explanation": "Keeping other factors constant ensures that any observed changes in the rate are due to the change in concentration alone.",
+      "hint": "What do scientists do to isolate the variable they are testing?"
+    },
+    {
+      "id": 33,
+      "question": "What is the collision theory's main idea about successful collisions?",
+      "options": [
+        "All collisions result in a reaction",
+        "Collisions must be slow",
+        "Collisions must have enough energy and correct orientation",
+        "Collisions only happen at low temperatures"
+      ],
+      "answer": 2,
+      "explanation": "Successful collisions require sufficient energy to overcome the activation energy and the correct orientation for bonds to break and form.",
+      "hint": "What two things are needed for a collision to actually cause a reaction?"
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is a practical application of controlling reaction rates?",
+      "options": [
+        "Preserving food",
+        "Designing faster cars",
+        "Building taller buildings",
+        "Creating new colours"
+      ],
+      "answer": 0,
+      "explanation": "Controlling reaction rates is crucial in food preservation to slow down spoilage reactions.",
+      "hint": "How do we keep food from going bad?"
+    },
+    {
+      "id": 35,
+      "question": "What happens to the rate of reaction as you add more of a catalyst?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases (up to a point)",
+        "It stops the reaction"
+      ],
+      "answer": 2,
+      "explanation": "Adding more catalyst provides more opportunities to lower the activation energy, increasing the rate of reaction, but there's a limit.",
+      "hint": "How does a catalyst affect the reaction?"
+    },
+    {
+      "id": 36,
+      "question": "A reaction takes 10 minutes at 25°C. At 35°C, it takes 5 minutes. What can you conclude?",
+      "options": [
+        "The reaction is endothermic",
+        "The reaction is exothermic",
+        "Increasing temperature increases the rate",
+        "Increasing temperature decreases the rate"
+      ],
+      "answer": 2,
+      "explanation": "The reaction time decreased with increasing temperature, indicating a faster rate of reaction.",
+      "hint": "What does a shorter reaction time mean?"
+    },
+    {
+      "id": 37,
+      "question": "What is the effect of a larger particle size on the rate of reaction?",
+      "options": [
+        "It increases the rate",
+        "It decreases the rate",
+        "It has no effect",
+        "It only affects gaseous reactions"
+      ],
+      "answer": 1,
+      "explanation": "Larger particle size means a smaller surface area, reducing the number of collisions and slowing down the reaction.",
+      "hint": "How does particle size relate to surface area?"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is a way to increase the rate of a reaction without changing the temperature or concentration?",
+      "options": [
+        "Adding more reactants",
+        "Stirring the mixture",
+        "Cooling the mixture",
+        "Decreasing the surface area"
+      ],
+      "answer": 1,
+      "explanation": "Stirring increases the frequency of collisions between reactant particles.",
+      "hint": "How can you make the particles interact more often?"
+    },
+    {
+      "id": 39,
+      "question": "What is the difference between a fast reaction and a slow reaction?",
+      "options": [
+        "Fast reactions require more energy",
+        "Fast reactions produce different products",
+        "Fast reactions happen in less time",
+        "Fast reactions are always exothermic"
+      ],
+      "answer": 2,
+      "explanation": "The rate of reaction is defined by how quickly reactants are converted into products, so a fast reaction happens in less time.",
+      "hint": "What does 'rate' measure?"
+    },
+    {
+      "id": 40,
+      "question": "A student is studying the reaction between magnesium and acid. They notice bubbles forming. What is the best way to measure the rate of this reaction?",
+      "options": [
+        "Measure the mass of the magnesium",
+        "Measure the volume of gas produced",
+        "Measure the temperature change",
+        "Measure the pH change"
+      ],
+      "answer": 1,
+      "explanation": "The volume of gas produced is a direct indicator of how quickly the reaction is proceeding.",
+      "hint": "What is being produced that you can easily measure?"
+    },
+    {
+      "id": 41,
+      "question": "What is the effect of adding an inhibitor to a reaction?",
+      "options": [
+        "It speeds up the reaction",
+        "It slows down the reaction",
+        "It has no effect",
+        "It changes the products"
+      ],
+      "answer": 1,
+      "explanation": "An inhibitor slows down the rate of a chemical reaction, often by interfering with the catalyst.",
+      "hint": "Think about what 'inhibit' means."
+    },
+    {
+      "id": 42,
+      "question": "Which of the following is a good example of using surface area to increase reaction rate in everyday life?",
+      "options": [
+        "Melting ice",
+        "Dissolving salt",
+        "Lighting a match",
+        "Boiling water"
+      ],
+      "answer": 2,
+      "explanation": "Lighting a match relies on increasing the surface area of the wood to quickly initiate combustion.",
+      "hint": "Think about how a match is designed to start a fire."
+    },
+    {
+      "id": 43,
+      "question": "What happens to the number of successful collisions when the temperature is increased?",
+      "options": [
+        "It decreases",
+        "It stays the same",
+        "It increases",
+        "It becomes unpredictable"
+      ],
+      "answer": 2,
+      "explanation": "Higher temperatures mean particles have more kinetic energy, leading to more frequent and successful collisions.",
+      "hint": "How does heat affect particle movement and energy?"
+    },
+    {
+      "id": 44,
+      "question": "A reaction is said to be 'first order' with respect to a reactant. What does this mean?",
+      "options": [
+        "The rate is independent of the reactant's concentration",
+        "The rate is directly proportional to the reactant's concentration",
+        "The rate is inversely proportional to the reactant's concentration",
+        "The reactant doesn't participate in the reaction"
+      ],
+      "answer": 1,
+      "explanation": "A first-order reaction means the rate depends linearly on the concentration of that reactant.",
+      "hint": "Think about the mathematical relationship between rate and concentration."
+    },
+    {
+      "id": 45,
+      "question": "What is the main difference between a homogeneous and a heterogeneous reaction?",
+      "options": [
+        "Homogeneous reactions are faster",
+        "Heterogeneous reactions require a catalyst",
+        "Homogeneous reactions occur in one phase, heterogeneous in multiple",
+        "Heterogeneous reactions are always exothermic"
+      ],
+      "answer": 2,
+      "explanation": "Homogeneous reactions occur in a single phase (e.g., all liquids), while heterogeneous reactions involve reactants in different phases (e.g., solid and liquid).",
+      "hint": "Think about what 'homogeneous' and 'heterogeneous' mean in general."
+    },
+    {
+      "id": 46,
+      "question": "If you want to quickly dissolve a sugar cube in water, what should you do?",
+      "options": [
+        "Use cold water",
+        "Use a larger sugar cube",
+        "Stir the water",
+        "Leave it undisturbed"
+      ],
+      "answer": 2,
+      "explanation": "Stirring increases the rate of dissolving by increasing the contact between sugar and water molecules.",
+      "hint": "How can you help the sugar and water mix more quickly?"
+    },
+    {
+      "id": 47,
+      "question": "What is the role of the 'lock and key' model in explaining how catalysts work?",
+      "options": [
+        "It shows how catalysts change the products",
+        "It shows how catalysts provide a lower energy pathway",
+        "It shows how catalysts increase the temperature",
+        "It shows how catalysts are consumed in the reaction"
+      ],
+      "answer": 1,
+      "explanation": "The lock and key model illustrates how a catalyst provides an alternative reaction pathway with a lower activation energy.",
+      "hint": "Think about how a key fits into a lock to make something easier."
+    },
+    {
+      "id": 48,
+      "question": "A reaction produces a colour change. How could you use this to measure the rate of reaction?",
+      "options": [
+        "Measure the mass of the reactants",
+        "Measure the time taken for the colour to change",
+        "Measure the temperature change",
+        "Measure the pH change"
+      ],
+      "answer": 1,
+      "explanation": "The time taken for the colour to change indicates how quickly the reaction is proceeding.",
+      "hint": "What visual change can you observe as the reaction happens?"
+    },
+    {
+      "id": 49,
+      "question": "What is the effect of increasing the pressure on the rate of a reaction involving gases?",
+      "options": [
+        "It decreases the rate",
+        "It has no effect",
+        "It increases the rate",
+        "It only affects endothermic reactions"
+      ],
+      "answer": 2,
+      "explanation": "Increasing the pressure increases the concentration of the gases, leading to more frequent collisions and a faster reaction.",
+      "hint": "How does pressure relate to concentration?"
+    },
+    {
+      "id": 50,
+      "question": "Which of the following statements best describes the relationship between reaction rate and activation energy?",
+      "options": [
+        "Higher activation energy means a faster rate",
+        "Lower activation energy means a faster rate",
+        "Activation energy has no effect on the rate",
+        "Activation energy only affects exothermic reactions"
+      ],
+      "answer": 1,
+      "explanation": "Lower activation energy means less energy is needed for the reaction to occur, resulting in a faster rate.",
+      "hint": "Think about what activation energy represents."
+    }
+  ]
+}

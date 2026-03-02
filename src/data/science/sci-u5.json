@@ -1,0 +1,665 @@
+{
+  "subject": "Science",
+  "unit": "Unit 5: Reactivity",
+  "unitId": "sci-u5",
+  "topics": [
+    "Reactivity and displacement reactions",
+    "Using the reactivity series and displacement reactions",
+    "Salts",
+    "Other ways of making salts",
+    "Rearranging atoms"
+  ],
+  "generatedAt": "2026-03-02T09:08:23Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following metals is the MOST reactive?",
+      "options": [
+        "Gold",
+        "Iron",
+        "Potassium",
+        "Copper"
+      ],
+      "answer": 2,
+      "explanation": "Potassium is an alkali metal and is known to be highly reactive, readily losing an electron.",
+      "hint": "Think about where metals are located on the reactivity series."
+    },
+    {
+      "id": 2,
+      "question": "What happens when a more reactive metal is added to a solution containing ions of a less reactive metal?",
+      "options": [
+        "The less reactive metal will displace the more reactive metal.",
+        "No reaction will occur.",
+        "The more reactive metal will displace the less reactive metal.",
+        "Both metals will dissolve."
+      ],
+      "answer": 2,
+      "explanation": "A more reactive metal has a greater tendency to lose electrons and will therefore displace the less reactive metal from its compound.",
+      "hint": "Consider which metal 'wants' to form ions more."
+    },
+    {
+      "id": 3,
+      "question": "What is a salt?",
+      "options": [
+        "A compound formed from an acid and a base.",
+        "A type of metal.",
+        "A type of gas.",
+        "A type of polymer."
+      ],
+      "answer": 0,
+      "explanation": "Salts are formed when the hydrogen ions in an acid are replaced by metal ions or ammonium ions.",
+      "hint": "Think about the products of neutralization reactions."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT a method for making salts?",
+      "options": [
+        "Acid + Metal",
+        "Acid + Base",
+        "Metal + Non-metal",
+        "Acid + Carbonate"
+      ],
+      "answer": 2,
+      "explanation": "While metals and non-metals can form ionic compounds, this isn't a standard method for *making salts* in a lab setting.",
+      "hint": "Consider the typical reactions used in salt preparation."
+    },
+    {
+      "id": 5,
+      "question": "In a displacement reaction between zinc and copper sulfate, which observation would you expect?",
+      "options": [
+        "The solution turns blue.",
+        "The zinc dissolves and the copper precipitates.",
+        "The copper dissolves and the zinc precipitates.",
+        "No change occurs."
+      ],
+      "answer": 1,
+      "explanation": "Zinc is more reactive than copper, so it displaces copper from the solution, causing the zinc to dissolve and solid copper to form.",
+      "hint": "Refer to the reactivity series to determine which metal will displace the other."
+    },
+    {
+      "id": 6,
+      "question": "What does the reactivity series tell us?",
+      "options": [
+        "The melting points of metals.",
+        "The electrical conductivity of metals.",
+        "The relative tendency of metals to form positive ions.",
+        "The density of metals."
+      ],
+      "answer": 2,
+      "explanation": "The reactivity series lists metals in order of their tendency to lose electrons and form positive ions.",
+      "hint": "Think about what 'reactivity' actually means in terms of electron transfer."
+    },
+    {
+      "id": 7,
+      "question": "What is the formula for sodium chloride?",
+      "options": [
+        "NaCl",
+        "Na₂Cl",
+        "NaClO",
+        "NaCl₂"
+      ],
+      "answer": 0,
+      "explanation": "Sodium (Na) has a +1 charge and chlorine (Cl) has a -1 charge, resulting in a 1:1 ratio.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 8,
+      "question": "Hydrochloric acid reacts with magnesium. What products are formed?",
+      "options": [
+        "Magnesium chloride and water",
+        "Magnesium hydroxide and hydrogen",
+        "Magnesium chloride and hydrogen",
+        "Magnesium oxide and water"
+      ],
+      "answer": 2,
+      "explanation": "Acid + Metal -> Salt + Hydrogen.  Hydrochloric acid (HCl) reacts with magnesium (Mg) to form magnesium chloride (MgCl₂) and hydrogen gas (H₂).",
+      "hint": "Remember the general equation for acid-metal reactions."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following metals would NOT displace hydrogen from dilute acid?",
+      "options": [
+        "Zinc",
+        "Iron",
+        "Copper",
+        "Magnesium"
+      ],
+      "answer": 2,
+      "explanation": "Copper is less reactive than hydrogen and therefore cannot displace it from an acid.",
+      "hint": "Look at the reactivity series and compare the position of copper to hydrogen."
+    },
+    {
+      "id": 10,
+      "question": "What happens to the atoms during a chemical reaction?",
+      "options": [
+        "They are created.",
+        "They are destroyed.",
+        "They are rearranged.",
+        "They change into different atoms."
+      ],
+      "answer": 2,
+      "explanation": "The law of conservation of mass states that atoms are neither created nor destroyed in a chemical reaction, only rearranged.",
+      "hint": "Think about what happens to the building blocks of matter during a reaction."
+    },
+    {
+      "id": 11,
+      "question": "What is the name of the reaction between an acid and an alkali?",
+      "options": [
+        "Oxidation",
+        "Reduction",
+        "Neutralization",
+        "Displacement"
+      ],
+      "answer": 2,
+      "explanation": "Neutralization is the reaction between an acid and an alkali, resulting in a salt and water.",
+      "hint": "What happens to the pH when you mix an acid and an alkali?"
+    },
+    {
+      "id": 12,
+      "question": "What is the chemical formula for sulfuric acid?",
+      "options": [
+        "HCl",
+        "HNO₃",
+        "H₂SO₄",
+        "CH₃COOH"
+      ],
+      "answer": 2,
+      "explanation": "Sulfuric acid contains two hydrogen ions, one sulfur atom, and four oxygen atoms.",
+      "hint": "Think about the components of the acid's name."
+    },
+    {
+      "id": 13,
+      "question": "If iron is more reactive than copper, what will happen if a piece of iron is placed in a solution of copper sulfate?",
+      "options": [
+        "The iron will dissolve and the copper sulfate will turn pale blue.",
+        "The copper will dissolve and the iron sulfate will turn pale green.",
+        "Nothing will happen.",
+        "Both metals will precipitate out of solution."
+      ],
+      "answer": 1,
+      "explanation": "Iron will displace copper from the solution, forming iron sulfate which is pale green in colour.",
+      "hint": "Consider the reactivity series and what happens when a more reactive metal meets a less reactive metal's ions."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following statements about the reactivity series is correct?",
+      "options": [
+        "Less reactive metals are found at the top of the series.",
+        "More reactive metals are found at the bottom of the series.",
+        "Metals in the middle of the series are the most reactive.",
+        "More reactive metals are found at the top of the series."
+      ],
+      "answer": 3,
+      "explanation": "The reactivity series lists metals in order of decreasing reactivity, with the most reactive at the top.",
+      "hint": "Think about how the series is organized."
+    },
+    {
+      "id": 15,
+      "question": "What type of salt is formed when an acid reacts with a carbonate?",
+      "options": [
+        "Chloride",
+        "Sulfate",
+        "Nitrate",
+        "Carbonate"
+      ],
+      "answer": 0,
+      "explanation": "Acid + Carbonate -> Salt + Water + Carbon Dioxide. The salt formed will contain the anion from the acid and the cation from the carbonate.",
+      "hint": "What gas is produced during this type of reaction?"
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of using excess metal in a reaction between a metal and an acid?",
+      "options": [
+        "To speed up the reaction.",
+        "To ensure all the acid reacts.",
+        "To make the salt impure.",
+        "To lower the temperature of the reaction."
+      ],
+      "answer": 1,
+      "explanation": "Using excess metal ensures that all of the acid is used up, leaving no unreacted acid in the final solution.",
+      "hint": "Think about what you want to achieve in the reaction."
+    },
+    {
+      "id": 17,
+      "question": "Which of the following is a common use of salts?",
+      "options": [
+        "As a fuel.",
+        "As a lubricant.",
+        "In food preservation.",
+        "As an insulator."
+      ],
+      "answer": 2,
+      "explanation": "Salts like sodium chloride (table salt) are used to preserve food by inhibiting bacterial growth.",
+      "hint": "Think about everyday uses of salt."
+    },
+    {
+      "id": 18,
+      "question": "What is the chemical formula for potassium nitrate?",
+      "options": [
+        "KNO₃",
+        "KNO₂",
+        "K₂NO₃",
+        "K₃N"
+      ],
+      "answer": 0,
+      "explanation": "Potassium has a +1 charge and nitrate has a -1 charge, resulting in a 1:1 ratio.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 19,
+      "question": "What happens when atoms combine to form a compound?",
+      "options": [
+        "They lose their individual properties.",
+        "They gain new properties.",
+        "Their mass increases.",
+        "Their number changes."
+      ],
+      "answer": 1,
+      "explanation": "When atoms combine, they form a new substance with properties different from those of the original elements.",
+      "hint": "Think about the difference between hydrogen and water."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a strong acid?",
+      "options": [
+        "Acetic acid",
+        "Citric acid",
+        "Hydrochloric acid",
+        "Carbonic acid"
+      ],
+      "answer": 2,
+      "explanation": "Hydrochloric acid (HCl) is a strong acid, meaning it fully ionizes in solution.",
+      "hint": "Think about the degree of ionization of acids."
+    },
+    {
+      "id": 21,
+      "question": "What is the role of the base in a neutralization reaction?",
+      "options": [
+        "To donate hydrogen ions.",
+        "To accept hydrogen ions.",
+        "To donate hydroxide ions.",
+        "To accept hydroxide ions."
+      ],
+      "answer": 3,
+      "explanation": "Bases donate hydroxide ions (OH⁻) which react with hydrogen ions (H⁺) from the acid to form water.",
+      "hint": "Think about the definition of a base."
+    },
+    {
+      "id": 22,
+      "question": "If a metal is high up in the reactivity series, what does this indicate?",
+      "options": [
+        "It is unreactive.",
+        "It readily forms positive ions.",
+        "It is a poor conductor of electricity.",
+        "It is a noble gas."
+      ],
+      "answer": 1,
+      "explanation": "Metals high in the reactivity series readily lose electrons to form positive ions, indicating high reactivity.",
+      "hint": "Relate reactivity to the tendency to lose electrons."
+    },
+    {
+      "id": 23,
+      "question": "What is the product of a reaction between an acid and a metal oxide?",
+      "options": [
+        "A gas",
+        "A salt and water",
+        "A precipitate",
+        "An acid and water"
+      ],
+      "answer": 1,
+      "explanation": "Acid + Metal Oxide -> Salt + Water. The acid neutralizes the basic oxide, forming a salt and water.",
+      "hint": "Think about the general equation for acid-base reactions."
+    },
+    {
+      "id": 24,
+      "question": "What does 'displacement' mean in a displacement reaction?",
+      "options": [
+        "Adding something.",
+        "Removing something.",
+        "Replacing something.",
+        "Mixing something."
+      ],
+      "answer": 2,
+      "explanation": "In a displacement reaction, a more reactive element replaces a less reactive element in a compound.",
+      "hint": "Think about what is being 'moved' during the reaction."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is a method to separate a salt from a solution after a reaction?",
+      "options": [
+        "Filtration",
+        "Distillation",
+        "Evaporation",
+        "Chromatography"
+      ],
+      "answer": 2,
+      "explanation": "Evaporation removes the solvent, leaving the salt behind as a solid.",
+      "hint": "Think about how you can get a solid from a liquid."
+    },
+    {
+      "id": 26,
+      "question": "What is the chemical formula for calcium carbonate?",
+      "options": [
+        "CaCO₃",
+        "CaCl₂",
+        "CaSO₄",
+        "CaO"
+      ],
+      "answer": 0,
+      "explanation": "Calcium has a +2 charge and carbonate has a -2 charge, resulting in a 1:1 ratio.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 27,
+      "question": "What happens to the number of atoms of each element during a chemical reaction?",
+      "options": [
+        "They increase.",
+        "They decrease.",
+        "They remain the same.",
+        "They change randomly."
+      ],
+      "answer": 2,
+      "explanation": "The law of conservation of mass states that atoms are neither created nor destroyed during a chemical reaction.",
+      "hint": "Think about the fundamental principle of matter conservation."
+    },
+    {
+      "id": 28,
+      "question": "Which of the following metals is commonly used for galvanizing steel to prevent rusting?",
+      "options": [
+        "Copper",
+        "Iron",
+        "Zinc",
+        "Aluminum"
+      ],
+      "answer": 2,
+      "explanation": "Zinc is more reactive than iron and will corrode first, protecting the iron from rusting.",
+      "hint": "Think about sacrificial protection."
+    },
+    {
+      "id": 29,
+      "question": "What is the pH of a neutral solution?",
+      "options": [
+        "0",
+        "7",
+        "14",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "A pH of 7 indicates a neutral solution, where the concentration of hydrogen ions and hydroxide ions are equal.",
+      "hint": "Think about the pH scale."
+    },
+    {
+      "id": 30,
+      "question": "What is the general formula for an acid?",
+      "options": [
+        "Metal + Oxygen",
+        "Hydrogen + Non-metal",
+        "Carbon + Oxygen",
+        "Nitrogen + Hydrogen"
+      ],
+      "answer": 1,
+      "explanation": "Acids are typically formed when hydrogen combines with a non-metal.",
+      "hint": "Think about the composition of common acids like HCl and H₂SO₄."
+    },
+    {
+      "id": 31,
+      "question": "Magnesium reacts with dilute hydrochloric acid. What gas is produced?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Hydrogen",
+        "Chlorine"
+      ],
+      "answer": 2,
+      "explanation": "The reaction between a metal and an acid produces a salt and hydrogen gas.",
+      "hint": "Remember the general equation for acid-metal reactions."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of filtration in salt preparation?",
+      "options": [
+        "To remove unreacted acid.",
+        "To remove insoluble impurities.",
+        "To evaporate the water.",
+        "To neutralize the solution."
+      ],
+      "answer": 1,
+      "explanation": "Filtration removes any solid impurities that may be present in the reaction mixture.",
+      "hint": "Think about what might not dissolve during the reaction."
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is a property of salts?",
+      "options": [
+        "They are always gases.",
+        "They are always liquids.",
+        "They are usually solids at room temperature.",
+        "They are always acidic."
+      ],
+      "answer": 2,
+      "explanation": "Most salts are crystalline solids at room temperature.",
+      "hint": "Think about table salt – what state is it in?"
+    },
+    {
+      "id": 34,
+      "question": "What is the chemical formula for ammonium sulfate?",
+      "options": [
+        "(NH₄)₂SO₄",
+        "NH₄SO₃",
+        "NH₃SO₄",
+        "NH₄SO₄"
+      ],
+      "answer": 3,
+      "explanation": "Ammonium has a +1 charge and sulfate has a -2 charge, requiring two ammonium ions for every sulfate ion.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 35,
+      "question": "What happens to the bonds between atoms during a chemical reaction?",
+      "options": [
+        "They are created.",
+        "They are broken and new ones are formed.",
+        "They remain unchanged.",
+        "They disappear completely."
+      ],
+      "answer": 1,
+      "explanation": "Chemical reactions involve the breaking of existing bonds and the formation of new bonds.",
+      "hint": "Think about how atoms rearrange themselves."
+    },
+    {
+      "id": 36,
+      "question": "Which of the following metals is the least reactive?",
+      "options": [
+        "Sodium",
+        "Calcium",
+        "Copper",
+        "Zinc"
+      ],
+      "answer": 2,
+      "explanation": "Copper is low down in the reactivity series, indicating it is relatively unreactive.",
+      "hint": "Think about where metals are located on the reactivity series."
+    },
+    {
+      "id": 37,
+      "question": "What is the role of water in a neutralization reaction?",
+      "options": [
+        "It acts as an acid.",
+        "It acts as a base.",
+        "It is a product of the reaction.",
+        "It is a catalyst."
+      ],
+      "answer": 2,
+      "explanation": "Neutralization reactions between acids and bases produce a salt and water.",
+      "hint": "Think about the products of a neutralization reaction."
+    },
+    {
+      "id": 38,
+      "question": "What is the chemical formula for nitric acid?",
+      "options": [
+        "HCl",
+        "H₂SO₄",
+        "HNO₃",
+        "CH₃COOH"
+      ],
+      "answer": 2,
+      "explanation": "Nitric acid contains one hydrogen ion, one nitrogen atom, and three oxygen atoms.",
+      "hint": "Think about the components of the acid's name."
+    },
+    {
+      "id": 39,
+      "question": "If silver is less reactive than copper, what will happen if a piece of silver is placed in a solution of copper sulfate?",
+      "options": [
+        "The silver will dissolve and the copper will precipitate.",
+        "The copper will dissolve and the silver will precipitate.",
+        "Nothing will happen.",
+        "Both metals will dissolve."
+      ],
+      "answer": 2,
+      "explanation": "Since silver is less reactive than copper, it will not displace copper from the solution.",
+      "hint": "Refer to the reactivity series to determine which metal will displace the other."
+    },
+    {
+      "id": 40,
+      "question": "What is the law of conservation of mass?",
+      "options": [
+        "Mass is created during a reaction.",
+        "Mass is destroyed during a reaction.",
+        "Mass is neither created nor destroyed during a reaction.",
+        "Mass changes randomly during a reaction."
+      ],
+      "answer": 2,
+      "explanation": "The law of conservation of mass states that the total mass of the reactants equals the total mass of the products.",
+      "hint": "Think about what happens to matter during a reaction."
+    },
+    {
+      "id": 41,
+      "question": "What is the formula for iron(II) sulfate?",
+      "options": [
+        "FeSO₄",
+        "Fe₂(SO₄)₃",
+        "FeSO₃",
+        "Fe(SO₄)₂"
+      ],
+      "answer": 0,
+      "explanation": "Iron(II) has a +2 charge and sulfate has a -2 charge, resulting in a 1:1 ratio.",
+      "hint": "Consider the charges of the ions involved and the Roman numeral indicating the iron's oxidation state."
+    },
+    {
+      "id": 42,
+      "question": "Which of the following is a use of displacement reactions in industry?",
+      "options": [
+        "Producing fertilizers",
+        "Extracting metals from their ores",
+        "Making plastics",
+        "Creating synthetic fibers"
+      ],
+      "answer": 1,
+      "explanation": "Displacement reactions are used to extract more reactive metals from their compounds.",
+      "hint": "Think about how metals are obtained from their natural sources."
+    },
+    {
+      "id": 43,
+      "question": "What is the pH of an acidic solution?",
+      "options": [
+        "Greater than 7",
+        "Equal to 7",
+        "Less than 7",
+        "Equal to 14"
+      ],
+      "answer": 2,
+      "explanation": "Acidic solutions have a pH less than 7 due to a higher concentration of hydrogen ions.",
+      "hint": "Think about the pH scale."
+    },
+    {
+      "id": 44,
+      "question": "What is the role of an indicator in a neutralization reaction?",
+      "options": [
+        "To speed up the reaction.",
+        "To show when the reaction is complete.",
+        "To provide energy for the reaction.",
+        "To change the color of the reactants."
+      ],
+      "answer": 1,
+      "explanation": "Indicators change color at the equivalence point, indicating that the acid and base have completely neutralized each other.",
+      "hint": "Think about how you know when an acid and base have reacted fully."
+    },
+    {
+      "id": 45,
+      "question": "What is the chemical formula for potassium hydroxide?",
+      "options": [
+        "KOH",
+        "K₂O",
+        "K₂OH",
+        "KO₂"
+      ],
+      "answer": 0,
+      "explanation": "Potassium has a +1 charge and hydroxide has a -1 charge, resulting in a 1:1 ratio.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 46,
+      "question": "What happens when you rearrange the atoms in a molecule?",
+      "options": [
+        "You create a new element.",
+        "You change the substance into a different substance.",
+        "You change the state of the substance.",
+        "You change the temperature of the substance."
+      ],
+      "answer": 1,
+      "explanation": "Rearranging atoms changes the way they are bonded, resulting in a new substance with different properties.",
+      "hint": "Think about the difference between water (H₂O) and hydrogen peroxide (H₂O₂)."
+    },
+    {
+      "id": 47,
+      "question": "Which of the following is a strong base?",
+      "options": [
+        "Acetic acid",
+        "Citric acid",
+        "Sodium hydroxide",
+        "Carbonic acid"
+      ],
+      "answer": 2,
+      "explanation": "Sodium hydroxide (NaOH) is a strong base, meaning it fully dissociates in solution.",
+      "hint": "Think about the degree of ionization of bases."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of washing the precipitate after filtration in salt preparation?",
+      "options": [
+        "To remove unreacted reactants.",
+        "To remove the solvent.",
+        "To speed up the drying process.",
+        "To change the color of the salt."
+      ],
+      "answer": 0,
+      "explanation": "Washing removes any remaining impurities or unreacted reactants that may be clinging to the precipitate.",
+      "hint": "Think about what might contaminate your final product."
+    },
+    {
+      "id": 49,
+      "question": "What is the chemical formula for aluminum oxide?",
+      "options": [
+        "AlO",
+        "Al₂O",
+        "AlO₂",
+        "Al₂O₃"
+      ],
+      "answer": 3,
+      "explanation": "Aluminum has a +3 charge and oxide has a -2 charge, requiring two aluminum ions for every three oxide ions.",
+      "hint": "Consider the charges of the ions involved."
+    },
+    {
+      "id": 50,
+      "question": "What is the role of a catalyst in a chemical reaction?",
+      "options": [
+        "It is consumed in the reaction.",
+        "It speeds up the reaction without being consumed.",
+        "It slows down the reaction.",
+        "It changes the products of the reaction."
+      ],
+      "answer": 1,
+      "explanation": "A catalyst lowers the activation energy of a reaction, speeding it up without being permanently changed in the process.",
+      "hint": "Think about how catalysts affect the rate of a reaction."
+    }
+  ]
+}
