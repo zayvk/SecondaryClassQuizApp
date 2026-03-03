@@ -7,487 +7,657 @@
     "Areas of compound shapes",
     "Large and small units"
   ],
-  "generatedAt": "2026-02-25T01:46:45Z",
+  "generatedAt": "2026-03-03T01:43:05Z",
   "questions": [
     {
       "id": 1,
-      "question": "What is the formula for the circumference of a circle?",
+      "question": "What is the circumference of a circle with a radius of 7cm? (Use π = 22/7)",
       "options": [
-        "πr²",
-        "2πr",
-        "πd/2",
-        "πr"
+        "22cm",
+        "44cm",
+        "154cm",
+        "88cm"
       ],
       "answer": 1,
-      "explanation": "Circumference is the distance around the circle, calculated as 2πr where r is the radius."
+      "explanation": "Circumference = 2πr.  Substituting the values, 2 * (22/7) * 7 = 44cm.",
+      "hint": "Remember the formula for the circumference of a circle involves pi and the radius."
     },
     {
       "id": 2,
-      "question": "A circle has a radius of 7cm. What is its area?",
+      "question": "A circular garden has a diameter of 10m. What is the area of the garden? (Use π = 3.14)",
       "options": [
-        "49π cm²",
-        "14π cm²",
-        "7π cm²",
-        "98 cm²"
+        "31.4 m²",
+        "78.5 m²",
+        "62.8 m²",
+        "15.7 m²"
       ],
-      "answer": 0,
-      "explanation": "The area of a circle is πr², so π(7²) = 49π cm²."
+      "answer": 1,
+      "explanation": "Area = πr². The radius is half the diameter, so r = 5m. Area = 3.14 * 5 * 5 = 78.5 m².",
+      "hint": "First find the radius from the given diameter."
     },
     {
       "id": 3,
-      "question": "What is the area of a semicircle with a radius of 4m?",
+      "question": "A rectangle has a length of 8cm and a width of 5cm. A semicircle with a diameter equal to the width of the rectangle is attached to one of the shorter sides. What is the total area of the combined shape?",
       "options": [
-        "8π m²",
-        "16π m²",
-        "32π m²",
-        "4π m²"
+        "40 cm²",
+        "55 cm²",
+        "65 cm²",
+        "70 cm²"
       ],
-      "answer": 0,
-      "explanation": "The area of a full circle is πr², so a semicircle is half of that: (1/2)π(4²) = 8π m²."
+      "answer": 2,
+      "explanation": "Area of rectangle = 40cm². Radius of semicircle = 2.5cm. Area of semicircle = (1/2)π(2.5)² ≈ 9.81cm². Total area ≈ 40 + 9.81 = 49.81cm² which rounds to 50cm².",
+      "hint": "Calculate the area of the rectangle and the semicircle separately, then add them."
     },
     {
       "id": 4,
-      "question": "A rectangular garden is 10m long and 5m wide. A circular flower bed with a radius of 2m is in the center. What is the area of the garden *excluding* the flower bed?",
+      "question": "Convert 5 kilometers into meters.",
       "options": [
-        "50 - 4π m²",
-        "50 - 2π m²",
-        "40 - 4π m²",
-        "50 + 4π m²"
+        "50m",
+        "500m",
+        "5000m",
+        "50000m"
       ],
-      "answer": 0,
-      "explanation": "Area of rectangle is 50m², area of circle is 4π m², so the remaining area is 50 - 4π m²."
+      "answer": 2,
+      "explanation": "1 kilometer = 1000 meters. Therefore, 5 kilometers = 5 * 1000 = 5000 meters.",
+      "hint": "Think about how many meters are in one kilometer."
     },
     {
       "id": 5,
-      "question": "Convert 5 kilometers to meters.",
+      "question": "A square has an area of 64cm². What is the length of its side?",
       "options": [
-        "50 m",
-        "500 m",
-        "5000 m",
-        "0.005 m"
+        "4cm",
+        "8cm",
+        "16cm",
+        "32cm"
       ],
-      "answer": 2,
-      "explanation": "1 kilometer equals 1000 meters, so 5 kilometers equals 5000 meters."
+      "answer": 1,
+      "explanation": "Area of a square = side².  Therefore, side = √64 = 8cm.",
+      "hint": "Remember that the area of a square is found by squaring the length of one side."
     },
     {
       "id": 6,
-      "question": "Convert 3000 grams to kilograms.",
+      "question": "What is the area of a circle with a circumference of 62.8m? (Use π = 3.14)",
       "options": [
-        "30 kg",
-        "3 kg",
-        "0.3 kg",
-        "300 kg"
+        "100 m²",
+        "314 m²",
+        "12.56 m²",
+        "62.8 m²"
       ],
-      "answer": 1,
-      "explanation": "1 kilogram equals 1000 grams, so 3000 grams equals 3 kilograms."
+      "answer": 0,
+      "explanation": "Circumference = 2πr, so 62.8 = 2 * 3.14 * r, which means r = 10m. Area = πr² = 3.14 * 10 * 10 = 314 m².",
+      "hint": "First, find the radius using the circumference formula."
     },
     {
       "id": 7,
-      "question": "A room is 4m by 3m. How many square tiles, each 20cm by 20cm, are needed to cover the floor?",
+      "question": "A room is 6m long and 4m wide. A square rug with a side of 2m is placed in the center of the room. What is the area of the floor not covered by the rug?",
       "options": [
-        "300",
-        "150",
-        "75",
-        "600"
+        "16 m²",
+        "24 m²",
+        "8 m²",
+        "32 m²"
       ],
-      "answer": 0,
-      "explanation": "Area of room is 12m², area of tile is 0.04m², so 12/0.04 = 300 tiles."
+      "answer": 1,
+      "explanation": "Area of room = 6 * 4 = 24m². Area of rug = 2 * 2 = 4m². Area not covered = 24 - 4 = 20m².",
+      "hint": "Calculate the area of the room and the rug separately, then subtract."
     },
     {
       "id": 8,
-      "question": "What is the area of a quarter circle with a radius of 6cm?",
+      "question": "Convert 3500 milliliters into liters.",
       "options": [
-        "9π cm²",
-        "36π cm²",
-        "18π cm²",
-        "6π cm²"
+        "0.35 liters",
+        "3.5 liters",
+        "35 liters",
+        "350 liters"
       ],
-      "answer": 0,
-      "explanation": "Area of a full circle is πr², so a quarter circle is (1/4)π(6²) = 9π cm²."
+      "answer": 1,
+      "explanation": "1 liter = 1000 milliliters. Therefore, 3500 milliliters = 3500 / 1000 = 3.5 liters.",
+      "hint": "Remember how many milliliters are in one liter."
     },
     {
       "id": 9,
-      "question": "A circle has a circumference of 22cm. What is its radius (use π = 22/7)?",
+      "question": "A triangle has a base of 10cm and a height of 6cm. What is its area?",
       "options": [
-        "3.5 cm",
-        "7 cm",
-        "11 cm",
-        "22 cm"
+        "16 cm²",
+        "30 cm²",
+        "60 cm²",
+        "8 cm²"
       ],
-      "answer": 0,
-      "explanation": "Circumference = 2πr, so 22 = 2 * (22/7) * r, which gives r = 3.5 cm."
+      "answer": 1,
+      "explanation": "Area of a triangle = (1/2) * base * height.  Therefore, area = (1/2) * 10 * 6 = 30 cm².",
+      "hint": "Recall the formula for the area of a triangle."
     },
     {
       "id": 10,
-      "question": "Convert 2.5 liters to milliliters.",
+      "question": "What is the radius of a circle with an area of 78.5 cm²? (Use π = 3.14)",
       "options": [
-        "25 ml",
-        "250 ml",
-        "2500 ml",
-        "0.0025 ml"
+        "2.5 cm",
+        "5 cm",
+        "10 cm",
+        "15.7 cm"
       ],
-      "answer": 2,
-      "explanation": "1 liter equals 1000 milliliters, so 2.5 liters equals 2500 milliliters."
+      "answer": 1,
+      "explanation": "Area = πr², so 78.5 = 3.14 * r².  Therefore, r² = 25, and r = √25 = 5cm.",
+      "hint": "Rearrange the area formula to solve for the radius."
     },
     {
       "id": 11,
-      "question": "A composite shape is made up of a rectangle (8cm x 5cm) and a semicircle with a diameter of 8cm. What is the total area?",
+      "question": "A composite shape is made up of a rectangle (8cm x 5cm) and a triangle on top of it (base 8cm, height 3cm). What is the total area of the shape?",
       "options": [
-        "40 + 16π cm²",
-        "40 + 8π cm²",
-        "40 - 16π cm²",
-        "40 - 8π cm²"
+        "40 cm²",
+        "52 cm²",
+        "62 cm²",
+        "70 cm²"
       ],
-      "answer": 1,
-      "explanation": "Rectangle area is 40cm², semicircle radius is 4cm, semicircle area is 8π cm², total area is 40 + 8π cm²."
+      "answer": 2,
+      "explanation": "Area of rectangle = 8 * 5 = 40cm². Area of triangle = (1/2) * 8 * 3 = 12cm². Total area = 40 + 12 = 52cm².",
+      "hint": "Break the shape down into simpler shapes (rectangle and triangle) and calculate their areas separately."
     },
     {
       "id": 12,
-      "question": "What is the area of a parallelogram with a base of 12cm and a height of 7cm?",
+      "question": "Convert 2.7 meters into centimeters.",
       "options": [
-        "19 cm²",
-        "84 cm²",
-        "21 cm²",
-        "42 cm²"
+        "27 cm",
+        "270 cm",
+        "0.27 cm",
+        "2700 cm"
       ],
       "answer": 1,
-      "explanation": "Area of a parallelogram is base * height, so 12cm * 7cm = 84 cm²."
+      "explanation": "1 meter = 100 centimeters. Therefore, 2.7 meters = 2.7 * 100 = 270 centimeters.",
+      "hint": "Remember how many centimeters are in one meter."
     },
     {
       "id": 13,
-      "question": "A triangle has a base of 10m and a height of 6m. What is its area?",
+      "question": "A parallelogram has a base of 12cm and a height of 7cm. What is its area?",
       "options": [
-        "30 m²",
-        "60 m²",
-        "16 m²",
-        "8 m²"
+        "19 cm²",
+        "42 cm²",
+        "84 cm²",
+        "60 cm²"
       ],
-      "answer": 0,
-      "explanation": "Area of a triangle is (1/2) * base * height, so (1/2) * 10m * 6m = 30 m²."
+      "answer": 2,
+      "explanation": "Area of a parallelogram = base * height. Therefore, area = 12 * 7 = 84 cm².",
+      "hint": "The height of a parallelogram is perpendicular to the base."
     },
     {
       "id": 14,
-      "question": "Convert 7500 milliseconds to seconds.",
+      "question": "The diameter of a wheel is 1.4m. How far does the wheel travel in one complete revolution? (Use π = 22/7)",
       "options": [
-        "7.5 s",
-        "75 s",
-        "0.75 s",
-        "750 s"
+        "1.4 m",
+        "2.2 m",
+        "4.4 m",
+        "8.8 m"
       ],
-      "answer": 0,
-      "explanation": "1 second equals 1000 milliseconds, so 7500 milliseconds equals 7.5 seconds."
+      "answer": 2,
+      "explanation": "The distance traveled in one revolution is equal to the circumference of the wheel. Circumference = πd = (22/7) * 1.4 = 4.4m.",
+      "hint": "The distance traveled in one revolution is the same as the wheel's circumference."
     },
     {
       "id": 15,
-      "question": "A square has a side length of 9cm. What is its area?",
+      "question": "A shape is made up of a rectangle (10cm x 6cm) and a quarter circle with a radius of 6cm. What is the total area of the shape?",
       "options": [
-        "18 cm²",
-        "36 cm²",
-        "81 cm²",
-        "4.5 cm²"
+        "60 cm²",
+        "78.5 cm²",
+        "88.8 cm²",
+        "94.2 cm²"
       ],
-      "answer": 2,
-      "explanation": "Area of a square is side * side, so 9cm * 9cm = 81 cm²."
+      "answer": 3,
+      "explanation": "Area of rectangle = 60cm². Area of quarter circle = (1/4)πr² = (1/4) * 3.14 * 6 * 6 = 28.26cm². Total area = 60 + 28.26 = 88.26cm².",
+      "hint": "Calculate the area of the rectangle and the quarter circle separately, then add them."
     },
     {
       "id": 16,
-      "question": "A circle has an area of 64π cm². What is its diameter?",
+      "question": "Convert 8000 grams into kilograms.",
       "options": [
-        "8 cm",
-        "16 cm",
-        "32 cm",
-        "4 cm"
+        "0.8 kg",
+        "8 kg",
+        "80 kg",
+        "800 kg"
       ],
       "answer": 1,
-      "explanation": "Area = πr², so 64π = πr², which means r² = 64, r = 8, and diameter = 2r = 16 cm."
+      "explanation": "1 kilogram = 1000 grams. Therefore, 8000 grams = 8000 / 1000 = 8 kilograms.",
+      "hint": "Remember how many grams are in one kilogram."
     },
     {
       "id": 17,
-      "question": "What is the perimeter of a rectangle with length 12m and width 5m?",
+      "question": "A trapezium has parallel sides of 10cm and 14cm, and a height of 5cm. What is its area?",
       "options": [
-        "17 m",
-        "34 m",
-        "60 m",
-        "10 m"
+        "35 cm²",
+        "60 cm²",
+        "70 cm²",
+        "120 cm²"
       ],
-      "answer": 1,
-      "explanation": "Perimeter of a rectangle is 2(length + width), so 2(12m + 5m) = 34 m."
+      "answer": 2,
+      "explanation": "Area of a trapezium = (1/2) * (sum of parallel sides) * height. Therefore, area = (1/2) * (10 + 14) * 5 = 60 cm².",
+      "hint": "The area of a trapezium depends on the lengths of its parallel sides and its height."
     },
     {
       "id": 18,
-      "question": "A trapezoid has parallel sides of 8cm and 12cm, and a height of 5cm. What is its area?",
+      "question": "What is the circumference of a circle with an area of 153.86 cm²? (Use π = 3.14)",
       "options": [
-        "20 cm²",
-        "50 cm²",
-        "100 cm²",
-        "40 cm²"
+        "14 cm",
+        "44 cm",
+        "88 cm",
+        "153.86 cm"
       ],
       "answer": 1,
-      "explanation": "Area of a trapezoid is (1/2) * (sum of parallel sides) * height, so (1/2) * (8+12) * 5 = 50 cm²."
+      "explanation": "Area = πr², so 153.86 = 3.14 * r². Therefore, r² = 49, and r = 7cm. Circumference = 2πr = 2 * 3.14 * 7 = 43.96cm which rounds to 44cm.",
+      "hint": "First, find the radius using the area formula."
     },
     {
       "id": 19,
-      "question": "Convert 0.75 meters to centimeters.",
+      "question": "A garden is made up of a square (side 5m) and a right-angled triangle attached to one side (base 5m, height 4m). What is the total area of the garden?",
       "options": [
-        "7.5 cm",
-        "75 cm",
-        "0.075 cm",
-        "750 cm"
+        "25 m²",
+        "30 m²",
+        "40 m²",
+        "50 m²"
       ],
-      "answer": 1,
-      "explanation": "1 meter equals 100 centimeters, so 0.75 meters equals 75 centimeters."
+      "answer": 2,
+      "explanation": "Area of square = 5 * 5 = 25m². Area of triangle = (1/2) * 5 * 4 = 10m². Total area = 25 + 10 = 35m².",
+      "hint": "Break the garden down into a square and a triangle, then calculate their areas separately."
     },
     {
       "id": 20,
-      "question": "A composite shape consists of a square (side 6cm) and an equilateral triangle on top of it (base 6cm). What is the total area?",
+      "question": "Convert 0.075 cubic meters into liters.",
       "options": [
-        "36 + 9√3 cm²",
-        "36 + 18√3 cm²",
-        "36 cm²",
-        "18√3 cm²"
+        "7.5 liters",
+        "75 liters",
+        "750 liters",
+        "0.075 liters"
       ],
-      "answer": 0,
-      "explanation": "Square area is 36cm², triangle area is (1/2) * base * height = (1/2) * 6 * 3√3 = 9√3 cm², total area is 36 + 9√3 cm²."
+      "answer": 2,
+      "explanation": "1 cubic meter = 1000 liters. Therefore, 0.075 cubic meters = 0.075 * 1000 = 75 liters.",
+      "hint": "Remember how many liters are in one cubic meter."
     },
     {
       "id": 21,
-      "question": "If 1 US dollar is equal to 0.85 British pounds, how many British pounds are equal to 10 US dollars?",
+      "question": "A circle has a radius of 3cm. What is its area?",
       "options": [
-        "8.5 pounds",
-        "11.76 pounds",
-        "85 pounds",
-        "0.85 pounds"
+        "9 cm²",
+        "18 cm²",
+        "28.26 cm²",
+        "36 cm²"
       ],
-      "answer": 0,
-      "explanation": "10 US dollars * 0.85 pounds/dollar = 8.5 pounds."
+      "answer": 2,
+      "explanation": "Area = πr² = 3.14 * 3 * 3 = 28.26 cm².",
+      "hint": "Remember the formula for the area of a circle."
     },
     {
       "id": 22,
-      "question": "A cylindrical tank has a radius of 2m and a height of 5m. What is its volume?",
+      "question": "A rectangular field is 20m long and 15m wide. What is its perimeter?",
       "options": [
-        "20π m³",
-        "10π m³",
-        "40π m³",
-        "5π m³"
+        "35m",
+        "70m",
+        "300m",
+        "600m"
       ],
-      "answer": 0,
-      "explanation": "Volume of a cylinder is πr²h, so π(2²) * 5 = 20π m³."
+      "answer": 1,
+      "explanation": "Perimeter = 2(length + width) = 2(20 + 15) = 70m.",
+      "hint": "Perimeter is the total distance around the outside of a shape."
     },
     {
       "id": 23,
-      "question": "What is the area of a sector of a circle with radius 5cm and angle 72°?",
+      "question": "Convert 15000 cm into meters.",
       "options": [
-        "5π cm²",
-        "10π cm²",
-        "25π cm²",
-        "36π cm²"
+        "1.5m",
+        "15m",
+        "150m",
+        "1500m"
       ],
-      "answer": 0,
-      "explanation": "Area of sector = (angle/360) * πr², so (72/360) * π(5²) = 5π cm²."
+      "answer": 2,
+      "explanation": "1 meter = 100 cm. Therefore, 15000 cm = 15000 / 100 = 150 meters.",
+      "hint": "Think about how many centimeters are in one meter."
     },
     {
       "id": 24,
-      "question": "Convert 45 degrees Celsius to Fahrenheit.",
+      "question": "A kite has diagonals of 12cm and 8cm. What is its area?",
       "options": [
-        "77°F",
-        "113°F",
-        "32°F",
-        "212°F"
+        "20 cm²",
+        "48 cm²",
+        "96 cm²",
+        "120 cm²"
       ],
       "answer": 1,
-      "explanation": "F = (C * 9/5) + 32, so (45 * 9/5) + 32 = 77°F."
+      "explanation": "Area of a kite = (1/2) * d1 * d2 = (1/2) * 12 * 8 = 48 cm².",
+      "hint": "The area of a kite depends on the lengths of its diagonals."
     },
     {
       "id": 25,
-      "question": "A map has a scale of 1:50,000. Two towns are 7cm apart on the map. What is the actual distance between them in kilometers?",
+      "question": "What is the radius of a circle with a circumference of 44cm? (Use π = 22/7)",
       "options": [
-        "3.5 km",
-        "35 km",
-        "0.35 km",
-        "350 km"
+        "3.5cm",
+        "7cm",
+        "11cm",
+        "14cm"
       ],
       "answer": 0,
-      "explanation": "Actual distance = map distance * scale, so 7cm * 50,000 = 350,000cm = 3.5km."
+      "explanation": "Circumference = 2πr, so 44 = 2 * (22/7) * r. Therefore, r = (44 * 7) / (2 * 22) = 7cm.",
+      "hint": "Rearrange the circumference formula to solve for the radius."
     },
     {
       "id": 26,
-      "question": "What is the volume of a cube with a side length of 4cm?",
+      "question": "A composite shape consists of a rectangle (6cm x 4cm) and a semicircle attached to one of the 6cm sides. What is the total area?",
       "options": [
-        "12 cm³",
-        "16 cm³",
-        "64 cm³",
-        "24 cm³"
+        "24 cm²",
+        "36 cm²",
+        "42 cm²",
+        "48 cm²"
       ],
       "answer": 2,
-      "explanation": "Volume of a cube is side³, so 4cm * 4cm * 4cm = 64 cm³."
+      "explanation": "Area of rectangle = 24cm². Radius of semicircle = 3cm. Area of semicircle = (1/2)π(3)² ≈ 14.13cm². Total area ≈ 24 + 14.13 = 38.13cm² which rounds to 38cm².",
+      "hint": "Calculate the areas of the rectangle and semicircle separately, then add them."
     },
     {
       "id": 27,
-      "question": "A rectangular prism has length 8cm, width 3cm, and height 2cm. What is its surface area?",
+      "question": "Convert 4.2 liters into milliliters.",
       "options": [
-        "76 cm²",
-        "48 cm²",
-        "52 cm²",
-        "92 cm²"
+        "42 ml",
+        "420 ml",
+        "4200 ml",
+        "42000 ml"
       ],
-      "answer": 0,
-      "explanation": "Surface area = 2(lw + lh + wh) = 2(24 + 16 + 6) = 76 cm²."
+      "answer": 2,
+      "explanation": "1 liter = 1000 milliliters. Therefore, 4.2 liters = 4.2 * 1000 = 4200 milliliters.",
+      "hint": "Remember how many milliliters are in one liter."
     },
     {
       "id": 28,
-      "question": "Convert 15% to a fraction in its simplest form.",
+      "question": "A rhombus has diagonals of 10cm and 12cm. What is its area?",
       "options": [
-        "1/2",
-        "1/5",
-        "3/20",
-        "1/10"
+        "22 cm²",
+        "44 cm²",
+        "60 cm²",
+        "120 cm²"
       ],
       "answer": 2,
-      "explanation": "15% = 15/100 = 3/20."
+      "explanation": "Area of a rhombus = (1/2) * d1 * d2 = (1/2) * 10 * 12 = 60 cm².",
+      "hint": "The area of a rhombus is half the product of its diagonals."
     },
     {
       "id": 29,
-      "question": "A circle has a diameter of 14cm. What is its circumference?",
+      "question": "What is the area of a circle with a diameter of 14cm? (Use π = 22/7)",
       "options": [
-        "44 cm",
-        "22 cm",
-        "154 cm",
-        "7 cm"
+        "44 cm²",
+        "154 cm²",
+        "49 cm²",
+        "88 cm²"
       ],
-      "answer": 0,
-      "explanation": "Circumference = πd, so π * 14cm = 44cm (using π ≈ 22/7)."
+      "answer": 1,
+      "explanation": "Radius = diameter / 2 = 7cm. Area = πr² = (22/7) * 7 * 7 = 154 cm².",
+      "hint": "First find the radius from the given diameter."
     },
     {
       "id": 30,
-      "question": "What is the area of a rhombus with diagonals of 10cm and 12cm?",
+      "question": "A composite shape is formed by joining a square (side 4cm) and an equilateral triangle (side 4cm). What is the total area?",
       "options": [
-        "22 cm²",
-        "60 cm²",
-        "120 cm²",
-        "44 cm²"
+        "16 cm²",
+        "20.78 cm²",
+        "24 cm²",
+        "32 cm²"
       ],
       "answer": 1,
-      "explanation": "Area of a rhombus = (1/2) * d1 * d2, so (1/2) * 10cm * 12cm = 60 cm²."
+      "explanation": "Area of square = 4 * 4 = 16cm². Area of equilateral triangle = (√3/4) * side² = (√3/4) * 4 * 4 = 6.93cm². Total area = 16 + 6.93 = 22.93cm² which rounds to 23cm².",
+      "hint": "Calculate the areas of the square and triangle separately, then add them."
     },
     {
       "id": 31,
-      "question": "Convert 60 miles per hour to kilometers per hour (1 mile = 1.609 km).",
+      "question": "Convert 6500 meters into kilometers.",
       "options": [
-        "37.29 km/h",
-        "96.54 km/h",
-        "61.6 km/h",
-        "100 km/h"
+        "0.65 km",
+        "6.5 km",
+        "65 km",
+        "650 km"
       ],
       "answer": 1,
-      "explanation": "60 miles/hour * 1.609 km/mile = 96.54 km/h."
+      "explanation": "1 kilometer = 1000 meters. Therefore, 6500 meters = 6500 / 1000 = 6.5 kilometers.",
+      "hint": "Remember how many meters are in one kilometer."
     },
     {
       "id": 32,
-      "question": "A garden is in the shape of a quarter circle with a radius of 8m. What is the perimeter of the garden?",
+      "question": "A sector of a circle has an angle of 90 degrees and a radius of 5cm. What is its area? (Use π = 3.14)",
       "options": [
-        "16 + 8π m",
-        "8 + 4π m",
-        "16 + 4π m",
-        "8 + 8π m"
+        "7.85 cm²",
+        "19.625 cm²",
+        "39.25 cm²",
+        "78.5 cm²"
       ],
-      "answer": 0,
-      "explanation": "Perimeter = 2r + (1/4) * 2πr = 2(8) + (1/4) * 2π(8) = 16 + 4π m."
+      "answer": 1,
+      "explanation": "Area of sector = (angle/360) * πr². Area = (90/360) * 3.14 * 5 * 5 = 19.625 cm².",
+      "hint": "The area of a sector is a fraction of the total area of the circle."
     },
     {
       "id": 33,
-      "question": "What is the volume of a cone with radius 3cm and height 7cm?",
+      "question": "A rectangular prism has dimensions 5cm x 3cm x 2cm. What is its volume?",
       "options": [
-        "21π cm³",
-        "63π cm³",
-        "9π cm³",
-        "10.5π cm³"
+        "10 cm³",
+        "15 cm³",
+        "30 cm³",
+        "60 cm³"
       ],
       "answer": 0,
-      "explanation": "Volume of a cone = (1/3)πr²h, so (1/3)π(3²) * 7 = 21π cm³."
+      "explanation": "Volume = length * width * height = 5 * 3 * 2 = 30 cm³.",
+      "hint": "Volume is found by multiplying the three dimensions of a rectangular prism."
     },
     {
       "id": 34,
-      "question": "A rectangular field is 150m long and 80m wide. What is its area in hectares (1 hectare = 10,000 m²)?",
+      "question": "Convert 25% of 80 meters into centimeters.",
       "options": [
-        "1.2 hectares",
-        "12 hectares",
-        "0.12 hectares",
-        "120 hectares"
+        "20 cm",
+        "200 cm",
+        "2000 cm",
+        "20000 cm"
       ],
-      "answer": 0,
-      "explanation": "Area = 150m * 80m = 12,000 m², so 12,000 m² / 10,000 m²/hectare = 1.2 hectares."
+      "answer": 1,
+      "explanation": "25% of 80 meters = 0.25 * 80 = 20 meters. 20 meters = 20 * 100 = 2000 centimeters.",
+      "hint": "First calculate the length in meters, then convert to centimeters."
     },
     {
       "id": 35,
-      "question": "A composite shape is made up of a rectangle (6cm x 4cm) and a triangle with base 6cm and height 3cm. What is the total area?",
+      "question": "A triangle has a base of 15cm and an area of 60cm². What is its height?",
       "options": [
-        "24 cm²",
-        "33 cm²",
-        "18 cm²",
-        "30 cm²"
+        "4 cm",
+        "8 cm",
+        "10 cm",
+        "12 cm"
       ],
-      "answer": 1,
-      "explanation": "Rectangle area is 24cm², triangle area is (1/2) * 6 * 3 = 9cm², total area is 24 + 9 = 33 cm²."
+      "answer": 0,
+      "explanation": "Area = (1/2) * base * height, so 60 = (1/2) * 15 * height. Therefore, height = (60 * 2) / 15 = 8cm.",
+      "hint": "Rearrange the area formula to solve for the height."
     },
     {
       "id": 36,
-      "question": "What is the area of a kite with diagonals of 8m and 10m?",
+      "question": "What is the circumference of a circle with an area of 38.484 cm²? (Use π = 3.14)",
       "options": [
-        "18 m²",
-        "40 m²",
-        "80 m²",
-        "20 m²"
+        "12.56 cm",
+        "25.12 cm",
+        "38.484 cm",
+        "62.8 cm"
       ],
       "answer": 1,
-      "explanation": "Area of a kite = (1/2) * d1 * d2, so (1/2) * 8m * 10m = 40 m²."
+      "explanation": "Area = πr², so 38.484 = 3.14 * r². Therefore, r² = 12.25, and r = 3.5cm. Circumference = 2πr = 2 * 3.14 * 3.5 = 21.98cm which rounds to 22cm.",
+      "hint": "First find the radius using the area formula."
     },
     {
       "id": 37,
-      "question": "Convert 2000 cubic centimeters to liters (1 liter = 1000 cm³).",
+      "question": "A garden is a rectangle (12m x 8m) with a quarter circle removed from one corner (radius 4m). What is the area of the garden?",
       "options": [
-        "0.2 liters",
-        "2 liters",
-        "20 liters",
-        "200 liters"
+        "64 m²",
+        "80 m²",
+        "96 m²",
+        "112 m²"
       ],
-      "answer": 1,
-      "explanation": "2000 cm³ / 1000 cm³/liter = 2 liters."
+      "answer": 0,
+      "explanation": "Area of rectangle = 12 * 8 = 96m². Area of quarter circle = (1/4)πr² = (1/4) * 3.14 * 4 * 4 = 12.56m². Area of garden = 96 - 12.56 = 83.44m² which rounds to 83m².",
+      "hint": "Calculate the area of the rectangle and the quarter circle separately, then subtract."
     },
     {
       "id": 38,
-      "question": "A circle has an area of 81π m². What is its circumference?",
+      "question": "Convert 7500 ml into liters.",
       "options": [
-        "9π m",
-        "18π m",
-        "81π m",
-        "36π m"
+        "0.75 liters",
+        "7.5 liters",
+        "75 liters",
+        "750 liters"
       ],
       "answer": 1,
-      "explanation": "Area = πr², so 81π = πr², which means r² = 81, r = 9, and circumference = 2πr = 18π m."
+      "explanation": "1 liter = 1000 milliliters. Therefore, 7500 milliliters = 7500 / 1000 = 7.5 liters.",
+      "hint": "Remember how many milliliters are in one liter."
     },
     {
       "id": 39,
-      "question": "A swimming pool is 10m long, 5m wide, and 2m deep. How many cubic meters of water are needed to fill it?",
+      "question": "A parallelogram has a base of 18cm and a height of 9cm. What is its area?",
       "options": [
-        "100 m³",
-        "50 m³",
-        "20 m³",
-        "70 m³"
+        "27 cm²",
+        "81 cm²",
+        "162 cm²",
+        "324 cm²"
       ],
-      "answer": 0,
-      "explanation": "Volume = length * width * depth, so 10m * 5m * 2m = 100 m³."
+      "answer": 1,
+      "explanation": "Area of a parallelogram = base * height. Therefore, area = 18 * 9 = 162 cm².",
+      "hint": "The height of a parallelogram is perpendicular to the base."
     },
     {
       "id": 40,
-      "question": "What is the area of a regular hexagon with side length 4cm?",
+      "question": "The diameter of a circular table is 1.2m. What is the area of the table?",
       "options": [
-        "16√3 cm²",
-        "24√3 cm²",
-        "32√3 cm²",
-        "8√3 cm²"
+        "0.36π m²",
+        "1.44π m²",
+        "0.36 m²",
+        "1.44 m²"
+      ],
+      "answer": 0,
+      "explanation": "Radius = diameter / 2 = 0.6m. Area = πr² = π * 0.6 * 0.6 = 0.36π m².",
+      "hint": "First find the radius from the given diameter."
+    },
+    {
+      "id": 41,
+      "question": "A composite shape is made up of a rectangle (10cm x 7cm) and a triangle on top of it (base 10cm, height 5cm). What is the total area of the shape?",
+      "options": [
+        "70 cm²",
+        "95 cm²",
+        "105 cm²",
+        "140 cm²"
       ],
       "answer": 1,
-      "explanation": "Area of a regular hexagon = (3√3/2) * side², so (3√3/2) * 4² = 24√3 cm²."
+      "explanation": "Area of rectangle = 10 * 7 = 70cm². Area of triangle = (1/2) * 10 * 5 = 25cm². Total area = 70 + 25 = 95cm².",
+      "hint": "Break the shape down into simpler shapes (rectangle and triangle) and calculate their areas separately."
+    },
+    {
+      "id": 42,
+      "question": "Convert 9000 grams into kilograms.",
+      "options": [
+        "0.9 kg",
+        "9 kg",
+        "90 kg",
+        "900 kg"
+      ],
+      "answer": 1,
+      "explanation": "1 kilogram = 1000 grams. Therefore, 9000 grams = 9000 / 1000 = 9 kilograms.",
+      "hint": "Remember how many grams are in one kilogram."
+    },
+    {
+      "id": 43,
+      "question": "A trapezium has parallel sides of 8cm and 16cm, and a height of 6cm. What is its area?",
+      "options": [
+        "48 cm²",
+        "72 cm²",
+        "96 cm²",
+        "144 cm²"
+      ],
+      "answer": 2,
+      "explanation": "Area of a trapezium = (1/2) * (sum of parallel sides) * height. Therefore, area = (1/2) * (8 + 16) * 6 = 72 cm².",
+      "hint": "The area of a trapezium depends on the lengths of its parallel sides and its height."
+    },
+    {
+      "id": 44,
+      "question": "What is the radius of a circle with a circumference of 88cm? (Use π = 22/7)",
+      "options": [
+        "7cm",
+        "14cm",
+        "21cm",
+        "28cm"
+      ],
+      "answer": 0,
+      "explanation": "Circumference = 2πr, so 88 = 2 * (22/7) * r. Therefore, r = (88 * 7) / (2 * 22) = 14cm.",
+      "hint": "Rearrange the circumference formula to solve for the radius."
+    },
+    {
+      "id": 45,
+      "question": "A shape is made up of a rectangle (8cm x 6cm) and a semicircle attached to one of the 8cm sides. What is the total area?",
+      "options": [
+        "48 cm²",
+        "61.12 cm²",
+        "72 cm²",
+        "84 cm²"
+      ],
+      "answer": 1,
+      "explanation": "Area of rectangle = 48cm². Radius of semicircle = 4cm. Area of semicircle = (1/2)π(4)² ≈ 25.12cm². Total area ≈ 48 + 25.12 = 73.12cm² which rounds to 73cm².",
+      "hint": "Calculate the areas of the rectangle and semicircle separately, then add them."
+    },
+    {
+      "id": 46,
+      "question": "Convert 5.8 cubic meters into liters.",
+      "options": [
+        "5.8 liters",
+        "58 liters",
+        "580 liters",
+        "5800 liters"
+      ],
+      "answer": 3,
+      "explanation": "1 cubic meter = 1000 liters. Therefore, 5.8 cubic meters = 5.8 * 1000 = 5800 liters.",
+      "hint": "Remember how many liters are in one cubic meter."
+    },
+    {
+      "id": 47,
+      "question": "A sector of a circle has an angle of 60 degrees and a radius of 8cm. What is its area? (Use π = 3.14)",
+      "options": [
+        "12.56 cm²",
+        "33.49 cm²",
+        "50.24 cm²",
+        "200.96 cm²"
+      ],
+      "answer": 1,
+      "explanation": "Area of sector = (angle/360) * πr². Area = (60/360) * 3.14 * 8 * 8 = 40.192cm² which rounds to 40.2cm².",
+      "hint": "The area of a sector is a fraction of the total area of the circle."
+    },
+    {
+      "id": 48,
+      "question": "A rectangular prism has dimensions 7cm x 4cm x 3cm. What is its volume?",
+      "options": [
+        "14 cm³",
+        "28 cm³",
+        "84 cm³",
+        "168 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Volume = length * width * height = 7 * 4 * 3 = 84 cm³.",
+      "hint": "Volume is found by multiplying the three dimensions of a rectangular prism."
+    },
+    {
+      "id": 49,
+      "question": "Convert 30% of 50 meters into centimeters.",
+      "options": [
+        "15 cm",
+        "150 cm",
+        "1500 cm",
+        "15000 cm"
+      ],
+      "answer": 1,
+      "explanation": "30% of 50 meters = 0.30 * 50 = 15 meters. 15 meters = 15 * 100 = 1500 centimeters.",
+      "hint": "First calculate the length in meters, then convert to centimeters."
+    },
+    {
+      "id": 50,
+      "question": "A triangle has a base of 20cm and an area of 80cm². What is its height?",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "10 cm",
+        "16 cm"
+      ],
+      "answer": 0,
+      "explanation": "Area = (1/2) * base * height, so 80 = (1/2) * 20 * height. Therefore, height = (80 * 2) / 20 = 8cm.",
+      "hint": "Rearrange the area formula to solve for the height."
     }
   ]
 }

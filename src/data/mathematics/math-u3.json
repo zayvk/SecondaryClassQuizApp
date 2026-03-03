@@ -8,487 +8,657 @@
     "Understanding compound percentages",
     "Understanding upper and lower bounds"
   ],
-  "generatedAt": "2026-02-25T00:42:07Z",
+  "generatedAt": "2026-03-03T01:31:55Z",
   "questions": [
     {
       "id": 1,
-      "question": "What is 3.5 x 1000?",
+      "question": "What is 3.45 x 1000?",
       "options": [
-        "35",
-        "350",
-        "3500",
-        "0.0035"
+        "34.5",
+        "345",
+        "3450",
+        "0.00345"
       ],
       "answer": 2,
-      "explanation": "Multiplying by 1000 moves the decimal point three places to the right."
+      "explanation": "Multiplying by 1000 moves the decimal point three places to the right.",
+      "hint": "Think about how many places the decimal point needs to move."
     },
     {
       "id": 2,
       "question": "Calculate 12.6 ÷ 100.",
       "options": [
-        "126",
+        "1260",
         "1.26",
         "0.126",
-        "0.0126"
+        "12.6"
       ],
       "answer": 1,
-      "explanation": "Dividing by 100 moves the decimal point two places to the left."
+      "explanation": "Dividing by 100 moves the decimal point two places to the left.",
+      "hint": "Consider the effect of dividing by powers of ten."
     },
     {
       "id": 3,
-      "question": "What is 0.04 x 10<sup>5</sup>?",
+      "question": "What is 0.25 x 0.5?",
       "options": [
-        "400",
-        "4000",
-        "0.00004",
-        "4"
+        "1.25",
+        "0.125",
+        "12.5",
+        "0.75"
       ],
       "answer": 1,
-      "explanation": "10<sup>5</sup> is 100,000, so 0.04 multiplied by 100,000 is 4000."
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Ignore the decimal points initially, then count how many decimal places there are in total."
     },
     {
       "id": 4,
-      "question": "Evaluate 78.9 ÷ 10<sup>-2</sup>.",
+      "question": "Evaluate 7.2 ÷ 0.3.",
       "options": [
-        "0.00789",
-        "7.89",
-        "789",
-        "7890"
+        "0.216",
+        "2.4",
+        "24",
+        "21.6"
       ],
       "answer": 3,
-      "explanation": "Dividing by 10<sup>-2</sup> is the same as multiplying by 10<sup>2</sup> (100), resulting in 7890."
+      "explanation": "To divide by a decimal, multiply both the dividend and divisor by a power of 10 to make the divisor a whole number.",
+      "hint": "Make the divisor a whole number before dividing."
     },
     {
       "id": 5,
-      "question": "What is 2.3 x 1.2?",
+      "question": "A shop increases the price of a shirt by 20%. If the original price was $25, what is the new price?",
       "options": [
-        "2.76",
-        "27.6",
-        "0.276",
-        "2.5"
+        "$27",
+        "$30",
+        "$35",
+        "$5"
       ],
-      "answer": 0,
-      "explanation": "Multiplying decimals is similar to whole numbers, then adjust the decimal point based on the total number of decimal places."
+      "answer": 2,
+      "explanation": "Calculate 20% of $25 (which is $5) and add it to the original price.",
+      "hint": "First find the amount of the increase, then add it to the original price."
     },
     {
       "id": 6,
-      "question": "Calculate 15.6 ÷ 0.4.",
+      "question": "What is 15% of 80?",
       "options": [
-        "3.9",
-        "39",
-        "0.39",
-        "390"
+        "12",
+        "10",
+        "150",
+        "8"
       ],
-      "answer": 1,
-      "explanation": "To divide by a decimal, multiply both numbers by a power of 10 to make the divisor a whole number."
+      "answer": 0,
+      "explanation": "15% is equivalent to 0.15. Multiply 0.15 by 80 to find the answer.",
+      "hint": "Convert the percentage to a decimal before multiplying."
     },
     {
       "id": 7,
-      "question": "What is 0.05 x 0.08?",
+      "question": "A TV is reduced in price by 10%, then a further 5% off the reduced price. If the original price was $400, what is the final price?",
       "options": [
-        "0.004",
-        "0.04",
-        "0.4",
-        "4"
+        "$342",
+        "$360",
+        "$350",
+        "$380"
       ],
       "answer": 0,
-      "explanation": "Multiply as whole numbers (5 x 8 = 40) and then count the total decimal places (4) to position the decimal point."
+      "explanation": "First calculate the 10% reduction, then calculate 5% of the reduced price and subtract it.",
+      "hint": "Calculate the discounts one at a time."
     },
     {
       "id": 8,
-      "question": "If a price is increased by 10% and then by another 20%, what is the overall percentage increase?",
+      "question": "Round 12.345 to one decimal place.",
       "options": [
-        "30%",
-        "32%",
-        "33.33%",
-        "40%"
+        "12.34",
+        "12.3",
+        "12.4",
+        "13"
       ],
       "answer": 1,
-      "explanation": "A 10% increase followed by a 20% increase is not simply 30%. Calculate the new price after each increase."
+      "explanation": "Look at the digit in the second decimal place. If it is 5 or greater, round up the first decimal place.",
+      "hint": "Focus on the digit immediately after the place you're rounding to."
     },
     {
       "id": 9,
-      "question": "A shop offers a 15% discount on a shirt priced at $20. What is the discount amount?",
+      "question": "Round 5.6789 to two decimal places.",
       "options": [
-        "$2",
-        "$3",
-        "$5",
-        "$8"
+        "5.67",
+        "5.68",
+        "5.69",
+        "5.7"
       ],
       "answer": 1,
-      "explanation": "Calculate 15% of $20: (15/100) * 20 = $3."
+      "explanation": "Look at the digit in the third decimal place. If it is 5 or greater, round up the second decimal place.",
+      "hint": "Consider the digit in the next decimal place."
     },
     {
       "id": 10,
-      "question": "What is 25% of 80?",
+      "question": "What is 4.56 x 10^-2?",
       "options": [
-        "10",
-        "20",
-        "30",
-        "40"
+        "456",
+        "0.456",
+        "4.56",
+        "0.0456"
       ],
       "answer": 1,
-      "explanation": "25% is equivalent to 1/4, so 1/4 of 80 is 20."
+      "explanation": "Multiplying by 10^-2 moves the decimal point two places to the left.",
+      "hint": "Negative exponents indicate division by a power of ten."
     },
     {
       "id": 11,
-      "question": "A value is increased by 50% and then decreased by 20%. What is the net percentage change?",
+      "question": "Calculate 8.9 ÷ 10^-3",
       "options": [
-        "20% increase",
-        "30% decrease",
-        "15% increase",
-        "15% decrease"
+        "0.0089",
+        "8900",
+        "8.9",
+        "890"
       ],
-      "answer": 0,
-      "explanation": "A 50% increase followed by a 20% decrease: 1.5 × 0.8 = 1.2, which is a net increase of 20%."
+      "answer": 3,
+      "explanation": "Dividing by 10^-3 is the same as multiplying by 10^3, moving the decimal point three places to the right.",
+      "hint": "Remember that dividing by a negative power of ten is the same as multiplying by its positive counterpart."
     },
     {
       "id": 12,
-      "question": "What is the upper bound of 5.2 rounded to 1 decimal place?",
+      "question": "What is 1.2 x 3.4?",
       "options": [
-        "5.15",
-        "5.25",
-        "5.3",
-        "5.2"
+        "4.08",
+        "40.8",
+        "0.408",
+        "4.8"
       ],
-      "answer": 1,
-      "explanation": "The upper bound is half of the rounding increment added to the rounded value."
+      "answer": 0,
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Count the total number of decimal places in both numbers."
     },
     {
       "id": 13,
-      "question": "What is the lower bound of 8.7 rounded to 1 decimal place?",
+      "question": "Evaluate 15.6 ÷ 2.6.",
       "options": [
-        "8.65",
-        "8.75",
-        "8.8",
-        "8.7"
+        "6",
+        "0.6",
+        "60",
+        "156"
       ],
       "answer": 0,
-      "explanation": "The lower bound is half of the rounding increment subtracted from the rounded value."
+      "explanation": "To divide by a decimal, multiply both the dividend and divisor by a power of 10 to make the divisor a whole number.",
+      "hint": "Eliminate the decimal in the divisor."
     },
     {
       "id": 14,
-      "question": "A length is measured as 12.5cm to the nearest 0.1cm. What is the range of possible values?",
+      "question": "A store offers a 15% discount on a jacket priced at $80. What is the discount amount?",
       "options": [
-        "12.4cm to 12.6cm",
-        "12.45cm to 12.55cm",
-        "12.3cm to 12.7cm",
-        "12.0cm to 13.0cm"
+        "$12",
+        "$15",
+        "$68",
+        "$8"
       ],
-      "answer": 1,
-      "explanation": "The range is determined by the lower and upper bounds, which are 12.4cm and 12.6cm respectively."
+      "answer": 0,
+      "explanation": "Calculate 15% of $80 to find the discount amount.",
+      "hint": "Convert the percentage to a decimal and multiply."
     },
     {
       "id": 15,
-      "question": "A weight is given as 7.8kg to the nearest 0.1kg. What is the upper bound of the weight?",
+      "question": "What is 33 1/3 % of 60?",
       "options": [
-        "7.75kg",
-        "7.85kg",
-        "7.9kg",
-        "7.8kg"
+        "20",
+        "18",
+        "22",
+        "15"
       ],
-      "answer": 1,
-      "explanation": "The upper bound is 0.05kg above the stated value."
+      "answer": 0,
+      "explanation": "33 1/3 % is equivalent to 1/3.  Therefore, calculate 1/3 of 60.",
+      "hint": "Recognize the fraction equivalent to the percentage."
     },
     {
       "id": 16,
-      "question": "Calculate 4.56 x 2.1",
+      "question": "A price is increased by 10% and then decreased by 10%. What is the overall percentage change?",
       "options": [
-        "9.576",
-        "95.76",
-        "0.9576",
-        "9.0"
+        "0%",
+        "10% increase",
+        "1% decrease",
+        "2% decrease"
       ],
-      "answer": 0,
-      "explanation": "Multiply the numbers as if they were whole numbers, then place the decimal point based on the total number of decimal places."
+      "answer": 3,
+      "explanation": "The overall change is a 1% decrease. Let the original price be 100. After a 10% increase, it becomes 110. A 10% decrease from 110 is 11, resulting in a final price of 99.",
+      "hint": "Consider a specific starting value, like $100."
     },
     {
       "id": 17,
-      "question": "What is 36.8 ÷ 0.8?",
+      "question": "Round 18.954 to the nearest whole number.",
       "options": [
-        "4.6",
-        "46",
-        "0.46",
-        "460"
+        "18",
+        "19",
+        "18.9",
+        "19.0"
       ],
       "answer": 1,
-      "explanation": "Multiply both the dividend and divisor by 10 to remove the decimal from the divisor, then divide."
+      "explanation": "If the decimal part is 0.5 or greater, round up to the next whole number.",
+      "hint": "Look at the first digit after the decimal point."
     },
     {
       "id": 18,
-      "question": "A store marks up the cost of an item by 40%. If the original cost was $50, what is the selling price?",
+      "question": "What is 7.89 x 10^4?",
       "options": [
-        "$60",
-        "$70",
-        "$80",
-        "$90"
+        "7890",
+        "0.000789",
+        "78900",
+        "78.9"
       ],
-      "answer": 1,
-      "explanation": "Calculate 40% of $50 ($20) and add it to the original cost."
+      "answer": 2,
+      "explanation": "Multiplying by 10^4 moves the decimal point four places to the right.",
+      "hint": "A positive exponent means the number gets larger."
     },
     {
       "id": 19,
-      "question": "What percentage of 150 is 45?",
+      "question": "Calculate 2.34 ÷ 10^-1",
       "options": [
-        "10%",
-        "20%",
-        "30%",
-        "40%"
+        "0.234",
+        "23.4",
+        "2.34",
+        "0.0234"
       ],
-      "answer": 2,
-      "explanation": "(45/150) * 100 = 30%"
+      "answer": 1,
+      "explanation": "Dividing by 10^-1 is the same as multiplying by 10^1, moving the decimal point one place to the right.",
+      "hint": "Think about what a negative exponent does to the power of ten."
     },
     {
       "id": 20,
-      "question": "A price of $80 is reduced by 25%. What is the new price?",
+      "question": "What is 0.75 x 0.8?",
       "options": [
-        "$60",
-        "$70",
-        "$50",
-        "$40"
+        "0.6",
+        "6.0",
+        "0.06",
+        "60"
       ],
       "answer": 0,
-      "explanation": "Calculate 25% of $80 ($20) and subtract it from the original price."
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Count the decimal places in both numbers."
     },
     {
       "id": 21,
-      "question": "What is 1.75 x 10<sup>-3</sup>?",
+      "question": "Evaluate 24.8 ÷ 4.",
       "options": [
-        "1750",
-        "0.00175",
-        "1.75000",
-        "0.175"
+        "6.2",
+        "62",
+        "0.62",
+        "6.02"
       ],
-      "answer": 1,
-      "explanation": "Multiplying by 10<sup>-3</sup> moves the decimal point three places to the left."
+      "answer": 0,
+      "explanation": "Perform the division as you would with whole numbers, keeping track of the decimal point.",
+      "hint": "Think of it as 248 divided by 40."
     },
     {
       "id": 22,
-      "question": "Calculate 0.006 ÷ 10<sup>2</sup>.",
+      "question": "A book costs $15. There is a 20% sales tax. What is the total cost of the book?",
       "options": [
-        "0.00006",
-        "0.006",
-        "6",
-        "0.6"
+        "$18",
+        "$3",
+        "$12",
+        "$15.20"
       ],
       "answer": 0,
-      "explanation": "Dividing by 10<sup>2</sup> moves the decimal point two places to the left."
+      "explanation": "Calculate 20% of $15 (which is $3) and add it to the original price.",
+      "hint": "Find the tax amount first."
     },
     {
       "id": 23,
-      "question": "What is 1.23 x 0.45?",
+      "question": "What is 60% of 120?",
       "options": [
-        "0.5535",
-        "5.535",
-        "0.05535",
-        "55.35"
+        "72",
+        "60",
+        "120",
+        "200"
       ],
       "answer": 0,
-      "explanation": "Multiply as whole numbers (123 x 45 = 5535) and then count the total decimal places (4) to position the decimal point."
+      "explanation": "60% is equivalent to 0.6. Multiply 0.6 by 120 to find the answer.",
+      "hint": "Convert the percentage to a decimal."
     },
     {
       "id": 24,
-      "question": "Evaluate 25.5 ÷ 0.05.",
+      "question": "A store is having a 'Buy One Get One Half Price' sale. If a shirt costs $20, what is the cost of buying two shirts?",
       "options": [
-        "5.1",
-        "51",
-        "510",
-        "0.51"
+        "$30",
+        "$40",
+        "$20",
+        "$10"
       ],
-      "answer": 2,
-      "explanation": "Multiply both numbers by 100 to remove the decimal from the divisor, then divide."
+      "answer": 0,
+      "explanation": "The second shirt costs half price, which is $10. The total cost is $20 + $10 = $30.",
+      "hint": "Calculate the price of the second shirt."
     },
     {
       "id": 25,
-      "question": "A quantity increases by 20% and then decreases by 10%. What is the overall percentage change?",
+      "question": "Round 3.14159 to three decimal places.",
       "options": [
-        "10% increase",
-        "8% increase",
-        "10% decrease",
-        "8% decrease"
+        "3.141",
+        "3.142",
+        "3.14",
+        "3.1"
       ],
-      "answer": 1,
-      "explanation": "An increase of 20% followed by a 10% decrease results in a net increase of 8%."
+      "answer": 0,
+      "explanation": "Look at the digit in the fourth decimal place. If it is 5 or greater, round up the third decimal place.",
+      "hint": "Focus on the fourth digit after the decimal point."
     },
     {
       "id": 26,
-      "question": "What is the lower bound of 15.3 rounded to the nearest tenth?",
+      "question": "What is 9.25 x 10^-3?",
       "options": [
-        "15.25",
-        "15.35",
-        "15.2",
-        "15.4"
+        "9250",
+        "0.00925",
+        "9.25",
+        "0.925"
       ],
-      "answer": 0,
-      "explanation": "The lower bound is half the rounding increment subtracted from the rounded value."
+      "answer": 1,
+      "explanation": "Multiplying by 10^-3 moves the decimal point three places to the left.",
+      "hint": "Remember that a negative exponent means division."
     },
     {
       "id": 27,
-      "question": "A measurement is 20.6cm to the nearest 0.1cm. What is the upper bound?",
+      "question": "Calculate 17.5 ÷ 10^-2",
       "options": [
-        "20.55cm",
-        "20.65cm",
-        "20.7cm",
-        "20.6cm"
+        "0.175",
+        "1750",
+        "17.5",
+        "175"
       ],
-      "answer": 1,
-      "explanation": "The upper bound is 0.05cm above the stated value."
+      "answer": 3,
+      "explanation": "Dividing by 10^-2 is the same as multiplying by 10^2, moving the decimal point two places to the right.",
+      "hint": "Think of dividing by a small decimal."
     },
     {
       "id": 28,
-      "question": "If a value is rounded to 3.4 to one decimal place, what is the minimum possible value?",
+      "question": "What is 2.5 x 1.5?",
       "options": [
-        "3.3",
-        "3.35",
-        "3.45",
-        "3.5"
+        "3.75",
+        "37.5",
+        "0.375",
+        "3.0"
       ],
-      "answer": 1,
-      "explanation": "The minimum possible value is the lower bound, which is 3.35."
+      "answer": 0,
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Count the total number of digits after the decimal point."
     },
     {
       "id": 29,
-      "question": "A shop increases all prices by 5%. What is the new price of an item originally costing $60?",
+      "question": "Evaluate 36.9 ÷ 3.",
       "options": [
-        "$57",
-        "$63",
-        "$65",
-        "$60.50"
+        "12.3",
+        "123",
+        "1.23",
+        "11.3"
       ],
-      "answer": 1,
-      "explanation": "Calculate 5% of $60 ($3) and add it to the original price."
+      "answer": 0,
+      "explanation": "Perform the division as you would with whole numbers, keeping track of the decimal point.",
+      "hint": "Think of it as 369 divided by 30."
     },
     {
       "id": 30,
-      "question": "What is 60% of 90?",
+      "question": "A phone costs $200. There is a 5% discount and then an 8% sales tax on the discounted price. What is the final price?",
       "options": [
-        "50",
-        "54",
-        "60",
-        "65"
+        "$180",
+        "$194.40",
+        "$184",
+        "$216"
       ],
       "answer": 1,
-      "explanation": "(60/100) * 90 = 54"
+      "explanation": "Calculate the 5% discount, then calculate the 8% sales tax on the discounted price, and add it to the discounted price.",
+      "hint": "Calculate the discount first, then the tax."
     },
     {
       "id": 31,
-      "question": "Calculate 1.8 x 0.03",
+      "question": "What is 12.5% of 48?",
       "options": [
-        "0.054",
-        "0.54",
-        "5.4",
-        "54"
+        "6",
+        "8",
+        "10",
+        "12"
       ],
       "answer": 0,
-      "explanation": "Multiply as whole numbers (18 x 3 = 54) and then count the total decimal places (3) to position the decimal point."
+      "explanation": "12.5% is equivalent to 1/8.  Therefore, calculate 1/8 of 48.",
+      "hint": "Think of a common fraction equivalent to the percentage."
     },
     {
       "id": 32,
-      "question": "What is 48.6 ÷ 1.8?",
+      "question": "A shopkeeper marks up the price of an item by 25%. If the cost price is $60, what is the selling price?",
       "options": [
-        "2.7",
-        "27",
-        "0.27",
-        "270"
+        "$75",
+        "$80",
+        "$45",
+        "$15"
       ],
-      "answer": 1,
-      "explanation": "Multiply both numbers by 10 to remove the decimal from the divisor, then divide."
+      "answer": 0,
+      "explanation": "Calculate 25% of $60 (which is $15) and add it to the cost price.",
+      "hint": "Find the markup amount first."
     },
     {
       "id": 33,
-      "question": "A salary is increased by 8% and then decreased by 2%. What is the overall percentage change?",
+      "question": "Round 7.895 to one decimal place.",
       "options": [
-        "5.84% increase",
-        "6.24% increase",
-        "6% decrease",
-        "5.84% decrease"
+        "7.8",
+        "7.9",
+        "8.0",
+        "7.89"
       ],
-      "answer": 0,
-      "explanation": "An 8% increase then 2% decrease: 1.08 × 0.98 = 1.0584, a net increase of 5.84%."
+      "answer": 1,
+      "explanation": "Look at the digit in the second decimal place. If it is 5 or greater, round up the first decimal place.",
+      "hint": "Consider the digit immediately after the place you're rounding to."
     },
     {
       "id": 34,
-      "question": "What is the upper bound of 12.75 rounded to 2 decimal places?",
+      "question": "What is 6.78 x 10^5?",
       "options": [
-        "12.745",
-        "12.755",
-        "12.76",
-        "12.75"
+        "678000",
+        "0.000678",
+        "67800",
+        "6.78"
       ],
-      "answer": 1,
-      "explanation": "The upper bound is half of the smallest decimal place increment added to the rounded value."
+      "answer": 0,
+      "explanation": "Multiplying by 10^5 moves the decimal point five places to the right.",
+      "hint": "A positive exponent means the number gets larger."
     },
     {
       "id": 35,
-      "question": "A length is measured as 9.4m to the nearest 0.1m. What is the range of possible values?",
+      "question": "Calculate 4.2 ÷ 10^-4",
       "options": [
-        "9.3m to 9.5m",
-        "9.35m to 9.45m",
-        "9.2m to 9.6m",
-        "9.0m to 9.8m"
+        "0.00042",
+        "420000",
+        "4.2",
+        "42000"
       ],
       "answer": 1,
-      "explanation": "The range is determined by the lower and upper bounds, which are 9.3m and 9.5m respectively."
+      "explanation": "Dividing by 10^-4 is the same as multiplying by 10^4, moving the decimal point four places to the right.",
+      "hint": "Remember that dividing by a negative power of ten is the same as multiplying by its positive counterpart."
     },
     {
       "id": 36,
-      "question": "What is 2.5% of 200?",
+      "question": "What is 0.3 x 0.04?",
       "options": [
-        "5",
-        "10",
-        "15",
-        "20"
+        "0.012",
+        "1.2",
+        "0.12",
+        "0.0012"
       ],
       "answer": 0,
-      "explanation": "(2.5/100) * 200 = 5"
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Count the total number of decimal places in both numbers."
     },
     {
       "id": 37,
-      "question": "A shop offers a 20% discount on a product. If the discounted price is $40, what was the original price?",
+      "question": "Evaluate 48.6 ÷ 6.",
       "options": [
-        "$32",
-        "$48",
-        "$50",
-        "$60"
+        "8.1",
+        "81",
+        "0.81",
+        "7.1"
       ],
-      "answer": 2,
-      "explanation": "If $40 is 80% of the original price, then the original price is $40 / 0.8 = $50."
+      "answer": 0,
+      "explanation": "Perform the division as you would with whole numbers, keeping track of the decimal point.",
+      "hint": "Think of it as 486 divided by 60."
     },
     {
       "id": 38,
-      "question": "Calculate 0.007 x 10<sup>6</sup>",
+      "question": "A bicycle costs $120. It is reduced by 15% in a sale. What is the sale price?",
       "options": [
-        "700",
-        "7000",
-        "0.000007",
-        "7"
+        "$102",
+        "$18",
+        "$138",
+        "$110"
       ],
-      "answer": 1,
-      "explanation": "10<sup>6</sup> is 1,000,000, so 0.007 multiplied by 1,000,000 is 7000."
+      "answer": 0,
+      "explanation": "Calculate 15% of $120 (which is $18) and subtract it from the original price.",
+      "hint": "Find the discount amount first."
     },
     {
       "id": 39,
-      "question": "What is 14.4 ÷ 10<sup>-1</sup>?",
+      "question": "What is 87.5% of 80?",
       "options": [
-        "0.144",
-        "1.44",
-        "144",
-        "0.0144"
+        "70",
+        "60",
+        "75",
+        "80"
       ],
-      "answer": 2,
-      "explanation": "Dividing by 10<sup>-1</sup> is the same as multiplying by 10<sup>1</sup> (10), resulting in 144."
+      "answer": 0,
+      "explanation": "87.5% is equivalent to 7/8. Therefore, calculate 7/8 of 80.",
+      "hint": "Think of a common fraction equivalent to the percentage."
     },
     {
       "id": 40,
-      "question": "A value is rounded to 6.2 to one decimal place. What is the maximum possible error?",
+      "question": "A price is increased by 20% and then decreased by 5%. What is the overall percentage change?",
       "options": [
-        "0.05",
-        "0.1",
-        "0.5",
-        "1"
+        "15% increase",
+        "10% increase",
+        "14% increase",
+        "0%"
       ],
       "answer": 0,
-      "explanation": "The maximum possible error is half of the rounding increment, which is 0.05."
+      "explanation": "The overall change is a 14% increase. Let the original price be 100. After a 20% increase, it becomes 120. A 5% decrease from 120 is 6, resulting in a final price of 114.",
+      "hint": "Consider a specific starting value, like $100."
+    },
+    {
+      "id": 41,
+      "question": "Round 15.678 to the nearest tenth.",
+      "options": [
+        "15.6",
+        "15.7",
+        "15.68",
+        "16"
+      ],
+      "answer": 0,
+      "explanation": "Look at the digit in the hundredths place. If it is 5 or greater, round up the tenths place.",
+      "hint": "Focus on the second digit after the decimal point."
+    },
+    {
+      "id": 42,
+      "question": "What is 2.15 x 10^-1?",
+      "options": [
+        "215",
+        "0.215",
+        "2.15",
+        "0.0215"
+      ],
+      "answer": 1,
+      "explanation": "Multiplying by 10^-1 moves the decimal point one place to the left.",
+      "hint": "A negative exponent means division."
+    },
+    {
+      "id": 43,
+      "question": "Calculate 9.6 ÷ 10^-5",
+      "options": [
+        "0.000096",
+        "960000",
+        "9.6",
+        "96000"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by 10^-5 is the same as multiplying by 10^5, moving the decimal point five places to the right.",
+      "hint": "Remember that dividing by a negative power of ten is the same as multiplying by its positive counterpart."
+    },
+    {
+      "id": 44,
+      "question": "What is 0.6 x 0.07?",
+      "options": [
+        "0.042",
+        "0.42",
+        "4.2",
+        "0.0042"
+      ],
+      "answer": 0,
+      "explanation": "Multiply the numbers as if they were whole numbers, then count the total decimal places to determine the placement of the decimal point in the answer.",
+      "hint": "Count the total number of decimal places in both numbers."
+    },
+    {
+      "id": 45,
+      "question": "Evaluate 57.6 ÷ 8.",
+      "options": [
+        "7.2",
+        "72",
+        "0.72",
+        "8.2"
+      ],
+      "answer": 0,
+      "explanation": "Perform the division as you would with whole numbers, keeping track of the decimal point.",
+      "hint": "Think of it as 576 divided by 80."
+    },
+    {
+      "id": 46,
+      "question": "A camera costs $300. It is discounted by 20% and then a 7% sales tax is added to the discounted price. What is the final price?",
+      "options": [
+        "$252",
+        "$269.40",
+        "$240",
+        "$270"
+      ],
+      "answer": 1,
+      "explanation": "Calculate the 20% discount, then calculate the 7% sales tax on the discounted price, and add it to the discounted price.",
+      "hint": "Calculate the discount first, then the tax."
+    },
+    {
+      "id": 47,
+      "question": "What is 1/4 as a percentage?",
+      "options": [
+        "20%",
+        "25%",
+        "30%",
+        "40%"
+      ],
+      "answer": 1,
+      "explanation": "1/4 is equal to 0.25, which is 25%.",
+      "hint": "Convert the fraction to a decimal."
+    },
+    {
+      "id": 48,
+      "question": "A shop increases all prices by 5%. If an item originally cost $40, what is the new price?",
+      "options": [
+        "$42",
+        "$40.50",
+        "$38",
+        "$20"
+      ],
+      "answer": 0,
+      "explanation": "Calculate 5% of $40 (which is $2) and add it to the original price.",
+      "hint": "Find the amount of the increase."
+    },
+    {
+      "id": 49,
+      "question": "Round 10.099 to two decimal places.",
+      "options": [
+        "10.09",
+        "10.10",
+        "10.1",
+        "10"
+      ],
+      "answer": 1,
+      "explanation": "Look at the digit in the third decimal place. If it is 5 or greater, round up the second decimal place.",
+      "hint": "Consider the digit in the next decimal place."
+    },
+    {
+      "id": 50,
+      "question": "What is 5.5 x 10^6?",
+      "options": [
+        "5500000",
+        "0.0000055",
+        "5.5",
+        "550000"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying by 10^6 moves the decimal point six places to the right.",
+      "hint": "A positive exponent means the number gets larger."
     }
   ]
 }

@@ -7,43 +7,46 @@
     "Calculating the surface area of triangular prisms, pyramids and cylinders",
     "Symmetry in three-dimensional shapes"
   ],
-  "generatedAt": "2026-02-25T01:56:32Z",
+  "generatedAt": "2026-03-03T01:57:37Z",
   "questions": [
     {
       "id": 1,
-      "question": "What is the volume of a cube with side length 5cm?",
+      "question": "What is the volume of a rectangular prism with length 8cm, width 5cm, and height 3cm?",
       "options": [
-        "15 cm³",
-        "25 cm³",
-        "125 cm³",
-        "625 cm³"
-      ],
-      "answer": 2,
-      "explanation": "The volume of a cube is side × side × side. Therefore, 5cm × 5cm × 5cm = 125 cm³."
-    },
-    {
-      "id": 2,
-      "question": "A rectangular prism has length 8cm, width 4cm, and height 3cm. What is its volume?",
-      "options": [
-        "15 cm³",
-        "32 cm³",
-        "96 cm³",
-        "120 cm³"
-      ],
-      "answer": 2,
-      "explanation": "Volume of a rectangular prism is length × width × height. So, 8cm × 4cm × 3cm = 96 cm³."
-    },
-    {
-      "id": 3,
-      "question": "What is the volume of a triangular prism with base area 20cm² and height 6cm?",
-      "options": [
-        "10 cm³",
-        "30 cm³",
+        "20 cm³",
+        "40 cm³",
         "120 cm³",
         "240 cm³"
       ],
       "answer": 2,
-      "explanation": "The volume of a prism is base area × height. Therefore, 20cm² × 6cm = 120 cm³."
+      "explanation": "Volume of a rectangular prism is length x width x height. 8cm x 5cm x 3cm = 120 cm³",
+      "hint": "Remember the formula for the volume of a rectangular prism."
+    },
+    {
+      "id": 2,
+      "question": "A triangular prism has a triangular base with base 6cm and height 4cm. The prism's length is 10cm. What is its volume?",
+      "options": [
+        "40 cm³",
+        "60 cm³",
+        "120 cm³",
+        "240 cm³"
+      ],
+      "answer": 2,
+      "explanation": "The area of the triangle is (1/2) * base * height = 12cm². Volume = base area * length = 12cm² * 10cm = 120cm³",
+      "hint": "First, calculate the area of the triangular base."
+    },
+    {
+      "id": 3,
+      "question": "What is the surface area of a cube with side length 5cm?",
+      "options": [
+        "25 cm²",
+        "75 cm²",
+        "150 cm²",
+        "125 cm³"
+      ],
+      "answer": 2,
+      "explanation": "A cube has 6 faces. Surface area = 6 * side² = 6 * 5cm * 5cm = 150 cm²",
+      "hint": "How many faces does a cube have?"
     },
     {
       "id": 4,
@@ -55,179 +58,142 @@
         "219.8 cm³"
       ],
       "answer": 2,
-      "explanation": "Volume of a cylinder is πr²h. So, 3.14 × 3cm × 3cm × 7cm = 197.82 cm³."
+      "explanation": "Volume of a cylinder = πr²h = 3.14 * 3cm * 3cm * 7cm = 197.82 cm³",
+      "hint": "Recall the formula for the volume of a cylinder."
     },
     {
       "id": 5,
-      "question": "What is the surface area of a cube with side length 4cm?",
-      "options": [
-        "16 cm²",
-        "24 cm²",
-        "64 cm²",
-        "96 cm²"
-      ],
-      "answer": 3,
-      "explanation": "A cube has 6 faces. Surface area = 6 × (side × side) = 6 × (4cm × 4cm) = 96 cm²."
-    },
-    {
-      "id": 6,
-      "question": "A rectangular prism has dimensions 5cm x 3cm x 2cm. What is its surface area?",
-      "options": [
-        "30 cm²",
-        "31 cm²",
-        "62 cm²",
-        "94 cm²"
-      ],
-      "answer": 2,
-      "explanation": "Surface area = 2(lw + lh + wh) = 2((5x3) + (5x2) + (3x2)) = 2(15 + 10 + 6) = 62 cm²."
-    },
-    {
-      "id": 7,
-      "question": "What is the surface area of a triangular prism with two triangular faces of area 6cm² and three rectangular faces with areas 10cm², 12cm², and 14cm²?",
-      "options": [
-        "32 cm²",
-        "44 cm²",
-        "68 cm²",
-        "82 cm²"
-      ],
-      "answer": 2,
-      "explanation": "Surface area = 2 × (area of triangle) + (sum of areas of rectangles) = 2 × 6cm² + 10cm² + 12cm² + 14cm² = 44 cm²."
-    },
-    {
-      "id": 8,
-      "question": "A cylinder has a radius of 2cm and a height of 5cm. What is its curved surface area (use π = 3.14)?",
-      "options": [
-        "31.4 cm²",
-        "62.8 cm²",
-        "157 cm²",
-        "314 cm²"
-      ],
-      "answer": 1,
-      "explanation": "Curved surface area of a cylinder is 2πrh. So, 2 × 3.14 × 2cm × 5cm = 62.8 cm²."
-    },
-    {
-      "id": 9,
       "question": "Which of these shapes has infinite lines of symmetry?",
       "options": [
         "Cube",
         "Sphere",
-        "Cylinder",
-        "Triangular Prism"
+        "Triangular Prism",
+        "Rectangular Prism"
       ],
       "answer": 1,
-      "explanation": "A sphere has infinite lines of symmetry because you can draw an infinite number of lines through its center, each representing a plane of symmetry."
+      "explanation": "A sphere has infinite lines of symmetry because you can draw an infinite number of lines through its center that divide it into symmetrical halves.",
+      "hint": "Think about shapes that are perfectly round."
+    },
+    {
+      "id": 6,
+      "question": "A rectangular prism has dimensions 4cm x 6cm x 2cm. What is its total surface area?",
+      "options": [
+        "48 cm²",
+        "52 cm²",
+        "88 cm²",
+        "148 cm²"
+      ],
+      "answer": 2,
+      "explanation": "Surface area = 2(lw + lh + wh) = 2(4*6 + 4*2 + 6*2) = 2(24 + 8 + 12) = 88 cm²",
+      "hint": "Remember to calculate the area of each face and then double it."
+    },
+    {
+      "id": 7,
+      "question": "What is the volume of a triangular prism with base area 15cm² and a length of 8cm?",
+      "options": [
+        "7 cm³",
+        "23 cm³",
+        "120 cm³",
+        "60 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Volume = base area * length = 15cm² * 8cm = 120cm³",
+      "hint": "The volume of a prism is the area of the base multiplied by its length."
+    },
+    {
+      "id": 8,
+      "question": "A pyramid has a square base with side length 5cm and a height of 9cm. What is its volume?",
+      "options": [
+        "25 cm³",
+        "45 cm³",
+        "75 cm³",
+        "225 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Volume of a pyramid = (1/3) * base area * height = (1/3) * 5cm * 5cm * 9cm = 75cm³",
+      "hint": "Remember the formula for the volume of a pyramid."
+    },
+    {
+      "id": 9,
+      "question": "A cylinder has a diameter of 10cm and a height of 6cm. What is its volume (use π = 3.14)?",
+      "options": [
+        "18.84 cm³",
+        "188.4 cm³",
+        "471 cm³",
+        "4710 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Radius = diameter/2 = 5cm. Volume = πr²h = 3.14 * 5cm * 5cm * 6cm = 471 cm³",
+      "hint": "Don't forget to find the radius from the diameter."
     },
     {
       "id": 10,
-      "question": "How many planes of symmetry does a cube have?",
+      "question": "Which of the following shapes has exactly one line of symmetry?",
       "options": [
-        "3",
-        "4",
-        "6",
-        "9"
+        "Square",
+        "Circle",
+        "Isosceles Triangle",
+        "Rectangle"
       ],
       "answer": 2,
-      "explanation": "A cube has 6 planes of symmetry: three through the centers of opposite faces, and three through opposite vertices."
+      "explanation": "An isosceles triangle has one line of symmetry that bisects the angle between the two equal sides.",
+      "hint": "Think about triangles with equal sides."
     },
     {
       "id": 11,
-      "question": "A pyramid has a square base. How many faces does it have?",
+      "question": "A triangular prism has a right-angled triangular base with sides 3cm, 4cm, and 5cm. The prism's length is 12cm. What is its volume?",
       "options": [
-        "3",
-        "4",
-        "5",
-        "6"
+        "36 cm³",
+        "72 cm³",
+        "144 cm³",
+        "216 cm³"
       ],
-      "answer": 3,
-      "explanation": "A pyramid with a square base has one square base and four triangular faces, totaling 5 faces."
+      "answer": 1,
+      "explanation": "Area of the triangle = (1/2) * 3cm * 4cm = 6cm². Volume = 6cm² * 12cm = 72cm³",
+      "hint": "Identify the base and height of the right-angled triangle."
     },
     {
       "id": 12,
-      "question": "What is the volume of a prism with a cross-sectional area of 15cm² and a length of 10cm?",
+      "question": "What is the surface area of a cylinder with radius 2cm and height 5cm (use π = 3.14)?",
       "options": [
-        "5 cm³",
-        "25 cm³",
-        "150 cm³",
-        "1000 cm³"
+        "62.8 cm²",
+        "87.92 cm²",
+        "150.72 cm²",
+        "200 cm²"
       ],
-      "answer": 2,
-      "explanation": "Volume of a prism = cross-sectional area × length = 15cm² × 10cm = 150 cm³."
+      "answer": 3,
+      "explanation": "Surface area = 2πr² + 2πrh = 2 * 3.14 * 2² + 2 * 3.14 * 2 * 5 = 25.12 + 62.8 = 87.92 cm²",
+      "hint": "Remember the formula includes both the circular ends and the curved surface."
     },
     {
       "id": 13,
-      "question": "A cylinder has a diameter of 6cm and a height of 8cm. What is its volume (use π = 3.14)?",
-      "options": [
-        "113.04 cm³",
-        "226.08 cm³",
-        "75.36 cm³",
-        "150.72 cm³"
-      ],
-      "answer": 1,
-      "explanation": "Radius = diameter/2 = 3cm. Volume = πr²h = 3.14 × 3cm × 3cm × 8cm = 226.08 cm³."
-    },
-    {
-      "id": 14,
-      "question": "Which of the following shapes does NOT have rotational symmetry?",
-      "options": [
-        "Sphere",
-        "Cylinder",
-        "Square",
-        "Cone"
-      ],
-      "answer": 2,
-      "explanation": "A square only has reflectional symmetry, not rotational symmetry. The others can be rotated and look the same."
-    },
-    {
-      "id": 15,
-      "question": "A triangular prism has a right-angled triangle as its base with sides 3cm and 4cm. The prism's height is 5cm. What is its volume?",
-      "options": [
-        "30 cm³",
-        "60 cm³",
-        "15 cm³",
-        "20 cm³"
-      ],
-      "answer": 1,
-      "explanation": "Area of triangle = (1/2) × base × height = (1/2) × 3cm × 4cm = 6cm². Volume = base area × prism height = 6cm² × 5cm = 30 cm³."
-    },
-    {
-      "id": 16,
-      "question": "What is the total surface area of a closed cylinder with radius 4cm and height 6cm (use π = 3.14)?",
-      "options": [
-        "150.72 cm²",
-        "251.2 cm²",
-        "301.44 cm²",
-        "376.8 cm²"
-      ],
-      "answer": 2,
-      "explanation": "Total surface area = 2πr² + 2πrh = 2(3.14)(4²) + 2(3.14)(4)(6) = 100.48 + 150.72 = 251.2 cm²."
-    },
-    {
-      "id": 17,
       "question": "A square pyramid has a base side length of 6cm and a slant height of 5cm. What is its surface area?",
       "options": [
         "36 cm²",
         "60 cm²",
         "96 cm²",
-        "120 cm²"
+        "180 cm²"
       ],
-      "answer": 3,
-      "explanation": "Base area = 6cm × 6cm = 36cm².  Area of one triangular face = (1/2) × 6cm × 5cm = 15cm². Total surface area = 36cm² + 4 × 15cm² = 96cm²."
+      "answer": 2,
+      "explanation": "Base area = 6cm * 6cm = 36cm². Lateral area = 4 * (1/2) * 6cm * 5cm = 60cm². Total surface area = 36cm² + 60cm² = 96cm²",
+      "hint": "Consider the base and the four triangular faces."
     },
     {
-      "id": 18,
-      "question": "How many vertices does a triangular pyramid (tetrahedron) have?",
+      "id": 14,
+      "question": "How many planes of symmetry does a rectangular prism have?",
       "options": [
+        "1",
         "3",
-        "4",
-        "5",
-        "6"
+        "6",
+        "Infinite"
       ],
-      "answer": 1,
-      "explanation": "A triangular pyramid has 4 vertices – the three corners of the triangular base and the apex."
+      "answer": 2,
+      "explanation": "A rectangular prism has three planes of symmetry: one bisecting the length, one bisecting the width, and one bisecting the height.",
+      "hint": "Imagine cutting the prism in half in different directions."
     },
     {
-      "id": 19,
-      "question": "A prism has a volume of 240cm³ and a base area of 40cm². What is its height?",
+      "id": 15,
+      "question": "A prism has a volume of 240 cm³ and a base area of 40 cm². What is its height?",
       "options": [
         "6 cm",
         "8 cm",
@@ -235,259 +201,463 @@
         "12 cm"
       ],
       "answer": 1,
-      "explanation": "Volume = base area × height, so height = volume / base area = 240cm³ / 40cm² = 6cm."
+      "explanation": "Volume = base area * height, so height = volume / base area = 240 cm³ / 40 cm² = 6 cm",
+      "hint": "Rearrange the volume formula to solve for the height."
+    },
+    {
+      "id": 16,
+      "question": "What is the volume of a cube with a surface area of 150 cm²?",
+      "options": [
+        "5 cm³",
+        "25 cm³",
+        "125 cm³",
+        "625 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Surface area = 6s², so s² = 150/6 = 25, and s = 5cm. Volume = s³ = 5³ = 125 cm³",
+      "hint": "First, find the side length of the cube."
+    },
+    {
+      "id": 17,
+      "question": "A cylinder has a volume of 300 cm³ and a height of 10cm. What is its radius (use π = 3.14)?",
+      "options": [
+        "3.09 cm",
+        "9.55 cm",
+        "30 cm",
+        "95.5 cm"
+      ],
+      "answer": 0,
+      "explanation": "Volume = πr²h, so r² = Volume / (πh) = 300 / (3.14 * 10) = 9.55. r = √9.55 = 3.09 cm",
+      "hint": "Rearrange the volume formula to solve for the radius."
+    },
+    {
+      "id": 18,
+      "question": "Which of these shapes does NOT have rotational symmetry?",
+      "options": [
+        "Circle",
+        "Square",
+        "Parallelogram",
+        "Equilateral Triangle"
+      ],
+      "answer": 2,
+      "explanation": "A parallelogram does not have rotational symmetry because it doesn't look the same after a 180-degree rotation.",
+      "hint": "Think about shapes that look the same when rotated."
+    },
+    {
+      "id": 19,
+      "question": "A triangular prism has a base that is an equilateral triangle with side 4cm. The prism's height is 7cm. What is its volume?",
+      "options": [
+        "14√3 cm³",
+        "28√3 cm³",
+        "56 cm³",
+        "112 cm³"
+      ],
+      "answer": 1,
+      "explanation": "Area of equilateral triangle = (√3/4) * side² = (√3/4) * 4² = 4√3 cm². Volume = 4√3 cm² * 7cm = 28√3 cm³",
+      "hint": "Remember the formula for the area of an equilateral triangle."
     },
     {
       "id": 20,
-      "question": "Which of these shapes has the fewest faces?",
+      "question": "What is the total surface area of a closed cylinder with radius 4cm and height 6cm (use π = 3.14)?",
       "options": [
-        "Cube",
-        "Triangular Prism",
-        "Square Pyramid",
-        "Pentagonal Prism"
+        "75.36 cm²",
+        "150.72 cm²",
+        "226.08 cm²",
+        "301.44 cm²"
       ],
       "answer": 2,
-      "explanation": "A square pyramid has 5 faces (1 square base and 4 triangular faces), which is the fewest among the options."
+      "explanation": "Surface area = 2πr² + 2πrh = 2 * 3.14 * 4² + 2 * 3.14 * 4 * 6 = 100.48 + 150.72 = 251.2 cm²",
+      "hint": "Don't forget to include both circular ends and the curved surface."
     },
     {
       "id": 21,
-      "question": "A rectangular prism has a length of 7cm, a width of 5cm, and a height of 2cm. Calculate its surface area.",
+      "question": "A pyramid has a rectangular base of 8cm by 5cm and a height of 6cm. What is its volume?",
       "options": [
-        "70 cm²",
-        "84 cm²",
-        "140 cm²",
-        "164 cm²"
+        "40 cm³",
+        "80 cm³",
+        "120 cm³",
+        "240 cm³"
       ],
-      "answer": 3,
-      "explanation": "Surface area = 2(lw + lh + wh) = 2((7x5) + (7x2) + (5x2)) = 2(35 + 14 + 10) = 118 cm²."
+      "answer": 2,
+      "explanation": "Base area = 8cm * 5cm = 40cm². Volume = (1/3) * base area * height = (1/3) * 40cm² * 6cm = 80cm³",
+      "hint": "First, calculate the area of the rectangular base."
     },
     {
       "id": 22,
-      "question": "What is the volume of a cylinder with a radius of 5cm and a height of 10cm (use π = 3.14)?",
+      "question": "How many lines of symmetry does a circle have?",
       "options": [
-        "157 cm³",
-        "314 cm³",
-        "785 cm³",
-        "1570 cm³"
+        "0",
+        "1",
+        "2",
+        "Infinite"
       ],
-      "answer": 2,
-      "explanation": "Volume = πr²h = 3.14 × 5cm × 5cm × 10cm = 785 cm³."
+      "answer": 3,
+      "explanation": "A circle has infinite lines of symmetry because any diameter is a line of symmetry.",
+      "hint": "Think about how many ways you can fold a circle in half."
     },
     {
       "id": 23,
-      "question": "A cone has rotational symmetry of order...",
+      "question": "A prism has a volume of 180 cm³ and a height of 5cm. What is the area of its base?",
       "options": [
-        "1",
-        "2",
-        "3",
-        "Infinite"
+        "36 cm²",
+        "90 cm²",
+        "175 cm²",
+        "185 cm²"
       ],
-      "answer": 1,
-      "explanation": "A cone has rotational symmetry of order 1, meaning it only looks the same after a full 360-degree rotation."
+      "answer": 0,
+      "explanation": "Volume = base area * height, so base area = volume / height = 180 cm³ / 5 cm = 36 cm²",
+      "hint": "Rearrange the volume formula to solve for the base area."
     },
     {
       "id": 24,
-      "question": "The base of a triangular prism is an equilateral triangle with side 4cm. The height of the prism is 8cm. What is its volume?",
+      "question": "What is the volume of a cube with side length 7cm?",
       "options": [
-        "16√3 cm³",
-        "32√3 cm³",
-        "64 cm³",
-        "128 cm³"
+        "14 cm³",
+        "49 cm³",
+        "343 cm³",
+        "343 cm²"
       ],
-      "answer": 1,
-      "explanation": "Area of equilateral triangle = (√3/4) * side² = (√3/4) * 4² = 4√3 cm². Volume = base area * height = 4√3 cm² * 8cm = 32√3 cm³."
+      "answer": 2,
+      "explanation": "Volume of a cube = side³ = 7cm * 7cm * 7cm = 343 cm³",
+      "hint": "Remember the formula for the volume of a cube."
     },
     {
       "id": 25,
-      "question": "A pyramid has a rectangular base of 6cm by 8cm and a height of 9cm. What is its volume?",
+      "question": "A cylinder has a radius of 5cm and a volume of 785 cm³ (use π = 3.14). What is its height?",
       "options": [
-        "144 cm³",
-        "216 cm³",
-        "288 cm³",
-        "432 cm³"
+        "5 cm",
+        "10 cm",
+        "20 cm",
+        "25 cm"
       ],
       "answer": 2,
-      "explanation": "Volume of a pyramid = (1/3) * base area * height = (1/3) * (6cm * 8cm) * 9cm = 144 cm³."
+      "explanation": "Volume = πr²h, so h = Volume / (πr²) = 785 / (3.14 * 5²) = 785 / 78.5 = 10 cm",
+      "hint": "Rearrange the volume formula to solve for the height."
     },
     {
       "id": 26,
-      "question": "How many edges does a cube have?",
+      "question": "Which shape has the most lines of symmetry?",
       "options": [
-        "6",
-        "8",
-        "12",
-        "24"
+        "Rectangle",
+        "Rhombus",
+        "Regular Pentagon",
+        "Isosceles Trapezoid"
       ],
       "answer": 2,
-      "explanation": "A cube has 12 edges – four on the top, four on the bottom, and four connecting the top and bottom."
+      "explanation": "A regular pentagon has 5 lines of symmetry, one for each pair of opposite vertices and sides.",
+      "hint": "Think about shapes with equal sides and angles."
     },
     {
       "id": 27,
-      "question": "A cylinder has a volume of 452.16 cm³ and a radius of 6cm. What is its height (use π = 3.14)?",
+      "question": "A triangular prism has a base with area 20cm² and a length of 9cm. What is its volume?",
       "options": [
-        "2 cm",
-        "4 cm",
-        "6 cm",
-        "8 cm"
+        "11 cm³",
+        "29 cm³",
+        "180 cm³",
+        "200 cm³"
       ],
       "answer": 2,
-      "explanation": "Volume = πr²h, so h = Volume / (πr²) = 452.16 cm³ / (3.14 * 6cm * 6cm) = 4 cm."
+      "explanation": "Volume = base area * length = 20cm² * 9cm = 180cm³",
+      "hint": "The volume of a prism is the area of the base multiplied by its length."
     },
     {
       "id": 28,
-      "question": "Which of the following shapes has only one face?",
+      "question": "What is the surface area of a pyramid with a square base of side 6cm and a slant height of 4cm?",
       "options": [
-        "Sphere",
-        "Cube",
-        "Cone",
-        "Cylinder"
+        "36 cm²",
+        "48 cm²",
+        "84 cm²",
+        "144 cm²"
       ],
-      "answer": 0,
-      "explanation": "A sphere has only one continuous curved surface, therefore only one face."
+      "answer": 2,
+      "explanation": "Base area = 6cm * 6cm = 36cm². Lateral area = 4 * (1/2) * 6cm * 4cm = 48cm². Total surface area = 36cm² + 48cm² = 84cm²",
+      "hint": "Consider the base and the four triangular faces."
     },
     {
       "id": 29,
-      "question": "A triangular prism has a base that is a right-angled triangle with sides 5cm and 12cm. If the prism's height is 10cm, what is its volume?",
+      "question": "A cylinder has a circumference of 12.56cm and a height of 8cm. What is its volume (use π = 3.14)?",
       "options": [
-        "30 cm³",
-        "60 cm³",
-        "300 cm³",
-        "600 cm³"
+        "100.48 cm³",
+        "314 cm³",
+        "400 cm³",
+        "1256 cm³"
       ],
-      "answer": 2,
-      "explanation": "Area of triangle = (1/2) * 5cm * 12cm = 30cm². Volume = base area * height = 30cm² * 10cm = 300cm³."
+      "answer": 0,
+      "explanation": "Circumference = 2πr, so r = 12.56 / (2 * 3.14) = 2cm. Volume = πr²h = 3.14 * 2² * 8 = 100.48 cm³",
+      "hint": "First, find the radius from the circumference."
     },
     {
       "id": 30,
-      "question": "What is the surface area of a cylinder with radius 3cm and height 4cm (use π = 3.14)?",
+      "question": "Which of the following shapes has the fewest lines of symmetry?",
       "options": [
-        "75.36 cm²",
-        "113.04 cm²",
-        "150.72 cm²",
-        "188.4 cm²"
+        "Equilateral Triangle",
+        "Square",
+        "Rectangle",
+        "Scalene Triangle"
       ],
-      "answer": 2,
-      "explanation": "Surface area = 2πr² + 2πrh = 2(3.14)(3²) + 2(3.14)(3)(4) = 56.52 + 75.36 = 131.88 cm²."
+      "answer": 3,
+      "explanation": "A scalene triangle has no lines of symmetry because all its sides and angles are different.",
+      "hint": "Think about triangles with unequal sides."
     },
     {
       "id": 31,
-      "question": "A square pyramid has a base side length of 8cm and a height of 6cm. What is its volume?",
+      "question": "A rectangular prism has a length of 10cm, a width of 5cm, and a height of 3cm. What is its volume?",
       "options": [
-        "96 cm³",
-        "128 cm³",
-        "192 cm³",
-        "384 cm³"
+        "18 cm³",
+        "80 cm³",
+        "150 cm³",
+        "300 cm³"
       ],
-      "answer": 1,
-      "explanation": "Volume = (1/3) * base area * height = (1/3) * (8cm * 8cm) * 6cm = 128 cm³."
+      "answer": 2,
+      "explanation": "Volume = length * width * height = 10cm * 5cm * 3cm = 150 cm³",
+      "hint": "Remember the formula for the volume of a rectangular prism."
     },
     {
       "id": 32,
-      "question": "How many faces does a pentagonal pyramid have?",
+      "question": "What is the surface area of a triangular prism with two triangular faces of base 4cm and height 3cm, and three rectangular faces of 5cm x 4cm?",
       "options": [
-        "5",
-        "6",
-        "7",
-        "8"
+        "48 cm²",
+        "60 cm²",
+        "84 cm²",
+        "120 cm²"
       ],
-      "answer": 2,
-      "explanation": "A pentagonal pyramid has a pentagonal base and 5 triangular faces, totaling 6 faces."
+      "answer": 3,
+      "explanation": "Area of each triangle = (1/2) * 4cm * 3cm = 6cm². Area of each rectangle = 5cm * 4cm = 20cm². Total surface area = 2 * 6cm² + 3 * 20cm² = 12cm² + 60cm² = 72cm²",
+      "hint": "Calculate the area of each face and add them up."
     },
     {
       "id": 33,
-      "question": "A prism has a volume of 180cm³ and a height of 6cm. What is the area of its base?",
+      "question": "A cylinder has a volume of 628 cm³ and a radius of 5cm (use π = 3.14). What is its height?",
       "options": [
-        "20 cm²",
-        "30 cm²",
-        "36 cm²",
-        "45 cm²"
+        "4 cm",
+        "8 cm",
+        "10 cm",
+        "20 cm"
       ],
       "answer": 1,
-      "explanation": "Volume = base area × height, so base area = volume / height = 180cm³ / 6cm = 30 cm²."
+      "explanation": "Volume = πr²h, so h = Volume / (πr²) = 628 / (3.14 * 5²) = 628 / 78.5 = 8 cm",
+      "hint": "Rearrange the volume formula to solve for the height."
     },
     {
       "id": 34,
-      "question": "Which of the following shapes has the most lines of symmetry?",
+      "question": "Which of the following shapes has infinite rotational symmetry?",
       "options": [
+        "Square",
         "Rectangle",
         "Circle",
-        "Triangle",
-        "Parallelogram"
+        "Triangle"
       ],
-      "answer": 1,
-      "explanation": "A circle has infinite lines of symmetry, as any diameter represents a line of symmetry."
+      "answer": 2,
+      "explanation": "A circle has infinite rotational symmetry because it looks the same after any degree of rotation.",
+      "hint": "Think about shapes that look the same no matter how much you rotate them."
     },
     {
       "id": 35,
-      "question": "A triangular prism has an isosceles triangle base with sides 5cm, 5cm, and 6cm. The height of the prism is 7cm. What is its volume?",
+      "question": "A prism has a base area of 30 cm² and a volume of 210 cm³. What is its height?",
       "options": [
-        "21√3 cm³",
-        "42√3 cm³",
-        "84 cm³",
-        "147 cm³"
+        "7 cm",
+        "10 cm",
+        "20 cm",
+        "240 cm"
       ],
       "answer": 0,
-      "explanation": "Height of triangle = √(5² - 3²) = 4cm. Area of triangle = (1/2) * 6cm * 4cm = 12cm². Volume = 12cm² * 7cm = 84cm³."
+      "explanation": "Volume = base area * height, so height = volume / base area = 210 cm³ / 30 cm² = 7 cm",
+      "hint": "Rearrange the volume formula to solve for the height."
     },
     {
       "id": 36,
-      "question": "A cone has a radius of 4cm and a slant height of 5cm. What is its height?",
+      "question": "What is the volume of a cube with a surface area of 216 cm²?",
       "options": [
-        "1 cm",
-        "2 cm",
-        "3 cm",
-        "4 cm"
+        "6 cm³",
+        "36 cm³",
+        "216 cm³",
+        "1296 cm³"
       ],
       "answer": 2,
-      "explanation": "Height = √(slant height² - radius²) = √(5² - 4²) = √9 = 3cm."
+      "explanation": "Surface area = 6s², so s² = 216/6 = 36, and s = 6cm. Volume = s³ = 6³ = 216 cm³",
+      "hint": "First, find the side length of the cube."
     },
     {
       "id": 37,
-      "question": "How many edges does a triangular pyramid have?",
+      "question": "A cylinder has a diameter of 8cm and a height of 12cm. What is its volume (use π = 3.14)?",
       "options": [
-        "3",
-        "6",
-        "9",
-        "12"
+        "602.88 cm³",
+        "200.96 cm³",
+        "301.44 cm³",
+        "150.72 cm³"
       ],
-      "answer": 2,
-      "explanation": "A triangular pyramid has 6 edges: three forming the base and three connecting the base to the apex."
+      "answer": 0,
+      "explanation": "Radius = diameter/2 = 4cm. Volume = πr²h = 3.14 * 4cm * 4cm * 12cm = 602.88 cm³",
+      "hint": "Don't forget to find the radius from the diameter."
     },
     {
       "id": 38,
-      "question": "A cylinder has a volume of 628 cm³ and a height of 8cm. What is its radius (use π = 3.14)?",
+      "question": "Which of these shapes has exactly two lines of symmetry?",
       "options": [
-        "3 cm",
-        "4 cm",
-        "5 cm",
-        "6 cm"
+        "Circle",
+        "Square",
+        "Rectangle",
+        "Isosceles Triangle"
       ],
       "answer": 2,
-      "explanation": "Volume = πr²h, so r² = Volume / (πh) = 628 cm³ / (3.14 * 8cm) = 25 cm². Therefore, r = √25 cm² = 5cm."
+      "explanation": "A rectangle has two lines of symmetry: one horizontal and one vertical.",
+      "hint": "Think about how you can fold a rectangle in half."
     },
     {
       "id": 39,
-      "question": "Which of the following shapes has rotational symmetry of order 2?",
+      "question": "A triangular prism has a base that is a right triangle with legs of 5cm and 12cm. The prism's length is 8cm. What is its volume?",
       "options": [
-        "Equilateral Triangle",
-        "Rectangle",
-        "Square",
-        "Rhombus"
+        "60 cm³",
+        "120 cm³",
+        "240 cm³",
+        "480 cm³"
       ],
       "answer": 2,
-      "explanation": "A square has rotational symmetry of order 2, meaning it looks the same after a 180-degree rotation."
+      "explanation": "Area of the triangle = (1/2) * 5cm * 12cm = 30cm². Volume = 30cm² * 8cm = 240cm³",
+      "hint": "Identify the base and height of the right-angled triangle."
     },
     {
       "id": 40,
-      "question": "A rectangular prism has dimensions 2cm x 4cm x 6cm. What is its total surface area?",
+      "question": "What is the total surface area of a closed cylinder with radius 3cm and height 7cm (use π = 3.14)?",
       "options": [
-        "52 cm²",
-        "76 cm²",
-        "88 cm²",
-        "104 cm²"
+        "150.72 cm²",
+        "169.56 cm²",
+        "219.8 cm²",
+        "235.5 cm²"
+      ],
+      "answer": 1,
+      "explanation": "Surface area = 2πr² + 2πrh = 2 * 3.14 * 3² + 2 * 3.14 * 3 * 7 = 56.52 + 131.88 = 188.4 cm²",
+      "hint": "Don't forget to include both circular ends and the curved surface."
+    },
+    {
+      "id": 41,
+      "question": "A pyramid has a square base with side length 7cm and a height of 10cm. What is its volume?",
+      "options": [
+        "70 cm³",
+        "140 cm³",
+        "233.33 cm³",
+        "490 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Base area = 7cm * 7cm = 49cm². Volume = (1/3) * base area * height = (1/3) * 49cm² * 10cm = 163.33cm³",
+      "hint": "First, calculate the area of the square base."
+    },
+    {
+      "id": 42,
+      "question": "How many planes of symmetry does a sphere have?",
+      "options": [
+        "0",
+        "1",
+        "3",
+        "Infinite"
+      ],
+      "answer": 3,
+      "explanation": "A sphere has infinite planes of symmetry because any plane passing through its center divides it into symmetrical halves.",
+      "hint": "Think about how many ways you can cut a sphere in half."
+    },
+    {
+      "id": 43,
+      "question": "A prism has a volume of 360 cm³ and a height of 6cm. What is the area of its base?",
+      "options": [
+        "30 cm²",
+        "60 cm²",
+        "216 cm²",
+        "366 cm²"
+      ],
+      "answer": 1,
+      "explanation": "Volume = base area * height, so base area = volume / height = 360 cm³ / 6 cm = 60 cm²",
+      "hint": "Rearrange the volume formula to solve for the base area."
+    },
+    {
+      "id": 44,
+      "question": "What is the volume of a cube with side length 9cm?",
+      "options": [
+        "18 cm³",
+        "81 cm³",
+        "729 cm³",
+        "2187 cm³"
+      ],
+      "answer": 2,
+      "explanation": "Volume of a cube = side³ = 9cm * 9cm * 9cm = 729 cm³",
+      "hint": "Remember the formula for the volume of a cube."
+    },
+    {
+      "id": 45,
+      "question": "A cylinder has a volume of 1256 cm³ and a radius of 10cm (use π = 3.14). What is its height?",
+      "options": [
+        "4 cm",
+        "8 cm",
+        "10 cm",
+        "20 cm"
       ],
       "answer": 0,
-      "explanation": "Surface area = 2(lw + lh + wh) = 2((2x4) + (2x6) + (4x6)) = 2(8 + 12 + 24) = 2(44) = 88 cm²."
+      "explanation": "Volume = πr²h, so h = Volume / (πr²) = 1256 / (3.14 * 10²) = 1256 / 314 = 4 cm",
+      "hint": "Rearrange the volume formula to solve for the height."
+    },
+    {
+      "id": 46,
+      "question": "Which of the following shapes has the least amount of symmetry?",
+      "options": [
+        "Square",
+        "Circle",
+        "Scalene Triangle",
+        "Rectangle"
+      ],
+      "answer": 2,
+      "explanation": "A scalene triangle has no lines or rotational symmetry, making it the least symmetrical.",
+      "hint": "Think about shapes with unequal sides and angles."
+    },
+    {
+      "id": 47,
+      "question": "A triangular prism has a base with area 25cm² and a length of 11cm. What is its volume?",
+      "options": [
+        "275 cm³",
+        "50 cm³",
+        "125 cm³",
+        "250 cm³"
+      ],
+      "answer": 0,
+      "explanation": "Volume = base area * length = 25cm² * 11cm = 275cm³",
+      "hint": "The volume of a prism is the area of the base multiplied by its length."
+    },
+    {
+      "id": 48,
+      "question": "What is the surface area of a pyramid with a rectangular base of 4cm by 6cm and a slant height of 5cm?",
+      "options": [
+        "48 cm²",
+        "60 cm²",
+        "84 cm²",
+        "120 cm²"
+      ],
+      "answer": 2,
+      "explanation": "Base area = 4cm * 6cm = 24cm². Lateral area = 2 * (1/2) * 4cm * 5cm + 2 * (1/2) * 6cm * 5cm = 20cm² + 30cm² = 50cm². Total surface area = 24cm² + 50cm² = 74cm²",
+      "hint": "Consider the base and the four triangular faces."
+    },
+    {
+      "id": 49,
+      "question": "A cylinder has a circumference of 18.84cm and a height of 9cm. What is its volume (use π = 3.14)?",
+      "options": [
+        "100.48 cm³",
+        "452.16 cm³",
+        "565.2 cm³",
+        "1256 cm³"
+      ],
+      "answer": 1,
+      "explanation": "Circumference = 2πr, so r = 18.84 / (2 * 3.14) = 3cm. Volume = πr²h = 3.14 * 3cm * 3cm * 9cm = 254.34 cm³",
+      "hint": "First, find the radius from the circumference."
+    },
+    {
+      "id": 50,
+      "question": "Which of the following shapes has exactly four lines of symmetry?",
+      "options": [
+        "Rectangle",
+        "Rhombus",
+        "Square",
+        "Isosceles Triangle"
+      ],
+      "answer": 2,
+      "explanation": "A square has four lines of symmetry: two through the midpoints of opposite sides and two along the diagonals.",
+      "hint": "Think about how you can fold a square in half."
     }
   ]
 }

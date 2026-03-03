@@ -6,487 +6,513 @@
     "Using ratios",
     "Direct and inverse proportion"
   ],
-  "generatedAt": "2026-02-25T05:43:52Z",
+  "generatedAt": "2026-03-03T01:51:10Z",
   "questions": [
     {
       "id": 1,
-      "question": "A recipe requires flour and sugar in the ratio 5:3. If you use 150g of flour, how much sugar do you need?",
+      "question": "A recipe for cookies requires flour and sugar in the ratio 5:3. If you use 100g of flour, how much sugar do you need?",
       "options": [
-        "90g",
+        "30g",
         "60g",
-        "100g",
-        "75g"
+        "75g",
+        "150g"
       ],
-      "answer": 0,
-      "explanation": "150/5=30g per part. Sugar = 3×30 = 90g."
+      "answer": 1,
+      "explanation": "The ratio is 5:3, meaning for every 5 parts flour, you need 3 parts sugar.  100g flour is 20 times 5, so you need 20 times 3 sugar.",
+      "hint": "Think about scaling the ratio to match the amount of flour you're using."
     },
     {
       "id": 2,
-      "question": "Simplify the ratio 24:36.",
+      "question": "Simplify the ratio 12:18.",
       "options": [
         "2:3",
+        "3:4",
         "4:6",
-        "6:9",
-        "4:3"
+        "6:9"
       ],
       "answer": 0,
-      "explanation": "HCF of 24 and 36 is 12. 24/12:36/12 = 2:3."
+      "explanation": "Both 12 and 18 are divisible by 6. Dividing both sides by 6 simplifies the ratio to 2:3.",
+      "hint": "Find the highest common factor of both numbers."
     },
     {
       "id": 3,
       "question": "If 3 apples cost $1.50, what is the cost of 7 apples?",
-      "options": [
-        "$2.80",
-        "$3.50",
-        "$2.10",
-        "$4.20"
-      ],
+      "options": "$2.80",
+      "$3.50": "$4.20",
+      "$5.25": "",
       "answer": 1,
-      "explanation": "Cost per apple = $0.50. 7 × $0.50 = $3.50."
+      "explanation": "First find the cost of one apple ($0.50), then multiply by 7 to find the cost of 7 apples.",
+      "hint": "Calculate the price of a single item first."
     },
     {
       "id": 4,
-      "question": "A map has a scale of 1:50,000. What is the actual distance between two towns that are 4cm apart on the map?",
-      "options": [
-        "200m",
-        "2km",
-        "20km",
-        "200km"
-      ],
-      "answer": 1,
-      "explanation": "4 × 50,000cm = 200,000cm = 2km."
+      "question": "A map has a scale of 1:50,000.  Two towns are 7cm apart on the map. What is the actual distance between the towns in kilometers?",
+      "options": "3.5 km",
+      "7 km": "35 km",
+      "350 km": "",
+      "answer": 2,
+      "explanation": "7cm on the map represents 7 * 50,000 cm in reality. Converting cm to km gives 35 km.",
+      "hint": "Remember to convert centimeters to kilometers."
     },
     {
       "id": 5,
       "question": "Divide $60 in the ratio 2:3.",
-      "options": [
-        "$24 and $36",
-        "$30 and $30",
-        "$18 and $42",
-        "$20 and $40"
-      ],
+      "options": "$24 and $36",
+      "$30 and $30": "$18 and $42",
+      "$20 and $40": "",
       "answer": 0,
-      "explanation": "Total 5 parts. Each part = $12. Shares: 2×$12=$24, 3×$12=$36."
+      "explanation": "The total ratio parts are 2+3=5. Each part represents $60/5 = $12.  Therefore, the shares are 2*$12=$24 and 3*$12=$36.",
+      "hint": "Find the value of one 'part' of the ratio."
     },
     {
       "id": 6,
       "question": "If y is directly proportional to x, and y = 12 when x = 3, what is the value of y when x = 5?",
-      "options": [
-        "20",
-        "15",
-        "18",
-        "24"
-      ],
-      "answer": 0,
-      "explanation": "y = kx. k = 12/3 = 4. y = 4×5 = 20."
+      "options": "10",
+      "15": "20",
+      "25": "",
+      "answer": 2,
+      "explanation": "Since y is directly proportional to x, y = kx.  Find k using the first set of values (k=4), then substitute x=5 to find y.",
+      "hint": "Write down the general form of a direct proportion."
     },
     {
       "id": 7,
-      "question": "A car travels 120km in 2 hours. What is its average speed?",
-      "options": [
-        "60 km/h",
-        "40 km/h",
-        "80 km/h",
-        "100 km/h"
-      ],
-      "answer": 0,
-      "explanation": "Speed = 120/2 = 60 km/h."
+      "question": "A car travels 120 miles in 2 hours.  At the same speed, how long will it take to travel 300 miles?",
+      "options": "3 hours",
+      "4 hours": "5 hours",
+      "6 hours": "",
+      "answer": 2,
+      "explanation": "The speed is 120 miles / 2 hours = 60 miles per hour. Time = Distance / Speed, so 300 miles / 60 mph = 5 hours.",
+      "hint": "Calculate the speed first."
     },
     {
       "id": 8,
-      "question": "If p is inversely proportional to q, and p = 6 when q = 2, what is the value of p when q = 3?",
-      "options": [
-        "4",
-        "9",
-        "12",
-        "36"
-      ],
+      "question": "If a:b = 3:4 and b:c = 5:6, what is the ratio a:c?",
+      "options": "9:10",
+      "15:24": "1:2",
+      "2:5": "",
       "answer": 0,
-      "explanation": "pq = k = 12. p = 12/3 = 4."
+      "explanation": "To find a:c, multiply the ratios to eliminate 'b'. (3/4) * (5/6) = 15/24 which simplifies to 5/8.  However, we need a:c, so we need to adjust b to be the same in both ratios. Multiply the first ratio by 5 and the second by 4 to get 15:20 and 20:24, giving a:c = 15:24 which simplifies to 5:8.  Oops! Let's try again.  Multiply the first ratio by 5 and the second by 4 to get 15:20 and 20:24. Therefore a:c = 15:24 which simplifies to 5:8. My apologies for the initial error.",
+      "hint": "Try to make the 'b' values the same in both ratios."
     },
     {
       "id": 9,
-      "question": "Express 75% as a ratio in its simplest form.",
-      "options": [
-        "1:4",
-        "3:4",
-        "1:3",
-        "2:3"
-      ],
-      "answer": 1,
-      "explanation": "75% = 75/100 = 3/4, expressed as ratio 3:4 (or 3:1 part to remainder). As fraction ratio: 3:4."
+      "question": "If x is inversely proportional to y, and x = 4 when y = 3, what is the value of x when y = 6?",
+      "options": "2",
+      "6": "8",
+      "12": "",
+      "answer": 0,
+      "explanation": "Since x is inversely proportional to y, x = k/y. Find k using the first set of values (k=12), then substitute y=6 to find x.",
+      "hint": "Write down the general form of an inverse proportion."
     },
     {
       "id": 10,
-      "question": "Two numbers are in the ratio 1:4 and their sum is 25. What is the smaller number?",
-      "options": [
-        "5",
-        "10",
-        "20",
-        "15"
-      ],
-      "answer": 0,
-      "explanation": "x + 4x = 25, 5x = 25, x = 5."
+      "question": "A painter can paint a room in 6 hours. How long will it take two painters working at the same rate to paint the same room?",
+      "options": "1 hour",
+      "2 hours": "3 hours",
+      "12 hours": "",
+      "answer": 1,
+      "explanation": "If one painter takes 6 hours, their work rate is 1/6 of the room per hour. Two painters have a combined rate of 2/6 = 1/3, so they take 3 hours.",
+      "hint": "Think about how the work rate changes with more people."
     },
     {
       "id": 11,
-      "question": "If 5 workers can complete a job in 8 days, how long will it take 10 workers to complete the same job?",
-      "options": [
-        "16 days",
-        "4 days",
-        "20 days",
-        "10 days"
-      ],
+      "question": "Express 75% as a ratio in its simplest form.",
+      "options": "1:4",
+      "3:4": "1:3",
+      "3:1": "",
       "answer": 1,
-      "explanation": "Workers × Days = 40. 10 × Days = 40, Days = 4."
+      "explanation": "75% is equivalent to 75/100, which simplifies to 3/4.  Therefore, the ratio is 3:4.",
+      "hint": "Convert the percentage to a fraction first."
     },
     {
       "id": 12,
-      "question": "A recipe for 4 people requires 200g of pasta. How much pasta is needed for 6 people?",
-      "options": [
-        "250g",
-        "300g",
-        "350g",
-        "400g"
-      ],
-      "answer": 1,
-      "explanation": "50g per person. 6 × 50g = 300g."
+      "question": "If 5 workers can build a wall in 8 days, how many days will it take 10 workers to build the same wall?",
+      "options": "2 days",
+      "4 days": "16 days",
+      "40 days": "",
+      "answer": 0,
+      "explanation": "This is an inverse proportion. More workers mean less time. 5 * 8 = 40 worker-days.  40 worker-days / 10 workers = 4 days.",
+      "hint": "Consider whether the relationship is direct or inverse."
     },
     {
       "id": 13,
-      "question": "What is the ratio of 1 hour 30 minutes to 45 minutes?",
-      "options": [
-        "1:3",
-        "2:1",
-        "3:1",
-        "1:2"
-      ],
-      "answer": 1,
-      "explanation": "90 minutes : 45 minutes = 2:1."
+      "question": "A recipe uses 200g of flour for every 50g of butter. How much flour is needed for 150g of butter?",
+      "options": "300g",
+      "450g": "600g",
+      "750g": "",
+      "answer": 2,
+      "explanation": "The ratio of flour to butter is 200:50, which simplifies to 4:1.  For 150g of butter, you need 4 * 150g = 600g of flour.",
+      "hint": "Simplify the ratio first."
     },
     {
       "id": 14,
-      "question": "If x:y = 3:5 and y:z = 2:7, what is x:z?",
-      "options": [
-        "6:35",
-        "5:12",
-        "3:7",
-        "6:7"
-      ],
-      "answer": 0,
-      "explanation": "Multiply: (3/5)×(2/7) = 6/35, so x:z = 6:35."
+      "question": "If x:y = 2:5, and y = 10, what is the value of x?",
+      "options": "2",
+      "4": "5",
+      "25": "",
+      "answer": 1,
+      "explanation": "Set up the proportion 2/5 = x/10. Cross-multiply to get 5x = 20, so x = 4.",
+      "hint": "Use cross-multiplication to solve for x."
     },
     {
       "id": 15,
       "question": "A train travels at a constant speed of 80 km/h. How far will it travel in 3.5 hours?",
-      "options": [
-        "240 km",
-        "280 km",
-        "300 km",
-        "320 km"
-      ],
+      "options": "240 km",
+      "280 km": "320 km",
+      "360 km": "",
       "answer": 1,
-      "explanation": "Distance = 80 × 3.5 = 280 km."
+      "explanation": "Distance = Speed * Time.  Distance = 80 km/h * 3.5 hours = 280 km.",
+      "hint": "Remember the formula: Distance = Speed x Time."
     },
     {
       "id": 16,
-      "question": "If a:b = 4:5 and b:c = 3:2, find the ratio a:c.",
-      "options": [
-        "12:10",
-        "5:3",
-        "2:3",
-        "10:12"
-      ],
-      "answer": 0,
-      "explanation": "Multiply: (4/5)×(3/2) = 12/10 = 6:5."
+      "question": "Simplify the ratio 48:36:24.",
+      "options": "2:1.5:1",
+      "4:3:2": "6:4.5:3",
+      "12:9:6": "",
+      "answer": 1,
+      "explanation": "The highest common factor of 48, 36, and 24 is 12. Dividing each number by 12 gives 4:3:2.",
+      "hint": "Find the greatest common divisor of all three numbers."
     },
     {
       "id": 17,
-      "question": "A recipe uses 2 cups of flour for every 3 eggs. If you have 9 eggs, how many cups of flour do you need?",
-      "options": [
-        "4 cups",
-        "6 cups",
-        "8 cups",
-        "10 cups"
-      ],
+      "question": "If p is directly proportional to q, and p = 8 when q = 2, find p when q = 7.",
+      "options": "14",
+      "28": "32",
+      "56": "",
       "answer": 1,
-      "explanation": "9 eggs = 3× the ratio amount. Flour = 2×3 = 6 cups."
+      "explanation": "p = kq.  8 = k * 2, so k = 4.  Therefore, p = 4q.  When q = 7, p = 4 * 7 = 28.",
+      "hint": "Find the constant of proportionality first."
     },
     {
       "id": 18,
-      "question": "If x is directly proportional to the square of y, and x = 20 when y = 2, what is the value of x when y = 4?",
-      "options": [
-        "40",
-        "60",
-        "80",
-        "100"
-      ],
+      "question": "A recipe requires 3 eggs for every 100g of flour. How many eggs are needed for 500g of flour?",
+      "options": "5 eggs",
+      "10 eggs": "15 eggs",
+      "20 eggs": "",
       "answer": 2,
-      "explanation": "x = ky². k = 20/4 = 5. x = 5×16 = 80."
+      "explanation": "The ratio of eggs to flour is 3:100.  For 500g of flour, you need (3/100) * 500 = 15 eggs.",
+      "hint": "Set up a proportion to solve for the unknown number of eggs."
     },
     {
       "id": 19,
-      "question": "A scale drawing has a scale of 1cm : 10m. A line on the drawing is 7.5cm long. What is the actual length of the line?",
-      "options": [
-        "7.5m",
-        "75m",
-        "100m",
-        "15m"
-      ],
+      "question": "If a:b = 1:2 and b:c = 3:4, what is the ratio a:b:c?",
+      "options": "1:2:3",
+      "3:6:8": "1:6:4",
+      "2:4:3": "",
       "answer": 1,
-      "explanation": "7.5 × 10m = 75m."
+      "explanation": "Multiply the first ratio by 3 and the second by 2 to get 3:6 and 6:8.  Therefore, a:b:c = 3:6:8.",
+      "hint": "Make the 'b' values equal in both ratios."
     },
     {
       "id": 20,
-      "question": "Share $48 in the ratio 1:2:3.",
-      "options": [
-        "$8, $16, $24",
-        "$12, $16, $20",
-        "$6, $12, $30",
-        "$10, $20, $18"
-      ],
+      "question": "If x is inversely proportional to y², and x = 4 when y = 2, what is the value of x when y = 4?",
+      "options": "1",
+      "2": "8",
+      "16": "",
       "answer": 0,
-      "explanation": "6 parts total. $8 each part. $8, $16, $24."
+      "explanation": "x = k/y². 4 = k/2², so k = 16. Therefore, x = 16/y². When y = 4, x = 16/4² = 1.",
+      "hint": "Remember the inverse proportion formula involves a square."
     },
     {
       "id": 21,
-      "question": "If 6 painters can paint a house in 4 days, how many painters are needed to paint the same house in 3 days?",
-      "options": [
-        "6",
-        "8",
-        "10",
-        "12"
-      ],
+      "question": "A map scale is 1cm : 20km. What distance on the map represents 80km?",
+      "options": "2cm",
+      "4cm": "6cm",
+      "8cm": "",
       "answer": 1,
-      "explanation": "Painters × Days = 24. Painters × 3 = 24, so 8 painters."
+      "explanation": "If 1cm represents 20km, then 80km is represented by 80km / 20km/cm = 4cm.",
+      "hint": "Think about dividing the actual distance by the scale factor."
     },
     {
       "id": 22,
-      "question": "Simplify the ratio 1.5 : 2.5",
-      "options": [
-        "3:5",
-        "15:25",
-        "3:2",
-        "1:2"
-      ],
+      "question": "Divide $72 in the ratio 1:2:3.",
+      "options": "$12, $24, $36",
+      "$18, $18, $36": "$10, $20, $42",
+      "$6, $12, $54": "",
       "answer": 0,
-      "explanation": "Multiply by 2: 3:5."
+      "explanation": "The total ratio parts are 1+2+3=6. Each part represents $72/6 = $12. Therefore, the shares are $12, $24, and $36.",
+      "hint": "Find the value of one 'part' of the ratio."
     },
     {
       "id": 23,
-      "question": "If p is inversely proportional to q², and p = 4 when q = 1, what is the value of p when q = 2?",
-      "options": [
-        "1",
-        "2",
-        "4",
-        "8"
-      ],
+      "question": "If 6 pencils cost $3, what is the cost of 10 pencils?",
+      "options": "$5",
+      "$6": "$7",
+      "$8": "",
       "answer": 0,
-      "explanation": "p = k/q². k = 4. p = 4/4 = 1."
+      "explanation": "The cost of one pencil is $3/6 = $0.50. The cost of 10 pencils is 10 * $0.50 = $5.",
+      "hint": "Calculate the price of a single item first."
     },
     {
       "id": 24,
-      "question": "A map scale is 1:25000. Two cities are 5cm apart on the map. What is the actual distance between them in kilometers?",
-      "options": [
-        "1.25 km",
-        "2.5 km",
-        "12.5 km",
-        "125 km"
-      ],
+      "question": "If a:b = 5:3 and b:c = 6:5, what is the ratio a:c?",
+      "options": "10:1",
+      "5:1": "2:1",
+      "1:2": "",
       "answer": 0,
-      "explanation": "5 × 25000cm = 125000cm = 1.25km."
+      "explanation": "Multiply the first ratio by 2 to get 10:6. Then, 6:5 remains the same. Therefore, a:c = 10:5 which simplifies to 2:1.",
+      "hint": "Make the 'b' values the same in both ratios."
     },
     {
       "id": 25,
-      "question": "The ratio of boys to girls in a class is 3:2. If there are 18 boys, how many girls are there?",
-      "options": [
-        "10",
-        "12",
-        "15",
-        "20"
-      ],
-      "answer": 1,
-      "explanation": "1 part = 6. Girls = 2×6 = 12."
+      "question": "If y is inversely proportional to x, and y = 6 when x = 2, what is the value of y when x = 3?",
+      "options": "3",
+      "4": "9",
+      "12": "",
+      "answer": 0,
+      "explanation": "y = k/x. 6 = k/2, so k = 12. Therefore, y = 12/x. When x = 3, y = 12/3 = 4.",
+      "hint": "Find the constant of proportionality first."
     },
     {
       "id": 26,
-      "question": "If y is directly proportional to x, and y = 8 when x = 4, find y when x = 10.",
-      "options": [
-        "16",
-        "20",
-        "24",
-        "32"
-      ],
-      "answer": 1,
-      "explanation": "k = 8/4 = 2. y = 2×10 = 20."
+      "question": "A machine fills 20 bottles in 5 minutes. How many bottles can it fill in 1 hour?",
+      "options": "60",
+      "120": "240",
+      "400": "",
+      "answer": 2,
+      "explanation": "The machine fills 20 bottles / 5 minutes = 4 bottles per minute. In 1 hour (60 minutes), it fills 4 * 60 = 240 bottles.",
+      "hint": "Convert the time to the same units."
     },
     {
       "id": 27,
-      "question": "A car travels 240 miles in 4 hours. What is its speed in miles per hour?",
-      "options": [
-        "60 mph",
-        "80 mph",
-        "100 mph",
-        "120 mph"
-      ],
-      "answer": 0,
-      "explanation": "Speed = 240/4 = 60 mph."
+      "question": "Express 25% as a ratio in its simplest form.",
+      "options": "1:3",
+      "1:4": "3:4",
+      "4:1": "",
+      "answer": 1,
+      "explanation": "25% is equivalent to 25/100, which simplifies to 1/4. Therefore, the ratio is 1:4.",
+      "hint": "Convert the percentage to a fraction first."
     },
     {
       "id": 28,
-      "question": "If p is inversely proportional to q, and p = 5 when q = 6, what is the value of p when q = 10?",
-      "options": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
+      "question": "If 4 painters can paint a fence in 3 hours, how long will it take 6 painters to paint the same fence?",
+      "options": "1 hour",
+      "2 hours": "2.5 hours",
+      "4 hours": "",
       "answer": 1,
-      "explanation": "k = pq = 30. p = 30/10 = 3."
+      "explanation": "This is an inverse proportion. 4 * 3 = 12 painter-hours. 12 painter-hours / 6 painters = 2 hours.",
+      "hint": "Consider whether the relationship is direct or inverse."
     },
     {
       "id": 29,
-      "question": "Express 0.25 as a ratio in its simplest form.",
-      "options": [
-        "1:2",
-        "1:3",
-        "1:4",
-        "2:3"
-      ],
-      "answer": 2,
-      "explanation": "0.25 = 1/4, expressed as ratio 1:4."
+      "question": "A recipe uses 150g of sugar for every 300ml of water. How much sugar is needed for 600ml of water?",
+      "options": "150g",
+      "300g": "450g",
+      "600g": "",
+      "answer": 1,
+      "explanation": "The ratio of sugar to water is 150:300, which simplifies to 1:2. For 600ml of water, you need 600/2 = 300g of sugar.",
+      "hint": "Simplify the ratio first."
     },
     {
       "id": 30,
-      "question": "Two numbers are in the ratio 2:5 and their difference is 18. What is the larger number?",
-      "options": [
-        "9",
-        "15",
-        "30",
-        "45"
-      ],
-      "answer": 2,
-      "explanation": "3x = 18, x = 6. Larger = 5×6 = 30."
+      "question": "If x:y = 3:5, and y = 15, what is the value of x?",
+      "options": "5",
+      "9": "10",
+      "25": "",
+      "answer": 1,
+      "explanation": "Set up the proportion 3/5 = x/15. Cross-multiply to get 5x = 45, so x = 9.",
+      "hint": "Use cross-multiplication to solve for x."
     },
     {
       "id": 31,
-      "question": "If 4 builders can build a wall in 6 days, how long will it take 8 builders to build the same wall?",
-      "options": [
-        "2 days",
-        "3 days",
-        "4 days",
-        "12 days"
-      ],
-      "answer": 1,
-      "explanation": "4×6=24. 8×days=24, days=3."
+      "question": "A car travels 150 miles in 2.5 hours. What is its average speed in miles per hour?",
+      "options": "50 mph",
+      "60 mph": "75 mph",
+      "80 mph": "",
+      "answer": 0,
+      "explanation": "Speed = Distance / Time. Speed = 150 miles / 2.5 hours = 60 mph.",
+      "hint": "Remember the formula: Speed = Distance / Time."
     },
     {
       "id": 32,
-      "question": "A recipe for 2 people requires 150g of flour. How much flour is needed for 8 people?",
-      "options": [
-        "300g",
-        "450g",
-        "600g",
-        "750g"
-      ],
-      "answer": 2,
-      "explanation": "75g per person. 8×75g = 600g."
+      "question": "Simplify the ratio 63:45:27.",
+      "options": "7:5:3",
+      "9:6:3": "21:15:9",
+      "3:2:1": "",
+      "answer": 0,
+      "explanation": "The highest common factor of 63, 45, and 27 is 9. Dividing each number by 9 gives 7:5:3.",
+      "hint": "Find the greatest common divisor of all three numbers."
     },
     {
       "id": 33,
-      "question": "What is the ratio of 2 hours to 40 minutes?",
-      "options": [
-        "1:3",
-        "3:1",
-        "2:1",
-        "1:2"
-      ],
-      "answer": 1,
-      "explanation": "2 hours = 120 minutes. 120:40 = 3:1."
+      "question": "If p is directly proportional to q², and p = 12 when q = 2, find p when q = 4.",
+      "options": "6",
+      "12": "24",
+      "48": "",
+      "answer": 3,
+      "explanation": "p = kq². 12 = k * 2², so k = 3. Therefore, p = 3q². When q = 4, p = 3 * 4² = 48.",
+      "hint": "Remember the direct proportion formula involves a square."
     },
     {
       "id": 34,
-      "question": "If a:b = 2:3 and b:c = 4:5, what is a:c?",
-      "options": [
-        "8:15",
-        "5:6",
-        "2:5",
-        "8:5"
-      ],
-      "answer": 0,
-      "explanation": "(2/3)×(4/5) = 8/15, so a:c = 8:15."
+      "question": "A recipe requires 4 apples for every 200g of flour. How many apples are needed for 1kg of flour?",
+      "options": "8 apples",
+      "10 apples": "20 apples",
+      "40 apples": "",
+      "answer": 2,
+      "explanation": "1kg = 1000g. The ratio of apples to flour is 4:200, which simplifies to 1:50. For 1000g of flour, you need 1000/50 = 20 apples.",
+      "hint": "Convert kilograms to grams."
     },
     {
       "id": 35,
-      "question": "A cyclist travels at a constant speed of 15 km/h. How far will they travel in 2 hours 20 minutes?",
-      "options": [
-        "30 km",
-        "35 km",
-        "40 km",
-        "45 km"
-      ],
-      "answer": 1,
-      "explanation": "2h 20m = 7/3 hours. Distance = 15×7/3 = 35 km."
+      "question": "If a:b = 2:3 and b:c = 4:5, what is the ratio a:b:c?",
+      "options": "8:12:15",
+      "2:3:5": "4:6:5",
+      "1:2:3": "",
+      "answer": 0,
+      "explanation": "Multiply the first ratio by 4 and the second by 3 to get 8:12 and 12:15. Therefore, a:b:c = 8:12:15.",
+      "hint": "Make the 'b' values equal in both ratios."
     },
     {
       "id": 36,
-      "question": "If x:y = 1:6 and y:z = 3:4, find the ratio x:z.",
-      "options": [
-        "1:8",
-        "1:24",
-        "1:2",
-        "2:3"
-      ],
-      "answer": 0,
-      "explanation": "(1/6)×(3/4) = 3/24 = 1/8, so x:z = 1:8."
+      "question": "If x is inversely proportional to y³, and x = 1 when y = 2, what is the value of x when y = 1?",
+      "options": "1",
+      "2": "4",
+      "8": "",
+      "answer": 3,
+      "explanation": "x = k/y³. 1 = k/2³, so k = 8. Therefore, x = 8/y³. When y = 1, x = 8/1³ = 8.",
+      "hint": "Remember the inverse proportion formula involves a cube."
     },
     {
       "id": 37,
-      "question": "A recipe uses 300g of sugar for every 500g of fruit. How much sugar is needed for 1kg of fruit?",
-      "options": [
-        "150g",
-        "300g",
-        "600g",
-        "750g"
-      ],
+      "question": "A map scale is 1:100,000. Two cities are 5cm apart on the map. What is the actual distance between the cities in kilometers?",
+      "options": "0.5 km",
+      "5 km": "50 km",
+      "500 km": "",
       "answer": 2,
-      "explanation": "Ratio 3:5. For 1000g fruit: (3/5)×1000 = 600g."
+      "explanation": "5cm on the map represents 5 * 100,000 cm in reality. Converting cm to km gives 5 km.",
+      "hint": "Remember to convert centimeters to kilometers."
     },
     {
       "id": 38,
-      "question": "If x is directly proportional to y³, and x = 24 when y = 2, what is the value of x when y = 3?",
-      "options": [
-        "36",
-        "54",
-        "81",
-        "108"
-      ],
-      "answer": 2,
-      "explanation": "x = ky³. k = 24/8 = 3. x = 3×27 = 81."
+      "question": "Divide $84 in the ratio 2:5.",
+      "options": "$24 and $60",
+      "$30 and $54": "$35 and $49",
+      "$16.8 and $67.2": "",
+      "answer": 0,
+      "explanation": "The total ratio parts are 2+5=7. Each part represents $84/7 = $12. Therefore, the shares are 2*$12=$24 and 5*$12=$60.",
+      "hint": "Find the value of one 'part' of the ratio."
     },
     {
       "id": 39,
-      "question": "A scale drawing has a scale of 1:1000. A building is 6cm long on the drawing. What is the actual length of the building in meters?",
-      "options": [
-        "6m",
-        "60m",
-        "600m",
-        "6000m"
-      ],
-      "answer": 1,
-      "explanation": "6×1000cm = 6000cm = 60m."
+      "question": "If 8 oranges cost $4, what is the cost of 12 oranges?",
+      "options": "$4.50",
+      "$6.00": "$7.50",
+      "$8.00": "",
+      "answer": 0,
+      "explanation": "The cost of one orange is $4/8 = $0.50. The cost of 12 oranges is 12 * $0.50 = $6.00.",
+      "hint": "Calculate the price of a single item first."
     },
     {
       "id": 40,
-      "question": "Share $72 in the ratio 2:3:7.",
-      "options": [
-        "$12, $18, $42",
-        "$18, $24, $30",
-        "$8, $12, $52",
-        "$10, $20, $42"
-      ],
+      "question": "If a:b = 4:7 and b:c = 2:3, what is the ratio a:c?",
+      "options": "8:21",
+      "4:21": "2:7",
+      "1:2": "",
       "answer": 0,
-      "explanation": "12 parts total. $6 each part. $12, $18, $42."
+      "explanation": "Multiply the first ratio by 2 and the second by 7 to get 8:14 and 14:21. Therefore, a:c = 8:21.",
+      "hint": "Make the 'b' values equal in both ratios."
+    },
+    {
+      "id": 41,
+      "question": "If x is directly proportional to the square root of y, and x = 6 when y = 9, what is the value of x when y = 16?",
+      "options": "4",
+      "6": "8",
+      "12": "",
+      "answer": 2,
+      "explanation": "x = k√y. 6 = k√9, so k = 2. Therefore, x = 2√y. When y = 16, x = 2√16 = 8.",
+      "hint": "Remember the direct proportion formula involves a square root."
+    },
+    {
+      "id": 42,
+      "question": "A factory produces 150 items in 3 hours. How many items can it produce in 8 hours?",
+      "options": "200",
+      "300": "400",
+      "600": "",
+      "answer": 3,
+      "explanation": "The factory produces 150 items / 3 hours = 50 items per hour. In 8 hours, it produces 50 * 8 = 400 items.",
+      "hint": "Calculate the production rate per hour."
+    },
+    {
+      "id": 43,
+      "question": "Express 60% as a ratio in its simplest form.",
+      "options": "2:3",
+      "3:5": "5:3",
+      "3:2": "",
+      "answer": 2,
+      "explanation": "60% is equivalent to 60/100, which simplifies to 3/5. Therefore, the ratio is 3:5.",
+      "hint": "Convert the percentage to a fraction first."
+    },
+    {
+      "id": 44,
+      "question": "If 5 pipes can fill a tank in 4 hours, how long will it take 10 pipes to fill the same tank?",
+      "options": "1 hour",
+      "2 hours": "2.5 hours",
+      "5 hours": "",
+      "answer": 1,
+      "explanation": "This is an inverse proportion. 5 * 4 = 20 pipe-hours. 20 pipe-hours / 10 pipes = 2 hours.",
+      "hint": "Consider whether the relationship is direct or inverse."
+    },
+    {
+      "id": 45,
+      "question": "A recipe uses 250g of flour for every 100ml of milk. How much flour is needed for 300ml of milk?",
+      "options": "500g",
+      "600g": "750g",
+      "800g": "",
+      "answer": 0,
+      "explanation": "The ratio of flour to milk is 250:100, which simplifies to 5:2. For 300ml of milk, you need (5/2) * 300 = 750g of flour.",
+      "hint": "Simplify the ratio first."
+    },
+    {
+      "id": 46,
+      "question": "If x:y = 1:4, and y = 20, what is the value of x?",
+      "options": "2",
+      "4": "5",
+      "80": "",
+      "answer": 2,
+      "explanation": "Set up the proportion 1/4 = x/20. Cross-multiply to get 4x = 20, so x = 5.",
+      "hint": "Use cross-multiplication to solve for x."
+    },
+    {
+      "id": 47,
+      "question": "A cyclist travels 36 km in 2 hours. What is their average speed in km/h?",
+      "options": "12 km/h",
+      "18 km/h": "24 km/h",
+      "38 km/h": "",
+      "answer": 1,
+      "explanation": "Speed = Distance / Time. Speed = 36 km / 2 hours = 18 km/h.",
+      "hint": "Remember the formula: Speed = Distance / Time."
+    },
+    {
+      "id": 48,
+      "question": "Simplify the ratio 24:32:40.",
+      "options": "3:4:5",
+      "6:8:10": "12:16:20",
+      "2:3:4": "",
+      "answer": 0,
+      "explanation": "The highest common factor of 24, 32, and 40 is 8. Dividing each number by 8 gives 3:4:5.",
+      "hint": "Find the greatest common divisor of all three numbers."
+    },
+    {
+      "id": 49,
+      "question": "If p is inversely proportional to q², and p = 2 when q = 3, what is the value of p when q = 6?",
+      "options": "1/2",
+      "1": "2",
+      "4": "",
+      "answer": 0,
+      "explanation": "p = k/q². 2 = k/3², so k = 18. Therefore, p = 18/q². When q = 6, p = 18/6² = 18/36 = 1/2.",
+      "hint": "Remember the inverse proportion formula involves a square."
+    },
+    {
+      "id": 50,
+      "question": "A map has a scale of 1cm : 10km. What distance on the map represents 35km?",
+      "options": "2.5cm",
+      "3cm": "3.5cm",
+      "4cm": "",
+      "answer": 0,
+      "explanation": "If 1cm represents 10km, then 35km is represented by 35km / 10km/cm = 3.5cm.",
+      "hint": "Think about dividing the actual distance by the scale factor."
     }
   ]
 }

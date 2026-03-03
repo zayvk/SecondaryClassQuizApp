@@ -8,94 +8,283 @@
     "Gradient and intercept",
     "Interpreting graphs"
   ],
-  "generatedAt": "2026-02-25T01:50:40Z",
+  "generatedAt": "2026-03-03T01:48:58Z",
   "questions": [
     {
       "id": 1,
       "question": "Which of the following represents a function?",
       "options": [
-        "A relation where each x-value has multiple y-values",
-        "A relation where each x-value has only one y-value",
-        "A straight line with a negative gradient",
-        "A circle centered at the origin"
+        "A relation where each input has multiple outputs",
+        "A relation where each input has only one output",
+        "A relation with no inputs",
+        "A relation with no outputs"
       ],
       "answer": 1,
-      "explanation": "A function, by definition, must have only one output (y-value) for each input (x-value)."
+      "explanation": "A function, by definition, maps each input to exactly one output. This is the fundamental property of a function.",
+      "hint": "Think about what makes a relationship predictable."
     },
     {
       "id": 2,
-      "question": "What is the y-intercept of the line y = 3x - 2?",
+      "question": "If y = 3x - 2, what is the value of y when x = 4?",
       "options": [
-        "3",
-        "-2",
-        "0",
-        "1"
+        "10",
+        "14",
+        "6",
+        "2"
       ],
-      "answer": 1,
-      "explanation": "The y-intercept is the value of y when x = 0. In this case, y = 3(0) - 2 = -2."
+      "answer": 0,
+      "explanation": "Substitute x = 4 into the equation: y = 3(4) - 2 = 12 - 2 = 10.",
+      "hint": "Remember to follow the order of operations."
     },
     {
       "id": 3,
-      "question": "If a graph passes through the points (1, 5) and (2, 8), what is the gradient?",
+      "question": "What is the gradient of the line y = 2x + 5?",
+      "options": [
+        "5",
+        "2",
+        "-2",
+        "7"
+      ],
+      "answer": 1,
+      "explanation": "In the equation y = mx + c, 'm' represents the gradient. Here, m = 2.",
+      "hint": "Recall the slope-intercept form of a linear equation."
+    },
+    {
+      "id": 4,
+      "question": "What is the y-intercept of the line y = -x + 3?",
+      "options": [
+        "-1",
+        "3",
+        "1",
+        "-3"
+      ],
+      "answer": 1,
+      "explanation": "The y-intercept is the value of y when x = 0. In y = mx + c, 'c' is the y-intercept, so here it's 3.",
+      "hint": "Where does the line cross the y-axis?"
+    },
+    {
+      "id": 5,
+      "question": "Which of these points lies on the line y = x + 1?",
+      "options": [
+        "(1, 0)",
+        "(0, 1)",
+        "(2, 2)",
+        "(1, 2)"
+      ],
+      "answer": 3,
+      "explanation": "Substitute the x and y values of each point into the equation. Only (1, 2) satisfies the equation: 2 = 1 + 1.",
+      "hint": "Try plugging in the x-value and see if you get the correct y-value."
+    },
+    {
+      "id": 6,
+      "question": "A graph shows the distance travelled by a car over time. What does the gradient of the line represent?",
+      "options": [
+        "Time",
+        "Distance",
+        "Speed",
+        "Acceleration"
+      ],
+      "answer": 2,
+      "explanation": "Gradient (rise over run) in this context represents the change in distance over the change in time, which is speed.",
+      "hint": "Think about the units of distance and time."
+    },
+    {
+      "id": 7,
+      "question": "If a line has a gradient of -2 and passes through the point (0, 4), what is its equation?",
+      "options": [
+        "y = -2x - 4",
+        "y = 2x + 4",
+        "y = -2x + 4",
+        "y = 2x - 4"
+      ],
+      "answer": 2,
+      "explanation": "Using y = mx + c, where m = -2 and c = 4 (y-intercept), the equation is y = -2x + 4.",
+      "hint": "Remember the slope-intercept form and the meaning of the y-intercept."
+    },
+    {
+      "id": 8,
+      "question": "What is the domain of the function f(x) = x^2 + 1?",
+      "options": [
+        "All real numbers",
+        "x > 0",
+        "x < 0",
+        "x = 0"
+      ],
+      "answer": 0,
+      "explanation": "You can square any real number and add 1, so the domain is all real numbers.",
+      "hint": "Are there any restrictions on what values you can input into this function?"
+    },
+    {
+      "id": 9,
+      "question": "What is the range of the function f(x) = x^2 + 1?",
+      "options": [
+        "All real numbers",
+        "y > 0",
+        "y < 0",
+        "y = 0"
+      ],
+      "answer": 1,
+      "explanation": "Since x^2 is always non-negative, x^2 + 1 is always greater than or equal to 1. Therefore, the range is y ≥ 1, which is effectively y > 0.",
+      "hint": "What is the smallest possible value of x^2?"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is a linear function?",
+      "options": [
+        "y = x^2",
+        "y = 1/x",
+        "y = 3x + 1",
+        "y = √x"
+      ],
+      "answer": 2,
+      "explanation": "A linear function has the form y = mx + c, where m and c are constants. Only y = 3x + 1 fits this form.",
+      "hint": "Think about the highest power of x in the equation."
+    },
+    {
+      "id": 11,
+      "question": "The points (1, 5) and (3, 11) lie on a straight line. What is the gradient of the line?",
       "options": [
         "2",
         "3",
         "4",
         "5"
       ],
-      "answer": 1,
-      "explanation": "Gradient is calculated as (change in y) / (change in x). Here, (8-5)/(2-1) = 3."
+      "answer": 2,
+      "explanation": "Gradient = (change in y) / (change in x) = (11 - 5) / (3 - 1) = 6 / 2 = 3.",
+      "hint": "Remember the formula for calculating gradient given two points."
     },
     {
-      "id": 4,
-      "question": "Which of these graphs represents a direct proportion?",
+      "id": 12,
+      "question": "If f(x) = 2x + 3, what is f(5)?",
       "options": [
-        "A parabola",
-        "A straight line passing through the origin",
-        "A curve",
-        "A horizontal line"
-      ],
-      "answer": 1,
-      "explanation": "Direct proportion graphs are straight lines that pass through (0,0)."
-    },
-    {
-      "id": 5,
-      "question": "What does the gradient of a distance-time graph represent?",
-      "options": [
-        "Acceleration",
-        "Speed",
-        "Distance",
-        "Time"
-      ],
-      "answer": 1,
-      "explanation": "The gradient of a distance-time graph represents the rate of change of distance with respect to time, which is speed."
-    },
-    {
-      "id": 6,
-      "question": "If y = 2x + 1, what is the value of y when x = 4?",
-      "options": [
-        "7",
         "8",
-        "9",
-        "10"
+        "10",
+        "13",
+        "15"
       ],
       "answer": 2,
-      "explanation": "Substitute x = 4 into the equation: y = 2(4) + 1 = 9."
+      "explanation": "Substitute x = 5 into the function: f(5) = 2(5) + 3 = 10 + 3 = 13.",
+      "hint": "Replace 'x' with the given value."
     },
     {
-      "id": 7,
-      "question": "The point (5, -1) lies on the line y = mx + 3. What is the value of m?",
+      "id": 13,
+      "question": "A line passes through the points (2, 1) and (4, 5). What is the equation of the line?",
       "options": [
-        "-4/5",
-        "-2/5",
-        "2/5",
-        "4/5"
+        "y = 2x - 3",
+        "y = x + 3",
+        "y = 2x + 3",
+        "y = x - 3"
       ],
       "answer": 0,
-      "explanation": "Substitute x=5, y=-1: -1 = 5m + 3, so 5m = -4, m = -4/5."
+      "explanation": "Gradient = (5-1)/(4-2) = 2. Using point-slope form, y - 1 = 2(x - 2), which simplifies to y = 2x - 3.",
+      "hint": "First, find the gradient of the line."
     },
     {
-      "id": 8,
+      "id": 14,
+      "question": "What does a horizontal line on a distance-time graph represent?",
+      "options": [
+        "Increasing speed",
+        "Decreasing speed",
+        "Stationary object",
+        "Acceleration"
+      ],
+      "answer": 2,
+      "explanation": "A horizontal line means the distance is not changing over time, indicating the object is not moving.",
+      "hint": "Think about what happens to the distance when something isn't moving."
+    },
+    {
+      "id": 15,
+      "question": "The equation of a line is y = -3x + 6. What is the x-intercept?",
+      "options": [
+        "2",
+        "-2",
+        "6",
+        "-6"
+      ],
+      "answer": 0,
+      "explanation": "The x-intercept is the value of x when y = 0. So, 0 = -3x + 6, which gives x = 2.",
+      "hint": "Where does the line cross the x-axis?"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following graphs represents a function?",
+      "options": [
+        "A circle",
+        "A parabola opening sideways",
+        "A vertical line",
+        "A parabola opening upwards"
+      ],
+      "answer": 3,
+      "explanation": "A parabola opening upwards passes the vertical line test, meaning each x-value has only one y-value.",
+      "hint": "Think about the vertical line test for functions."
+    },
+    {
+      "id": 17,
+      "question": "If f(x) = x^2 - 4, what is f(-2)?",
+      "options": [
+        "0",
+        "4",
+        "-4",
+        "8"
+      ],
+      "answer": 0,
+      "explanation": "f(-2) = (-2)^2 - 4 = 4 - 4 = 0.",
+      "hint": "Substitute the value of x into the function."
+    },
+    {
+      "id": 18,
+      "question": "A line has a gradient of 1/2 and a y-intercept of -1. What is its equation?",
+      "options": [
+        "y = 1/2x + 1",
+        "y = 2x - 1",
+        "y = 1/2x - 1",
+        "y = -1/2x - 1"
+      ],
+      "answer": 2,
+      "explanation": "Using y = mx + c, where m = 1/2 and c = -1, the equation is y = 1/2x - 1.",
+      "hint": "Remember the slope-intercept form of a linear equation."
+    },
+    {
+      "id": 19,
+      "question": "What is the gradient of a line perpendicular to a line with a gradient of 2?",
+      "options": [
+        "2",
+        "-2",
+        "1/2",
+        "-1/2"
+      ],
+      "answer": 3,
+      "explanation": "The gradient of a line perpendicular to another is the negative reciprocal. The negative reciprocal of 2 is -1/2.",
+      "hint": "Think about how the slopes of perpendicular lines relate to each other."
+    },
+    {
+      "id": 20,
+      "question": "The cost of renting a car is £20 plus £0.10 per mile. Write a function to represent the total cost (C) in terms of the number of miles driven (m).",
+      "options": [
+        "C = 20m + 0.10",
+        "C = 0.10m + 20",
+        "C = 20.10m",
+        "C = 20 - 0.10m"
+      ],
+      "answer": 1,
+      "explanation": "The fixed cost is £20, and the variable cost is £0.10 per mile, so C = 0.10m + 20.",
+      "hint": "Identify the fixed and variable costs."
+    },
+    {
+      "id": 21,
+      "question": "What is the value of x when y = 5 in the equation y = 4x - 3?",
+      "options": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Substitute y = 5 into the equation: 5 = 4x - 3. Solving for x gives 4x = 8, so x = 2.",
+      "hint": "Substitute the value of y and solve for x."
+    },
+    {
+      "id": 22,
       "question": "Which of the following is NOT a characteristic of a linear function?",
       "options": [
         "Constant rate of change",
@@ -104,347 +293,116 @@
         "Exponential growth"
       ],
       "answer": 3,
-      "explanation": "Exponential growth is a characteristic of exponential functions, not linear functions."
-    },
-    {
-      "id": 9,
-      "question": "What is the gradient of a horizontal line?",
-      "options": [
-        "1",
-        "-1",
-        "0",
-        "Undefined"
-      ],
-      "answer": 2,
-      "explanation": "A horizontal line has no change in y-value, so the gradient (change in y / change in x) is 0."
-    },
-    {
-      "id": 10,
-      "question": "What is the gradient of a vertical line?",
-      "options": [
-        "1",
-        "-1",
-        "0",
-        "Undefined"
-      ],
-      "answer": 3,
-      "explanation": "A vertical line has no change in x-value, making the gradient calculation result in division by zero, which is undefined."
-    },
-    {
-      "id": 11,
-      "question": "If a function is given by f(x) = x² + 1, what is f(3)?",
-      "options": [
-        "8",
-        "9",
-        "10",
-        "11"
-      ],
-      "answer": 2,
-      "explanation": "Substitute x = 3 into the function: f(3) = 3² + 1 = 9 + 1 = 10."
-    },
-    {
-      "id": 12,
-      "question": "Which of the following represents an inverse proportion?",
-      "options": [
-        "y = kx",
-        "y = x + k",
-        "xy = k",
-        "y = k/x"
-      ],
-      "answer": 3,
-      "explanation": "Inverse proportion is represented by xy = k, where k is a constant."
-    },
-    {
-      "id": 13,
-      "question": "The line L has a gradient of 2 and passes through the point (0, -1). What is the equation of the line?",
-      "options": [
-        "y = 2x + 1",
-        "y = 2x - 1",
-        "y = -2x + 1",
-        "y = -2x - 1"
-      ],
-      "answer": 1,
-      "explanation": "Using y = mx + c, where m = 2 and c = -1, the equation is y = 2x - 1."
-    },
-    {
-      "id": 14,
-      "question": "What information does the intercept of a graph provide?",
-      "options": [
-        "The rate of change",
-        "The starting value",
-        "The maximum value",
-        "The minimum value"
-      ],
-      "answer": 1,
-      "explanation": "The intercept represents the value of one variable when the other is zero, often representing a starting value."
-    },
-    {
-      "id": 15,
-      "question": "If two lines are parallel, what is true about their gradients?",
-      "options": [
-        "They are equal",
-        "They are negative reciprocals",
-        "They are zero",
-        "They are undefined"
-      ],
-      "answer": 0,
-      "explanation": "Parallel lines have the same slope (gradient)."
-    },
-    {
-      "id": 16,
-      "question": "If two lines are perpendicular, what is true about their gradients?",
-      "options": [
-        "They are equal",
-        "They are negative reciprocals",
-        "They are zero",
-        "They are undefined"
-      ],
-      "answer": 1,
-      "explanation": "The gradients of perpendicular lines are negative reciprocals of each other."
-    },
-    {
-      "id": 17,
-      "question": "What is the domain of a function?",
-      "options": [
-        "The set of all possible output values",
-        "The set of all possible input values",
-        "The y-intercept",
-        "The gradient"
-      ],
-      "answer": 1,
-      "explanation": "The domain is the set of all possible x-values (inputs) for which the function is defined."
-    },
-    {
-      "id": 18,
-      "question": "What is the range of a function?",
-      "options": [
-        "The set of all possible input values",
-        "The set of all possible output values",
-        "The x-intercept",
-        "The gradient"
-      ],
-      "answer": 1,
-      "explanation": "The range is the set of all possible y-values (outputs) that the function can produce."
-    },
-    {
-      "id": 19,
-      "question": "A graph shows the temperature over time. What does a steeper slope indicate?",
-      "options": [
-        "A slower rate of temperature change",
-        "A faster rate of temperature change",
-        "A constant temperature",
-        "A decreasing temperature"
-      ],
-      "answer": 1,
-      "explanation": "A steeper slope means a larger change in temperature for a given change in time, indicating a faster rate of change."
-    },
-    {
-      "id": 20,
-      "question": "The equation of a line is y = -x + 5. What is the x-intercept?",
-      "options": [
-        "-5",
-        "0",
-        "5",
-        "10"
-      ],
-      "answer": 2,
-      "explanation": "The x-intercept is the value of x when y = 0. So, 0 = -x + 5, which means x = 5."
-    },
-    {
-      "id": 21,
-      "question": "If f(x) = 4x - 3 and g(x) = x + 2, what is f(g(2))?",
-      "options": [
-        "9",
-        "11",
-        "13",
-        "15"
-      ],
-      "answer": 2,
-      "explanation": "g(2) = 2 + 2 = 4. Then f(4) = 4(4) - 3 = 16 - 3 = 13."
-    },
-    {
-      "id": 22,
-      "question": "Which of the following is a linear equation?",
-      "options": [
-        "y = x²",
-        "y = 1/x",
-        "y = 2x + 3",
-        "y = √x"
-      ],
-      "answer": 2,
-      "explanation": "A linear equation has the form y = mx + c, where m and c are constants. y = 2x + 3 fits this form."
+      "explanation": "Exponential growth is a characteristic of exponential functions, not linear functions.",
+      "hint": "Think about how linear functions behave."
     },
     {
       "id": 23,
-      "question": "What is the gradient of the line passing through (-2, 1) and (4, -5)?",
+      "question": "If a line passes through (0,0) and (2,6), what is its equation?",
       "options": [
-        "1",
-        "-1",
-        "2",
-        "-2"
+        "y = 3x",
+        "y = x + 6",
+        "y = 6x",
+        "y = 2x + 6"
       ],
-      "answer": 1,
-      "explanation": "Gradient = (-5 - 1) / (4 - (-2)) = -6 / 6 = -1."
+      "answer": 0,
+      "explanation": "The gradient is (6-0)/(2-0) = 3. Since it passes through (0,0), the y-intercept is 0, so the equation is y = 3x.",
+      "hint": "What is the y-intercept if the line passes through the origin?"
     },
     {
       "id": 24,
-      "question": "A function is defined as f(x) = 3x - 7. Find the value of x for which f(x) = 2.",
+      "question": "What is the gradient of the line segment joining the points (-1, 2) and (3, -2)?",
       "options": [
         "1",
-        "3",
-        "5",
-        "7"
+        "-1",
+        "0",
+        "2"
       ],
       "answer": 1,
-      "explanation": "Set 3x - 7 = 2.  Then 3x = 9, so x = 3."
+      "explanation": "Gradient = (-2 - 2) / (3 - (-1)) = -4 / 4 = -1.",
+      "hint": "Remember the formula for gradient."
     },
     {
       "id": 25,
-      "question": "What type of graph is formed by the equation x² + y² = 9?",
+      "question": "If f(x) = 5x - 2, find the value of x for which f(x) = 13.",
       "options": [
-        "Straight line",
-        "Parabola",
-        "Circle",
-        "Hyperbola"
+        "3",
+        "5",
+        "7",
+        "9"
       ],
-      "answer": 2,
-      "explanation": "The equation x² + y² = r² represents a circle centered at the origin with radius r."
+      "answer": 1,
+      "explanation": "Set 5x - 2 = 13.  Adding 2 to both sides gives 5x = 15, so x = 3.",
+      "hint": "Set the function equal to the given value and solve for x."
     },
     {
       "id": 26,
-      "question": "If a line has an undefined gradient, it is...",
+      "question": "A graph shows the temperature of a liquid cooling down over time. What does the gradient of the line represent?",
       "options": [
-        "Horizontal",
-        "Vertical",
-        "Sloping upwards",
-        "Sloping downwards"
+        "Temperature",
+        "Time",
+        "Rate of cooling",
+        "Initial temperature"
       ],
-      "answer": 1,
-      "explanation": "An undefined gradient means the line is vertical, as the change in x is zero."
+      "answer": 2,
+      "explanation": "The gradient represents the change in temperature over time, which is the rate of cooling.",
+      "hint": "Think about the units of temperature and time."
     },
     {
       "id": 27,
-      "question": "The cost of renting a car is £20 plus £0.10 per mile. Write an equation to represent the total cost (C) in terms of the number of miles driven (m).",
-      "options": [
-        "C = 20m + 0.10",
-        "C = 0.10m + 20",
-        "C = 20.10m",
-        "C = 20 - 0.10m"
-      ],
-      "answer": 1,
-      "explanation": "The fixed cost is £20, and the variable cost is £0.10 per mile, so C = 0.10m + 20."
-    },
-    {
-      "id": 28,
-      "question": "What is the y-intercept of the line 2x + 3y = 6?",
-      "options": [
-        "2",
-        "3",
-        "6",
-        "0"
-      ],
-      "answer": 0,
-      "explanation": "To find the y-intercept, set x = 0: 2(0) + 3y = 6, so 3y = 6, and y = 2."
-    },
-    {
-      "id": 29,
-      "question": "Which of the following graphs shows a decreasing function?",
-      "options": [
-        "A line sloping upwards from left to right",
-        "A line sloping downwards from left to right",
-        "A horizontal line",
-        "A parabola opening upwards"
-      ],
-      "answer": 1,
-      "explanation": "A decreasing function has a negative gradient, meaning the line slopes downwards as x increases."
-    },
-    {
-      "id": 30,
-      "question": "If f(x) = x³ - 2x, what is f(-1)?",
-      "options": [
-        "-1",
-        "1",
-        "-3",
-        "3"
-      ],
-      "answer": 1,
-      "explanation": "f(-1) = (-1)³ - 2(-1) = -1 + 2 = 1."
-    },
-    {
-      "id": 31,
-      "question": "A line passes through the points (0, 4) and (2, 0). What is its gradient?",
+      "question": "The equation of a line is 2x + y = 4. What is the gradient of the line?",
       "options": [
         "2",
         "-2",
         "4",
-        "-4"
+        "1/2"
       ],
       "answer": 1,
-      "explanation": "Gradient = (0 - 4) / (2 - 0) = -4 / 2 = -2."
+      "explanation": "Rearrange the equation into the form y = mx + c: y = -2x + 4. Therefore, the gradient is -2.",
+      "hint": "Rewrite the equation in slope-intercept form."
     },
     {
-      "id": 32,
-      "question": "What does a positive gradient indicate on a speed-time graph?",
+      "id": 28,
+      "question": "What is the domain of the function f(x) = 1/(x-2)?",
       "options": [
-        "Deceleration",
-        "Constant speed",
-        "Acceleration",
-        "Stopped"
-      ],
-      "answer": 2,
-      "explanation": "A positive gradient on a speed-time graph indicates that the speed is increasing, which is acceleration."
-    },
-    {
-      "id": 33,
-      "question": "The equation of a line is y = -3x + 7. What is the slope of the line?",
-      "options": [
-        "-7",
-        "3",
-        "-3",
-        "7"
-      ],
-      "answer": 2,
-      "explanation": "In the equation y = mx + c, 'm' represents the slope. Therefore, the slope is -3."
-    },
-    {
-      "id": 34,
-      "question": "If y varies directly with x, and y = 6 when x = 3, what is the value of y when x = 9?",
-      "options": [
-        "12",
-        "18",
-        "24",
-        "30"
+        "All real numbers",
+        "x ≠ 2",
+        "x > 2",
+        "x < 2"
       ],
       "answer": 1,
-      "explanation": "Since y varies directly with x, y = kx.  6 = k * 3, so k = 2.  Then y = 2 * 9 = 18."
+      "explanation": "The function is undefined when the denominator is zero, which occurs when x = 2. Therefore, the domain is all real numbers except x = 2.",
+      "hint": "What value of x would make the denominator zero?"
     },
     {
-      "id": 35,
-      "question": "What is the equation of a line with a gradient of 1/2 and a y-intercept of -3?",
+      "id": 29,
+      "question": "Which of the following lines is parallel to y = 3x + 5?",
       "options": [
-        "y = -3x + 1/2",
-        "y = 1/2x - 3",
-        "y = -3x - 1/2",
-        "y = 1/2x + 3"
-      ],
-      "answer": 1,
-      "explanation": "Using y = mx + c, where m = 1/2 and c = -3, the equation is y = (1/2)x - 3."
-    },
-    {
-      "id": 36,
-      "question": "Which of the following is a function?",
-      "options": [
-        "x = y²",
-        "x² + y² = 1",
-        "y = x + 2",
-        "x² + y = 5"
+        "y = -3x + 2",
+        "y = 1/3x + 1",
+        "y = 3x - 4",
+        "y = -1/3x + 5"
       ],
       "answer": 2,
-      "explanation": "y = x + 2 represents a linear function, where each x-value has only one corresponding y-value."
+      "explanation": "Parallel lines have the same gradient. The gradient of y = 3x + 5 is 3, so the parallel line also has a gradient of 3.",
+      "hint": "What do you know about the gradients of parallel lines?"
     },
     {
-      "id": 37,
-      "question": "A line has the equation y = 5x - 2. What is the value of x when y = 8?",
+      "id": 30,
+      "question": "If f(x) = x^3, what is f(2)?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "f(2) = 2^3 = 2 * 2 * 2 = 8.",
+      "hint": "Remember what an exponent means."
+    },
+    {
+      "id": 31,
+      "question": "A line has a y-intercept of 2 and passes through the point (1, 4). What is its gradient?",
       "options": [
         "1",
         "2",
@@ -452,43 +410,255 @@
         "4"
       ],
       "answer": 1,
-      "explanation": "Substitute y = 8 into the equation: 8 = 5x - 2.  Then 5x = 10, so x = 2."
+      "explanation": "Using y = mx + c, we have 4 = m(1) + 2, so m = 2.",
+      "hint": "Use the y-intercept and the point to find the gradient."
+    },
+    {
+      "id": 32,
+      "question": "What is the range of the function f(x) = |x|?",
+      "options": [
+        "All real numbers",
+        "y ≥ 0",
+        "y ≤ 0",
+        "y = 0"
+      ],
+      "answer": 1,
+      "explanation": "The absolute value of any number is non-negative, so the range is all non-negative real numbers (y ≥ 0).",
+      "hint": "What is the smallest possible value of the absolute value of a number?"
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is a quadratic function?",
+      "options": [
+        "y = 2x + 1",
+        "y = x^3",
+        "y = x^2 - 3x + 2",
+        "y = 1/x"
+      ],
+      "answer": 2,
+      "explanation": "A quadratic function has the form y = ax^2 + bx + c, where a, b, and c are constants. Only y = x^2 - 3x + 2 fits this form.",
+      "hint": "Look for the highest power of x in the equation."
+    },
+    {
+      "id": 34,
+      "question": "The points (1, 3) and (2, 7) lie on a straight line. Find the equation of the line.",
+      "options": [
+        "y = 4x - 1",
+        "y = 3x",
+        "y = 4x + 1",
+        "y = 2x + 1"
+      ],
+      "answer": 0,
+      "explanation": "Gradient = (7-3)/(2-1) = 4. Using point-slope form, y - 3 = 4(x - 1), which simplifies to y = 4x - 1.",
+      "hint": "First, calculate the gradient."
+    },
+    {
+      "id": 35,
+      "question": "What does the y-intercept of a graph represent in a real-world context?",
+      "options": [
+        "The starting value",
+        "The rate of change",
+        "The final value",
+        "The total change"
+      ],
+      "answer": 0,
+      "explanation": "The y-intercept is the value of y when x = 0, which often represents the initial value or starting point.",
+      "hint": "Think about what happens when the input is zero."
+    },
+    {
+      "id": 36,
+      "question": "If f(x) = 2x^2 + 1, what is f(-1)?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "f(-1) = 2(-1)^2 + 1 = 2(1) + 1 = 3.",
+      "hint": "Remember to square the negative number first."
+    },
+    {
+      "id": 37,
+      "question": "A line is defined by the equation 3x - y = 5. What is its gradient?",
+      "options": [
+        "-3",
+        "3",
+        "5",
+        "-5"
+      ],
+      "answer": 1,
+      "explanation": "Rearrange the equation to y = 3x - 5. The gradient is 3.",
+      "hint": "Isolate 'y' to find the slope-intercept form."
     },
     {
       "id": 38,
-      "question": "What is the gradient and y-intercept of the line 3x + y = 5?",
+      "question": "What is the domain of the function f(x) = √(x + 4)?",
       "options": [
-        "Gradient = 3, y-intercept = 5",
-        "Gradient = -3, y-intercept = 5",
-        "Gradient = 3, y-intercept = -5",
-        "Gradient = -3, y-intercept = -5"
+        "All real numbers",
+        "x ≥ -4",
+        "x ≤ -4",
+        "x > 4"
       ],
       "answer": 1,
-      "explanation": "Rearrange the equation to y = -3x + 5.  Therefore, the gradient is -3 and the y-intercept is 5."
+      "explanation": "The square root function is only defined for non-negative values. Therefore, x + 4 ≥ 0, which means x ≥ -4.",
+      "hint": "What values of x would make the expression under the square root negative?"
     },
     {
       "id": 39,
-      "question": "If f(x) = 2x² - 1, what is f(0)?",
+      "question": "Which of the following lines is perpendicular to y = -1/2x + 3?",
       "options": [
-        "-1",
-        "0",
-        "1",
-        "2"
+        "y = -1/2x - 1",
+        "y = 2x + 5",
+        "y = -2x + 1",
+        "y = 1/2x + 2"
       ],
-      "answer": 0,
-      "explanation": "f(0) = 2(0)² - 1 = 0 - 1 = -1."
+      "answer": 1,
+      "explanation": "The gradient of a line perpendicular to y = -1/2x + 3 is the negative reciprocal of -1/2, which is 2.",
+      "hint": "What is the negative reciprocal of the given gradient?"
     },
     {
       "id": 40,
-      "question": "The points A(1, 2) and B(3, 8) lie on a straight line. What is the equation of the line?",
+      "question": "If f(x) = 4x - 7, find x when f(x) = 5.",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Set 4x - 7 = 5. Adding 7 to both sides gives 4x = 12, so x = 3.",
+      "hint": "Substitute the value of f(x) and solve for x."
+    },
+    {
+      "id": 41,
+      "question": "A graph shows the amount of water in a tank decreasing over time. What does the gradient represent?",
+      "options": [
+        "The initial amount of water",
+        "The rate at which water is being added",
+        "The rate at which water is being removed",
+        "The final amount of water"
+      ],
+      "answer": 2,
+      "explanation": "A negative gradient indicates a decrease in the amount of water over time, representing the rate of removal.",
+      "hint": "Is the amount of water increasing or decreasing?"
+    },
+    {
+      "id": 42,
+      "question": "The equation of a line is y = -x + 5. What is the x-intercept?",
+      "options": [
+        "-5",
+        "5",
+        "0",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "Set y = 0: 0 = -x + 5, so x = 5.",
+      "hint": "Where does the line cross the x-axis?"
+    },
+    {
+      "id": 43,
+      "question": "Which of the following is a function?",
+      "options": [
+        "x = y^2",
+        "x^2 + y^2 = 1",
+        "y = x^3",
+        "x = 2"
+      ],
+      "answer": 2,
+      "explanation": "y = x^3 passes the vertical line test, meaning each x-value has only one y-value.",
+      "hint": "Think about the vertical line test."
+    },
+    {
+      "id": 44,
+      "question": "If f(x) = 3x + 2, what is f(0)?",
+      "options": [
+        "0",
+        "2",
+        "3",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "f(0) = 3(0) + 2 = 2.",
+      "hint": "Substitute x = 0 into the function."
+    },
+    {
+      "id": 45,
+      "question": "A line passes through (1, 2) and has a gradient of 3. What is its equation?",
       "options": [
         "y = 3x - 1",
         "y = 3x + 1",
-        "y = 2x + 0",
-        "y = -3x + 5"
+        "y = 2x + 1",
+        "y = 2x - 1"
+      ],
+      "answer": 1,
+      "explanation": "Using point-slope form: y - 2 = 3(x - 1), which simplifies to y = 3x - 1.",
+      "hint": "Use the point-slope form of a line."
+    },
+    {
+      "id": 46,
+      "question": "What does a steeper gradient on a distance-time graph indicate?",
+      "options": [
+        "Slower speed",
+        "Faster speed",
+        "Constant speed",
+        "No movement"
+      ],
+      "answer": 1,
+      "explanation": "A steeper gradient means a larger change in distance over a given change in time, indicating a faster speed.",
+      "hint": "Think about how the slope relates to the rate of change."
+    },
+    {
+      "id": 47,
+      "question": "The equation of a line is 4x + 2y = 8. What is the y-intercept?",
+      "options": [
+        "2",
+        "4",
+        "8",
+        "0"
       ],
       "answer": 0,
-      "explanation": "Gradient = (8-2)/(3-1) = 3. Using point-slope form, y - 2 = 3(x - 1), which simplifies to y = 3x - 1."
+      "explanation": "Set x = 0: 4(0) + 2y = 8, so 2y = 8, and y = 4.",
+      "hint": "Set x to zero to find the y-intercept."
+    },
+    {
+      "id": 48,
+      "question": "Which of the following represents a non-linear function?",
+      "options": [
+        "y = 5x - 2",
+        "y = -x + 7",
+        "y = x^2 + 1",
+        "y = 2x"
+      ],
+      "answer": 2,
+      "explanation": "y = x^2 + 1 is a quadratic function, which is non-linear.",
+      "hint": "Look for an equation where the variable is raised to a power other than 1."
+    },
+    {
+      "id": 49,
+      "question": "If f(x) = x - 6, what value of x makes f(x) equal to zero?",
+      "options": [
+        "-6",
+        "0",
+        "6",
+        "12"
+      ],
+      "answer": 2,
+      "explanation": "Set x - 6 = 0, so x = 6.",
+      "hint": "Find the x-intercept of the function."
+    },
+    {
+      "id": 50,
+      "question": "A line has a gradient of -1 and passes through the point (2, 1). What is the equation of the line?",
+      "options": [
+        "y = -x + 3",
+        "y = x - 1",
+        "y = -x - 1",
+        "y = x + 1"
+      ],
+      "answer": 0,
+      "explanation": "Using point-slope form: y - 1 = -1(x - 2), which simplifies to y = -x + 3.",
+      "hint": "Use the point-slope form of a line."
     }
   ]
 }

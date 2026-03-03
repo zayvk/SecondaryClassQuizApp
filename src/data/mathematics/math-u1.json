@@ -7,7 +7,7 @@
     "Standard form",
     "Indices"
   ],
-  "generatedAt": "2026-02-25T00:39:23Z",
+  "generatedAt": "2026-03-03T01:28:00Z",
   "questions": [
     {
       "id": 1,
@@ -19,7 +19,8 @@
         "1/3"
       ],
       "answer": 2,
-      "explanation": "π is an irrational number because it cannot be expressed as a simple fraction and its decimal representation is non-terminating and non-repeating."
+      "explanation": "π is a non-terminating, non-repeating decimal, which defines an irrational number.",
+      "hint": "Think about numbers that cannot be expressed as a simple fraction."
     },
     {
       "id": 2,
@@ -30,8 +31,9 @@
         "45 x 10⁻⁶",
         "0.45 x 10⁻³"
       ],
-      "answer": 0,
-      "explanation": "Standard form is a x 10ⁿ where 1 ≤ a < 10.  0.00045 = 4.5 x 10⁻⁴."
+      "answer": 1,
+      "explanation": "Standard form is a x 10ⁿ where 1 ≤ a < 10 and n is an integer.  Moving the decimal point 5 places gives 4.5 x 10⁻⁵.",
+      "hint": "Remember standard form requires one digit before the decimal point."
     },
     {
       "id": 3,
@@ -40,34 +42,37 @@
         "x²",
         "x⁸",
         "x¹⁵",
-        "3x⁵"
+        "3x⁸"
       ],
       "answer": 1,
-      "explanation": "When multiplying terms with the same base, add the exponents: x³ × x⁵ = x^(3+5) = x⁸."
+      "explanation": "When multiplying indices with the same base, add the powers: x³ × x⁵ = x^(3+5) = x⁸.",
+      "hint": "Recall the rule for multiplying terms with the same base."
     },
     {
       "id": 4,
       "question": "Which of these numbers is irrational?",
       "options": [
         "-7",
-        "0.333...",
+        "0",
         "√16",
         "√2"
       ],
       "answer": 3,
-      "explanation": "√2 cannot be written as a terminating or repeating decimal, making it irrational."
+      "explanation": "√2 cannot be written as a terminating or repeating decimal, making it irrational.",
+      "hint": "Consider perfect squares versus non-perfect squares under the radical."
     },
     {
       "id": 5,
       "question": "Write 67000 in standard form.",
       "options": [
+        "6.7 x 10³",
         "6.7 x 10⁴",
         "67 x 10³",
-        "6.7 x 10⁵",
         "670 x 10²"
       ],
-      "answer": 0,
-      "explanation": "To write in standard form, move the decimal point until there's one non-zero digit to the left, then multiply by 10 raised to the power of how many places you moved the decimal."
+      "answer": 1,
+      "explanation": "To write in standard form, move the decimal point until there's one non-zero digit to the left. This gives 6.7 x 10⁴.",
+      "hint": "Count how many places you need to move the decimal point."
     },
     {
       "id": 6,
@@ -75,38 +80,28 @@
       "options": [
         "y⁵",
         "y⁹",
-        "y³",
-        "y¹⁴"
+        "y¹⁴",
+        "y²"
       ],
       "answer": 0,
-      "explanation": "When dividing terms with the same base, subtract the exponents: y⁷ / y² = y^(7-2) = y⁵."
+      "explanation": "When dividing indices with the same base, subtract the powers: y⁷ / y² = y^(7-2) = y⁵.",
+      "hint": "Think about what happens to the exponents when dividing powers."
     },
     {
       "id": 7,
-      "question": "What is the value of 5⁻²?",
+      "question": "Which of the following is closest to the value of √10?",
       "options": [
-        "-25",
-        "1/25",
-        "-1/25",
-        "10"
+        "2.8",
+        "3.0",
+        "3.2",
+        "3.5"
       ],
-      "answer": 1,
-      "explanation": "A negative exponent indicates a reciprocal: 5⁻² = 1/5² = 1/25."
+      "answer": 2,
+      "explanation": "√10 is approximately 3.16, making 3.2 the closest option.",
+      "hint": "Think about perfect squares close to 10."
     },
     {
       "id": 8,
-      "question": "Which of the following is closest to the value of √10?",
-      "options": [
-        "3.0",
-        "3.1",
-        "3.2",
-        "3.3"
-      ],
-      "answer": 2,
-      "explanation": "3.1² = 9.61 and 3.2² = 10.24, so 3.2 is the closest to √10."
-    },
-    {
-      "id": 9,
       "question": "Express 0.0000032 in standard form.",
       "options": [
         "3.2 x 10⁻⁶",
@@ -115,10 +110,11 @@
         "32 x 10⁻⁸"
       ],
       "answer": 0,
-      "explanation": "Move the decimal point 6 places to the right to get 3.2, so the exponent is -6."
+      "explanation": "Moving the decimal point 6 places to the right gives 3.2 x 10⁻⁶.",
+      "hint": "Pay attention to the direction you move the decimal point."
     },
     {
-      "id": 10,
+      "id": 9,
       "question": "Simplify: a² × a⁻³",
       "options": [
         "a⁵",
@@ -127,46 +123,37 @@
         "a⁶"
       ],
       "answer": 1,
-      "explanation": "When multiplying terms with the same base, add the exponents: a² × a⁻³ = a^(2-3) = a⁻¹."
+      "explanation": "When multiplying indices with the same base, add the powers: a² × a⁻³ = a^(2-3) = a⁻¹.",
+      "hint": "Remember that a negative exponent indicates a reciprocal."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is an irrational number?",
+      "options": [
+        "1.4142",
+        "22/7",
+        "√4",
+        "0.333..."
+      ],
+      "answer": 0,
+      "explanation": "1.4142 is an approximation of √2, which is irrational. The others are rational.",
+      "hint": "Consider whether the number terminates or repeats."
     },
     {
       "id": 11,
-      "question": "What is the value of 2³ + 3²?",
+      "question": "Write 5,600,000 in standard form.",
       "options": [
-        "17",
-        "25",
-        "13",
-        "35"
+        "5.6 x 10⁵",
+        "56 x 10⁵",
+        "5.6 x 10⁶",
+        "56 x 10⁴"
       ],
-      "answer": 0,
-      "explanation": "2³ = 8 and 3² = 9, so 8 + 9 = 17."
+      "answer": 2,
+      "explanation": "Moving the decimal point 6 places to the left gives 5.6 x 10⁶.",
+      "hint": "Count the number of zeros to determine the exponent."
     },
     {
       "id": 12,
-      "question": "Which of the following is an irrational number?",
-      "options": [
-        "1.4142 (approx. √2)",
-        "22/7 (approx. π)",
-        "0.125",
-        "16"
-      ],
-      "answer": 0,
-      "explanation": "While 22/7 is an approximation of π, √2 is inherently irrational."
-    },
-    {
-      "id": 13,
-      "question": "Write 4.8 x 10⁻³ as an ordinary number.",
-      "options": [
-        "0.0048",
-        "0.048",
-        "4800",
-        "4.8000"
-      ],
-      "answer": 0,
-      "explanation": "Moving the decimal point 3 places to the left gives 0.0048."
-    },
-    {
-      "id": 14,
       "question": "Simplify: (b¹⁰) / (b⁴ × b²)",
       "options": [
         "b²",
@@ -174,132 +161,144 @@
         "b⁸",
         "b¹⁶"
       ],
-      "answer": 1,
-      "explanation": "(b¹⁰) / (b⁴ × b²) = b¹⁰ / b⁶ = b^(10-6) = b⁴."
+      "answer": 2,
+      "explanation": "(b¹⁰) / (b⁴ × b²) = b¹⁰ / b⁶ = b^(10-6) = b⁴.",
+      "hint": "Simplify the denominator first."
+    },
+    {
+      "id": 13,
+      "question": "What is the approximate value of √20?",
+      "options": [
+        "4.0",
+        "4.2",
+        "4.5",
+        "5.0"
+      ],
+      "answer": 2,
+      "explanation": "√20 is approximately 4.47, making 4.5 the closest option.",
+      "hint": "Think about perfect squares near 20."
+    },
+    {
+      "id": 14,
+      "question": "Express 0.0078 in standard form.",
+      "options": [
+        "7.8 x 10⁻³, ",
+        78,
+        "x 10⁻⁴",
+        "7.8 x 10³",
+        "0.78 x 10⁻²"
+      ],
+      "answer": 0,
+      "explanation": "Moving the decimal point 3 places to the right gives 7.8 x 10⁻³.",
+      "hint": "Remember the exponent will be negative since you're dealing with a small number."
     },
     {
       "id": 15,
-      "question": "What is the value of (1/2)⁻¹?",
+      "question": "Simplify: c⁻² × c⁵",
       "options": [
-        "1/2",
-        "-1/2",
-        "2",
-        "-2"
+        "c⁻¹⁰",
+        "c³",
+        "c⁷",
+        "c¹⁰"
       ],
-      "answer": 2,
-      "explanation": "(1/2)⁻¹ = 2/1 = 2."
+      "answer": 1,
+      "explanation": "c⁻² × c⁵ = c^(5-2) = c³.",
+      "hint": "Remember the rules for multiplying with negative exponents."
     },
     {
       "id": 16,
-      "question": "Estimate the value of √20 to the nearest whole number.",
+      "question": "Which of the following is an irrational number?",
       "options": [
-        "3",
-        "4",
-        "5",
-        "6"
+        "3/8",
+        "0.625",
+        "√36",
+        "√5"
       ],
-      "answer": 1,
-      "explanation": "4² = 16 and 5² = 25. 20 is closer to 16, so √20 is approximately 4."
+      "answer": 3,
+      "explanation": "√5 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Think about numbers that cannot be written as a fraction."
     },
     {
       "id": 17,
-      "question": "Express 5670000 in standard form.",
+      "question": "Write 98,000,000 in standard form.",
       "options": [
-        "5.67 x 10⁶",
-        "56.7 x 10⁵",
-        "5.67 x 10⁷",
-        "567 x 10⁴"
+        "9.8 x 10⁶",
+        "98 x 10⁵",
+        "9.8 x 10⁷",
+        "98 x 10⁶"
       ],
-      "answer": 0,
-      "explanation": "Move the decimal point 6 places to the left to get 5.67, so the exponent is 6."
+      "answer": 2,
+      "explanation": "Moving the decimal point 7 places to the left gives 9.8 x 10⁷.",
+      "hint": "Count the zeros carefully."
     },
     {
       "id": 18,
-      "question": "Simplify: c⁵ × c⁻² × c³",
+      "question": "Simplify: (d⁶ × d²) / d³",
       "options": [
-        "c⁻¹",
-        "c⁶",
-        "c¹⁰",
-        "c¹⁵"
+        "d⁵",
+        "d⁶",
+        "d⁹",
+        "d¹¹"
       ],
-      "answer": 1,
-      "explanation": "c⁵ × c⁻² × c³ = c^(5-2+3) = c⁶."
+      "answer": 0,
+      "explanation": "(d⁶ × d²) / d³ = d⁸ / d³ = d^(8-3) = d⁵.",
+      "hint": "Multiply the terms in the numerator before dividing."
     },
     {
       "id": 19,
-      "question": "What is the value of 3⁻³?",
+      "question": "What is the approximate value of √8?",
       "options": [
-        "-27",
-        "1/27",
-        "-1/27",
-        "9"
+        "2.5",
+        "2.8",
+        "3.0",
+        "3.2"
       ],
       "answer": 1,
-      "explanation": "3⁻³ = 1/3³ = 1/27."
+      "explanation": "√8 is approximately 2.83, making 2.8 the closest option.",
+      "hint": "Think about perfect squares close to 8."
     },
     {
       "id": 20,
-      "question": "Which of the following is an irrational number?",
+      "question": "Express 0.0000105 in standard form.",
       "options": [
-        "0.75",
-        "√81",
-        "3.14",
-        "√17"
+        "1.05 x 10⁻⁵",
+        "10.5 x 10⁻⁶",
+        "1.05 x 10⁵",
+        "105 x 10⁻⁷"
       ],
-      "answer": 3,
-      "explanation": "√17 cannot be expressed as a simple fraction and has a non-terminating, non-repeating decimal representation."
+      "answer": 0,
+      "explanation": "Moving the decimal point 5 places to the right gives 1.05 x 10⁻⁵.",
+      "hint": "Don't forget the zero before the first significant digit."
     },
     {
       "id": 21,
-      "question": "Write 0.000056 in standard form.",
+      "question": "Simplify: (e⁻⁴) / e⁻¹",
       "options": [
-        "5.6 x 10⁻⁵",
-        "56 x 10⁻⁶",
-        "5.6 x 10⁻⁶",
-        "56 x 10⁻⁷"
+        "e⁻⁵",
+        "e⁻³",
+        "e³",
+        "e⁵"
       ],
-      "answer": 0,
-      "explanation": "Move the decimal point 5 places to the right to get 5.6, so the exponent is -5."
+      "answer": 2,
+      "explanation": "(e⁻⁴) / e⁻¹ = e^(-4 - (-1)) = e⁻⁴⁺¹ = e⁻³.",
+      "hint": "Remember dividing with negative exponents."
     },
     {
       "id": 22,
-      "question": "Simplify: (d⁸) / (d⁻²)",
+      "question": "Which of the following is irrational?",
       "options": [
-        "d⁶",
-        "d¹⁰",
-        "d¹⁶",
-        "d⁻⁴"
+        "1/4",
+        "0.75",
+        "√81",
+        "√11"
       ],
-      "answer": 1,
-      "explanation": "(d⁸) / (d⁻²) = d^(8 - (-2)) = d¹⁰."
+      "answer": 3,
+      "explanation": "√11 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Consider if the number under the radical is a perfect square."
     },
     {
       "id": 23,
-      "question": "What is the value of (4/5)⁻¹?",
-      "options": [
-        "5/4",
-        "-5/4",
-        "4/5",
-        "-4/5"
-      ],
-      "answer": 0,
-      "explanation": "(4/5)⁻¹ = 5/4."
-    },
-    {
-      "id": 24,
-      "question": "Estimate the value of √30 to the nearest whole number.",
-      "options": [
-        "4",
-        "5",
-        "6",
-        "7"
-      ],
-      "answer": 1,
-      "explanation": "5² = 25 and 6² = 36. 30 is closer to 25, so √30 is approximately 5."
-    },
-    {
-      "id": 25,
-      "question": "Express 123450000 in standard form.",
+      "question": "Write 123,450,000 in standard form.",
       "options": [
         "1.2345 x 10⁸",
         "12.345 x 10⁷",
@@ -307,187 +306,359 @@
         "123.45 x 10⁶"
       ],
       "answer": 0,
-      "explanation": "Move the decimal point 7 places to the left to get 1.2345, so the exponent is 8."
+      "explanation": "Moving the decimal point 8 places to the left gives 1.2345 x 10⁸.",
+      "hint": "Be precise with the decimal point placement."
+    },
+    {
+      "id": 24,
+      "question": "Simplify: f² × f³ × f⁻¹",
+      "options": [
+        "f⁻⁶",
+        "f⁻⁴",
+        "f⁴",
+        "f⁶"
+      ],
+      "answer": 2,
+      "explanation": "f² × f³ × f⁻¹ = f^(2+3-1) = f⁴.",
+      "hint": "Combine all the exponents."
+    },
+    {
+      "id": 25,
+      "question": "What is the approximate value of √30?",
+      "options": [
+        "5.0",
+        "5.2",
+        "5.5",
+        "6.0"
+      ],
+      "answer": 2,
+      "explanation": "√30 is approximately 5.48, making 5.5 the closest option.",
+      "hint": "Think about perfect squares near 30."
     },
     {
       "id": 26,
-      "question": "Simplify: p² × p⁴ × p⁻¹",
+      "question": "Express 0.0000006 in standard form.",
       "options": [
-        "p⁻⁵",
-        "p⁵",
-        "p⁶",
-        "p¹⁰"
+        "6 x 10⁻⁷",
+        "6 x 10⁶",
+        "6.0 x 10⁻⁷",
+        "0.6 x 10⁻⁶"
       ],
-      "answer": 1,
-      "explanation": "p² × p⁴ × p⁻¹ = p^(2+4-1) = p⁵."
+      "answer": 2,
+      "explanation": "Moving the decimal point 7 places to the right gives 6.0 x 10⁻⁷.",
+      "hint": "Remember to include the zero after the decimal point."
     },
     {
       "id": 27,
-      "question": "What is the value of 10⁻⁴?",
+      "question": "Simplify: (g⁵) / (g⁻²)",
       "options": [
-        "-10000",
-        "0.0001",
-        "-0.0001",
-        "10000"
+        "g⁻¹⁰",
+        "g⁻³",
+        "g³",
+        "g⁷"
       ],
-      "answer": 1,
-      "explanation": "10⁻⁴ = 1/10⁴ = 1/10000 = 0.0001."
+      "answer": 3,
+      "explanation": "(g⁵) / (g⁻²) = g^(5 - (-2)) = g^(5+2) = g⁷.",
+      "hint": "Dividing by a negative exponent is the same as multiplying by a positive one."
     },
     {
       "id": 28,
       "question": "Which of the following is an irrational number?",
       "options": [
-        "1/4",
-        "√49",
-        "0.6",
-        "√3"
+        "0.12",
+        "1/5",
+        "√64",
+        "√7"
       ],
       "answer": 3,
-      "explanation": "√3 cannot be expressed as a simple fraction and has a non-terminating, non-repeating decimal representation."
+      "explanation": "√7 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Consider if the number under the radical is a perfect square."
     },
     {
       "id": 29,
-      "question": "Write 0.00000078 in standard form.",
+      "question": "Write 0.000000009 in standard form.",
       "options": [
-        "7.8 x 10⁻⁷",
-        "78 x 10⁻⁸",
-        "7.8 x 10⁷",
-        "78 x 10⁻⁹"
+        "9 x 10⁻⁹",
+        "9.0 x 10⁻⁹",
+        "9 x 10⁹",
+        "0.9 x 10⁻⁸"
       ],
-      "answer": 0,
-      "explanation": "Move the decimal point 7 places to the right to get 7.8, so the exponent is -7."
+      "answer": 1,
+      "explanation": "Moving the decimal point 9 places to the right gives 9 x 10⁻⁹.",
+      "hint": "Count the number of zeros after the decimal point."
     },
     {
       "id": 30,
-      "question": "Simplify: (q¹²) / (q⁵ × q³)",
+      "question": "Simplify: h⁻³ × h⁻⁴",
       "options": [
-        "q⁻⁴",
-        "q⁴",
-        "q⁸",
-        "q¹⁰"
+        "h⁻¹",
+        "h⁷",
+        "h⁻⁷",
+        "h¹²"
       ],
-      "answer": 1,
-      "explanation": "(q¹²) / (q⁵ × q³) = q¹² / q⁸ = q^(12-8) = q⁴."
+      "answer": 2,
+      "explanation": "h⁻³ × h⁻⁴ = h^(-3 + -4) = h⁻⁷.",
+      "hint": "Remember the rule for multiplying terms with negative exponents."
     },
     {
       "id": 31,
-      "question": "What is the value of (2/3)⁻²?",
+      "question": "What is the approximate value of √15?",
       "options": [
-        "4/9",
-        "9/4",
-        "-9/4",
-        "-4/9"
+        "3.5",
+        "3.9",
+        "4.2",
+        "4.5"
       ],
       "answer": 1,
-      "explanation": "(2/3)⁻² = (3/2)² = 9/4."
+      "explanation": "√15 is approximately 3.87, making 3.9 the closest option.",
+      "hint": "Think about perfect squares close to 15."
     },
     {
       "id": 32,
-      "question": "Estimate the value of √60 to the nearest whole number.",
+      "question": "Express 789000 in standard form.",
       "options": [
-        "6",
-        "7",
-        "8",
-        "9"
+        "7.89 x 10⁵",
+        "78.9 x 10⁴",
+        "7.89 x 10⁶",
+        "789 x 10³"
       ],
-      "answer": 2,
-      "explanation": "7² = 49 and 8² = 64. 60 is closer to 64, so √60 is approximately 8."
+      "answer": 0,
+      "explanation": "Moving the decimal point 5 places to the left gives 7.89 x 10⁵.",
+      "hint": "Count the zeros carefully."
     },
     {
       "id": 33,
-      "question": "Express 987654321 in standard form (to 3 significant figures).",
+      "question": "Simplify: (i⁴ × i²) / i³",
       "options": [
-        "9.88 x 10⁸",
-        "9.87 x 10⁸",
-        "9.88 x 10⁹",
-        "988 x 10⁶"
+        "i³",
+        "i⁴",
+        "i⁵",
+        "i⁶"
       ],
       "answer": 0,
-      "explanation": "Rounding to 3 significant figures gives 9.88, and the exponent is 8."
+      "explanation": "(i⁴ × i²) / i³ = i⁶ / i³ = i^(6-3) = i³.",
+      "hint": "Multiply the terms in the numerator before dividing."
     },
     {
       "id": 34,
-      "question": "Simplify: r⁻³ × r⁶ × r⁻²",
+      "question": "Which of the following is an irrational number?",
       "options": [
-        "r⁻⁹",
-        "r¹",
-        "r⁹",
-        "r¹⁰"
+        "0.5",
+        "1/2",
+        "√25",
+        "√13"
       ],
-      "answer": 1,
-      "explanation": "r⁻³ × r⁶ × r⁻² = r^(-3+6-2) = r¹."
+      "answer": 3,
+      "explanation": "√13 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Consider if the number under the radical is a perfect square."
     },
     {
       "id": 35,
-      "question": "What is the value of 5⁰?",
+      "question": "Write 0.0000000004 in standard form.",
       "options": [
-        "0",
-        "1",
-        "5",
-        "-5"
+        "4 x 10⁻¹⁰",
+        "4.0 x 10⁻¹⁰",
+        "4 x 10¹⁰",
+        "0.4 x 10⁻⁹"
       ],
       "answer": 1,
-      "explanation": "Any non-zero number raised to the power of 0 is equal to 1."
+      "explanation": "Moving the decimal point 10 places to the right gives 4 x 10⁻¹⁰.",
+      "hint": "Count the number of zeros after the decimal point."
     },
     {
       "id": 36,
-      "question": "Which of the following is an irrational number?",
+      "question": "Simplify: j⁻⁵ / j⁻²",
       "options": [
-        "1.2",
-        "√100",
-        "2/5",
-        "√11"
+        "j⁻⁷",
+        "j⁻³",
+        "j³",
+        "j⁷"
       ],
-      "answer": 3,
-      "explanation": "√11 cannot be expressed as a simple fraction and has a non-terminating, non-repeating decimal representation."
+      "answer": 2,
+      "explanation": "j⁻⁵ / j⁻² = j^(-5 - (-2)) = j^(-5+2) = j⁻³.",
+      "hint": "Remember dividing with negative exponents."
     },
     {
       "id": 37,
-      "question": "Write 0.00234 in standard form.",
+      "question": "What is the approximate value of √40?",
       "options": [
-        "2.34 x 10⁻³",
-        "23.4 x 10⁻⁴",
-        "2.34 x 10³",
-        "234 x 10⁻⁵"
+        "5.8",
+        "6.0",
+        "6.3",
+        "6.5"
       ],
-      "answer": 0,
-      "explanation": "Move the decimal point 3 places to the right to get 2.34, so the exponent is -3."
+      "answer": 2,
+      "explanation": "√40 is approximately 6.32, making 6.3 the closest option.",
+      "hint": "Think about perfect squares close to 40."
     },
     {
       "id": 38,
-      "question": "Simplify: (s¹⁵) / (s⁷ × s⁻¹)",
+      "question": "Express 2,345,000,000 in standard form.",
       "options": [
-        "s⁻⁸",
-        "s⁹",
-        "s¹⁶",
-        "s²³"
+        "2.345 x 10⁶",
+        "23.45 x 10⁷",
+        "2.345 x 10⁹",
+        "234.5 x 10⁷"
       ],
-      "answer": 1,
-      "explanation": "(s¹⁵) / (s⁷ × s⁻¹) = s¹⁵ / s⁶ = s^(15-6) = s⁹."
+      "answer": 2,
+      "explanation": "Moving the decimal point 9 places to the left gives 2.345 x 10⁹.",
+      "hint": "Count the zeros carefully."
     },
     {
       "id": 39,
-      "question": "What is the value of (1/3)⁻³?",
+      "question": "Simplify: (k³ × k⁻²) / k⁻¹",
       "options": [
-        "1/27",
-        "3",
-        "27",
-        "-27"
+        "k⁻²",
+        "k⁻¹",
+        "k¹",
+        "k²"
       ],
       "answer": 2,
-      "explanation": "(1/3)⁻³ = (3/1)³ = 3³ = 27."
+      "explanation": "(k³ × k⁻²) / k⁻¹ = k¹ / k⁻¹ = k^(1 - (-1)) = k².",
+      "hint": "Simplify the numerator first."
     },
     {
       "id": 40,
-      "question": "Estimate the value of √85 to the nearest whole number.",
+      "question": "Which of the following is irrational?",
       "options": [
-        "7",
-        "8",
-        "9",
-        "10"
+        "0.8",
+        "4/5",
+        "√100",
+        "√17"
+      ],
+      "answer": 3,
+      "explanation": "√17 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Consider if the number under the radical is a perfect square."
+    },
+    {
+      "id": 41,
+      "question": "Express 0.000000000056 in standard form.",
+      "options": [
+        "5.6 x 10⁻¹¹",
+        "56 x 10⁻¹²",
+        "5.6 x 10¹¹",
+        "56 x 10⁻¹¹"
+      ],
+      "answer": 0,
+      "explanation": "Moving the decimal point 11 places to the right gives 5.6 x 10⁻¹¹.",
+      "hint": "Count the zeros carefully."
+    },
+    {
+      "id": 42,
+      "question": "Simplify: (m⁻⁸) × (m⁵)",
+      "options": [
+        "m⁻³",
+        "m⁻¹³",
+        "m¹³",
+        "m³"
+      ],
+      "answer": 0,
+      "explanation": "m⁻⁸ × m⁵ = m^(-8+5) = m⁻³.",
+      "hint": "Remember the rules for multiplying terms with negative exponents."
+    },
+    {
+      "id": 43,
+      "question": "What is the approximate value of √50?",
+      "options": [
+        "6.8",
+        "7.0",
+        "7.1",
+        "7.5"
+      ],
+      "answer": 1,
+      "explanation": "√50 is approximately 7.07, making 7.0 the closest option.",
+      "hint": "Think about perfect squares close to 50."
+    },
+    {
+      "id": 44,
+      "question": "Write 456,789,000 in standard form.",
+      "options": [
+        "4.56789 x 10⁸",
+        "45.6789 x 10⁷",
+        "4.56789 x 10⁷",
+        "456.789 x 10⁶"
+      ],
+      "answer": 0,
+      "explanation": "Moving the decimal point 8 places to the left gives 4.56789 x 10⁸.",
+      "hint": "Be precise with the decimal point placement."
+    },
+    {
+      "id": 45,
+      "question": "Simplify: (n⁶ / n²) × n⁴",
+      "options": [
+        "n²",
+        "n⁴",
+        "n⁸",
+        "n¹²"
       ],
       "answer": 2,
-      "explanation": "9² = 81 and 10² = 100. 85 is closer to 81, so √85 is approximately 9."
+      "explanation": "(n⁶ / n²) × n⁴ = n⁴ × n⁴ = n⁸.",
+      "hint": "Simplify the fraction first."
+    },
+    {
+      "id": 46,
+      "question": "Which of the following is an irrational number?",
+      "options": [
+        "0.333...",
+        "1/3",
+        "√49",
+        "√21"
+      ],
+      "answer": 3,
+      "explanation": "√21 is a non-terminating, non-repeating decimal, making it irrational.",
+      "hint": "Consider if the number under the radical is a perfect square."
+    },
+    {
+      "id": 47,
+      "question": "Express 0.000000000007 in standard form.",
+      "options": [
+        "7 x 10⁻¹²",
+        "7.0 x 10⁻¹²",
+        "7 x 10¹²",
+        "70 x 10⁻¹³"
+      ],
+      "answer": 1,
+      "explanation": "Moving the decimal point 12 places to the right gives 7 x 10⁻¹².",
+      "hint": "Count the zeros carefully."
+    },
+    {
+      "id": 48,
+      "question": "Simplify: (p⁻¹)²",
+      "options": [
+        "p⁻²",
+        "p²",
+        "p⁻¹",
+        "p¹"
+      ],
+      "answer": 0,
+      "explanation": "(p⁻¹)² = p^(-1 * 2) = p⁻².",
+      "hint": "Remember the power of a power rule."
+    },
+    {
+      "id": 49,
+      "question": "What is the approximate value of √60?",
+      "options": [
+        "7.5",
+        "7.7",
+        "7.8",
+        "8.0"
+      ],
+      "answer": 1,
+      "explanation": "√60 is approximately 7.75, making 7.7 the closest option.",
+      "hint": "Think about perfect squares close to 60."
+    },
+    {
+      "id": 50,
+      "question": "Write 8,901,234,567 in standard form.",
+      "options": [
+        "8.901234567 x 10⁹",
+        "89.01234567 x 10⁸",
+        "8.901234567 x 10⁸",
+        "890.1234567 x 10⁷"
+      ],
+      "answer": 0,
+      "explanation": "Moving the decimal point 9 places to the left gives 8.901234567 x 10⁹.",
+      "hint": "Be precise with the decimal point placement."
     }
   ]
 }

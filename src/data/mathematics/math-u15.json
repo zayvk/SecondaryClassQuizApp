@@ -9,7 +9,7 @@
     "Calculating statistics for grouped data",
     "Representing data"
   ],
-  "generatedAt": "2026-02-25T01:57:49Z",
+  "generatedAt": "2026-03-03T01:59:31Z",
   "questions": [
     {
       "id": 1,
@@ -18,10 +18,11 @@
         "To show exact values",
         "To display data using bars",
         "To show the distribution of data",
-        "To compare different categories"
+        "To compare two sets of data"
       ],
       "answer": 2,
-      "explanation": "A frequency polygon visually represents the shape of a distribution by connecting the midpoints of each class interval."
+      "explanation": "A frequency polygon visually represents the shape of a distribution by connecting the midpoints of each class interval.",
+      "hint": "Think about how a line graph can show trends over time."
     },
     {
       "id": 2,
@@ -29,11 +30,12 @@
       "options": [
         "Shows correlation between two variables",
         "Uses points to represent data",
-        "Always shows a clear trend",
+        "Always shows a clear relationship",
         "Can be used to predict values"
       ],
       "answer": 2,
-      "explanation": "Scatter graphs don't always show a clear trend; they can indicate no correlation or a weak correlation."
+      "explanation": "Scatter graphs may not always show a clear relationship; sometimes the data is scattered with no obvious trend.",
+      "hint": "Consider what happens when data points are randomly spread."
     },
     {
       "id": 3,
@@ -45,7 +47,8 @@
         "The ones digit"
       ],
       "answer": 2,
-      "explanation": "The stem represents the leading digit(s) of the data, typically the tens digit, allowing for comparison of two datasets."
+      "explanation": "The stem represents the leading digit(s) of the data, usually the tens digit, allowing for easy comparison of two datasets.",
+      "hint": "Think about how you would break down a number like 45 into its parts."
     },
     {
       "id": 4,
@@ -57,59 +60,90 @@
         "29"
       ],
       "answer": 1,
-      "explanation": "Class width is calculated by subtracting the lower class boundary of one interval from the lower class boundary of the next (10-0 = 10)."
+      "explanation": "The class width is the difference between the upper and lower class boundaries of each interval (10-0 = 10).",
+      "hint": "Calculate the difference between the start and end of one of the groups."
     },
     {
       "id": 5,
-      "question": "Which measure of central tendency is most affected by outliers?",
+      "question": "What statistic is most affected by extreme values (outliers)?",
       "options": [
-        "Mean",
         "Median",
         "Mode",
+        "Mean",
         "Range"
       ],
-      "answer": 0,
-      "explanation": "The mean is calculated by summing all values, making it sensitive to extreme values (outliers)."
+      "answer": 2,
+      "explanation": "The mean is calculated by summing all values and dividing by the number of values, making it sensitive to outliers.",
+      "hint": "Think about how adding a very large or very small number changes the average."
     },
     {
       "id": 6,
-      "question": "On a scatter graph, a point far from the general trend is called…",
+      "question": "A frequency polygon is drawn with a frequency of 5 at a midpoint of 15. What does this mean?",
       "options": [
-        "Correlation",
-        "Outlier",
-        "Variable",
-        "Interval"
+        "5 values are exactly 15",
+        "Approximately 5 values fall in the interval around 15",
+        "15 values have a frequency of 5",
+        "The total number of values is 15"
       ],
       "answer": 1,
-      "explanation": "An outlier is a data point that lies significantly away from the other points in a scatter graph."
+      "explanation": "The frequency at a midpoint indicates the approximate number of data points within the corresponding class interval.",
+      "hint": "Remember that grouped data represents ranges, not exact values."
     },
     {
       "id": 7,
-      "question": "What information does the frequency of a data point represent?",
+      "question": "On a scatter graph, a point far away from the other points is called…",
       "options": [
-        "The average value",
-        "The total number of data points",
-        "How many times the value appears",
-        "The range of the data"
+        "The median",
+        "An outlier",
+        "The mode",
+        "The mean"
       ],
-      "answer": 2,
-      "explanation": "Frequency indicates how often a particular value or range of values occurs in a dataset."
+      "answer": 1,
+      "explanation": "An outlier is a data point that significantly deviates from the overall pattern of the data on a scatter graph.",
+      "hint": "Think about what 'out' means and how it relates to data."
     },
     {
       "id": 8,
       "question": "In a back-to-back stem-and-leaf diagram, how are the two datasets separated?",
       "options": [
-        "By colour",
+        "By color",
         "By using different stems",
         "By using a key",
         "By using a vertical line"
       ],
       "answer": 3,
-      "explanation": "A key is used to explain how to read the leaves for each dataset in a back-to-back stem-and-leaf diagram."
+      "explanation": "A key is used to explain how to read the leaves for each dataset, clearly separating the two distributions.",
+      "hint": "What helps you understand what each part of the diagram represents?"
     },
     {
       "id": 9,
-      "question": "What does a strong positive correlation on a scatter graph indicate?",
+      "question": "What is the estimated mean from a grouped data table with the following intervals and frequencies: 0-10 (5), 10-20 (8), 20-30 (2)?",
+      "options": [
+        "12",
+        "15",
+        "18",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "Estimated mean = ( (5*5) + (8*15) + (2*25) ) / (5+8+2) = 150/15 = 10.  The midpoints are 5, 15, and 25.",
+      "hint": "You'll need to find the midpoint of each interval first."
+    },
+    {
+      "id": 10,
+      "question": "Which type of graph is best for showing changes in data over time?",
+      "options": [
+        "Bar graph",
+        "Pie chart",
+        "Line graph",
+        "Scatter graph"
+      ],
+      "answer": 2,
+      "explanation": "Line graphs are specifically designed to show trends and changes in data over a continuous period, like time.",
+      "hint": "Think about how stock prices are displayed."
+    },
+    {
+      "id": 11,
+      "question": "A strong positive correlation on a scatter graph indicates…",
       "options": [
         "As one variable increases, the other decreases",
         "As one variable increases, the other also increases",
@@ -117,59 +151,77 @@
         "The variables are unrelated"
       ],
       "answer": 1,
-      "explanation": "A strong positive correlation means that as the value of one variable increases, the value of the other variable tends to increase as well."
-    },
-    {
-      "id": 10,
-      "question": "If the total frequency of a dataset is 50, and a value appears 10 times, what is its relative frequency?",
-      "options": [
-        "5",
-        "10",
-        "0.2",
-        "0.5"
-      ],
-      "answer": 2,
-      "explanation": "Relative frequency is calculated as (frequency of value) / (total frequency) = 10/50 = 0.2."
-    },
-    {
-      "id": 11,
-      "question": "What is the purpose of grouping data into class intervals?",
-      "options": [
-        "To make the data more precise",
-        "To simplify the data and make it easier to interpret",
-        "To increase the number of data points",
-        "To eliminate outliers"
-      ],
-      "answer": 1,
-      "explanation": "Grouping data simplifies it, making it easier to identify patterns and trends, especially with large datasets."
+      "explanation": "A strong positive correlation means that as the value of one variable increases, the value of the other variable tends to increase as well.",
+      "hint": "Think about what 'positive' means in this context."
     },
     {
       "id": 12,
-      "question": "Which of the following is a disadvantage of using a stem-and-leaf diagram?",
+      "question": "What information is typically found on the x-axis of a back-to-back stem-and-leaf diagram?",
       "options": [
-        "It doesn't show the shape of the data",
-        "It can be difficult to create with large datasets",
-        "It doesn't show the median",
-        "It can't be used for comparison"
+        "The leaves",
+        "The stems",
+        "The frequencies",
+        "The total number of data points"
       ],
       "answer": 1,
-      "explanation": "Stem-and-leaf diagrams can become unwieldy and difficult to read when dealing with a very large number of data points."
+      "explanation": "The stem represents the common digits, and the leaves represent the unique digits for each dataset, displayed on either side of the stem.",
+      "hint": "The stem is the 'backbone' of the diagram."
     },
     {
       "id": 13,
-      "question": "What does the term 'correlation coefficient' measure?",
+      "question": "The median of a grouped data set is found by…",
       "options": [
-        "The average of the data",
-        "The strength and direction of a linear relationship",
-        "The number of data points",
-        "The range of the data"
+        "Averaging all the values",
+        "Finding the middle value",
+        "Using the midpoint of the median class",
+        "Counting the number of values"
       ],
-      "answer": 1,
-      "explanation": "The correlation coefficient is a statistical measure that quantifies the strength and direction of a linear relationship between two variables."
+      "answer": 2,
+      "explanation": "The median is estimated by finding the midpoint of the class interval that contains the median value.",
+      "hint": "You'll need to determine which class interval contains the middle data point."
     },
     {
       "id": 14,
-      "question": "What is the mode of a dataset?",
+      "question": "What does a frequency polygon show about the shape of the data?",
+      "options": [
+        "The exact values of each data point",
+        "The spread and central tendency",
+        "The total number of data points",
+        "The range of the data"
+      ],
+      "answer": 1,
+      "explanation": "A frequency polygon visually displays the distribution of data, revealing its spread, central tendency, and any skewness.",
+      "hint": "Think about how the shape of the line changes as the frequency changes."
+    },
+    {
+      "id": 15,
+      "question": "A scatter graph shows no correlation between hours studied and exam scores. What can you conclude?",
+      "options": [
+        "Studying more always leads to higher scores",
+        "There is no relationship between studying and scores",
+        "Studying has a negative effect on scores",
+        "The data is flawed"
+      ],
+      "answer": 1,
+      "explanation": "No correlation means there's no apparent relationship between the two variables; studying more doesn't guarantee higher scores.",
+      "hint": "What does it mean if two things are 'uncorrelated'?"
+    },
+    {
+      "id": 16,
+      "question": "In a back-to-back stem-and-leaf diagram, what does the key explain?",
+      "options": [
+        "The order of the stems",
+        "The meaning of the leaves",
+        "The total number of data points",
+        "The range of the data"
+      ],
+      "answer": 1,
+      "explanation": "The key clarifies how to interpret the leaves in relation to the stem, indicating the value each leaf represents.",
+      "hint": "The key is essential for understanding the diagram's values."
+    },
+    {
+      "id": 17,
+      "question": "What is the mode of a grouped data set?",
       "options": [
         "The average value",
         "The middle value",
@@ -177,319 +229,437 @@
         "The difference between the highest and lowest values"
       ],
       "answer": 2,
-      "explanation": "The mode is the value that appears most often in a dataset."
-    },
-    {
-      "id": 15,
-      "question": "If a scatter graph shows no clear pattern, what can you conclude?",
-      "options": [
-        "There is a strong correlation",
-        "There is a negative correlation",
-        "There is no correlation",
-        "The data is incorrect"
-      ],
-      "answer": 2,
-      "explanation": "If a scatter graph shows no clear pattern, it suggests that there is no relationship between the two variables."
-    },
-    {
-      "id": 16,
-      "question": "What is the range of a dataset?",
-      "options": [
-        "The average value",
-        "The middle value",
-        "The difference between the highest and lowest values",
-        "The most frequent value"
-      ],
-      "answer": 2,
-      "explanation": "The range is calculated by subtracting the smallest value from the largest value in a dataset."
-    },
-    {
-      "id": 17,
-      "question": "What is the purpose of drawing a line of best fit on a scatter graph?",
-      "options": [
-        "To show the exact relationship between the variables",
-        "To show the general trend in the data",
-        "To eliminate outliers",
-        "To calculate the mean"
-      ],
-      "answer": 1,
-      "explanation": "The line of best fit represents the general trend in the data and can be used to make predictions."
+      "explanation": "The mode is the value that appears most frequently in the data set, or the midpoint of the modal class in grouped data.",
+      "hint": "Think about what 'most common' means."
     },
     {
       "id": 18,
-      "question": "In a frequency polygon, what do the x and y axes represent?",
+      "question": "What is the purpose of using midpoints in a frequency polygon?",
       "options": [
-        "X: Frequency, Y: Data values",
-        "X: Data values, Y: Frequency",
-        "X: Cumulative frequency, Y: Data values",
-        "X: Data values, Y: Cumulative frequency"
+        "To show exact values",
+        "To represent the entire class interval",
+        "To make the graph more colorful",
+        "To simplify the calculations"
       ],
       "answer": 1,
-      "explanation": "The x-axis represents the frequency, and the y-axis represents the data values or class midpoints."
+      "explanation": "Midpoints represent the center of each class interval, allowing for a visual representation of the data distribution.",
+      "hint": "Think about where the 'average' value would be within each group."
     },
     {
       "id": 19,
-      "question": "What is the median of the following data set: 2, 5, 8, 11, 15?",
+      "question": "A negative correlation on a scatter graph suggests…",
       "options": [
-        "2",
-        "5",
-        "8",
-        "11"
+        "As one variable increases, the other increases",
+        "As one variable increases, the other decreases",
+        "There is no relationship",
+        "The variables are unrelated"
       ],
-      "answer": 2,
-      "explanation": "The median is the middle value when the data is arranged in order. In this case, it's 8."
+      "answer": 1,
+      "explanation": "A negative correlation indicates an inverse relationship: as one variable increases, the other tends to decrease.",
+      "hint": "Think about what 'negative' means in this context."
     },
     {
       "id": 20,
-      "question": "What does 'grouped data' refer to?",
+      "question": "What is the advantage of using a back-to-back stem-and-leaf diagram?",
       "options": [
-        "Data that is arranged in alphabetical order",
-        "Data that is divided into class intervals",
-        "Data that is collected from multiple sources",
-        "Data that is only numerical"
+        "It shows the exact values of all data points",
+        "It allows for easy comparison of two datasets",
+        "It is easy to create with large datasets",
+        "It is the most visually appealing graph"
       ],
       "answer": 1,
-      "explanation": "Grouped data is data that has been organized into class intervals to summarize its distribution."
+      "explanation": "Back-to-back stem-and-leaf diagrams allow for a side-by-side comparison of two datasets, highlighting similarities and differences.",
+      "hint": "Think about how the diagram's layout helps with comparison."
     },
     {
       "id": 21,
-      "question": "Which of the following best describes a negative correlation?",
+      "question": "If the estimated mean of a grouped data set is 25, what does this suggest?",
       "options": [
-        "As one variable increases, the other increases.",
-        "As one variable increases, the other decreases.",
-        "There is no relationship between the variables.",
-        "The variables are unrelated."
+        "All values are exactly 25",
+        "The average value is approximately 25",
+        "The median is 25",
+        "The mode is 25"
       ],
       "answer": 1,
-      "explanation": "A negative correlation indicates that as one variable increases, the other variable tends to decrease."
+      "explanation": "The estimated mean represents the average value of the data set, though it's an approximation based on grouped data.",
+      "hint": "Remember that 'mean' is another word for 'average'."
     },
     {
       "id": 22,
-      "question": "What is the main advantage of using a back-to-back stem-and-leaf diagram?",
+      "question": "What is the purpose of representing data graphically?",
       "options": [
-        "It shows the exact values of all data points.",
-        "It allows for easy comparison of two datasets.",
-        "It is easy to create with large datasets.",
-        "It shows the mean and median."
+        "To make the data more complicated",
+        "To make the data easier to understand",
+        "To hide the data from others",
+        "To make the data more accurate"
       ],
       "answer": 1,
-      "explanation": "Back-to-back stem-and-leaf diagrams are excellent for visually comparing the distributions of two related datasets."
+      "explanation": "Graphical representations like frequency polygons and scatter graphs help visualize data, making it easier to identify patterns and trends.",
+      "hint": "Think about how pictures can help you understand information better."
     },
     {
       "id": 23,
-      "question": "If a frequency polygon is skewed to the right, what does this indicate?",
+      "question": "On a scatter graph, points that cluster closely around a line indicate…",
       "options": [
-        "The data is symmetrical.",
-        "The data has a long tail on the left side.",
-        "The data has a long tail on the right side.",
-        "The data has no outliers."
+        "Weak correlation",
+        "Strong correlation",
+        "No correlation",
+        "Outliers"
       ],
-      "answer": 2,
-      "explanation": "A right-skewed distribution has a longer tail extending towards higher values."
+      "answer": 1,
+      "explanation": "Points clustered around a line suggest a strong relationship between the two variables.",
+      "hint": "Think about what a tight grouping of points means."
     },
     {
       "id": 24,
-      "question": "What is the purpose of calculating statistics like mean, median, and mode?",
+      "question": "What is the stem in a stem-and-leaf diagram?",
       "options": [
-        "To create a scatter graph.",
-        "To summarize and describe the main features of a dataset.",
-        "To eliminate outliers.",
-        "To create a stem-and-leaf diagram."
+        "The last digit of each number",
+        "The first digit(s) of each number",
+        "The average of the numbers",
+        "The total number of numbers"
       ],
       "answer": 1,
-      "explanation": "These statistics provide a concise summary of the central tendency and spread of the data."
+      "explanation": "The stem represents the leading digit(s) of the data, providing a framework for organizing the data.",
+      "hint": "Think about how you would break down a number like 123."
     },
     {
       "id": 25,
-      "question": "What is a cumulative frequency?",
+      "question": "What does the range of a data set tell you?",
       "options": [
-        "The frequency of a single value.",
-        "The total frequency of all values.",
-        "The frequency of values less than or equal to a certain value.",
-        "The difference between the highest and lowest frequencies."
+        "The average value",
+        "The middle value",
+        "The spread of the data",
+        "The most frequent value"
       ],
       "answer": 2,
-      "explanation": "Cumulative frequency represents the running total of frequencies as you move through the data."
+      "explanation": "The range is the difference between the highest and lowest values, indicating how spread out the data is.",
+      "hint": "Think about how far apart the smallest and largest values are."
     },
     {
       "id": 26,
-      "question": "Which type of graph is best for showing changes in data over time?",
+      "question": "A frequency polygon shows a peak. What does this indicate?",
       "options": [
-        "Scatter graph",
-        "Frequency polygon",
-        "Line graph",
-        "Back-to-back stem-and-leaf diagram"
+        "The most frequent value",
+        "The least frequent value",
+        "The average value",
+        "The range of the data"
       ],
-      "answer": 2,
-      "explanation": "Line graphs are specifically designed to show trends and changes in data over a continuous period."
+      "answer": 0,
+      "explanation": "The peak of a frequency polygon represents the class interval with the highest frequency, indicating the most common value.",
+      "hint": "Think about what 'peak' means in terms of height."
     },
     {
       "id": 27,
-      "question": "What is interpolation in the context of a scatter graph?",
+      "question": "What is a potential drawback of using a scatter graph?",
       "options": [
-        "Finding the exact value of a data point.",
-        "Estimating a value between known data points.",
-        "Identifying outliers.",
-        "Calculating the correlation coefficient."
+        "It can only show positive correlations",
+        "It can be difficult to interpret with many data points",
+        "It always shows a clear relationship",
+        "It is very easy to create"
       ],
       "answer": 1,
-      "explanation": "Interpolation involves using the line of best fit to estimate a value for a variable within the range of the existing data."
+      "explanation": "With a large number of data points, a scatter graph can become cluttered and difficult to interpret.",
+      "hint": "Think about what happens when you try to fit too much information onto one graph."
     },
     {
       "id": 28,
-      "question": "What does the term 'class midpoint' refer to in grouped data?",
+      "question": "In a back-to-back stem-and-leaf diagram, how are the leaves ordered?",
       "options": [
-        "The lowest value in the class interval.",
-        "The highest value in the class interval.",
-        "The average of the lower and upper class boundaries.",
-        "The frequency of the class interval."
+        "Randomly",
+        "From smallest to largest",
+        "From largest to smallest",
+        "Alphabetically"
       ],
-      "answer": 2,
-      "explanation": "The class midpoint is calculated as (lower class boundary + upper class boundary) / 2."
+      "answer": 1,
+      "explanation": "Leaves are ordered from smallest to largest to provide a clear representation of the data distribution.",
+      "hint": "Think about how ordering numbers makes them easier to compare."
     },
     {
       "id": 29,
-      "question": "If two variables have a correlation coefficient of -1, what does this indicate?",
+      "question": "What is the interquartile range (IQR)?",
       "options": [
-        "A strong positive correlation.",
-        "A strong negative correlation.",
-        "No correlation.",
-        "A weak correlation."
+        "The difference between the mean and median",
+        "The difference between the maximum and minimum values",
+        "The difference between the third and first quartiles",
+        "The average of the quartiles"
       ],
-      "answer": 1,
-      "explanation": "A correlation coefficient of -1 indicates a perfect negative correlation, meaning the variables move in opposite directions."
+      "answer": 2,
+      "explanation": "The IQR is a measure of statistical dispersion, being equal to the difference between the 75th and 25th percentiles.",
+      "hint": "Think about dividing the data into four equal parts."
     },
     {
       "id": 30,
-      "question": "What is the purpose of a key in a stem-and-leaf diagram?",
+      "question": "What type of data is best represented by a frequency polygon?",
       "options": [
-        "To show the mean of the data.",
-        "To explain how to read the leaves.",
-        "To identify outliers.",
-        "To calculate the median."
+        "Categorical data",
+        "Discrete data",
+        "Continuous data",
+        "Nominal data"
       ],
-      "answer": 1,
-      "explanation": "The key provides a legend for interpreting the values represented by the stems and leaves."
+      "answer": 2,
+      "explanation": "Frequency polygons are best suited for representing continuous data, where values can fall anywhere within a range.",
+      "hint": "Think about data that can have fractions or decimals."
     },
     {
       "id": 31,
-      "question": "What is the difference between a frequency table and a frequency polygon?",
+      "question": "A scatter graph shows a point that doesn't fit the general trend. What is this called?",
       "options": [
-        "A frequency table uses bars, while a frequency polygon uses lines.",
-        "A frequency table lists values and frequencies, while a frequency polygon graphically represents the distribution.",
-        "They are the same thing.",
-        "A frequency polygon is only for categorical data."
+        "A correlation",
+        "An outlier",
+        "A variable",
+        "A trend"
       ],
       "answer": 1,
-      "explanation": "A frequency polygon is a graphical representation of the data shown in a frequency table."
+      "explanation": "An outlier is a data point that deviates significantly from the overall pattern of the data.",
+      "hint": "Think about what 'out of the ordinary' means."
     },
     {
       "id": 32,
-      "question": "What is the advantage of using a stem-and-leaf diagram over a histogram?",
+      "question": "What is the main advantage of a stem-and-leaf diagram over a histogram?",
       "options": [
-        "It shows the exact data values.",
-        "It is easier to create with large datasets.",
-        "It is more visually appealing.",
-        "It always shows a normal distribution."
+        "It shows exact values",
+        "It is easier to create",
+        "It is more visually appealing",
+        "It takes up less space"
       ],
       "answer": 0,
-      "explanation": "Stem-and-leaf diagrams preserve the original data values, unlike histograms which group data into intervals."
+      "explanation": "Stem-and-leaf diagrams preserve the original data values, unlike histograms which group data into intervals.",
+      "hint": "Think about whether the diagram shows the actual numbers."
     },
     {
       "id": 33,
-      "question": "What is extrapolation in the context of a scatter graph?",
+      "question": "What does 'grouped data' refer to?",
       "options": [
-        "Finding the exact value of a data point.",
-        "Estimating a value within the range of known data points.",
-        "Estimating a value outside the range of known data points.",
-        "Calculating the correlation coefficient."
+        "Data that is arranged alphabetically",
+        "Data that is divided into intervals",
+        "Data that is collected from multiple sources",
+        "Data that is only numbers"
       ],
-      "answer": 2,
-      "explanation": "Extrapolation involves using the line of best fit to estimate a value for a variable beyond the range of the existing data, which is less reliable."
+      "answer": 1,
+      "explanation": "Grouped data is organized into class intervals, making it easier to analyze large datasets.",
+      "hint": "Think about how data is organized into categories or ranges."
     },
     {
       "id": 34,
-      "question": "Which measure of central tendency is least affected by extreme values?",
+      "question": "What is the purpose of a line of best fit on a scatter graph?",
       "options": [
-        "Mean",
-        "Median",
-        "Mode",
-        "Range"
+        "To show the exact relationship between variables",
+        "To show the general trend of the data",
+        "To identify outliers",
+        "To calculate the mean"
       ],
       "answer": 1,
-      "explanation": "The median is the middle value and is not influenced by the magnitude of extreme values."
+      "explanation": "A line of best fit represents the general trend of the data, helping to visualize the relationship between variables.",
+      "hint": "Think about how a line can summarize a pattern."
     },
     {
       "id": 35,
-      "question": "What is the purpose of representing data visually?",
+      "question": "What information is needed to create a back-to-back stem-and-leaf diagram?",
       "options": [
-        "To make the data more complicated.",
-        "To make the data easier to understand and identify patterns.",
-        "To hide the data from others.",
-        "To make the data more precise."
+        "Two sets of data",
+        "One set of data",
+        "The mean of the data",
+        "The range of the data"
       ],
-      "answer": 1,
-      "explanation": "Visual representations like graphs and diagrams help to reveal trends, patterns, and relationships in the data."
+      "answer": 0,
+      "explanation": "A back-to-back stem-and-leaf diagram is designed to compare two datasets simultaneously.",
+      "hint": "The 'back-to-back' part of the name is a clue."
     },
     {
       "id": 36,
-      "question": "What does a correlation of 0 indicate?",
+      "question": "What is the median?",
       "options": [
-        "A strong positive correlation",
-        "A strong negative correlation",
-        "No linear correlation",
-        "A perfect correlation"
+        "The average of the data",
+        "The most frequent value",
+        "The middle value when data is ordered",
+        "The difference between the highest and lowest values"
       ],
       "answer": 2,
-      "explanation": "A correlation of 0 means there is no linear relationship between the two variables."
+      "explanation": "The median is the middle value in a sorted dataset, dividing the data into two equal halves.",
+      "hint": "Think about finding the center of a set of numbers."
     },
     {
       "id": 37,
-      "question": "In a back-to-back stem-and-leaf diagram, if a leaf appears only once on one side, what does that indicate?",
+      "question": "What does a strong negative correlation on a scatter graph indicate?",
       "options": [
-        "It's an outlier.",
-        "It's the median.",
-        "It's the mode.",
-        "It's a common value."
+        "As one variable increases, the other increases",
+        "As one variable increases, the other decreases",
+        "There is no relationship",
+        "The variables are unrelated"
       ],
-      "answer": 0,
-      "explanation": "A single leaf suggests that value is unique to that dataset and doesn't occur frequently."
+      "answer": 1,
+      "explanation": "A strong negative correlation means that as one variable increases, the other tends to decrease.",
+      "hint": "Think about what 'negative' means in this context."
     },
     {
       "id": 38,
-      "question": "What is the main difference between a histogram and a bar chart?",
+      "question": "What is the purpose of a key in a stem-and-leaf diagram?",
       "options": [
-        "Histograms use gaps between bars, while bar charts do not.",
-        "Histograms represent continuous data, while bar charts represent categorical data.",
-        "Bar charts represent continuous data, while histograms represent categorical data.",
-        "Histograms show frequencies, while bar charts show percentages."
+        "To show the range of the data",
+        "To explain how to read the leaves",
+        "To identify outliers",
+        "To calculate the mean"
       ],
       "answer": 1,
-      "explanation": "Histograms are used for continuous data and have bars touching each other, while bar charts are for categorical data and have spaces between bars."
+      "explanation": "The key explains the meaning of the leaves, allowing you to interpret the actual data values.",
+      "hint": "The key is essential for understanding the diagram's values."
     },
     {
       "id": 39,
-      "question": "What is the purpose of using class intervals when dealing with large datasets?",
+      "question": "What is the mode?",
       "options": [
-        "To make the data more accurate.",
-        "To simplify the data and make it easier to analyze.",
-        "To eliminate all outliers.",
-        "To increase the number of data points."
+        "The average of the data",
+        "The middle value",
+        "The most frequent value",
+        "The difference between the highest and lowest values"
       ],
-      "answer": 1,
-      "explanation": "Class intervals help to condense large datasets into a more manageable and interpretable form."
+      "answer": 2,
+      "explanation": "The mode is the value that appears most often in a dataset.",
+      "hint": "Think about what 'most common' means."
     },
     {
       "id": 40,
-      "question": "If a scatter graph shows a cluster of points with no clear trend, what can you conclude?",
+      "question": "What is the best way to display the proportion of students who prefer different subjects?",
       "options": [
-        "There is a strong correlation.",
-        "There is a negative correlation.",
-        "There is no correlation.",
-        "The data is incorrect."
+        "Frequency polygon",
+        "Scatter graph",
+        "Pie chart",
+        "Back-to-back stem-and-leaf diagram"
       ],
       "answer": 2,
-      "explanation": "A scattered cluster of points indicates a lack of any discernible relationship between the two variables."
+      "explanation": "Pie charts are ideal for showing proportions or percentages of a whole.",
+      "hint": "Think about how a circle can represent a whole."
+    },
+    {
+      "id": 41,
+      "question": "What does a correlation coefficient of 0 indicate?",
+      "options": [
+        "Perfect positive correlation",
+        "Perfect negative correlation",
+        "No correlation",
+        "Weak correlation"
+      ],
+      "answer": 2,
+      "explanation": "A correlation coefficient of 0 means there is no linear relationship between the two variables.",
+      "hint": "Think about what 'zero' means in terms of relationship."
+    },
+    {
+      "id": 42,
+      "question": "What is the main difference between a histogram and a frequency polygon?",
+      "options": [
+        "Histograms use lines, polygons use bars",
+        "Histograms show exact values, polygons show ranges",
+        "Histograms use bars, polygons use lines",
+        "Histograms show ranges, polygons show exact values"
+      ],
+      "answer": 2,
+      "explanation": "Histograms use bars to represent frequencies of grouped data, while frequency polygons use lines connecting midpoints.",
+      "hint": "Think about the shapes of the two graphs."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of calculating statistics like mean, median, and mode?",
+      "options": [
+        "To make the data more complicated",
+        "To summarize and understand the data",
+        "To hide the data from others",
+        "To make the data more accurate"
+      ],
+      "answer": 1,
+      "explanation": "Statistics provide a concise summary of the data, helping to identify patterns and trends.",
+      "hint": "Think about how numbers can tell a story."
+    },
+    {
+      "id": 44,
+      "question": "On a scatter graph, if the points generally rise from left to right, this indicates…",
+      "options": [
+        "Negative correlation",
+        "Positive correlation",
+        "No correlation",
+        "Outliers"
+      ],
+      "answer": 1,
+      "explanation": "A rising trend from left to right indicates a positive correlation, where both variables increase together.",
+      "hint": "Think about what 'rising' means in terms of direction."
+    },
+    {
+      "id": 45,
+      "question": "What is the advantage of using grouped data?",
+      "options": [
+        "It shows exact values",
+        "It simplifies large datasets",
+        "It is more visually appealing",
+        "It is easier to create"
+      ],
+      "answer": 1,
+      "explanation": "Grouping data into intervals makes it easier to analyze and interpret large datasets.",
+      "hint": "Think about how organizing information can make it more manageable."
+    },
+    {
+      "id": 46,
+      "question": "What is the range of the following data set: 5, 12, 8, 15, 3?",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "15"
+      ],
+      "answer": 2,
+      "explanation": "The range is the difference between the highest and lowest values: 15 - 3 = 12.",
+      "hint": "Find the biggest and smallest numbers."
+    },
+    {
+      "id": 47,
+      "question": "What type of graph is best for comparing different categories?",
+      "options": [
+        "Line graph",
+        "Scatter graph",
+        "Bar graph",
+        "Frequency polygon"
+      ],
+      "answer": 2,
+      "explanation": "Bar graphs are ideal for comparing the sizes of different categories.",
+      "hint": "Think about how bars can represent different amounts."
+    },
+    {
+      "id": 48,
+      "question": "What does a frequency polygon's area represent?",
+      "options": [
+        "The total number of data points",
+        "The average value",
+        "The range of the data",
+        "The median"
+      ],
+      "answer": 0,
+      "explanation": "The area under a frequency polygon represents the total frequency, or the total number of data points.",
+      "hint": "Think about how area relates to quantity."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of a stem-and-leaf plot?",
+      "options": [
+        "To show the mean of the data",
+        "To show the exact values and shape of the data",
+        "To show the correlation between two variables",
+        "To show the proportion of each category"
+      ],
+      "answer": 1,
+      "explanation": "A stem-and-leaf plot displays both the shape of the data and the individual data values.",
+      "hint": "Think about how the diagram preserves the original data."
+    },
+    {
+      "id": 50,
+      "question": "If two variables have a strong correlation, what can you say about their relationship?",
+      "options": [
+        "They are completely unrelated",
+        "Changes in one variable are likely associated with changes in the other",
+        "One variable causes the other",
+        "The correlation is due to chance"
+      ],
+      "answer": 1,
+      "explanation": "A strong correlation suggests a consistent relationship between the two variables, meaning changes in one are likely linked to changes in the other.",
+      "hint": "Think about what 'strong' means in terms of connection."
     }
   ]
 }

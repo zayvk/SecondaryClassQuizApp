@@ -9,262 +9,62 @@
     "Dividing fractions",
     "Making calculations easier"
   ],
-  "generatedAt": "2026-02-25T01:48:01Z",
+  "generatedAt": "2026-03-03T01:44:56Z",
   "questions": [
     {
       "id": 1,
-      "question": "What is 3/4 as a decimal?",
+      "question": "What is 3/8 as a decimal?",
       "options": [
-        "0.25",
-        "0.5",
-        "0.75",
-        "1.33"
+        "0.3",
+        "0.375",
+        "0.4",
+        "0.83"
       ],
-      "answer": 2,
-      "explanation": "Dividing 3 by 4 gives 0.75. This is a fundamental fraction-to-decimal conversion."
+      "answer": 1,
+      "explanation": "Dividing 3 by 8 gives 0.375. This is a terminating decimal.",
+      "hint": "Think about dividing the numerator by the denominator."
     },
     {
       "id": 2,
-      "question": "Which of the following is equivalent to 0.333...?",
+      "question": "Evaluate: 2 + 3 × 1/2",
       "options": [
-        "1/2",
-        "1/3",
-        "2/3",
-        "3/4"
+        "2.5",
+        "3.5",
+        "4",
+        "5"
       ],
       "answer": 1,
-      "explanation": "0.333... is a recurring decimal representing 1/3."
+      "explanation": "Following the order of operations (multiplication before addition), 3 × 1/2 = 1.5, then 2 + 1.5 = 3.5.",
+      "hint": "Remember the order of operations: PEMDAS/BODMAS."
     },
     {
       "id": 3,
-      "question": "Evaluate: (1/2 + 1/4) x 2",
+      "question": "What is 1/3 × 2/5?",
       "options": [
-        "1/2",
-        "3/4",
-        "1",
-        "3/2"
+        "1/15",
+        "2/15",
+        "5/6",
+        "1/8"
       ],
-      "answer": 3,
-      "explanation": "Following the order of operations (PEMDAS/BODMAS), add the fractions inside the parentheses first, then multiply."
+      "answer": 1,
+      "explanation": "To multiply fractions, multiply the numerators and the denominators: 1 × 2 = 2 and 3 × 5 = 15, resulting in 2/15.",
+      "hint": "Multiply straight across – numerator times numerator, denominator times denominator."
     },
     {
       "id": 4,
-      "question": "Simplify: 2/3 x 3/4",
+      "question": "What is 1/2 ÷ 1/4?",
       "options": [
+        "1/8",
         "1/2",
-        "3/2",
-        "5/7",
-        "6/12"
+        "2",
+        "4"
       ],
-      "answer": 0,
-      "explanation": "Multiply the numerators and denominators, then simplify by dividing both by their greatest common factor."
+      "answer": 2,
+      "explanation": "Dividing by a fraction is the same as multiplying by its reciprocal: 1/2 × 4/1 = 4/2 = 2.",
+      "hint": "Remember 'keep, change, flip' – keep the first fraction, change division to multiplication, and flip the second fraction."
     },
     {
       "id": 5,
-      "question": "What is 1/5 ÷ 2/3?",
-      "options": [
-        "2/15",
-        "3/10",
-        "5/6",
-        "1/10"
-      ],
-      "answer": 1,
-      "explanation": "Dividing by a fraction is the same as multiplying by its reciprocal. So, 1/5 x 3/2 = 3/10."
-    },
-    {
-      "id": 6,
-      "question": "Calculate: 1/2 of 2/5",
-      "options": [
-        "1/5",
-        "2/10",
-        "1/10",
-        "4/10"
-      ],
-      "answer": 0,
-      "explanation": " 'Of' means multiply. (1/2) * (2/5) = 2/10 which simplifies to 1/5."
-    },
-    {
-      "id": 7,
-      "question": "Which is larger: 2/5 or 3/7?",
-      "options": [
-        "2/5",
-        "3/7",
-        "They are equal",
-        "Cannot be determined"
-      ],
-      "answer": 1,
-      "explanation": "Convert both to a common denominator (35). 2/5 = 14/35 and 3/7 = 15/35. Therefore, 2/5 is larger."
-    },
-    {
-      "id": 8,
-      "question": "What is 5/8 as a percentage?",
-      "options": [
-        "50%",
-        "62.5%",
-        "80%",
-        "37.5%"
-      ],
-      "answer": 1,
-      "explanation": "To convert a fraction to a percentage, divide the numerator by the denominator and multiply by 100. (5/8) * 100 = 62.5%"
-    },
-    {
-      "id": 9,
-      "question": "Evaluate: 3 + 1/4 x 8",
-      "options": [
-        "5",
-        "3.25",
-        "3 1/2",
-        "5 1/4"
-      ],
-      "answer": 0,
-      "explanation": "Following order of operations, multiply 1/4 by 8 first (which equals 2), then add 3. 3 + 2 = 5."
-    },
-    {
-      "id": 10,
-      "question": "Simplify: 4/9 ÷ 2/3",
-      "options": [
-        "2/3",
-        "8/27",
-        "6/9",
-        "4/6"
-      ],
-      "answer": 0,
-      "explanation": "Dividing by 2/3 is the same as multiplying by 3/2. (4/9) * (3/2) = 12/18 = 2/3."
-    },
-    {
-      "id": 11,
-      "question": "What is 1/6 + 1/3?",
-      "options": [
-        "1/18",
-        "1/2",
-        "2/9",
-        "1/9"
-      ],
-      "answer": 1,
-      "explanation": "Find a common denominator (6). 1/6 + 2/6 = 3/6 = 1/2."
-    },
-    {
-      "id": 12,
-      "question": "Calculate: 2/5 x 10/3",
-      "options": [
-        "4/3",
-        "20/15",
-        "12/8",
-        "2/3"
-      ],
-      "answer": 0,
-      "explanation": "Multiply the numerators and denominators: (2*10)/(5*3) = 20/15 = 4/3."
-    },
-    {
-      "id": 13,
-      "question": "What is 7/8 - 1/4?",
-      "options": [
-        "3/8",
-        "6/12",
-        "5/8",
-        "1/2"
-      ],
-      "answer": 2,
-      "explanation": "Find a common denominator (8). 7/8 - 2/8 = 5/8."
-    },
-    {
-      "id": 14,
-      "question": "Evaluate: (2/3 + 1/6) ÷ 1/2",
-      "options": [
-        "5/3",
-        "5/6",
-        "3/4",
-        "2/3"
-      ],
-      "answer": 0,
-      "explanation": "Add fractions in parentheses: 2/3+1/6=5/6. Then divide by 1/2 (multiply by 2): 5/6 × 2 = 5/3."
-    },
-    {
-      "id": 15,
-      "question": "Which recurring decimal represents 1/9?",
-      "options": [
-        "0.111...",
-        "0.222...",
-        "0.333...",
-        "0.444..."
-      ],
-      "answer": 0,
-      "explanation": "1 divided by 9 results in the recurring decimal 0.111..."
-    },
-    {
-      "id": 16,
-      "question": "Simplify: 6/10",
-      "options": [
-        "3/5",
-        "2/5",
-        "1/2",
-        "1/5"
-      ],
-      "answer": 0,
-      "explanation": "Divide both the numerator and denominator by their greatest common factor, which is 2."
-    },
-    {
-      "id": 17,
-      "question": "What is 1/8 as a percentage?",
-      "options": [
-        "8%",
-        "12.5%",
-        "25%",
-        "33.3%"
-      ],
-      "answer": 1,
-      "explanation": "(1/8) * 100 = 12.5%"
-    },
-    {
-      "id": 18,
-      "question": "Calculate: 5/6 - 1/3 + 1/2",
-      "options": [
-        "2/3",
-        "5/6",
-        "1",
-        "1/6"
-      ],
-      "answer": 2,
-      "explanation": "Find common denominator (6): 5/6 - 2/6 + 3/6 = 6/6 = 1."
-    },
-    {
-      "id": 19,
-      "question": "What is 2/7 ÷ 4/7?",
-      "options": [
-        "1/2",
-        "2/7",
-        "8/49",
-        "1/1"
-      ],
-      "answer": 0,
-      "explanation": "Dividing by 4/7 is the same as multiplying by 7/4. (2/7) * (7/4) = 14/28 = 1/2."
-    },
-    {
-      "id": 20,
-      "question": "Evaluate: 1/3 x 6/5",
-      "options": [
-        "2/5",
-        "1/5",
-        "6/15",
-        "18/15"
-      ],
-      "answer": 0,
-      "explanation": "Multiply the numerators and denominators: (1*6)/(3*5) = 6/15 = 2/5."
-    },
-    {
-      "id": 21,
-      "question": "Which of the following is closest to 1/11?",
-      "options": [
-        "0.09",
-        "0.10",
-        "0.11",
-        "0.12"
-      ],
-      "answer": 0,
-      "explanation": "1 divided by 11 is approximately 0.0909..."
-    },
-    {
-      "id": 22,
       "question": "Simplify: 12/18",
       "options": [
         "2/3",
@@ -273,223 +73,593 @@
         "1/2"
       ],
       "answer": 0,
-      "explanation": "Divide both numerator and denominator by their greatest common factor, 6."
+      "explanation": "Both 12 and 18 are divisible by 6. Dividing both by 6 gives 2/3.",
+      "hint": "Find the greatest common factor (GCF) of the numerator and denominator."
     },
     {
-      "id": 23,
-      "question": "What is 3/5 + 1/10?",
+      "id": 6,
+      "question": "Which of these is a recurring decimal?",
       "options": [
-        "4/15",
-        "1/2",
-        "2/5",
-        "7/10"
-      ],
-      "answer": 3,
-      "explanation": "Find a common denominator (10). 6/10 + 1/10 = 7/10."
-    },
-    {
-      "id": 24,
-      "question": "Evaluate: (1/4 + 1/8) x 4",
-      "options": [
-        "1",
-        "3/2",
-        "1/2",
-        "3/4"
+        "0.25",
+        "0.333...",
+        "0.5",
+        "0.75"
       ],
       "answer": 1,
-      "explanation": "Add the fractions inside the parentheses first, then multiply by 4."
+      "explanation": "A recurring decimal has a digit or group of digits that repeat infinitely, like 0.333...",
+      "hint": "Look for a pattern of repeating digits."
     },
     {
-      "id": 25,
-      "question": "What is 2/9 ÷ 1/3?",
+      "id": 7,
+      "question": "Evaluate: (1/4 + 1/2) × 2",
       "options": [
-        "2/27",
-        "6/9",
-        "2/3",
+        "1/2",
+        "3/4",
+        "1",
         "3/2"
       ],
-      "answer": 2,
-      "explanation": "Dividing by 1/3 is the same as multiplying by 3. (2/9) * 3 = 6/9 = 2/3."
+      "answer": 3,
+      "explanation": "First, find a common denominator for 1/4 and 1/2 (which is 4). Then (1/4 + 2/4) × 2 = (3/4) × 2 = 6/4 = 3/2 = 1.5",
+      "hint": "Work inside the parentheses first."
     },
     {
-      "id": 26,
-      "question": "Calculate: 1 - 2/5",
+      "id": 8,
+      "question": "What is 5/6 × 3/10?",
       "options": [
-        "3/5",
-        "1/5",
-        "2/5",
-        "4/5"
+        "1/2",
+        "1/4",
+        "1/6",
+        "1/8"
       ],
       "answer": 0,
-      "explanation": "Rewrite 1 as 5/5. 5/5 - 2/5 = 3/5."
+      "explanation": "Multiplying the numerators and denominators gives (5 × 3) / (6 × 10) = 15/60, which simplifies to 1/4.",
+      "hint": "Can you simplify the fraction before multiplying?"
     },
     {
-      "id": 27,
-      "question": "Which is the largest fraction: 1/2, 2/3, 3/4, 5/6?",
+      "id": 9,
+      "question": "What is 3/5 ÷ 2/3?",
+      "options": [
+        "6/10",
+        "9/10",
+        "5/6",
+        "10/6"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by 2/3 is the same as multiplying by 3/2: 3/5 × 3/2 = 9/10.",
+      "hint": "Remember to flip the second fraction when dividing."
+    },
+    {
+      "id": 10,
+      "question": "Simplify: 20/30",
       "options": [
         "1/2",
         "2/3",
-        "3/4",
+        "4/5",
         "5/6"
       ],
-      "answer": 3,
-      "explanation": "Convert to a common denominator (12). 6/12, 8/12, 9/12, 10/12. 5/6 is the largest."
+      "answer": 0,
+      "explanation": "Both 20 and 30 are divisible by 10. Dividing both by 10 gives 2/3.",
+      "hint": "What is the largest number that divides both the numerator and denominator?"
     },
     {
-      "id": 28,
-      "question": "What is 0.666... as a fraction in its simplest form?",
+      "id": 11,
+      "question": "Convert 0.666... to a fraction in its simplest form.",
       "options": [
         "2/3",
-        "1/2",
         "3/5",
+        "1/2",
         "4/6"
       ],
       "answer": 0,
-      "explanation": "0.666... is a recurring decimal representing 2/3."
+      "explanation": "0.666... is equal to 2/3. This is a recurring decimal representing two thirds.",
+      "hint": "Think about what fraction is equivalent to a repeating decimal of 6."
     },
     {
-      "id": 29,
-      "question": "Evaluate: 2/7 x 7/2 + 1/4",
+      "id": 12,
+      "question": "Evaluate: 4 - 2 × 1/4",
       "options": [
-        "1",
-        "1/2",
-        "3/4",
-        "5/4"
+        "3.5",
+        "3",
+        "4.5",
+        "5"
       ],
-      "answer": 3,
-      "explanation": "2/7 * 7/2 = 1. Then, 1 + 1/4 = 5/4. There seems to be an error in the options."
+      "answer": 1,
+      "explanation": "Following the order of operations, 2 × 1/4 = 1/2 = 0.5, then 4 - 0.5 = 3.5.",
+      "hint": "Multiplication comes before subtraction."
     },
     {
-      "id": 30,
-      "question": "Simplify: 15/25",
+      "id": 13,
+      "question": "What is 2/7 × 7/4?",
       "options": [
-        "3/5",
-        "1/5",
-        "5/3",
-        "5/1"
+        "1/2",
+        "1/4",
+        "2/4",
+        "7/14"
       ],
       "answer": 0,
-      "explanation": "Divide both numerator and denominator by their greatest common factor, 5."
+      "explanation": "Multiplying the fractions gives (2 × 7) / (7 × 4) = 14/28, which simplifies to 1/2.",
+      "hint": "Notice any common factors that can be cancelled out?"
     },
     {
-      "id": 31,
-      "question": "What is 1/3 of 9/4?",
+      "id": 14,
+      "question": "What is 5/8 ÷ 1/2?",
       "options": [
-        "3/4",
-        "1/4",
-        "3/12",
-        "9/12"
+        "5/16",
+        "10/8",
+        "5/4",
+        "2/5"
       ],
-      "answer": 0,
-      "explanation": "(1/3) * (9/4) = 9/12 = 3/4."
+      "answer": 2,
+      "explanation": "Dividing by 1/2 is the same as multiplying by 2/1: 5/8 × 2/1 = 10/8 = 5/4.",
+      "hint": "What is the reciprocal of 1/2?"
     },
     {
-      "id": 32,
-      "question": "Evaluate: 5/8 ÷ 5/12",
-      "options": [
-        "3/4",
-        "3/2",
-        "1/2",
-        "5/30"
-      ],
-      "answer": 1,
-      "explanation": "Dividing by 5/12 is multiplying by 12/5: (5/8) × (12/5) = 60/40 = 3/2."
-    },
-    {
-      "id": 33,
-      "question": "What is 1/5 + 2/5 + 3/5?",
-      "options": [
-        "6/25",
-        "6/5",
-        "1/5",
-        "1/2"
-      ],
-      "answer": 1,
-      "explanation": "Add the numerators while keeping the denominator the same: (1+2+3)/5 = 6/5."
-    },
-    {
-      "id": 34,
-      "question": "Which decimal is equivalent to 3/8?",
-      "options": [
-        "0.3",
-        "0.375",
-        "0.4",
-        "0.5"
-      ],
-      "answer": 1,
-      "explanation": "3 divided by 8 equals 0.375."
-    },
-    {
-      "id": 35,
-      "question": "Evaluate: (1/2 - 1/4) x 2/3",
-      "options": [
-        "1/3",
-        "1/6",
-        "1/4",
-        "2/3"
-      ],
-      "answer": 1,
-      "explanation": "Simplify inside the parentheses first: 1/4. Then, (1/4) * (2/3) = 2/12 = 1/6."
-    },
-    {
-      "id": 36,
-      "question": "Simplify: 8/12",
+      "id": 15,
+      "question": "Simplify: 16/24",
       "options": [
         "2/3",
         "4/6",
-        "1/3",
+        "8/12",
         "1/2"
       ],
       "answer": 0,
-      "explanation": "Divide both numerator and denominator by their greatest common factor, 4."
+      "explanation": "Both 16 and 24 are divisible by 8. Dividing both by 8 gives 2/3.",
+      "hint": "Look for a common factor greater than 2."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is closest to 1/11?",
+      "options": [
+        "0.09",
+        "0.1",
+        "0.11",
+        "0.9"
+      ],
+      "answer": 0,
+      "explanation": "1 divided by 11 is approximately 0.0909...",
+      "hint": "Try dividing 1 by 11 using a calculator."
+    },
+    {
+      "id": 17,
+      "question": "Evaluate: (2/5 + 1/5) ÷ 1/2",
+      "options": [
+        "3/10",
+        "6/5",
+        "3/5",
+        "1/5"
+      ],
+      "answer": 1,
+      "explanation": "(2/5 + 1/5) = 3/5. Then (3/5) ÷ (1/2) = (3/5) × (2/1) = 6/5.",
+      "hint": "Remember to add the fractions inside the parentheses first."
+    },
+    {
+      "id": 18,
+      "question": "What is 3/4 × 8/9?",
+      "options": [
+        "2/3",
+        "1/3",
+        "8/27",
+        "24/36"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (3 × 8) / (4 × 9) = 24/36, which simplifies to 2/3.",
+      "hint": "Can you cancel out any factors before multiplying?"
+    },
+    {
+      "id": 19,
+      "question": "What is 7/10 ÷ 14/15?",
+      "options": [
+        "1/2",
+        "3/4",
+        "15/28",
+        "2/3"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by 14/15 is the same as multiplying by 15/14: 7/10 × 15/14 = 105/140, which simplifies to 1/2.",
+      "hint": "Simplify the fractions before multiplying."
+    },
+    {
+      "id": 20,
+      "question": "Simplify: 36/48",
+      "options": [
+        "3/4",
+        "6/8",
+        "9/12",
+        "12/16"
+      ],
+      "answer": 0,
+      "explanation": "Both 36 and 48 are divisible by 12. Dividing both by 12 gives 3/4.",
+      "hint": "What is the biggest number that divides both 36 and 48?"
+    },
+    {
+      "id": 21,
+      "question": "What decimal represents 1/6?",
+      "options": [
+        "0.1666...",
+        "0.6",
+        "0.16",
+        "6.0"
+      ],
+      "answer": 0,
+      "explanation": "1 divided by 6 results in the recurring decimal 0.1666...",
+      "hint": "Perform the division."
+    },
+    {
+      "id": 22,
+      "question": "Evaluate: 5 + 1/2 × 4",
+      "options": [
+        "7",
+        "9",
+        "10",
+        "2.5"
+      ],
+      "answer": 1,
+      "explanation": "Following order of operations, 1/2 × 4 = 2, then 5 + 2 = 7.",
+      "hint": "Remember PEMDAS/BODMAS."
+    },
+    {
+      "id": 23,
+      "question": "What is 4/5 × 15/8?",
+      "options": [
+        "3/2",
+        "1/2",
+        "5/2",
+        "3/4"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (4 × 15) / (5 × 8) = 60/40, which simplifies to 3/2.",
+      "hint": "Can you simplify before multiplying?"
+    },
+    {
+      "id": 24,
+      "question": "What is 9/16 ÷ 3/4?",
+      "options": [
+        "3/4",
+        "1/2",
+        "27/64",
+        "3/2"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by 3/4 is the same as multiplying by 4/3: 9/16 × 4/3 = 36/48, which simplifies to 3/4.",
+      "hint": "Remember to invert and multiply."
+    },
+    {
+      "id": 25,
+      "question": "Simplify: 42/56",
+      "options": [
+        "3/4",
+        "6/8",
+        "7/8",
+        "21/28"
+      ],
+      "answer": 0,
+      "explanation": "Both 42 and 56 are divisible by 14. Dividing both by 14 gives 3/4.",
+      "hint": "Find the greatest common divisor."
+    },
+    {
+      "id": 26,
+      "question": "Convert 0.454545... to a fraction in its simplest form.",
+      "options": [
+        "45/100",
+        "9/20",
+        "1/2",
+        "5/11"
+      ],
+      "answer": 1,
+      "explanation": "0.454545... is equal to 9/20.",
+      "hint": "Think about the place values of the repeating digits."
+    },
+    {
+      "id": 27,
+      "question": "Evaluate: 10 - 3 × 1/3",
+      "options": [
+        "9",
+        "10",
+        "3.33",
+        "7"
+      ],
+      "answer": 0,
+      "explanation": "Following the order of operations, 3 × 1/3 = 1, then 10 - 1 = 9.",
+      "hint": "Multiplication before subtraction."
+    },
+    {
+      "id": 28,
+      "question": "What is 7/9 × 3/7?",
+      "options": [
+        "1/3",
+        "1/9",
+        "21/63",
+        "10/16"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (7 × 3) / (9 × 7) = 21/63, which simplifies to 1/3.",
+      "hint": "Look for common factors to cancel."
+    },
+    {
+      "id": 29,
+      "question": "What is 11/12 ÷ 5/6?",
+      "options": [
+        "11/10",
+        "55/60",
+        "66/60",
+        "1/2"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by 5/6 is the same as multiplying by 6/5: 11/12 × 6/5 = 66/60, which simplifies to 11/10.",
+      "hint": "Remember to flip the second fraction."
+    },
+    {
+      "id": 30,
+      "question": "Simplify: 54/72",
+      "options": [
+        "3/4",
+        "9/12",
+        "27/36",
+        "1/2"
+      ],
+      "answer": 0,
+      "explanation": "Both 54 and 72 are divisible by 18. Dividing both by 18 gives 3/4.",
+      "hint": "What is the largest number that divides both 54 and 72?"
+    },
+    {
+      "id": 31,
+      "question": "What is 2/5 as a percentage?",
+      "options": [
+        "20%",
+        "25%",
+        "40%",
+        "50%"
+      ],
+      "answer": 0,
+      "explanation": "To convert a fraction to a percentage, multiply by 100: (2/5) * 100 = 40%.",
+      "hint": "Multiply the fraction by 100."
+    },
+    {
+      "id": 32,
+      "question": "Evaluate: (1/3 + 1/6) × 3",
+      "options": [
+        "1/2",
+        "1",
+        "3/2",
+        "2"
+      ],
+      "answer": 1,
+      "explanation": "(1/3 + 1/6) = (2/6 + 1/6) = 3/6 = 1/2. Then (1/2) × 3 = 3/2 = 1.5",
+      "hint": "Work inside the parentheses first."
+    },
+    {
+      "id": 33,
+      "question": "What is 5/6 × 12/15?",
+      "options": [
+        "2/3",
+        "1/3",
+        "4/9",
+        "10/15"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (5 × 12) / (6 × 15) = 60/90, which simplifies to 2/3.",
+      "hint": "Can you simplify before multiplying?"
+    },
+    {
+      "id": 34,
+      "question": "What is 8/9 ÷ 4/3?",
+      "options": [
+        "2/3",
+        "1/2",
+        "2/1",
+        "3/2"
+      ],
+      "answer": 2,
+      "explanation": "Dividing by 4/3 is the same as multiplying by 3/4: 8/9 × 3/4 = 24/36, which simplifies to 2/3.",
+      "hint": "Remember to flip the second fraction."
+    },
+    {
+      "id": 35,
+      "question": "Simplify: 63/81",
+      "options": [
+        "7/9",
+        "9/11",
+        "21/27",
+        "1/3"
+      ],
+      "answer": 0,
+      "explanation": "Both 63 and 81 are divisible by 9. Dividing both by 9 gives 7/9.",
+      "hint": "What is the greatest common factor?"
+    },
+    {
+      "id": 36,
+      "question": "What is 1/7 as a decimal rounded to two decimal places?",
+      "options": [
+        "0.14",
+        "0.15",
+        "0.13",
+        "0.20"
+      ],
+      "answer": 0,
+      "explanation": "1 divided by 7 is approximately 0.142857... Rounded to two decimal places, this is 0.14.",
+      "hint": "Perform the division and round the result."
     },
     {
       "id": 37,
-      "question": "What is 1/7 as a percentage (rounded to the nearest whole number)?",
+      "question": "Evaluate: 8 × (1/4 - 1/8)",
       "options": [
-        "7%",
-        "10%",
-        "14%",
-        "21%"
+        "1",
+        "2",
+        "3",
+        "4"
       ],
-      "answer": 2,
-      "explanation": "(1/7) * 100 ≈ 14.28%. Rounded to the nearest whole number, it's 14%."
+      "answer": 1,
+      "explanation": "(1/4 - 1/8) = (2/8 - 1/8) = 1/8. Then 8 × (1/8) = 1.",
+      "hint": "Work inside the parentheses first."
     },
     {
       "id": 38,
-      "question": "Evaluate: 2/5 ÷ 1/5",
+      "question": "What is 11/15 × 5/22?",
       "options": [
-        "2/25",
-        "2/5",
-        "2",
-        "1/2"
+        "1/6",
+        "1/2",
+        "11/66",
+        "55/330"
       ],
-      "answer": 2,
-      "explanation": "Dividing by 1/5 is the same as multiplying by 5. (2/5) * 5 = 10/5 = 2."
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (11 × 5) / (15 × 22) = 55/330, which simplifies to 1/6.",
+      "hint": "Can you simplify before multiplying?"
     },
     {
       "id": 39,
-      "question": "What is 1/6 + 1/3 - 1/4?",
+      "question": "What is 15/16 ÷ 5/8?",
       "options": [
-        "1/4",
-        "1/3",
-        "5/12",
-        "7/12"
+        "3/2",
+        "1/2",
+        "5/8",
+        "3/4"
       ],
       "answer": 0,
-      "explanation": "Find a common denominator (12). 2/12 + 4/12 - 3/12 = 3/12 = 1/4."
+      "explanation": "Dividing by 5/8 is the same as multiplying by 8/5: 15/16 × 8/5 = 120/80, which simplifies to 3/2.",
+      "hint": "Remember to flip the second fraction."
     },
     {
       "id": 40,
-      "question": "Which recurring decimal represents 2/11?",
+      "question": "Simplify: 75/100",
       "options": [
-        "0.1818...",
-        "0.2727...",
-        "0.3636...",
-        "0.4545..."
+        "1/2",
+        "3/4",
+        "5/6",
+        "15/20"
       ],
       "answer": 0,
-      "explanation": "2 divided by 11 results in the recurring decimal 0.1818..."
+      "explanation": "Both 75 and 100 are divisible by 25. Dividing both by 25 gives 3/4.",
+      "hint": "What is the greatest common factor?"
+    },
+    {
+      "id": 41,
+      "question": "What fraction is equivalent to 0.7?",
+      "options": [
+        "1/7",
+        "7/10",
+        "7/100",
+        "1/10"
+      ],
+      "answer": 1,
+      "explanation": "0.7 can be written as 7/10.",
+      "hint": "Think about place value."
+    },
+    {
+      "id": 42,
+      "question": "Evaluate: 6 + 2/5 × 10",
+      "options": [
+        "10",
+        "14",
+        "6.4",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "Following order of operations, 2/5 × 10 = 4, then 6 + 4 = 10.",
+      "hint": "Multiplication before addition."
+    },
+    {
+      "id": 43,
+      "question": "What is 9/10 × 20/27?",
+      "options": [
+        "2/3",
+        "1/3",
+        "5/9",
+        "10/27"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (9 × 20) / (10 × 27) = 180/270, which simplifies to 2/3.",
+      "hint": "Can you simplify before multiplying?"
+    },
+    {
+      "id": 44,
+      "question": "What is 13/18 ÷ 2/9?",
+      "options": [
+        "13/4",
+        "13/36",
+        "9/26",
+        "117/36"
+      ],
+      "answer": 0,
+      "explanation": "Dividing by 2/9 is the same as multiplying by 9/2: 13/18 × 9/2 = 117/36, which simplifies to 13/4.",
+      "hint": "Remember to flip the second fraction."
+    },
+    {
+      "id": 45,
+      "question": "Simplify: 84/96",
+      "options": [
+        "7/8",
+        "21/24",
+        "42/48",
+        "1/2"
+      ],
+      "answer": 0,
+      "explanation": "Both 84 and 96 are divisible by 12. Dividing both by 12 gives 7/8.",
+      "hint": "What is the greatest common factor?"
+    },
+    {
+      "id": 46,
+      "question": "What is 3/8 as a percentage?",
+      "options": [
+        "38%",
+        "25%",
+        "37.5%",
+        "40%"
+      ],
+      "answer": 2,
+      "explanation": "To convert a fraction to a percentage, multiply by 100: (3/8) * 100 = 37.5%.",
+      "hint": "Multiply the fraction by 100."
+    },
+    {
+      "id": 47,
+      "question": "Evaluate: 12 - 4 × 1/2",
+      "options": [
+        "10",
+        "8",
+        "6",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "Following the order of operations, 4 × 1/2 = 2, then 12 - 2 = 10.",
+      "hint": "Multiplication before subtraction."
+    },
+    {
+      "id": 48,
+      "question": "What is 7/12 × 6/7?",
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/6"
+      ],
+      "answer": 0,
+      "explanation": "Multiplying the fractions gives (7 × 6) / (12 × 7) = 42/84, which simplifies to 1/2.",
+      "hint": "Can you simplify before multiplying?"
+    },
+    {
+      "id": 49,
+      "question": "What is 17/20 ÷ 1/4?",
+      "options": [
+        "17/80",
+        "17/5",
+        "4/17",
+        "1/4"
+      ],
+      "answer": 1,
+      "explanation": "Dividing by 1/4 is the same as multiplying by 4/1: 17/20 × 4/1 = 68/20, which simplifies to 17/5.",
+      "hint": "Remember to flip the second fraction."
+    },
+    {
+      "id": 50,
+      "question": "Simplify: 90/120",
+      "options": [
+        "3/4",
+        "9/12",
+        "45/60",
+        "1/2"
+      ],
+      "answer": 0,
+      "explanation": "Both 90 and 120 are divisible by 30. Dividing both by 30 gives 3/4.",
+      "hint": "What is the greatest common factor?"
     }
   ]
 }

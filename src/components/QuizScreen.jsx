@@ -19,6 +19,7 @@ export default function QuizScreen() {
   const [loading,    setLoading]    = useState(true)
   const [error,      setError]      = useState(null)
   const [showFinish, setShowFinish] = useState(false) // confirm end quiz dialog
+  const [showHint,   setShowHint]   = useState(false) // hint toggle
 
   useEffect(() => {
     async function load() {
@@ -78,6 +79,7 @@ export default function QuizScreen() {
   function handleSelect(index) {
     if (answered) return
     setAnswers(prev => ({ ...prev, [current]: index }))
+    setShowHint(false)
     // If they answer a skipped question remove from skipped
     setSkipped(prev => {
       const next = new Set(prev)
@@ -89,6 +91,7 @@ export default function QuizScreen() {
   // ── Skip ──
   function handleSkip() {
     if (answered) return
+    setShowHint(false)
     setSkipped(prev => new Set([...prev, current]))
     moveNext()
   }
@@ -96,12 +99,16 @@ export default function QuizScreen() {
   // ── Next ──
   function handleNext() {
     if (!answered) return
+    setShowHint(false)
     moveNext()
   }
 
   // ── Prev ──
   function handlePrev() {
-    if (current > 0) setCurrent(current - 1)
+    if (current > 0) {
+      setShowHint(false)
+      setCurrent(current - 1)
+    }
   }
 
   // ── Move to next unanswered/unskipped question ──
@@ -200,8 +207,19 @@ export default function QuizScreen() {
             Question {current + 1}
             {skipped.has(current) && <span className="skipped-tag">skipped</span>}
           </span>
+          {!answered && q.hint && (
+            <button className="hint-btn" onClick={() => setShowHint(p => !p)}>
+              💡 {showHint ? 'Hide Hint' : 'Hint'}
+            </button>
+          )}
         </div>
         <p className="question-text" dangerouslySetInnerHTML={{ __html: q.question }} />
+        {showHint && !answered && q.hint && (
+          <div className="hint-box">
+            <span className="hint-icon">💡</span>
+            <p className="hint-text" dangerouslySetInnerHTML={{ __html: q.hint }} />
+          </div>
+        )}
       </div>
 
       {/* ── Options ── */}
