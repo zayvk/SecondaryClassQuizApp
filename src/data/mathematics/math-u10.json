@@ -591,7 +591,7 @@
         "y = 2x + 1",
         "y = 2x - 1"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Using point-slope form: y - 2 = 3(x - 1), which simplifies to y = 3x - 1.",
       "hint": "Use the point-slope form of a line."
     },

@@ -226,7 +226,7 @@
         "216",
         "256"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "Each term is multiplied by 4 to get the next term. 64 * 4 = 256.",
       "hint": "Is there a multiplication or addition pattern?"
     },
@@ -408,7 +408,7 @@
         "1, 4, 9, 16",
         "2, 5, 10, 17"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "The sequence 1, 4, 9, 16 consists of perfect squares and doesn't have a constant difference or ratio.",
       "hint": "Check for constant differences and ratios."
     },
@@ -538,7 +538,7 @@
         "-16",
         "-19"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "The common difference is -3. The nth term is -3n + 11. So, the 9th term is -3(9) + 11 = -27 + 11 = -16.",
       "hint": "Find the common difference and then the nth term."
     },

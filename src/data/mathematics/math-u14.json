@@ -161,7 +161,7 @@
         "150.72 cm²",
         "200 cm²"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "Surface area = 2πr² + 2πrh = 2 * 3.14 * 2² + 2 * 3.14 * 2 * 5 = 25.12 + 62.8 = 87.92 cm²",
       "hint": "Remember the formula includes both the circular ends and the curved surface."
     },
@@ -200,7 +200,7 @@
         "10 cm",
         "12 cm"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Volume = base area * height, so height = volume / base area = 240 cm³ / 40 cm² = 6 cm",
       "hint": "Rearrange the volume formula to solve for the height."
     },
@@ -330,7 +330,7 @@
         "20 cm",
         "25 cm"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Volume = πr²h, so h = Volume / (πr²) = 785 / (3.14 * 5²) = 785 / 78.5 = 10 cm",
       "hint": "Rearrange the volume formula to solve for the height."
     },

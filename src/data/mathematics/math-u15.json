@@ -163,7 +163,7 @@
         "The frequencies",
         "The total number of data points"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "The stem represents the common digits, and the leaves represent the unique digits for each dataset, displayed on either side of the stem.",
       "hint": "The stem is the 'backbone' of the diagram."
     },

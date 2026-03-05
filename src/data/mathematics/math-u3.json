@@ -214,7 +214,7 @@
         "1% decrease",
         "2% decrease"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "The overall change is a 1% decrease. Let the original price be 100. After a 10% increase, it becomes 110. A 10% decrease from 110 is 11, resulting in a final price of 99.",
       "hint": "Consider a specific starting value, like $100."
     },
@@ -526,7 +526,7 @@
         "14% increase",
         "0%"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "The overall change is a 14% increase. Let the original price be 100. After a 20% increase, it becomes 120. A 5% decrease from 120 is 6, resulting in a final price of 114.",
       "hint": "Consider a specific starting value, like $100."
     },

@@ -151,7 +151,7 @@
         "-1",
         "11"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Substitute x = 2 into the equation: y = 4(2) - 7 = 8 - 7 = 1.",
       "hint": "Replace the variable with its given value."
     },
@@ -229,7 +229,7 @@
         "5x + 14",
         "5x + 10"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Distribute: 3x + 12 - 2x + 2. Combine like terms: x + 14.",
       "hint": "Remember to distribute the negative sign as well."
     },
@@ -281,7 +281,7 @@
         "-1",
         "-9"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Substituting m = -1 and n = 5: (-1)² + 2(5) = 1 + 10 = 11.",
       "hint": "Remember that squaring a negative number results in a positive number."
     },

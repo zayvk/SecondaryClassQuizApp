@@ -72,7 +72,7 @@
         "60°",
         "90°"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "The sum of exterior angles of any polygon is 360°. For a regular octagon, each exterior angle is 360°/8 = 45°.",
       "hint": "The sum of exterior angles is always constant."
     },
@@ -462,7 +462,7 @@
         "18",
         "169"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Using Pythagoras' theorem: 5² + b² = 13². 25 + b² = 169. b² = 144. b = 12.",
       "hint": "Apply Pythagoras' theorem."
     },
@@ -657,7 +657,7 @@
         "60°",
         "90°"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "A full circle is 360°. Dividing it into 8 equal sectors gives 360°/8 = 45° per sector.",
       "hint": "A full circle is 360 degrees."
     }

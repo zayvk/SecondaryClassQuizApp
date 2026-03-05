@@ -175,7 +175,7 @@
         "12cm",
         "3cm"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Since SR:RT = 3:2, RT = (2/3) * SR = (2/3) * 6cm = 4cm.",
       "hint": "Set up a proportion to solve for the unknown length."
     },
@@ -500,7 +500,7 @@
         "20cm",
         "10cm"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "RS = (3/2) * RT = (3/2) * 8cm = 12cm.",
       "hint": "Set up a proportion to solve for the unknown length."
     },
@@ -656,7 +656,7 @@
         "6cm²",
         "36cm²"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Area of original triangle = 0.5 * 6cm * 8cm = 24cm². Enlarged area = 24cm² * (0.5)² = 6cm².",
       "hint": "Remember the formula for the area of a triangle."
     }

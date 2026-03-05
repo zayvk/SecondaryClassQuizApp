@@ -67,11 +67,16 @@
     {
       "id": 6,
       "question": "If y is directly proportional to x, and y = 12 when x = 3, what is the value of y when x = 5?",
-      "options": "10",
+      "options": [
+        "8",
+        "20",
+        "24",
+        "30"
+      ],
       "15": "20",
       "25": "",
       "answer": 2,
-      "explanation": "Since y is directly proportional to x, y = kx.  Find k using the first set of values (k=4), then substitute x=5 to find y.",
+      "explanation": "y = kx. k = 12/3 = 4. When x = 6, y = 4 × 6 = 24.",
       "hint": "Write down the general form of a direct proportion."
     },
     {
@@ -147,11 +152,16 @@
     {
       "id": 14,
       "question": "If x:y = 2:5, and y = 10, what is the value of x?",
-      "options": "2",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
       "4": "5",
       "25": "",
       "answer": 1,
-      "explanation": "Set up the proportion 2/5 = x/10. Cross-multiply to get 5x = 20, so x = 4.",
+      "explanation": "Set up the proportion 2/5 = x/10. Cross-multiply: 5x = 20, so x = 4.",
       "hint": "Use cross-multiplication to solve for x."
     },
     {
@@ -267,11 +277,16 @@
     {
       "id": 26,
       "question": "A machine fills 20 bottles in 5 minutes. How many bottles can it fill in 1 hour?",
-      "options": "60",
+      "options": [
+        "120",
+        "180",
+        "240",
+        "300"
+      ],
       "120": "240",
       "400": "",
       "answer": 2,
-      "explanation": "The machine fills 20 bottles / 5 minutes = 4 bottles per minute. In 1 hour (60 minutes), it fills 4 * 60 = 240 bottles.",
+      "explanation": "4 bottles/min × 60 min = 240 bottles.",
       "hint": "Convert the time to the same units."
     },
     {
@@ -307,11 +322,16 @@
     {
       "id": 30,
       "question": "If x:y = 3:5, and y = 15, what is the value of x?",
-      "options": "5",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
       "9": "10",
       "25": "",
-      "answer": 1,
-      "explanation": "Set up the proportion 3/5 = x/15. Cross-multiply to get 5x = 45, so x = 9.",
+      "answer": 2,
+      "explanation": "3/5 = x/15. 5x = 45, so x = 9.",
       "hint": "Use cross-multiplication to solve for x."
     },
     {
@@ -337,11 +357,16 @@
     {
       "id": 33,
       "question": "If p is directly proportional to q², and p = 12 when q = 2, find p when q = 4.",
-      "options": "6",
+      "options": [
+        "12",
+        "24",
+        "36",
+        "48"
+      ],
       "12": "24",
       "48": "",
       "answer": 3,
-      "explanation": "p = kq². 12 = k * 2², so k = 3. Therefore, p = 3q². When q = 4, p = 3 * 4² = 48.",
+      "explanation": "p = kq². k = 12/4 = 3. When q = 4, p = 3 × 16 = 48.",
       "hint": "Remember the direct proportion formula involves a square."
     },
     {
@@ -367,11 +392,16 @@
     {
       "id": 36,
       "question": "If x is inversely proportional to y³, and x = 1 when y = 2, what is the value of x when y = 1?",
-      "options": "1",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
       "2": "4",
       "8": "",
       "answer": 3,
-      "explanation": "x = k/y³. 1 = k/2³, so k = 8. Therefore, x = 8/y³. When y = 1, x = 8/1³ = 8.",
+      "explanation": "x = k/y³. k = 1 × 8 = 8. When y = 1, x = 8/1 = 8.",
       "hint": "Remember the inverse proportion formula involves a cube."
     },
     {
@@ -417,21 +447,31 @@
     {
       "id": 41,
       "question": "If x is directly proportional to the square root of y, and x = 6 when y = 9, what is the value of x when y = 16?",
-      "options": "4",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
       "6": "8",
       "12": "",
       "answer": 2,
-      "explanation": "x = k√y. 6 = k√9, so k = 2. Therefore, x = 2√y. When y = 16, x = 2√16 = 8.",
+      "explanation": "x = k√y. k = 6/3 = 2. When y = 16, x = 2 × 4 = 8.",
       "hint": "Remember the direct proportion formula involves a square root."
     },
     {
       "id": 42,
       "question": "A factory produces 150 items in 3 hours. How many items can it produce in 8 hours?",
-      "options": "200",
+      "options": [
+        "200",
+        "300",
+        "350",
+        "400"
+      ],
       "300": "400",
       "600": "",
       "answer": 3,
-      "explanation": "The factory produces 150 items / 3 hours = 50 items per hour. In 8 hours, it produces 50 * 8 = 400 items.",
+      "explanation": "50 items/hr × 8 hrs = 400 items.",
       "hint": "Calculate the production rate per hour."
     },
     {
@@ -467,11 +507,16 @@
     {
       "id": 46,
       "question": "If x:y = 1:4, and y = 20, what is the value of x?",
-      "options": "2",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
       "4": "5",
       "80": "",
       "answer": 2,
-      "explanation": "Set up the proportion 1/4 = x/20. Cross-multiply to get 4x = 20, so x = 5.",
+      "explanation": "1/4 = x/20. 4x = 20, so x = 5.",
       "hint": "Use cross-multiplication to solve for x."
     },
     {

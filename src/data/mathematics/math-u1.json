@@ -279,7 +279,7 @@
         "e³",
         "e⁵"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "(e⁻⁴) / e⁻¹ = e^(-4 - (-1)) = e⁻⁴⁺¹ = e⁻³.",
       "hint": "Remember dividing with negative exponents."
     },
@@ -383,7 +383,7 @@
         "9 x 10⁹",
         "0.9 x 10⁻⁸"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Moving the decimal point 9 places to the right gives 9 x 10⁻⁹.",
       "hint": "Count the number of zeros after the decimal point."
     },
@@ -461,7 +461,7 @@
         "4 x 10¹⁰",
         "0.4 x 10⁻⁹"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Moving the decimal point 10 places to the right gives 4 x 10⁻¹⁰.",
       "hint": "Count the number of zeros after the decimal point."
     },
@@ -474,7 +474,7 @@
         "j³",
         "j⁷"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "j⁻⁵ / j⁻² = j^(-5 - (-2)) = j^(-5+2) = j⁻³.",
       "hint": "Remember dividing with negative exponents."
     },
@@ -513,7 +513,7 @@
         "k¹",
         "k²"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "(k³ × k⁻²) / k⁻¹ = k¹ / k⁻¹ = k^(1 - (-1)) = k².",
       "hint": "Simplify the numerator first."
     },
@@ -617,7 +617,7 @@
         "7 x 10¹²",
         "70 x 10⁻¹³"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Moving the decimal point 12 places to the right gives 7 x 10⁻¹².",
       "hint": "Count the zeros carefully."
     },

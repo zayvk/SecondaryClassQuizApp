@@ -111,7 +111,7 @@
         "1/6",
         "1/8"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Multiplying the numerators and denominators gives (5 × 3) / (6 × 10) = 15/60, which simplifies to 1/4.",
       "hint": "Can you simplify the fraction before multiplying?"
     },
@@ -137,7 +137,7 @@
         "4/5",
         "5/6"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Both 20 and 30 are divisible by 10. Dividing both by 10 gives 2/3.",
       "hint": "What is the largest number that divides both the numerator and denominator?"
     },
@@ -163,7 +163,7 @@
         "4.5",
         "5"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Following the order of operations, 2 × 1/4 = 1/2 = 0.5, then 4 - 0.5 = 3.5.",
       "hint": "Multiplication comes before subtraction."
     },
@@ -410,7 +410,7 @@
         "40%",
         "50%"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "To convert a fraction to a percentage, multiply by 100: (2/5) * 100 = 40%.",
       "hint": "Multiply the fraction by 100."
     },
@@ -423,7 +423,7 @@
         "3/2",
         "2"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "(1/3 + 1/6) = (2/6 + 1/6) = 3/6 = 1/2. Then (1/2) × 3 = 3/2 = 1.5",
       "hint": "Work inside the parentheses first."
     },
@@ -449,7 +449,7 @@
         "2/1",
         "3/2"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "Dividing by 4/3 is the same as multiplying by 3/4: 8/9 × 3/4 = 24/36, which simplifies to 2/3.",
       "hint": "Remember to flip the second fraction."
     },
@@ -527,7 +527,7 @@
         "5/6",
         "15/20"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Both 75 and 100 are divisible by 25. Dividing both by 25 gives 3/4.",
       "hint": "What is the greatest common factor?"
     },

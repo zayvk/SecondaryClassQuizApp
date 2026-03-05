@@ -174,7 +174,7 @@
         "x ≥ 1",
         "x ≤ 1"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "Adding 5 to both sides gives 3x ≥ 9, then dividing by 3 gives x ≥ 3.",
       "hint": "Isolate 'x' using inverse operations, remembering the inequality sign."
     },
@@ -213,7 +213,7 @@
         "x ≤ 5",
         "x ≥ 5"
       ],
-      "answer": 2,
+      "answer": 0,
       "explanation": "Subtracting 2 from both sides gives 4x ≤ 16, then dividing by 4 gives x ≤ 4.",
       "hint": "Remember to isolate 'x' by performing inverse operations."
     },
@@ -226,7 +226,7 @@
         "x > -3",
         "x < -3"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Subtracting 5 from both sides gives -x > -3, then multiplying by -1 and flipping the sign gives x < 3.",
       "hint": "Remember to flip the inequality sign when multiplying or dividing by a negative number."
     },
@@ -265,7 +265,7 @@
         "x ≥ 5",
         "x ≤ 5"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Subtracting 5 from both sides gives -x ≤ 5, then multiplying by -1 and flipping the sign gives x ≥ -5.",
       "hint": "Remember to flip the inequality sign when multiplying or dividing by a negative number."
     },
@@ -304,7 +304,7 @@
         "x = 9",
         "x = 10"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Multiplying both sides by 3 gives 2x + 1 = 15. Subtracting 1 from both sides gives 2x = 14, so x = 7.",
       "hint": "Get rid of the fraction first."
     },
@@ -382,7 +382,7 @@
         "x = 6",
         "x = 8"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Subtracting 2x from both sides gives 4x - 4 = 12. Adding 4 to both sides gives 4x = 16, so x = 4.",
       "hint": "Collect the 'x' terms on one side of the equation."
     },
@@ -486,7 +486,7 @@
         "x = 5",
         "x = 7"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Subtracting 3x from both sides gives 5x + 5 = 20. Subtracting 5 from both sides gives 5x = 15, so x = 3.",
       "hint": "Collect the 'x' terms on one side of the equation."
     },
@@ -538,7 +538,7 @@
         "x = 9",
         "x = 12"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Expanding gives 2x + 6 - x = 9, simplifying to x + 6 = 9, so x = 3.",
       "hint": "Simplify the equation by expanding the brackets and combining like terms."
     },
@@ -629,7 +629,7 @@
         "x ≥ -2",
         "x ≤ -2"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "Subtracting 7 from both sides gives -3x ≤ -6, then dividing by -3 and flipping the sign gives x ≥ 2.",
       "hint": "Remember to flip the inequality sign when dividing by a negative number."
     },

@@ -83,7 +83,7 @@
         "12.56 m²",
         "62.8 m²"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Circumference = 2πr, so 62.8 = 2 * 3.14 * r, which means r = 10m. Area = πr² = 3.14 * 10 * 10 = 314 m².",
       "hint": "First, find the radius using the circumference formula."
     },
@@ -226,7 +226,7 @@
         "70 cm²",
         "120 cm²"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Area of a trapezium = (1/2) * (sum of parallel sides) * height. Therefore, area = (1/2) * (10 + 14) * 5 = 60 cm².",
       "hint": "The area of a trapezium depends on the lengths of its parallel sides and its height."
     },
@@ -265,7 +265,7 @@
         "750 liters",
         "0.075 liters"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "1 cubic meter = 1000 liters. Therefore, 0.075 cubic meters = 0.075 * 1000 = 75 liters.",
       "hint": "Remember how many liters are in one cubic meter."
     },
@@ -330,7 +330,7 @@
         "11cm",
         "14cm"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Circumference = 2πr, so 44 = 2 * (22/7) * r. Therefore, r = (44 * 7) / (2 * 22) = 7cm.",
       "hint": "Rearrange the circumference formula to solve for the radius."
     },
@@ -434,7 +434,7 @@
         "30 cm³",
         "60 cm³"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "Volume = length * width * height = 5 * 3 * 2 = 30 cm³.",
       "hint": "Volume is found by multiplying the three dimensions of a rectangular prism."
     },
@@ -512,7 +512,7 @@
         "162 cm²",
         "324 cm²"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "Area of a parallelogram = base * height. Therefore, area = 18 * 9 = 162 cm².",
       "hint": "The height of a parallelogram is perpendicular to the base."
     },
@@ -564,7 +564,7 @@
         "96 cm²",
         "144 cm²"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "Area of a trapezium = (1/2) * (sum of parallel sides) * height. Therefore, area = (1/2) * (8 + 16) * 6 = 72 cm².",
       "hint": "The area of a trapezium depends on the lengths of its parallel sides and its height."
     },
@@ -577,7 +577,7 @@
         "21cm",
         "28cm"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "Circumference = 2πr, so 88 = 2 * (22/7) * r. Therefore, r = (88 * 7) / (2 * 22) = 14cm.",
       "hint": "Rearrange the circumference formula to solve for the radius."
     },
