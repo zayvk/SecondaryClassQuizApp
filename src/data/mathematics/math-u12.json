@@ -169,11 +169,16 @@
     {
       "id": 13,
       "question": "What does a probability of 0 indicate?",
-      "options": "The event is certain to happen.",
+      "options": [
+        "The event is certain to happen",
+        "The event is impossible",
+        "The event is likely",
+        "The event is unlikely"
+      ],
       "The event is impossible.": "The event is likely to happen.",
       "The event is equally likely to happen or not happen.": "",
       "answer": 1,
-      "explanation": "A probability of 0 means there is no chance of the event occurring; it's impossible.",
+      "explanation": "A probability of 0 means there is no chance of the event occurring — it is impossible.",
       "hint": "Think about what a probability represents – a chance of something happening."
     },
     {

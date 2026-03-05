@@ -37,7 +37,12 @@
     {
       "id": 3,
       "question": "If 3 apples cost $1.50, what is the cost of 7 apples?",
-      "options": "$2.80",
+      "options": [
+        "$2.80",
+        "$3.50",
+        "$4.20",
+        "$5.00"
+      ],
       "$3.50": "$4.20",
       "$5.25": "",
       "answer": 1,
@@ -47,17 +52,27 @@
     {
       "id": 4,
       "question": "A map has a scale of 1:50,000.  Two towns are 7cm apart on the map. What is the actual distance between the towns in kilometers?",
-      "options": "3.5 km",
+      "options": [
+        "3.5km",
+        "35km",
+        "350km",
+        "3500km"
+      ],
       "7 km": "35 km",
       "350 km": "",
-      "answer": 2,
+      "answer": 1,
       "explanation": "7cm on the map represents 7 * 50,000 cm in reality. Converting cm to km gives 35 km.",
       "hint": "Remember to convert centimeters to kilometers."
     },
     {
       "id": 5,
       "question": "Divide $60 in the ratio 2:3.",
-      "options": "$24 and $36",
+      "options": [
+        "$24 and $36",
+        "$30 and $30",
+        "$20 and $40",
+        "$15 and $45"
+      ],
       "$30 and $30": "$18 and $42",
       "$20 and $40": "",
       "answer": 0,
@@ -82,7 +97,12 @@
     {
       "id": 7,
       "question": "A car travels 120 miles in 2 hours.  At the same speed, how long will it take to travel 300 miles?",
-      "options": "3 hours",
+      "options": [
+        "3 hours",
+        "4 hours",
+        "5 hours",
+        "6 hours"
+      ],
       "4 hours": "5 hours",
       "6 hours": "",
       "answer": 2,
@@ -92,27 +112,42 @@
     {
       "id": 8,
       "question": "If a:b = 3:4 and b:c = 5:6, what is the ratio a:c?",
-      "options": "9:10",
+      "options": [
+        "9:10",
+        "5:8",
+        "15:24",
+        "3:5"
+      ],
       "15:24": "1:2",
       "2:5": "",
-      "answer": 0,
+      "answer": 1,
       "explanation": "To find a:c, multiply the ratios to eliminate 'b'. (3/4) * (5/6) = 15/24 which simplifies to 5/8.  However, we need a:c, so we need to adjust b to be the same in both ratios. Multiply the first ratio by 5 and the second by 4 to get 15:20 and 20:24, giving a:c = 15:24 which simplifies to 5:8.  Oops! Let's try again.  Multiply the first ratio by 5 and the second by 4 to get 15:20 and 20:24. Therefore a:c = 15:24 which simplifies to 5:8. My apologies for the initial error.",
       "hint": "Try to make the 'b' values the same in both ratios."
     },
     {
       "id": 9,
       "question": "If x is inversely proportional to y, and x = 4 when y = 3, what is the value of x when y = 6?",
-      "options": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
       "6": "8",
       "12": "",
-      "answer": 0,
+      "answer": 1,
       "explanation": "Since x is inversely proportional to y, x = k/y. Find k using the first set of values (k=12), then substitute y=6 to find x.",
       "hint": "Write down the general form of an inverse proportion."
     },
     {
       "id": 10,
       "question": "A painter can paint a room in 6 hours. How long will it take two painters working at the same rate to paint the same room?",
-      "options": "1 hour",
+      "options": [
+        "2 hours",
+        "3 hours",
+        "4 hours",
+        "6 hours"
+      ],
       "2 hours": "3 hours",
       "12 hours": "",
       "answer": 1,
@@ -122,7 +157,12 @@
     {
       "id": 11,
       "question": "Express 75% as a ratio in its simplest form.",
-      "options": "1:4",
+      "options": [
+        "1:4",
+        "3:4",
+        "3:1",
+        "4:3"
+      ],
       "3:4": "1:3",
       "3:1": "",
       "answer": 1,
@@ -132,17 +172,27 @@
     {
       "id": 12,
       "question": "If 5 workers can build a wall in 8 days, how many days will it take 10 workers to build the same wall?",
-      "options": "2 days",
+      "options": [
+        "2 days",
+        "4 days",
+        "8 days",
+        "10 days"
+      ],
       "4 days": "16 days",
       "40 days": "",
-      "answer": 0,
+      "answer": 1,
       "explanation": "This is an inverse proportion. More workers mean less time. 5 * 8 = 40 worker-days.  40 worker-days / 10 workers = 4 days.",
       "hint": "Consider whether the relationship is direct or inverse."
     },
     {
       "id": 13,
       "question": "A recipe uses 200g of flour for every 50g of butter. How much flour is needed for 150g of butter?",
-      "options": "300g",
+      "options": [
+        "300g",
+        "450g",
+        "600g",
+        "750g"
+      ],
       "450g": "600g",
       "750g": "",
       "answer": 2,
@@ -167,7 +217,12 @@
     {
       "id": 15,
       "question": "A train travels at a constant speed of 80 km/h. How far will it travel in 3.5 hours?",
-      "options": "240 km",
+      "options": [
+        "240km",
+        "280km",
+        "320km",
+        "360km"
+      ],
       "280 km": "320 km",
       "360 km": "",
       "answer": 1,
@@ -177,7 +232,12 @@
     {
       "id": 16,
       "question": "Simplify the ratio 48:36:24.",
-      "options": "2:1.5:1",
+      "options": [
+        "2:1.5:1",
+        "4:3:2",
+        "8:6:4",
+        "6:4:2"
+      ],
       "4:3:2": "6:4.5:3",
       "12:9:6": "",
       "answer": 1,
@@ -187,17 +247,27 @@
     {
       "id": 17,
       "question": "If p is directly proportional to q, and p = 8 when q = 2, find p when q = 7.",
-      "options": "14",
+      "options": [
+        "14",
+        "21",
+        "28",
+        "35"
+      ],
       "28": "32",
       "56": "",
-      "answer": 1,
+      "answer": 2,
       "explanation": "p = kq.  8 = k * 2, so k = 4.  Therefore, p = 4q.  When q = 7, p = 4 * 7 = 28.",
       "hint": "Find the constant of proportionality first."
     },
     {
       "id": 18,
       "question": "A recipe requires 3 eggs for every 100g of flour. How many eggs are needed for 500g of flour?",
-      "options": "5 eggs",
+      "options": [
+        "5 eggs",
+        "10 eggs",
+        "15 eggs",
+        "20 eggs"
+      ],
       "10 eggs": "15 eggs",
       "20 eggs": "",
       "answer": 2,
@@ -207,7 +277,12 @@
     {
       "id": 19,
       "question": "If a:b = 1:2 and b:c = 3:4, what is the ratio a:b:c?",
-      "options": "1:2:3",
+      "options": [
+        "1:2:3",
+        "3:6:8",
+        "2:4:6",
+        "1:3:4"
+      ],
       "3:6:8": "1:6:4",
       "2:4:3": "",
       "answer": 1,
@@ -217,7 +292,12 @@
     {
       "id": 20,
       "question": "If x is inversely proportional to y², and x = 4 when y = 2, what is the value of x when y = 4?",
-      "options": "1",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
       "2": "8",
       "16": "",
       "answer": 0,
@@ -227,17 +307,27 @@
     {
       "id": 21,
       "question": "A map scale is 1cm : 20km. What distance on the map represents 80km?",
-      "options": "2cm",
+      "options": [
+        "2cm",
+        "3cm",
+        "4cm",
+        "5cm"
+      ],
       "4cm": "6cm",
       "8cm": "",
-      "answer": 1,
+      "answer": 2,
       "explanation": "If 1cm represents 20km, then 80km is represented by 80km / 20km/cm = 4cm.",
       "hint": "Think about dividing the actual distance by the scale factor."
     },
     {
       "id": 22,
       "question": "Divide $72 in the ratio 1:2:3.",
-      "options": "$12, $24, $36",
+      "options": [
+        "$12, $24, $36",
+        "$8, $16, $48",
+        "$6, $12, $54",
+        "$10, $20, $42"
+      ],
       "$18, $18, $36": "$10, $20, $42",
       "$6, $12, $54": "",
       "answer": 0,
@@ -247,30 +337,45 @@
     {
       "id": 23,
       "question": "If 6 pencils cost $3, what is the cost of 10 pencils?",
-      "options": "$5",
+      "options": [
+        "$3",
+        "$4",
+        "$5",
+        "$6"
+      ],
       "$6": "$7",
       "$8": "",
-      "answer": 0,
+      "answer": 2,
       "explanation": "The cost of one pencil is $3/6 = $0.50. The cost of 10 pencils is 10 * $0.50 = $5.",
       "hint": "Calculate the price of a single item first."
     },
     {
       "id": 24,
       "question": "If a:b = 5:3 and b:c = 6:5, what is the ratio a:c?",
-      "options": "10:1",
+      "options": [
+        "10:1",
+        "2:1",
+        "5:3",
+        "10:6"
+      ],
       "5:1": "2:1",
       "1:2": "",
-      "answer": 0,
+      "answer": 1,
       "explanation": "Multiply the first ratio by 2 to get 10:6. Then, 6:5 remains the same. Therefore, a:c = 10:5 which simplifies to 2:1.",
       "hint": "Make the 'b' values the same in both ratios."
     },
     {
       "id": 25,
       "question": "If y is inversely proportional to x, and y = 6 when x = 2, what is the value of y when x = 3?",
-      "options": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
       "4": "9",
       "12": "",
-      "answer": 0,
+      "answer": 2,
       "explanation": "y = k/x. 6 = k/2, so k = 12. Therefore, y = 12/x. When x = 3, y = 12/3 = 4.",
       "hint": "Find the constant of proportionality first."
     },
@@ -292,7 +397,12 @@
     {
       "id": 27,
       "question": "Express 25% as a ratio in its simplest form.",
-      "options": "1:3",
+      "options": [
+        "1:3",
+        "1:4",
+        "1:5",
+        "3:1"
+      ],
       "1:4": "3:4",
       "4:1": "",
       "answer": 1,
@@ -302,7 +412,12 @@
     {
       "id": 28,
       "question": "If 4 painters can paint a fence in 3 hours, how long will it take 6 painters to paint the same fence?",
-      "options": "1 hour",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "3 hours",
+        "4 hours"
+      ],
       "2 hours": "2.5 hours",
       "4 hours": "",
       "answer": 1,
@@ -312,10 +427,15 @@
     {
       "id": 29,
       "question": "A recipe uses 150g of sugar for every 300ml of water. How much sugar is needed for 600ml of water?",
-      "options": "150g",
+      "options": [
+        "150g",
+        "200g",
+        "300g",
+        "400g"
+      ],
       "300g": "450g",
       "600g": "",
-      "answer": 1,
+      "answer": 2,
       "explanation": "The ratio of sugar to water is 150:300, which simplifies to 1:2. For 600ml of water, you need 600/2 = 300g of sugar.",
       "hint": "Simplify the ratio first."
     },
@@ -337,17 +457,27 @@
     {
       "id": 31,
       "question": "A car travels 150 miles in 2.5 hours. What is its average speed in miles per hour?",
-      "options": "50 mph",
+      "options": [
+        "50 mph",
+        "55 mph",
+        "60 mph",
+        "65 mph"
+      ],
       "60 mph": "75 mph",
       "80 mph": "",
-      "answer": 0,
+      "answer": 2,
       "explanation": "Speed = Distance / Time. Speed = 150 miles / 2.5 hours = 60 mph.",
       "hint": "Remember the formula: Speed = Distance / Time."
     },
     {
       "id": 32,
       "question": "Simplify the ratio 63:45:27.",
-      "options": "7:5:3",
+      "options": [
+        "7:5:3",
+        "9:7:5",
+        "3:5:7",
+        "5:4:3"
+      ],
       "9:6:3": "21:15:9",
       "3:2:1": "",
       "answer": 0,
@@ -372,17 +502,27 @@
     {
       "id": 34,
       "question": "A recipe requires 4 apples for every 200g of flour. How many apples are needed for 1kg of flour?",
-      "options": "8 apples",
+      "options": [
+        "8 apples",
+        "10 apples",
+        "15 apples",
+        "20 apples"
+      ],
       "10 apples": "20 apples",
       "40 apples": "",
-      "answer": 2,
+      "answer": 3,
       "explanation": "1kg = 1000g. The ratio of apples to flour is 4:200, which simplifies to 1:50. For 1000g of flour, you need 1000/50 = 20 apples.",
       "hint": "Convert kilograms to grams."
     },
     {
       "id": 35,
       "question": "If a:b = 2:3 and b:c = 4:5, what is the ratio a:b:c?",
-      "options": "8:12:15",
+      "options": [
+        "8:12:15",
+        "2:3:4",
+        "4:6:5",
+        "6:9:10"
+      ],
       "2:3:5": "4:6:5",
       "1:2:3": "",
       "answer": 0,
@@ -407,7 +547,12 @@
     {
       "id": 37,
       "question": "A map scale is 1:100,000. Two cities are 5cm apart on the map. What is the actual distance between the cities in kilometers?",
-      "options": "0.5 km",
+      "options": [
+        "0.5km",
+        "1km",
+        "5km",
+        "50km"
+      ],
       "5 km": "50 km",
       "500 km": "",
       "answer": 2,
@@ -417,7 +562,12 @@
     {
       "id": 38,
       "question": "Divide $84 in the ratio 2:5.",
-      "options": "$24 and $60",
+      "options": [
+        "$24 and $60",
+        "$12 and $72",
+        "$20 and $64",
+        "$30 and $54"
+      ],
       "$30 and $54": "$35 and $49",
       "$16.8 and $67.2": "",
       "answer": 0,
@@ -427,17 +577,27 @@
     {
       "id": 39,
       "question": "If 8 oranges cost $4, what is the cost of 12 oranges?",
-      "options": "$4.50",
+      "options": [
+        "$4.00",
+        "$4.50",
+        "$5.00",
+        "$6.00"
+      ],
       "$6.00": "$7.50",
       "$8.00": "",
-      "answer": 0,
+      "answer": 3,
       "explanation": "The cost of one orange is $4/8 = $0.50. The cost of 12 oranges is 12 * $0.50 = $6.00.",
       "hint": "Calculate the price of a single item first."
     },
     {
       "id": 40,
       "question": "If a:b = 4:7 and b:c = 2:3, what is the ratio a:c?",
-      "options": "8:21",
+      "options": [
+        "8:21",
+        "4:7",
+        "8:14",
+        "2:3"
+      ],
       "4:21": "2:7",
       "1:2": "",
       "answer": 0,
@@ -477,7 +637,12 @@
     {
       "id": 43,
       "question": "Express 60% as a ratio in its simplest form.",
-      "options": "2:3",
+      "options": [
+        "2:3",
+        "3:4",
+        "3:5",
+        "5:3"
+      ],
       "3:5": "5:3",
       "3:2": "",
       "answer": 2,
@@ -487,7 +652,12 @@
     {
       "id": 44,
       "question": "If 5 pipes can fill a tank in 4 hours, how long will it take 10 pipes to fill the same tank?",
-      "options": "1 hour",
+      "options": [
+        "1 hour",
+        "2 hours",
+        "3 hours",
+        "4 hours"
+      ],
       "2 hours": "2.5 hours",
       "5 hours": "",
       "answer": 1,
@@ -497,10 +667,15 @@
     {
       "id": 45,
       "question": "A recipe uses 250g of flour for every 100ml of milk. How much flour is needed for 300ml of milk?",
-      "options": "500g",
+      "options": [
+        "375g",
+        "500g",
+        "625g",
+        "750g"
+      ],
       "600g": "750g",
       "800g": "",
-      "answer": 0,
+      "answer": 3,
       "explanation": "The ratio of flour to milk is 250:100, which simplifies to 5:2. For 300ml of milk, you need (5/2) * 300 = 750g of flour.",
       "hint": "Simplify the ratio first."
     },
@@ -522,17 +697,27 @@
     {
       "id": 47,
       "question": "A cyclist travels 36 km in 2 hours. What is their average speed in km/h?",
-      "options": "12 km/h",
+      "options": [
+        "12 km/h",
+        "15 km/h",
+        "18 km/h",
+        "24 km/h"
+      ],
       "18 km/h": "24 km/h",
       "38 km/h": "",
-      "answer": 1,
+      "answer": 2,
       "explanation": "Speed = Distance / Time. Speed = 36 km / 2 hours = 18 km/h.",
       "hint": "Remember the formula: Speed = Distance / Time."
     },
     {
       "id": 48,
       "question": "Simplify the ratio 24:32:40.",
-      "options": "3:4:5",
+      "options": [
+        "3:4:5",
+        "2:3:4",
+        "4:5:6",
+        "1:2:3"
+      ],
       "6:8:10": "12:16:20",
       "2:3:4": "",
       "answer": 0,
@@ -542,20 +727,30 @@
     {
       "id": 49,
       "question": "If p is inversely proportional to q², and p = 2 when q = 3, what is the value of p when q = 6?",
-      "options": "1/2",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "2/3"
+      ],
       "1": "2",
       "4": "",
-      "answer": 0,
+      "answer": 2,
       "explanation": "p = k/q². 2 = k/3², so k = 18. Therefore, p = 18/q². When q = 6, p = 18/6² = 18/36 = 1/2.",
       "hint": "Remember the inverse proportion formula involves a square."
     },
     {
       "id": 50,
       "question": "A map has a scale of 1cm : 10km. What distance on the map represents 35km?",
-      "options": "2.5cm",
+      "options": [
+        "2.5cm",
+        "3cm",
+        "3.5cm",
+        "4cm"
+      ],
       "3cm": "3.5cm",
       "4cm": "",
-      "answer": 0,
+      "answer": 2,
       "explanation": "If 1cm represents 10km, then 35km is represented by 35km / 10km/cm = 3.5cm.",
       "hint": "Think about dividing the actual distance by the scale factor."
     }

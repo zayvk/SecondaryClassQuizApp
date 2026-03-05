@@ -182,11 +182,10 @@
       "id": 14,
       "question": "Express 0.0078 in standard form.",
       "options": [
-        "7.8 x 10⁻³, ",
-        78,
-        "x 10⁻⁴",
-        "7.8 x 10³",
-        "0.78 x 10⁻²"
+        "7.8 × 10⁻³",
+        "78 × 10⁻⁴",
+        "7.8 × 10³",
+        "0.78 × 10⁻²"
       ],
       "answer": 0,
       "explanation": "Moving the decimal point 3 places to the right gives 7.8 x 10⁻³.",
