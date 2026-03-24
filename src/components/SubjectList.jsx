@@ -6,9 +6,13 @@ export default function SubjectList() {
 
   return (
     <div className="screen">
-      <div className="hero">
-        <div className="hero-badge">Cambridge · Grade 9</div>
-        <h1 className="hero-title">Quiz App</h1>
+      <div className="top-bar">
+        <button className="back-btn" onClick={() => navigate('/')}>← Back</button>
+        <span className="top-bar-title">🎓 Cambridge · Grade 9</span>
+      </div>
+
+      <div className="hero" style={{ paddingTop: 28 }}>
+        <h1 className="hero-title">Subjects</h1>
         <p className="hero-sub">Pick a subject to start practising</p>
       </div>
 
