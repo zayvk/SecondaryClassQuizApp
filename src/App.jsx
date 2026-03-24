@@ -9,11 +9,11 @@ export default function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/"                    element={<HomeScreen />} />
-        <Route path="/category/:categoryId" element={<SubjectList />} />
-        <Route path="/subject/:subjectId"  element={<ChapterList />} />
-        <Route path="/quiz/:subjectId"     element={<QuizScreen />} />
-        <Route path="/results"             element={<ResultScreen />} />
+        <Route path="/"                                        element={<HomeScreen />} />
+        <Route path="/category/:categoryId"                   element={<SubjectList />} />
+        <Route path="/category/:categoryId/subject/:subjectId" element={<ChapterList />} />
+        <Route path="/category/:categoryId/quiz/:subjectId"   element={<QuizScreen />} />
+        <Route path="/results"                                 element={<ResultScreen />} />
       </Routes>
     </div>
   )

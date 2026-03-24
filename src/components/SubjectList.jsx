@@ -1,14 +1,25 @@
-import { useNavigate } from 'react-router-dom'
-import subjects from '../data/subjects.json'
+import { useNavigate, useParams } from 'react-router-dom'
+import allSubjects from '../data/subjects.json'
 
 export default function SubjectList() {
-  const navigate = useNavigate()
+  const { categoryId } = useParams()
+  const navigate       = useNavigate()
+
+  const category = allSubjects[categoryId]
+  const subjects = category?.subjects ?? []
+
+  if (!category) return (
+    <div className="screen center">
+      <p className="error-msg">Category not found.</p>
+      <button className="btn" onClick={() => navigate('/')}>Go Home</button>
+    </div>
+  )
 
   return (
     <div className="screen">
       <div className="top-bar">
         <button className="back-btn" onClick={() => navigate('/')}>← Back</button>
-        <span className="top-bar-title">🎓 Cambridge · Grade 9</span>
+        <span className="top-bar-title">{category.label}</span>
       </div>
 
       <div className="hero" style={{ paddingTop: 28 }}>
@@ -21,7 +32,7 @@ export default function SubjectList() {
           <button
             key={subject.id}
             className="subject-card"
-            onClick={() => navigate(`/subject/${subject.id}`)}
+            onClick={() => navigate(`/category/${categoryId}/subject/${subject.id}`)}
           >
             <span className="subject-icon">{subject.icon}</span>
             <div className="subject-info">

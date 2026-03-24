@@ -1,18 +1,26 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import subjects from '../data/subjects.json'
+import allSubjects from '../data/subjects.json'
 
 const QUESTION_OPTIONS = [10, 15, 20, 40]
 
 export default function ChapterList() {
-  const { subjectId }                 = useParams()
+  const { categoryId, subjectId }     = useParams()
   const navigate                      = useNavigate()
-  const subject                       = subjects.find(s => s.id === subjectId)
-  const [selected, setSelected]       = useState([])   // array of unit ids
-  const [showModal, setShowModal]     = useState(false)
-  const [qCount,    setQCount]        = useState(10)
 
-  if (!subject) return <div className="screen"><p>Subject not found.</p></div>
+  const category = allSubjects[categoryId]
+  const subject  = category?.subjects.find(s => s.id === subjectId)
+
+  const [selected,   setSelected]   = useState([])
+  const [showModal,  setShowModal]  = useState(false)
+  const [qCount,     setQCount]     = useState(10)
+
+  if (!subject) return (
+    <div className="screen center">
+      <p className="error-msg">Subject not found.</p>
+      <button className="btn" onClick={() => navigate(-1)}>Go Back</button>
+    </div>
+  )
 
   function toggleUnit(unitId) {
     setSelected(prev =>
@@ -36,10 +44,11 @@ export default function ChapterList() {
   }
 
   function startQuiz() {
-    navigate(`/quiz/${subjectId}`, {
+    navigate(`/category/${categoryId}/quiz/${subjectId}`, {
       state: {
         selectedUnits: selected,
         questionCount: qCount,
+        categoryId,
       }
     })
   }
@@ -50,7 +59,7 @@ export default function ChapterList() {
   return (
     <div className="screen">
       <div className="top-bar">
-        <button className="back-btn" onClick={() => navigate('/')}>← Back</button>
+        <button className="back-btn" onClick={() => navigate(`/category/${categoryId}`)}>← Back</button>
         <span className="top-bar-title">{subject.icon} {subject.name}</span>
       </div>
 

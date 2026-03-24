@@ -23,10 +23,10 @@ const categories = [
     id: 'cs',
     label: 'Engineering · CS',
     title: 'Computer Science',
-    description: 'Data Structures, Algorithms, Networks and more',
+    description: 'OOP, Data Structures, Algorithms and more',
     icon: '💻',
     color: '#ff6b8a',
-    available: false,
+    available: true,
   },
 ]
 

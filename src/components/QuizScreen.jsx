@@ -6,20 +6,20 @@ function shuffle(arr) {
 }
 
 export default function QuizScreen() {
-  const { subjectId }     = useParams()
-  const { state }         = useLocation()
-  const navigate          = useNavigate()
-  const selectedUnits     = state?.selectedUnits ?? []
-  const questionCount     = state?.questionCount ?? 10
+  const { categoryId, subjectId } = useParams()
+  const { state }                 = useLocation()
+  const navigate                  = useNavigate()
+  const selectedUnits             = state?.selectedUnits ?? []
+  const questionCount             = state?.questionCount ?? 10
 
   const [questions,  setQuestions]  = useState([])
   const [current,    setCurrent]    = useState(0)
-  const [answers,    setAnswers]    = useState({})   // { [qIndex]: selectedOptionIndex }
+  const [answers,    setAnswers]    = useState({})
   const [skipped,    setSkipped]    = useState(new Set())
   const [loading,    setLoading]    = useState(true)
   const [error,      setError]      = useState(null)
-  const [showFinish, setShowFinish] = useState(false) // confirm end quiz dialog
-  const [showHint,   setShowHint]   = useState(false) // hint toggle
+  const [showFinish, setShowFinish] = useState(false)
+  const [showHint,   setShowHint]   = useState(false)
 
   useEffect(() => {
     async function load() {
@@ -27,7 +27,7 @@ export default function QuizScreen() {
         let allQuestions = []
 
         for (const unitId of selectedUnits) {
-          const mod  = await import(`../data/${subjectId}/${unitId}.json`)
+          const mod = await import(`../data/${categoryId}/${subjectId}/${unitId}.json`)
           allQuestions = allQuestions.concat(mod.default.questions)
         }
 
@@ -63,24 +63,19 @@ export default function QuizScreen() {
   const answered    = answers[current] !== undefined
   const isCorrect   = answered && answers[current] === q.answer
   const score       = Object.entries(answers).filter(([i, sel]) => questions[i] && sel === questions[i].answer).length
-  const skippedList = [...skipped]
-  const unanswered  = questions.filter((_, i) => answers[i] === undefined && !skipped.has(i))
 
-  // ── Dot status ──
   function dotStatus(i) {
-    if (i === current)           return 'dot-current'
-    if (skipped.has(i))          return 'dot-skipped'
+    if (i === current)            return 'dot-current'
+    if (skipped.has(i))           return 'dot-skipped'
     if (answers[i] !== undefined)
       return answers[i] === questions[i].answer ? 'dot-correct' : 'dot-wrong'
     return 'dot-pending'
   }
 
-  // ── Select answer ──
   function handleSelect(index) {
     if (answered) return
     setAnswers(prev => ({ ...prev, [current]: index }))
     setShowHint(false)
-    // If they answer a skipped question remove from skipped
     setSkipped(prev => {
       const next = new Set(prev)
       next.delete(current)
@@ -88,7 +83,6 @@ export default function QuizScreen() {
     })
   }
 
-  // ── Skip ──
   function handleSkip() {
     if (answered) return
     setShowHint(false)
@@ -96,14 +90,12 @@ export default function QuizScreen() {
     moveNext()
   }
 
-  // ── Next ──
   function handleNext() {
     if (!answered) return
     setShowHint(false)
     moveNext()
   }
 
-  // ── Prev ──
   function handlePrev() {
     if (current > 0) {
       setShowHint(false)
@@ -111,44 +103,21 @@ export default function QuizScreen() {
     }
   }
 
-  // ── Move to next unanswered/unskipped question ──
   function moveNext() {
-    // Find next question after current that's not answered and not skipped
-    // If none found, loop to skipped ones
-    // If all answered → go to results
-
     const totalQ = questions.length
-
-    // Look forward first
     for (let i = current + 1; i < totalQ; i++) {
-      if (answers[i] === undefined) {
-        setCurrent(i)
-        return
-      }
+      if (answers[i] === undefined) { setCurrent(i); return }
     }
-
-    // Wrap around from beginning
     for (let i = 0; i < current; i++) {
-      if (answers[i] === undefined) {
-        setCurrent(i)
-        return
-      }
+      if (answers[i] === undefined) { setCurrent(i); return }
     }
-
-    // All questions are answered (some may have been skipped and come back to)
-    // Check if anything still unanswered
     const allAnswered = questions.every((_, i) => answers[i] !== undefined)
-    if (allAnswered) {
-      finishQuiz()
-    }
-    // else we're on the last unanswered question — stay here
+    if (allAnswered) finishQuiz()
   }
 
-  // ── End Quiz (triggered by student) ──
   function handleEndQuiz() {
-    const skippedCount = [...skipped].filter(i => answers[i] === undefined).length
+    const skippedCount    = [...skipped].filter(i => answers[i] === undefined).length
     const unansweredCount = questions.filter((_, i) => answers[i] === undefined && !skipped.has(i)).length
-
     if (skippedCount > 0 || unansweredCount > 0) {
       setShowFinish(true)
     } else {
@@ -166,10 +135,9 @@ export default function QuizScreen() {
       correct:     answers[i] === q.answer,
       skipped:     answers[i] === undefined,
     }))
-    navigate('/results', { state: { results, subjectId, selectedUnits } })
+    navigate('/results', { state: { results, categoryId, subjectId, selectedUnits } })
   }
 
-  // How many questions still need attention
   const pendingCount = questions.filter((_, i) => answers[i] === undefined).length
 
   return (
@@ -178,7 +146,6 @@ export default function QuizScreen() {
       {/* ── Top Bar ── */}
       <div className="quiz-topbar">
         <button className="back-btn" onClick={handleEndQuiz}>✕</button>
-
         <div className="dot-track">
           {questions.map((_, i) => (
             <span
@@ -189,7 +156,6 @@ export default function QuizScreen() {
             />
           ))}
         </div>
-
         <div className="score-badge">{score} / {questions.length}</div>
       </div>
 
@@ -235,14 +201,14 @@ export default function QuizScreen() {
             <button key={index} className={cls} onClick={() => handleSelect(index)}>
               <span className="option-letter">{['A','B','C','D'][index]}</span>
               <span className="option-text" dangerouslySetInnerHTML={{ __html: option }} />
-              {answered && index === q.answer                             && <span className="option-tick">✓</span>}
+              {answered && index === q.answer                              && <span className="option-tick">✓</span>}
               {answered && index === answers[current] && index !== q.answer && <span className="option-cross">✗</span>}
             </button>
           )
         })}
       </div>
 
-      {/* ── Explanation after answering ── */}
+      {/* ── Explanation ── */}
       {answered && (
         <div className={`explanation-box ${isCorrect ? 'expl-correct' : 'expl-wrong'}`}>
           <span className="expl-icon">{isCorrect ? '✅' : '❌'}</span>
@@ -255,28 +221,16 @@ export default function QuizScreen() {
         <button className="nav-btn" onClick={handlePrev} disabled={current === 0}>
           ← Prev
         </button>
-
         {!answered && (
-          <button className="nav-btn skip-btn" onClick={handleSkip}>
-            Skip ⇥
-          </button>
+          <button className="nav-btn skip-btn" onClick={handleSkip}>Skip ⇥</button>
         )}
-
         {answered && pendingCount > 0 && (
-          <button className="nav-btn next-btn" onClick={handleNext}>
-            Next →
-          </button>
+          <button className="nav-btn next-btn" onClick={handleNext}>Next →</button>
         )}
-
         {answered && pendingCount === 0 && (
-          <button className="nav-btn finish-btn" onClick={finishQuiz}>
-            Finish ✓
-          </button>
+          <button className="nav-btn finish-btn" onClick={finishQuiz}>Finish ✓</button>
         )}
-
-        <button className="nav-btn end-btn" onClick={handleEndQuiz}>
-          End
-        </button>
+        <button className="nav-btn end-btn" onClick={handleEndQuiz}>End</button>
       </div>
 
       {/* ── Confirm End Dialog ── */}
@@ -290,12 +244,8 @@ export default function QuizScreen() {
                 Ending now will mark them as skipped.
               </p>
             </div>
-            <button className="btn-start" onClick={finishQuiz}>
-              Yes, End Quiz
-            </button>
-            <button className="modal-cancel" onClick={() => setShowFinish(false)}>
-              Keep Going
-            </button>
+            <button className="btn-start" onClick={finishQuiz}>Yes, End Quiz</button>
+            <button className="modal-cancel" onClick={() => setShowFinish(false)}>Keep Going</button>
           </div>
         </div>
       )}
