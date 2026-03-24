@@ -1,0 +1,666 @@
+{
+  "subject": "Object-Oriented Programming",
+  "unit": "Unit 6: Constructors and Destructors",
+  "unitId": "oop-u6",
+  "categoryId": "cs",
+  "topics": [
+    "Default and parameterised constructors",
+    "Copy constructors",
+    "Constructor overloading",
+    "Destructors and resource management",
+    "The this keyword"
+  ],
+  "generatedAt": "2026-03-24T08:28:59Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of a default constructor?",
+      "options": [
+        "To initialize an object with user-defined values",
+        "To initialize an object with default values if no arguments are provided",
+        "To destroy an object",
+        "To overload other constructors"
+      ],
+      "answer": 1,
+      "explanation": "A default constructor initializes an object with default values when no arguments are supplied during object creation.",
+      "hint": "Think about what happens when you create an object without providing any initial values."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is true about parameterised constructors?",
+      "options": [
+        "They cannot accept any arguments",
+        "They are automatically called when an object is created",
+        "They allow you to initialize an object with specific values",
+        "They are used to destroy objects"
+      ],
+      "answer": 2,
+      "explanation": "Parameterised constructors accept arguments, enabling initialization of objects with specific values provided during creation.",
+      "hint": "Consider how you would create an object and give it specific starting data."
+    },
+    {
+      "id": 3,
+      "question": "What is the purpose of a copy constructor?",
+      "options": [
+        "To destroy an object",
+        "To create a new object as a copy of an existing object",
+        "To overload other constructors",
+        "To provide default values"
+      ],
+      "answer": 1,
+      "explanation": "A copy constructor creates a new object that is a duplicate of an existing object, copying its data.",
+      "hint": "Think about how you would make an exact duplicate of an object."
+    },
+    {
+      "id": 4,
+      "question": "What happens if you don't define a copy constructor?",
+      "options": [
+        "The compiler will generate a default copy constructor",
+        "The program will not compile",
+        "A destructor will be called",
+        "An error will occur at runtime"
+      ],
+      "answer": 0,
+      "explanation": "If you don't define a copy constructor, the compiler automatically generates a default one that performs a shallow copy.",
+      "hint": "The compiler often provides default behavior if you don't specify your own."
+    },
+    {
+      "id": 5,
+      "question": "What is constructor overloading?",
+      "options": [
+        "Defining multiple constructors with the same name but different parameters",
+        "Defining a constructor that destroys objects",
+        "Defining a constructor that takes no arguments",
+        "Defining a constructor that returns a value"
+      ],
+      "answer": 0,
+      "explanation": "Constructor overloading allows you to define multiple constructors with the same name but different parameter lists, providing flexibility in object initialization.",
+      "hint": "Think about creating objects in different ways, with different initial data."
+    },
+    {
+      "id": 6,
+      "question": "What is the primary purpose of a destructor?",
+      "options": [
+        "To initialize an object",
+        "To destroy an object and release its resources",
+        "To copy an object",
+        "To overload constructors"
+      ],
+      "answer": 1,
+      "explanation": "A destructor is responsible for cleaning up resources allocated to an object when it goes out of scope.",
+      "hint": "Consider what needs to happen when an object is no longer needed."
+    },
+    {
+      "id": 7,
+      "question": "When is a destructor automatically called?",
+      "options": [
+        "When the constructor is called",
+        "When the object is explicitly created",
+        "When the object goes out of scope or is explicitly deleted",
+        "When a copy constructor is called"
+      ],
+      "answer": 2,
+      "explanation": "Destructors are automatically invoked when an object's lifetime ends, either when it goes out of scope or is explicitly deleted using 'delete'.",
+      "hint": "Think about the object's lifecycle and when it's no longer needed."
+    },
+    {
+      "id": 8,
+      "question": "What is resource management in the context of destructors?",
+      "options": [
+        "Allocating memory for objects",
+        "Releasing resources like memory, file handles, and network connections",
+        "Initializing object members",
+        "Copying object data"
+      ],
+      "answer": 1,
+      "explanation": "Resource management involves releasing resources acquired by an object during its lifetime, preventing memory leaks and other issues.",
+      "hint": "Think about what an object might 'own' and need to give back when it's finished."
+    },
+    {
+      "id": 9,
+      "question": "What is the 'this' keyword used for?",
+      "options": [
+        "To call the constructor",
+        "To access the object's own data members",
+        "To destroy the object",
+        "To overload constructors"
+      ],
+      "answer": 1,
+      "explanation": "The 'this' keyword is a pointer that refers to the current object, allowing access to its data members and methods.",
+      "hint": "Consider how an object refers to itself within its own methods."
+    },
+    {
+      "id": 10,
+      "question": "In what scenario is the 'this' pointer particularly useful?",
+      "options": [
+        "When calling a default constructor",
+        "When there is a naming conflict between a local variable and a data member",
+        "When creating a copy constructor",
+        "When overloading a destructor"
+      ],
+      "answer": 1,
+      "explanation": "The 'this' pointer resolves ambiguity when a local variable has the same name as a data member, allowing you to explicitly refer to the object's member.",
+      "hint": "Think about situations where a variable name inside a method might hide a member variable."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a valid declaration of a default constructor for a class named 'MyClass'?",
+      "options": [
+        "MyClass() {}",
+        "void MyClass() {}",
+        "MyClass(int x) {}",
+        "MyClass(void)"
+      ],
+      "answer": 0,
+      "explanation": "A default constructor has no parameters and is declared as `MyClass() {}`.",
+      "hint": "A default constructor doesn't take any input."
+    },
+    {
+      "id": 12,
+      "question": "What will happen if a class has no explicitly defined constructors?",
+      "options": [
+        "The program will not compile",
+        "The compiler will generate a default constructor",
+        "A copy constructor will be automatically generated",
+        "A destructor will be automatically generated"
+      ],
+      "answer": 1,
+      "explanation": "If no constructors are defined, the compiler automatically provides a default constructor.",
+      "hint": "The compiler often provides a basic constructor if you don't define one."
+    },
+    {
+      "id": 13,
+      "question": "Consider a class 'Rectangle' with width and height. Which constructor is best for initializing a rectangle with specific dimensions?",
+      "options": [
+        "Rectangle()",
+        "Rectangle(void)",
+        "Rectangle(int w, int h)",
+        "Rectangle(Rectangle other)"
+      ],
+      "answer": 2,
+      "explanation": "A parameterised constructor `Rectangle(int w, int h)` is ideal for initializing width and height with specific values.",
+      "hint": "Think about how you would provide the dimensions when creating a rectangle."
+    },
+    {
+      "id": 14,
+      "question": "What is a shallow copy in the context of copy constructors?",
+      "options": [
+        "Copying the values of all data members",
+        "Copying only the pointers to the data members",
+        "Destroying the original object",
+        "Allocating new memory for the copied object"
+      ],
+      "answer": 1,
+      "explanation": "A shallow copy copies only the pointers to the data members, not the actual data they point to.",
+      "hint": "Consider what happens when two objects point to the same data."
+    },
+    {
+      "id": 15,
+      "question": "Why is a deep copy often preferred over a shallow copy?",
+      "options": [
+        "It's faster",
+        "It avoids issues with shared data and unintended side effects",
+        "It requires less memory",
+        "It's simpler to implement"
+      ],
+      "answer": 1,
+      "explanation": "A deep copy creates independent copies of the data, preventing modifications to one object from affecting others.",
+      "hint": "Think about the potential problems of two objects sharing the same data."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of declaring a destructor as virtual?",
+      "options": [
+        "To prevent the destructor from being called",
+        "To ensure the correct destructor is called in inheritance hierarchies",
+        "To overload the destructor",
+        "To create a default destructor"
+      ],
+      "answer": 1,
+      "explanation": "Declaring a destructor as virtual ensures that the correct destructor is called when deleting an object through a base class pointer.",
+      "hint": "Consider inheritance and polymorphism when deleting objects."
+    },
+    {
+      "id": 17,
+      "question": "What happens if you delete a dynamically allocated object without a corresponding constructor?",
+      "options": [
+        "The program will crash",
+        "The destructor will not be called",
+        "The object will be automatically deallocated",
+        "A memory leak will occur"
+      ],
+      "answer": 1,
+      "explanation": "If a constructor allocates resources, the destructor must release them; otherwise, a memory leak occurs.",
+      "hint": "Think about what happens to resources allocated during the object's lifetime."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following best describes the role of a destructor in preventing memory leaks?",
+      "options": [
+        "Allocating memory for new objects",
+        "Releasing dynamically allocated memory",
+        "Initializing object members",
+        "Copying object data"
+      ],
+      "answer": 1,
+      "explanation": "Destructors are crucial for releasing dynamically allocated memory, preventing memory leaks and ensuring efficient resource utilization.",
+      "hint": "Think about how memory is managed in a program."
+    },
+    {
+      "id": 19,
+      "question": "What is the scope of the 'this' pointer?",
+      "options": [
+        "Global scope",
+        "Class scope",
+        "Function scope",
+        "Block scope"
+      ],
+      "answer": 2,
+      "explanation": "The 'this' pointer is available within the scope of non-static member functions.",
+      "hint": "Consider where you can use the 'this' keyword."
+    },
+    {
+      "id": 20,
+      "question": "Can the 'this' pointer be used in static member functions?",
+      "options": [
+        "Yes, always",
+        "No, never",
+        "Only if the function is declared as 'friend'",
+        "Only if the function is a constructor"
+      ],
+      "answer": 1,
+      "explanation": "Static member functions do not have access to the 'this' pointer because they are not associated with a specific object instance.",
+      "hint": "Think about the nature of static member functions."
+    },
+    {
+      "id": 21,
+      "question": "What is the difference between a default constructor and a constructor with no arguments?",
+      "options": [
+        "There is no difference",
+        "A default constructor is implicitly generated if no other constructors are defined",
+        "A constructor with no arguments must be explicitly defined",
+        "A default constructor can only initialize primitive data types"
+      ],
+      "answer": 1,
+      "explanation": "A default constructor is implicitly generated if no other constructors are defined, while a constructor with no arguments is explicitly defined by the programmer.",
+      "hint": "Consider the compiler's role in providing constructors."
+    },
+    {
+      "id": 22,
+      "question": "If a class has a copy constructor, when is it called?",
+      "options": [
+        "When an object is created",
+        "When an object is destroyed",
+        "When an object is passed by value to a function",
+        "When an object is accessed"
+      ],
+      "answer": 2,
+      "explanation": "The copy constructor is called when an object is passed by value to a function, returned by value from a function, or initialized with another object of the same class.",
+      "hint": "Think about how objects are copied in different scenarios."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of constructor chaining?",
+      "options": [
+        "To overload constructors",
+        "To call one constructor from another within the same class",
+        "To destroy objects",
+        "To prevent memory leaks"
+      ],
+      "answer": 1,
+      "explanation": "Constructor chaining allows you to call one constructor from another within the same class, promoting code reuse and simplifying initialization.",
+      "hint": "Consider how you can reuse initialization logic between constructors."
+    },
+    {
+      "id": 24,
+      "question": "What is the potential issue with using raw pointers in a destructor?",
+      "options": [
+        "They can cause stack overflow",
+        "They can lead to double deletion if not handled carefully",
+        "They can prevent the destructor from being called",
+        "They can only be used with default constructors"
+      ],
+      "answer": 1,
+      "explanation": "Using raw pointers in destructors requires careful handling to avoid double deletion or dangling pointers, which can lead to crashes.",
+      "hint": "Think about the dangers of deleting the same memory twice."
+    },
+    {
+      "id": 25,
+      "question": "What is the best practice for managing dynamically allocated memory in a destructor?",
+      "options": [
+        "Use raw pointers and manually delete the memory",
+        "Use smart pointers to automatically manage memory",
+        "Ignore the memory and let the operating system handle it",
+        "Allocate more memory in the destructor"
+      ],
+      "answer": 1,
+      "explanation": "Using smart pointers (e.g., `unique_ptr`, `shared_ptr`) in a destructor automatically manages memory, preventing memory leaks and simplifying resource management.",
+      "hint": "Consider using tools that automate memory management."
+    },
+    {
+      "id": 26,
+      "question": "How can you prevent the copy constructor from being called?",
+      "options": [
+        "Declare the class as 'final'",
+        "Declare the copy constructor as private and do not implement it",
+        "Declare the destructor as virtual",
+        "Use a default constructor"
+      ],
+      "answer": 1,
+      "explanation": "Making the copy constructor private prevents it from being called from outside the class, effectively disabling copying.",
+      "hint": "Think about access modifiers and their impact on constructor visibility."
+    },
+    {
+      "id": 27,
+      "question": "What is the significance of the return type of a destructor?",
+      "options": [
+        "It must return an integer",
+        "It must return a boolean",
+        "It has no return type (void)",
+        "It can return any data type"
+      ],
+      "answer": 2,
+      "explanation": "Destructors do not have a return type; they are implicitly `void`.",
+      "hint": "Consider the purpose of a destructor – it cleans up, it doesn't return a value."
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of the Rule of Five (or Rule of Zero)?",
+      "options": [
+        "To define five constructors",
+        "To manage constructors, copy constructor, copy assignment operator, destructor, and move constructor/assignment",
+        "To prevent memory leaks",
+        "To overload the 'this' pointer"
+      ],
+      "answer": 1,
+      "explanation": "The Rule of Five (or Zero) guides proper resource management in C++, ensuring that if you need to define any of the five special member functions, you likely need to define all of them.",
+      "hint": "Think about the relationship between these five special member functions."
+    },
+    {
+      "id": 29,
+      "question": "What is the primary difference between a copy constructor and a copy assignment operator?",
+      "options": [
+        "A copy constructor creates a new object, while a copy assignment operator modifies an existing object",
+        "A copy constructor modifies an existing object, while a copy assignment operator creates a new object",
+        "They both do the same thing",
+        "A copy constructor is called automatically, while a copy assignment operator is not"
+      ],
+      "answer": 0,
+      "explanation": "A copy constructor initializes a new object with the values of an existing object, while a copy assignment operator assigns the values of one existing object to another.",
+      "hint": "Consider the state of the objects before and after the operation."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the move constructor and move assignment operator?",
+      "options": [
+        "To copy objects efficiently",
+        "To transfer ownership of resources from one object to another",
+        "To destroy objects",
+        "To overload constructors"
+      ],
+      "answer": 1,
+      "explanation": "Move constructors and move assignment operators transfer ownership of resources, avoiding expensive copying operations and improving performance.",
+      "hint": "Think about scenarios where copying is unnecessary and resource transfer is sufficient."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is a valid way to access a private data member of a class from within the same class?",
+      "options": [
+        "Using the class name",
+        "Using the 'static' keyword",
+        "Using the 'this' pointer",
+        "Using a friend function"
+      ],
+      "answer": 2,
+      "explanation": "The 'this' pointer allows access to all members of the class, including private ones, from within the same class.",
+      "hint": "Think about how an object refers to its own members."
+    },
+    {
+      "id": 32,
+      "question": "What is the effect of deleting the copy constructor and copy assignment operator?",
+      "options": [
+        "The class becomes non-copyable",
+        "The compiler generates default implementations",
+        "The destructor is not called",
+        "The program will not compile"
+      ],
+      "answer": 0,
+      "explanation": "Deleting the copy constructor and copy assignment operator prevents the class from being copied, making it non-copyable.",
+      "hint": "Consider what happens when you try to copy an object of this class."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of a parameterized destructor?",
+      "options": [
+        "To initialize an object",
+        "To destroy an object with specific parameters",
+        "Destructors cannot be parameterized",
+        "To overload other destructors"
+      ],
+      "answer": 2,
+      "explanation": "Destructors cannot be parameterized; they always take no arguments.",
+      "hint": "Consider the standard structure of a destructor."
+    },
+    {
+      "id": 34,
+      "question": "What is the role of a destructor in a class that manages a dynamically allocated array?",
+      "options": [
+        "To allocate memory for the array",
+        "To deallocate the memory occupied by the array",
+        "To copy the array to another location",
+        "To resize the array"
+      ],
+      "answer": 1,
+      "explanation": "The destructor is responsible for deallocating the memory occupied by the dynamically allocated array to prevent memory leaks.",
+      "hint": "Think about what needs to be done when the array is no longer needed."
+    },
+    {
+      "id": 35,
+      "question": "What is the potential problem of returning a pointer to a local object from a function?",
+      "options": [
+        "The object will be automatically copied",
+        "The object will be destroyed when the function returns, leaving a dangling pointer",
+        "The object will be allocated on the heap",
+        "The object will be initialized with default values"
+      ],
+      "answer": 1,
+      "explanation": "Returning a pointer to a local object results in a dangling pointer because the object is destroyed when the function returns.",
+      "hint": "Consider the lifetime of local variables."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the 'const' keyword when used with a destructor?",
+      "options": [
+        "To prevent the destructor from being called",
+        "To allow the destructor to modify the object's data members",
+        "To indicate that the destructor does not modify the object's state",
+        "To overload the destructor"
+      ],
+      "answer": 2,
+      "explanation": "Using 'const' with a destructor indicates that the destructor does not modify the object's state.",
+      "hint": "Think about the implications of 'const' correctness."
+    },
+    {
+      "id": 37,
+      "question": "What is the difference between a shallow copy and a deep copy when dealing with objects containing pointers?",
+      "options": [
+        "A shallow copy copies the pointed-to data, while a deep copy copies only the pointers",
+        "A shallow copy copies only the pointers, while a deep copy copies the pointed-to data",
+        "They are the same thing",
+        "A shallow copy is always preferred"
+      ],
+      "answer": 1,
+      "explanation": "A shallow copy copies only the pointers, while a deep copy allocates new memory and copies the data pointed to by the pointers.",
+      "hint": "Consider the implications of sharing data between objects."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the 'delete' operator?",
+      "options": [
+        "To allocate memory",
+        "To deallocate memory",
+        "To copy objects",
+        "To initialize objects"
+      ],
+      "answer": 1,
+      "explanation": "The 'delete' operator is used to deallocate memory that was previously allocated using the 'new' operator.",
+      "hint": "Think about how memory is released after it's no longer needed."
+    },
+    {
+      "id": 39,
+      "question": "What is the potential consequence of calling 'delete' on the same memory location multiple times?",
+      "options": [
+        "The program will run faster",
+        "The program will crash",
+        "The memory will be automatically reallocated",
+        "Nothing will happen"
+      ],
+      "answer": 1,
+      "explanation": "Calling 'delete' on the same memory location multiple times leads to a double-free error, which typically causes a program crash.",
+      "hint": "Think about the dangers of releasing memory that has already been released."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the 'new' operator?",
+      "options": [
+        "To deallocate memory",
+        "To allocate memory",
+        "To copy objects",
+        "To initialize objects"
+      ],
+      "answer": 1,
+      "explanation": "The 'new' operator is used to dynamically allocate memory on the heap.",
+      "hint": "Think about how memory is acquired during runtime."
+    },
+    {
+      "id": 41,
+      "question": "What is the role of a destructor in a class that uses RAII (Resource Acquisition Is Initialization)?",
+      "options": [
+        "To acquire resources",
+        "To release resources",
+        "To copy resources",
+        "To initialize resources"
+      ],
+      "answer": 1,
+      "explanation": "In RAII, the destructor is responsible for releasing the resources that were acquired during object construction.",
+      "hint": "Think about the principle of tying resource management to object lifetime."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of a virtual destructor in a base class?",
+      "options": [
+        "To prevent polymorphism",
+        "To ensure the correct destructor is called when deleting a derived class object through a base class pointer",
+        "To overload the destructor",
+        "To create a default destructor"
+      ],
+      "answer": 1,
+      "explanation": "A virtual destructor ensures that the correct destructor (of the derived class) is called when deleting a derived class object through a base class pointer, preventing memory leaks and undefined behavior.",
+      "hint": "Consider inheritance and polymorphism when deleting objects."
+    },
+    {
+      "id": 43,
+      "question": "What is the difference between 'delete' and 'delete[]'?",
+      "options": [
+        "'delete' is used for single objects, while 'delete[]' is used for arrays",
+        "'delete' is used for arrays, while 'delete[]' is used for single objects",
+        "They are the same thing",
+        "Only 'delete' is safe to use"
+      ],
+      "answer": 0,
+      "explanation": "'delete' is used to deallocate memory for a single object, while 'delete[]' is used to deallocate memory for an array of objects.",
+      "hint": "Consider the difference between allocating a single object and allocating an array."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the 'this' pointer in a non-static member function?",
+      "options": [
+        "To access global variables",
+        "To access the object's own data members",
+        "To call the constructor",
+        "To destroy the object"
+      ],
+      "answer": 1,
+      "explanation": "The 'this' pointer provides a way to access the object's own data members and methods from within the object's member functions.",
+      "hint": "Think about how an object refers to itself."
+    },
+    {
+      "id": 45,
+      "question": "What is the potential issue with using raw pointers to manage dynamically allocated memory?",
+      "options": [
+        "They can cause stack overflow",
+        "They can lead to memory leaks if not managed carefully",
+        "They can prevent the destructor from being called",
+        "They can only be used with default constructors"
+      ],
+      "answer": 1,
+      "explanation": "Raw pointers require manual memory management, which can easily lead to memory leaks if the memory is not properly deallocated.",
+      "hint": "Think about the responsibility of releasing memory when it's no longer needed."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of a copy assignment operator?",
+      "options": [
+        "To create a new object",
+        "To copy the values of one existing object to another",
+        "To destroy an object",
+        "To overload constructors"
+      ],
+      "answer": 1,
+      "explanation": "The copy assignment operator is used to assign the values of one existing object to another existing object.",
+      "hint": "Consider how you would make one object have the same data as another."
+    },
+    {
+      "id": 47,
+      "question": "What is the significance of the Rule of Three (or Five)?",
+      "options": [
+        "It defines the three basic data types",
+        "It states that if you need to define one of the destructor, copy constructor, or copy assignment operator, you likely need to define all three (or five)",
+        "It prevents memory leaks",
+        "It overloads the 'this' pointer"
+      ],
+      "answer": 1,
+      "explanation": "The Rule of Three (or Five) is a guideline for managing resources in C++ classes, ensuring proper behavior when objects are copied or destroyed.",
+      "hint": "Think about the relationship between these special member functions."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of a move constructor?",
+      "options": [
+        "To copy objects efficiently",
+        "To transfer ownership of resources from one object to another",
+        "To destroy objects",
+        "To overload constructors"
+      ],
+      "answer": 1,
+      "explanation": "A move constructor transfers ownership of resources from a temporary object to a new object, avoiding expensive copying operations.",
+      "hint": "Think about scenarios where copying is unnecessary and resource transfer is sufficient."
+    },
+    {
+      "id": 49,
+      "question": "What is the potential problem of returning a reference to a local object from a function?",
+      "options": [
+        "The object will be automatically copied",
+        "The object will be destroyed when the function returns, leaving a dangling reference",
+        "The object will be allocated on the heap",
+        "The object will be initialized with default values"
+      ],
+      "answer": 1,
+      "explanation": "Returning a reference to a local object results in a dangling reference because the object is destroyed when the function returns.",
+      "hint": "Think about the lifetime of local variables."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the 'const' keyword when used with a member function?",
+      "options": [
+        "To prevent the function from being called",
+        "To allow the function to modify the object's data members",
+        "To indicate that the function does not modify the object's state",
+        "To overload the function"
+      ],
+      "answer": 2,
+      "explanation": "Using 'const' with a member function indicates that the function does not modify the object's state.",
+      "hint": "Think about the implications of 'const' correctness."
+    }
+  ]
+}

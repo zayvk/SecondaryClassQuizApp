@@ -1,0 +1,667 @@
+{
+  "subject": "Object-Oriented Programming",
+  "unit": "Unit 3: Inheritance",
+  "unitId": "oop-u3",
+  "categoryId": "cs",
+  "topics": [
+    "Base class and derived class",
+    "Single and multilevel inheritance",
+    "Method overriding",
+    "The super keyword",
+    "Constructor chaining in inheritance",
+    "Abstract classes"
+  ],
+  "generatedAt": "2026-03-24T08:22:43Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes a base class?",
+      "options": [
+        "The class that inherits properties.",
+        "The most specific class in a hierarchy.",
+        "The class from which other classes are derived.",
+        "A class that cannot be instantiated."
+      ],
+      "answer": 2,
+      "explanation": "A base class serves as the parent class, providing the foundation for derived classes to inherit attributes and methods.",
+      "hint": "Think about the 'parent-child' relationship in inheritance."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of a derived class?",
+      "options": [
+        "To define completely new functionality.",
+        "To extend or modify the functionality of a base class.",
+        "To replace the base class entirely.",
+        "To hide the base class's methods."
+      ],
+      "answer": 1,
+      "explanation": "Derived classes inherit from base classes and add or modify functionality to create more specialized classes.",
+      "hint": "Consider how inheritance allows for code reuse and specialization."
+    },
+    {
+      "id": 3,
+      "question": "In single inheritance, a class inherits from how many base classes?",
+      "options": [
+        "Zero",
+        "One",
+        "Multiple",
+        "Unlimited"
+      ],
+      "answer": 1,
+      "explanation": "Single inheritance means a class can only inherit from a single parent class.",
+      "hint": "The 'single' in 'single inheritance' is a key indicator."
+    },
+    {
+      "id": 4,
+      "question": "What is multilevel inheritance?",
+      "options": [
+        "Inheritance from multiple base classes.",
+        "Inheritance where a derived class is also a base class for another class.",
+        "Inheritance with no base class.",
+        "Inheritance that only applies to abstract classes."
+      ],
+      "answer": 1,
+      "explanation": "Multilevel inheritance involves a chain of inheritance where a class inherits from a derived class, which in turn inherits from another base class.",
+      "hint": "Visualize a family tree with grandparents, parents, and children."
+    },
+    {
+      "id": 5,
+      "question": "What is method overriding?",
+      "options": [
+        "Defining a new method in a derived class.",
+        "Hiding a base class method in a derived class.",
+        "Redefining a base class method in a derived class with the same signature.",
+        "Changing the return type of a base class method."
+      ],
+      "answer": 2,
+      "explanation": "Method overriding allows a derived class to provide a specific implementation of a method that is already defined in its base class.",
+      "hint": "Think about customizing behavior inherited from a parent."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of the 'super' keyword?",
+      "options": [
+        "To create a new instance of the base class.",
+        "To call methods or access members of the base class.",
+        "To prevent inheritance.",
+        "To define abstract methods."
+      ],
+      "answer": 1,
+      "explanation": "The 'super' keyword is used to access members (methods and variables) of the base class from within a derived class.",
+      "hint": "It's about referencing the parent class from the child class."
+    },
+    {
+      "id": 7,
+      "question": "Why is constructor chaining important in inheritance?",
+      "options": [
+        "To avoid calling the base class constructor.",
+        "To ensure proper initialization of the base class and derived class.",
+        "To reduce code complexity.",
+        "To override the base class constructor."
+      ],
+      "answer": 1,
+      "explanation": "Constructor chaining ensures that the base class constructor is called to initialize inherited members before the derived class constructor initializes its own members.",
+      "hint": "Initialization order matters when dealing with inheritance."
+    },
+    {
+      "id": 8,
+      "question": "What is an abstract class?",
+      "options": [
+        "A class that can be instantiated.",
+        "A class that contains only concrete methods.",
+        "A class that cannot be instantiated and may contain abstract methods.",
+        "A class that is always the base class."
+      ],
+      "answer": 2,
+      "explanation": "An abstract class is designed to be a base class and cannot be directly instantiated; it may contain abstract methods that must be implemented by its subclasses.",
+      "hint": "Think about incomplete classes that require further definition."
+    },
+    {
+      "id": 9,
+      "question": "What is an abstract method?",
+      "options": [
+        "A method with a complete implementation.",
+        "A method declared without an implementation.",
+        "A private method.",
+        "A static method."
+      ],
+      "answer": 1,
+      "explanation": "An abstract method is declared but does not have an implementation; subclasses must provide an implementation for the abstract method.",
+      "hint": "It's a method signature without a body."
+    },
+    {
+      "id": 10,
+      "question": "If a derived class does not override an inherited method, what happens?",
+      "options": [
+        "The derived class cannot be compiled.",
+        "The base class method is automatically called.",
+        "The method is hidden.",
+        "A runtime error occurs."
+      ],
+      "answer": 1,
+      "explanation": "If a derived class doesn't override a method, the base class's implementation of that method is used when called on an object of the derived class.",
+      "hint": "Inheritance means you get the parent's behavior by default."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a benefit of using inheritance?",
+      "options": [
+        "Increased code duplication.",
+        "Reduced code reusability.",
+        "Improved code maintainability.",
+        "Decreased program flexibility."
+      ],
+      "answer": 2,
+      "explanation": "Inheritance promotes code reusability and reduces redundancy, leading to improved maintainability and organization.",
+      "hint": "Think about avoiding writing the same code multiple times."
+    },
+    {
+      "id": 12,
+      "question": "What happens if you try to instantiate an abstract class?",
+      "options": [
+        "The program runs successfully.",
+        "A compile-time error occurs.",
+        "A runtime error occurs.",
+        "The abstract class is automatically converted to a concrete class."
+      ],
+      "answer": 2,
+      "explanation": "Abstract classes are designed to be incomplete and cannot be directly instantiated; attempting to do so results in a compile-time error.",
+      "hint": "Abstract classes are blueprints, not finished products."
+    },
+    {
+      "id": 13,
+      "question": "In constructor chaining, when is the base class constructor called?",
+      "options": [
+        "Before the derived class constructor.",
+        "After the derived class constructor.",
+        "Simultaneously with the derived class constructor.",
+        "Only if explicitly called."
+      ],
+      "answer": 0,
+      "explanation": "The base class constructor must be called before the derived class constructor to ensure proper initialization of inherited members.",
+      "hint": "Think about building a house – the foundation must be laid first."
+    },
+    {
+      "id": 14,
+      "question": "What is the difference between 'is-a' and 'has-a' relationships in the context of inheritance?",
+      "options": [
+        "'is-a' represents composition, 'has-a' represents inheritance.",
+        "'is-a' represents inheritance, 'has-a' represents composition.",
+        "They are interchangeable.",
+        "Neither represents a valid relationship."
+      ],
+      "answer": 1,
+      "explanation": "'is-a' represents inheritance (e.g., a Dog 'is-a' Animal), while 'has-a' represents composition (e.g., a Car 'has-a' Engine).",
+      "hint": "Consider how objects relate to each other conceptually."
+    },
+    {
+      "id": 15,
+      "question": "Which access modifier prevents a method from being overridden in a derived class?",
+      "options": [
+        "public",
+        "protected",
+        "private",
+        "internal"
+      ],
+      "answer": 2,
+      "explanation": "A private method is only accessible within the same class and cannot be accessed or overridden by derived classes.",
+      "hint": "Think about the scope of access modifiers."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of 'final' keyword (in languages that support it) when applied to a method?",
+      "options": [
+        "To make the method abstract.",
+        "To prevent the method from being overridden.",
+        "To make the method static.",
+        "To make the method private."
+      ],
+      "answer": 1,
+      "explanation": "The 'final' keyword prevents a method from being overridden in subclasses, ensuring that the method's implementation remains consistent.",
+      "hint": "It's about restricting modification in derived classes."
+    },
+    {
+      "id": 17,
+      "question": "Consider a class 'Animal' with a method 'makeSound()'. A class 'Dog' inherits from 'Animal'. What is method overriding in this scenario?",
+      "options": [
+        "Dog defining a new method called 'makeSound()'.",
+        "Dog hiding the 'makeSound()' method from 'Animal'.",
+        "Dog providing a specific implementation of 'makeSound()' that differs from 'Animal'.",
+        "Dog calling the 'makeSound()' method of 'Animal' directly."
+      ],
+      "answer": 2,
+      "explanation": "Method overriding allows 'Dog' to customize the 'makeSound()' behavior inherited from 'Animal' to produce a 'woof' sound instead of a generic animal sound.",
+      "hint": "Think about specialized behavior in a derived class."
+    },
+    {
+      "id": 18,
+      "question": "What is the main difference between composition and inheritance?",
+      "options": [
+        "Inheritance is a 'has-a' relationship, composition is an 'is-a' relationship.",
+        "Inheritance is an 'is-a' relationship, composition is a 'has-a' relationship.",
+        "They are the same thing.",
+        "Neither is related to object-oriented principles."
+      ],
+      "answer": 1,
+      "explanation": "Inheritance represents an 'is-a' relationship (e.g., a Car 'is-a' Vehicle), while composition represents a 'has-a' relationship (e.g., a Car 'has-a' Engine).",
+      "hint": "Consider the nature of the relationship between objects."
+    },
+    {
+      "id": 19,
+      "question": "If a derived class constructor does not explicitly call the base class constructor, what happens?",
+      "options": [
+        "The base class constructor is not called.",
+        "The compiler automatically calls the default (no-argument) base class constructor.",
+        "A compile-time error occurs.",
+        "The program crashes."
+      ],
+      "answer": 1,
+      "explanation": "If a derived class constructor doesn't explicitly call a base class constructor, the compiler automatically calls the default (no-argument) constructor of the base class.",
+      "hint": "There's an implicit call if you don't make an explicit one."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of using 'super()' to call a base class constructor?",
+      "options": [
+        "To create a new instance of the base class.",
+        "To initialize the inherited members of the base class.",
+        "To override the base class constructor.",
+        "To prevent the base class constructor from being called."
+      ],
+      "answer": 1,
+      "explanation": "Calling 'super()' in the derived class constructor ensures that the inherited members of the base class are properly initialized.",
+      "hint": "It's about setting up the inherited parts of the object."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following scenarios best illustrates the use of an abstract class?",
+      "options": [
+        "Creating a concrete class with all methods implemented.",
+        "Defining a general concept with some methods left for subclasses to implement.",
+        "Creating a class with only private methods.",
+        "Creating a class with no methods at all."
+      ],
+      "answer": 1,
+      "explanation": "Abstract classes are used to define a common interface or blueprint for a set of related classes, leaving some implementation details to the subclasses.",
+      "hint": "Think about defining a common structure with some missing pieces."
+    },
+    {
+      "id": 22,
+      "question": "What is polymorphism in the context of inheritance?",
+      "options": [
+        "The ability of a class to inherit from multiple base classes.",
+        "The ability of an object to take on many forms.",
+        "The ability to hide methods in a derived class.",
+        "The ability to create abstract classes."
+      ],
+      "answer": 1,
+      "explanation": "Polymorphism allows objects of different classes to be treated as objects of a common type, enabling flexible and extensible code.",
+      "hint": "Think about 'many forms' – different objects responding to the same method call in their own way."
+    },
+    {
+      "id": 23,
+      "question": "What is the primary advantage of using inheritance over simply duplicating code?",
+      "options": [
+        "Increased code complexity.",
+        "Reduced code reusability.",
+        "Improved code maintainability and reduced redundancy.",
+        "Decreased program performance."
+      ],
+      "answer": 2,
+      "explanation": "Inheritance promotes code reuse, reducing redundancy and making code easier to maintain and modify.",
+      "hint": "Think about the DRY principle (Don't Repeat Yourself)."
+    },
+    {
+      "id": 24,
+      "question": "Consider a class 'Shape' with an abstract method 'calculateArea()'. What must a derived class like 'Circle' do?",
+      "options": [
+        "Implement the 'calculateArea()' method.",
+        "Declare the 'calculateArea()' method as abstract.",
+        "Hide the 'calculateArea()' method.",
+        "Ignore the 'calculateArea()' method."
+      ],
+      "answer": 0,
+      "explanation": "Since 'calculateArea()' is abstract in the base class 'Shape', any derived class like 'Circle' must provide a concrete implementation for that method.",
+      "hint": "Abstract methods require concrete implementations in subclasses."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the 'protected' access modifier?",
+      "options": [
+        "To make a member accessible only within the same class.",
+        "To make a member accessible within the same class and its subclasses.",
+        "To make a member accessible from anywhere.",
+        "To make a member inaccessible."
+      ],
+      "answer": 1,
+      "explanation": "The 'protected' access modifier allows members to be accessed within the same class and by its subclasses, but not from outside the class hierarchy.",
+      "hint": "Think about access within a family of classes."
+    },
+    {
+      "id": 26,
+      "question": "In a multilevel inheritance scenario (A -> B -> C), if class A has a method 'x()', and class B overrides it, can class C also override it?",
+      "options": [
+        "No, once a method is overridden, it cannot be overridden again.",
+        "Yes, class C can override the method 'x()' as it inherits from class B.",
+        "Only if class C is abstract.",
+        "Only if class B does not override 'x()'. "
+      ],
+      "answer": 1,
+      "explanation": "Class C can further override the method 'x()' because it inherits the overridden version from class B, allowing for further specialization.",
+      "hint": "Inheritance allows for successive refinement of behavior."
+    },
+    {
+      "id": 27,
+      "question": "What is the significance of the Liskov Substitution Principle in relation to inheritance?",
+      "options": [
+        "It encourages deep inheritance hierarchies.",
+        "It states that subclasses should not alter the behavior of their base classes.",
+        "It states that subclasses should be substitutable for their base classes without altering the correctness of the program.",
+        "It promotes code duplication."
+      ],
+      "answer": 2,
+      "explanation": "The Liskov Substitution Principle ensures that subclasses can be used interchangeably with their base classes without causing unexpected behavior.",
+      "hint": "Think about maintaining consistency in the class hierarchy."
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between method hiding and method overriding?",
+      "options": [
+        "Method hiding is done in the base class, method overriding is done in the derived class.",
+        "Method hiding is done in the derived class, method overriding is done in the base class.",
+        "Method hiding uses the same signature, method overriding uses a different signature.",
+        "Method hiding uses a different signature, method overriding uses the same signature."
+      ],
+      "answer": 0,
+      "explanation": "Method hiding is achieved by declaring a method with the same name but different parameters in the derived class, while method overriding uses the same signature.",
+      "hint": "Consider the role of parameters in distinguishing between the two."
+    },
+    {
+      "id": 29,
+      "question": "If a base class has a private member variable, can a derived class access it directly?",
+      "options": [
+        "Yes, derived classes have full access to private members.",
+        "No, private members are only accessible within the same class.",
+        "Yes, but only through a getter method.",
+        "No, but it can be accessed through friend classes."
+      ],
+      "answer": 1,
+      "explanation": "Private members are only accessible within the same class and are not directly accessible by derived classes.",
+      "hint": "Think about the strictness of the 'private' access modifier."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of using interfaces in conjunction with inheritance?",
+      "options": [
+        "To allow a class to inherit from multiple base classes.",
+        "To define a set of methods that a class must implement.",
+        "To hide methods from derived classes.",
+        "To prevent inheritance altogether."
+      ],
+      "answer": 1,
+      "explanation": "Interfaces define a contract that classes must adhere to, specifying a set of methods that must be implemented.",
+      "hint": "Think about defining a common set of behaviors."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is NOT a characteristic of inheritance?",
+      "options": [
+        "Code reusability",
+        "Polymorphism",
+        "Tight coupling",
+        "Extensibility"
+      ],
+      "answer": 2,
+      "explanation": "Inheritance can lead to tight coupling between classes, making changes in the base class potentially affect derived classes.",
+      "hint": "Consider the potential drawbacks of strong dependencies."
+    },
+    {
+      "id": 32,
+      "question": "What is the role of the 'this' keyword in relation to the 'super' keyword?",
+      "options": [
+        "'this' refers to the base class, 'super' refers to the derived class.",
+        "'this' refers to the derived class, 'super' refers to the base class.",
+        "They both refer to the same object.",
+        "They are interchangeable."
+      ],
+      "answer": 1,
+      "explanation": "'this' refers to the current object (the derived class instance), while 'super' refers to the base class instance.",
+      "hint": "Think about which class you're currently working within."
+    },
+    {
+      "id": 33,
+      "question": "What is the benefit of using abstract classes over concrete classes when designing a class hierarchy?",
+      "options": [
+        "Abstract classes are easier to instantiate.",
+        "Abstract classes provide a more complete implementation.",
+        "Abstract classes enforce a common interface for subclasses.",
+        "Abstract classes reduce code complexity."
+      ],
+      "answer": 2,
+      "explanation": "Abstract classes define a common interface that subclasses must implement, ensuring consistency and promoting a well-defined hierarchy.",
+      "hint": "Think about defining a blueprint for related classes."
+    },
+    {
+      "id": 34,
+      "question": "If a derived class has a constructor that takes no arguments, and the base class also has a constructor that takes no arguments, what happens if the derived class constructor doesn't explicitly call the base class constructor?",
+      "options": [
+        "The base class constructor is not called.",
+        "The compiler generates an implicit call to the base class's no-argument constructor.",
+        "A compile-time error occurs.",
+        "The program crashes."
+      ],
+      "answer": 1,
+      "explanation": "The compiler automatically inserts a call to the base class's no-argument constructor if the derived class constructor doesn't explicitly call one.",
+      "hint": "There's an implicit call if you don't make an explicit one."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the 'final' keyword when applied to a class (in languages that support it)?",
+      "options": [
+        "To make the class abstract.",
+        "To prevent the class from being inherited.",
+        "To make the class static.",
+        "To make the class private."
+      ],
+      "answer": 1,
+      "explanation": "The 'final' keyword prevents other classes from inheriting from the specified class, effectively sealing the class hierarchy.",
+      "hint": "It's about preventing further extension of the class."
+    },
+    {
+      "id": 36,
+      "question": "Consider a class 'Vehicle' with a method 'move()'. A class 'Car' inherits from 'Vehicle'. How does method overriding contribute to polymorphism in this scenario?",
+      "options": [
+        "It prevents 'Car' from using the 'move()' method.",
+        "It allows 'Car' to define a specific implementation of 'move()' that is appropriate for cars.",
+        "It hides the 'move()' method from 'Vehicle'.",
+        "It forces 'Car' to use the same implementation of 'move()' as 'Vehicle'."
+      ],
+      "answer": 1,
+      "explanation": "Method overriding allows 'Car' to provide a specialized implementation of 'move()' (e.g., driving on roads) while still being treated as a 'Vehicle'.",
+      "hint": "Think about customizing behavior while maintaining a common interface."
+    },
+    {
+      "id": 37,
+      "question": "What is the main difference between inheritance and aggregation?",
+      "options": [
+        "Inheritance represents an 'is-a' relationship, aggregation represents a 'has-a' relationship.",
+        "Inheritance represents a 'has-a' relationship, aggregation represents an 'is-a' relationship.",
+        "They are the same thing.",
+        "Neither is related to object-oriented principles."
+      ],
+      "answer": 0,
+      "explanation": "Inheritance establishes an 'is-a' relationship (e.g., a Dog is an Animal), while aggregation represents a 'has-a' relationship (e.g., a Car has an Engine).",
+      "hint": "Consider the nature of the relationship between objects."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of using the 'super()' keyword to call a base class method?",
+      "options": [
+        "To create a new instance of the base class.",
+        "To access and execute the base class's implementation of a method.",
+        "To override the base class method.",
+        "To prevent the base class method from being called."
+      ],
+      "answer": 1,
+      "explanation": "The 'super()' keyword allows the derived class to invoke the base class's method, potentially extending or modifying its behavior.",
+      "hint": "It's about leveraging the parent class's functionality."
+    },
+    {
+      "id": 39,
+      "question": "Which of the following is a potential disadvantage of deep inheritance hierarchies?",
+      "options": [
+        "Reduced code reusability.",
+        "Increased code complexity and fragility.",
+        "Improved code maintainability.",
+        "Decreased program performance."
+      ],
+      "answer": 1,
+      "explanation": "Deep inheritance hierarchies can become complex and fragile, making it difficult to understand and modify the code without unintended consequences.",
+      "hint": "Think about the challenges of managing many layers of inheritance."
+    },
+    {
+      "id": 40,
+      "question": "What is the role of the 'instanceof' operator (in languages that support it) in relation to inheritance?",
+      "options": [
+        "To create a new instance of a class.",
+        "To check if an object is an instance of a specific class or its subclasses.",
+        "To override a method.",
+        "To prevent inheritance."
+      ],
+      "answer": 1,
+      "explanation": "The 'instanceof' operator checks if an object is an instance of a particular class or any of its subclasses, allowing for runtime type checking.",
+      "hint": "Think about determining the type of an object at runtime."
+    },
+    {
+      "id": 41,
+      "question": "What is the primary purpose of using an abstract method?",
+      "options": [
+        "To provide a default implementation for subclasses.",
+        "To force subclasses to provide their own implementation.",
+        "To hide a method from subclasses.",
+        "To make a method private."
+      ],
+      "answer": 1,
+      "explanation": "Abstract methods are declared without an implementation, requiring subclasses to provide their own specific implementation.",
+      "hint": "Think about defining a contract that subclasses must fulfill."
+    },
+    {
+      "id": 42,
+      "question": "If a derived class overrides a method in its base class, and the overridden method in the base class is 'final', what will happen?",
+      "options": [
+        "The derived class will successfully override the method.",
+        "A compile-time error will occur.",
+        "The base class method will be hidden.",
+        "The program will crash at runtime."
+      ],
+      "answer": 1,
+      "explanation": "If a method in the base class is declared 'final', it cannot be overridden by any derived class, resulting in a compile-time error.",
+      "hint": "The 'final' keyword restricts modification in derived classes."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of constructor chaining?",
+      "options": [
+        "To avoid calling the base class constructor.",
+        "To ensure that the base class is properly initialized before the derived class.",
+        "To reduce code complexity.",
+        "To override the base class constructor."
+      ],
+      "answer": 1,
+      "explanation": "Constructor chaining ensures that the base class constructor is called to initialize inherited members before the derived class constructor initializes its own members.",
+      "hint": "Initialization order matters when dealing with inheritance."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between a compile-time error and a runtime error?",
+      "options": [
+        "Compile-time errors occur during program execution, runtime errors occur during compilation.",
+        "Compile-time errors occur during compilation, runtime errors occur during program execution.",
+        "They are the same thing.",
+        "Neither is related to inheritance."
+      ],
+      "answer": 1,
+      "explanation": "Compile-time errors are detected during the compilation process, while runtime errors occur during the execution of the program.",
+      "hint": "Think about when the error is detected."
+    },
+    {
+      "id": 45,
+      "question": "What is the benefit of using inheritance over composition in certain scenarios?",
+      "options": [
+        "Inheritance promotes loose coupling.",
+        "Inheritance allows for dynamic behavior modification.",
+        "Inheritance establishes an 'is-a' relationship, which can be more natural in some cases.",
+        "Inheritance is always preferred over composition."
+      ],
+      "answer": 2,
+      "explanation": "Inheritance can be more appropriate when a clear 'is-a' relationship exists between classes, providing a natural and intuitive way to model the hierarchy.",
+      "hint": "Consider the conceptual relationship between objects."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the 'protected' access modifier in inheritance?",
+      "options": [
+        "To make a member accessible only within the same class.",
+        "To make a member accessible only to the public.",
+        "To make a member accessible within the same class and its subclasses.",
+        "To make a member inaccessible."
+      ],
+      "answer": 2,
+      "explanation": "The 'protected' access modifier allows members to be accessed within the same class and by its subclasses, but not from outside the class hierarchy.",
+      "hint": "Think about access within a family of classes."
+    },
+    {
+      "id": 47,
+      "question": "What is the significance of the 'Object' class in many object-oriented languages?",
+      "options": [
+        "It is the most specific class.",
+        "It is the base class for all other classes.",
+        "It is an abstract class.",
+        "It is a final class."
+      ],
+      "answer": 1,
+      "explanation": "The 'Object' class is the root of the class hierarchy, and all other classes implicitly or explicitly inherit from it.",
+      "hint": "Think about the ultimate ancestor in the class hierarchy."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of using interfaces in addition to inheritance?",
+      "options": [
+        "To allow a class to inherit from multiple base classes.",
+        "To define a set of methods that a class must implement.",
+        "To hide methods from derived classes.",
+        "To prevent inheritance altogether."
+      ],
+      "answer": 1,
+      "explanation": "Interfaces define a contract that classes must adhere to, specifying a set of methods that must be implemented.",
+      "hint": "Think about defining a common set of behaviors."
+    },
+    {
+      "id": 49,
+      "question": "What is the main advantage of using abstract classes over interfaces?",
+      "options": [
+        "Abstract classes can have method implementations, interfaces cannot.",
+        "Interfaces can have method implementations, abstract classes cannot.",
+        "Abstract classes allow multiple inheritance, interfaces do not.",
+        "Interfaces allow state (member variables), abstract classes do not."
+      ],
+      "answer": 0,
+      "explanation": "Abstract classes can contain both abstract methods (without implementation) and concrete methods (with implementation), while interfaces typically only define method signatures.",
+      "hint": "Think about the flexibility of providing partial implementations."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the 'super()' keyword when calling a base class constructor?",
+      "options": [
+        "To create a new instance of the base class.",
+        "To initialize the inherited members of the base class.",
+        "To override the base class constructor.",
+        "To prevent the base class constructor from being called."
+      ],
+      "answer": 1,
+      "explanation": "Calling 'super()' in the derived class constructor ensures that the inherited members of the base class are properly initialized.",
+      "hint": "It's about setting up the inherited parts of the object."
+    }
+  ]
+}

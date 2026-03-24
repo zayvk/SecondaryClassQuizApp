@@ -1,0 +1,666 @@
+{
+  "subject": "Object-Oriented Programming",
+  "unit": "Unit 5: Abstraction and Interfaces",
+  "unitId": "oop-u5",
+  "categoryId": "cs",
+  "topics": [
+    "Abstract classes vs interfaces",
+    "Pure virtual functions",
+    "Implementing interfaces",
+    "Multiple interface implementation",
+    "Abstraction vs encapsulation"
+  ],
+  "generatedAt": "2026-03-24T08:26:56Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary difference between an abstract class and an interface?",
+      "options": [
+        "An abstract class can have concrete methods, while an interface cannot.",
+        "An interface can have instance variables, while an abstract class cannot.",
+        "An abstract class can implement multiple inheritance, while an interface cannot.",
+        "An interface can have constructors, while an abstract class cannot."
+      ],
+      "answer": 0,
+      "explanation": "Abstract classes can contain both abstract and concrete methods, providing partial implementation, while interfaces define only abstract methods (until default methods were introduced in some languages).",
+      "hint": "Think about whether a class can *partially* implement its functionality."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following best describes a pure virtual function?",
+      "options": [
+        "A function that is always implemented in the base class.",
+        "A function that has no implementation in the base class and must be implemented by derived classes.",
+        "A function that can be overridden but doesn't have to be.",
+        "A function that is declared as static."
+      ],
+      "answer": 1,
+      "explanation": "A pure virtual function is declared without an implementation, forcing derived classes to provide their own implementation, making the base class abstract.",
+      "hint": "Consider what 'purely' virtual means in terms of implementation."
+    },
+    {
+      "id": 3,
+      "question": "How do you typically 'implement' an interface in a class?",
+      "options": [
+        "By inheriting from the interface using the 'extends' keyword.",
+        "By declaring the interface as a member variable of the class.",
+        "By explicitly defining all methods declared in the interface within the class.",
+        "By using the 'implements' keyword and providing implementations for all interface methods."
+      ],
+      "answer": 3,
+      "explanation": "Implementing an interface involves using a specific keyword (like 'implements' in Java or C#) and providing concrete implementations for all the methods declared in the interface.",
+      "hint": "Think about the keyword used to signify a class is fulfilling a contract."
+    },
+    {
+      "id": 4,
+      "question": "What happens if a class implements multiple interfaces?",
+      "options": [
+        "It can only use methods from the first interface implemented.",
+        "It must implement all methods from all interfaces.",
+        "It can choose to implement methods from only some of the interfaces.",
+        "It results in a compilation error."
+      ],
+      "answer": 1,
+      "explanation": "A class implementing multiple interfaces must provide implementations for all methods declared in each of those interfaces to satisfy the contracts.",
+      "hint": "Consider the responsibility a class takes on when implementing multiple contracts."
+    },
+    {
+      "id": 5,
+      "question": "What is the core principle behind abstraction?",
+      "options": [
+        "Hiding the internal implementation details and exposing only essential features.",
+        "Combining data and methods that operate on that data.",
+        "Creating multiple instances of a class.",
+        "Defining the data types of variables."
+      ],
+      "answer": 0,
+      "explanation": "Abstraction focuses on representing complex reality by modeling classes appropriate to the problem, and hiding unnecessary implementation details from the user.",
+      "hint": "Think about simplifying complex systems by focusing on what's important."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a key benefit of using interfaces?",
+      "options": [
+        "They allow for code reuse through inheritance.",
+        "They enforce a specific implementation for all classes.",
+        "They promote loose coupling and flexibility.",
+        "They reduce the amount of code needed."
+      ],
+      "answer": 2,
+      "explanation": "Interfaces define a contract without specifying implementation, leading to loose coupling and allowing different classes to implement the same interface in their own way.",
+      "hint": "Consider how interfaces affect the dependencies between different parts of your code."
+    },
+    {
+      "id": 7,
+      "question": "An abstract class can have ________.",
+      "options": [
+        "Only abstract methods",
+        "Only concrete methods",
+        "Both abstract and concrete methods",
+        "Neither abstract nor concrete methods"
+      ],
+      "answer": 2,
+      "explanation": "Abstract classes can contain a mix of abstract methods (without implementation) and concrete methods (with implementation).",
+      "hint": "Think about the purpose of an abstract class – is it to be fully defined or partially defined?"
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of a pure virtual function in an abstract class?",
+      "options": [
+        "To provide a default implementation for derived classes.",
+        "To prevent derived classes from overriding the function.",
+        "To force derived classes to provide an implementation.",
+        "To declare a static method."
+      ],
+      "answer": 2,
+      "explanation": "Pure virtual functions act as placeholders, requiring derived classes to provide their own specific implementations, making the base class abstract.",
+      "hint": "Consider what a 'pure' requirement means for derived classes."
+    },
+    {
+      "id": 9,
+      "question": "If a class implements an interface, what must it do?",
+      "options": [
+        "Inherit all methods from the interface.",
+        "Provide implementations for all methods declared in the interface.",
+        "Declare all methods from the interface as private.",
+        "Ignore the interface methods."
+      ],
+      "answer": 1,
+      "explanation": "A class implementing an interface is obligated to provide concrete implementations for all the abstract methods defined within that interface.",
+      "hint": "Think about the concept of a 'contract' and what it means to fulfill it."
+    },
+    {
+      "id": 10,
+      "question": "What is the main difference between multiple inheritance (through classes) and multiple interface implementation?",
+      "options": [
+        "Multiple inheritance allows code reuse, while interface implementation does not.",
+        "Multiple inheritance can lead to ambiguity (the diamond problem), while interface implementation avoids this.",
+        "Multiple interface implementation allows code reuse, while multiple inheritance does not.",
+        "There is no difference between the two."
+      ],
+      "answer": 1,
+      "explanation": "Multiple inheritance from classes can lead to the 'diamond problem' due to ambiguity in inherited methods, while interfaces only define contracts, avoiding this issue.",
+      "hint": "Consider the potential for conflicts when inheriting from multiple sources."
+    },
+    {
+      "id": 11,
+      "question": "Abstraction is primarily concerned with…",
+      "options": [
+        "Data hiding",
+        "Code reusability",
+        "Simplifying complex systems",
+        "Memory management"
+      ],
+      "answer": 2,
+      "explanation": "Abstraction focuses on simplifying complex systems by modeling classes based on the problem and hiding unnecessary implementation details.",
+      "hint": "Think about how you would explain a complex system to someone unfamiliar with it."
+    },
+    {
+      "id": 12,
+      "question": "Encapsulation is primarily concerned with…",
+      "options": [
+        "Simplifying complex systems",
+        "Bundling data and methods together",
+        "Defining a contract",
+        "Preventing inheritance"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation involves bundling data (attributes) and the methods that operate on that data into a single unit (class), protecting the data from direct access.",
+      "hint": "Think about protecting data and controlling access to it."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is NOT a characteristic of an interface?",
+      "options": [
+        "It can contain method signatures.",
+        "It can contain concrete method implementations (in some languages).",
+        "It defines a contract.",
+        "It cannot be instantiated directly."
+      ],
+      "answer": 1,
+      "explanation": "Traditionally, interfaces only contained method signatures (declarations) without implementations. Some languages now allow default implementations, but it's not a core characteristic.",
+      "hint": "Think about the fundamental purpose of an interface."
+    },
+    {
+      "id": 14,
+      "question": "What is the benefit of using abstract classes over concrete classes when designing a system?",
+      "options": [
+        "They allow for direct instantiation.",
+        "They provide a complete implementation.",
+        "They enforce a common structure for derived classes.",
+        "They reduce code complexity."
+      ],
+      "answer": 2,
+      "explanation": "Abstract classes define a common structure and force derived classes to implement specific methods, ensuring consistency and a well-defined hierarchy.",
+      "hint": "Consider how abstract classes can guide the design of related classes."
+    },
+    {
+      "id": 15,
+      "question": "If a class extends an abstract class and does not implement all the abstract methods, what happens?",
+      "options": [
+        "The class becomes concrete and can be instantiated.",
+        "The class remains abstract and cannot be instantiated.",
+        "The compiler ignores the missing methods.",
+        "The program crashes at runtime."
+      ],
+      "answer": 1,
+      "explanation": "If a class extends an abstract class but doesn't implement all abstract methods, the extending class itself becomes abstract and cannot be instantiated.",
+      "hint": "Think about the requirements for a class to be considered 'concrete'."
+    },
+    {
+      "id": 16,
+      "question": "How does abstraction contribute to maintainability?",
+      "options": [
+        "By making the code more complex.",
+        "By hiding implementation details, allowing changes without affecting other parts of the system.",
+        "By increasing code duplication.",
+        "By reducing code reusability."
+      ],
+      "answer": 1,
+      "explanation": "Abstraction hides implementation details, so changes to the internal workings of a component don't necessarily require changes in other parts of the system, improving maintainability.",
+      "hint": "Consider how changes to one part of the system might impact others."
+    },
+    {
+      "id": 17,
+      "question": "What is the 'diamond problem' in multiple inheritance?",
+      "options": [
+        "A problem with memory allocation.",
+        "A problem with method resolution when a class inherits from multiple classes with conflicting methods.",
+        "A problem with interface implementation.",
+        "A problem with abstract class design."
+      ],
+      "answer": 1,
+      "explanation": "The diamond problem occurs when a class inherits from two classes that both inherit from a common ancestor, leading to ambiguity in which version of a method to use.",
+      "hint": "Think about inheritance hierarchies that resemble a diamond shape."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following best describes the relationship between abstraction and encapsulation?",
+      "options": [
+        "They are the same thing.",
+        "Abstraction builds upon encapsulation.",
+        "Encapsulation builds upon abstraction.",
+        "They are unrelated concepts."
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation is a mechanism to achieve abstraction. It hides the internal state of an object and only exposes necessary methods, supporting the principle of abstraction.",
+      "hint": "Think about how you would *implement* abstraction."
+    },
+    {
+      "id": 19,
+      "question": "What is a default method in an interface (in languages that support it)?",
+      "options": [
+        "A method that cannot be overridden.",
+        "A method that provides a default implementation.",
+        "A method that must be implemented by all implementing classes.",
+        "A method that is declared as static."
+      ],
+      "answer": 1,
+      "explanation": "Default methods provide a default implementation within an interface, allowing existing classes to implement the interface without immediately needing to provide an implementation for the new method.",
+      "hint": "Consider how default methods can help with interface evolution."
+    },
+    {
+      "id": 20,
+      "question": "Why is it generally preferred to 'program to an interface' rather than to a concrete class?",
+      "options": [
+        "It increases code complexity.",
+        "It reduces flexibility.",
+        "It promotes loose coupling and allows for easier substitution of implementations.",
+        "It makes debugging more difficult."
+      ],
+      "answer": 2,
+      "explanation": "Programming to an interface promotes loose coupling, making it easier to swap out different implementations without affecting the code that uses the interface.",
+      "hint": "Think about the benefits of flexibility and adaptability in your code."
+    },
+    {
+      "id": 21,
+      "question": "An interface can contain:",
+      "options": [
+        "Variables with any access modifier",
+        "Concrete methods only",
+        "Only abstract methods and constants",
+        "Constructors"
+      ],
+      "answer": 2,
+      "explanation": "Interfaces primarily define contracts, which are represented by abstract methods (methods without implementation) and constants (final variables).",
+      "hint": "Consider what an interface is meant to *define*."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of using abstract classes?",
+      "options": [
+        "To create objects directly",
+        "To define a common base for a group of related classes",
+        "To prevent inheritance",
+        "To hide data"
+      ],
+      "answer": 1,
+      "explanation": "Abstract classes serve as blueprints for other classes, providing a common base with some implemented functionality and forcing derived classes to implement the rest.",
+      "hint": "Think about creating a template for similar classes."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is a disadvantage of using interfaces?",
+      "options": [
+        "They can lead to tight coupling.",
+        "They can increase code complexity if overused.",
+        "They prevent code reuse.",
+        "They make testing more difficult."
+      ],
+      "answer": 1,
+      "explanation": "While interfaces promote loose coupling, overuse can lead to a complex web of interfaces, increasing overall code complexity.",
+      "hint": "Consider the potential downsides of having too many interfaces."
+    },
+    {
+      "id": 24,
+      "question": "What is the difference between 'has-a' and 'is-a' relationships, and how do they relate to interfaces and inheritance?",
+      "options": [
+        "'Is-a' uses interfaces, 'has-a' uses inheritance.",
+        "'Is-a' uses inheritance, 'has-a' uses interfaces.",
+        "'Is-a' represents composition, 'has-a' represents inheritance.",
+        "They are the same relationship."
+      ],
+      "answer": 1,
+      "explanation": "'Is-a' represents inheritance (e.g., a Dog *is-a* Animal), while 'has-a' represents composition (e.g., a Car *has-a* Engine), often implemented using interfaces.",
+      "hint": "Think about how you would describe the relationship between two objects."
+    },
+    {
+      "id": 25,
+      "question": "If a class implements two interfaces with a method of the same name and signature, what happens?",
+      "options": [
+        "A compilation error occurs.",
+        "The class must explicitly override the method to resolve the conflict.",
+        "The compiler chooses one implementation arbitrarily.",
+        "The class can only implement one of the interfaces."
+      ],
+      "answer": 1,
+      "explanation": "A compilation error occurs because the compiler cannot determine which implementation to use when two interfaces define a method with the same signature.",
+      "hint": "Consider the ambiguity that arises when two contracts specify the same behavior."
+    },
+    {
+      "id": 26,
+      "question": "What is the primary goal of encapsulation?",
+      "options": [
+        "To increase code complexity",
+        "To hide the internal state of an object and protect its data",
+        "To allow direct access to an object's data",
+        "To reduce code reusability"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation aims to protect an object's internal state by hiding its data and providing controlled access through methods.",
+      "hint": "Think about data security and controlled access."
+    },
+    {
+      "id": 27,
+      "question": "Which of the following is a characteristic of a well-designed abstract class?",
+      "options": [
+        "It should be fully implemented.",
+        "It should have a large number of concrete methods.",
+        "It should define a clear and concise abstraction.",
+        "It should be easily instantiated."
+      ],
+      "answer": 2,
+      "explanation": "A well-designed abstract class provides a clear and concise abstraction, defining the common characteristics and behaviors of its derived classes.",
+      "hint": "Think about the purpose of an abstract class – what should it represent?"
+    },
+    {
+      "id": 28,
+      "question": "What is the benefit of using interfaces over abstract classes in some scenarios?",
+      "options": [
+        "Interfaces allow for multiple inheritance.",
+        "Interfaces provide a complete implementation.",
+        "Interfaces are more flexible and promote loose coupling.",
+        "Interfaces are easier to debug."
+      ],
+      "answer": 2,
+      "explanation": "Interfaces offer greater flexibility and promote loose coupling because they only define contracts without specifying implementation details.",
+      "hint": "Consider the advantages of flexibility and adaptability."
+    },
+    {
+      "id": 29,
+      "question": "How does abstraction help in managing complexity in large software systems?",
+      "options": [
+        "By increasing the number of lines of code.",
+        "By hiding unnecessary details and focusing on essential features.",
+        "By making the code more difficult to understand.",
+        "By reducing code reusability."
+      ],
+      "answer": 1,
+      "explanation": "Abstraction simplifies complex systems by hiding unnecessary details and presenting only the essential features to the user.",
+      "hint": "Think about how you would explain a complex system to someone unfamiliar with it."
+    },
+    {
+      "id": 30,
+      "question": "What is the role of access modifiers (e.g., private, protected, public) in encapsulation?",
+      "options": [
+        "They allow direct access to all data members.",
+        "They control the visibility and accessibility of data members.",
+        "They prevent inheritance.",
+        "They increase code complexity."
+      ],
+      "answer": 1,
+      "explanation": "Access modifiers control the visibility and accessibility of data members, allowing encapsulation to protect the internal state of an object.",
+      "hint": "Think about how you would control access to an object's data."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of a pure virtual function?",
+      "options": [
+        "To provide a default implementation.",
+        "To prevent overriding.",
+        "To force derived classes to implement it.",
+        "To declare a static method."
+      ],
+      "answer": 2,
+      "explanation": "A pure virtual function has no implementation in the base class and *must* be implemented by any concrete derived class.",
+      "hint": "Consider what 'pure' means in the context of implementation."
+    },
+    {
+      "id": 32,
+      "question": "Which of the following is a key benefit of using interfaces?",
+      "options": [
+        "They allow for code reuse through inheritance.",
+        "They enforce a specific implementation.",
+        "They promote loose coupling.",
+        "They reduce the amount of code needed."
+      ],
+      "answer": 2,
+      "explanation": "Interfaces define a contract without specifying implementation, leading to loose coupling and greater flexibility.",
+      "hint": "Think about how interfaces affect the dependencies between different parts of your code."
+    },
+    {
+      "id": 33,
+      "question": "What is the difference between an abstract class and an interface in terms of implementation?",
+      "options": [
+        "Abstract classes can have concrete methods, interfaces cannot.",
+        "Interfaces can have concrete methods, abstract classes cannot.",
+        "Both can have concrete methods.",
+        "Neither can have concrete methods."
+      ],
+      "answer": 0,
+      "explanation": "Abstract classes can contain both abstract and concrete methods, providing partial implementation, while interfaces traditionally only define abstract methods.",
+      "hint": "Think about whether a class can *partially* implement its functionality."
+    },
+    {
+      "id": 34,
+      "question": "If a class implements multiple interfaces, what must it do?",
+      "options": [
+        "Implement all methods from the first interface only.",
+        "Implement all methods from all interfaces.",
+        "Choose which methods to implement.",
+        "Ignore the interface methods."
+      ],
+      "answer": 1,
+      "explanation": "A class implementing multiple interfaces must provide implementations for all methods declared in each of those interfaces.",
+      "hint": "Consider the responsibility a class takes on when implementing multiple contracts."
+    },
+    {
+      "id": 35,
+      "question": "What is the primary goal of abstraction?",
+      "options": [
+        "Data hiding.",
+        "Code reusability.",
+        "Simplifying complex systems.",
+        "Memory management."
+      ],
+      "answer": 2,
+      "explanation": "Abstraction focuses on representing complex reality by modeling classes appropriate to the problem, and hiding unnecessary implementation details from the user.",
+      "hint": "Think about simplifying complex systems by focusing on what's important."
+    },
+    {
+      "id": 36,
+      "question": "What is encapsulation?",
+      "options": [
+        "Combining data and methods.",
+        "Hiding implementation details.",
+        "Defining a contract.",
+        "Preventing inheritance."
+      ],
+      "answer": 0,
+      "explanation": "Encapsulation is the bundling of data and the methods that operate on that data, restricting direct access to some of the object's components.",
+      "hint": "Think about protecting data and controlling access to it."
+    },
+    {
+      "id": 37,
+      "question": "An interface cannot have:",
+      "options": [
+        "Method signatures.",
+        "Constants.",
+        "Concrete method implementations (traditionally).",
+        "Default methods (in some languages)."
+      ],
+      "answer": 2,
+      "explanation": "Traditionally, interfaces only contained method signatures (declarations) without implementations. Some languages now allow default implementations, but it's not a core characteristic.",
+      "hint": "Think about the fundamental purpose of an interface."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of an abstract class?",
+      "options": [
+        "To create objects directly.",
+        "To define a common base for a group of related classes.",
+        "To prevent inheritance.",
+        "To hide data."
+      ],
+      "answer": 1,
+      "explanation": "Abstract classes serve as blueprints for other classes, providing a common base with some implemented functionality and forcing derived classes to implement the rest.",
+      "hint": "Think about creating a template for similar classes."
+    },
+    {
+      "id": 39,
+      "question": "What happens if a class extends an abstract class but doesn't implement all abstract methods?",
+      "options": [
+        "The class becomes concrete.",
+        "The class remains abstract.",
+        "The compiler ignores the missing methods.",
+        "The program crashes immediately."
+      ],
+      "answer": 1,
+      "explanation": "If a class extends an abstract class but doesn't implement all abstract methods, the extending class itself becomes abstract and cannot be instantiated.",
+      "hint": "Think about the requirements for a class to be considered 'concrete'."
+    },
+    {
+      "id": 40,
+      "question": "How does abstraction contribute to code maintainability?",
+      "options": [
+        "By making the code more complex.",
+        "By hiding implementation details.",
+        "By increasing code duplication.",
+        "By reducing code reusability."
+      ],
+      "answer": 1,
+      "explanation": "Abstraction hides implementation details, so changes to the internal workings of a component don't necessarily require changes in other parts of the system, improving maintainability.",
+      "hint": "Consider how changes to one part of the system might impact others."
+    },
+    {
+      "id": 41,
+      "question": "What is the 'diamond problem' primarily associated with?",
+      "options": [
+        "Interface implementation.",
+        "Abstract class design.",
+        "Multiple inheritance.",
+        "Encapsulation."
+      ],
+      "answer": 2,
+      "explanation": "The diamond problem occurs when a class inherits from two classes that both inherit from a common ancestor, leading to ambiguity in method resolution.",
+      "hint": "Think about inheritance hierarchies that resemble a diamond shape."
+    },
+    {
+      "id": 42,
+      "question": "Encapsulation is achieved through the use of:",
+      "options": [
+        "Inheritance.",
+        "Polymorphism.",
+        "Access modifiers.",
+        "Abstraction."
+      ],
+      "answer": 2,
+      "explanation": "Access modifiers (private, protected, public) control the visibility of data and methods, enabling encapsulation.",
+      "hint": "Think about how you would control access to an object's data."
+    },
+    {
+      "id": 43,
+      "question": "What is a default method in an interface used for?",
+      "options": [
+        "To prevent overriding.",
+        "To provide a mandatory implementation.",
+        "To provide a backward-compatible implementation.",
+        "To declare a static method."
+      ],
+      "answer": 2,
+      "explanation": "Default methods allow you to add new methods to an interface without breaking existing implementations.",
+      "hint": "Consider how interfaces can evolve over time."
+    },
+    {
+      "id": 44,
+      "question": "Why is 'programming to an interface' considered a good practice?",
+      "options": [
+        "It increases coupling.",
+        "It reduces flexibility.",
+        "It promotes loose coupling and testability.",
+        "It makes debugging harder."
+      ],
+      "answer": 2,
+      "explanation": "Programming to an interface promotes loose coupling, making the code more flexible, testable, and maintainable.",
+      "hint": "Think about the benefits of flexibility and adaptability."
+    },
+    {
+      "id": 45,
+      "question": "What is the key difference between abstraction and encapsulation?",
+      "options": [
+        "They are the same thing.",
+        "Abstraction focuses on what an object *does*, encapsulation on how it *does* it.",
+        "Encapsulation focuses on what an object *does*, abstraction on how it *does* it.",
+        "They are unrelated concepts."
+      ],
+      "answer": 1,
+      "explanation": "Abstraction deals with the external behavior of an object, while encapsulation deals with the internal implementation details.",
+      "hint": "Think about the difference between 'what' and 'how'."
+    },
+    {
+      "id": 46,
+      "question": "Which of the following is a characteristic of a well-designed interface?",
+      "options": [
+        "It should be complex and detailed.",
+        "It should be tightly coupled to specific implementations.",
+        "It should be small, focused, and well-defined.",
+        "It should contain concrete method implementations."
+      ],
+      "answer": 2,
+      "explanation": "A well-designed interface is small, focused, and well-defined, providing a clear contract without unnecessary complexity.",
+      "hint": "Think about the principles of good interface design."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of a pure virtual function in an abstract class?",
+      "options": [
+        "To provide a default implementation.",
+        "To prevent derived classes from overriding.",
+        "To force derived classes to provide an implementation.",
+        "To declare a static method."
+      ],
+      "answer": 2,
+      "explanation": "A pure virtual function has no implementation in the base class and *must* be implemented by any concrete derived class.",
+      "hint": "Consider what 'pure' means in the context of implementation."
+    },
+    {
+      "id": 48,
+      "question": "What is the benefit of using interfaces over abstract classes when you need multiple inheritance-like behavior?",
+      "options": [
+        "Interfaces allow for code reuse.",
+        "Interfaces avoid the diamond problem.",
+        "Interfaces provide a complete implementation.",
+        "Interfaces are easier to debug."
+      ],
+      "answer": 1,
+      "explanation": "Interfaces allow a class to implement multiple contracts without the ambiguity issues associated with multiple inheritance from classes (the diamond problem).",
+      "hint": "Think about the challenges of inheriting from multiple sources."
+    },
+    {
+      "id": 49,
+      "question": "How does encapsulation contribute to data integrity?",
+      "options": [
+        "By allowing direct access to data.",
+        "By hiding data and controlling access through methods.",
+        "By increasing code complexity.",
+        "By reducing code reusability."
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation protects data by hiding it and controlling access through methods, preventing unauthorized modification and ensuring data integrity.",
+      "hint": "Think about how you would protect sensitive data."
+    },
+    {
+      "id": 50,
+      "question": "What is the relationship between abstraction and encapsulation in object-oriented programming?",
+      "options": [
+        "They are mutually exclusive concepts.",
+        "Abstraction is a way to achieve encapsulation.",
+        "Encapsulation is a way to achieve abstraction.",
+        "They are unrelated concepts."
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation is a mechanism used to implement abstraction by hiding internal details and providing controlled access to data and methods.",
+      "hint": "Think about how you would *implement* abstraction."
+    }
+  ]
+}

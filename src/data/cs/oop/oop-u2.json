@@ -1,0 +1,666 @@
+{
+  "subject": "Object-Oriented Programming",
+  "unit": "Unit 2: Encapsulation",
+  "unitId": "oop-u2",
+  "categoryId": "cs",
+  "topics": [
+    "Access modifiers — public, private, protected",
+    "Getters and setters",
+    "Data hiding",
+    "The principle of encapsulation",
+    "Benefits of encapsulation"
+  ],
+  "generatedAt": "2026-03-24T08:20:29Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which access modifier makes a member accessible from anywhere?",
+      "options": [
+        "private",
+        "protected",
+        "public",
+        "default"
+      ],
+      "answer": 2,
+      "explanation": "Public members have no access restrictions and can be accessed from any class or package.",
+      "hint": "Think about the broadest possible access level."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of data hiding?",
+      "options": [
+        "To make code more complex",
+        "To prevent direct access to data members",
+        "To increase code execution speed",
+        "To allow unrestricted data modification"
+      ],
+      "answer": 1,
+      "explanation": "Data hiding protects data from accidental or unauthorized modification by restricting direct access.",
+      "hint": "Consider the 'information hiding' aspect of encapsulation."
+    },
+    {
+      "id": 3,
+      "question": "Which access modifier restricts access to within the same class and its subclasses?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "default"
+      ],
+      "answer": 2,
+      "explanation": "Protected members are accessible within the same package and by subclasses, even in different packages.",
+      "hint": "Think about inheritance and family relationships between classes."
+    },
+    {
+      "id": 4,
+      "question": "What is a getter method used for?",
+      "options": [
+        "To modify the value of a private variable",
+        "To retrieve the value of a private variable",
+        "To create a new object",
+        "To delete an object"
+      ],
+      "answer": 1,
+      "explanation": "Getter methods (also known as accessors) provide controlled read access to private data members.",
+      "hint": "The name often starts with 'get...'."
+    },
+    {
+      "id": 5,
+      "question": "What is a setter method used for?",
+      "options": [
+        "To retrieve the value of a private variable",
+        "To create a new object",
+        "To modify the value of a private variable",
+        "To delete an object"
+      ],
+      "answer": 2,
+      "explanation": "Setter methods (also known as mutators) provide controlled write access to private data members.",
+      "hint": "The name often starts with 'set...'."
+    },
+    {
+      "id": 6,
+      "question": "Which of the following is a benefit of encapsulation?",
+      "options": [
+        "Increased code complexity",
+        "Reduced code reusability",
+        "Improved code maintainability",
+        "Decreased data security"
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation promotes modularity, making code easier to understand, modify, and maintain.",
+      "hint": "Think about how bundling data and methods affects code organization."
+    },
+    {
+      "id": 7,
+      "question": "What does the principle of encapsulation aim to achieve?",
+      "options": [
+        "To expose all data members to external access",
+        "To bundle data and methods that operate on that data within a single unit",
+        "To reduce the number of methods in a class",
+        "To eliminate the need for access modifiers"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation combines data and methods into a cohesive unit, protecting data integrity.",
+      "hint": "Consider the word 'capsule' and what it does."
+    },
+    {
+      "id": 8,
+      "question": "If a variable is declared as 'private', where can it be accessed?",
+      "options": [
+        "From any class",
+        "Only from within the same class",
+        "From the same package",
+        "From subclasses"
+      ],
+      "answer": 1,
+      "explanation": "Private members are only accessible within the class where they are declared.",
+      "hint": "Think about the most restrictive access level."
+    },
+    {
+      "id": 9,
+      "question": "What is the 'default' access modifier (when no modifier is specified) in Java?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "package-private"
+      ],
+      "answer": 3,
+      "explanation": "If no access modifier is specified, the member has package-private access, meaning it's accessible within the same package.",
+      "hint": "Consider what happens when you don't explicitly declare an access level."
+    },
+    {
+      "id": 10,
+      "question": "Why are getters and setters often preferred over directly accessing data members?",
+      "options": [
+        "They make the code slower",
+        "They allow for data validation and control",
+        "They increase code complexity",
+        "They are not preferred"
+      ],
+      "answer": 1,
+      "explanation": "Getters and setters allow you to add logic (like validation) before getting or setting a value, ensuring data integrity.",
+      "hint": "Think about controlling how data is modified."
+    },
+    {
+      "id": 11,
+      "question": "Which access modifier provides the least amount of data protection?",
+      "options": [
+        "private",
+        "protected",
+        "public",
+        "default"
+      ],
+      "answer": 2,
+      "explanation": "Public access modifiers offer no data protection as they are accessible from anywhere.",
+      "hint": "Consider which modifier allows the widest access."
+    },
+    {
+      "id": 12,
+      "question": "What is the relationship between encapsulation and data hiding?",
+      "options": [
+        "They are opposites",
+        "Data hiding is a technique used to achieve encapsulation",
+        "Encapsulation is a technique used to achieve data hiding",
+        "They are unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Data hiding is a key mechanism used to implement encapsulation by restricting direct access to data.",
+      "hint": "Think about how you *achieve* encapsulation."
+    },
+    {
+      "id": 13,
+      "question": "A class has a private variable 'age'. Which of the following is the correct way to access it from outside the class?",
+      "options": [
+        "age",
+        "public age",
+        "getAge()",
+        "setAge(age)"
+      ],
+      "answer": 2,
+      "explanation": "Since 'age' is private, you must use a getter method (like getAge()) to access its value.",
+      "hint": "Remember that private variables are not directly accessible."
+    },
+    {
+      "id": 14,
+      "question": "What is a potential drawback of excessive encapsulation?",
+      "options": [
+        "Reduced code maintainability",
+        "Increased code complexity",
+        "Improved data security",
+        "Enhanced code reusability"
+      ],
+      "answer": 1,
+      "explanation": "Overly strict encapsulation can lead to complex code with many getter and setter methods, making it harder to understand.",
+      "hint": "Think about balance – too much of a good thing can be bad."
+    },
+    {
+      "id": 15,
+      "question": "How does encapsulation contribute to code reusability?",
+      "options": [
+        "It makes classes more dependent on each other",
+        "It hides internal implementation details, allowing classes to be used without modification",
+        "It increases code complexity",
+        "It reduces data security"
+      ],
+      "answer": 1,
+      "explanation": "By hiding internal details, encapsulation allows you to reuse a class in different contexts without worrying about its internal workings.",
+      "hint": "Think about how hiding implementation details affects reusability."
+    },
+    {
+      "id": 16,
+      "question": "Which access modifier allows a subclass to access a member, even if it's in a different package?",
+      "options": [
+        "private",
+        "public",
+        "default",
+        "protected"
+      ],
+      "answer": 3,
+      "explanation": "Protected members are accessible to subclasses regardless of the package they are in.",
+      "hint": "Consider the inheritance relationship."
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of using 'this' keyword in a setter method?",
+      "options": [
+        "To create a new object",
+        "To refer to the current object",
+        "To delete an object",
+        "To call another method"
+      ],
+      "answer": 1,
+      "explanation": "The 'this' keyword is used to differentiate between the instance variable and the method parameter with the same name.",
+      "hint": "Think about resolving naming conflicts within a class."
+    },
+    {
+      "id": 18,
+      "question": "If a class has no access modifier specified for a method, what is its access level?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "package-private"
+      ],
+      "answer": 3,
+      "explanation": "Without an explicit access modifier, the method has package-private access.",
+      "hint": "Consider the default behavior when no modifier is used."
+    },
+    {
+      "id": 19,
+      "question": "What is the main difference between 'public' and 'protected' access modifiers?",
+      "options": [
+        "Public is more restrictive than protected",
+        "Protected is more restrictive than public",
+        "They are the same",
+        "Public is only for methods, protected is only for variables"
+      ],
+      "answer": 1,
+      "explanation": "Public members are accessible from anywhere, while protected members are only accessible within the same package and by subclasses.",
+      "hint": "Think about the scope of access."
+    },
+    {
+      "id": 20,
+      "question": "Encapsulation helps in achieving which OOP principle?",
+      "options": [
+        "Inheritance",
+        "Polymorphism",
+        "Abstraction",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Encapsulation is a core component of abstraction, as it hides complex implementation details and presents a simplified interface.",
+      "hint": "Think about how hiding details relates to presenting a simplified view."
+    },
+    {
+      "id": 21,
+      "question": "A setter method is used to:",
+      "options": [
+        "Retrieve a value",
+        "Modify a value",
+        "Create an object",
+        "Delete an object"
+      ],
+      "answer": 1,
+      "explanation": "Setter methods are specifically designed to modify the value of a private instance variable.",
+      "hint": "The name usually starts with 'set'."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of using access modifiers?",
+      "options": [
+        "To make code run faster",
+        "To control the visibility of class members",
+        "To reduce code size",
+        "To automatically generate documentation"
+      ],
+      "answer": 1,
+      "explanation": "Access modifiers control which parts of a class are accessible from other classes, enforcing data hiding and encapsulation.",
+      "hint": "Think about controlling access to data and methods."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following best describes data hiding?",
+      "options": [
+        "Making data publicly available",
+        "Protecting data from unauthorized access",
+        "Increasing data redundancy",
+        "Simplifying data structures"
+      ],
+      "answer": 1,
+      "explanation": "Data hiding is the practice of restricting direct access to data members, protecting them from accidental or intentional modification.",
+      "hint": "Consider the 'hiding' aspect of the term."
+    },
+    {
+      "id": 24,
+      "question": "What is the benefit of using getters and setters with validation logic?",
+      "options": [
+        "Increased code complexity",
+        "Improved data integrity",
+        "Reduced code readability",
+        "Decreased performance"
+      ],
+      "answer": 1,
+      "explanation": "Validation logic in getters and setters ensures that only valid data is assigned to instance variables, maintaining data integrity.",
+      "hint": "Think about how you can ensure data quality."
+    },
+    {
+      "id": 25,
+      "question": "If a class member is declared without any access modifier, it is accessible within:",
+      "options": [
+        "The entire project",
+        "Only the class itself",
+        "The same package",
+        "All subclasses"
+      ],
+      "answer": 2,
+      "explanation": "Members without an access modifier have package-private access, meaning they are accessible only within the same package.",
+      "hint": "Consider the default scope when no modifier is specified."
+    },
+    {
+      "id": 26,
+      "question": "Encapsulation promotes which design principle?",
+      "options": [
+        "Tight coupling",
+        "Loose coupling",
+        "High cohesion",
+        "Low cohesion"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation reduces dependencies between classes, promoting loose coupling and making the system more flexible.",
+      "hint": "Think about how hiding details affects dependencies."
+    },
+    {
+      "id": 27,
+      "question": "What is the primary goal of encapsulation in object-oriented programming?",
+      "options": [
+        "To increase code execution speed",
+        "To reduce code size",
+        "To protect data and control access to it",
+        "To simplify debugging"
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation's main goal is to protect data by bundling it with the methods that operate on it and controlling access to it.",
+      "hint": "Consider the core idea of 'wrapping' data and methods."
+    },
+    {
+      "id": 28,
+      "question": "A private member variable can be directly accessed by:",
+      "options": [
+        "Any class",
+        "Only its own class",
+        "Any subclass",
+        "Any class in the same package"
+      ],
+      "answer": 1,
+      "explanation": "Private members are only accessible within the class where they are declared.",
+      "hint": "Think about the most restrictive access level."
+    },
+    {
+      "id": 29,
+      "question": "What is the advantage of using encapsulation over exposing data directly?",
+      "options": [
+        "It makes the code more complex",
+        "It allows for easier debugging",
+        "It provides better control over data modification",
+        "It reduces code reusability"
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation allows you to control how data is modified, preventing invalid or unintended changes.",
+      "hint": "Think about data integrity and control."
+    },
+    {
+      "id": 30,
+      "question": "Which access modifier is the most restrictive?",
+      "options": [
+        "public",
+        "protected",
+        "default",
+        "private"
+      ],
+      "answer": 3,
+      "explanation": "Private access modifiers restrict access to only the declaring class.",
+      "hint": "Consider which modifier allows the least access."
+    },
+    {
+      "id": 31,
+      "question": "What is the role of a getter method in encapsulation?",
+      "options": [
+        "To modify the value of a private variable",
+        "To retrieve the value of a private variable",
+        "To create a new object",
+        "To delete an object"
+      ],
+      "answer": 1,
+      "explanation": "Getter methods provide controlled read access to private data members.",
+      "hint": "The name often starts with 'get...'."
+    },
+    {
+      "id": 32,
+      "question": "Why is it important to use setters to modify private variables?",
+      "options": [
+        "To make the code more complex",
+        "To allow for data validation and control",
+        "To increase code execution speed",
+        "To allow unrestricted data modification"
+      ],
+      "answer": 1,
+      "explanation": "Setters allow you to add logic (like validation) before setting a value, ensuring data integrity.",
+      "hint": "Think about controlling how data is modified."
+    },
+    {
+      "id": 33,
+      "question": "What is the relationship between encapsulation and abstraction?",
+      "options": [
+        "They are the same thing",
+        "Encapsulation is a part of abstraction",
+        "Abstraction is a part of encapsulation",
+        "They are unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation is a mechanism to achieve abstraction by hiding complex implementation details.",
+      "hint": "Think about how encapsulation helps simplify a complex system."
+    },
+    {
+      "id": 34,
+      "question": "If a class has a protected variable, which of the following can access it?",
+      "options": [
+        "Any class",
+        "Only the class itself",
+        "Classes in the same package and subclasses",
+        "Only subclasses"
+      ],
+      "answer": 2,
+      "explanation": "Protected members are accessible within the same package and by subclasses, even in different packages.",
+      "hint": "Consider the inheritance and package relationships."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of using the 'this' keyword in a getter method?",
+      "options": [
+        "To create a new object",
+        "To refer to the current object",
+        "To delete an object",
+        "To call another method"
+      ],
+      "answer": 1,
+      "explanation": "The 'this' keyword is used to differentiate between the instance variable and the method parameter with the same name.",
+      "hint": "Think about resolving naming conflicts within a class."
+    },
+    {
+      "id": 36,
+      "question": "Which access modifier allows access within the same package but not from subclasses?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "default"
+      ],
+      "answer": 3,
+      "explanation": "Default (package-private) access allows access within the same package but not from subclasses in different packages.",
+      "hint": "Consider the scope of access within a package."
+    },
+    {
+      "id": 37,
+      "question": "What is a potential disadvantage of using too many getter and setter methods?",
+      "options": [
+        "Increased code security",
+        "Reduced code complexity",
+        "Decreased code readability",
+        "Improved code maintainability"
+      ],
+      "answer": 2,
+      "explanation": "Too many getter and setter methods can make the code harder to read and understand.",
+      "hint": "Think about the impact on code clarity."
+    },
+    {
+      "id": 38,
+      "question": "Encapsulation helps to prevent:",
+      "options": [
+        "Code duplication",
+        "Data corruption",
+        "Memory leaks",
+        "Stack overflow"
+      ],
+      "answer": 1,
+      "explanation": "Encapsulation protects data from accidental or unauthorized modification, preventing data corruption.",
+      "hint": "Think about the role of encapsulation in data integrity."
+    },
+    {
+      "id": 39,
+      "question": "A class has a private method. Where can this method be called?",
+      "options": [
+        "From any class",
+        "Only from within the same class",
+        "From the same package",
+        "From subclasses"
+      ],
+      "answer": 1,
+      "explanation": "Private methods are only accessible within the class where they are declared.",
+      "hint": "Think about the most restrictive access level for methods."
+    },
+    {
+      "id": 40,
+      "question": "What is the main benefit of using encapsulation in large software projects?",
+      "options": [
+        "Faster compilation times",
+        "Easier debugging",
+        "Improved code organization and maintainability",
+        "Reduced memory usage"
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation promotes modularity, making large projects easier to understand, modify, and maintain.",
+      "hint": "Think about how encapsulation affects code structure in complex systems."
+    },
+    {
+      "id": 41,
+      "question": "Which access modifier is suitable for a variable that should be read-only from outside the class?",
+      "options": [
+        "public",
+        "private with a getter",
+        "protected",
+        "default"
+      ],
+      "answer": 1,
+      "explanation": "A private variable with a public getter allows read access but prevents direct modification from outside the class.",
+      "hint": "Think about providing read access without write access."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of data validation in setter methods?",
+      "options": [
+        "To speed up data access",
+        "To ensure data consistency and integrity",
+        "To reduce code size",
+        "To simplify debugging"
+      ],
+      "answer": 1,
+      "explanation": "Data validation in setters ensures that only valid data is assigned to instance variables, maintaining data integrity.",
+      "hint": "Think about ensuring data quality."
+    },
+    {
+      "id": 43,
+      "question": "If a subclass needs to access a protected member of its superclass, what must be true?",
+      "options": [
+        "The subclass must be in the same package",
+        "The subclass can be in any package",
+        "The superclass must be public",
+        "The subclass must be private"
+      ],
+      "answer": 1,
+      "explanation": "Protected members are accessible to subclasses regardless of the package, but only if the subclass is in the same package.",
+      "hint": "Consider the inheritance and package relationships."
+    },
+    {
+      "id": 44,
+      "question": "What is the primary difference between encapsulation and abstraction?",
+      "options": [
+        "Encapsulation is about hiding data, abstraction is about showing only essential features",
+        "Encapsulation is about showing all data, abstraction is about hiding data",
+        "They are the same concept",
+        "Encapsulation is a type of abstraction"
+      ],
+      "answer": 0,
+      "explanation": "Encapsulation focuses on bundling data and methods and hiding internal implementation details, while abstraction focuses on presenting only essential information.",
+      "hint": "Think about 'what' vs. 'how'."
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is NOT a benefit of encapsulation?",
+      "options": [
+        "Increased code flexibility",
+        "Improved data security",
+        "Reduced code complexity",
+        "Increased code coupling"
+      ],
+      "answer": 3,
+      "explanation": "Encapsulation actually *reduces* code coupling, not increases it.",
+      "hint": "Think about how encapsulation affects dependencies between classes."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of access modifiers in implementing encapsulation?",
+      "options": [
+        "They define the methods of a class",
+        "They control the visibility of class members",
+        "They determine the inheritance hierarchy",
+        "They manage memory allocation"
+      ],
+      "answer": 1,
+      "explanation": "Access modifiers (public, private, protected, default) control which parts of a class are accessible from other classes.",
+      "hint": "Think about controlling access to data and methods."
+    },
+    {
+      "id": 47,
+      "question": "A class has a private variable 'salary'. What is the best practice for allowing controlled access to this variable?",
+      "options": [
+        "Make it public",
+        "Provide a public getter and setter",
+        "Provide only a public getter",
+        "Provide only a public setter"
+      ],
+      "answer": 1,
+      "explanation": "Providing both a public getter and setter allows controlled read and write access to the private variable.",
+      "hint": "Think about providing both read and write access with control."
+    },
+    {
+      "id": 48,
+      "question": "What is the impact of encapsulation on code maintainability?",
+      "options": [
+        "It makes code harder to maintain",
+        "It has no impact on code maintainability",
+        "It makes code easier to maintain",
+        "It increases the risk of errors"
+      ],
+      "answer": 2,
+      "explanation": "Encapsulation promotes modularity, making code easier to understand, modify, and maintain.",
+      "hint": "Think about how bundling data and methods affects code organization."
+    },
+    {
+      "id": 49,
+      "question": "Which access modifier is most appropriate for a method that should only be used internally within a class?",
+      "options": [
+        "public",
+        "protected",
+        "default",
+        "private"
+      ],
+      "answer": 3,
+      "explanation": "Private methods are only accessible within the class where they are declared, making them suitable for internal use.",
+      "hint": "Think about the most restrictive access level for methods."
+    },
+    {
+      "id": 50,
+      "question": "What is the relationship between encapsulation and information hiding?",
+      "options": [
+        "They are the same thing",
+        "Encapsulation is a technique to achieve information hiding",
+        "Information hiding is a technique to achieve encapsulation",
+        "They are unrelated"
+      ],
+      "answer": 1,
+      "explanation": "Information hiding is a key principle used to implement encapsulation by restricting direct access to data.",
+      "hint": "Think about how you *achieve* encapsulation."
+    }
+  ]
+}
