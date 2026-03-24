@@ -1,5 +1,5 @@
 # ============================================================
-#  Cambridge Lower Secondary Grade 9 — Quiz Generator
+#  Quiz Generator — Multi-Category
 #  Run: python generate.py
 #  Reads topics.json → calls Gemini → saves question JSONs
 #  Auto-retries on network errors/timeouts
@@ -17,7 +17,6 @@ import os
 
 load_dotenv()
 
-# Config
 GEMINI_API_KEY     = os.getenv("GEMINI_API_KEY")
 MODEL              = "gemma-3-27b-it"
 QUESTIONS_PER_UNIT = 50
@@ -28,7 +27,22 @@ MAX_RETRIES        = 5
 RETRY_WAIT         = 30
 # ────────────────────────────────────────────────────────────
 
-# ─── DISPLAY HELPERS ────────────────────────────────────────
+# ─── CATEGORY PROMPT CONFIG ─────────────────────────────────
+CATEGORY_PROMPTS = {
+    "grade9": {
+        "audience":   "Cambridge Lower Secondary Stage 9 students (age 13-14)",
+        "difficulty": "Mix easy, medium and hard questions appropriate for Grade 9 level",
+    },
+    "cs": {
+        "audience":   "Computer Science Engineering university students",
+        "difficulty": "Mix simple, intermediate and hard questions — from fundamental concepts to advanced application. Only include questions strictly within the subject topics listed, do not go outside them",
+    },
+    "mbbs": {
+        "audience":   "Medical MBBS university students",
+        "difficulty": "Mix simple, intermediate and hard questions — from basic recall to clinical application",
+    },
+}
+# ────────────────────────────────────────────────────────────
 
 BAR_WIDTH = 30
 
@@ -39,19 +53,18 @@ def format_duration(seconds: float) -> str:
     return f"{m}m {s:02d}s"
 
 def progress_bar(current: int, total: int) -> str:
-    pct      = current / total
-    filled   = int(BAR_WIDTH * pct)
-    empty    = BAR_WIDTH - filled
-    bar      = "█" * filled + "░" * empty
+    pct    = current / total
+    filled = int(BAR_WIDTH * pct)
+    bar    = "█" * filled + "░" * (BAR_WIDTH - filled)
     return f"[{bar}] {current}/{total} ({pct*100:.0f}%)"
 
 def spinner_frame(frame: int) -> str:
-    frames = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"]
+    frames = ["⠋","⠙","⠹","⠸","⠼","⠴","⠦","⠧","⠇","⠏"]
     return frames[frame % len(frames)]
 
 def print_header():
     print("\n" + "═" * 55)
-    print("  🎓 Cambridge Grade 9 Quiz Generator")
+    print("  🎓 Quiz Generator — Multi-Category")
     print(f"  Model : {MODEL}")
     print(f"  Output: {OUTPUT_DIR}")
     print("═" * 55 + "\n")
@@ -61,7 +74,6 @@ def print_unit_start(unit_name: str, done: int, total: int):
     print(f"  ⏳ Starting : {unit_name}")
 
 def print_live_timer(elapsed: float, attempt: int, frame: int):
-    """Overwrite the same line with a live timer."""
     msg = f"  {spinner_frame(frame)}  Generating ... {format_duration(elapsed)}"
     if attempt > 1:
         msg += f"  (attempt {attempt})"
@@ -69,7 +81,7 @@ def print_live_timer(elapsed: float, attempt: int, frame: int):
     sys.stdout.flush()
 
 def print_unit_done(unit_name: str, q_count: int, elapsed: float):
-    sys.stdout.write("\r" + " " * 60 + "\r")  # clear spinner line
+    sys.stdout.write("\r" + " " * 60 + "\r")
     print(f"  ✅ Done     : {unit_name}")
     print(f"     Questions: {q_count}  |  Time: {format_duration(elapsed)}")
 
@@ -101,11 +113,11 @@ def print_summary(total: int, succeeded: int, failed_list: list, total_time: flo
         print("\n  🏆 All units generated successfully!")
     print("═" * 55 + "\n")
 
-# ────────────────────────────────────────────────────────────
 
-def build_prompt(subject: str, unit_name: str, topics: list[str]) -> str:
+def build_prompt(subject: str, unit_name: str, topics: list[str], category_id: str = "grade9") -> str:
     topics_str = ", ".join(topics)
-    return f"""You are an expert teacher creating a quiz for Cambridge Lower Secondary Stage 9 students.
+    cat = CATEGORY_PROMPTS.get(category_id, CATEGORY_PROMPTS["grade9"])
+    return f"""You are an expert teacher creating a quiz for {cat['audience']}.
 
 Subject: {subject}
 Unit: {unit_name}
@@ -114,14 +126,12 @@ Topics covered: {topics_str}
 Generate exactly {QUESTIONS_PER_UNIT} multiple choice questions based on these topics.
 
 Rules:
-- Questions must be appropriate for Grade 9 students (age 13-14)
+- {cat['difficulty']}
 - Each question must have exactly 4 options
 - Only one option is correct
 - Include a short explanation (1-2 sentences) for the correct answer
-- Mix easy, medium and hard questions
 - Cover ALL topics listed, do not focus on just one
 - Do NOT repeat questions
-
 - Each question must include a "hint" field — a short nudge (1 sentence) that helps the student think in the right direction WITHOUT giving away the answer
 
 Return ONLY a valid JSON array with no extra text, no markdown, no code fences.
@@ -150,14 +160,11 @@ def call_gemini(prompt: str) -> str:
 
 def parse_response(text: str) -> list:
     from json_repair import repair_json
-    
     cleaned = text.strip()
     if cleaned.startswith("```"):
         cleaned = cleaned.split("\n", 1)[-1]
         cleaned = cleaned.rsplit("```", 1)[0]
     cleaned = cleaned.strip()
-    
-    # Auto repair any malformed JSON the model returns
     repaired = repair_json(cleaned)
     return json.loads(repaired)
 
@@ -168,9 +175,9 @@ def save_json(file_path: Path, data: dict):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def generate_unit(subject: str, subject_id: str, unit: dict, done: int, total: int) -> bool:
-    output_path = OUTPUT_DIR / subject_id / f"{unit['id']}.json"
-    error_path  = OUTPUT_DIR / subject_id / f"{unit['id']}.error.json"
+def generate_unit(subject: str, category_id: str, subject_id: str, unit: dict, done: int, total: int) -> bool:
+    output_path = OUTPUT_DIR / category_id / subject_id / f"{unit['id']}.json"
+    error_path  = OUTPUT_DIR / category_id / subject_id / f"{unit['id']}.error.json"
 
     if output_path.exists():
         print_unit_skipped(unit["name"])
@@ -180,18 +187,15 @@ def generate_unit(subject: str, subject_id: str, unit: dict, done: int, total: i
         error_path.unlink()
 
     print_unit_start(unit["name"], done, total)
-    prompt     = build_prompt(subject, unit["name"], unit["topics"])
+    prompt     = build_prompt(subject, unit["name"], unit["topics"], category_id)
     unit_start = time.time()
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             call_start = time.time()
             frame      = 0
-
-            # Start the API call in a way we can show a live timer
-            # We use a simple polling approach with generate_content
             import threading
-            result     = {"text": None, "error": None}
+            result = {"text": None, "error": None}
 
             def do_call():
                 try:
@@ -222,6 +226,7 @@ def generate_unit(subject: str, subject_id: str, unit: dict, done: int, total: i
                 "subject":     subject,
                 "unit":        unit["name"],
                 "unitId":      unit["id"],
+                "categoryId":  category_id,
                 "topics":      unit["topics"],
                 "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 "questions":   questions,
@@ -253,7 +258,7 @@ def main():
     print_header()
 
     if not TOPICS_FILE.exists():
-        print(f"❌ topics.json not found"); return
+        print("❌ topics.json not found"); return
 
     if not GEMINI_API_KEY:
         print("❌ GEMINI_API_KEY not found in .env file")
@@ -266,25 +271,31 @@ def main():
     with open(TOPICS_FILE, encoding="utf-8") as f:
         data = json.load(f)
 
-    subjects   = data["subjects"]
-    total      = sum(len(s["units"]) for s in subjects)
+    categories = data["categories"]
+    total      = sum(len(s["units"]) for cat in categories for s in cat["subjects"])
     done       = 0
     failed     = []
     start_time = time.time()
 
-    print(f"  📚 {len(subjects)} subject(s) | {total} units | {QUESTIONS_PER_UNIT} questions each\n")
+    print(f"  📚 {len(categories)} category(s) | {total} total units | {QUESTIONS_PER_UNIT} questions each\n")
 
-    for subject in subjects:
-        print(f"\n  📖 {subject['name']}  ({len(subject['units'])} units)")
-        print("  " + "─" * 45)
+    for category in categories:
+        cat_id = category["id"]
+        print(f"\n  {'='*45}")
+        print(f"  📂 {category['name']}")
+        print(f"  {'='*45}")
 
-        for unit in subject["units"]:
-            success = generate_unit(subject["name"], subject["id"], unit, done, total)
-            done += 1
-            if not success:
-                failed.append(f"{subject['name']} → {unit['name']}")
-            if done < total:
-                time.sleep(DELAY_SECONDS)
+        for subject in category["subjects"]:
+            print(f"\n  📖 {subject['name']}  ({len(subject['units'])} units)")
+            print("  " + "─" * 45)
+
+            for unit in subject["units"]:
+                success = generate_unit(subject["name"], cat_id, subject["id"], unit, done, total)
+                done += 1
+                if not success:
+                    failed.append(f"{category['name']} → {subject['name']} → {unit['name']}")
+                if done < total:
+                    time.sleep(DELAY_SECONDS)
 
     print_summary(total, done - len(failed), failed, time.time() - start_time)
 

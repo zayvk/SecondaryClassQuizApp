@@ -1,368 +1,115 @@
 {
-  "curriculum": "Cambridge Lower Secondary",
-  "stage": 9,
-  "subjects": [
+  "categories": [
     {
-      "id": "mathematics",
-      "name": "Mathematics",
-      "icon": "📐",
-      "units": [
+      "id": "grade9",
+      "name": "Cambridge · Grade 9",
+      "subjects": [
         {
-          "id": "math-u1",
-          "name": "Unit 1: Number and Calculation",
-          "topics": [
-            "Irrational numbers",
-            "Standard form",
-            "Indices"
+          "id": "mathematics",
+          "name": "Mathematics",
+          "icon": "📐",
+          "units": [
+            { "id": "math-u1", "name": "Unit 1: Number and Calculation", "topics": ["Irrational numbers", "Standard form", "Indices"] },
+            { "id": "math-u2", "name": "Unit 2: Expressions and Formulae", "topics": ["Substituting into expressions", "Constructing expressions", "Expressions and indices", "Expanding the product of two linear expressions", "Simplifying algebraic fractions", "Deriving and using formulae"] },
+            { "id": "math-u3", "name": "Unit 3: Decimals, Percentages and Rounding", "topics": ["Multiplying and dividing by powers of 10", "Multiplying and dividing decimals", "Understanding compound percentages", "Understanding upper and lower bounds"] },
+            { "id": "math-u4", "name": "Unit 4: Equations and Inequalities", "topics": ["Constructing and solving equations", "Simultaneous equations", "Inequalities"] },
+            { "id": "math-u5", "name": "Unit 5: Angles", "topics": ["Calculating angles", "Interior angles of polygons", "Exterior angles of polygons", "Constructions", "Pythagoras' theorem"] },
+            { "id": "math-u6", "name": "Unit 6: Statistical Investigations", "topics": ["Data collection and sampling", "Bias"] },
+            { "id": "math-u7", "name": "Unit 7: Shapes and Measurements", "topics": ["Circumference and area of a circle", "Areas of compound shapes", "Large and small units"] },
+            { "id": "math-u8", "name": "Unit 8: Fractions", "topics": ["Fractions and recurring decimals", "Fractions and the correct order of operations", "Multiplying fractions", "Dividing fractions", "Making calculations easier"] },
+            { "id": "math-u9", "name": "Unit 9: Sequences and Functions", "topics": ["Generating sequences", "Using the nth term", "Representing functions"] },
+            { "id": "math-u10", "name": "Unit 10: Graphs", "topics": ["Functions", "Plotting graphs", "Gradient and intercept", "Interpreting graphs"] },
+            { "id": "math-u11", "name": "Unit 11: Ratio and Proportion", "topics": ["Using ratios", "Direct and inverse proportion"] },
+            { "id": "math-u12", "name": "Unit 12: Probability", "topics": ["Mutually exclusive events", "Independent events", "Combined events", "Chance experiments"] },
+            { "id": "math-u13", "name": "Unit 13: Position and Transformation", "topics": ["Bearings and scale drawings", "Points on a line segment", "Transformations", "Enlarging shapes"] },
+            { "id": "math-u14", "name": "Unit 14: Volume, Surface Area and Symmetry", "topics": ["Calculating the volume of prisms", "Calculating the surface area of triangular prisms, pyramids and cylinders", "Symmetry in three-dimensional shapes"] },
+            { "id": "math-u15", "name": "Unit 15: Interpreting and Discussing Results", "topics": ["Interpreting and drawing frequency polygons", "Scatter graphs", "Back-to-back stem-and-leaf diagrams", "Calculating statistics for grouped data", "Representing data"] }
           ]
         },
         {
-          "id": "math-u2",
-          "name": "Unit 2: Expressions and Formulae",
-          "topics": [
-            "Substituting into expressions",
-            "Constructing expressions",
-            "Expressions and indices",
-            "Expanding the product of two linear expressions",
-            "Simplifying algebraic fractions",
-            "Deriving and using formulae"
+          "id": "science",
+          "name": "Science",
+          "icon": "🔬",
+          "units": [
+            { "id": "sci-u1", "name": "Unit 1: Photosynthesis and the Carbon Cycle", "topics": ["Photosynthesis", "More about photosynthesis", "The carbon cycle", "Climate change"] },
+            { "id": "sci-u2", "name": "Unit 2: Properties of Materials", "topics": ["Atomic structure and the Periodic Table", "Trends in groups within the Periodic Table", "Why elements react to form compounds", "Simple and giant structures"] },
+            { "id": "sci-u3", "name": "Unit 3: Forces and Energy", "topics": ["Density", "Heat and temperature", "Conservation of energy", "Moving from hot to cold", "Ways of transferring thermal energy", "Cooling by evaporation"] },
+            { "id": "sci-u4", "name": "Unit 4: Maintaining Life", "topics": ["Plants and water", "Transpiration", "Excretion in humans", "Keeping a fetus healthy"] },
+            { "id": "sci-u5", "name": "Unit 5: Reactivity", "topics": ["Reactivity and displacement reactions", "Using the reactivity series and displacement reactions", "Salts", "Other ways of making salts", "Rearranging atoms"] },
+            { "id": "sci-u6", "name": "Unit 6: Sound and Space", "topics": ["Loudness and pitch of sound", "Interference of sound", "Formation of the Moon", "Nebulae", "Tectonics"] },
+            { "id": "sci-u7", "name": "Unit 7: Genes and Inheritance", "topics": ["Chromosomes, genes and DNA", "Gametes and inheritance", "Variation", "Natural selection"] },
+            { "id": "sci-u8", "name": "Unit 8: Rates of Reaction", "topics": ["Measuring the rate of reaction", "Surface area and the rate of reaction", "Temperature and the rate of reaction", "Concentration and the rate of reaction"] },
+            { "id": "sci-u9", "name": "Unit 9: Electricity", "topics": ["Parallel circuits", "Current and voltage in parallel circuits", "Resistance", "Practical circuits"] }
           ]
         },
         {
-          "id": "math-u3",
-          "name": "Unit 3: Decimals, Percentages and Rounding",
-          "topics": [
-            "Multiplying and dividing by powers of 10",
-            "Multiplying and dividing decimals",
-            "Understanding compound percentages",
-            "Understanding upper and lower bounds"
-          ]
-        },
-        {
-          "id": "math-u4",
-          "name": "Unit 4: Equations and Inequalities",
-          "topics": [
-            "Constructing and solving equations",
-            "Simultaneous equations",
-            "Inequalities"
-          ]
-        },
-        {
-          "id": "math-u5",
-          "name": "Unit 5: Angles",
-          "topics": [
-            "Calculating angles",
-            "Interior angles of polygons",
-            "Exterior angles of polygons",
-            "Constructions",
-            "Pythagoras' theorem"
-          ]
-        },
-        {
-          "id": "math-u6",
-          "name": "Unit 6: Statistical Investigations",
-          "topics": [
-            "Data collection and sampling",
-            "Bias"
-          ]
-        },
-        {
-          "id": "math-u7",
-          "name": "Unit 7: Shapes and Measurements",
-          "topics": [
-            "Circumference and area of a circle",
-            "Areas of compound shapes",
-            "Large and small units"
-          ]
-        },
-        {
-          "id": "math-u8",
-          "name": "Unit 8: Fractions",
-          "topics": [
-            "Fractions and recurring decimals",
-            "Fractions and the correct order of operations",
-            "Multiplying fractions",
-            "Dividing fractions",
-            "Making calculations easier"
-          ]
-        },
-        {
-          "id": "math-u9",
-          "name": "Unit 9: Sequences and Functions",
-          "topics": [
-            "Generating sequences",
-            "Using the nth term",
-            "Representing functions"
-          ]
-        },
-        {
-          "id": "math-u10",
-          "name": "Unit 10: Graphs",
-          "topics": [
-            "Functions",
-            "Plotting graphs",
-            "Gradient and intercept",
-            "Interpreting graphs"
-          ]
-        },
-        {
-          "id": "math-u11",
-          "name": "Unit 11: Ratio and Proportion",
-          "topics": [
-            "Using ratios",
-            "Direct and inverse proportion"
-          ]
-        },
-        {
-          "id": "math-u12",
-          "name": "Unit 12: Probability",
-          "topics": [
-            "Mutually exclusive events",
-            "Independent events",
-            "Combined events",
-            "Chance experiments"
-          ]
-        },
-        {
-          "id": "math-u13",
-          "name": "Unit 13: Position and Transformation",
-          "topics": [
-            "Bearings and scale drawings",
-            "Points on a line segment",
-            "Transformations",
-            "Enlarging shapes"
-          ]
-        },
-        {
-          "id": "math-u14",
-          "name": "Unit 14: Volume, Surface Area and Symmetry",
-          "topics": [
-            "Calculating the volume of prisms",
-            "Calculating the surface area of triangular prisms, pyramids and cylinders",
-            "Symmetry in three-dimensional shapes"
-          ]
-        },
-        {
-          "id": "math-u15",
-          "name": "Unit 15: Interpreting and Discussing Results",
-          "topics": [
-            "Interpreting and drawing frequency polygons",
-            "Scatter graphs",
-            "Back-to-back stem-and-leaf diagrams",
-            "Calculating statistics for grouped data",
-            "Representing data"
+          "id": "geography",
+          "name": "Geography",
+          "icon": "🌍",
+          "units": [
+            { "id": "geo-u1", "name": "Unit 1: From Rock to Soil", "topics": ["Our rocky home", "What are the three rock groups?", "What is weathering?", "What is the rock cycle?", "The British Isles on their travels", "Rock and relief around the UK", "What's the link between rock and landscape?", "How are you linked to soil?"] },
+            { "id": "geo-u2", "name": "Unit 2: Using Earth's Resources", "topics": ["Earth's natural resources", "Water part 1 - Do we have enough?", "Water part 2 - Emptying the Ogallala", "Water part 3 - Tackling water stress", "Food part 1 - Feeding the UK", "Food part 2 - Food insecurity, a global issue", "Food part 3 - Tackling food insecurity", "Energy part 1 - Goodbye to the fossil fuels?", "Energy part 2 - Renewables in the UK", "Energy part 3 - Is solar power the solution?", "Why must we change our ways?"] },
+            { "id": "geo-u3", "name": "Unit 3: Earning a Living", "topics": ["What kind of work do we do in the UK?", "The UK's changing pattern of employment", "Example: change in and around Doncaster", "Why do employment patterns change?", "A closer look at globalisation and the UK", "Is your mobile linked to globalisation?", "Employment and the shock of Covid-19", "So what kind of work will you do?"] },
+            { "id": "geo-u4", "name": "Unit 4: International Development", "topics": ["An unequal world", "So what is development?", "How is development measured?", "How is Malawi doing?", "How did the development gap grow? - part 1", "How did the development gap grow? - part 2", "Globalisation, development, and TNCs", "Covid-19 and vaccine inequality", "Escaping from poverty", "Can we put an end to poverty?"] },
+            { "id": "geo-u5", "name": "Unit 5: Our Restless Planet", "topics": ["What's Earth like inside?", "A cracked Earth?", "A closer look at plate movements", "What is an earthquake?", "An earthquake in Southwest China", "Tsunami!", "What is a volcano?", "The most dangerous volcano in the world?", "So why live in a danger zone?"] },
+            { "id": "geo-u6", "name": "Unit 6: About Russia", "topics": ["Meet Russia!", "What are Russia's main physical features?", "Russia's climate zones and biomes", "What about the Russian people?", "A tour of European Russia", "Climate change in Yakutia", "What is Russia doing in the Arctic Ocean?"] },
+            { "id": "geo-u7", "name": "Unit 7: The Middle East", "topics": ["Introducing the Middle East", "The Middle East: physical geography", "The Middle East: climate zones and biomes", "The people, and economies", "Challenges in the Arabian Peninsula", "Conflict in the Middle East"] }
           ]
         }
       ]
     },
     {
-      "id": "science",
-      "name": "Science",
-      "icon": "🔬",
-      "units": [
+      "id": "cs",
+      "name": "Computer Science Engineering",
+      "subjects": [
         {
-          "id": "sci-u1",
-          "name": "Unit 1: Photosynthesis and the Carbon Cycle",
-          "topics": [
-            "Photosynthesis",
-            "More about photosynthesis",
-            "The carbon cycle",
-            "Climate change"
-          ]
-        },
-        {
-          "id": "sci-u2",
-          "name": "Unit 2: Properties of Materials",
-          "topics": [
-            "Atomic structure and the Periodic Table",
-            "Trends in groups within the Periodic Table",
-            "Why elements react to form compounds",
-            "Simple and giant structures"
-          ]
-        },
-        {
-          "id": "sci-u3",
-          "name": "Unit 3: Forces and Energy",
-          "topics": [
-            "Density",
-            "Heat and temperature",
-            "Conservation of energy",
-            "Moving from hot to cold",
-            "Ways of transferring thermal energy",
-            "Cooling by evaporation"
-          ]
-        },
-        {
-          "id": "sci-u4",
-          "name": "Unit 4: Maintaining Life",
-          "topics": [
-            "Plants and water",
-            "Transpiration",
-            "Excretion in humans",
-            "Keeping a fetus healthy"
-          ]
-        },
-        {
-          "id": "sci-u5",
-          "name": "Unit 5: Reactivity",
-          "topics": [
-            "Reactivity and displacement reactions",
-            "Using the reactivity series and displacement reactions",
-            "Salts",
-            "Other ways of making salts",
-            "Rearranging atoms"
-          ]
-        },
-        {
-          "id": "sci-u6",
-          "name": "Unit 6: Sound and Space",
-          "topics": [
-            "Loudness and pitch of sound",
-            "Interference of sound",
-            "Formation of the Moon",
-            "Nebulae",
-            "Tectonics"
-          ]
-        },
-        {
-          "id": "sci-u7",
-          "name": "Unit 7: Genes and Inheritance",
-          "topics": [
-            "Chromosomes, genes and DNA",
-            "Gametes and inheritance",
-            "Variation",
-            "Natural selection"
-          ]
-        },
-        {
-          "id": "sci-u8",
-          "name": "Unit 8: Rates of Reaction",
-          "topics": [
-            "Measuring the rate of reaction",
-            "Surface area and the rate of reaction",
-            "Temperature and the rate of reaction",
-            "Concentration and the rate of reaction"
-          ]
-        },
-        {
-          "id": "sci-u9",
-          "name": "Unit 9: Electricity",
-          "topics": [
-            "Parallel circuits",
-            "Current and voltage in parallel circuits",
-            "Resistance",
-            "Practical circuits"
+          "id": "oop",
+          "name": "Object-Oriented Programming",
+          "icon": "💡",
+          "units": [
+            {
+              "id": "oop-u1",
+              "name": "Unit 1: OOP Fundamentals",
+              "topics": ["What is Object-Oriented Programming?", "Classes and objects", "Attributes and methods", "Instantiation", "The concept of state and behaviour"]
+            },
+            {
+              "id": "oop-u2",
+              "name": "Unit 2: Encapsulation",
+              "topics": ["Access modifiers — public, private, protected", "Getters and setters", "Data hiding", "The principle of encapsulation", "Benefits of encapsulation"]
+            },
+            {
+              "id": "oop-u3",
+              "name": "Unit 3: Inheritance",
+              "topics": ["Base class and derived class", "Single and multilevel inheritance", "Method overriding", "The super keyword", "Constructor chaining in inheritance", "Abstract classes"]
+            },
+            {
+              "id": "oop-u4",
+              "name": "Unit 4: Polymorphism",
+              "topics": ["Compile-time polymorphism — method overloading", "Runtime polymorphism — method overriding", "Virtual functions", "Dynamic dispatch", "Interfaces and polymorphism"]
+            },
+            {
+              "id": "oop-u5",
+              "name": "Unit 5: Abstraction and Interfaces",
+              "topics": ["Abstract classes vs interfaces", "Pure virtual functions", "Implementing interfaces", "Multiple interface implementation", "Abstraction vs encapsulation"]
+            },
+            {
+              "id": "oop-u6",
+              "name": "Unit 6: Constructors and Destructors",
+              "topics": ["Default and parameterised constructors", "Copy constructors", "Constructor overloading", "Destructors and resource management", "The this keyword"]
+            },
+            {
+              "id": "oop-u7",
+              "name": "Unit 7: OOP Design Principles",
+              "topics": ["SOLID principles", "Single Responsibility Principle", "Open/Closed Principle", "Liskov Substitution Principle", "Dependency Inversion", "Composition over inheritance"]
+            }
           ]
         }
       ]
     },
     {
-      "id": "geography",
-      "name": "Geography",
-      "icon": "🌍",
-      "units": [
-        {
-          "id": "geo-u1",
-          "name": "Unit 1: From Rock to Soil",
-          "topics": [
-            "Our rocky home",
-            "What are the three rock groups?",
-            "What is weathering?",
-            "What is the rock cycle?",
-            "The British Isles on their travels",
-            "Rock and relief around the UK",
-            "What's the link between rock and landscape?",
-            "How are you linked to soil?"
-          ]
-        },
-        {
-          "id": "geo-u2",
-          "name": "Unit 2: Using Earth's Resources",
-          "topics": [
-            "Earth's natural resources",
-            "Water part 1 - Do we have enough?",
-            "Water part 2 - Emptying the Ogallala",
-            "Water part 3 - Tackling water stress",
-            "Food part 1 - Feeding the UK",
-            "Food part 2 - Food insecurity, a global issue",
-            "Food part 3 - Tackling food insecurity",
-            "Energy part 1 - Goodbye to the fossil fuels?",
-            "Energy part 2 - Renewables in the UK",
-            "Energy part 3 - Is solar power the solution?",
-            "Why must we change our ways?"
-          ]
-        },
-        {
-          "id": "geo-u3",
-          "name": "Unit 3: Earning a Living",
-          "topics": [
-            "What kind of work do we do in the UK?",
-            "The UK's changing pattern of employment",
-            "Example: change in and around Doncaster",
-            "Why do employment patterns change?",
-            "A closer look at globalisation and the UK",
-            "Is your mobile linked to globalisation?",
-            "Employment and the shock of Covid-19",
-            "So what kind of work will you do?"
-          ]
-        },
-        {
-          "id": "geo-u4",
-          "name": "Unit 4: International Development",
-          "topics": [
-            "An unequal world",
-            "So what is development?",
-            "How is development measured?",
-            "How is Malawi doing?",
-            "How did the development gap grow? - part 1",
-            "How did the development gap grow? - part 2",
-            "Globalisation, development, and TNCs",
-            "Covid-19 and vaccine inequality",
-            "Escaping from poverty",
-            "Can we put an end to poverty?"
-          ]
-        },
-        {
-          "id": "geo-u5",
-          "name": "Unit 5: Our Restless Planet",
-          "topics": [
-            "What's Earth like inside?",
-            "A cracked Earth?",
-            "A closer look at plate movements",
-            "What is an earthquake?",
-            "An earthquake in Southwest China",
-            "Tsunami!",
-            "What is a volcano?",
-            "The most dangerous volcano in the world?",
-            "So why live in a danger zone?"
-          ]
-        },
-        {
-          "id": "geo-u6",
-          "name": "Unit 6: About Russia",
-          "topics": [
-            "Meet Russia!",
-            "What are Russia's main physical features?",
-            "Russia's climate zones and biomes",
-            "What about the Russian people?",
-            "A tour of European Russia",
-            "Climate change in Yakutia",
-            "What is Russia doing in the Arctic Ocean?"
-          ]
-        },
-        {
-          "id": "geo-u7",
-          "name": "Unit 7: The Middle East",
-          "topics": [
-            "Introducing the Middle East",
-            "The Middle East: physical geography",
-            "The Middle East: climate zones and biomes",
-            "The people, and economies",
-            "Challenges in the Arabian Peninsula",
-            "Conflict in the Middle East"
-          ]
-        }
-      ]
+      "id": "mbbs",
+      "name": "Medical MBBS",
+      "subjects": []
     }
   ]
 }
