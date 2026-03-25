@@ -10,657 +10,657 @@
     "Dynamic dispatch",
     "Interfaces and polymorphism"
   ],
-  "generatedAt": "2026-03-24T08:24:51Z",
+  "generatedAt": "2026-03-25T06:45:50Z",
   "questions": [
     {
       "id": 1,
-      "question": "Which of the following best describes compile-time polymorphism?",
+      "question": "Which of the following best describes method overloading?",
       "options": [
-        "Achieved through virtual functions",
-        "Achieved through method overriding",
-        "Achieved through method overloading",
-        "Achieved through interfaces"
+        "Multiple methods with the same name but different return types.",
+        "Multiple methods with the same name and same parameter types.",
+        "Multiple methods with the same name but different parameter lists.",
+        "Methods in different classes with the same name and parameters."
       ],
       "answer": 2,
-      "explanation": "Method overloading allows multiple methods with the same name but different parameters to exist in the same class, resolved at compile time.",
-      "hint": "Think about how the compiler knows which method to call."
+      "explanation": "Method overloading allows defining multiple methods with the same name but different parameters (number, type, or order) within the same class.",
+      "hint": "Think about how the compiler differentiates between different versions of the same method."
     },
     {
       "id": 2,
       "question": "What is the primary difference between method overloading and method overriding?",
       "options": [
-        "Overloading happens at runtime, overriding at compile time",
-        "Overloading changes the return type, overriding changes the parameters",
-        "Overloading happens at compile time, overriding at runtime",
-        "Overloading is used in interfaces, overriding is used in classes"
+        "Overloading is compile-time, overriding is runtime.",
+        "Overloading is runtime, overriding is compile-time.",
+        "Both are compile-time polymorphism.",
+        "Both are runtime polymorphism."
       ],
-      "answer": 2,
-      "explanation": "Method overloading is resolved during compilation based on the number and type of arguments, while method overriding is resolved during runtime based on the object's actual type.",
-      "hint": "Consider when the decision about which method to call is made."
+      "answer": 0,
+      "explanation": "Method overloading is resolved at compile time (static binding), while method overriding is resolved at runtime (dynamic binding).",
+      "hint": "Consider when the method call is resolved – during compilation or execution."
     },
     {
       "id": 3,
-      "question": "Which keyword is used to declare a virtual function in C++?",
+      "question": "In the context of polymorphism, what does 'dynamic dispatch' refer to?",
       "options": [
-        "static",
-        "const",
-        "virtual",
-        "override"
+        "The process of selecting the correct method at compile time.",
+        "The process of selecting the correct method at runtime based on the object's actual type.",
+        "The process of creating new objects.",
+        "The process of destroying objects."
       ],
-      "answer": 2,
-      "explanation": "The 'virtual' keyword enables dynamic dispatch, allowing derived classes to override the function and provide their own implementation.",
-      "hint": "This keyword is essential for runtime polymorphism."
+      "answer": 1,
+      "explanation": "Dynamic dispatch is the mechanism where the correct method implementation is determined during runtime based on the object's type.",
+      "hint": "Think about how the program decides which method to call when dealing with inheritance."
     },
     {
       "id": 4,
-      "question": "What is dynamic dispatch?",
+      "question": "What is the purpose of a virtual function?",
       "options": [
-        "Resolving method calls at compile time",
-        "Resolving method calls at runtime",
-        "A type of method overloading",
-        "A feature of interfaces"
+        "To prevent method overriding.",
+        "To enable runtime polymorphism through method overriding.",
+        "To improve code readability.",
+        "To reduce memory usage."
       ],
       "answer": 1,
-      "explanation": "Dynamic dispatch determines which method to call based on the object's actual type at runtime, enabling polymorphism.",
-      "hint": "Think about how the correct method is chosen when dealing with inheritance."
+      "explanation": "Virtual functions are used to enable runtime polymorphism by allowing derived classes to override the base class's implementation.",
+      "hint": "Virtual functions are key to achieving dynamic behavior in inheritance hierarchies."
     },
     {
       "id": 5,
-      "question": "What is method overriding?",
-      "options": [
-        "Defining multiple methods with the same name in the same class",
-        "Redefining a method in a derived class that is already defined in its base class",
-        "Using a method from another class",
-        "Creating a new method with a different name"
-      ],
-      "answer": 1,
-      "explanation": "Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.",
-      "hint": "This is a key concept in inheritance and polymorphism."
-    },
-    {
-      "id": 6,
-      "question": "If a base class has a virtual function, and a derived class does not override it, what happens when the function is called through a base class pointer?",
-      "options": [
-        "The base class version is called",
-        "The derived class version is called",
-        "A compile-time error occurs",
-        "A runtime error occurs"
-      ],
-      "answer": 0,
-      "explanation": "If a virtual function isn't overridden, the base class's implementation is executed, even when called through a derived class pointer.",
-      "hint": "Remember how virtual functions behave when not explicitly redefined."
-    },
-    {
-      "id": 7,
-      "question": "What is an interface?",
-      "options": [
-        "A fully implemented class",
-        "A blueprint for a class with only abstract methods",
-        "A type of inheritance",
-        "A way to create static methods"
-      ],
-      "answer": 1,
-      "explanation": "An interface defines a contract that classes must adhere to, specifying methods without providing their implementation.",
-      "hint": "Think about what an interface *guarantees* about a class that implements it."
-    },
-    {
-      "id": 8,
-      "question": "How do interfaces contribute to polymorphism?",
-      "options": [
-        "By allowing method overloading",
-        "By enforcing method overriding",
-        "By providing default implementations",
-        "By preventing inheritance"
-      ],
-      "answer": 1,
-      "explanation": "Interfaces enforce method overriding, ensuring that different classes implementing the same interface provide their own specific implementations of the defined methods.",
-      "hint": "Consider how interfaces define a common behavior across different classes."
-    },
-    {
-      "id": 9,
-      "question": "What is the purpose of the 'override' keyword in C++?",
-      "options": [
-        "To declare a new virtual function",
-        "To indicate that a function is overriding a virtual function from a base class",
-        "To overload a method",
-        "To create a static method"
-      ],
-      "answer": 1,
-      "explanation": "The 'override' keyword explicitly states that a function is intended to override a virtual function in a base class, improving code clarity and catching errors.",
-      "hint": "This keyword helps the compiler verify your intentions."
-    },
-    {
-      "id": 10,
       "question": "Consider a base class 'Animal' with a virtual function 'makeSound()'. A derived class 'Dog' overrides this function. What happens when you call 'makeSound()' on an 'Animal' pointer pointing to a 'Dog' object?",
       "options": [
-        "The 'Animal' version of 'makeSound()' is called",
-        "The 'Dog' version of 'makeSound()' is called",
-        "A compile-time error occurs",
-        "A runtime error occurs"
+        "The 'Animal' version of 'makeSound()' is called.",
+        "The 'Dog' version of 'makeSound()' is called.",
+        "A compilation error occurs.",
+        "A runtime error occurs."
       ],
       "answer": 1,
       "explanation": "Due to dynamic dispatch, the 'Dog' version of 'makeSound()' is called because the actual object type is 'Dog'.",
-      "hint": "This is a classic example of runtime polymorphism in action."
+      "hint": "Remember that virtual functions enable runtime determination of the correct method."
+    },
+    {
+      "id": 6,
+      "question": "What is an interface in object-oriented programming?",
+      "options": [
+        "A partially implemented class.",
+        "A fully implemented class.",
+        "A blueprint of methods that a class must implement.",
+        "A data structure."
+      ],
+      "answer": 3,
+      "explanation": "An interface defines a contract of methods that a class must implement, without providing any implementation details itself.",
+      "hint": "Think about what an interface *guarantees* about a class that implements it."
+    },
+    {
+      "id": 7,
+      "question": "How do interfaces contribute to polymorphism?",
+      "options": [
+        "By allowing multiple inheritance.",
+        "By enforcing a common method signature for different classes.",
+        "By reducing code complexity.",
+        "By improving performance."
+      ],
+      "answer": 1,
+      "explanation": "Interfaces promote polymorphism by allowing different classes to implement the same interface, ensuring they share a common method signature.",
+      "hint": "Consider how interfaces allow you to treat different objects in a uniform way."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is NOT a benefit of using polymorphism?",
+      "options": [
+        "Increased code reusability.",
+        "Improved code maintainability.",
+        "Reduced code complexity.",
+        "Decreased runtime performance."
+      ],
+      "answer": 3,
+      "explanation": "Polymorphism can sometimes slightly decrease runtime performance due to the overhead of dynamic dispatch, although the benefits usually outweigh this cost.",
+      "hint": "Think about the extra steps involved in determining the correct method at runtime."
+    },
+    {
+      "id": 9,
+      "question": "Consider the following code snippet (C++): `class Base { public: virtual void foo() { cout << \"Base\"; } }; class Derived : public Base { public: void foo() override { cout << \"Derived\"; } }; int main() { Base* b = new Derived(); b->foo(); }` What will be the output?",
+      "options": [
+        "Base",
+        "Derived",
+        "Compilation Error",
+        "Runtime Error"
+      ],
+      "answer": 1,
+      "explanation": "The `override` keyword and the `virtual` keyword ensure that the `Derived` class's `foo()` method is called due to dynamic dispatch.",
+      "hint": "Pay attention to the `virtual` and `override` keywords."
+    },
+    {
+      "id": 10,
+      "question": "What happens if you remove the `virtual` keyword from the `foo()` method in the previous example?",
+      "options": [
+        "The output remains \"Derived\".",
+        "The output changes to \"Base\".",
+        "A compilation error occurs.",
+        "A runtime error occurs."
+      ],
+      "answer": 1,
+      "explanation": "Without `virtual`, the compiler uses static binding, and the `Base` class's `foo()` method is called.",
+      "hint": "Think about what happens when dynamic dispatch is disabled."
     },
     {
       "id": 11,
-      "question": "Which of the following is NOT a benefit of polymorphism?",
+      "question": "What is the purpose of the `final` keyword (in languages that support it) when applied to a method?",
       "options": [
-        "Increased code reusability",
-        "Improved code maintainability",
-        "Reduced code complexity",
-        "Increased compile time"
+        "It makes the method static.",
+        "It prevents the method from being overridden in derived classes.",
+        "It makes the method virtual.",
+        "It makes the method private."
       ],
-      "answer": 3,
-      "explanation": "Polymorphism can sometimes slightly increase runtime overhead due to dynamic dispatch, but it generally improves code organization and maintainability.",
-      "hint": "Think about the trade-offs involved in using polymorphism."
+      "answer": 1,
+      "explanation": "The `final` keyword prevents a method from being overridden in subclasses, enforcing a specific implementation.",
+      "hint": "Consider how `final` affects the inheritance hierarchy."
     },
     {
       "id": 12,
-      "question": "What happens if you try to override a non-virtual function?",
+      "question": "Which of the following scenarios best illustrates the need for runtime polymorphism?",
       "options": [
-        "It works as expected, creating polymorphism",
-        "The compiler will issue an error",
-        "The base class function is hidden",
-        "The derived class function is always called"
+        "Calculating the area of a circle.",
+        "Printing a list of numbers.",
+        "Handling different types of shapes (e.g., circle, square) through a common interface.",
+        "Sorting an array of integers."
       ],
-      "answer": 3,
-      "explanation": "Overriding a non-virtual function simply hides the base class function in the derived class; it doesn't achieve polymorphism.",
-      "hint": "Virtual functions are crucial for overriding to work correctly."
+      "answer": 2,
+      "explanation": "Runtime polymorphism is crucial when you need to handle different types of objects in a uniform way, such as processing various shapes through a common interface.",
+      "hint": "Think about situations where the specific behavior depends on the object's actual type."
     },
     {
       "id": 13,
-      "question": "In method overloading, what must be different about the overloaded methods?",
+      "question": "What is the difference between an abstract class and an interface?",
       "options": [
-        "Their return types",
-        "Their names",
-        "Their parameter lists",
-        "Their access modifiers"
+        "An abstract class can have method implementations, an interface cannot.",
+        "An interface can have method implementations, an abstract class cannot.",
+        "Both can have method implementations.",
+        "Neither can have method implementations."
       ],
-      "answer": 2,
-      "explanation": "Overloaded methods must have different parameter lists (number, type, or order of parameters) to be distinguished by the compiler.",
-      "hint": "The compiler uses these differences to determine which method to call."
+      "answer": 0,
+      "explanation": "An abstract class can contain both abstract methods (without implementation) and concrete methods (with implementation), while an interface typically only defines abstract methods (though some languages allow default implementations).",
+      "hint": "Consider the level of implementation detail allowed in each construct."
     },
     {
       "id": 14,
-      "question": "What is the difference between an abstract class and an interface?",
+      "question": "What is the primary advantage of using interfaces over abstract classes?",
       "options": [
-        "An abstract class can have concrete methods, an interface cannot",
-        "An interface can have concrete methods, an abstract class cannot",
-        "They are the same thing",
-        "Abstract classes are used for inheritance, interfaces are not"
+        "Interfaces allow for multiple inheritance.",
+        "Interfaces provide more flexibility in design.",
+        "Interfaces are more efficient.",
+        "Interfaces are easier to understand."
       ],
       "answer": 0,
-      "explanation": "An abstract class can contain both abstract and concrete methods, while an interface typically contains only abstract methods (though some languages allow default implementations).",
-      "hint": "Consider the level of implementation allowed in each."
+      "explanation": "Interfaces allow a class to implement multiple interfaces, effectively achieving a form of multiple inheritance, which is not possible with single inheritance of abstract classes.",
+      "hint": "Think about the limitations of inheriting from multiple classes."
     },
     {
       "id": 15,
-      "question": "Which of the following scenarios best demonstrates the need for runtime polymorphism?",
+      "question": "Consider a scenario where you have a class hierarchy representing different types of employees (e.g., Manager, Engineer, Salesperson). Each employee type has a different way of calculating their bonus. Which polymorphism technique is most suitable for this scenario?",
       "options": [
-        "Choosing between different data types at compile time",
-        "Handling different types of objects through a common interface",
-        "Creating multiple methods with the same name",
-        "Defining a fixed set of operations for a class"
+        "Method overloading",
+        "Method overriding",
+        "Interfaces",
+        "Compile-time polymorphism"
       ],
       "answer": 1,
-      "explanation": "Runtime polymorphism allows you to treat objects of different classes uniformly through a common interface, determining the specific behavior at runtime.",
-      "hint": "Think about situations where you need to handle objects of varying types in a flexible way."
+      "explanation": "Method overriding allows each employee type to provide its own specific implementation of the bonus calculation method, demonstrating runtime polymorphism.",
+      "hint": "Think about how the bonus calculation will vary based on the employee's role."
     },
     {
       "id": 16,
-      "question": "What is the role of a pure virtual function?",
+      "question": "What is the 'slicing' problem in object-oriented programming, and how does it relate to polymorphism?",
       "options": [
-        "It provides a default implementation",
-        "It must be overridden by any concrete derived class",
-        "It can be called directly from the base class",
-        "It is used for static methods"
+        "It occurs when you try to overload a method with incompatible parameters.",
+        "It occurs when you assign an object of a derived class to a base class pointer, losing the derived class's specific information.",
+        "It occurs when you try to override a method that is not virtual.",
+        "It occurs when you create an infinite loop in your code."
       ],
       "answer": 1,
-      "explanation": "A pure virtual function (declared with '= 0') forces derived classes to provide their own implementation, making the base class abstract.",
-      "hint": "This type of function is key to defining abstract classes."
+      "explanation": "Slicing happens when an object of a derived class is assigned to a base class pointer, resulting in the loss of the derived class's specific data and methods. This can prevent polymorphism from working correctly.",
+      "hint": "Think about what happens when you treat a more specific object as a more general one."
     },
     {
       "id": 17,
-      "question": "How does polymorphism contribute to loose coupling?",
+      "question": "In Java, what is the difference between an interface and an abstract class with only abstract methods?",
       "options": [
-        "By tightly binding classes together",
-        "By reducing dependencies between classes",
-        "By increasing code complexity",
-        "By requiring explicit type checking"
+        "There is no difference.",
+        "Interfaces cannot have instance variables.",
+        "Interfaces cannot have constructors.",
+        "Interfaces can be implemented by multiple classes, while abstract classes can only be extended by one."
       ],
-      "answer": 1,
-      "explanation": "Polymorphism allows you to interact with objects through interfaces, reducing direct dependencies between classes and promoting loose coupling.",
-      "hint": "Think about how polymorphism allows you to change implementations without affecting other parts of the code."
+      "answer": 3,
+      "explanation": "A key difference is that a class can implement multiple interfaces, but can only extend one abstract class, providing greater flexibility.",
+      "hint": "Consider the inheritance rules in Java."
     },
     {
       "id": 18,
-      "question": "What is the main advantage of using interfaces over abstract classes?",
+      "question": "What is the role of the `dynamic_cast` operator (in C++)?",
       "options": [
-        "Interfaces can have concrete methods",
-        "Interfaces allow multiple inheritance",
-        "Interfaces enforce a stricter contract",
-        "Interfaces are easier to implement"
+        "To perform compile-time type checking.",
+        "To safely downcast a pointer or reference to a derived class type.",
+        "To upcast a pointer or reference to a base class type.",
+        "To create a new object."
       ],
-      "answer": 2,
-      "explanation": "Interfaces define a strict contract that implementing classes must adhere to, ensuring a specific set of behaviors are provided.",
-      "hint": "Consider the level of flexibility and constraint offered by each."
+      "answer": 1,
+      "explanation": "The `dynamic_cast` operator is used to safely downcast a pointer or reference to a derived class type, performing runtime type checking to ensure the cast is valid.",
+      "hint": "Think about safely converting a base class pointer to a derived class pointer."
     },
     {
       "id": 19,
-      "question": "Consider a scenario where you have a collection of different shapes (Circle, Square, Triangle). How can polymorphism help you calculate the area of each shape without knowing its specific type at compile time?",
+      "question": "Consider a system for processing different types of media files (e.g., audio, video, image). How could you effectively use polymorphism to handle the specific decoding process for each file type?",
       "options": [
-        "Using method overloading",
-        "Using method overriding and a common base class with a virtual 'calculateArea()' function",
-        "Using interfaces with default implementations",
-        "Using static methods"
+        "Use method overloading to create separate decoding methods for each file type.",
+        "Use method overriding with a base class 'MediaFile' and derived classes for each file type.",
+        "Use interfaces to define a common 'decode()' method that each file type implements.",
+        "Use a switch statement to determine the file type and call the appropriate decoding function."
       ],
-      "answer": 1,
-      "explanation": "By defining a virtual 'calculateArea()' function in a base class and overriding it in each derived shape class, you can calculate the area dynamically based on the object's actual type.",
-      "hint": "This is a classic example of using polymorphism to handle different types uniformly."
+      "answer": 2,
+      "explanation": "Using interfaces allows each media file type to implement its own `decode()` method, providing a flexible and extensible solution.",
+      "hint": "Think about defining a common contract for all media file types."
     },
     {
       "id": 20,
-      "question": "What is the potential drawback of using a large number of virtual functions?",
+      "question": "What is the potential drawback of using a large number of virtual functions in a class hierarchy?",
       "options": [
-        "Increased code complexity",
-        "Reduced code reusability",
-        "Slight performance overhead due to dynamic dispatch",
-        "Increased compile time"
+        "Increased code complexity.",
+        "Reduced code reusability.",
+        "Increased memory overhead due to the virtual function table (vtable).",
+        "Decreased code readability."
       ],
       "answer": 2,
-      "explanation": "Dynamic dispatch introduces a small runtime overhead compared to direct function calls, which can become noticeable with a large number of virtual functions.",
-      "hint": "Think about the cost of determining the correct method at runtime."
+      "explanation": "Virtual functions introduce a vtable for each class, which adds memory overhead and can slightly decrease performance due to the indirection involved in dynamic dispatch.",
+      "hint": "Think about the data structures used to support dynamic dispatch."
     },
     {
       "id": 21,
-      "question": "Which of the following is an example of compile-time polymorphism?",
+      "question": "Which of the following best describes the Liskov Substitution Principle (LSP) in relation to polymorphism?",
       "options": [
-        "A base class pointer pointing to a derived class object",
-        "Using a virtual function",
-        "Defining multiple constructors in a class",
-        "Implementing an interface"
+        "Subtypes should be able to extend the behavior of their base classes.",
+        "Subtypes should be able to replace their base classes without altering the correctness of the program.",
+        "Subtypes should always have more methods than their base classes.",
+        "Subtypes should never override methods from their base classes."
       ],
-      "answer": 2,
-      "explanation": "Constructors can be overloaded, allowing you to create objects with different initialization parameters, which is resolved at compile time.",
-      "hint": "Consider how the compiler resolves the correct constructor to use."
+      "answer": 1,
+      "explanation": "The LSP states that subtypes should be substitutable for their base types without changing the program's behavior, ensuring polymorphism works as expected.",
+      "hint": "Think about how a derived class should behave in the context of its base class."
     },
     {
       "id": 22,
-      "question": "What is the purpose of the 'final' keyword (in languages that support it) when applied to a method?",
+      "question": "What is the purpose of the 'covariant return type' feature (available in some languages)?",
       "options": [
-        "To make the method static",
-        "To prevent the method from being overridden",
-        "To make the method virtual",
-        "To make the method private"
+        "To allow overriding methods to have different access modifiers.",
+        "To allow overriding methods to have a more specific return type than the base class method.",
+        "To allow overriding methods to have a more general return type than the base class method.",
+        "To prevent method overriding."
       ],
       "answer": 1,
-      "explanation": "The 'final' keyword prevents derived classes from overriding the method, ensuring that the base class implementation is always used.",
-      "hint": "This keyword restricts inheritance behavior."
+      "explanation": "Covariant return types allow a derived class to override a method and return a more specific type than the base class method, enhancing type safety.",
+      "hint": "Consider how the return type can be refined in a derived class."
     },
     {
       "id": 23,
-      "question": "How does polymorphism support the Open/Closed Principle?",
+      "question": "How does polymorphism contribute to loose coupling in software design?",
       "options": [
-        "By allowing classes to be easily modified",
-        "By allowing new functionality to be added without modifying existing code",
-        "By enforcing strict type checking",
-        "By reducing code complexity"
+        "By reducing the number of classes.",
+        "By hiding implementation details and allowing interaction through interfaces.",
+        "By increasing code complexity.",
+        "By making the code more dependent on specific implementations."
       ],
       "answer": 1,
-      "explanation": "Polymorphism allows you to extend the functionality of a system by adding new classes that implement existing interfaces without modifying the original code.",
-      "hint": "Think about how polymorphism enables extensibility without altering existing code."
+      "explanation": "Polymorphism promotes loose coupling by allowing components to interact through interfaces rather than concrete implementations, reducing dependencies.",
+      "hint": "Think about how polymorphism allows you to change implementations without affecting clients."
     },
     {
       "id": 24,
-      "question": "What is the difference between a concrete class and an abstract class?",
+      "question": "Consider the following code (C++): `class A { public: virtual int getVal() { return 1; } }; class B : public A { public: int getVal() override { return 2; } }; A* a = new B(); cout << a->getVal();` What is the output?",
       "options": [
-        "A concrete class can be instantiated, an abstract class cannot",
-        "An abstract class can be instantiated, a concrete class cannot",
-        "They are the same thing",
-        "Concrete classes are used for interfaces, abstract classes are not"
+        "1",
+        "2",
+        "Compilation Error",
+        "Runtime Error"
       ],
-      "answer": 0,
-      "explanation": "A concrete class can be instantiated (objects can be created from it), while an abstract class cannot be instantiated directly because it contains abstract methods.",
-      "hint": "Consider whether you can create an object directly from the class."
+      "answer": 1,
+      "explanation": "The `virtual` keyword and `override` keyword ensure that the `B` class's `getVal()` method is called due to dynamic dispatch.",
+      "hint": "Pay attention to the `virtual` and `override` keywords."
     },
     {
       "id": 25,
-      "question": "If a derived class does not provide an implementation for all the abstract methods inherited from an interface, what happens?",
+      "question": "What is the difference between 'upcasting' and 'downcasting'?",
       "options": [
-        "The program compiles and runs without errors",
-        "The derived class must also be declared abstract",
-        "A compile-time error occurs",
-        "A runtime error occurs"
+        "Upcasting converts a derived class object to a base class object, downcasting does the opposite.",
+        "Upcasting converts a base class object to a derived class object, downcasting does the opposite.",
+        "Both convert between base and derived classes without any type checking.",
+        "Both are invalid operations."
       ],
-      "answer": 2,
-      "explanation": "If a derived class doesn't implement all the methods declared in an interface, it remains abstract and cannot be instantiated, resulting in a compile-time error.",
-      "hint": "Interfaces define a contract that must be fully implemented."
+      "answer": 0,
+      "explanation": "Upcasting is a safe conversion from a derived class to a base class, while downcasting requires careful handling (e.g., using `dynamic_cast`) to avoid errors.",
+      "hint": "Think about the direction of the inheritance hierarchy."
     },
     {
       "id": 26,
-      "question": "What is the primary benefit of using dynamic dispatch over static dispatch?",
+      "question": "What is the primary purpose of the 'sealed' keyword (in languages that support it) when applied to a class?",
       "options": [
-        "Improved performance",
-        "Increased code readability",
-        "Greater flexibility and extensibility",
-        "Reduced memory usage"
+        "To prevent the class from being instantiated.",
+        "To prevent the class from being inherited.",
+        "To make the class abstract.",
+        "To make the class final."
       ],
-      "answer": 2,
-      "explanation": "Dynamic dispatch allows for greater flexibility and extensibility by determining the method to call at runtime, enabling polymorphism.",
-      "hint": "Think about how dynamic dispatch allows you to handle different types of objects in a uniform way."
+      "answer": 1,
+      "explanation": "The `sealed` keyword prevents other classes from inheriting from the sealed class, effectively closing the inheritance hierarchy.",
+      "hint": "Consider how `sealed` affects the inheritance tree."
     },
     {
       "id": 27,
-      "question": "Which of the following is a valid use case for method overloading?",
+      "question": "How can polymorphism be used to implement the 'Strategy' design pattern?",
       "options": [
-        "Creating a single method that handles multiple object types",
-        "Providing different implementations of a method in derived classes",
-        "Defining a common interface for different classes",
-        "Creating a method that cannot be overridden"
+        "By using method overloading to select different algorithms.",
+        "By using method overriding to define different algorithms in derived classes.",
+        "By using interfaces to define a common interface for different algorithms.",
+        "By using a switch statement to select different algorithms."
       ],
-      "answer": 0,
-      "explanation": "Method overloading allows you to create a single method name that can accept different types or numbers of arguments, providing flexibility in how the method is called.",
-      "hint": "Consider scenarios where you need to perform similar operations with different inputs."
+      "answer": 2,
+      "explanation": "The Strategy pattern uses interfaces to define a family of algorithms, allowing the client to choose an algorithm at runtime through polymorphism.",
+      "hint": "Think about defining a common interface for interchangeable behaviors."
     },
     {
       "id": 28,
-      "question": "What is the purpose of the 'virtual' keyword in the context of inheritance?",
+      "question": "What is the potential performance cost associated with using virtual functions?",
       "options": [
-        "To prevent inheritance",
-        "To enable method overriding and dynamic dispatch",
-        "To create static methods",
-        "To define private methods"
+        "Increased memory usage.",
+        "Slightly slower execution speed due to the vtable lookup.",
+        "Increased code size.",
+        "Decreased code readability."
       ],
       "answer": 1,
-      "explanation": "The 'virtual' keyword allows derived classes to override methods from the base class and enables dynamic dispatch, which determines the correct method to call at runtime.",
-      "hint": "This keyword is essential for achieving runtime polymorphism."
+      "explanation": "Virtual functions introduce a slight performance overhead due to the vtable lookup required to determine the correct method to call at runtime.",
+      "hint": "Think about the extra step involved in dynamic dispatch."
     },
     {
       "id": 29,
-      "question": "How can you prevent a class from being inherited?",
+      "question": "Consider a scenario where you need to represent different types of notifications (e.g., email, SMS, push notification). How could you use polymorphism to send notifications through a common interface?",
       "options": [
-        "By declaring all methods as private",
-        "By declaring the class as final (or using similar language-specific mechanisms)",
-        "By not providing any public methods",
-        "By using interfaces instead of classes"
+        "Use method overloading to create separate send methods for each notification type.",
+        "Use method overriding with a base class 'Notification' and derived classes for each notification type.",
+        "Use interfaces to define a common 'send()' method that each notification type implements.",
+        "Use a switch statement to determine the notification type and call the appropriate sending function."
       ],
-      "answer": 1,
-      "explanation": "Declaring a class as 'final' prevents other classes from inheriting from it, ensuring that its implementation remains unchanged.",
-      "hint": "This keyword restricts the inheritance hierarchy."
+      "answer": 2,
+      "explanation": "Using interfaces allows each notification type to implement its own `send()` method, providing a flexible and extensible solution.",
+      "hint": "Think about defining a common contract for all notification types."
     },
     {
       "id": 30,
-      "question": "What is the relationship between interfaces and abstract classes in terms of implementation?",
+      "question": "What is the purpose of the 'abstract' keyword when applied to a method?",
       "options": [
-        "Interfaces provide complete implementations, abstract classes do not",
-        "Abstract classes provide complete implementations, interfaces do not",
-        "Both provide complete implementations",
-        "Neither provides complete implementations"
+        "To prevent the method from being called.",
+        "To force derived classes to provide an implementation for the method.",
+        "To make the method virtual.",
+        "To make the method private."
       ],
       "answer": 1,
-      "explanation": "Abstract classes can contain both abstract and concrete methods, providing some implementation, while interfaces typically only define method signatures without implementation.",
-      "hint": "Consider the level of implementation detail provided by each."
+      "explanation": "The `abstract` keyword indicates that a method has no implementation in the base class and must be implemented by derived classes.",
+      "hint": "Think about what an abstract method *requires* of its subclasses."
     },
     {
       "id": 31,
-      "question": "What is the significance of the Liskov Substitution Principle in relation to polymorphism?",
+      "question": "What is the difference between compile-time and runtime polymorphism?",
       "options": [
-        "It encourages tight coupling between classes",
-        "It ensures that derived classes can be used interchangeably with their base classes without altering the correctness of the program",
-        "It promotes the use of static methods",
-        "It simplifies inheritance hierarchies"
+        "Compile-time polymorphism is achieved through method overriding, runtime polymorphism through method overloading.",
+        "Compile-time polymorphism is achieved through method overloading, runtime polymorphism through method overriding.",
+        "Both are achieved through method overloading.",
+        "Both are achieved through method overriding."
       ],
       "answer": 1,
-      "explanation": "The Liskov Substitution Principle ensures that polymorphism works correctly by guaranteeing that derived classes can be substituted for their base classes without breaking the program's functionality.",
-      "hint": "Think about how derived classes should behave in relation to their base classes."
+      "explanation": "Compile-time polymorphism (method overloading) is resolved during compilation, while runtime polymorphism (method overriding) is resolved during execution.",
+      "hint": "Consider when the method call is resolved – during compilation or execution."
     },
     {
       "id": 32,
-      "question": "Which of the following best describes the concept of 'upcasting'?",
+      "question": "What is the role of the vtable in implementing dynamic dispatch?",
       "options": [
-        "Converting a derived class object to its base class type",
-        "Converting a base class object to its derived class type",
-        "Converting between different data types",
-        "Creating a new object from an existing object"
+        "It stores the source code of the virtual functions.",
+        "It stores pointers to the correct method implementations for each object.",
+        "It stores the object's data members.",
+        "It stores the object's constructor."
       ],
-      "answer": 0,
-      "explanation": "'Upcasting' involves treating a derived class object as an instance of its base class, which is a safe operation due to the inheritance relationship.",
-      "hint": "Think about moving from a specific type to a more general type."
+      "answer": 1,
+      "explanation": "The vtable (virtual function table) is a table of function pointers that allows the runtime system to determine the correct method to call based on the object's actual type.",
+      "hint": "Think about how the program finds the correct method at runtime."
     },
     {
       "id": 33,
-      "question": "What is 'downcasting' and what potential risks are associated with it?",
+      "question": "What is the benefit of using interfaces over concrete classes?",
       "options": [
-        "Converting a base class object to its derived class type; it can lead to runtime errors if the object is not actually of the derived type",
-        "Converting a derived class object to its base class type; it is always safe",
-        "Converting between different data types; it can lead to data loss",
-        "Creating a new object from an existing object; it can lead to memory leaks"
+        "Interfaces provide a specific implementation.",
+        "Interfaces allow for greater flexibility and decoupling.",
+        "Interfaces are more efficient.",
+        "Interfaces are easier to debug."
       ],
-      "answer": 0,
-      "explanation": "'Downcasting' involves treating a base class object as an instance of its derived class, which can be unsafe if the object is not actually of that derived type, leading to runtime errors.",
-      "hint": "Think about moving from a general type to a more specific type."
+      "answer": 1,
+      "explanation": "Interfaces define a contract without providing an implementation, promoting flexibility and decoupling between components.",
+      "hint": "Think about how interfaces allow you to work with different implementations interchangeably."
     },
     {
       "id": 34,
-      "question": "How does polymorphism help in creating more flexible and maintainable code?",
+      "question": "Consider a system for handling different types of database connections (e.g., MySQL, PostgreSQL, Oracle). How could you use polymorphism to interact with different databases through a common interface?",
       "options": [
-        "By reducing the amount of code needed",
-        "By allowing you to easily add new functionality without modifying existing code",
-        "By improving code performance",
-        "By simplifying debugging"
+        "Use method overloading to create separate connection methods for each database.",
+        "Use method overriding with a base class 'DatabaseConnection' and derived classes for each database.",
+        "Use interfaces to define a common 'connect()', 'query()', and 'disconnect()' methods that each database implements.",
+        "Use a switch statement to determine the database type and call the appropriate connection function."
       ],
-      "answer": 1,
-      "explanation": "Polymorphism allows you to extend the functionality of a system by adding new classes that implement existing interfaces without modifying the original code, making it more maintainable.",
-      "hint": "Consider how polymorphism enables extensibility without altering existing code."
+      "answer": 2,
+      "explanation": "Using interfaces allows each database connection type to implement its own `connect()`, `query()`, and `disconnect()` methods, providing a flexible and extensible solution.",
+      "hint": "Think about defining a common contract for all database connections."
     },
     {
       "id": 35,
-      "question": "What is the difference between early binding and late binding?",
+      "question": "What is the purpose of the 'protected' access modifier in the context of inheritance and polymorphism?",
       "options": [
-        "Early binding happens at runtime, late binding happens at compile time",
-        "Early binding happens at compile time, late binding happens at runtime",
-        "Early binding is used for interfaces, late binding is used for classes",
-        "Early binding is used for method overloading, late binding is used for method overriding"
+        "To prevent access from any other class.",
+        "To allow access only within the same class.",
+        "To allow access within the same class and its subclasses.",
+        "To allow access from any class."
       ],
-      "answer": 1,
-      "explanation": "Early binding (static binding) occurs at compile time, while late binding (dynamic binding) occurs at runtime.",
-      "hint": "Consider when the method call is resolved."
+      "answer": 2,
+      "explanation": "The `protected` access modifier allows access to members within the same class and its subclasses, facilitating inheritance and polymorphism.",
+      "hint": "Think about how `protected` affects access within the inheritance hierarchy."
     },
     {
       "id": 36,
-      "question": "In Java, what keyword is used to prevent method overriding?",
+      "question": "What is the potential issue with using a large inheritance hierarchy with many levels?",
       "options": [
-        "static",
-        "final",
-        "abstract",
-        "private"
+        "Increased code reusability.",
+        "Decreased code complexity.",
+        "The 'fragile base class' problem.",
+        "Improved performance."
       ],
-      "answer": 1,
-      "explanation": "The 'final' keyword, when applied to a method, prevents derived classes from overriding it.",
-      "hint": "This keyword restricts inheritance behavior."
+      "answer": 2,
+      "explanation": "Deep inheritance hierarchies can lead to the 'fragile base class' problem, where changes to a base class can have unintended consequences in derived classes.",
+      "hint": "Think about how changes in a base class can ripple through the hierarchy."
     },
     {
       "id": 37,
-      "question": "What is the purpose of the 'super' keyword in the context of inheritance?",
+      "question": "What is the difference between a pure virtual function and a regular virtual function?",
       "options": [
-        "To call methods of the derived class",
-        "To call methods of the base class",
-        "To create a new object",
-        "To define static methods"
+        "A pure virtual function has an implementation, a regular virtual function does not.",
+        "A pure virtual function does not have an implementation, a regular virtual function does.",
+        "Both have implementations.",
+        "Both do not have implementations."
       ],
       "answer": 1,
-      "explanation": "The 'super' keyword is used to call methods and constructors of the base class from within a derived class.",
-      "hint": "This keyword allows you to access functionality from the parent class."
+      "explanation": "A pure virtual function is declared without an implementation and must be implemented by derived classes, making the base class abstract.",
+      "hint": "Think about what a pure virtual function *requires* of its subclasses."
     },
     {
       "id": 38,
-      "question": "How does polymorphism relate to the concept of abstraction?",
+      "question": "How does polymorphism support the Open/Closed Principle?",
       "options": [
-        "Polymorphism hides implementation details, while abstraction exposes them",
-        "Polymorphism exposes implementation details, while abstraction hides them",
-        "Polymorphism and abstraction are unrelated concepts",
-        "Polymorphism is a type of abstraction"
+        "By allowing you to modify existing classes to add new functionality.",
+        "By allowing you to extend the functionality of a system without modifying existing classes.",
+        "By reducing the number of classes in a system.",
+        "By making the code more complex."
       ],
-      "answer": 3,
-      "explanation": "Polymorphism is a way to achieve abstraction by allowing you to interact with objects through a common interface without knowing their specific implementation.",
-      "hint": "Think about how polymorphism simplifies interactions with complex objects."
+      "answer": 1,
+      "explanation": "Polymorphism allows you to add new functionality by creating new classes that implement existing interfaces, without modifying existing code, adhering to the Open/Closed Principle.",
+      "hint": "Think about how polymorphism allows you to extend behavior without changing existing code."
     },
     {
       "id": 39,
-      "question": "What is the benefit of using interfaces over concrete classes when designing loosely coupled systems?",
+      "question": "Consider a scenario where you have a base class 'Shape' with a virtual function 'draw()'. Derived classes 'Circle', 'Square', and 'Triangle' override this function to draw their respective shapes. What is the benefit of using a virtual function in this scenario?",
       "options": [
-        "Interfaces provide more functionality",
-        "Interfaces allow for easier debugging",
-        "Interfaces promote dependency injection and testability",
-        "Interfaces are faster to execute"
+        "It allows you to create a single 'draw()' function that works for all shapes.",
+        "It allows you to easily add new shapes without modifying the existing code.",
+        "It improves the performance of the drawing process.",
+        "It reduces the memory usage of the program."
       ],
-      "answer": 2,
-      "explanation": "Interfaces promote dependency injection and testability by allowing you to easily swap out different implementations without modifying the code that uses them.",
-      "hint": "Consider how interfaces facilitate modularity and flexibility."
+      "answer": 1,
+      "explanation": "Virtual functions allow you to treat all shapes uniformly through the 'Shape' base class, while each shape draws itself correctly using its overridden 'draw()' method.",
+      "hint": "Think about how polymorphism allows you to handle different objects in a uniform way."
     },
     {
       "id": 40,
-      "question": "What is the role of the vtable (virtual table) in C++?",
+      "question": "What is the purpose of the 'dynamic_cast' operator in C++ when downcasting?",
       "options": [
-        "It stores the size of the object",
-        "It stores pointers to the virtual functions of the class",
-        "It stores the object's data members",
-        "It stores the constructor of the class"
+        "To perform a compile-time type check.",
+        "To perform a runtime type check and ensure the downcast is valid.",
+        "To automatically convert the pointer to the correct type.",
+        "To prevent downcasting."
       ],
       "answer": 1,
-      "explanation": "The vtable is a table of function pointers used to implement dynamic dispatch, allowing the correct virtual function to be called at runtime.",
-      "hint": "This table is crucial for the implementation of runtime polymorphism."
+      "explanation": "The `dynamic_cast` operator performs a runtime type check to ensure that the downcast is valid, preventing undefined behavior.",
+      "hint": "Think about the safety concerns associated with downcasting."
     },
     {
       "id": 41,
-      "question": "Which of the following is a key characteristic of a well-designed polymorphic system?",
+      "question": "What is the primary advantage of using interfaces over abstract classes when designing for extensibility?",
       "options": [
-        "Tight coupling between classes",
-        "High degree of code duplication",
-        "Adherence to the Liskov Substitution Principle",
-        "Extensive use of global variables"
+        "Abstract classes can have concrete methods.",
+        "Interfaces allow a class to implement multiple contracts.",
+        "Abstract classes are more efficient.",
+        "Abstract classes are easier to understand."
       ],
-      "answer": 2,
-      "explanation": "A well-designed polymorphic system adheres to the Liskov Substitution Principle, ensuring that derived classes can be used interchangeably with their base classes.",
-      "hint": "Think about how derived classes should behave in relation to their base classes."
+      "answer": 1,
+      "explanation": "Interfaces allow a class to implement multiple interfaces, providing greater flexibility and extensibility compared to single inheritance from an abstract class.",
+      "hint": "Consider the limitations of inheriting from multiple classes."
     },
     {
       "id": 42,
-      "question": "What is the purpose of default implementations in interfaces (available in some languages like Java 8+)?",
+      "question": "In the context of polymorphism, what does 'coercion' refer to?",
       "options": [
-        "To force classes to implement all methods",
-        "To provide a common implementation for methods that may not need to be overridden",
-        "To prevent inheritance",
-        "To create static methods"
+        "The process of converting a derived class object to a base class object.",
+        "The process of converting a base class object to a derived class object.",
+        "The process of overloading a method.",
+        "The process of overriding a method."
       ],
-      "answer": 1,
-      "explanation": "Default implementations allow interfaces to evolve without breaking existing implementations, providing a common behavior that can be overridden if needed.",
-      "hint": "Consider how default implementations enhance interface flexibility."
+      "answer": 0,
+      "explanation": "Coercion, or upcasting, is the implicit conversion of a derived class object to a base class object.",
+      "hint": "Think about the direction of the inheritance hierarchy."
     },
     {
       "id": 43,
-      "question": "How does polymorphism contribute to code reusability?",
+      "question": "What is the potential drawback of using a large number of interfaces?",
       "options": [
-        "By allowing you to copy and paste code",
-        "By enabling you to write generic code that can work with different types of objects",
-        "By reducing the number of classes",
-        "By simplifying debugging"
+        "Increased code complexity and potential for tight coupling.",
+        "Reduced code reusability.",
+        "Decreased performance.",
+        "Increased memory usage."
       ],
-      "answer": 1,
-      "explanation": "Polymorphism allows you to write generic code that can work with different types of objects through a common interface, promoting code reusability.",
-      "hint": "Think about how polymorphism allows you to write code that is not tied to specific types."
+      "answer": 0,
+      "explanation": "A large number of interfaces can lead to increased code complexity and potential for tight coupling if not managed carefully.",
+      "hint": "Think about the challenges of managing a large number of contracts."
     },
     {
       "id": 44,
-      "question": "What is the difference between a covariant and contravariant return type?",
+      "question": "What is the role of the compiler in method overloading?",
       "options": [
-        "Covariant return types are more general, contravariant are more specific",
-        "Covariant return types are more specific, contravariant are more general",
-        "They are the same thing",
-        "They relate to method overloading"
+        "The compiler determines which method to call at runtime.",
+        "The compiler determines which method to call at compile time based on the arguments.",
+        "The compiler ignores method overloading.",
+        "The compiler generates an error if multiple methods have the same name."
       ],
       "answer": 1,
-      "explanation": "Covariant return types allow a derived class to return a more specific type than its base class, while contravariant return types allow a derived class to return a more general type.",
-      "hint": "Consider the relationship between the return types of base and derived class methods."
+      "explanation": "The compiler resolves method overloading at compile time by matching the method call with the appropriate method signature based on the arguments.",
+      "hint": "Consider when the method call is resolved – during compilation or execution."
     },
     {
       "id": 45,
-      "question": "What is the main advantage of using interfaces over inheritance?",
+      "question": "What is the difference between 'strong typing' and 'weak typing' in relation to polymorphism?",
       "options": [
-        "Interfaces allow for multiple inheritance, inheritance does not",
-        "Inheritance allows for multiple inheritance, interfaces do not",
-        "Interfaces are more efficient",
-        "Inheritance is more flexible"
+        "Strong typing allows more flexibility in polymorphism, weak typing enforces stricter type checking.",
+        "Weak typing allows more flexibility in polymorphism, strong typing enforces stricter type checking.",
+        "Both have the same effect on polymorphism.",
+        "Neither affects polymorphism."
       ],
-      "answer": 0,
-      "explanation": "Interfaces allow a class to implement multiple interfaces, providing a form of multiple inheritance, which is not directly supported by traditional inheritance in many languages.",
-      "hint": "Think about the limitations of single inheritance."
+      "answer": 1,
+      "explanation": "Weak typing allows more flexibility in polymorphism, but can lead to runtime errors if types are not handled carefully, while strong typing enforces stricter type checking, improving safety.",
+      "hint": "Think about how type checking affects the behavior of polymorphic code."
     },
     {
       "id": 46,
-      "question": "What is the purpose of the 'dynamic_cast' operator (in C++)?",
+      "question": "What is the purpose of the 'override' keyword in C++?",
       "options": [
-        "To convert a base class pointer to a derived class pointer safely",
-        "To convert a derived class pointer to a base class pointer safely",
-        "To perform arithmetic operations",
-        "To create new objects"
+        "To declare a new method.",
+        "To indicate that a method is being overridden from a base class.",
+        "To prevent method overriding.",
+        "To make a method virtual."
       ],
-      "answer": 0,
-      "explanation": "The 'dynamic_cast' operator attempts to safely convert a base class pointer to a derived class pointer, returning a null pointer if the conversion is invalid.",
-      "hint": "This operator is used for safe downcasting."
+      "answer": 1,
+      "explanation": "The `override` keyword explicitly indicates that a method is intended to override a virtual method from a base class, improving code clarity and preventing errors.",
+      "hint": "Think about how `override` helps ensure correct inheritance behavior."
     },
     {
       "id": 47,
-      "question": "How does polymorphism help in creating more extensible software systems?",
+      "question": "How can polymorphism be used to implement a plug-in architecture?",
       "options": [
-        "By making the code more complex",
-        "By reducing the number of classes",
-        "By allowing new classes to be added without modifying existing code",
-        "By improving code performance"
+        "By using method overloading to load different plug-ins.",
+        "By using method overriding to define different plug-in behaviors.",
+        "By using interfaces to define a common interface for all plug-ins.",
+        "By using a switch statement to select different plug-ins."
       ],
       "answer": 2,
-      "explanation": "Polymorphism allows you to add new classes that implement existing interfaces without modifying the code that uses them, making the system more extensible.",
-      "hint": "Think about how polymorphism enables you to add new functionality without breaking existing code."
+      "explanation": "Interfaces allow you to define a common contract for all plug-ins, enabling the system to load and use different plug-ins without modifying the core code.",
+      "hint": "Think about defining a common contract for interchangeable components."
     },
     {
       "id": 48,
-      "question": "What is the role of the compiler in method overloading?",
+      "question": "What is the potential performance impact of using dynamic dispatch compared to static dispatch?",
       "options": [
-        "The compiler resolves the method call at runtime",
-        "The compiler resolves the method call at compile time based on the arguments",
-        "The compiler ignores method overloading",
-        "The compiler generates an error if multiple methods have the same name"
+        "Dynamic dispatch is always faster than static dispatch.",
+        "Dynamic dispatch is always slower than static dispatch.",
+        "Dynamic dispatch has the same performance as static dispatch.",
+        "The performance difference depends on the specific implementation."
       ],
       "answer": 1,
-      "explanation": "The compiler resolves the method call at compile time based on the number, type, and order of the arguments, a process known as static binding.",
-      "hint": "Consider when the method call is resolved."
+      "explanation": "Dynamic dispatch involves a vtable lookup at runtime, which adds overhead compared to static dispatch, where the method call is resolved at compile time.",
+      "hint": "Think about the extra step involved in dynamic dispatch."
     },
     {
       "id": 49,
-      "question": "What is the primary difference between an interface and an abstract class in terms of inheritance?",
+      "question": "Consider a system for processing different types of documents (e.g., PDF, Word, Text). How could you use polymorphism to handle the specific parsing process for each document type?",
       "options": [
-        "A class can inherit from multiple interfaces, but only one abstract class",
-        "A class can inherit from multiple abstract classes, but only one interface",
-        "They both allow multiple inheritance",
-        "They both allow single inheritance"
+        "Use method overloading to create separate parsing methods for each document type.",
+        "Use method overriding with a base class 'Document' and derived classes for each document type.",
+        "Use interfaces to define a common 'parse()' method that each document type implements.",
+        "Use a switch statement to determine the document type and call the appropriate parsing function."
       ],
-      "answer": 0,
-      "explanation": "A class can implement multiple interfaces, providing a form of multiple inheritance, but it can only inherit from one abstract class due to the limitations of single inheritance in many languages.",
-      "hint": "Think about the number of parent classes a class can have."
+      "answer": 2,
+      "explanation": "Using interfaces allows each document type to implement its own `parse()` method, providing a flexible and extensible solution.",
+      "hint": "Think about defining a common contract for all document types."
     },
     {
       "id": 50,
-      "question": "What is the benefit of using virtual destructors in a base class?",
+      "question": "What is the relationship between polymorphism and code maintainability?",
       "options": [
-        "To prevent inheritance",
-        "To ensure that the correct destructor is called when deleting an object through a base class pointer",
-        "To improve code performance",
-        "To simplify debugging"
+        "Polymorphism decreases code maintainability.",
+        "Polymorphism has no effect on code maintainability.",
+        "Polymorphism increases code maintainability by reducing dependencies and promoting modularity.",
+        "Polymorphism only affects code performance."
       ],
-      "answer": 1,
-      "explanation": "Virtual destructors ensure that the correct destructor is called for derived class objects when they are deleted through a base class pointer, preventing memory leaks and ensuring proper cleanup.",
-      "hint": "Consider what happens when you delete an object through a base class pointer."
+      "answer": 2,
+      "explanation": "Polymorphism increases code maintainability by reducing dependencies between components and promoting modularity, making it easier to modify and extend the code.",
+      "hint": "Think about how polymorphism allows you to change implementations without affecting clients."
     }
   ]
 }

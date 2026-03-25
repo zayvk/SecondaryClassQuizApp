@@ -34,8 +34,13 @@ CATEGORY_PROMPTS = {
         "difficulty": "Mix easy, medium and hard questions appropriate for Grade 9 level",
     },
     "cs": {
-        "audience":   "Computer Science Engineering university students",
-        "difficulty": "Mix simple, intermediate and hard questions — from fundamental concepts to advanced application. Only include questions strictly within the subject topics listed, do not go outside them",
+        "audience":   "Computer Science Engineering university students who have recently graduated or are in their final year",
+        "difficulty": (
+            "Questions must be at university engineering level — NOT for school students. "
+            "Distribute difficulty as: 20% simple (core concept recall), 40% intermediate (applying concepts, reading/tracing code, identifying patterns), 40% hard (advanced application, design decisions, tricky edge cases, comparing approaches). "
+            "Hard questions should require genuine understanding — include code snippets where relevant, ask about design trade-offs, edge cases, and real-world implications. "
+            "Only include questions strictly within the listed topics, do not go outside them"
+        ),
     },
     "mbbs": {
         "audience":   "Medical MBBS university students",

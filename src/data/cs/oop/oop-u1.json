@@ -10,20 +10,20 @@
     "Instantiation",
     "The concept of state and behaviour"
   ],
-  "generatedAt": "2026-03-24T08:18:41Z",
+  "generatedAt": "2026-03-25T06:39:18Z",
   "questions": [
     {
       "id": 1,
-      "question": "Which of the following best describes Object-Oriented Programming (OOP)?",
+      "question": "Which of the following best describes the core principle behind Object-Oriented Programming?",
       "options": [
-        "A procedural approach focusing on functions",
-        "A programming paradigm based on 'objects' containing data and code",
-        "A low-level programming language",
-        "A method for directly manipulating hardware"
+        "Procedural decomposition",
+        "Data abstraction and encapsulation",
+        "Sequential execution of instructions",
+        "Direct manipulation of memory"
       ],
       "answer": 1,
-      "explanation": "OOP organizes programs around 'objects' that combine data (attributes) and actions (methods) that operate on that data.",
-      "hint": "Think about how real-world entities are represented in code."
+      "explanation": "OOP focuses on bundling data (attributes) and methods that operate on that data into objects, promoting data abstraction and encapsulation.",
+      "hint": "Think about how OOP differs from traditional procedural programming."
     },
     {
       "id": 2,
@@ -31,636 +31,636 @@
       "options": [
         "To create an instance of an object",
         "To define a blueprint for creating objects",
-        "To execute code directly",
-        "To store data in a database"
+        "To store data directly",
+        "To execute code sequentially"
       ],
       "answer": 1,
-      "explanation": "A class serves as a template or blueprint, defining the attributes and methods that objects of that class will possess.",
+      "explanation": "A class serves as a template or blueprint that defines the attributes and methods that objects of that class will possess.",
       "hint": "Consider a class like an architectural plan for a house."
     },
     {
       "id": 3,
-      "question": "An object is best described as:",
+      "question": "An object's 'state' is best represented by:",
       "options": [
-        "A code function",
-        "An instance of a class",
-        "A data structure",
-        "A programming language"
+        "The methods it contains",
+        "The class it belongs to",
+        "The values of its attributes",
+        "The order in which methods are called"
       ],
-      "answer": 1,
-      "explanation": "An object is a concrete realization of a class, possessing the attributes and methods defined by that class.",
-      "hint": "Think of a class as a concept, and an object as a specific example of that concept."
+      "answer": 2,
+      "explanation": "An object's state is defined by the current values of its attributes, representing its data at a specific point in time.",
+      "hint": "Think about what changes when an object is modified."
     },
     {
       "id": 4,
-      "question": "Which of the following is an attribute of an object?",
+      "question": "What does 'instantiation' refer to in the context of OOP?",
       "options": [
-        "A function that the object can perform",
-        "A piece of data that describes the object",
-        "A control structure like a loop",
-        "A compiler directive"
+        "Defining a new class",
+        "Creating an object from a class",
+        "Deleting an object",
+        "Modifying an existing class"
       ],
       "answer": 1,
-      "explanation": "Attributes are the data elements that hold information about an object's characteristics or state.",
-      "hint": "Attributes describe *what* an object has."
+      "explanation": "Instantiation is the process of creating a concrete object from a class blueprint.",
+      "hint": "It's the act of bringing a class 'to life'."
     },
     {
       "id": 5,
-      "question": "What is a method in the context of OOP?",
+      "question": "Which of the following is NOT a characteristic of an object's behaviour?",
       "options": [
-        "A variable that stores data",
-        "A function associated with an object",
-        "A type of data structure",
-        "A comment in the code"
+        "Methods that operate on its data",
+        "The class it was instantiated from",
+        "Responses to messages or method calls",
+        "Actions it can perform"
       ],
       "answer": 1,
-      "explanation": "Methods define the behaviors or actions that an object can perform.",
-      "hint": "Methods describe *what* an object can do."
+      "explanation": "An object's behaviour is defined by what it *does*, not where it came from; the class is the blueprint, not the behaviour itself.",
+      "hint": "Focus on what the object actively *does*."
     },
     {
       "id": 6,
-      "question": "The process of creating an object from a class is called:",
+      "question": "Consider a 'Car' class. Which of the following would be a suitable attribute?",
       "options": [
-        "Compilation",
-        "Inheritance",
-        "Instantiation",
-        "Polymorphism"
+        "StartEngine()",
+        "Accelerate(speed)",
+        "Color",
+        "DisplayMileage()"
       ],
       "answer": 2,
-      "explanation": "Instantiation is the act of creating a specific instance of a class, allocating memory and initializing its attributes.",
-      "hint": "It's about bringing the blueprint to life."
+      "explanation": "Attributes represent data *about* the object. Color is a piece of data describing a car.",
+      "hint": "Attributes are nouns, methods are verbs."
     },
     {
       "id": 7,
-      "question": "What does 'state' refer to in the context of an object?",
+      "question": "In OOP, what is encapsulation?",
       "options": [
-        "The methods the object possesses",
-        "The current values of the object's attributes",
-        "The class the object belongs to",
-        "The memory address of the object"
+        "Combining data and methods into a single unit",
+        "Hiding the internal implementation details of an object",
+        "Creating multiple instances of a class",
+        "Defining relationships between classes"
       ],
       "answer": 1,
-      "explanation": "The state of an object is defined by the values currently held by its attributes at a given point in time.",
-      "hint": "Think about what information defines the object at any given moment."
+      "explanation": "Encapsulation is the bundling of data and the methods that operate on that data within a single unit (the object).",
+      "hint": "Think about protecting the data within an object."
     },
     {
       "id": 8,
-      "question": "What does 'behaviour' refer to in the context of an object?",
+      "question": "What is the purpose of methods in a class?",
       "options": [
-        "The object's attributes",
-        "The object's state",
-        "The actions the object can perform",
-        "The object's memory allocation"
+        "To store data",
+        "To define the class structure",
+        "To define the actions an object can perform",
+        "To create new objects"
       ],
       "answer": 2,
-      "explanation": "Behaviour refers to the actions or operations that an object can perform, defined by its methods.",
-      "hint": "Consider what the object *does*."
+      "explanation": "Methods define the behaviour of an object, specifying what actions it can perform and how it interacts with its data.",
+      "hint": "Methods are what objects *do*."
     },
     {
       "id": 9,
-      "question": "If a 'Dog' class has an attribute 'breed', what would be a valid value for this attribute?",
+      "question": "If a 'Dog' class has an attribute 'breed', how would you access the breed of a 'Dog' object named 'myDog'?",
       "options": [
-        "bark()",
-        "run()",
-        "Golden Retriever",
-        "Dog()"
-      ],
-      "answer": 2,
-      "explanation": "The 'breed' attribute should hold a data value representing the dog's breed, such as 'Golden Retriever'.",
-      "hint": "Attributes store data, not actions."
-    },
-    {
-      "id": 10,
-      "question": "If a 'Car' class has a method 'accelerate()', what does this method likely do?",
-      "options": [
-        "Changes the car's color",
-        "Increases the car's speed",
-        "Displays the car's model",
-        "Creates a new car object"
-      ],
-      "answer": 1,
-      "explanation": "The 'accelerate()' method would logically increase the car's speed, representing a behavior of the car.",
-      "hint": "Think about what cars can do."
-    },
-    {
-      "id": 11,
-      "question": "Which of the following is NOT a core principle of OOP?",
-      "options": [
-        "Encapsulation",
-        "Inheritance",
-        "Procedural Decomposition",
-        "Polymorphism"
-      ],
-      "answer": 2,
-      "explanation": "Procedural decomposition is a characteristic of procedural programming, not OOP. OOP focuses on objects, not sequences of procedures.",
-      "hint": "Consider the fundamental building blocks of OOP."
-    },
-    {
-      "id": 12,
-      "question": "A class definition specifies:",
-      "options": [
-        "The data for a specific object",
-        "The code to be executed immediately",
-        "The attributes and methods that objects of that class will have",
-        "The output of the program"
-      ],
-      "answer": 2,
-      "explanation": "The class definition outlines the structure and behavior of all objects created from that class.",
-      "hint": "Think of it as a blueprint."
-    },
-    {
-      "id": 13,
-      "question": "What happens when you instantiate a class?",
-      "options": [
-        "The class definition is deleted",
-        "A new object is created based on the class blueprint",
-        "The program terminates",
-        "The code is compiled"
-      ],
-      "answer": 1,
-      "explanation": "Instantiation creates a new, unique object based on the class's definition, allocating memory for its attributes.",
-      "hint": "It's about making a copy based on a template."
-    },
-    {
-      "id": 14,
-      "question": "Consider a 'Rectangle' class with attributes 'width' and 'height'. How would you access the 'width' attribute of an object named 'rect1'?",
-      "options": [
-        "rect1.width()",
-        "rect1->width",
-        "rect1.width",
-        "width(rect1)"
+        "myDog.breed()",
+        "myDog->breed",
+        "myDog.breed",
+        "breed(myDog)"
       ],
       "answer": 2,
       "explanation": "In most OOP languages, attributes are accessed using the dot operator (.).",
-      "hint": "Think about how you would refer to a specific part of an object."
+      "hint": "Think about how you access members of a structure or object."
+    },
+    {
+      "id": 10,
+      "question": "What is the difference between a class and an object?",
+      "options": [
+        "A class is an instance, an object is a blueprint",
+        "A class is a blueprint, an object is an instance",
+        "They are interchangeable terms",
+        "A class stores data, an object executes code"
+      ],
+      "answer": 1,
+      "explanation": "A class is a blueprint or template, while an object is a specific instance created from that class.",
+      "hint": "Think of a cookie cutter (class) and the cookies it makes (objects)."
+    },
+    {
+      "id": 11,
+      "question": "Consider a class 'Rectangle' with attributes 'width' and 'height'. Which method would logically calculate the area?",
+      "options": [
+        "setDimensions(width, height)",
+        "displayRectangle()",
+        "calculatePerimeter()",
+        "calculateArea()"
+      ],
+      "answer": 3,
+      "explanation": "The area of a rectangle is calculated, making 'calculateArea()' the most logical method name.",
+      "hint": "What mathematical operation would you perform with width and height?"
+    },
+    {
+      "id": 12,
+      "question": "What happens when you instantiate a class?",
+      "options": [
+        "The class is deleted",
+        "Memory is allocated for the object",
+        "The program terminates",
+        "The class definition is modified"
+      ],
+      "answer": 1,
+      "explanation": "Instantiation allocates memory to store the object's attributes and associates it with the class's methods.",
+      "hint": "Creating an object requires space in memory."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following best describes the concept of 'state' in an object?",
+      "options": [
+        "The methods the object can execute",
+        "The class the object belongs to",
+        "The current values of the object's attributes",
+        "The object's memory address"
+      ],
+      "answer": 2,
+      "explanation": "The state of an object is determined by the values of its attributes at a given moment.",
+      "hint": "Think about what defines an object's current condition."
+    },
+    {
+      "id": 14,
+      "question": "A 'Student' class has attributes 'name' and 'grade'. If two 'Student' objects have the same name but different grades, are they the same object?",
+      "options": [
+        "Yes, because they share a name",
+        "No, because they have different states",
+        "Yes, because they are both 'Student' objects",
+        "It depends on the programming language"
+      ],
+      "answer": 1,
+      "explanation": "Objects are distinct even if they share some attribute values; their unique states (attribute values) define their individuality.",
+      "hint": "Consider what makes each object unique."
     },
     {
       "id": 15,
-      "question": "If an object's state changes, what is affected?",
+      "question": "What is the benefit of using objects to represent real-world entities in programming?",
       "options": [
-        "The class definition",
-        "The object's methods",
-        "The values of the object's attributes",
-        "The program's overall structure"
+        "Increased code complexity",
+        "Improved code reusability and maintainability",
+        "Reduced program execution speed",
+        "Limited flexibility"
       ],
-      "answer": 2,
-      "explanation": "Changing the state directly alters the values stored in the object's attributes.",
-      "hint": "State is defined by attribute values."
+      "answer": 1,
+      "explanation": "OOP allows for modularity and reusability, making code easier to understand, maintain, and extend.",
+      "hint": "Think about how OOP simplifies complex systems."
     },
     {
       "id": 16,
-      "question": "What is the relationship between a class and its objects?",
+      "question": "Consider the following code snippet (Python): `class Dog: def __init__(self, name): self.name = name`. What does the `__init__` method do?",
       "options": [
-        "A class is an instance of an object",
-        "An object is a blueprint for a class",
-        "A class is a blueprint for objects",
-        "Objects and classes are interchangeable"
+        "Deletes the object",
+        "Initializes the object's attributes",
+        "Defines the object's behaviour",
+        "Prints the object's name"
       ],
-      "answer": 2,
-      "explanation": "A class defines the structure and behavior, while objects are concrete instances created from that class.",
-      "hint": "Think about a cookie cutter (class) and the cookies (objects)."
+      "answer": 1,
+      "explanation": "`__init__` is the constructor method, responsible for initializing the object's attributes when it's created.",
+      "hint": "This method is called when you create a new object."
     },
     {
       "id": 17,
-      "question": "Which of the following best represents the concept of 'behaviour' in OOP?",
+      "question": "Which of the following is a potential drawback of using a large number of objects?",
       "options": [
-        "The data stored within an object",
-        "The physical memory location of an object",
-        "The actions an object can perform",
-        "The name of the class"
+        "Reduced code readability",
+        "Increased memory consumption",
+        "Simplified debugging",
+        "Faster program execution"
       ],
-      "answer": 2,
-      "explanation": "Behaviour is defined by the methods an object possesses, which dictate its actions.",
-      "hint": "What can the object *do*?"
+      "answer": 1,
+      "explanation": "Creating many objects can consume significant memory resources, potentially impacting performance.",
+      "hint": "Think about the resources required to store each object."
     },
     {
       "id": 18,
-      "question": "What is the purpose of using attributes in a class?",
+      "question": "In OOP, what is the purpose of 'behaviour'?",
       "options": [
-        "To define the actions an object can perform",
-        "To store data related to the object",
-        "To control the flow of execution",
-        "To create new classes"
-      ],
-      "answer": 1,
-      "explanation": "Attributes hold the data that describes the characteristics of an object.",
-      "hint": "Attributes represent the object's properties."
-    },
-    {
-      "id": 19,
-      "question": "A 'Student' class has attributes 'name' and 'studentID'.  An object 'student1' is created.  If 'student1.name' is changed, what happens?",
-      "options": [
-        "The 'name' attribute of all 'Student' objects changes",
-        "Only the 'name' attribute of 'student1' changes",
-        "The class definition changes",
-        "The program crashes"
-      ],
-      "answer": 1,
-      "explanation": "Changing an attribute of an object only affects that specific object's state.",
-      "hint": "Objects are independent instances."
-    },
-    {
-      "id": 20,
-      "question": "What is the significance of encapsulation in OOP?",
-      "options": [
-        "It allows objects to inherit properties from other objects",
-        "It hides the internal details of an object and exposes only necessary interfaces",
-        "It allows multiple objects to share the same data",
-        "It simplifies the code by removing the need for classes"
-      ],
-      "answer": 1,
-      "explanation": "Encapsulation protects data by bundling it with the methods that operate on it, and controlling access to the data.",
-      "hint": "Think about protecting sensitive information."
-    },
-    {
-      "id": 21,
-      "question": "Consider a 'BankAccount' class. Which of the following would be a suitable method?",
-      "options": [
-        "balance",
-        "accountNumber",
-        "deposit()",
-        "customerName"
+        "To store data about the object",
+        "To define the object's appearance",
+        "To define what the object can do",
+        "To create new objects"
       ],
       "answer": 2,
-      "explanation": "deposit() is an action a bank account can perform, making it a suitable method.",
-      "hint": "Methods represent actions."
-    },
-    {
-      "id": 22,
-      "question": "What is the role of instantiation in creating objects?",
-      "options": [
-        "It defines the class structure",
-        "It allocates memory for the object and initializes its attributes",
-        "It compiles the code",
-        "It executes the program"
-      ],
-      "answer": 1,
-      "explanation": "Instantiation is the process of creating a concrete instance of a class, setting up the object in memory.",
-      "hint": "It's about making a real copy."
-    },
-    {
-      "id": 23,
-      "question": "If a 'Car' object has a 'color' attribute with the value 'red', what does this represent?",
-      "options": [
-        "The car's speed",
-        "The car's model",
-        "A characteristic of the car's state",
-        "A method the car can perform"
-      ],
-      "answer": 2,
-      "explanation": "The color is a piece of data describing the car's current state.",
-      "hint": "State is defined by attributes."
-    },
-    {
-      "id": 24,
-      "question": "Which of the following is a key benefit of using OOP?",
-      "options": [
-        "Increased code complexity",
-        "Reduced code reusability",
-        "Improved code organization and maintainability",
-        "Slower program execution"
-      ],
-      "answer": 2,
-      "explanation": "OOP promotes modularity and reusability, leading to better-organized and easier-to-maintain code.",
-      "hint": "Think about how OOP helps manage large projects."
-    },
-    {
-      "id": 25,
-      "question": "What is the difference between an attribute and a method?",
-      "options": [
-        "They are the same thing",
-        "Attributes store data, methods define behavior",
-        "Methods store data, attributes define behavior",
-        "Attributes are used for inheritance, methods are not"
-      ],
-      "answer": 1,
-      "explanation": "Attributes represent the data associated with an object, while methods define the actions the object can perform.",
-      "hint": "One describes *what* it is, the other *what* it does."
-    },
-    {
-      "id": 26,
-      "question": "A 'Book' class has attributes 'title', 'author', and 'pages'.  What is the 'pages' attribute likely to store?",
-      "options": [
-        "The book's genre",
-        "The book's publication date",
-        "An integer representing the number of pages",
-        "The author's biography"
-      ],
-      "answer": 2,
-      "explanation": "The 'pages' attribute would logically store a numerical value representing the book's length.",
-      "hint": "Think about what kind of data represents the number of pages."
-    },
-    {
-      "id": 27,
-      "question": "What is the primary advantage of defining methods within a class?",
-      "options": [
-        "To prevent access to the object's attributes",
-        "To encapsulate data and behavior together",
-        "To create new classes",
-        "To speed up program execution"
-      ],
-      "answer": 1,
-      "explanation": "Methods encapsulate the behavior related to an object, keeping data and the operations on that data together.",
-      "hint": "Think about keeping related things together."
-    },
-    {
-      "id": 28,
-      "question": "If you create two objects from the same class, will they have the same state initially?",
-      "options": [
-        "Yes, always",
-        "No, always",
-        "It depends on the class definition",
-        "Only if they have the same name"
-      ],
-      "answer": 2,
-      "explanation": "While they share the same attributes and methods, their initial attribute values may differ, leading to different states.",
-      "hint": "Each object is independent."
-    },
-    {
-      "id": 29,
-      "question": "What is the purpose of the 'state' of an object?",
-      "options": [
-        "To define the object's methods",
-        "To represent the object's current condition or data values",
-        "To determine the object's class",
-        "To control the program's flow"
-      ],
-      "answer": 1,
-      "explanation": "The state represents the object's current values for its attributes, defining its condition at a specific time.",
-      "hint": "Think about what describes the object right now."
-    },
-    {
-      "id": 30,
-      "question": "Which of the following is a valid way to represent the 'behaviour' of a 'Bird' object?",
-      "options": [
-        "color = 'blue'",
-        "wings = 2",
-        "fly()",
-        "species = 'Eagle'"
-      ],
-      "answer": 2,
-      "explanation": "fly() is an action a bird can perform, representing its behaviour.",
+      "explanation": "Behaviour represents the actions an object can perform, defined by its methods.",
       "hint": "Behaviour is about what the object *does*."
     },
     {
-      "id": 31,
-      "question": "In OOP, what does it mean for an object to have 'identity'?",
+      "id": 19,
+      "question": "A 'BankAccount' class has an attribute 'balance'. A method 'withdraw(amount)' is called. How does this affect the object's state?",
       "options": [
-        "It has the same attributes as another object",
-        "It is uniquely distinguishable from all other objects",
-        "It belongs to a specific class",
-        "It has a predefined set of methods"
+        "The object's class is changed",
+        "The 'balance' attribute is modified",
+        "The object is deleted",
+        "The method returns a value"
       ],
       "answer": 1,
-      "explanation": "Each object has a unique identity, even if it has the same attribute values as another object.",
-      "hint": "Think about how you can tell two objects apart."
+      "explanation": "The 'withdraw' method modifies the 'balance' attribute, changing the object's state.",
+      "hint": "Think about how a withdrawal affects a bank account."
     },
     {
-      "id": 32,
-      "question": "A 'Vehicle' class has a method 'startEngine()'. What is the likely effect of calling this method?",
-      "options": [
-        "The vehicle's color changes",
-        "The vehicle's speed increases",
-        "The vehicle's engine begins running",
-        "A new vehicle object is created"
-      ],
-      "answer": 2,
-      "explanation": "The 'startEngine()' method would logically initiate the vehicle's engine.",
-      "hint": "Think about what starting an engine does."
-    },
-    {
-      "id": 33,
+      "id": 20,
       "question": "What is the relationship between a class and its objects in terms of memory?",
       "options": [
         "The class occupies the same memory as its objects",
-        "The objects occupy memory allocated based on the class definition",
-        "The class is stored within the objects",
-        "Objects and classes share the same memory space"
+        "The objects occupy memory, the class is a definition",
+        "The class occupies more memory than its objects",
+        "They share the same memory space"
       ],
       "answer": 1,
-      "explanation": "Objects are created in memory based on the blueprint provided by the class, allocating space for their attributes.",
-      "hint": "Think about how a blueprint is used to build something."
+      "explanation": "The class is a blueprint and doesn't occupy memory until objects are created from it. Objects then allocate their own memory.",
+      "hint": "Consider the difference between a plan and the building itself."
+    },
+    {
+      "id": 21,
+      "question": "Consider a 'Vehicle' class with a method 'move()'. A 'Car' and a 'Bicycle' class both inherit from 'Vehicle'. How will the 'move()' method behave in each object?",
+      "options": [
+        "Identically in both",
+        "Differently, based on their specific implementation",
+        "The method will not be available in 'Car' and 'Bicycle'",
+        "It will cause an error"
+      ],
+      "answer": 1,
+      "explanation": "Inheritance allows subclasses to inherit and potentially override methods from their parent class, leading to different behaviours.",
+      "hint": "Think about how a car and a bicycle move differently."
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is a key advantage of data abstraction in OOP?",
+      "options": [
+        "Increased code complexity",
+        "Reduced code reusability",
+        "Hiding complex implementation details",
+        "Direct access to data"
+      ],
+      "answer": 2,
+      "explanation": "Data abstraction hides the internal complexities of an object, presenting only essential information to the user.",
+      "hint": "Think about simplifying interactions with an object."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the constructor in a class?",
+      "options": [
+        "To destroy the object",
+        "To initialize the object's attributes",
+        "To define the object's methods",
+        "To print the object's information"
+      ],
+      "answer": 1,
+      "explanation": "The constructor is a special method that is automatically called when an object is created, and it's used to initialize the object's attributes.",
+      "hint": "It's the first thing that happens when you create an object."
+    },
+    {
+      "id": 24,
+      "question": "If a class has multiple methods with the same name but different parameters, what is this called?",
+      "options": [
+        "Polymorphism",
+        "Inheritance",
+        "Encapsulation",
+        "Abstraction"
+      ],
+      "answer": 0,
+      "explanation": "Polymorphism allows methods to have the same name but different parameters, enabling flexibility and code reuse.",
+      "hint": "Think about 'many forms'."
+    },
+    {
+      "id": 25,
+      "question": "A 'Product' class has attributes 'name' and 'price'. You want to create a new product with the name 'Laptop' and price 1200. How would you do this?",
+      "options": [
+        "Product.name = 'Laptop'; Product.price = 1200;",
+        "new Product('Laptop', 1200)",
+        "Product('Laptop', 1200)",
+        "create Product('Laptop', 1200)"
+      ],
+      "answer": 1,
+      "explanation": "This is the standard way to instantiate an object and pass initial values to the constructor.",
+      "hint": "You need to use the 'new' keyword (or equivalent) to create an object."
+    },
+    {
+      "id": 26,
+      "question": "What is the primary difference between attributes and methods?",
+      "options": [
+        "Attributes define behaviour, methods store data",
+        "Methods define behaviour, attributes store data",
+        "They are interchangeable",
+        "Attributes are public, methods are private"
+      ],
+      "answer": 1,
+      "explanation": "Attributes represent the data associated with an object, while methods define the actions the object can perform.",
+      "hint": "Think about nouns vs. verbs."
+    },
+    {
+      "id": 27,
+      "question": "Consider a 'Shape' class with a method 'calculateArea()'. Subclasses 'Circle' and 'Square' override this method. This is an example of:",
+      "options": [
+        "Encapsulation",
+        "Abstraction",
+        "Polymorphism",
+        "Inheritance"
+      ],
+      "answer": 2,
+      "explanation": "Polymorphism allows different subclasses to provide their own specific implementation of a method inherited from a parent class.",
+      "hint": "Think about 'many forms' of the same method."
+    },
+    {
+      "id": 28,
+      "question": "What is the potential issue with exposing an object's attributes directly without using getter/setter methods?",
+      "options": [
+        "Increased code readability",
+        "Improved performance",
+        "Loss of control over data modification",
+        "Reduced memory usage"
+      ],
+      "answer": 2,
+      "explanation": "Direct access to attributes bypasses encapsulation and allows external code to modify the object's state in unintended ways.",
+      "hint": "Think about protecting the object's internal data."
+    },
+    {
+      "id": 29,
+      "question": "A 'GameCharacter' class has attributes 'health' and 'strength'. Which of the following would be a valid method to change the character's health?",
+      "options": [
+        "health = 100",
+        "setHealth(100)",
+        "printHealth()",
+        "displayCharacter()"
+      ],
+      "answer": 1,
+      "explanation": "Using a setter method ('setHealth') allows controlled modification of the attribute, maintaining encapsulation.",
+      "hint": "Think about how to modify an attribute safely."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of using 'state' in object-oriented design?",
+      "options": [
+        "To define the object's methods",
+        "To represent the object's current condition",
+        "To create new objects",
+        "To hide the object's implementation"
+      ],
+      "answer": 1,
+      "explanation": "State represents the object's current values of its attributes, defining its condition at a specific point in time.",
+      "hint": "Think about what changes when an object is modified."
+    },
+    {
+      "id": 31,
+      "question": "Consider a scenario where you need to model a complex system with many interacting components. How does OOP help in this situation?",
+      "options": [
+        "It forces you to write procedural code",
+        "It simplifies the system by breaking it down into manageable objects",
+        "It increases code complexity",
+        "It reduces code reusability"
+      ],
+      "answer": 1,
+      "explanation": "OOP allows you to model complex systems by representing components as objects with well-defined interfaces and interactions.",
+      "hint": "Think about modularity and organization."
+    },
+    {
+      "id": 32,
+      "question": "What is the main advantage of using classes over simple data structures (like arrays or structs)?",
+      "options": [
+        "Classes are faster",
+        "Classes are more memory efficient",
+        "Classes provide encapsulation and behaviour",
+        "Classes are easier to debug"
+      ],
+      "answer": 2,
+      "explanation": "Classes combine data and methods, providing encapsulation and allowing you to define behaviour associated with the data.",
+      "hint": "Think about what you can do with a class that you can't do with a simple data structure."
+    },
+    {
+      "id": 33,
+      "question": "In OOP, what does it mean for an object to have 'behaviour'?",
+      "options": [
+        "It has a specific color",
+        "It can perform actions or respond to messages",
+        "It occupies memory space",
+        "It has a unique identifier"
+      ],
+      "answer": 1,
+      "explanation": "Behaviour refers to the actions an object can perform, defined by its methods.",
+      "hint": "Think about what the object *does*."
     },
     {
       "id": 34,
-      "question": "If a 'Dog' object's 'age' attribute is 5, what does this represent?",
+      "question": "You have a class 'Animal' with a method 'makeSound()'. You create a subclass 'Dog' that overrides 'makeSound()' to print 'Woof!'. What OOP principle is demonstrated here?",
       "options": [
-        "The dog's breed",
-        "The dog's name",
-        "A part of the dog's state",
-        "A method the dog can perform"
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism"
       ],
-      "answer": 2,
-      "explanation": "The age is a piece of data describing the dog's current state.",
-      "hint": "State is defined by attribute values."
+      "answer": 3,
+      "explanation": "Polymorphism allows subclasses to provide their own specific implementation of a method inherited from a parent class.",
+      "hint": "Think about 'many forms' of the same method."
     },
     {
       "id": 35,
-      "question": "What is the purpose of using attributes with different data types in a class?",
+      "question": "What is the potential risk of having too many attributes in a class?",
       "options": [
-        "To make the code more complex",
-        "To store different kinds of information about the object",
-        "To limit the number of objects that can be created",
-        "To prevent inheritance"
+        "Increased code readability",
+        "Reduced memory usage",
+        "Increased complexity and difficulty in maintaining the class",
+        "Improved performance"
       ],
-      "answer": 1,
-      "explanation": "Different data types allow you to store various types of information (numbers, text, booleans) about the object.",
-      "hint": "Think about the different kinds of information you might want to store."
+      "answer": 2,
+      "explanation": "Too many attributes can make a class overly complex, difficult to understand, and harder to maintain.",
+      "hint": "Think about the principle of keeping things simple."
     },
     {
       "id": 36,
-      "question": "A 'Circle' class has an attribute 'radius'. How would you change the radius of an object named 'circle1' to 10?",
+      "question": "Consider a 'GUIButton' class. Which of the following would be a suitable method?",
       "options": [
-        "circle1.radius() = 10",
-        "circle1.radius = 10",
-        "radius(circle1) = 10",
-        "10 = circle1.radius"
+        "color",
+        "width",
+        "onClick()",
+        "xPosition"
       ],
-      "answer": 1,
-      "explanation": "In most OOP languages, attributes are modified using the assignment operator (=).",
-      "hint": "Think about how you would update a value."
+      "answer": 2,
+      "explanation": "onClick() represents an action the button can perform, making it a suitable method.",
+      "hint": "Think about what a button *does* when you interact with it."
     },
     {
       "id": 37,
-      "question": "What is the significance of 'behaviour' in relation to object interaction?",
+      "question": "What is the purpose of the 'this' keyword (or its equivalent in other languages) in a class method?",
       "options": [
-        "It determines the object's memory usage",
-        "It defines how objects communicate and interact with each other",
-        "It controls the object's appearance",
-        "It limits the object's functionality"
+        "To access the class definition",
+        "To refer to the current object",
+        "To call another method",
+        "To print the object's information"
       ],
       "answer": 1,
-      "explanation": "Behaviours (methods) allow objects to send messages to each other and trigger actions, enabling interaction.",
-      "hint": "Think about how objects work together."
+      "explanation": "The 'this' keyword refers to the current instance of the class, allowing you to access its attributes and methods.",
+      "hint": "It's how an object refers to itself."
     },
     {
       "id": 38,
-      "question": "If a 'Product' class has attributes 'name' and 'price', and you create an object 'product1', what does 'product1' represent?",
+      "question": "A 'Library' class manages 'Book' objects. What kind of relationship exists between 'Library' and 'Book'?",
       "options": [
-        "The class definition",
-        "A specific instance of a product with a name and price",
-        "A list of all products",
-        "A database connection"
+        "Inheritance",
+        "Aggregation",
+        "Composition",
+        "Polymorphism"
       ],
       "answer": 1,
-      "explanation": "'product1' is a concrete instance of the 'Product' class, with its own specific name and price.",
-      "hint": "Think about a specific example of a product."
+      "explanation": "Aggregation represents a 'has-a' relationship, where a Library *has* Books, but the Books can exist independently.",
+      "hint": "Think about whether a Book can exist without a Library."
     },
     {
       "id": 39,
-      "question": "What is the role of methods in modifying an object's state?",
+      "question": "What is the primary benefit of using encapsulation?",
       "options": [
-        "Methods cannot modify an object's state",
-        "Methods directly access and change the values of the object's attributes",
-        "Methods only display the object's state",
-        "Methods create new objects"
+        "Increased code complexity",
+        "Improved code readability and maintainability",
+        "Reduced program execution speed",
+        "Limited flexibility"
       ],
       "answer": 1,
-      "explanation": "Methods are used to manipulate the object's attributes, thereby changing its state.",
-      "hint": "Think about how actions can change something."
+      "explanation": "Encapsulation promotes modularity, making code easier to understand, maintain, and extend by hiding internal details.",
+      "hint": "Think about protecting the object's internal data."
     },
     {
       "id": 40,
-      "question": "Which of the following is a characteristic of a well-designed class?",
+      "question": "If a 'Car' class has a private attribute 'engine', how can other classes access the engine's properties?",
       "options": [
-        "It has a large number of public attributes",
-        "It has a clear separation of data and behavior",
-        "It is difficult to understand and modify",
-        "It relies heavily on global variables"
+        "Directly access 'engine'",
+        "Use a getter method",
+        "Use a setter method",
+        "They cannot access it"
       ],
       "answer": 1,
-      "explanation": "A well-designed class encapsulates data (attributes) and behavior (methods) to promote modularity and maintainability.",
-      "hint": "Think about making the code easy to understand and change."
+      "explanation": "Getter methods (also known as accessors) provide controlled access to private attributes.",
+      "hint": "Think about how to access private data safely."
     },
     {
       "id": 41,
-      "question": "What is the purpose of using attributes with access modifiers (e.g., private, public)?",
+      "question": "Consider a class `Counter` with a private attribute `count` and a method `increment()`. What is the purpose of making `count` private?",
       "options": [
-        "To change the data type of the attribute",
-        "To control the visibility and accessibility of the attribute",
-        "To increase the memory usage of the object",
-        "To prevent the object from being created"
+        "To make the code run faster",
+        "To prevent direct modification of the count from outside the class",
+        "To allow any class to access the count",
+        "To reduce memory usage"
       ],
       "answer": 1,
-      "explanation": "Access modifiers determine which parts of the code can access and modify the attribute's value.",
-      "hint": "Think about controlling who can see and change the data."
+      "explanation": "Making `count` private enforces encapsulation, ensuring that the count can only be modified through the `increment()` method, maintaining data integrity.",
+      "hint": "Think about controlling access to the object's data."
     },
     {
       "id": 42,
-      "question": "A 'GameCharacter' class has a method 'move()'. What might this method do?",
+      "question": "Which of the following best describes the relationship between a class and its objects in terms of memory allocation?",
       "options": [
-        "Change the character's name",
-        "Update the character's position in the game world",
-        "Display the character's health",
-        "Create a new game character"
+        "The class allocates memory for all its objects at compile time.",
+        "Objects allocate memory dynamically when they are instantiated.",
+        "The class and its objects share the same memory space.",
+        "Objects allocate memory statically at compile time."
       ],
       "answer": 1,
-      "explanation": "The 'move()' method would logically update the character's location within the game.",
-      "hint": "Think about what characters do in games."
+      "explanation": "Objects are created at runtime, and memory is allocated dynamically to store their attributes and methods.",
+      "hint": "Consider when objects are actually created in a program."
     },
     {
       "id": 43,
-      "question": "What is the difference between a class and an object in terms of existence?",
+      "question": "A `Rectangle` class has attributes `width` and `height`. A method `isSquare()` returns `true` if the rectangle is a square. This is an example of:",
       "options": [
-        "A class exists only at runtime, an object exists at compile time",
-        "A class is a template, an object is a concrete instance",
-        "A class is a physical entity, an object is a logical entity",
-        "They are interchangeable"
+        "Encapsulation",
+        "Abstraction",
+        "Polymorphism",
+        "Inheritance"
       ],
-      "answer": 1,
-      "explanation": "A class is a blueprint that exists before any objects are created, while an object is a specific instance created from that blueprint.",
-      "hint": "Think about a plan versus the building itself."
+      "answer": 0,
+      "explanation": "The `isSquare()` method encapsulates a specific logic related to the rectangle's attributes, providing a simplified interface.",
+      "hint": "Think about how the method uses the object's data to determine a property."
     },
     {
       "id": 44,
-      "question": "If an object's state is 'invalid', what does this likely mean?",
+      "question": "What is the potential drawback of using inheritance extensively in a large system?",
       "options": [
-        "The object's methods are not working",
-        "The object's attributes have values that violate certain rules or constraints",
-        "The object is no longer in memory",
-        "The class definition is incorrect"
+        "Reduced code reusability",
+        "Increased code complexity and tight coupling",
+        "Improved performance",
+        "Simplified debugging"
       ],
       "answer": 1,
-      "explanation": "An invalid state means the object's attribute values do not meet the required conditions for proper operation.",
-      "hint": "Think about what makes an object 'broken' or unusable."
+      "explanation": "Deep inheritance hierarchies can lead to complex dependencies and make it difficult to modify or understand the code.",
+      "hint": "Think about the challenges of maintaining a large inheritance tree."
     },
     {
       "id": 45,
-      "question": "What is the benefit of using methods to access and modify an object's attributes?",
+      "question": "Consider a `Vehicle` class with a method `startEngine()`. Subclasses like `Car` and `Motorcycle` might have different ways of starting the engine. How can this be best modeled in OOP?",
       "options": [
-        "It makes the code more complex",
-        "It allows for data validation and control",
-        "It slows down program execution",
-        "It prevents the object from being used"
+        "Using a single `startEngine()` method in the `Vehicle` class.",
+        "Overriding the `startEngine()` method in each subclass.",
+        "Creating separate methods for each vehicle type.",
+        "Using a static method in the `Vehicle` class."
       ],
       "answer": 1,
-      "explanation": "Methods can include logic to ensure that attribute values are valid and consistent, protecting the object's integrity.",
-      "hint": "Think about adding checks and safeguards."
+      "explanation": "Overriding allows each subclass to provide its own specific implementation of the `startEngine()` method, demonstrating polymorphism.",
+      "hint": "Think about how each vehicle type starts its engine differently."
     },
     {
       "id": 46,
-      "question": "A 'Rectangle' object has attributes 'width' and 'height'. A method 'calculateArea()' is defined. What does this method likely return?",
+      "question": "What is the purpose of using access modifiers (e.g., public, private, protected) in OOP?",
       "options": [
-        "The perimeter of the rectangle",
-        "The sum of the width and height",
-        "The product of the width and height",
-        "A random number"
+        "To improve code readability",
+        "To control the visibility and accessibility of class members",
+        "To increase program execution speed",
+        "To reduce memory usage"
       ],
-      "answer": 2,
-      "explanation": "The 'calculateArea()' method would logically compute the area of the rectangle by multiplying its width and height.",
-      "hint": "Think about the formula for calculating area."
+      "answer": 1,
+      "explanation": "Access modifiers control which parts of the code can access specific attributes and methods, enforcing encapsulation and data hiding.",
+      "hint": "Think about controlling access to the object's internal data."
     },
     {
       "id": 47,
-      "question": "What is the primary purpose of encapsulation?",
+      "question": "A `ShoppingCart` class contains `Item` objects. If an `Item` is removed from the `ShoppingCart`, does the `Item` object itself get deleted?",
       "options": [
-        "To allow objects to inherit from other objects",
-        "To hide the internal implementation details of an object",
-        "To create multiple instances of a class",
-        "To simplify the code by removing classes"
+        "Yes, always",
+        "No, only the reference to the item is removed from the shopping cart",
+        "It depends on the programming language",
+        "The program will crash"
       ],
       "answer": 1,
-      "explanation": "Encapsulation protects the internal state of an object and prevents direct access to its data, promoting data integrity.",
-      "hint": "Think about protecting sensitive information."
+      "explanation": "Removing an item from the shopping cart only removes the reference to the item; the item object itself still exists in memory unless explicitly deleted.",
+      "hint": "Think about the difference between deleting an object and removing it from a collection."
     },
     {
       "id": 48,
-      "question": "If you create an object from a class without providing initial values for its attributes, what typically happens?",
+      "question": "You are designing a system to model different types of employees (e.g., Manager, Engineer, Salesperson). Which OOP principle would be most beneficial for creating a flexible and maintainable design?",
       "options": [
-        "The program crashes",
-        "The attributes are assigned default values",
-        "The object cannot be created",
-        "The attributes are left uninitialized"
+        "Encapsulation",
+        "Abstraction",
+        "Inheritance",
+        "Polymorphism"
       ],
-      "answer": 1,
-      "explanation": "Most programming languages assign default values (e.g., 0 for numbers, null for strings) to attributes if no initial values are provided during object creation.",
-      "hint": "Think about what happens when you don't specify a value."
+      "answer": 2,
+      "explanation": "Inheritance allows you to create a base `Employee` class and then create specialized subclasses for each employee type, promoting code reuse and maintainability.",
+      "hint": "Think about how different employee types share common characteristics."
     },
     {
       "id": 49,
-      "question": "What is the relationship between 'state' and 'behaviour' in an object?",
+      "question": "Consider a class `Logger` with a method `logMessage(String message)`. You want to ensure that only one instance of the `Logger` class exists throughout the application. What design pattern would be most appropriate?",
       "options": [
-        "They are independent of each other",
-        "Behaviour modifies the state of an object",
-        "State determines the behaviour of an object",
-        "Both state and behaviour are defined by the class"
+        "Factory Pattern",
+        "Singleton Pattern",
+        "Observer Pattern",
+        "Strategy Pattern"
       ],
       "answer": 1,
-      "explanation": "An object's behaviour (methods) often changes its state (attribute values) as a result of its actions.",
-      "hint": "Think about how actions can change things."
+      "explanation": "The Singleton pattern ensures that only one instance of a class is created, providing a global point of access to that instance.",
+      "hint": "Think about limiting the number of instances of a class."
     },
     {
       "id": 50,
-      "question": "A 'Car' class has a method 'brake()'. What is the expected outcome of calling this method?",
+      "question": "What is the primary difference between composition and inheritance?",
       "options": [
-        "The car's color changes",
-        "The car's speed decreases",
-        "The car's engine starts",
-        "A new car object is created"
+        "Inheritance is a 'has-a' relationship, composition is an 'is-a' relationship",
+        "Composition is a 'has-a' relationship, inheritance is an 'is-a' relationship",
+        "They are the same thing",
+        "Inheritance is stronger than composition"
       ],
       "answer": 1,
-      "explanation": "The 'brake()' method would logically reduce the car's speed.",
-      "hint": "Think about what brakes do."
+      "explanation": "Inheritance represents an 'is-a' relationship (e.g., a Car *is a* Vehicle), while composition represents a 'has-a' relationship (e.g., a Car *has an* Engine).",
+      "hint": "Think about the nature of the relationship between the classes."
     }
   ]
 }

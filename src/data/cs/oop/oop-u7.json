@@ -11,11 +11,11 @@
     "Dependency Inversion",
     "Composition over inheritance"
   ],
-  "generatedAt": "2026-03-24T08:30:57Z",
+  "generatedAt": "2026-03-25T06:52:13Z",
   "questions": [
     {
       "id": 1,
-      "question": "Which SOLID principle states that a class should have only one reason to change?",
+      "question": "Which SOLID principle advocates for a class to have only one reason to change?",
       "options": [
         "Open/Closed Principle",
         "Liskov Substitution Principle",
@@ -23,20 +23,20 @@
         "Interface Segregation Principle"
       ],
       "answer": 2,
-      "explanation": "The Single Responsibility Principle (SRP) advocates for classes to have a single, well-defined purpose, reducing complexity and improving maintainability.",
-      "hint": "Think about what makes a class difficult to modify without unintended consequences."
+      "explanation": "The Single Responsibility Principle states that a class should have only one reason to change, meaning it should have only one job.",
+      "hint": "Think about what makes code maintainable and reduces coupling."
     },
     {
       "id": 2,
       "question": "What is the primary benefit of the Open/Closed Principle?",
       "options": [
-        "Reducing code duplication",
+        "Reducing code complexity",
         "Improving code readability",
         "Allowing extension without modification",
-        "Increasing code complexity"
+        "Enhancing code performance"
       ],
       "answer": 2,
-      "explanation": "The Open/Closed Principle states that software entities should be open for extension, but closed for modification, promoting flexibility and reducing the risk of introducing bugs.",
+      "explanation": "The Open/Closed Principle states that software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.",
       "hint": "Consider how you can add new features without altering existing, working code."
     },
     {
@@ -49,38 +49,38 @@
         "Encapsulation"
       ],
       "answer": 2,
-      "explanation": "The Liskov Substitution Principle ensures that subtypes can be substituted for their base types without altering the correctness of the program.",
-      "hint": "Think about what should happen when you use a derived class where its parent class is expected."
+      "explanation": "The Liskov Substitution Principle dictates that subtypes should be substitutable for their base types without altering the correctness of the program.",
+      "hint": "Think about what happens when you replace a parent class object with a child class object."
     },
     {
       "id": 4,
-      "question": "What does Dependency Inversion aim to achieve?",
+      "question": "Dependency Inversion Principle aims to reduce coupling. How does it achieve this?",
       "options": [
-        "Tight coupling between modules",
-        "Increased code complexity",
-        "Decoupling of high-level and low-level modules",
-        "Direct dependencies between classes"
+        "By using inheritance extensively",
+        "By depending on concrete implementations",
+        "By depending on abstractions",
+        "By minimizing the number of classes"
       ],
       "answer": 2,
-      "explanation": "Dependency Inversion promotes loose coupling by depending on abstractions rather than concrete implementations, making the system more flexible and testable.",
-      "hint": "Consider how to reduce the impact of changes in one part of the system on other parts."
+      "explanation": "Dependency Inversion Principle suggests that high-level modules should not depend on low-level modules. Both should depend on abstractions.",
+      "hint": "Consider how interfaces and abstract classes can decouple components."
     },
     {
       "id": 5,
-      "question": "Which of the following best describes 'Composition over Inheritance'?",
+      "question": "What is the main advantage of Composition over Inheritance?",
       "options": [
-        "Inheritance is always the preferred approach",
-        "Combining classes through inheritance is simpler",
-        "Achieving code reuse through object composition",
-        "Composition leads to tighter coupling"
+        "Increased code reuse",
+        "Reduced complexity",
+        "Greater flexibility",
+        "Improved performance"
       ],
       "answer": 2,
-      "explanation": "Composition over Inheritance suggests favoring object composition (having objects contain other objects) over inheritance to achieve code reuse and flexibility.",
-      "hint": "Think about the potential problems with the 'is-a' relationship established by inheritance."
+      "explanation": "Composition offers greater flexibility than inheritance because it allows you to combine behaviors at runtime, avoiding the rigid structure of inheritance hierarchies.",
+      "hint": "Think about the problems that can arise from deep inheritance trees."
     },
     {
       "id": 6,
-      "question": "A class that manages both user authentication and database connections violates which SOLID principle?",
+      "question": "A class handles both user authentication and database interactions. Which principle is violated?",
       "options": [
         "Open/Closed Principle",
         "Single Responsibility Principle",
@@ -88,155 +88,155 @@
         "Dependency Inversion Principle"
       ],
       "answer": 1,
-      "explanation": "This class has two distinct responsibilities, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "explanation": "This violates the Single Responsibility Principle as the class has two distinct responsibilities: authentication and database access.",
+      "hint": "Consider if the class has more than one reason to change."
     },
     {
       "id": 7,
-      "question": "You need to add a new payment method to an existing e-commerce system. How can the Open/Closed Principle help?",
+      "question": "You need to add a new payment method to an existing e-commerce system. How can the Open/Closed Principle guide your design?",
       "options": [
-        "Modify the existing payment processing class",
-        "Create a new class that extends the existing one",
-        "Use interfaces to define payment methods and add new implementations",
-        "Duplicate the existing code and adapt it"
+        "Modify the existing PaymentProcessor class to include the new method",
+        "Create a new PaymentProcessor class for each payment method",
+        "Use interfaces and abstract classes to allow adding new methods without modifying existing code",
+        "Duplicate the existing code and adapt it for the new method"
       ],
       "answer": 2,
-      "explanation": "Using interfaces allows you to add new payment methods without modifying the core payment processing logic.",
+      "explanation": "Using interfaces and abstract classes allows you to extend the system with new payment methods without modifying the core PaymentProcessor class, adhering to the Open/Closed Principle.",
       "hint": "Think about how to extend functionality without altering existing code."
     },
     {
       "id": 8,
-      "question": "If a derived class breaks the behavior expected of its base class, which principle is violated?",
+      "question": "Consider a `Bird` class with a `fly()` method. A `Penguin` class inherits from `Bird`. Does this violate the Liskov Substitution Principle?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "No, inheritance is always safe.",
+        "Yes, because penguins cannot fly.",
+        "Only if the `fly()` method throws an exception in `Penguin`.",
+        "Only if `Penguin` overrides `fly()` to do something else."
       ],
-      "answer": 2,
-      "explanation": "The Liskov Substitution Principle is violated when a subtype doesn't behave as expected by its base type.",
-      "hint": "Consider what happens when you substitute a derived class for its parent."
+      "answer": 1,
+      "explanation": "Yes, because a Penguin is a Bird, but it doesn't behave like a typical Bird (it can't fly). Substituting a Penguin for a Bird in a context expecting flight will lead to incorrect behavior.",
+      "hint": "Think about what happens when you expect a subclass to behave like its parent."
     },
     {
       "id": 9,
-      "question": "What is a key advantage of Dependency Inversion in testing?",
+      "question": "A high-level module directly instantiates a concrete database class. Which principle is being violated?",
       "options": [
-        "Increased code complexity",
-        "Easier to mock dependencies",
-        "Tighter coupling",
-        "Reduced test coverage"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Dependency Inversion Principle",
+        "Liskov Substitution Principle"
       ],
-      "answer": 1,
-      "explanation": "Dependency Inversion allows you to easily mock dependencies, making unit testing more straightforward and effective.",
-      "hint": "Think about how you can isolate the code you're testing from external components."
+      "answer": 2,
+      "explanation": "This violates the Dependency Inversion Principle because the high-level module depends on a concrete implementation instead of an abstraction.",
+      "hint": "Consider how to decouple the high-level module from the specific database implementation."
     },
     {
       "id": 10,
-      "question": "Why is composition often preferred over inheritance for code reuse?",
+      "question": "You have a `Car` class and a `Engine` class. Which is a better design approach: `Car` inherits from `Engine`, or `Car` has an `Engine` object as a member?",
       "options": [
-        "Inheritance is more flexible",
-        "Composition leads to tighter coupling",
-        "Composition avoids the rigid hierarchy of inheritance",
-        "Inheritance is easier to understand"
+        "Inheritance is better for code reuse.",
+        "Composition is better for flexibility.",
+        "Inheritance is better for performance.",
+        "Both approaches are equally good."
       ],
-      "answer": 3,
-      "explanation": "Composition avoids the rigid 'is-a' relationship of inheritance, providing more flexibility and reducing the risk of unintended consequences.",
-      "hint": "Consider the limitations of the 'is-a' relationship."
+      "answer": 1,
+      "explanation": "Composition is generally better for flexibility because it allows you to easily swap out different engine types without modifying the `Car` class.",
+      "hint": "Think about the 'is-a' vs. 'has-a' relationship."
     },
     {
       "id": 11,
-      "question": "A 'Logger' class that can write to files, databases, or the console demonstrates which principle when using interfaces?",
+      "question": "What is the primary goal of applying SOLID principles?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "To write the shortest possible code",
+        "To maximize code reuse",
+        "To create maintainable and flexible software",
+        "To improve code execution speed"
       ],
       "answer": 2,
-      "explanation": "The Open/Closed Principle is demonstrated by allowing new logging destinations to be added without modifying the Logger class itself.",
-      "hint": "Think about how new functionality is added without changing existing code."
+      "explanation": "SOLID principles aim to create software designs that are easy to understand, modify, and extend over time.",
+      "hint": "Consider the long-term implications of your design choices."
     },
     {
       "id": 12,
-      "question": "Which principle suggests that you should program to interfaces, not implementations?",
+      "question": "A class is responsible for validating user input and saving it to a file. How can you apply the Single Responsibility Principle?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Combine the validation and saving logic into a single method.",
+        "Create separate classes for validation and file saving.",
+        "Use inheritance to create specialized validation classes.",
+        "Use a factory pattern to create validation objects."
       ],
-      "answer": 3,
-      "explanation": "The Dependency Inversion Principle advocates for depending on abstractions (interfaces) rather than concrete implementations.",
-      "hint": "Consider the benefits of loose coupling."
+      "answer": 1,
+      "explanation": "Creating separate classes for validation and file saving ensures that each class has a single, well-defined responsibility.",
+      "hint": "Think about separating concerns."
     },
     {
       "id": 13,
-      "question": "What is a potential drawback of deep inheritance hierarchies?",
+      "question": "You have an abstract class `Shape` with a method `calculateArea()`. Subclasses like `Circle` and `Square` implement this method. What does the Liskov Substitution Principle require?",
       "options": [
-        "Increased code reuse",
-        "Improved maintainability",
-        "The fragile base class problem",
-        "Reduced complexity"
+        "All subclasses must have the same implementation of `calculateArea()`.",
+        "Subclasses can override `calculateArea()` but must not change its behavior.",
+        "Subclasses must provide a valid implementation of `calculateArea()` that doesn't break the expected behavior.",
+        "Subclasses are not required to implement `calculateArea()`."
       ],
       "answer": 2,
-      "explanation": "Deep inheritance hierarchies can lead to the fragile base class problem, where changes to a base class can have unintended consequences in derived classes.",
-      "hint": "Think about how changes in a parent class can affect its children."
+      "explanation": "Subclasses must provide a valid implementation of `calculateArea()` that doesn't violate the expected behavior of a `Shape` object.",
+      "hint": "Think about what happens when you substitute a subclass for its parent."
     },
     {
       "id": 14,
-      "question": "A class responsible for validating user input *and* saving it to the database violates which principle?",
+      "question": "Which of the following best describes Dependency Inversion?",
       "options": [
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Single Responsibility Principle",
-        "Dependency Inversion Principle"
+        "Low-level modules should depend on high-level modules.",
+        "High-level modules should depend on abstractions, not concretions.",
+        "Classes should have minimal dependencies.",
+        "Dependencies should be resolved at compile time."
       ],
-      "answer": 2,
-      "explanation": "The class has two distinct responsibilities: validation and persistence, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "answer": 1,
+      "explanation": "Dependency Inversion states that high-level modules should not depend on low-level modules. Both should depend on abstractions.",
+      "hint": "Consider how to reduce coupling between modules."
     },
     {
       "id": 15,
-      "question": "If a 'Bird' class has a 'fly()' method, and a 'Penguin' class inherits from 'Bird' but cannot fly, which principle is potentially violated?",
+      "question": "Why is composition often preferred over inheritance for building complex systems?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Composition is simpler to implement.",
+        "Composition avoids the problems of the fragile base class.",
+        "Inheritance is slower.",
+        "Composition always results in less code."
       ],
-      "answer": 2,
-      "explanation": "The Penguin class breaks the expected behavior of the Bird class (flying), violating the Liskov Substitution Principle.",
-      "hint": "Think about what should happen when you use a Penguin where a Bird is expected."
+      "answer": 1,
+      "explanation": "Composition avoids the problems of the fragile base class, where changes to a base class can unexpectedly break subclasses.",
+      "hint": "Think about the risks associated with deep inheritance hierarchies."
     },
     {
       "id": 16,
-      "question": "What is the main goal of using interfaces in Dependency Inversion?",
+      "question": "A `ReportGenerator` class depends on a specific `DatabaseConnection` class. How can you apply the Dependency Inversion Principle?",
       "options": [
-        "To enforce strict data types",
-        "To create tight coupling",
-        "To define contracts for interacting with components",
-        "To reduce code readability"
+        "Remove the `DatabaseConnection` class.",
+        "Introduce an `IDatabaseConnection` interface and have `ReportGenerator` depend on it.",
+        "Make `ReportGenerator` inherit from `DatabaseConnection`.",
+        "Use a singleton pattern for `DatabaseConnection`."
       ],
-      "answer": 2,
-      "explanation": "Interfaces define contracts that allow different components to interact without knowing the specific implementation details.",
-      "hint": "Think about how interfaces promote loose coupling."
+      "answer": 1,
+      "explanation": "Introducing an `IDatabaseConnection` interface allows `ReportGenerator` to depend on an abstraction, rather than a concrete implementation.",
+      "hint": "Consider how to decouple the `ReportGenerator` from the specific database implementation."
     },
     {
       "id": 17,
-      "question": "Which of the following is an example of composition?",
+      "question": "What is a potential drawback of excessive use of inheritance?",
       "options": [
-        "A 'Car' class inheriting from a 'Vehicle' class",
-        "A 'Car' class having an 'Engine' object as a member",
-        "A 'Dog' class inheriting from an 'Animal' class",
-        "A 'Square' class inheriting from a 'Rectangle' class"
+        "Reduced code reuse",
+        "Increased flexibility",
+        "Tight coupling",
+        "Improved performance"
       ],
-      "answer": 1,
-      "explanation": "Composition involves a class containing instances of other classes as members, rather than inheriting from them.",
-      "hint": "Think about 'has-a' relationships versus 'is-a' relationships."
+      "answer": 2,
+      "explanation": "Excessive inheritance can lead to tight coupling between classes, making it difficult to modify or extend the system.",
+      "hint": "Think about the challenges of maintaining a deep inheritance hierarchy."
     },
     {
       "id": 18,
-      "question": "A system that allows adding new report types without modifying the core reporting engine adheres to which principle?",
+      "question": "You are designing a system for handling different types of notifications (email, SMS, push). Which principle would best guide you in creating a flexible and extensible design?",
       "options": [
         "Single Responsibility Principle",
         "Open/Closed Principle",
@@ -244,424 +244,424 @@
         "Dependency Inversion Principle"
       ],
       "answer": 1,
-      "explanation": "The system is open for extension (adding new report types) but closed for modification (the core engine remains unchanged).",
-      "hint": "Think about how new features are added without altering existing code."
+      "explanation": "The Open/Closed Principle would guide you to design the system so that you can add new notification types without modifying the existing notification handling code.",
+      "hint": "Think about how to add new features without altering existing code."
     },
     {
       "id": 19,
-      "question": "What is the risk of violating the Single Responsibility Principle?",
+      "question": "A class has multiple fields and methods that are unrelated to its core purpose. What principle is being violated?",
       "options": [
-        "Increased code reuse",
-        "Improved maintainability",
-        "Increased complexity and reduced cohesion",
-        "Reduced testing effort"
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Single Responsibility Principle",
+        "Dependency Inversion Principle"
       ],
       "answer": 2,
-      "explanation": "Violating the SRP leads to classes with multiple responsibilities, making them harder to understand, maintain, and test.",
-      "hint": "Consider what happens when a class becomes too large and complex."
+      "explanation": "This violates the Single Responsibility Principle, as the class is taking on too many responsibilities.",
+      "hint": "Consider if the class has more than one reason to change."
     },
     {
       "id": 20,
-      "question": "If a subclass requires a precondition that its superclass does not, which principle is likely violated?",
+      "question": "Which of the following is a key benefit of using interfaces?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "They allow for multiple inheritance.",
+        "They enforce implementation details.",
+        "They promote loose coupling.",
+        "They improve code performance."
       ],
       "answer": 2,
-      "explanation": "This indicates that the subclass doesn't behave as a true substitute for the superclass, violating the Liskov Substitution Principle.",
-      "hint": "Think about the expected behavior of a subtype."
+      "explanation": "Interfaces promote loose coupling by defining contracts without specifying implementation details.",
+      "hint": "Think about how interfaces can decouple components."
     },
     {
       "id": 21,
-      "question": "What role do abstract classes play in achieving the Open/Closed Principle?",
+      "question": "Consider the following code snippet (Java): \n```java\nclass Animal { public void makeSound() { System.out.println(\"Generic animal sound\"); } }\nclass Dog extends Animal { @Override public void makeSound() { System.out.println(\"Woof!\"); } }\n```\nDoes this code violate the Liskov Substitution Principle?",
       "options": [
-        "They enforce strict inheritance",
-        "They provide a base for extending functionality without modification",
-        "They reduce code reuse",
-        "They increase coupling"
+        "Yes, because Dog overrides makeSound().",
+        "No, because Dog is a subtype of Animal.",
+        "Yes, because the behavior of makeSound() changes in Dog.",
+        "No, as long as makeSound() doesn't throw exceptions."
       ],
       "answer": 1,
-      "explanation": "Abstract classes define a common interface that concrete classes can implement, allowing for extension without modifying the base class.",
-      "hint": "Think about how abstract classes can be used to define contracts."
+      "explanation": "No, this code adheres to the Liskov Substitution Principle. A Dog *is a* Animal, and overriding `makeSound()` to provide a more specific behavior is acceptable.",
+      "hint": "Think about whether the subclass maintains the expected behavior of the parent."
     },
     {
       "id": 22,
-      "question": "A 'DatabaseConnector' class that depends on a specific database implementation (e.g., MySQL) violates which principle?",
+      "question": "What is the difference between strong coupling and loose coupling?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Strong coupling means classes are independent; loose coupling means they are dependent.",
+        "Strong coupling means classes are highly dependent; loose coupling means they are relatively independent.",
+        "Strong coupling is always preferred; loose coupling is always avoided.",
+        "There is no difference between the two."
       ],
-      "answer": 3,
-      "explanation": "The class is directly dependent on a concrete implementation, violating the Dependency Inversion Principle.",
-      "hint": "Consider how to make the class independent of a specific database."
+      "answer": 1,
+      "explanation": "Strong coupling means classes are highly dependent on each other, while loose coupling means they are relatively independent.",
+      "hint": "Consider the impact of changes in one class on other classes."
     },
     {
       "id": 23,
-      "question": "What is the primary benefit of favoring composition over inheritance?",
+      "question": "You are designing a system where different algorithms need to be used for sorting data. Which design pattern best supports the Open/Closed Principle in this scenario?",
       "options": [
-        "Stronger coupling",
-        "Increased flexibility and reduced risk of the fragile base class problem",
-        "Simplified code structure",
-        "Faster development time"
+        "Factory Method",
+        "Singleton",
+        "Observer",
+        "Strategy"
       ],
-      "answer": 1,
-      "explanation": "Composition allows for more flexible and maintainable designs by avoiding the rigid hierarchy of inheritance.",
-      "hint": "Think about the limitations of inheritance."
+      "answer": 3,
+      "explanation": "The Strategy pattern allows you to encapsulate different algorithms and switch between them at runtime without modifying the core sorting logic.",
+      "hint": "Think about how to add new algorithms without altering existing code."
     },
     {
       "id": 24,
-      "question": "Which principle encourages you to create many client-specific interfaces rather than one general-purpose interface?",
+      "question": "A class has a method that performs a complex calculation and also logs the result to a file. Which principle is violated?",
       "options": [
-        "Single Responsibility Principle",
         "Open/Closed Principle",
         "Liskov Substitution Principle",
-        "Interface Segregation Principle"
+        "Single Responsibility Principle",
+        "Dependency Inversion Principle"
       ],
-      "answer": 3,
-      "explanation": "The Interface Segregation Principle suggests that clients should not be forced to depend on methods they don't use.",
-      "hint": "Think about minimizing dependencies."
+      "answer": 2,
+      "explanation": "This violates the Single Responsibility Principle because the method has two distinct responsibilities: calculation and logging.",
+      "hint": "Consider if the method has more than one reason to change."
     },
     {
       "id": 25,
-      "question": "A class that handles both data access and business logic violates which principle?",
+      "question": "What is the purpose of an abstract class?",
       "options": [
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Single Responsibility Principle",
-        "Dependency Inversion Principle"
+        "To create concrete objects directly.",
+        "To define a common interface for its subclasses.",
+        "To prevent inheritance.",
+        "To improve code performance."
       ],
-      "answer": 2,
-      "explanation": "This class has two distinct responsibilities, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "answer": 1,
+      "explanation": "An abstract class defines a common interface for its subclasses, providing a blueprint for them to follow.",
+      "hint": "Think about how abstract classes can enforce a certain structure."
     },
     {
       "id": 26,
-      "question": "What is the purpose of using dependency injection?",
+      "question": "Which SOLID principle is most directly related to reducing the impact of changes in one part of the system on other parts?",
       "options": [
-        "To increase coupling between classes",
-        "To reduce code readability",
-        "To provide dependencies to a class from an external source",
-        "To simplify testing"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Dependency Inversion Principle"
       ],
-      "answer": 2,
-      "explanation": "Dependency injection allows you to provide dependencies to a class without the class creating them itself, promoting loose coupling.",
-      "hint": "Think about how to manage dependencies without hardcoding them."
+      "answer": 3,
+      "explanation": "Dependency Inversion Principle aims to reduce coupling, which minimizes the impact of changes in one part of the system on other parts.",
+      "hint": "Consider how to decouple components."
     },
     {
       "id": 27,
-      "question": "If a derived class changes the return type of a method inherited from its base class, which principle is likely violated?",
+      "question": "You have a `Logger` class that depends on a specific file format. How can you apply the Open/Closed Principle?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Modify the `Logger` class to support different file formats.",
+        "Create a separate `Logger` class for each file format.",
+        "Use an interface to define the file format and allow different implementations.",
+        "Use a factory pattern to create file format objects."
       ],
       "answer": 2,
-      "explanation": "Changing the return type can break the expected behavior of the base class, violating the Liskov Substitution Principle.",
-      "hint": "Think about what happens when you substitute a derived class for its parent."
+      "explanation": "Using an interface allows you to add new file formats without modifying the `Logger` class, adhering to the Open/Closed Principle.",
+      "hint": "Think about how to extend functionality without altering existing code."
     },
     {
       "id": 28,
-      "question": "What is the benefit of using interfaces to define dependencies?",
+      "question": "A subclass modifies the return type of a method inherited from its superclass. Does this violate the Liskov Substitution Principle?",
       "options": [
-        "Increased coupling",
-        "Reduced flexibility",
-        "Easier to swap implementations",
-        "Increased complexity"
+        "No, as long as the method still functions correctly.",
+        "Yes, because it breaks the expected contract of the superclass.",
+        "Only if the new return type is null.",
+        "Only if the method throws an exception."
       ],
-      "answer": 2,
-      "explanation": "Interfaces allow you to easily swap different implementations of a dependency without affecting the code that uses it.",
-      "hint": "Think about how interfaces promote loose coupling."
+      "answer": 1,
+      "explanation": "Yes, changing the return type breaks the expected contract of the superclass and can lead to unexpected behavior when the subclass is used in place of the superclass.",
+      "hint": "Think about what happens when you expect a specific return type."
     },
     {
       "id": 29,
-      "question": "A system where adding a new feature requires modifying many existing classes likely violates which principle?",
+      "question": "What is the main goal of using composition over inheritance?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "To reduce code duplication.",
+        "To create more flexible and maintainable designs.",
+        "To improve code performance.",
+        "To simplify the class hierarchy."
       ],
       "answer": 1,
-      "explanation": "The system is not open for extension without modification, violating the Open/Closed Principle.",
-      "hint": "Think about how to add new features without altering existing code."
+      "explanation": "Composition over inheritance promotes more flexible and maintainable designs by allowing you to combine behaviors at runtime.",
+      "hint": "Think about the problems that can arise from deep inheritance trees."
     },
     {
       "id": 30,
-      "question": "Which principle focuses on ensuring that subtypes can be used interchangeably with their base types?",
+      "question": "A class is responsible for both calculating the price of an item and applying discounts. How can you apply the Single Responsibility Principle?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Combine the price calculation and discount application into a single method.",
+        "Create separate classes for price calculation and discount application.",
+        "Use inheritance to create specialized discount classes.",
+        "Use a factory pattern to create price objects."
       ],
-      "answer": 2,
-      "explanation": "The Liskov Substitution Principle ensures that subtypes maintain the expected behavior of their base types.",
-      "hint": "Think about what should happen when you use a derived class where its parent class is expected."
+      "answer": 1,
+      "explanation": "Creating separate classes for price calculation and discount application ensures that each class has a single, well-defined responsibility.",
+      "hint": "Consider if the class has more than one reason to change."
     },
     {
       "id": 31,
-      "question": "What is the main purpose of the Dependency Inversion Principle?",
+      "question": "Which principle encourages you to program to interfaces rather than concrete implementations?",
       "options": [
-        "To increase code complexity",
-        "To reduce code reuse",
-        "To decouple high-level modules from low-level modules",
-        "To enforce strict inheritance"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Dependency Inversion Principle"
       ],
-      "answer": 2,
-      "explanation": "Dependency Inversion aims to reduce coupling between modules by depending on abstractions rather than concrete implementations.",
-      "hint": "Consider how to reduce the impact of changes in one part of the system on other parts."
+      "answer": 3,
+      "explanation": "Dependency Inversion Principle specifically advocates for programming to interfaces rather than concrete implementations to reduce coupling.",
+      "hint": "Think about how to decouple components."
     },
     {
       "id": 32,
-      "question": "A class that both calculates statistics and displays them violates which principle?",
+      "question": "What is the potential issue with a deep inheritance hierarchy?",
       "options": [
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Single Responsibility Principle",
-        "Dependency Inversion Principle"
+        "Increased code reuse",
+        "Reduced complexity",
+        "The fragile base class problem",
+        "Improved performance"
       ],
       "answer": 2,
-      "explanation": "The class has two distinct responsibilities: calculation and presentation, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "explanation": "Deep inheritance hierarchies can lead to the fragile base class problem, where changes to a base class can unexpectedly break subclasses.",
+      "hint": "Think about the risks associated with deep inheritance trees."
     },
     {
       "id": 33,
-      "question": "What is a key benefit of composition over inheritance in terms of flexibility?",
+      "question": "You have a `Shape` interface with a `draw()` method. `Circle` and `Square` classes implement this interface. What does the Liskov Substitution Principle guarantee?",
       "options": [
-        "Inheritance allows for more dynamic behavior",
-        "Composition avoids the rigid structure of inheritance",
-        "Inheritance is easier to test",
-        "Composition leads to tighter coupling"
+        "All subclasses must have the same implementation of `draw()`.",
+        "Subclasses can override `draw()` but must not change its behavior.",
+        "Subclasses must provide a valid implementation of `draw()` that doesn't break the expected behavior.",
+        "Subclasses are not required to implement `draw()`."
       ],
-      "answer": 1,
-      "explanation": "Composition allows you to combine objects in different ways, providing more flexibility than the fixed relationship of inheritance.",
-      "hint": "Think about the limitations of the 'is-a' relationship."
+      "answer": 2,
+      "explanation": "Subclasses must provide a valid implementation of `draw()` that doesn't violate the expected behavior of a `Shape` object.",
+      "hint": "Think about what happens when you substitute a subclass for its parent."
     },
     {
       "id": 34,
-      "question": "If a subclass throws an exception that the superclass does not, which principle is potentially violated?",
+      "question": "A class is responsible for both validating data and persisting it to a database. How can you refactor this class to adhere to the Single Responsibility Principle?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Combine the validation and persistence logic into a single method.",
+        "Create separate classes for validation and persistence.",
+        "Use inheritance to create specialized validation classes.",
+        "Use a factory pattern to create persistence objects."
       ],
-      "answer": 2,
-      "explanation": "This can break the expected behavior of the superclass, violating the Liskov Substitution Principle.",
-      "hint": "Think about what should happen when you substitute a derived class for its parent."
+      "answer": 1,
+      "explanation": "Creating separate classes for validation and persistence ensures that each class has a single, well-defined responsibility.",
+      "hint": "Consider if the class has more than one reason to change."
     },
     {
       "id": 35,
-      "question": "What is the role of interfaces in promoting loose coupling?",
+      "question": "What is the primary benefit of using interfaces in Dependency Inversion?",
       "options": [
-        "Interfaces enforce strict data types",
-        "Interfaces define contracts without specifying implementation details",
-        "Interfaces increase code complexity",
-        "Interfaces reduce code reuse"
+        "They allow for multiple inheritance.",
+        "They enforce implementation details.",
+        "They promote loose coupling.",
+        "They improve code performance."
       ],
-      "answer": 1,
-      "explanation": "Interfaces define contracts that allow different components to interact without knowing the specific implementation details.",
-      "hint": "Think about how interfaces promote loose coupling."
+      "answer": 2,
+      "explanation": "Interfaces promote loose coupling by defining contracts without specifying implementation details.",
+      "hint": "Consider how interfaces can decouple components."
     },
     {
       "id": 36,
-      "question": "A system that requires extensive modifications to add a new feature is likely violating which principle?",
+      "question": "Consider a scenario where you need to support multiple database types (MySQL, PostgreSQL, Oracle). How can the Open/Closed Principle be applied?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Create a single class with conditional logic for each database type.",
+        "Create a separate class for each database type.",
+        "Use an interface to define database operations and implement different classes for each database type.",
+        "Use a factory pattern to create database connections."
       ],
-      "answer": 1,
-      "explanation": "The system is not open for extension without modification, violating the Open/Closed Principle.",
-      "hint": "Think about how to add new features without altering existing code."
+      "answer": 2,
+      "explanation": "Using an interface allows you to add new database types without modifying the core database interaction logic.",
+      "hint": "Think about how to extend functionality without altering existing code."
     },
     {
       "id": 37,
-      "question": "Which principle suggests that a class should only have one reason to change?",
+      "question": "A subclass attempts to override a method in its superclass in a way that violates the preconditions of the superclass method. What principle is violated?",
       "options": [
+        "Single Responsibility Principle",
         "Open/Closed Principle",
         "Liskov Substitution Principle",
-        "Single Responsibility Principle",
-        "Interface Segregation Principle"
+        "Dependency Inversion Principle"
       ],
       "answer": 2,
-      "explanation": "The Single Responsibility Principle (SRP) advocates for classes to have a single, well-defined purpose, reducing complexity and improving maintainability.",
-      "hint": "Think about what makes a class difficult to modify without unintended consequences."
+      "explanation": "This violates the Liskov Substitution Principle because the subclass does not behave as expected when substituted for the superclass.",
+      "hint": "Think about what happens when you expect a subclass to behave like its parent."
     },
     {
       "id": 38,
-      "question": "What is the primary goal of the Liskov Substitution Principle?",
+      "question": "What is the key difference between inheritance and composition?",
       "options": [
-        "To reduce code duplication",
-        "To ensure that subtypes can be used interchangeably with their base types",
-        "To increase code complexity",
-        "To promote tight coupling"
+        "Inheritance is a 'has-a' relationship, while composition is an 'is-a' relationship.",
+        "Inheritance is a 'is-a' relationship, while composition is a 'has-a' relationship.",
+        "Inheritance is more flexible than composition.",
+        "Composition is always preferred over inheritance."
       ],
       "answer": 1,
-      "explanation": "The Liskov Substitution Principle ensures that subtypes can be substituted for their base types without altering the correctness of the program.",
-      "hint": "Think about what should happen when you use a derived class where its parent class is expected."
+      "explanation": "Inheritance represents an 'is-a' relationship (e.g., a Dog *is a* Animal), while composition represents a 'has-a' relationship (e.g., a Car *has an* Engine).",
+      "hint": "Think about the 'is-a' vs. 'has-a' relationship."
     },
     {
       "id": 39,
-      "question": "What is a key benefit of Dependency Inversion?",
+      "question": "A class depends on a concrete implementation of a logging service. How can you improve the design using Dependency Inversion?",
       "options": [
-        "Increased code complexity",
-        "Reduced testability",
-        "Improved maintainability and testability",
-        "Tighter coupling"
+        "Remove the logging service.",
+        "Introduce an `ILogger` interface and have the class depend on it.",
+        "Make the class inherit from the logging service.",
+        "Use a singleton pattern for the logging service."
       ],
-      "answer": 2,
-      "explanation": "Dependency Inversion promotes loose coupling, making the system more flexible, maintainable, and testable.",
-      "hint": "Consider how to reduce the impact of changes in one part of the system on other parts."
+      "answer": 1,
+      "explanation": "Introducing an `ILogger` interface allows the class to depend on an abstraction, rather than a concrete implementation.",
+      "hint": "Consider how to decouple the class from the specific logging implementation."
     },
     {
       "id": 40,
-      "question": "Why is composition often preferred over inheritance?",
+      "question": "Which of the following best describes the purpose of the Single Responsibility Principle?",
       "options": [
-        "Inheritance is more flexible",
-        "Composition leads to tighter coupling",
-        "Composition promotes loose coupling and avoids the limitations of inheritance",
-        "Inheritance is easier to understand"
+        "To minimize the number of classes in a system.",
+        "To ensure that each class has a clear and focused purpose.",
+        "To maximize code reuse.",
+        "To improve code performance."
       ],
-      "answer": 2,
-      "explanation": "Composition allows for more flexible and maintainable designs by avoiding the rigid hierarchy of inheritance.",
-      "hint": "Think about the limitations of the 'is-a' relationship."
+      "answer": 1,
+      "explanation": "The Single Responsibility Principle aims to ensure that each class has a clear and focused purpose, making it easier to understand and maintain.",
+      "hint": "Consider what makes code maintainable and reduces coupling."
     },
     {
       "id": 41,
-      "question": "A class that manages both user authentication and data validation violates which principle?",
+      "question": "A `PaymentProcessor` class handles credit card, PayPal, and bank transfer payments. How can you apply the Open/Closed Principle?",
       "options": [
-        "Open/Closed Principle",
-        "Single Responsibility Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Add a new `if/else` block for each new payment method.",
+        "Create a separate `PaymentProcessor` class for each payment method.",
+        "Use an interface `IPaymentMethod` and implement different classes for each method.",
+        "Use a factory pattern to create payment method objects."
       ],
-      "answer": 1,
-      "explanation": "This class has two distinct responsibilities, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "answer": 2,
+      "explanation": "Using an interface `IPaymentMethod` allows you to add new payment methods without modifying the `PaymentProcessor` class.",
+      "hint": "Think about how to extend functionality without altering existing code."
     },
     {
       "id": 42,
-      "question": "What is the main benefit of the Open/Closed Principle?",
+      "question": "A subclass changes the behavior of an inherited method in a way that violates the expected contract of the superclass. This is a violation of:",
       "options": [
-        "Reducing code duplication",
-        "Improving code readability",
-        "Allowing extension without modification",
-        "Increasing code complexity"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Dependency Inversion Principle"
       ],
       "answer": 2,
-      "explanation": "The Open/Closed Principle states that software entities should be open for extension, but closed for modification, promoting flexibility and reducing the risk of introducing bugs.",
-      "hint": "Consider how you can add new features without altering existing, working code."
+      "explanation": "This is a direct violation of the Liskov Substitution Principle, as the subclass no longer behaves as expected when substituted for the superclass.",
+      "hint": "Think about substitutability."
     },
     {
       "id": 43,
-      "question": "If a derived class alters the fundamental behavior of its base class, which principle is violated?",
+      "question": "What is the primary advantage of using composition over inheritance for code reuse?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Inheritance allows for more dynamic reuse.",
+        "Composition avoids the tight coupling of inheritance.",
+        "Inheritance is simpler to implement.",
+        "Composition always results in less code."
       ],
-      "answer": 2,
-      "explanation": "The Liskov Substitution Principle is violated when a subtype doesn't behave as expected by its base type.",
-      "hint": "Think about what should happen when you use a derived class where its parent class is expected."
+      "answer": 1,
+      "explanation": "Composition avoids the tight coupling of inheritance, allowing for more flexible and dynamic code reuse.",
+      "hint": "Think about the problems that can arise from deep inheritance trees."
     },
     {
       "id": 44,
-      "question": "What is the purpose of Dependency Inversion?",
+      "question": "A high-level module directly accesses the internal state of a low-level module. Which principle is being violated?",
       "options": [
-        "To create tight coupling between modules",
-        "To reduce code complexity",
-        "To decouple high-level and low-level modules",
-        "To enforce strict data types"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Dependency Inversion Principle"
       ],
-      "answer": 2,
-      "explanation": "Dependency Inversion promotes loose coupling by depending on abstractions rather than concrete implementations, making the system more flexible and testable.",
-      "hint": "Consider how to reduce the impact of changes in one part of the system on other parts."
+      "answer": 3,
+      "explanation": "This violates the Dependency Inversion Principle, as the high-level module is directly coupled to the internal details of the low-level module.",
+      "hint": "Consider how to decouple the high-level module from the low-level module."
     },
     {
       "id": 45,
-      "question": "Which of the following is a benefit of using composition over inheritance?",
+      "question": "Which SOLID principle is most concerned with ensuring that a class has a single, well-defined purpose?",
       "options": [
-        "Increased code complexity",
-        "Reduced flexibility",
-        "Improved maintainability and testability",
-        "Tighter coupling"
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Single Responsibility Principle",
+        "Dependency Inversion Principle"
       ],
       "answer": 2,
-      "explanation": "Composition allows for more flexible and maintainable designs by avoiding the rigid hierarchy of inheritance.",
-      "hint": "Think about the limitations of the 'is-a' relationship."
+      "explanation": "The Single Responsibility Principle directly addresses the concern of ensuring that a class has a single, well-defined purpose.",
+      "hint": "Consider what makes code maintainable and reduces coupling."
     },
     {
       "id": 46,
-      "question": "A class that handles both database connections and business rules violates which principle?",
+      "question": "You are designing a system for handling different types of reports (PDF, CSV, Excel). How can the Open/Closed Principle guide your design?",
       "options": [
-        "Open/Closed Principle",
-        "Single Responsibility Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Create a single class with conditional logic for each report type.",
+        "Create a separate class for each report type.",
+        "Use an interface to define report generation and implement different classes for each type.",
+        "Use a factory pattern to create report objects."
       ],
-      "answer": 1,
-      "explanation": "This class has two distinct responsibilities, violating the Single Responsibility Principle.",
-      "hint": "Consider if the class is doing too many different things."
+      "answer": 2,
+      "explanation": "Using an interface allows you to add new report types without modifying the core report generation logic.",
+      "hint": "Think about how to extend functionality without altering existing code."
     },
     {
       "id": 47,
-      "question": "What is the primary goal of the Interface Segregation Principle?",
+      "question": "A subclass changes the preconditions of a method inherited from its superclass. This is a violation of:",
       "options": [
-        "To increase coupling",
-        "To create large, general-purpose interfaces",
-        "To minimize dependencies and avoid forcing clients to depend on unused methods",
-        "To enforce strict inheritance"
+        "Single Responsibility Principle",
+        "Open/Closed Principle",
+        "Liskov Substitution Principle",
+        "Dependency Inversion Principle"
       ],
       "answer": 2,
-      "explanation": "The Interface Segregation Principle suggests that clients should not be forced to depend on methods they don't use.",
-      "hint": "Think about minimizing dependencies."
+      "explanation": "This is a violation of the Liskov Substitution Principle, as the subclass alters the expected behavior of the superclass method.",
+      "hint": "Think about substitutability and expected behavior."
     },
     {
       "id": 48,
-      "question": "If a subclass requires a different set of preconditions than its superclass, which principle is likely violated?",
+      "question": "What is the main benefit of Dependency Inversion?",
       "options": [
-        "Single Responsibility Principle",
-        "Open/Closed Principle",
-        "Liskov Substitution Principle",
-        "Dependency Inversion Principle"
+        "Increased code reuse",
+        "Reduced complexity",
+        "Improved testability",
+        "Enhanced performance"
       ],
       "answer": 2,
-      "explanation": "This indicates that the subclass doesn't behave as a true substitute for the superclass, violating the Liskov Substitution Principle.",
-      "hint": "Think about what should happen when you substitute a derived class for its parent."
+      "explanation": "Dependency Inversion leads to improved testability because you can easily mock and stub dependencies.",
+      "hint": "Consider how decoupling affects testing."
     },
     {
       "id": 49,
-      "question": "What is the benefit of using abstract classes and interfaces together?",
+      "question": "A class is responsible for both calculating shipping costs and applying taxes. How can you apply the Single Responsibility Principle?",
       "options": [
-        "Increased code complexity",
-        "Reduced flexibility",
-        "Achieving both abstraction and loose coupling",
-        "Enforcing strict inheritance"
+        "Combine the shipping cost calculation and tax application into a single method.",
+        "Create separate classes for shipping cost calculation and tax application.",
+        "Use inheritance to create specialized tax classes.",
+        "Use a factory pattern to create shipping cost objects."
       ],
-      "answer": 2,
-      "explanation": "Abstract classes define a common base, while interfaces define contracts, allowing for both abstraction and loose coupling.",
-      "hint": "Think about how abstract classes and interfaces can be used to define contracts."
+      "answer": 1,
+      "explanation": "Creating separate classes for shipping cost calculation and tax application ensures that each class has a single, well-defined responsibility.",
+      "hint": "Consider if the class has more than one reason to change."
     },
     {
       "id": 50,
-      "question": "A system that is difficult to extend without modifying existing code likely violates which principle?",
+      "question": "Which principle suggests that you should prefer using interfaces over concrete classes when defining dependencies?",
       "options": [
         "Single Responsibility Principle",
         "Open/Closed Principle",
         "Liskov Substitution Principle",
         "Dependency Inversion Principle"
       ],
-      "answer": 1,
-      "explanation": "The system is not open for extension without modification, violating the Open/Closed Principle.",
-      "hint": "Think about how to add new features without altering existing code."
+      "answer": 3,
+      "explanation": "Dependency Inversion Principle advocates for depending on abstractions (interfaces) rather than concrete implementations.",
+      "hint": "Think about how to decouple components."
     }
   ]
 }
