@@ -5,9 +5,7 @@
       "name": "Cambridge · Grade 9",
       "subjects": [
         {
-          "id": "mathematics",
-          "name": "Mathematics",
-          "icon": "📐",
+          "id": "mathematics", "name": "Mathematics", "icon": "📐",
           "units": [
             { "id": "math-u1", "name": "Unit 1: Number and Calculation", "topics": ["Irrational numbers", "Standard form", "Indices"] },
             { "id": "math-u2", "name": "Unit 2: Expressions and Formulae", "topics": ["Substituting into expressions", "Constructing expressions", "Expressions and indices", "Expanding the product of two linear expressions", "Simplifying algebraic fractions", "Deriving and using formulae"] },
@@ -27,9 +25,7 @@
           ]
         },
         {
-          "id": "science",
-          "name": "Science",
-          "icon": "🔬",
+          "id": "science", "name": "Science", "icon": "🔬",
           "units": [
             { "id": "sci-u1", "name": "Unit 1: Photosynthesis and the Carbon Cycle", "topics": ["Photosynthesis", "More about photosynthesis", "The carbon cycle", "Climate change"] },
             { "id": "sci-u2", "name": "Unit 2: Properties of Materials", "topics": ["Atomic structure and the Periodic Table", "Trends in groups within the Periodic Table", "Why elements react to form compounds", "Simple and giant structures"] },
@@ -43,9 +39,7 @@
           ]
         },
         {
-          "id": "geography",
-          "name": "Geography",
-          "icon": "🌍",
+          "id": "geography", "name": "Geography", "icon": "🌍",
           "units": [
             { "id": "geo-u1", "name": "Unit 1: From Rock to Soil", "topics": ["Our rocky home", "What are the three rock groups?", "What is weathering?", "What is the rock cycle?", "The British Isles on their travels", "Rock and relief around the UK", "What's the link between rock and landscape?", "How are you linked to soil?"] },
             { "id": "geo-u2", "name": "Unit 2: Using Earth's Resources", "topics": ["Earth's natural resources", "Water part 1 - Do we have enough?", "Water part 2 - Emptying the Ogallala", "Water part 3 - Tackling water stress", "Food part 1 - Feeding the UK", "Food part 2 - Food insecurity, a global issue", "Food part 3 - Tackling food insecurity", "Energy part 1 - Goodbye to the fossil fuels?", "Energy part 2 - Renewables in the UK", "Energy part 3 - Is solar power the solution?", "Why must we change our ways?"] },
@@ -63,44 +57,43 @@
       "name": "Computer Science Engineering",
       "subjects": [
         {
-          "id": "oop",
-          "name": "Object-Oriented Programming",
-          "icon": "💡",
+          "id": "oop", "name": "Object-Oriented Programming", "icon": "💡",
+          "units": [
+            { "id": "oop-u1", "name": "Unit 1: OOP Fundamentals", "topics": ["What is Object-Oriented Programming?", "Classes and objects", "Attributes and methods", "Instantiation", "The concept of state and behaviour"] },
+            { "id": "oop-u2", "name": "Unit 2: Encapsulation", "topics": ["Access modifiers — public, private, protected", "Getters and setters", "Data hiding", "The principle of encapsulation", "Benefits of encapsulation"] },
+            { "id": "oop-u3", "name": "Unit 3: Inheritance", "topics": ["Base class and derived class", "Single and multilevel inheritance", "Method overriding", "The super keyword", "Constructor chaining in inheritance", "Abstract classes"] },
+            { "id": "oop-u4", "name": "Unit 4: Polymorphism", "topics": ["Compile-time polymorphism — method overloading", "Runtime polymorphism — method overriding", "Virtual functions", "Dynamic dispatch", "Interfaces and polymorphism"] },
+            { "id": "oop-u5", "name": "Unit 5: Abstraction and Interfaces", "topics": ["Abstract classes vs interfaces", "Pure virtual functions", "Implementing interfaces", "Multiple interface implementation", "Abstraction vs encapsulation"] },
+            { "id": "oop-u6", "name": "Unit 6: Constructors and Destructors", "topics": ["Default and parameterised constructors", "Copy constructors", "Constructor overloading", "Destructors and resource management", "The this keyword"] },
+            { "id": "oop-u7", "name": "Unit 7: OOP Design Principles", "topics": ["SOLID principles", "Single Responsibility Principle", "Open/Closed Principle", "Liskov Substitution Principle", "Dependency Inversion", "Composition over inheritance"] }
+          ]
+        },
+        {
+          "id": "sql", "name": "SQL and Databases", "icon": "🗄️",
           "units": [
             {
-              "id": "oop-u1",
-              "name": "Unit 1: OOP Fundamentals",
-              "topics": ["What is Object-Oriented Programming?", "Classes and objects", "Attributes and methods", "Instantiation", "The concept of state and behaviour"]
+              "id": "sql-u1", "name": "Unit 1: Database and SQL Fundamentals",
+              "topics": ["What is a Database?", "DBMS vs RDBMS", "What is SQL — DDL, DML, DQL", "What is a SQL query?", "What is a Table?", "How databases help, why and where we use them", "All SQL Datatypes — INT, VARCHAR, DATE, FLOAT, BOOLEAN, etc."]
             },
             {
-              "id": "oop-u2",
-              "name": "Unit 2: Encapsulation",
-              "topics": ["Access modifiers — public, private, protected", "Getters and setters", "Data hiding", "The principle of encapsulation", "Benefits of encapsulation"]
+              "id": "sql-u2", "name": "Unit 2: Table Design and Constraints",
+              "topics": ["Primary Key and Foreign Key", "Secondary Key", "Applying constraints — NOT NULL, UNIQUE, CHECK, DEFAULT", "Column-level constraints — e.g. age less than 18", "Data Redundancy — what it is and why it matters", "INSERT INTO — how to insert data into a table", "SELECT basics — how to retrieve data from a table"]
             },
             {
-              "id": "oop-u3",
-              "name": "Unit 3: Inheritance",
-              "topics": ["Base class and derived class", "Single and multilevel inheritance", "Method overriding", "The super keyword", "Constructor chaining in inheritance", "Abstract classes"]
+              "id": "sql-u3", "name": "Unit 3: Filtering, Updating and Deleting",
+              "topics": ["WHERE clause — filtering with =, >, <, >=, <=, <>, LIKE, IN, BETWEEN", "Why WHERE is critically important", "UPDATE — updating rows in a table", "DELETE — deleting rows and entire tables", "DROP TABLE vs TRUNCATE vs DELETE", "Sorting results — ORDER BY ASC and DESC", "Limiting results — LIMIT and OFFSET"]
             },
             {
-              "id": "oop-u4",
-              "name": "Unit 4: Polymorphism",
-              "topics": ["Compile-time polymorphism — method overloading", "Runtime polymorphism — method overriding", "Virtual functions", "Dynamic dispatch", "Interfaces and polymorphism"]
+              "id": "sql-u4", "name": "Unit 4: Normalisation and Anomalies",
+              "topics": ["What is database normalisation and why it matters", "INSERT, UPDATE and DELETE anomalies", "First Normal Form — 1NF", "Second Normal Form — 2NF", "Third Normal Form — 3NF", "Functional dependency and partial dependency", "Transitive dependency"]
             },
             {
-              "id": "oop-u5",
-              "name": "Unit 5: Abstraction and Interfaces",
-              "topics": ["Abstract classes vs interfaces", "Pure virtual functions", "Implementing interfaces", "Multiple interface implementation", "Abstraction vs encapsulation"]
+              "id": "sql-u5", "name": "Unit 5: Joins",
+              "topics": ["What is a JOIN and why it is used", "Types of joins — INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF", "INNER JOIN — all possible syntax and use cases", "LEFT JOIN vs RIGHT JOIN — every possible use case", "Joining on multiple conditions", "Differences between joins and subqueries", "Joining more than two tables"]
             },
             {
-              "id": "oop-u6",
-              "name": "Unit 6: Constructors and Destructors",
-              "topics": ["Default and parameterised constructors", "Copy constructors", "Constructor overloading", "Destructors and resource management", "The this keyword"]
-            },
-            {
-              "id": "oop-u7",
-              "name": "Unit 7: OOP Design Principles",
-              "topics": ["SOLID principles", "Single Responsibility Principle", "Open/Closed Principle", "Liskov Substitution Principle", "Dependency Inversion", "Composition over inheritance"]
+              "id": "sql-u6", "name": "Unit 6: Aggregates, Grouping and Subqueries",
+              "topics": ["Aggregate functions — COUNT, SUM, AVG, MIN, MAX", "GROUP BY — how it works and how it helps in queries", "HAVING vs WHERE — when to use each", "What is a subquery?", "Subqueries in WHERE clause", "Correlated vs non-correlated subqueries", "How subqueries differ from joins"]
             }
           ]
         }

@@ -1,0 +1,668 @@
+{
+  "subject": "SQL and Databases",
+  "unit": "Unit 5: Joins",
+  "unitId": "sql-u5",
+  "categoryId": "cs",
+  "topics": [
+    "What is a JOIN and why it is used",
+    "Types of joins — INNER, LEFT, RIGHT, FULL OUTER, CROSS, SELF",
+    "INNER JOIN — all possible syntax and use cases",
+    "LEFT JOIN vs RIGHT JOIN — every possible use case",
+    "Joining on multiple conditions",
+    "Differences between joins and subqueries",
+    "Joining more than two tables"
+  ],
+  "generatedAt": "2026-03-25T07:41:55Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of using JOINs in SQL?",
+      "options": [
+        "To filter data based on a single condition",
+        "To combine rows from two or more tables based on a related column",
+        "To sort the results of a query",
+        "To aggregate data from a single table"
+      ],
+      "answer": 1,
+      "explanation": "JOINs are used to combine rows from different tables based on a related column, allowing you to retrieve data that spans multiple tables.",
+      "hint": "Think about scenarios where information is spread across multiple tables."
+    },
+    {
+      "id": 2,
+      "question": "Which type of JOIN returns only the rows where there is a match in both tables?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "INNER JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "INNER JOIN returns only the rows that have matching values in both tables being joined.",
+      "hint": "Consider what 'inner' implies in terms of matching data."
+    },
+    {
+      "id": 3,
+      "question": "What does a LEFT JOIN return?",
+      "options": [
+        "All rows from the right table and matching rows from the left table",
+        "All rows from the left table and matching rows from the right table",
+        "Only matching rows from both tables",
+        "All rows from both tables"
+      ],
+      "answer": 1,
+      "explanation": "A LEFT JOIN returns all rows from the left table, and the matching rows from the right table. If there's no match in the right table, NULL values are returned for the right table's columns.",
+      "hint": "Focus on which table's rows are *always* included."
+    },
+    {
+      "id": 4,
+      "question": "How does a RIGHT JOIN differ from a LEFT JOIN?",
+      "options": [
+        "RIGHT JOIN includes all rows from the right table, while LEFT JOIN includes all rows from the left table",
+        "They are identical",
+        "RIGHT JOIN is faster than LEFT JOIN",
+        "RIGHT JOIN only returns matching rows"
+      ],
+      "answer": 0,
+      "explanation": "The key difference is which table's rows are always included. RIGHT JOIN prioritizes the right table, while LEFT JOIN prioritizes the left table.",
+      "hint": "Think about the direction of the join – which table is 'left' and which is 'right'."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of a FULL OUTER JOIN?",
+      "options": [
+        "To return only matching rows from both tables",
+        "To return all rows from the left table",
+        "To return all rows from both tables, filling in NULLs where there are no matches",
+        "To return all rows from the right table"
+      ],
+      "answer": 2,
+      "explanation": "FULL OUTER JOIN returns all rows when there is a match in either the left or right table.  If there's no match, NULL values are used for the missing side.",
+      "hint": "Consider what 'outer' means in relation to both tables."
+    },
+    {
+      "id": 6,
+      "question": "What is a CROSS JOIN?",
+      "options": [
+        "A join that returns only matching rows",
+        "A join that returns the Cartesian product of the two tables",
+        "A join that returns all rows from the left table",
+        "A join that returns all rows from the right table"
+      ],
+      "answer": 1,
+      "explanation": "A CROSS JOIN returns every possible combination of rows from the two tables, resulting in the Cartesian product.",
+      "hint": "Think about what happens when there are no join conditions specified."
+    },
+    {
+      "id": 7,
+      "question": "What is a SELF JOIN?",
+      "options": [
+        "Joining a table to itself",
+        "Joining a table to a view",
+        "Joining two identical tables",
+        "Joining a table to a subquery"
+      ],
+      "answer": 0,
+      "explanation": "A SELF JOIN is used to join a table to itself, typically to compare rows within the same table.",
+      "hint": "Consider scenarios where you need to compare values within the same table."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a valid syntax for an INNER JOIN?",
+      "options": [
+        "SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column",
+        "SELECT * FROM table1 INNER JOIN table2 WHERE table1.column = table2.column",
+        "SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column",
+        "SELECT * FROM table1 FULL OUTER JOIN table2 WHERE table1.column = table2.column"
+      ],
+      "answer": 1,
+      "explanation": "The `WHERE` clause can be used to specify the join condition in an INNER JOIN, but the explicit `INNER JOIN` keyword is more standard.",
+      "hint": "Pay attention to the keywords used to define the join type."
+    },
+    {
+      "id": 9,
+      "question": "Consider tables 'Employees' and 'Departments'. Which join would you use to list all employees, along with their department name (if they have one)?",
+      "options": [
+        "INNER JOIN",
+        "RIGHT JOIN",
+        "LEFT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A LEFT JOIN ensures all employees are listed, even if they aren't assigned to a department (in which case the department name would be NULL).",
+      "hint": "Which table should have all its rows included in the result?"
+    },
+    {
+      "id": 10,
+      "question": "You need to list all departments and the number of employees in each. Some departments might have no employees. Which join is most appropriate?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A RIGHT JOIN, joining Departments to Employees, will ensure all departments are listed, even those with no employees (employee count will be 0).",
+      "hint": "Which table should have all its rows included in the result?"
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between using JOINs and subqueries to achieve the same result?",
+      "options": [
+        "JOINs are always faster than subqueries",
+        "Subqueries are always faster than JOINs",
+        "JOINs are generally more efficient for retrieving related data from multiple tables, while subqueries can be useful for simpler filtering",
+        "Subqueries are easier to read and understand than JOINs"
+      ],
+      "answer": 2,
+      "explanation": "JOINs are optimized for combining data from multiple tables, while subqueries can be less efficient, especially for complex queries. However, subqueries can be more readable for certain simple filtering tasks.",
+      "hint": "Think about how each approach handles data retrieval and processing."
+    },
+    {
+      "id": 12,
+      "question": "You are joining three tables: Customers, Orders, and Products. What is the correct order to perform the joins for optimal performance?",
+      "options": [
+        "It doesn't matter, the database optimizer will handle it",
+        "Join the largest table to the smallest table first",
+        "Join the tables based on the most restrictive join conditions first",
+        "Join the tables alphabetically by table name"
+      ],
+      "answer": 2,
+      "explanation": "Joining tables with the most restrictive conditions first reduces the intermediate result set size, leading to better performance.",
+      "hint": "Consider how the join conditions affect the number of rows processed."
+    },
+    {
+      "id": 13,
+      "question": "Which join would you use to find all pairs of products that have similar prices?",
+      "options": [
+        "CROSS JOIN",
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN"
+      ],
+      "answer": 0,
+      "explanation": "A CROSS JOIN generates all possible pairs of products, allowing you to compare their prices.",
+      "hint": "You need to compare every product with every other product."
+    },
+    {
+      "id": 14,
+      "question": "Consider a table 'Employees' with columns 'EmployeeID' and 'ManagerID'. How would you write a self-join to find all employees who report to the same manager?",
+      "options": [
+        "SELECT e1.EmployeeID, e2.EmployeeID FROM Employees e1 JOIN Employees e2 ON e1.ManagerID = e2.ManagerID",
+        "SELECT e1.EmployeeID, e2.EmployeeID FROM Employees e1 JOIN Employees e2 ON e1.EmployeeID = e2.ManagerID",
+        "SELECT e1.EmployeeID, e2.EmployeeID FROM Employees e1 LEFT JOIN Employees e2 ON e1.ManagerID = e2.EmployeeID",
+        "SELECT e1.EmployeeID, e2.EmployeeID FROM Employees e1 RIGHT JOIN Employees e2 ON e1.ManagerID = e2.EmployeeID"
+      ],
+      "answer": 0,
+      "explanation": "The self-join compares each employee (e1) to all other employees (e2) based on the ManagerID, identifying those who share the same manager.",
+      "hint": "You're comparing rows within the same table, so you need to alias the table."
+    },
+    {
+      "id": 15,
+      "question": "You have tables 'Students' and 'Courses', and a linking table 'Enrollments'. How would you retrieve a list of all students and the courses they are enrolled in?",
+      "options": [
+        "INNER JOIN Students and Courses directly",
+        "INNER JOIN Students with Enrollments, then Enrollments with Courses",
+        "LEFT JOIN Students with Enrollments, then Enrollments with Courses",
+        "RIGHT JOIN Students with Enrollments, then Enrollments with Courses"
+      ],
+      "answer": 1,
+      "explanation": "The linking table 'Enrollments' is necessary to connect students to courses. You need to join Students to Enrollments and then Enrollments to Courses.",
+      "hint": "Think about how the linking table facilitates the relationship between students and courses."
+    },
+    {
+      "id": 16,
+      "question": "What happens if you have multiple conditions in the `ON` clause of a JOIN?",
+      "options": [
+        "The join will fail",
+        "The join will only consider the first condition",
+        "All conditions must be met for a row to be included in the result",
+        "The conditions are treated as an OR operation"
+      ],
+      "answer": 2,
+      "explanation": "Multiple conditions in the `ON` clause are combined using an `AND` operation. All conditions must be true for a row to be included in the result set.",
+      "hint": "Consider how logical operators work in SQL."
+    },
+    {
+      "id": 17,
+      "question": "Which join is most suitable for identifying records that exist in one table but not in another?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A RIGHT JOIN, when combined with a `WHERE` clause checking for NULL values in the left table's columns, can identify records present in the right table but not in the left.",
+      "hint": "Think about how NULL values can indicate missing data."
+    },
+    {
+      "id": 18,
+      "question": "You need to find all customers who have placed an order, and display their customer ID and order date. Which join is the most straightforward?",
+      "options": [
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "INNER JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "An INNER JOIN is the most direct way to retrieve only the customers who have corresponding orders.",
+      "hint": "You only want customers who *have* placed an order."
+    },
+    {
+      "id": 19,
+      "question": "What is the potential drawback of using a CROSS JOIN with large tables?",
+      "options": [
+        "It can lead to very slow query performance due to the large result set",
+        "It can cause syntax errors",
+        "It can only be used with small tables",
+        "It is not supported by all database systems"
+      ],
+      "answer": 0,
+      "explanation": "CROSS JOINs generate a Cartesian product, which can result in an extremely large result set, leading to significant performance issues with large tables.",
+      "hint": "Think about the size of the result set and its impact on performance."
+    },
+    {
+      "id": 20,
+      "question": "You have a table 'Products' with a 'Discontinued' flag. How can you use a LEFT JOIN to find all products that are *not* discontinued?",
+      "options": [
+        "SELECT * FROM Products LEFT JOIN Products p ON p.ProductID = Products.ProductID WHERE p.Discontinued = 0",
+        "SELECT * FROM Products WHERE Discontinued = 0",
+        "SELECT * FROM Products LEFT JOIN Products p ON p.ProductID = Products.ProductID WHERE p.Discontinued IS NULL",
+        "SELECT * FROM Products RIGHT JOIN Products p ON p.ProductID = Products.ProductID WHERE p.Discontinued = 0"
+      ],
+      "answer": 1,
+      "explanation": "A LEFT JOIN is unnecessary here. You can directly filter the 'Products' table based on the 'Discontinued' flag.",
+      "hint": "Consider if a join is actually needed to achieve the desired result."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following best describes the use case for a FULL OUTER JOIN?",
+      "options": [
+        "Finding common records between two tables",
+        "Retrieving all records from the left table and matching records from the right",
+        "Retrieving all records from both tables, including those without matches",
+        "Finding records unique to the left table"
+      ],
+      "answer": 2,
+      "explanation": "FULL OUTER JOIN is designed to return all records from both tables, filling in NULLs where there are no corresponding matches.",
+      "hint": "Think about the 'outer' aspect of the join – what does it include?"
+    },
+    {
+      "id": 22,
+      "question": "What is the effect of adding a `WHERE` clause to a LEFT JOIN that filters on a column from the *right* table?",
+      "options": [
+        "It effectively turns the LEFT JOIN into an INNER JOIN",
+        "It has no effect on the result",
+        "It filters the rows from the left table",
+        "It filters the rows from both tables"
+      ],
+      "answer": 0,
+      "explanation": "Filtering on a column from the right table in a LEFT JOIN effectively requires a match in that column, turning it into an INNER JOIN.",
+      "hint": "Consider how the filter condition impacts the inclusion of rows from the left table."
+    },
+    {
+      "id": 23,
+      "question": "You need to find all employees who have not received a bonus. You have tables 'Employees' and 'Bonuses'. Which join is most appropriate?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A RIGHT JOIN from Employees to Bonuses, filtering for NULL values in the Bonuses table, will identify employees who haven't received a bonus.",
+      "hint": "Think about which table should have all its rows included in the result."
+    },
+    {
+      "id": 24,
+      "question": "Consider the following SQL snippet: `SELECT * FROM A JOIN B ON A.x = B.y WHERE A.z > 10`. What does this query do?",
+      "options": [
+        "Combines rows from A and B where A.x equals B.y and A.z is greater than 10",
+        "Combines rows from A and B where A.x equals B.y or A.z is greater than 10",
+        "Combines rows from A and B where A.z is greater than 10",
+        "Combines rows from A and B regardless of their values"
+      ],
+      "answer": 0,
+      "explanation": "The `ON` clause specifies the join condition (A.x = B.y), and the `WHERE` clause adds an additional filter (A.z > 10).",
+      "hint": "Remember the order of operations in SQL – `ON` before `WHERE`."
+    },
+    {
+      "id": 25,
+      "question": "What is the primary advantage of using aliases in JOIN clauses?",
+      "options": [
+        "To improve query performance",
+        "To make the query more readable and concise",
+        "To avoid naming conflicts when joining tables with identical column names",
+        "To allow you to join more than two tables"
+      ],
+      "answer": 2,
+      "explanation": "Aliases are crucial for disambiguating column names when joining tables that have columns with the same name.",
+      "hint": "Think about scenarios where column names overlap between tables."
+    },
+    {
+      "id": 26,
+      "question": "You are designing a database schema for an e-commerce application. You need to represent the relationship between customers and their addresses. Which is the best approach?",
+      "options": [
+        "Store all addresses in the Customers table",
+        "Create a separate Addresses table and use a one-to-many relationship with the Customers table",
+        "Use a CROSS JOIN between Customers and Addresses",
+        "Use a FULL OUTER JOIN between Customers and Addresses"
+      ],
+      "answer": 1,
+      "explanation": "A separate Addresses table with a one-to-many relationship is the most normalized and flexible approach, allowing customers to have multiple addresses.",
+      "hint": "Consider the potential for a customer to have multiple addresses."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between `USING` and `ON` clauses in a JOIN?",
+      "options": [
+        "`USING` is used for joining on columns with different names",
+        "`USING` automatically handles column name conflicts",
+        "`ON` is used for joining on columns with the same name",
+        "`ON` is deprecated and `USING` should always be used"
+      ],
+      "answer": 2,
+      "explanation": "`ON` is used to specify the join condition when the columns have different names, while `USING` is used when the columns have the same name in both tables.",
+      "hint": "Consider how each clause handles column names."
+    },
+    {
+      "id": 28,
+      "question": "You have tables 'Orders' and 'OrderItems'. How would you find the total amount spent by each customer?",
+      "options": [
+        "SELECT c.CustomerID, SUM(oi.Quantity * oi.Price) FROM Customers c JOIN Orders o ON c.CustomerID = o.CustomerID JOIN OrderItems oi ON o.OrderID = oi.OrderID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, SUM(oi.Quantity * oi.Price) FROM Customers c LEFT JOIN Orders o ON c.CustomerID = o.CustomerID JOIN OrderItems oi ON o.OrderID = oi.OrderID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, SUM(oi.Quantity * oi.Price) FROM Customers c JOIN Orders o ON c.CustomerID = o.CustomerID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, SUM(oi.Quantity * oi.Price) FROM OrderItems oi GROUP BY c.CustomerID"
+      ],
+      "answer": 0,
+      "explanation": "You need to join all three tables (Customers, Orders, and OrderItems) to calculate the total amount spent by each customer, and then use `GROUP BY` to aggregate the results.",
+      "hint": "Think about which tables contain the necessary information for the calculation."
+    },
+    {
+      "id": 29,
+      "question": "Which join type is most appropriate when you want to find records that are present in both tables, but also want to include information from a third table related to one of the joined tables?",
+      "options": [
+        "CROSS JOIN",
+        "LEFT JOIN",
+        "INNER JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "An INNER JOIN is used to find matching records in the first two tables, and then you can join the result with the third table.",
+      "hint": "Start with the core relationship you want to establish."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the `WHERE` clause in conjunction with a `FULL OUTER JOIN`?",
+      "options": [
+        "To filter the rows from the left table",
+        "To filter the rows from the right table",
+        "To filter the rows that have matches in both tables",
+        "To filter the rows that do not have matches in both tables"
+      ],
+      "answer": 3,
+      "explanation": "The `WHERE` clause can be used to filter the rows that have matches in both tables, effectively turning the `FULL OUTER JOIN` into a more selective join.",
+      "hint": "Consider how the `WHERE` clause affects the inclusion of rows with NULL values."
+    },
+    {
+      "id": 31,
+      "question": "You have a table 'Employees' with columns 'EmployeeID', 'Name', and 'DepartmentID'. You also have a table 'Departments' with 'DepartmentID' and 'DepartmentName'. How would you list all employees and their department names?",
+      "options": [
+        "SELECT e.Name, d.DepartmentName FROM Employees e WHERE d.DepartmentID = e.DepartmentID",
+        "SELECT e.Name, d.DepartmentName FROM Employees e INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID",
+        "SELECT e.Name, d.DepartmentName FROM Employees e LEFT JOIN Departments d ON e.DepartmentID = d.DepartmentID",
+        "SELECT e.Name, d.DepartmentName FROM Employees e RIGHT JOIN Departments d ON e.DepartmentID = d.DepartmentID"
+      ],
+      "answer": 1,
+      "explanation": "An INNER JOIN is the most appropriate way to list employees and their department names, as it only includes employees who are assigned to a department.",
+      "hint": "You only want to see employees who belong to a department."
+    },
+    {
+      "id": 32,
+      "question": "What is the potential performance impact of using multiple JOINs in a single query?",
+      "options": [
+        "It always improves performance",
+        "It can significantly degrade performance if not optimized properly",
+        "It has no impact on performance",
+        "It only affects performance if the tables are very large"
+      ],
+      "answer": 1,
+      "explanation": "Multiple JOINs can lead to a large intermediate result set, which can significantly degrade performance if the query is not optimized with appropriate indexes and join order.",
+      "hint": "Think about the size of the intermediate results and how they affect processing time."
+    },
+    {
+      "id": 33,
+      "question": "You need to find all products that have never been ordered. You have tables 'Products' and 'OrderItems'. Which join is most suitable?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A RIGHT JOIN from Products to OrderItems, filtering for NULL values in the OrderItems table, will identify products that have never been ordered.",
+      "hint": "Think about which table should have all its rows included in the result."
+    },
+    {
+      "id": 34,
+      "question": "Consider the following SQL: `SELECT * FROM A LEFT JOIN B ON A.x = B.y WHERE B.y IS NULL`. What does this query return?",
+      "options": [
+        "All rows from A that have a matching row in B",
+        "All rows from A that do not have a matching row in B",
+        "All rows from B that do not have a matching row in A",
+        "All rows from both A and B"
+      ],
+      "answer": 1,
+      "explanation": "This query returns all rows from A where there is no matching row in B, as the `WHERE B.y IS NULL` condition filters for rows where the join condition failed.",
+      "hint": "Focus on the `WHERE` clause and its impact on the LEFT JOIN."
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between a correlated subquery and a JOIN?",
+      "options": [
+        "A correlated subquery is always faster than a JOIN",
+        "A correlated subquery can reference columns from the outer query, while a JOIN cannot",
+        "A JOIN can reference columns from the outer query, while a correlated subquery cannot",
+        "They are functionally identical"
+      ],
+      "answer": 1,
+      "explanation": "A correlated subquery is executed for each row of the outer query and can reference columns from the outer query, making it more flexible but potentially slower than a JOIN.",
+      "hint": "Consider how each approach handles data dependencies."
+    },
+    {
+      "id": 36,
+      "question": "You have tables 'Customers', 'Orders', and 'Products'. You want to find the average order value for each customer. Which join strategy is most efficient?",
+      "options": [
+        "Using a correlated subquery",
+        "Using a series of INNER JOINs and the AVG() function",
+        "Using a FULL OUTER JOIN and the AVG() function",
+        "Using a CROSS JOIN and the AVG() function"
+      ],
+      "answer": 1,
+      "explanation": "Using INNER JOINs to combine the tables and then applying the AVG() function with a GROUP BY clause is the most efficient way to calculate the average order value for each customer.",
+      "hint": "Think about how to efficiently aggregate data across multiple tables."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of using indexes in conjunction with JOINs?",
+      "options": [
+        "To improve the readability of the query",
+        "To reduce the size of the result set",
+        "To speed up the join operation by allowing the database to quickly locate matching rows",
+        "To prevent syntax errors"
+      ],
+      "answer": 2,
+      "explanation": "Indexes help the database quickly locate matching rows during the join operation, significantly improving performance.",
+      "hint": "Think about how indexes help with data retrieval."
+    },
+    {
+      "id": 38,
+      "question": "You are joining two tables, 'A' and 'B', on a column 'X'. Table 'A' has 1000 rows and Table 'B' has 100 rows. Which table should ideally be on the 'left' side of a LEFT JOIN for optimal performance?",
+      "options": [
+        "Table A",
+        "Table B",
+        "It doesn't matter",
+        "The table with more columns"
+      ],
+      "answer": 1,
+      "explanation": "Placing the smaller table (Table B) on the right side of a LEFT JOIN generally leads to better performance, as the database needs to iterate through fewer rows.",
+      "hint": "Consider the size of the tables and how it affects the join process."
+    },
+    {
+      "id": 39,
+      "question": "What is the main difference between a natural join and a join using the `ON` clause?",
+      "options": [
+        "A natural join requires explicit join conditions",
+        "A natural join automatically joins tables based on columns with the same name",
+        "A natural join is always faster than a join using the `ON` clause",
+        "A natural join can only be used with two tables"
+      ],
+      "answer": 1,
+      "explanation": "A natural join automatically joins tables based on columns with the same name and data type, without requiring explicit join conditions in the `ON` clause.",
+      "hint": "Think about how the join condition is specified in each case."
+    },
+    {
+      "id": 40,
+      "question": "You need to find all customers who have placed orders on the same day as another customer. Which join type would be most suitable?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "SELF JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A SELF JOIN on the 'Orders' table, comparing the order dates, would allow you to identify customers who have placed orders on the same day.",
+      "hint": "You need to compare rows within the same table."
+    },
+    {
+      "id": 41,
+      "question": "What is the potential issue with using a `WHERE` clause to filter on a column that is part of a `LEFT JOIN`'s `ON` condition?",
+      "options": [
+        "It will always result in an error",
+        "It can effectively turn the `LEFT JOIN` into an `INNER JOIN`",
+        "It will slow down the query significantly",
+        "It will not affect the result of the query"
+      ],
+      "answer": 1,
+      "explanation": "Filtering on a column that's part of the `ON` condition in a `LEFT JOIN` can eliminate rows that would otherwise be included due to the `LEFT JOIN`, effectively turning it into an `INNER JOIN`.",
+      "hint": "Consider how the filter condition interacts with the `LEFT JOIN`'s behavior."
+    },
+    {
+      "id": 42,
+      "question": "You have tables 'Products' and 'Categories'. A product can belong to multiple categories. How would you represent this many-to-many relationship using JOINs?",
+      "options": [
+        "Using a single INNER JOIN",
+        "Using a single LEFT JOIN",
+        "Using a linking table and two INNER JOINs",
+        "Using a CROSS JOIN"
+      ],
+      "answer": 2,
+      "explanation": "A many-to-many relationship requires a linking table to resolve the relationship. You would join 'Products' to the linking table and then the linking table to 'Categories'.",
+      "hint": "Think about how to represent a relationship where one record can be associated with multiple records in another table."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `DISTINCT` keyword when used in conjunction with JOINs?",
+      "options": [
+        "To sort the results of the query",
+        "To remove duplicate rows from the result set",
+        "To filter the results based on a specific condition",
+        "To aggregate data from multiple tables"
+      ],
+      "answer": 1,
+      "explanation": "The `DISTINCT` keyword removes duplicate rows from the result set, which can occur when joining tables with overlapping data.",
+      "hint": "Consider scenarios where the join might produce redundant rows."
+    },
+    {
+      "id": 44,
+      "question": "You are designing a database for a social network. You need to represent the 'friends' relationship between users. Which join type would be most appropriate for finding all friends of a specific user?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "SELF JOIN"
+      ],
+      "answer": 0,
+      "explanation": "An INNER JOIN between a user's table and a 'friends' table would efficiently retrieve all friends of that user.",
+      "hint": "Think about how the 'friends' relationship is represented in the database."
+    },
+    {
+      "id": 45,
+      "question": "What is the primary advantage of using explicit JOIN syntax (e.g., `INNER JOIN`, `LEFT JOIN`) over implicit JOIN syntax (using the `WHERE` clause)?",
+      "options": [
+        "Explicit JOIN syntax is faster",
+        "Explicit JOIN syntax is more readable and maintainable",
+        "Explicit JOIN syntax is required by all database systems",
+        "Explicit JOIN syntax allows you to join more than two tables"
+      ],
+      "answer": 1,
+      "explanation": "Explicit JOIN syntax is generally considered more readable and maintainable, as it clearly separates the join conditions from the filtering conditions.",
+      "hint": "Think about code clarity and organization."
+    },
+    {
+      "id": 46,
+      "question": "You have a table 'Events' with columns 'EventID', 'EventName', and 'LocationID'. You also have a table 'Locations' with 'LocationID' and 'LocationName'. How would you list all events and their locations, including events that don't have a location assigned?",
+      "options": [
+        "SELECT e.EventName, l.LocationName FROM Events e INNER JOIN Locations l ON e.LocationID = l.LocationID",
+        "SELECT e.EventName, l.LocationName FROM Events e LEFT JOIN Locations l ON e.LocationID = l.LocationID",
+        "SELECT e.EventName, l.LocationName FROM Events e RIGHT JOIN Locations l ON e.LocationID = l.LocationID",
+        "SELECT e.EventName, l.LocationName FROM Events e FULL OUTER JOIN Locations l ON e.LocationID = l.LocationID"
+      ],
+      "answer": 1,
+      "explanation": "A LEFT JOIN ensures that all events are listed, even those without a corresponding location (in which case the location name would be NULL).",
+      "hint": "Which table should have all its rows included in the result?"
+    },
+    {
+      "id": 47,
+      "question": "What is the effect of using a `WHERE` clause with a `FULL OUTER JOIN` to filter on a column from the left table?",
+      "options": [
+        "It filters the rows from both tables",
+        "It only filters the rows from the left table",
+        "It turns the `FULL OUTER JOIN` into a `LEFT JOIN`",
+        "It has no effect on the result"
+      ],
+      "answer": 1,
+      "explanation": "The `WHERE` clause filters the rows from the left table, effectively reducing the number of rows included in the result set.",
+      "hint": "Consider how the filter condition affects the inclusion of rows from the left table."
+    },
+    {
+      "id": 48,
+      "question": "You need to find all pairs of employees who work in the same department. Which join type is most appropriate?",
+      "options": [
+        "CROSS JOIN",
+        "INNER JOIN",
+        "LEFT JOIN",
+        "SELF JOIN"
+      ],
+      "answer": 3,
+      "explanation": "A SELF JOIN on the 'Employees' table, comparing the department IDs, would allow you to identify employees who work in the same department.",
+      "hint": "You need to compare rows within the same table."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of using a subquery within a JOIN clause?",
+      "options": [
+        "To improve query performance",
+        "To simplify the join condition",
+        "To dynamically generate the join condition based on the results of the subquery",
+        "To prevent syntax errors"
+      ],
+      "answer": 2,
+      "explanation": "A subquery within a JOIN clause allows you to dynamically generate the join condition based on the results of the subquery, providing more flexibility.",
+      "hint": "Think about how a subquery can be used to create a dynamic filter."
+    },
+    {
+      "id": 50,
+      "question": "You have tables 'Orders' and 'Customers'. You want to find all customers who have placed at least one order, and display their customer ID and the number of orders they have placed. Which SQL statement is correct?",
+      "options": [
+        "SELECT c.CustomerID, COUNT(o.OrderID) FROM Customers c WHERE o.CustomerID = c.CustomerID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, COUNT(o.OrderID) FROM Customers c INNER JOIN Orders o ON c.CustomerID = o.CustomerID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, COUNT(o.OrderID) FROM Orders o WHERE c.CustomerID = o.CustomerID GROUP BY c.CustomerID",
+        "SELECT c.CustomerID, COUNT(o.OrderID) FROM Customers c LEFT JOIN Orders o ON c.CustomerID = o.CustomerID GROUP BY c.CustomerID"
+      ],
+      "answer": 1,
+      "explanation": "An INNER JOIN is used to combine the 'Customers' and 'Orders' tables based on the 'CustomerID', and then the `COUNT()` function with `GROUP BY` is used to calculate the number of orders for each customer.",
+      "hint": "You need to combine the tables and then aggregate the results."
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "subject": "SQL and Databases",
+  "unit": "Unit 2: Table Design and Constraints",
+  "unitId": "sql-u2",
+  "categoryId": "cs",
+  "topics": [
+    "Primary Key and Foreign Key",
+    "Secondary Key",
+    "Applying constraints — NOT NULL, UNIQUE, CHECK, DEFAULT",
+    "Column-level constraints — e.g. age less than 18",
+    "Data Redundancy — what it is and why it matters",
+    "INSERT INTO — how to insert data into a table",
+    "SELECT basics — how to retrieve data from a table"
+  ],
+  "generatedAt": "2026-03-25T07:35:02Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of a primary key in a relational database?",
+      "options": [
+        "To enforce data integrity and uniquely identify each record in a table.",
+        "To speed up data retrieval by creating an index.",
+        "To establish relationships between tables.",
+        "To limit the size of the table."
+      ],
+      "answer": 0,
+      "explanation": "A primary key uniquely identifies each record in a table and enforces entity integrity, ensuring no two rows are identical.",
+      "hint": "Think about what makes each row in a table distinct."
+    },
+    {
+      "id": 2,
+      "question": "Which constraint ensures that a column cannot contain NULL values?",
+      "options": [
+        "UNIQUE",
+        "CHECK",
+        "NOT NULL",
+        "DEFAULT"
+      ],
+      "answer": 2,
+      "explanation": "The NOT NULL constraint prevents a column from accepting NULL values, ensuring that every row has a value for that column.",
+      "hint": "Consider what happens when a field is left empty."
+    },
+    {
+      "id": 3,
+      "question": "What is the main difference between a primary key and a candidate key?",
+      "options": [
+        "A primary key can be NULL, while a candidate key cannot.",
+        "A candidate key is chosen as the primary key for the table.",
+        "A primary key can consist of multiple columns, while a candidate key can only be one.",
+        "There is no difference; they are interchangeable terms."
+      ],
+      "answer": 1,
+      "explanation": "A candidate key is a potential primary key, but only one candidate key is chosen to be the primary key for the table.",
+      "hint": "Think about the selection process from a set of possibilities."
+    },
+    {
+      "id": 4,
+      "question": "What is data redundancy and why is it undesirable in a database?",
+      "options": [
+        "Having multiple copies of the same data, leading to inconsistencies and wasted storage.",
+        "Having too little data to accurately represent the information.",
+        "Having data that is not properly indexed.",
+        "Having data that is encrypted."
+      ],
+      "answer": 0,
+      "explanation": "Data redundancy means storing the same data in multiple places, which can lead to inconsistencies when updating and wasted storage space.",
+      "hint": "Consider the problems that arise when the same information is stored in multiple locations."
+    },
+    {
+      "id": 5,
+      "question": "Which SQL statement is used to add new data into a table?",
+      "options": [
+        "UPDATE",
+        "SELECT",
+        "INSERT INTO",
+        "DELETE"
+      ],
+      "answer": 2,
+      "explanation": "The INSERT INTO statement is used to add new rows of data into a table.",
+      "hint": "Think about the action of adding something new."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of a foreign key?",
+      "options": [
+        "To uniquely identify records within a table.",
+        "To establish and enforce a link between data in two tables.",
+        "To speed up data retrieval.",
+        "To define data types for columns."
+      ],
+      "answer": 1,
+      "explanation": "A foreign key establishes a link between two tables by referencing the primary key of another table, enforcing referential integrity.",
+      "hint": "Consider how tables relate to each other."
+    },
+    {
+      "id": 7,
+      "question": "What does the term 'referential integrity' refer to?",
+      "options": [
+        "Ensuring that all data is accurate and consistent.",
+        "Maintaining consistency between related tables by preventing actions that would break links.",
+        "Protecting the database from unauthorized access.",
+        "Optimizing query performance."
+      ],
+      "answer": 1,
+      "explanation": "Referential integrity ensures that relationships between tables remain consistent by preventing actions that would orphan records or violate foreign key constraints.",
+      "hint": "Think about the consequences of deleting a record that is referenced elsewhere."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is a secondary key used for?",
+      "options": [
+        "Uniquely identifying each row in a table.",
+        "Establishing relationships between tables.",
+        "Improving the speed of data retrieval based on specific criteria.",
+        "Enforcing data integrity."
+      ],
+      "answer": 2,
+      "explanation": "Secondary keys (indexes) are used to speed up data retrieval by creating an index on one or more columns.",
+      "hint": "Think about how you would quickly find a specific piece of information in a large dataset."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the UNIQUE constraint?",
+      "options": [
+        "To ensure that all values in a column are the same.",
+        "To ensure that all values in a column are different.",
+        "To allow only numeric values in a column.",
+        "To specify a default value for a column."
+      ],
+      "answer": 1,
+      "explanation": "The UNIQUE constraint ensures that all values in a specified column are distinct, preventing duplicate entries.",
+      "hint": "Consider what happens when you try to enter the same value twice."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the CHECK constraint?",
+      "options": [
+        "To ensure that a column cannot be NULL.",
+        "To ensure that values in a column meet a specific condition.",
+        "To ensure that values in a column are unique.",
+        "To specify a default value for a column."
+      ],
+      "answer": 1,
+      "explanation": "The CHECK constraint allows you to define a condition that values in a column must satisfy, enforcing data validation.",
+      "hint": "Think about how you would limit the possible values in a column."
+    },
+    {
+      "id": 11,
+      "question": "What does the DEFAULT constraint do?",
+      "options": [
+        "Prevents NULL values.",
+        "Ensures unique values.",
+        "Specifies a value to be used if no value is provided during insertion.",
+        "Checks for data validity."
+      ],
+      "answer": 2,
+      "explanation": "The DEFAULT constraint assigns a default value to a column if no value is explicitly provided during an INSERT operation.",
+      "hint": "Consider what happens when a value is missing during data entry."
+    },
+    {
+      "id": 12,
+      "question": "Consider a table 'Students' with columns 'StudentID', 'Name', and 'Age'. Which constraint would be most appropriate to ensure that only students under 25 can be added?",
+      "options": [
+        "NOT NULL",
+        "UNIQUE",
+        "CHECK (Age < 25)",
+        "DEFAULT 18"
+      ],
+      "answer": 2,
+      "explanation": "The CHECK constraint allows you to specify a condition that must be met, in this case, ensuring that the 'Age' column is less than 25.",
+      "hint": "Think about how to enforce a specific rule on a column's values."
+    },
+    {
+      "id": 13,
+      "question": "Which SQL statement is used to retrieve data from a table?",
+      "options": [
+        "INSERT INTO",
+        "UPDATE",
+        "DELETE",
+        "SELECT"
+      ],
+      "answer": 3,
+      "explanation": "The SELECT statement is used to query and retrieve data from one or more tables.",
+      "hint": "Think about the action of asking for information."
+    },
+    {
+      "id": 14,
+      "question": "What is the potential issue with having a large number of indexes on a table?",
+      "options": [
+        "Faster SELECT queries but slower INSERT, UPDATE, and DELETE operations.",
+        "Slower SELECT queries but faster INSERT, UPDATE, and DELETE operations.",
+        "Reduced storage space.",
+        "Increased data integrity."
+      ],
+      "answer": 0,
+      "explanation": "While indexes speed up SELECT queries, they slow down INSERT, UPDATE, and DELETE operations because the indexes need to be updated as well.",
+      "hint": "Consider the overhead of maintaining indexes when data changes."
+    },
+    {
+      "id": 15,
+      "question": "You have two tables: 'Customers' (CustomerID, Name) and 'Orders' (OrderID, CustomerID, OrderDate). How would you establish a relationship between them?",
+      "options": [
+        "Make CustomerID a primary key in 'Customers' and a foreign key in 'Orders'.",
+        "Make OrderID a primary key in 'Orders' and a foreign key in 'Customers'.",
+        "Make Name a foreign key in 'Orders'.",
+        "There is no need for a relationship."
+      ],
+      "answer": 0,
+      "explanation": "The 'Customers' table should have CustomerID as its primary key, and the 'Orders' table should have CustomerID as a foreign key referencing the 'Customers' table.",
+      "hint": "Think about which table 'owns' the customer information."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between clustered and non-clustered indexes?",
+      "options": [
+        "Clustered indexes determine the physical order of data, while non-clustered indexes are separate structures.",
+        "Non-clustered indexes determine the physical order of data, while clustered indexes are separate structures.",
+        "Clustered indexes can only be created on one column, while non-clustered indexes can be created on multiple columns.",
+        "There is no difference."
+      ],
+      "answer": 0,
+      "explanation": "A clustered index determines the physical order of data in a table, while a non-clustered index is a separate structure that points to the data.",
+      "hint": "Consider how the index affects the actual storage of the data."
+    },
+    {
+      "id": 17,
+      "question": "Consider the following SQL: `INSERT INTO Products (ProductID, ProductName, Price) VALUES (1, 'Laptop', 1200);`. What does this statement do?",
+      "options": [
+        "Updates the price of a product with ProductID 1.",
+        "Deletes the product with ProductID 1.",
+        "Adds a new product with ProductID 1, ProductName 'Laptop', and Price 1200.",
+        "Retrieves the product with ProductID 1."
+      ],
+      "answer": 2,
+      "explanation": "This INSERT statement adds a new row to the 'Products' table with the specified values for ProductID, ProductName, and Price.",
+      "hint": "Think about the purpose of the INSERT INTO statement."
+    },
+    {
+      "id": 18,
+      "question": "What is the impact of not defining a primary key for a table?",
+      "options": [
+        "The table cannot store any data.",
+        "The table can store data, but it may contain duplicate rows.",
+        "The table will automatically have a clustered index created.",
+        "The table will be read-only."
+      ],
+      "answer": 1,
+      "explanation": "Without a primary key, the table can store data, but it's possible to have duplicate rows, which can lead to data integrity issues.",
+      "hint": "Consider what prevents duplicate entries in a table."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following best describes the purpose of normalization in database design?",
+      "options": [
+        "To improve query performance.",
+        "To reduce data redundancy and improve data integrity.",
+        "To increase storage space.",
+        "To simplify the database schema."
+      ],
+      "answer": 1,
+      "explanation": "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing large tables into smaller, more manageable ones.",
+      "hint": "Think about the problems caused by storing the same information in multiple places."
+    },
+    {
+      "id": 20,
+      "question": "What is a composite primary key?",
+      "options": [
+        "A primary key consisting of a single column.",
+        "A primary key consisting of multiple columns.",
+        "A primary key that is automatically generated.",
+        "A primary key that is a foreign key."
+      ],
+      "answer": 1,
+      "explanation": "A composite primary key is a primary key that consists of two or more columns, used when a single column is not sufficient to uniquely identify each row.",
+      "hint": "Think about situations where multiple pieces of information are needed to uniquely identify a record."
+    },
+    {
+      "id": 21,
+      "question": "You need to store email addresses in a 'Users' table. Which constraint is most appropriate to ensure that each email address is unique?",
+      "options": [
+        "NOT NULL",
+        "CHECK",
+        "UNIQUE",
+        "DEFAULT"
+      ],
+      "answer": 2,
+      "explanation": "The UNIQUE constraint ensures that all values in the email address column are distinct, preventing duplicate email addresses.",
+      "hint": "Think about the requirement for email addresses to be unique identifiers."
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between `WHERE` and `HAVING` clauses in SQL?",
+      "options": "`WHERE` filters rows *after* aggregation, `HAVING` filters rows *before* aggregation.",
+      "`WHERE` filters rows *before* aggregation, `HAVING` filters rows *after* aggregation.": "`WHERE` is used for string comparisons, `HAVING` is used for numeric comparisons.",
+      "They are interchangeable and can be used in the same way.": "",
+      "answer": 1,
+      "explanation": "`WHERE` filters rows before any grouping or aggregation occurs, while `HAVING` filters groups after aggregation.",
+      "hint": "Consider when you need to filter based on aggregated values."
+    },
+    {
+      "id": 23,
+      "question": "Consider a table 'Employees' with a 'Salary' column. You want to ensure that salaries are always positive. Which constraint would you use?",
+      "options": [
+        "NOT NULL",
+        "UNIQUE",
+        "CHECK (Salary > 0)",
+        "DEFAULT 0"
+      ],
+      "answer": 2,
+      "explanation": "The CHECK constraint allows you to specify a condition that must be met, in this case, ensuring that the 'Salary' column is greater than 0.",
+      "hint": "Think about how to enforce a range of valid values for a column."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the `ALTER TABLE` statement?",
+      "options": [
+        "To retrieve data from a table.",
+        "To insert data into a table.",
+        "To modify the structure of an existing table.",
+        "To delete data from a table."
+      ],
+      "answer": 2,
+      "explanation": "The `ALTER TABLE` statement is used to add, delete, or modify columns, constraints, or other aspects of an existing table's structure.",
+      "hint": "Think about how you would change a table after it has been created."
+    },
+    {
+      "id": 25,
+      "question": "What is the potential drawback of using a very wide table (many columns)?",
+      "options": [
+        "Faster query performance.",
+        "Reduced storage space.",
+        "Increased I/O operations and slower query performance.",
+        "Improved data integrity."
+      ],
+      "answer": 2,
+      "explanation": "Wide tables can lead to increased I/O operations because more data needs to be read from disk, resulting in slower query performance.",
+      "hint": "Consider the impact of reading a large amount of data from disk."
+    },
+    {
+      "id": 26,
+      "question": "You have a table 'Products' with columns 'ProductID' (primary key) and 'Category'. You want to quickly find all products in a specific category. What should you create?",
+      "options": [
+        "A clustered index on 'ProductID'.",
+        "A non-clustered index on 'Category'.",
+        "A primary key on 'Category'.",
+        "A foreign key on 'Category'."
+      ],
+      "answer": 1,
+      "explanation": "A non-clustered index on 'Category' will speed up queries that filter by category without affecting the physical order of the data.",
+      "hint": "Think about which column you frequently use in your search criteria."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `NULL` value in SQL?",
+      "options": [
+        "To represent a zero value.",
+        "To represent an empty string.",
+        "To represent a missing or unknown value.",
+        "To represent a default value."
+      ],
+      "answer": 2,
+      "explanation": "`NULL` represents a missing or unknown value, indicating that the data is not available or applicable.",
+      "hint": "Think about what happens when a piece of information is not known."
+    },
+    {
+      "id": 28,
+      "question": "Consider the following SQL: `SELECT * FROM Employees WHERE Age > 18 AND Department = 'Sales';`. What does this statement do?",
+      "options": [
+        "Retrieves all employees older than 18 from all departments.",
+        "Retrieves all employees from the 'Sales' department.",
+        "Retrieves all employees older than 18 from the 'Sales' department.",
+        "Retrieves all employees younger than 18 from the 'Sales' department."
+      ],
+      "answer": 2,
+      "explanation": "This SELECT statement retrieves all columns (*) from the 'Employees' table for employees who are older than 18 and belong to the 'Sales' department.",
+      "hint": "Think about how `AND` combines multiple conditions."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between `VARCHAR` and `CHAR` data types in SQL?",
+      "options": "`VARCHAR` stores fixed-length strings, `CHAR` stores variable-length strings.",
+      "`VARCHAR` stores variable-length strings, `CHAR` stores fixed-length strings.": "`VARCHAR` is used for numeric data, `CHAR` is used for text data.",
+      "They are interchangeable and can be used in the same way.": "",
+      "answer": 1,
+      "explanation": "`VARCHAR` stores variable-length strings, while `CHAR` stores fixed-length strings, padding shorter strings with spaces.",
+      "hint": "Consider how much storage space each data type uses."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of a view in SQL?",
+      "options": [
+        "To store data permanently.",
+        "To create a physical table.",
+        "To present a virtual table based on the result of a query.",
+        "To enforce data integrity."
+      ],
+      "answer": 2,
+      "explanation": "A view is a virtual table based on the result of a query, providing a simplified or customized view of the underlying data.",
+      "hint": "Think about how you can create a customized perspective on existing data."
+    },
+    {
+      "id": 31,
+      "question": "You are designing a database for an online store. You have tables for 'Customers', 'Products', and 'Orders'. What type of relationship exists between 'Customers' and 'Orders'?",
+      "options": [
+        "One-to-one",
+        "One-to-many",
+        "Many-to-many",
+        "None"
+      ],
+      "answer": 1,
+      "explanation": "A customer can place multiple orders, but each order is associated with only one customer, representing a one-to-many relationship.",
+      "hint": "Consider how many orders a single customer can have."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `JOIN` clause in SQL?",
+      "options": [
+        "To filter rows based on a condition.",
+        "To combine rows from two or more tables based on a related column.",
+        "To sort the results of a query.",
+        "To group rows with the same values."
+      ],
+      "answer": 1,
+      "explanation": "The `JOIN` clause combines rows from two or more tables based on a related column, allowing you to retrieve data from multiple tables in a single query.",
+      "hint": "Think about how you would combine information from different tables."
+    },
+    {
+      "id": 33,
+      "question": "What is the difference between `INNER JOIN` and `LEFT JOIN`?",
+      "options": "`INNER JOIN` returns all rows from both tables, `LEFT JOIN` returns only matching rows.",
+      "`INNER JOIN` returns only matching rows, `LEFT JOIN` returns all rows from the left table and matching rows from the right table.": "`INNER JOIN` is faster than `LEFT JOIN`.",
+      "They are interchangeable.": "",
+      "answer": 1,
+      "explanation": "`INNER JOIN` returns only rows where there is a match in both tables, while `LEFT JOIN` returns all rows from the left table and matching rows from the right table.",
+      "hint": "Consider what happens when there is no match in the right table."
+    },
+    {
+      "id": 34,
+      "question": "You have a table 'Products' with a 'Price' column. You want to find the average price of all products. Which SQL function would you use?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "AVG()",
+        "MAX()"
+      ],
+      "answer": 2,
+      "explanation": "The `AVG()` function calculates the average value of a numeric column.",
+      "hint": "Think about what function calculates the central tendency of a set of numbers."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `GROUP BY` clause in SQL?",
+      "options": [
+        "To sort the results of a query.",
+        "To filter rows based on a condition.",
+        "To group rows with the same values in one or more columns.",
+        "To join tables together."
+      ],
+      "answer": 2,
+      "explanation": "The `GROUP BY` clause groups rows with the same values in one or more columns, allowing you to perform aggregate functions on each group.",
+      "hint": "Think about how you would calculate statistics for different categories of data."
+    },
+    {
+      "id": 36,
+      "question": "What is the potential issue with using a `LIKE` clause with a leading wildcard (e.g., `%keyword`)?",
+      "options": [
+        "It can significantly slow down query performance.",
+        "It can only be used with numeric columns.",
+        "It can cause errors if the keyword is too long.",
+        "It can only be used with exact matches."
+      ],
+      "answer": 0,
+      "explanation": "Using a leading wildcard in a `LIKE` clause prevents the database from using indexes, resulting in a full table scan and slower query performance.",
+      "hint": "Consider how the database searches for patterns with and without wildcards."
+    },
+    {
+      "id": 37,
+      "question": "You need to store a date and time value in SQL. Which data type is most appropriate?",
+      "options": [
+        "VARCHAR",
+        "INT",
+        "DATE",
+        "DATETIME"
+      ],
+      "answer": 3,
+      "explanation": "The `DATETIME` data type is specifically designed to store both date and time values.",
+      "hint": "Think about the type of data that includes both a date and a time."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `UNION` operator in SQL?",
+      "options": [
+        "To combine rows from two or more tables with different schemas.",
+        "To combine rows from two or more tables with the same schemas.",
+        "To join tables based on a related column.",
+        "To filter rows based on a condition."
+      ],
+      "answer": 1,
+      "explanation": "The `UNION` operator combines the result sets of two or more `SELECT` statements with the same number of columns and compatible data types.",
+      "hint": "Think about how you would stack the results of multiple queries on top of each other."
+    },
+    {
+      "id": 39,
+      "question": "Consider a table 'Orders' with columns 'OrderID', 'CustomerID', and 'OrderDate'. You want to find the most recent order for each customer. How would you achieve this using SQL?",
+      "options": [
+        "Using a simple `SELECT` statement.",
+        "Using `GROUP BY` and `MAX()`.",
+        "Using `JOIN`.",
+        "Using `UNION`."
+      ],
+      "answer": 1,
+      "explanation": "You can use `GROUP BY CustomerID` to group orders by customer and `MAX(OrderDate)` to find the most recent order date for each customer.",
+      "hint": "Think about how to find the maximum value within each group."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of transaction control commands like `BEGIN TRANSACTION`, `COMMIT`, and `ROLLBACK`?",
+      "options": [
+        "To speed up query performance.",
+        "To ensure data consistency and reliability.",
+        "To create backups of the database.",
+        "To modify the database schema."
+      ],
+      "answer": 1,
+      "explanation": "Transaction control commands ensure that a series of database operations are treated as a single unit of work, either completing successfully (COMMIT) or being undone (ROLLBACK) to maintain data consistency.",
+      "hint": "Think about how to ensure that a series of changes are either all applied or none are."
+    },
+    {
+      "id": 41,
+      "question": "What is the difference between `DELETE` and `TRUNCATE` statements in SQL?",
+      "options": "`DELETE` removes rows based on a condition, `TRUNCATE` removes all rows quickly.",
+      "`DELETE` removes all rows quickly, `TRUNCATE` removes rows based on a condition.": "`DELETE` cannot be rolled back, `TRUNCATE` can.",
+      "They are interchangeable.": "",
+      "answer": 0,
+      "explanation": "`DELETE` removes rows based on a specified condition and can be rolled back, while `TRUNCATE` removes all rows from a table quickly and cannot be rolled back.",
+      "hint": "Consider the speed and rollback capabilities of each statement."
+    },
+    {
+      "id": 42,
+      "question": "You have a table 'Logins' with columns 'Username' and 'Password'. What security measure should you *always* implement when storing passwords?",
+      "options": [
+        "Store passwords in plain text.",
+        "Store passwords using simple encryption.",
+        "Store passwords using a one-way hashing algorithm with salting.",
+        "Store passwords in a separate file."
+      ],
+      "answer": 2,
+      "explanation": "Storing passwords using a one-way hashing algorithm with salting prevents attackers from easily recovering the original passwords even if they gain access to the database.",
+      "hint": "Think about how to protect sensitive information from unauthorized access."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of a stored procedure?",
+      "options": [
+        "To store data permanently.",
+        "To create a physical table.",
+        "To encapsulate a set of SQL statements for reuse.",
+        "To enforce data integrity."
+      ],
+      "answer": 2,
+      "explanation": "A stored procedure is a precompiled set of SQL statements that can be executed as a single unit, promoting code reuse and improving performance.",
+      "hint": "Think about how you can create reusable blocks of SQL code."
+    },
+    {
+      "id": 44,
+      "question": "What is the potential drawback of using too many stored procedures?",
+      "options": [
+        "Reduced code reusability.",
+        "Increased database size.",
+        "Difficulty in debugging and maintaining the database.",
+        "Slower query performance."
+      ],
+      "answer": 2,
+      "explanation": "A large number of stored procedures can make the database more complex and difficult to debug and maintain.",
+      "hint": "Consider the challenges of managing a large codebase."
+    },
+    {
+      "id": 45,
+      "question": "You are designing a database for a library. You have tables for 'Books' and 'Authors'. An author can write multiple books. What type of relationship exists between 'Books' and 'Authors'?",
+      "options": [
+        "One-to-one",
+        "One-to-many",
+        "Many-to-many",
+        "None"
+      ],
+      "answer": 2,
+      "explanation": "An author can write multiple books, and a book can have multiple authors, representing a many-to-many relationship.",
+      "hint": "Consider how many authors a single book can have."
+    },
+    {
+      "id": 46,
+      "question": "How would you implement a many-to-many relationship between 'Books' and 'Authors' in a relational database?",
+      "options": [
+        "Using a foreign key in both tables.",
+        "Using a junction table.",
+        "Using a primary key in both tables.",
+        "Using a view."
+      ],
+      "answer": 1,
+      "explanation": "A many-to-many relationship is implemented using a junction table (also called an associative table) that contains foreign keys referencing both tables.",
+      "hint": "Think about how to create a table that links two other tables together."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `EXPLAIN` statement in SQL?",
+      "options": [
+        "To execute a query.",
+        "To retrieve data from a table.",
+        "To analyze the execution plan of a query.",
+        "To modify the database schema."
+      ],
+      "answer": 2,
+      "explanation": "The `EXPLAIN` statement provides information about how the database will execute a query, helping you identify potential performance bottlenecks.",
+      "hint": "Think about how you can understand the steps the database takes to execute a query."
+    },
+    {
+      "id": 48,
+      "question": "You have a table 'Employees' with a 'HireDate' column. You want to find all employees hired in the year 2023. Which SQL statement would you use?",
+      "options": [
+        "`SELECT * FROM Employees WHERE HireDate = '2023';`",
+        "`SELECT * FROM Employees WHERE YEAR(HireDate) = 2023;`",
+        "`SELECT * FROM Employees WHERE MONTH(HireDate) = 12;`",
+        "`SELECT * FROM Employees WHERE HireDate LIKE '2023%';`"
+      ],
+      "answer": 1,
+      "explanation": "The `YEAR()` function extracts the year from a date value, allowing you to filter employees hired in a specific year.",
+      "hint": "Think about how to extract the year from a date value."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of database indexing?",
+      "options": [
+        "To reduce the size of the database.",
+        "To enforce data integrity.",
+        "To speed up data retrieval operations.",
+        "To prevent data loss."
+      ],
+      "answer": 2,
+      "explanation": "Database indexing creates data structures that allow the database to quickly locate and retrieve specific rows without scanning the entire table.",
+      "hint": "Think about how you would quickly find a specific word in a book."
+    },
+    {
+      "id": 50,
+      "question": "You are tasked with designing a database for a social media platform. What considerations are most important regarding scalability and performance?",
+      "options": [
+        "Using only `VARCHAR` data types.",
+        "Minimizing the use of indexes.",
+        "Choosing appropriate data types and indexing strategies.",
+        "Storing all data in a single table."
+      ],
+      "answer": 2,
+      "explanation": "Scalability and performance require careful consideration of data types (to minimize storage) and indexing strategies (to optimize query performance).",
+      "hint": "Think about how the database will handle a large number of users and data."
+    }
+  ]
+}

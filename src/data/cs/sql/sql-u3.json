@@ -1,0 +1,668 @@
+{
+  "subject": "SQL and Databases",
+  "unit": "Unit 3: Filtering, Updating and Deleting",
+  "unitId": "sql-u3",
+  "categoryId": "cs",
+  "topics": [
+    "WHERE clause — filtering with =, >, <, >=, <=, <>, LIKE, IN, BETWEEN",
+    "Why WHERE is critically important",
+    "UPDATE — updating rows in a table",
+    "DELETE — deleting rows and entire tables",
+    "DROP TABLE vs TRUNCATE vs DELETE",
+    "Sorting results — ORDER BY ASC and DESC",
+    "Limiting results — LIMIT and OFFSET"
+  ],
+  "generatedAt": "2026-03-25T07:37:18Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which SQL clause is fundamentally used to filter records based on specified conditions?",
+      "options": [
+        "SELECT",
+        "FROM",
+        "WHERE",
+        "GROUP BY"
+      ],
+      "answer": 2,
+      "explanation": "The WHERE clause is the standard SQL mechanism for filtering rows based on conditions.",
+      "hint": "Think about which clause comes after the FROM clause when you want to select specific data."
+    },
+    {
+      "id": 2,
+      "question": "What does the operator '<>' represent in a WHERE clause?",
+      "options": [
+        "Greater than",
+        "Less than",
+        "Equal to",
+        "Not equal to"
+      ],
+      "answer": 3,
+      "explanation": "'<>' is the standard SQL operator for 'not equal to'.",
+      "hint": "Consider what operator would be used to find values that *aren't* a specific value."
+    },
+    {
+      "id": 3,
+      "question": "Which SQL statement is used to modify existing data within a table?",
+      "options": [
+        "INSERT",
+        "SELECT",
+        "UPDATE",
+        "DELETE"
+      ],
+      "answer": 2,
+      "explanation": "The UPDATE statement is specifically designed to modify existing data in a table.",
+      "hint": "Think about what you would use if you needed to change a value in a row."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary difference between DROP TABLE and TRUNCATE TABLE?",
+      "options": [
+        "DROP TABLE removes the table structure, TRUNCATE removes the data.",
+        "TRUNCATE removes the table structure, DROP TABLE removes the data.",
+        "Both remove the table structure and data, but DROP TABLE is faster.",
+        "Both remove the table structure and data, but TRUNCATE is faster."
+      ],
+      "answer": 0,
+      "explanation": "DROP TABLE removes the table definition, while TRUNCATE removes all rows but keeps the table structure.",
+      "hint": "Consider what happens to the table's definition after each operation."
+    },
+    {
+      "id": 5,
+      "question": "Which keyword is used to sort the result-set of a query?",
+      "options": [
+        "FILTER",
+        "ORDER",
+        "SORT",
+        "ARRANGE"
+      ],
+      "answer": 1,
+      "explanation": "ORDER BY is the standard SQL keyword for sorting results.",
+      "hint": "Think about how you would arrange the output of a query in a specific order."
+    },
+    {
+      "id": 6,
+      "question": "What does 'ORDER BY column_name DESC' do?",
+      "options": [
+        "Sorts in ascending order",
+        "Sorts in descending order",
+        "Filters for descending values",
+        "Groups by descending values"
+      ],
+      "answer": 1,
+      "explanation": "'DESC' keyword sorts the result set in descending order.",
+      "hint": "Consider what 'DESC' implies in terms of ordering."
+    },
+    {
+      "id": 7,
+      "question": "Which clause is used to restrict the number of rows returned by a query?",
+      "options": [
+        "WHERE",
+        "HAVING",
+        "LIMIT",
+        "GROUP BY"
+      ],
+      "answer": 2,
+      "explanation": "The LIMIT clause restricts the number of rows returned by a query.",
+      "hint": "Think about how you would only show the top few results."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the OFFSET clause when used with LIMIT?",
+      "options": [
+        "Specifies the maximum number of rows to return",
+        "Specifies the starting row to return",
+        "Filters rows based on an offset value",
+        "Sorts rows based on an offset value"
+      ],
+      "answer": 1,
+      "explanation": "OFFSET specifies the number of rows to skip before starting to return rows.",
+      "hint": "Consider how you would implement pagination with SQL."
+    },
+    {
+      "id": 9,
+      "question": "Which of the following WHERE clause conditions would correctly select all employees whose salary is between 50000 and 70000 (inclusive)?",
+      "options": [
+        "salary > 50000 AND salary < 70000",
+        "salary >= 50000 AND salary <= 70000",
+        "salary = 50000 OR salary = 70000",
+        "salary LIKE '50000-70000'"
+      ],
+      "answer": 1,
+      "explanation": "BETWEEN is inclusive, so using >= and <= correctly defines the range.",
+      "hint": "Think about whether the boundary values (50000 and 70000) should be included."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the LIKE operator in a WHERE clause?",
+      "options": [
+        "To compare exact values",
+        "To perform pattern matching",
+        "To check for null values",
+        "To perform arithmetic comparisons"
+      ],
+      "answer": 1,
+      "explanation": "The LIKE operator is used for pattern matching using wildcard characters.",
+      "hint": "Consider how you would search for strings that contain a specific substring."
+    },
+    {
+      "id": 11,
+      "question": "Which wildcard character represents zero or more characters in a LIKE clause?",
+      "options": [
+        "#",
+        "%",
+        "_",
+        "$"
+      ],
+      "answer": 1,
+      "explanation": "The '%' wildcard represents zero or more characters.",
+      "hint": "Think about how you would find all names starting with 'A'."
+    },
+    {
+      "id": 12,
+      "question": "What does the IN operator do in a WHERE clause?",
+      "options": [
+        "Checks if a value is within a range",
+        "Checks if a value exists in a list",
+        "Checks if a value is null",
+        "Checks if a value is not null"
+      ],
+      "answer": 1,
+      "explanation": "The IN operator checks if a value matches any value in a specified list.",
+      "hint": "Consider how you would find all employees with IDs 1, 5, or 10."
+    },
+    {
+      "id": 13,
+      "question": "Why is using a WHERE clause critically important in UPDATE and DELETE statements?",
+      "options": [
+        "It improves query performance",
+        "It ensures data integrity by specifying which rows to modify/delete",
+        "It automatically creates a backup of the table",
+        "It allows for sorting of the results"
+      ],
+      "answer": 1,
+      "explanation": "Without a WHERE clause, UPDATE and DELETE statements will affect *all* rows in the table, leading to unintended data loss or modification.",
+      "hint": "Imagine deleting all records from a table without specifying any conditions."
+    },
+    {
+      "id": 14,
+      "question": "Consider a table 'Products' with columns 'ProductID', 'ProductName', and 'Price'. Which query updates the price of the product with ProductID = 123 to 99.99?",
+      "options": [
+        "UPDATE Products SET Price = 99.99 WHERE ProductID = 123",
+        "UPDATE Price = 99.99 WHERE ProductID = 123",
+        "SELECT Price = 99.99 WHERE ProductID = 123",
+        "INSERT INTO Products (Price) VALUES (99.99) WHERE ProductID = 123"
+      ],
+      "answer": 0,
+      "explanation": "The correct syntax for updating a table is UPDATE table_name SET column_name = new_value WHERE condition.",
+      "hint": "Remember the basic structure of an UPDATE statement."
+    },
+    {
+      "id": 15,
+      "question": "Which statement deletes all rows from a table but keeps the table structure intact?",
+      "options": [
+        "DROP TABLE table_name",
+        "DELETE FROM table_name",
+        "TRUNCATE TABLE table_name",
+        "REMOVE TABLE table_name"
+      ],
+      "answer": 2,
+      "explanation": "TRUNCATE TABLE removes all rows but preserves the table definition.",
+      "hint": "Think about which command would be fastest for emptying a large table."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between DELETE FROM table_name and DELETE FROM table_name WHERE condition?",
+      "options": [
+        "They both do the same thing",
+        "The first deletes all rows, the second deletes rows matching the condition",
+        "The first deletes the table, the second deletes rows",
+        "The first is faster, the second is slower"
+      ],
+      "answer": 1,
+      "explanation": "Without a WHERE clause, DELETE removes all rows. With a WHERE clause, it removes only rows that satisfy the condition.",
+      "hint": "Consider the impact of omitting the WHERE clause."
+    },
+    {
+      "id": 17,
+      "question": "Given a table 'Employees' with a 'Department' column, how would you select all employees who are in either the 'Sales' or 'Marketing' department?",
+      "options": [
+        "WHERE Department = 'Sales' OR Department = 'Marketing'",
+        "WHERE Department IN ('Sales', 'Marketing')",
+        "WHERE Department LIKE 'Sales' OR 'Marketing'",
+        "WHERE Department = 'Sales' AND Department = 'Marketing'"
+      ],
+      "answer": 1,
+      "explanation": "The IN operator provides a concise way to check if a value exists within a list of values.",
+      "hint": "Think about a more efficient way to write multiple OR conditions."
+    },
+    {
+      "id": 18,
+      "question": "Which query retrieves the top 5 highest salaries from the 'Employees' table?",
+      "options": [
+        "SELECT * FROM Employees ORDER BY Salary DESC LIMIT 5",
+        "SELECT * FROM Employees LIMIT 5 ORDER BY Salary DESC",
+        "SELECT TOP 5 * FROM Employees ORDER BY Salary DESC",
+        "SELECT * FROM Employees WHERE Salary > (SELECT AVG(Salary) FROM Employees) LIMIT 5"
+      ],
+      "answer": 0,
+      "explanation": "ORDER BY sorts the results, and LIMIT restricts the number of rows returned.",
+      "hint": "Remember the order in which you need to apply sorting and limiting."
+    },
+    {
+      "id": 19,
+      "question": "How would you select employees whose names start with 'J' using the LIKE operator?",
+      "options": [
+        "WHERE Name = 'J%'",
+        "WHERE Name LIKE 'J%'",
+        "WHERE Name LIKE '%J'",
+        "WHERE Name = '%J%'"
+      ],
+      "answer": 1,
+      "explanation": "The LIKE operator with 'J%' matches any name starting with 'J'.",
+      "hint": "Remember that '%' represents zero or more characters."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the BETWEEN operator when used with a WHERE clause?",
+      "options": [
+        "To check for exact matches",
+        "To check if a value falls within a specified range (inclusive)",
+        "To check if a value is null",
+        "To check if a value is not null"
+      ],
+      "answer": 1,
+      "explanation": "The BETWEEN operator checks if a value is within a specified range, including the boundary values.",
+      "hint": "Consider how you would find all values greater than or equal to one value and less than or equal to another."
+    },
+    {
+      "id": 21,
+      "question": "You need to update the email address for a specific customer. Which is the most secure and efficient way to do this?",
+      "options": [
+        "UPDATE Customers SET Email = 'new_email' WHERE CustomerID = 123",
+        "DELETE FROM Customers WHERE CustomerID = 123; INSERT INTO Customers (CustomerID, Email) VALUES (123, 'new_email')",
+        "SELECT Email FROM Customers WHERE CustomerID = 123; UPDATE Customers SET Email = 'new_email' WHERE CustomerID = 123",
+        "UPDATE Customers SET Email = 'new_email'"
+      ],
+      "answer": 0,
+      "explanation": "Directly updating the email address with a WHERE clause is the most efficient and avoids unnecessary operations.",
+      "hint": "Think about minimizing the number of database operations."
+    },
+    {
+      "id": 22,
+      "question": "What happens if you try to DELETE FROM a table without a WHERE clause?",
+      "options": [
+        "An error is raised",
+        "All rows are deleted from the table",
+        "Only the first row is deleted",
+        "The table is dropped"
+      ],
+      "answer": 1,
+      "explanation": "Without a WHERE clause, the DELETE statement removes all rows from the table.",
+      "hint": "Consider the potential consequences of deleting all data."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is the correct way to select all products with a price greater than or equal to 100 and less than or equal to 200?",
+      "options": [
+        "WHERE Price > 100 AND Price < 200",
+        "WHERE Price >= 100 AND Price <= 200",
+        "WHERE Price BETWEEN 100 AND 200",
+        "WHERE Price > 100 OR Price < 200"
+      ],
+      "answer": 2,
+      "explanation": "The BETWEEN operator provides a concise way to specify a range of values.",
+      "hint": "Consider the most readable and efficient way to express this condition."
+    },
+    {
+      "id": 24,
+      "question": "You have a table 'Orders' with a 'OrderDate' column. How would you select all orders placed in the month of January 2023?",
+      "options": [
+        "WHERE OrderDate = 'January 2023'",
+        "WHERE OrderDate LIKE '2023-01%'",
+        "WHERE OrderDate BETWEEN '2023-01-01' AND '2023-01-31'",
+        "WHERE YEAR(OrderDate) = 2023 AND MONTH(OrderDate) = 1"
+      ],
+      "answer": 2,
+      "explanation": "Using BETWEEN with specific date ranges is a reliable way to filter by date.",
+      "hint": "Think about how to define the start and end dates of January 2023."
+    },
+    {
+      "id": 25,
+      "question": "What is the primary advantage of using TRUNCATE TABLE over DELETE FROM table_name?",
+      "options": [
+        "TRUNCATE TABLE is more secure",
+        "TRUNCATE TABLE is faster",
+        "TRUNCATE TABLE allows for a WHERE clause",
+        "TRUNCATE TABLE creates a backup"
+      ],
+      "answer": 1,
+      "explanation": "TRUNCATE TABLE is generally faster because it deallocates the data pages without logging individual row deletions.",
+      "hint": "Consider the underlying mechanisms of each operation."
+    },
+    {
+      "id": 26,
+      "question": "Which SQL statement is used to remove a table's definition and all its data?",
+      "options": [
+        "DELETE TABLE",
+        "TRUNCATE TABLE",
+        "DROP TABLE",
+        "REMOVE TABLE"
+      ],
+      "answer": 2,
+      "explanation": "DROP TABLE completely removes the table structure and all associated data.",
+      "hint": "Think about the most drastic action you can take on a table."
+    },
+    {
+      "id": 27,
+      "question": "You need to find all customers whose last names contain the letter 's'. How would you write the WHERE clause?",
+      "options": [
+        "WHERE LastName = '%s%'",
+        "WHERE LastName LIKE '%s%'",
+        "WHERE LastName = 's%'",
+        "WHERE LastName LIKE 's%'"
+      ],
+      "answer": 1,
+      "explanation": "The LIKE operator with '%s%' matches any string containing the letter 's' anywhere within the last name.",
+      "hint": "Remember that '%' represents zero or more characters."
+    },
+    {
+      "id": 28,
+      "question": "What is the effect of using LIMIT 10 OFFSET 20 in a query?",
+      "options": [
+        "Returns the first 10 rows",
+        "Returns the next 10 rows after skipping the first 20",
+        "Returns the last 10 rows",
+        "Returns all rows"
+      ],
+      "answer": 1,
+      "explanation": "OFFSET skips the specified number of rows, and LIMIT restricts the number of rows returned.",
+      "hint": "Think about how this would be used for pagination."
+    },
+    {
+      "id": 29,
+      "question": "Consider a table 'Products' with a 'Category' column. How would you select all products that are NOT in the 'Electronics' or 'Clothing' categories?",
+      "options": [
+        "WHERE Category != 'Electronics' AND Category != 'Clothing'",
+        "WHERE Category NOT IN ('Electronics', 'Clothing')",
+        "WHERE Category = 'Electronics' OR Category = 'Clothing'",
+        "WHERE Category LIKE '%Electronics%' OR '%Clothing%'"
+      ],
+      "answer": 1,
+      "explanation": "The NOT IN operator checks if a value does not exist within a specified list.",
+      "hint": "Think about how to negate an IN condition."
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is the most efficient way to update multiple rows in a table based on a condition?",
+      "options": [
+        "Using a loop and executing an UPDATE statement for each row",
+        "Using a single UPDATE statement with a WHERE clause",
+        "Using multiple DELETE and INSERT statements",
+        "Using a cursor to iterate through the rows"
+      ],
+      "answer": 1,
+      "explanation": "A single UPDATE statement with a WHERE clause is the most efficient way to update multiple rows.",
+      "hint": "Consider minimizing the number of database interactions."
+    },
+    {
+      "id": 31,
+      "question": "You have a table 'Logs' with a 'Timestamp' column. How would you select all log entries from the last 7 days?",
+      "options": [
+        "WHERE Timestamp > NOW() - 7",
+        "WHERE Timestamp BETWEEN NOW() - 7 AND NOW()",
+        "WHERE Timestamp LIKE '%7%'",
+        "WHERE YEAR(Timestamp) = YEAR(NOW()) AND MONTH(Timestamp) = MONTH(NOW()) - 7"
+      ],
+      "answer": 1,
+      "explanation": "Subtracting 7 from NOW() gives you the timestamp 7 days ago.",
+      "hint": "Think about how to represent a date range dynamically."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the WHERE clause in a DELETE statement?",
+      "options": [
+        "To sort the rows before deleting",
+        "To specify which rows to delete",
+        "To limit the number of rows deleted",
+        "To create a backup of the deleted rows"
+      ],
+      "answer": 1,
+      "explanation": "The WHERE clause in a DELETE statement specifies the conditions that rows must meet to be deleted.",
+      "hint": "Consider the consequences of deleting rows without a condition."
+    },
+    {
+      "id": 33,
+      "question": "Which operator is used to match a pattern in a string column where a single character can be replaced by a wildcard?",
+      "options": [
+        "%",
+        "*",
+        "_",
+        "#"
+      ],
+      "answer": 2,
+      "explanation": "The underscore (_) wildcard represents a single character.",
+      "hint": "Think about how you would find all names that start with 'A' and have any single character as the second letter."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between DELETE and TRUNCATE in terms of transaction logging?",
+      "options": [
+        "DELETE is fully logged, TRUNCATE is minimally logged",
+        "TRUNCATE is fully logged, DELETE is minimally logged",
+        "Both are fully logged",
+        "Both are minimally logged"
+      ],
+      "answer": 0,
+      "explanation": "DELETE logs each row deletion, while TRUNCATE only logs the deallocation of the data pages.",
+      "hint": "Consider the performance implications of logging each row deletion."
+    },
+    {
+      "id": 35,
+      "question": "You need to retrieve the 10 oldest records from a table 'Customers' ordered by their 'RegistrationDate'. Which query would you use?",
+      "options": [
+        "SELECT * FROM Customers ORDER BY RegistrationDate LIMIT 10",
+        "SELECT * FROM Customers ORDER BY RegistrationDate DESC LIMIT 10",
+        "SELECT * FROM Customers LIMIT 10 ORDER BY RegistrationDate",
+        "SELECT * FROM Customers ORDER BY RegistrationDate ASC LIMIT 10"
+      ],
+      "answer": 3,
+      "explanation": "ORDER BY sorts the results, and LIMIT restricts the number of rows returned. ASC is the default, so it's not strictly necessary.",
+      "hint": "Think about the order in which you need to apply sorting and limiting."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the ORDER BY clause?",
+      "options": [
+        "To filter rows",
+        "To sort rows",
+        "To group rows",
+        "To limit rows"
+      ],
+      "answer": 1,
+      "explanation": "The ORDER BY clause is used to sort the result set of a query.",
+      "hint": "Think about how you would arrange the output of a query in a specific order."
+    },
+    {
+      "id": 37,
+      "question": "Which of the following is the correct syntax for updating multiple columns in a single UPDATE statement?",
+      "options": [
+        "UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition",
+        "UPDATE table_name SET column1 = value1; column2 = value2 WHERE condition",
+        "UPDATE table_name column1 = value1, column2 = value2 WHERE condition",
+        "UPDATE table_name (column1, column2) = (value1, value2) WHERE condition"
+      ],
+      "answer": 0,
+      "explanation": "You can update multiple columns in a single UPDATE statement by separating the column-value pairs with commas.",
+      "hint": "Consider how you would update multiple fields at once."
+    },
+    {
+      "id": 38,
+      "question": "What is the effect of using OFFSET without LIMIT?",
+      "options": [
+        "It returns all rows starting from the specified offset",
+        "It returns an error",
+        "It returns the first row",
+        "It returns no rows"
+      ],
+      "answer": 0,
+      "explanation": "Without LIMIT, OFFSET will skip the specified number of rows and return all remaining rows.",
+      "hint": "Consider what happens when you skip a certain number of rows but don't limit the total number of returned rows."
+    },
+    {
+      "id": 39,
+      "question": "You need to delete all rows from a table 'TempData' where the 'DateCreated' is older than 30 days. How would you write the DELETE statement?",
+      "options": [
+        "DELETE FROM TempData WHERE DateCreated < NOW() - 30",
+        "DELETE FROM TempData WHERE DateCreated > NOW() - 30",
+        "DELETE FROM TempData WHERE DateCreated = NOW() - 30",
+        "DELETE FROM TempData WHERE DateCreated BETWEEN NOW() - 30 AND NOW()"
+      ],
+      "answer": 0,
+      "explanation": "Subtracting 30 from NOW() gives you the timestamp 30 days ago, and '<' selects dates older than that.",
+      "hint": "Think about how to represent a date range dynamically."
+    },
+    {
+      "id": 40,
+      "question": "What is the primary difference between using DELETE and TRUNCATE for removing data from a large table in terms of performance?",
+      "options": [
+        "DELETE is faster because it doesn't log individual row deletions",
+        "TRUNCATE is faster because it doesn't log individual row deletions",
+        "DELETE is faster because it uses indexes",
+        "TRUNCATE is faster because it uses indexes"
+      ],
+      "answer": 1,
+      "explanation": "TRUNCATE is faster because it deallocates the data pages without logging individual row deletions, while DELETE logs each deletion.",
+      "hint": "Consider the overhead of transaction logging."
+    },
+    {
+      "id": 41,
+      "question": "Which SQL clause is used to group rows that have the same values in specified columns?",
+      "options": [
+        "WHERE",
+        "ORDER BY",
+        "GROUP BY",
+        "HAVING"
+      ],
+      "answer": 2,
+      "explanation": "The GROUP BY clause groups rows with the same values in specified columns.",
+      "hint": "Think about how you would calculate aggregate functions for each group."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the HAVING clause?",
+      "options": [
+        "To filter rows before grouping",
+        "To filter groups after grouping",
+        "To sort groups",
+        "To limit the number of groups"
+      ],
+      "answer": 1,
+      "explanation": "The HAVING clause filters groups based on aggregate functions.",
+      "hint": "Consider how you would filter based on the result of a GROUP BY operation."
+    },
+    {
+      "id": 43,
+      "question": "You want to find all products with a price greater than the average price of all products. How would you write the WHERE clause?",
+      "options": [
+        "WHERE Price > AVG(Price)",
+        "WHERE Price >= AVG(Price)",
+        "WHERE Price > (SELECT AVG(Price) FROM Products)",
+        "WHERE Price >= (SELECT AVG(Price) FROM Products)"
+      ],
+      "answer": 2,
+      "explanation": "A subquery is used to calculate the average price, and the WHERE clause compares the price to that value.",
+      "hint": "Think about how to use a subquery to calculate a value for comparison."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between a clustered index and a non-clustered index in terms of data storage?",
+      "options": [
+        "A clustered index determines the physical order of data, a non-clustered index is a separate structure",
+        "A non-clustered index determines the physical order of data, a clustered index is a separate structure",
+        "Both determine the physical order of data",
+        "Both are separate structures"
+      ],
+      "answer": 0,
+      "explanation": "A clustered index physically sorts the data, while a non-clustered index is a separate structure that points to the data.",
+      "hint": "Consider how each index type affects the physical organization of the table."
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is a potential drawback of using too many indexes on a table?",
+      "options": [
+        "Improved query performance",
+        "Reduced storage space",
+        "Slower write operations (INSERT, UPDATE, DELETE)",
+        "Faster read operations"
+      ],
+      "answer": 2,
+      "explanation": "Each index needs to be updated when data is modified, which can slow down write operations.",
+      "hint": "Consider the overhead of maintaining indexes."
+    },
+    {
+      "id": 46,
+      "question": "You need to update the 'Salary' of all employees in the 'Sales' department by 10%. How would you write the UPDATE statement?",
+      "options": [
+        "UPDATE Employees SET Salary = Salary * 1.10 WHERE Department = 'Sales'",
+        "UPDATE Employees SET Salary = Salary + 10 WHERE Department = 'Sales'",
+        "UPDATE Employees WHERE Department = 'Sales' SET Salary = Salary * 1.10",
+        "UPDATE Salary = Salary * 1.10 WHERE Department = 'Sales'"
+      ],
+      "answer": 0,
+      "explanation": "The correct syntax is UPDATE table_name SET column_name = new_value WHERE condition.",
+      "hint": "Remember the basic structure of an UPDATE statement."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of using a foreign key constraint?",
+      "options": [
+        "To ensure data uniqueness",
+        "To enforce referential integrity",
+        "To improve query performance",
+        "To limit the size of a column"
+      ],
+      "answer": 1,
+      "explanation": "A foreign key constraint ensures that relationships between tables are maintained.",
+      "hint": "Consider how to prevent orphaned records."
+    },
+    {
+      "id": 48,
+      "question": "You have two tables: 'Customers' and 'Orders'. 'Orders' has a foreign key referencing 'Customers'. What happens if you try to delete a customer who has associated orders?",
+      "options": [
+        "The customer is deleted, and the orders are automatically deleted",
+        "The deletion is prevented by the foreign key constraint",
+        "The orders are updated to point to a default customer",
+        "The deletion is allowed, but a warning is issued"
+      ],
+      "answer": 1,
+      "explanation": "The foreign key constraint prevents deleting a record that is referenced by another table.",
+      "hint": "Consider the implications of referential integrity."
+    },
+    {
+      "id": 49,
+      "question": "What is the difference between a primary key and a unique key?",
+      "options": [
+        "A primary key cannot be null, a unique key can be null",
+        "A unique key cannot be null, a primary key can be null",
+        "Both can be null",
+        "Both cannot be null"
+      ],
+      "answer": 0,
+      "explanation": "A primary key uniquely identifies each row and cannot contain null values, while a unique key allows one null value.",
+      "hint": "Consider the requirements for uniquely identifying records."
+    },
+    {
+      "id": 50,
+      "question": "You are designing a database for an e-commerce website. You need to store information about products, categories, and orders. What is the best approach to model the relationships between these entities?",
+      "options": [
+        "Use a single table with all the information",
+        "Use separate tables for products, categories, and orders with foreign keys to establish relationships",
+        "Use a comma-separated list of categories in the products table",
+        "Use a text file to store the relationships"
+      ],
+      "answer": 1,
+      "explanation": "Using separate tables with foreign keys is the standard approach for relational database design, ensuring data integrity and flexibility.",
+      "hint": "Think about the principles of normalization and relational database design."
+    }
+  ]
+}

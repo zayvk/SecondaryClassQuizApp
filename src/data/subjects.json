@@ -3,10 +3,7 @@
     "label": "Cambridge · Grade 9",
     "subjects": [
       {
-        "id": "mathematics",
-        "name": "Mathematics",
-        "icon": "📐",
-        "units": 15,
+        "id": "mathematics", "name": "Mathematics", "icon": "📐", "units": 15,
         "unitList": [
           { "id": "math-u1",  "name": "Number and Calculation" },
           { "id": "math-u2",  "name": "Expressions and Formulae" },
@@ -26,10 +23,7 @@
         ]
       },
       {
-        "id": "science",
-        "name": "Science",
-        "icon": "🔬",
-        "units": 9,
+        "id": "science", "name": "Science", "icon": "🔬", "units": 9,
         "unitList": [
           { "id": "sci-u1", "name": "Photosynthesis and the Carbon Cycle" },
           { "id": "sci-u2", "name": "Properties of Materials" },
@@ -43,10 +37,7 @@
         ]
       },
       {
-        "id": "geography",
-        "name": "Geography",
-        "icon": "🌍",
-        "units": 7,
+        "id": "geography", "name": "Geography", "icon": "🌍", "units": 7,
         "unitList": [
           { "id": "geo-u1", "name": "From Rock to Soil" },
           { "id": "geo-u2", "name": "Using Earth's Resources" },
@@ -63,10 +54,7 @@
     "label": "Computer Science Engineering",
     "subjects": [
       {
-        "id": "oop",
-        "name": "Object-Oriented Programming",
-        "icon": "💡",
-        "units": 7,
+        "id": "oop", "name": "Object-Oriented Programming", "icon": "💡", "units": 7,
         "unitList": [
           { "id": "oop-u1", "name": "OOP Fundamentals" },
           { "id": "oop-u2", "name": "Encapsulation" },
@@ -75,6 +63,17 @@
           { "id": "oop-u5", "name": "Abstraction and Interfaces" },
           { "id": "oop-u6", "name": "Constructors and Destructors" },
           { "id": "oop-u7", "name": "OOP Design Principles" }
+        ]
+      },
+      {
+        "id": "sql", "name": "SQL and Databases", "icon": "🗄️", "units": 6,
+        "unitList": [
+          { "id": "sql-u1", "name": "Database and SQL Fundamentals" },
+          { "id": "sql-u2", "name": "Table Design and Constraints" },
+          { "id": "sql-u3", "name": "Filtering, Updating and Deleting" },
+          { "id": "sql-u4", "name": "Normalisation and Anomalies" },
+          { "id": "sql-u5", "name": "Joins" },
+          { "id": "sql-u6", "name": "Aggregates, Grouping and Subqueries" }
         ]
       }
     ]

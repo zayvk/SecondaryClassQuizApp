@@ -1,0 +1,668 @@
+{
+  "subject": "SQL and Databases",
+  "unit": "Unit 6: Aggregates, Grouping and Subqueries",
+  "unitId": "sql-u6",
+  "categoryId": "cs",
+  "topics": [
+    "Aggregate functions — COUNT, SUM, AVG, MIN, MAX",
+    "GROUP BY — how it works and how it helps in queries",
+    "HAVING vs WHERE — when to use each",
+    "What is a subquery?",
+    "Subqueries in WHERE clause",
+    "Correlated vs non-correlated subqueries",
+    "How subqueries differ from joins"
+  ],
+  "generatedAt": "2026-03-25T07:44:00Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which aggregate function calculates the number of rows in a group?",
+      "options": [
+        "SUM",
+        "AVG",
+        "COUNT",
+        "MIN"
+      ],
+      "answer": 2,
+      "explanation": "COUNT() is specifically designed to count the number of rows, including those with NULL values (unless COUNT(*) is used).",
+      "hint": "Think about what you would use to determine 'how many' of something there are."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of the GROUP BY clause?",
+      "options": [
+        "To sort the result set",
+        "To filter rows based on a condition",
+        "To group rows that have the same values in specified columns",
+        "To calculate aggregate values for all rows"
+      ],
+      "answer": 2,
+      "explanation": "GROUP BY groups rows with identical values in the specified columns, allowing aggregate functions to operate on each group.",
+      "hint": "Consider how you would summarize data based on categories."
+    },
+    {
+      "id": 3,
+      "question": "When should you use the HAVING clause instead of the WHERE clause?",
+      "options": [
+        "When filtering rows before grouping",
+        "When filtering groups after aggregation",
+        "When you need to sort the results",
+        "When you want to apply a condition to individual rows"
+      ],
+      "answer": 1,
+      "explanation": "HAVING filters groups *after* they have been created by the GROUP BY clause, based on aggregate function results.",
+      "hint": "Remember that WHERE filters rows, while HAVING filters groups."
+    },
+    {
+      "id": 4,
+      "question": "What is a subquery?",
+      "options": [
+        "A query that modifies data in a table",
+        "A query nested inside another query",
+        "A query that creates a new table",
+        "A query that sorts the result set"
+      ],
+      "answer": 1,
+      "explanation": "A subquery is a query embedded within another SQL query, used to retrieve data that is then used by the outer query.",
+      "hint": "Think of a query within a query."
+    },
+    {
+      "id": 5,
+      "question": "In which clause can a subquery be used to filter rows based on a condition?",
+      "options": [
+        "SELECT",
+        "FROM",
+        "WHERE",
+        "GROUP BY"
+      ],
+      "answer": 2,
+      "explanation": "Subqueries are commonly used in the WHERE clause to compare values against the result of the subquery.",
+      "hint": "Where do you typically put conditions to filter data?"
+    },
+    {
+      "id": 6,
+      "question": "What is the key difference between a correlated and a non-correlated subquery?",
+      "options": [
+        "Correlated subqueries are faster than non-correlated subqueries",
+        "Correlated subqueries depend on the outer query for values, while non-correlated subqueries do not",
+        "Non-correlated subqueries can only return a single value",
+        "Correlated subqueries cannot be used in the WHERE clause"
+      ],
+      "answer": 1,
+      "explanation": "A correlated subquery references columns from the outer query, meaning it must be executed for each row of the outer query.",
+      "hint": "Consider how the subquery's execution relates to the outer query."
+    },
+    {
+      "id": 7,
+      "question": "How do subqueries differ from JOINs in achieving similar results?",
+      "options": [
+        "Subqueries are always more efficient than JOINs",
+        "JOINs are generally more efficient for retrieving related data from multiple tables",
+        "Subqueries can only be used with a single table",
+        "JOINs cannot be used to filter data"
+      ],
+      "answer": 1,
+      "explanation": "JOINs are optimized for combining data from multiple tables, while subqueries can be less efficient, especially correlated ones.",
+      "hint": "Think about performance implications when dealing with large datasets."
+    },
+    {
+      "id": 8,
+      "question": "Which aggregate function finds the smallest value in a set?",
+      "options": [
+        "MAX",
+        "AVG",
+        "SUM",
+        "MIN"
+      ],
+      "answer": 3,
+      "explanation": "MIN() returns the minimum value in a specified column or expression.",
+      "hint": "What function would you use to find the lowest number?"
+    },
+    {
+      "id": 9,
+      "question": "Consider a table 'Orders' with columns 'CustomerID' and 'OrderTotal'. How would you find the average order total for each customer?",
+      "options": [
+        "SELECT AVG(OrderTotal) FROM Orders",
+        "SELECT CustomerID, AVG(OrderTotal) FROM Orders GROUP BY CustomerID",
+        "SELECT CustomerID, SUM(OrderTotal) FROM Orders GROUP BY CustomerID",
+        "SELECT AVG(OrderTotal) GROUP BY CustomerID FROM Orders"
+      ],
+      "answer": 1,
+      "explanation": "The GROUP BY clause is essential to calculate the average order total *for each* customer.",
+      "hint": "You need to group the data by customer to get a separate average for each one."
+    },
+    {
+      "id": 10,
+      "question": "You want to find all departments with more than 5 employees. The table 'Employees' has columns 'DepartmentID' and 'EmployeeID'. Which statement is correct?",
+      "options": [
+        "SELECT DepartmentID FROM Employees WHERE COUNT(*) > 5",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID HAVING COUNT(*) > 5",
+        "SELECT DepartmentID FROM Employees HAVING COUNT(*) > 5",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID WHERE COUNT(*) > 5"
+      ],
+      "answer": 1,
+      "explanation": "HAVING is used to filter groups created by GROUP BY, based on aggregate function results.",
+      "hint": "Remember the difference between WHERE and HAVING."
+    },
+    {
+      "id": 11,
+      "question": "What will the following subquery return: `SELECT DepartmentID FROM Departments WHERE Location = 'New York'`?",
+      "options": [
+        "A single value",
+        "A list of DepartmentIDs",
+        "A table with all columns from Departments",
+        "An error"
+      ],
+      "answer": 1,
+      "explanation": "The subquery will return a list of DepartmentIDs that are located in New York.",
+      "hint": "Consider what the WHERE clause is filtering for."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is a valid use case for a subquery in the WHERE clause?",
+      "options": [
+        "To update data in a table",
+        "To retrieve data from multiple tables simultaneously",
+        "To check if a value exists in another table",
+        "To sort the result set"
+      ],
+      "answer": 2,
+      "explanation": "Subqueries in the WHERE clause are often used with operators like IN, NOT IN, EXISTS, or NOT EXISTS to check for the presence or absence of values.",
+      "hint": "Think about how you would verify if a value is present in another table."
+    },
+    {
+      "id": 13,
+      "question": "Consider a correlated subquery. For each row processed by the outer query, how many times is the subquery executed?",
+      "options": [
+        "Once",
+        "Multiple times",
+        "Never",
+        "Only if the subquery returns a value"
+      ],
+      "answer": 1,
+      "explanation": "A correlated subquery is executed once for each row processed by the outer query because it depends on values from the outer query.",
+      "hint": "The key is the dependency on the outer query's current row."
+    },
+    {
+      "id": 14,
+      "question": "When would you choose to use a JOIN instead of a subquery?",
+      "options": [
+        "When the subquery is highly complex",
+        "When you need to retrieve data from multiple tables",
+        "When you only need to check for the existence of a value",
+        "When performance is not a concern"
+      ],
+      "answer": 1,
+      "explanation": "JOINs are generally more efficient for retrieving related data from multiple tables, especially when dealing with large datasets.",
+      "hint": "Think about performance and data retrieval from multiple sources."
+    },
+    {
+      "id": 15,
+      "question": "What does the AVG() function do?",
+      "options": [
+        "Calculates the sum of values",
+        "Calculates the average of values",
+        "Finds the maximum value",
+        "Finds the minimum value"
+      ],
+      "answer": 1,
+      "explanation": "AVG() calculates the arithmetic mean of a set of numeric values.",
+      "hint": "What does 'average' mean?"
+    },
+    {
+      "id": 16,
+      "question": "If you want to find the total sales amount for each product category, which SQL clause is essential?",
+      "options": [
+        "ORDER BY",
+        "WHERE",
+        "GROUP BY",
+        "HAVING"
+      ],
+      "answer": 2,
+      "explanation": "GROUP BY allows you to group sales data by product category, enabling the calculation of total sales for each category.",
+      "hint": "How would you categorize the sales data?"
+    },
+    {
+      "id": 17,
+      "question": "You have a table 'Products' with a 'Price' column. You want to find products with a price greater than the average price of all products. Where would you use a subquery?",
+      "options": [
+        "In the SELECT clause",
+        "In the FROM clause",
+        "In the WHERE clause",
+        "In the GROUP BY clause"
+      ],
+      "answer": 2,
+      "explanation": "The subquery would calculate the average price, and the WHERE clause would compare each product's price to that average.",
+      "hint": "You need to compare each product's price to a calculated value."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `WHERE` and `HAVING` when used with aggregate functions?",
+      "options": [
+        "`WHERE` filters after aggregation, `HAVING` filters before",
+        "`WHERE` filters before aggregation, `HAVING` filters after",
+        "They are interchangeable",
+        "`WHERE` can only be used with non-aggregate functions"
+      ],
+      "answer": 1,
+      "explanation": "`WHERE` filters rows *before* aggregation, while `HAVING` filters groups *after* aggregation.",
+      "hint": "Think about the order of operations in a SQL query."
+    },
+    {
+      "id": 19,
+      "question": "A non-correlated subquery is executed...",
+      "options": [
+        "Once for each row in the outer query",
+        "Once, before the outer query is executed",
+        "Multiple times, depending on the data",
+        "Never"
+      ],
+      "answer": 1,
+      "explanation": "A non-correlated subquery is executed once and its result is used by the outer query.",
+      "hint": "Consider whether the subquery relies on the outer query's current row."
+    },
+    {
+      "id": 20,
+      "question": "Which is generally more readable for complex relationships: a series of subqueries or a series of JOINs?",
+      "options": [
+        "Subqueries",
+        "JOINs",
+        "They are equally readable",
+        "It depends on the database system"
+      ],
+      "answer": 1,
+      "explanation": "JOINs often provide a more visually clear and maintainable representation of relationships between tables, especially for complex queries.",
+      "hint": "Think about how easily you can follow the logic of each approach."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the SUM() function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Finds the largest number in a set",
+        "Finds the smallest number in a set"
+      ],
+      "answer": 1,
+      "explanation": "SUM() calculates the total sum of all values in a specified column.",
+      "hint": "What operation does 'sum' represent?"
+    },
+    {
+      "id": 22,
+      "question": "You want to find the number of customers who have placed more than 5 orders. Which clause would you use to filter the groups?",
+      "options": [
+        "WHERE",
+        "GROUP BY",
+        "HAVING",
+        "ORDER BY"
+      ],
+      "answer": 2,
+      "explanation": "HAVING is used to filter groups created by the GROUP BY clause, based on aggregate function results.",
+      "hint": "You're filtering based on a count, which is an aggregate function."
+    },
+    {
+      "id": 23,
+      "question": "Consider the query: `SELECT * FROM Employees WHERE Salary > (SELECT AVG(Salary) FROM Employees)`. What type of subquery is this?",
+      "options": [
+        "Correlated",
+        "Non-correlated",
+        "Nested",
+        "Recursive"
+      ],
+      "answer": 1,
+      "explanation": "This is a non-correlated subquery because the inner query (calculating the average salary) is executed independently of the outer query.",
+      "hint": "Does the subquery depend on any values from the outer query?"
+    },
+    {
+      "id": 24,
+      "question": "When might a correlated subquery be necessary?",
+      "options": [
+        "When you need to retrieve data from a single table",
+        "When the subquery's result depends on the current row of the outer query",
+        "When you want to improve query performance",
+        "When you want to simplify the query logic"
+      ],
+      "answer": 1,
+      "explanation": "Correlated subqueries are essential when the subquery needs to access values from the outer query's current row to produce a result.",
+      "hint": "Think about scenarios where the subquery's logic is tied to the outer query's row."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is NOT an aggregate function?",
+      "options": [
+        "COUNT",
+        "MAX",
+        "WHERE",
+        "AVG"
+      ],
+      "answer": 2,
+      "explanation": "WHERE is a filtering clause, not an aggregate function. Aggregate functions operate on sets of rows to return a single value.",
+      "hint": "Aggregate functions summarize data."
+    },
+    {
+      "id": 26,
+      "question": "You have a table 'Sales' with columns 'ProductID' and 'Amount'. How would you find the total sales amount for each product?",
+      "options": [
+        "SELECT ProductID, SUM(Amount) FROM Sales",
+        "SELECT SUM(Amount) FROM Sales GROUP BY ProductID",
+        "SELECT ProductID, AVG(Amount) FROM Sales GROUP BY ProductID",
+        "SELECT ProductID FROM Sales GROUP BY Amount"
+      ],
+      "answer": 1,
+      "explanation": "You need to use GROUP BY to group the sales by ProductID and then use SUM() to calculate the total amount for each product.",
+      "hint": "You need to group by product to get a total for each one."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the MIN() function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Finds the largest number in a set",
+        "Finds the smallest number in a set"
+      ],
+      "answer": 3,
+      "explanation": "MIN() returns the smallest value in a specified column or expression.",
+      "hint": "What function would you use to find the lowest value?"
+    },
+    {
+      "id": 28,
+      "question": "You want to find all departments where the average salary is greater than $60,000. The table 'Employees' has 'DepartmentID' and 'Salary' columns. Which statement is correct?",
+      "options": [
+        "SELECT DepartmentID FROM Employees WHERE AVG(Salary) > 60000",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID HAVING AVG(Salary) > 60000",
+        "SELECT DepartmentID FROM Employees HAVING AVG(Salary) > 60000",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID WHERE AVG(Salary) > 60000"
+      ],
+      "answer": 1,
+      "explanation": "HAVING is used to filter groups created by GROUP BY, based on aggregate function results.",
+      "hint": "Remember the difference between WHERE and HAVING."
+    },
+    {
+      "id": 29,
+      "question": "What is the primary advantage of using a subquery over a JOIN in certain scenarios?",
+      "options": [
+        "Subqueries are always faster",
+        "Subqueries can simplify complex logic",
+        "Subqueries are easier to read",
+        "Subqueries require less memory"
+      ],
+      "answer": 1,
+      "explanation": "Subqueries can sometimes simplify complex logic by breaking down a problem into smaller, more manageable parts.",
+      "hint": "Think about code clarity and maintainability."
+    },
+    {
+      "id": 30,
+      "question": "Consider a table 'Orders' with 'OrderID', 'CustomerID', and 'OrderDate'. How would you find the most recent order date for each customer?",
+      "options": [
+        "SELECT CustomerID, MAX(OrderDate) FROM Orders",
+        "SELECT CustomerID, MIN(OrderDate) FROM Orders GROUP BY CustomerID",
+        "SELECT CustomerID, AVG(OrderDate) FROM Orders GROUP BY CustomerID",
+        "SELECT CustomerID, SUM(OrderDate) FROM Orders GROUP BY CustomerID"
+      ],
+      "answer": 0,
+      "explanation": "MAX(OrderDate) will return the latest date for each customer when used with GROUP BY.",
+      "hint": "What function would you use to find the latest date?"
+    },
+    {
+      "id": 31,
+      "question": "Which operator is commonly used with subqueries to check for the existence of values?",
+      "options": [
+        "=",
+        ">",
+        "IN",
+        "LIKE"
+      ],
+      "answer": 2,
+      "explanation": "The IN operator is used to check if a value exists within a set of values returned by a subquery.",
+      "hint": "Think about how you would verify if a value is present in another table."
+    },
+    {
+      "id": 32,
+      "question": "What happens if a subquery returns more than one row when used with a comparison operator (e.g., =, >, <) in the WHERE clause?",
+      "options": [
+        "The query will return an error",
+        "The query will return all rows from the outer query",
+        "The query will return only the first row from the subquery",
+        "The query will return no rows"
+      ],
+      "answer": 0,
+      "explanation": "If a subquery returns multiple rows when used with a single-value comparison operator, the query will typically result in an error.",
+      "hint": "Consider the expected input for comparison operators."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the MAX() function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Finds the largest number in a set",
+        "Finds the smallest number in a set"
+      ],
+      "answer": 2,
+      "explanation": "MAX() returns the largest value in a specified column or expression.",
+      "hint": "What function would you use to find the highest value?"
+    },
+    {
+      "id": 34,
+      "question": "You want to find all products that have been ordered at least once. The tables are 'Products' (ProductID) and 'Orders' (ProductID). How would you achieve this using a subquery?",
+      "options": [
+        "SELECT * FROM Products WHERE ProductID IN (SELECT ProductID FROM Orders)",
+        "SELECT * FROM Orders WHERE ProductID IN (SELECT ProductID FROM Products)",
+        "SELECT * FROM Products WHERE ProductID = (SELECT ProductID FROM Orders)",
+        "SELECT * FROM Orders WHERE ProductID = (SELECT ProductID FROM Products)"
+      ],
+      "answer": 0,
+      "explanation": "The subquery selects all ProductIDs from the Orders table, and the outer query selects products whose ProductID is in that list.",
+      "hint": "You need to check if a product's ID exists in the Orders table."
+    },
+    {
+      "id": 35,
+      "question": "Which clause is used to filter groups *before* any aggregate functions are applied?",
+      "options": [
+        "HAVING",
+        "WHERE",
+        "GROUP BY",
+        "ORDER BY"
+      ],
+      "answer": 1,
+      "explanation": "WHERE filters rows *before* grouping and aggregation, reducing the dataset used for calculations.",
+      "hint": "Think about the order of operations in a SQL query."
+    },
+    {
+      "id": 36,
+      "question": "What is the key difference between a correlated and non-correlated subquery in terms of execution?",
+      "options": [
+        "Correlated subqueries are always faster",
+        "Non-correlated subqueries are executed once, while correlated subqueries are executed for each row of the outer query",
+        "Correlated subqueries can only return a single value",
+        "Non-correlated subqueries cannot be used in the WHERE clause"
+      ],
+      "answer": 1,
+      "explanation": "A non-correlated subquery is executed once, while a correlated subquery is executed for each row processed by the outer query.",
+      "hint": "Consider how the subquery's execution relates to the outer query."
+    },
+    {
+      "id": 37,
+      "question": "You have a table 'Customers' with 'CustomerID' and 'City'. How would you find the number of customers in each city?",
+      "options": [
+        "SELECT City, COUNT(*) FROM Customers",
+        "SELECT CustomerID, COUNT(*) FROM Customers GROUP BY City",
+        "SELECT City, SUM(CustomerID) FROM Customers GROUP BY City",
+        "SELECT City FROM Customers GROUP BY COUNT(*)"
+      ],
+      "answer": 0,
+      "explanation": "You need to group by City and then use COUNT(*) to count the number of customers in each city.",
+      "hint": "You need to group by city to get a count for each one."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the COUNT(*) function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Counts the number of rows, including those with NULL values",
+        "Counts the number of non-NULL values in a column"
+      ],
+      "answer": 2,
+      "explanation": "COUNT(*) counts all rows in a table or group, including those with NULL values in any column.",
+      "hint": "What does '*' typically mean in SQL?"
+    },
+    {
+      "id": 39,
+      "question": "You want to find all employees who earn more than the average salary of their department. The table 'Employees' has 'EmployeeID', 'DepartmentID', and 'Salary'. Which approach is most suitable?",
+      "options": [
+        "A simple WHERE clause",
+        "A subquery in the WHERE clause",
+        "A JOIN",
+        "A correlated subquery"
+      ],
+      "answer": 3,
+      "explanation": "A correlated subquery is needed to calculate the average salary for each department and compare each employee's salary to that department's average.",
+      "hint": "The average salary needs to be calculated *for each* department."
+    },
+    {
+      "id": 40,
+      "question": "Which of the following best describes the relationship between GROUP BY and aggregate functions?",
+      "options": [
+        "Aggregate functions can only be used with GROUP BY",
+        "GROUP BY is optional when using aggregate functions",
+        "Aggregate functions operate on groups created by GROUP BY",
+        "GROUP BY is used to sort the results of aggregate functions"
+      ],
+      "answer": 2,
+      "explanation": "GROUP BY creates groups of rows, and aggregate functions then operate on each of those groups to produce a single value.",
+      "hint": "Think about how aggregate functions summarize data."
+    },
+    {
+      "id": 41,
+      "question": "What is the primary purpose of the HAVING clause?",
+      "options": [
+        "To filter rows before grouping",
+        "To filter groups after aggregation",
+        "To sort the result set",
+        "To define the grouping criteria"
+      ],
+      "answer": 1,
+      "explanation": "The HAVING clause filters groups created by the GROUP BY clause based on the results of aggregate functions.",
+      "hint": "HAVING operates on groups, not individual rows."
+    },
+    {
+      "id": 42,
+      "question": "Consider a non-correlated subquery: `SELECT * FROM Products WHERE Price > (SELECT AVG(Price) FROM Products)`. How many times is the inner query executed?",
+      "options": [
+        "Once",
+        "For each row in the Products table",
+        "Never",
+        "It depends on the database system"
+      ],
+      "answer": 0,
+      "explanation": "A non-correlated subquery is executed only once, and its result is used by the outer query.",
+      "hint": "Does the subquery depend on the outer query's current row?"
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the SUM() function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Finds the largest number in a set",
+        "Finds the smallest number in a set"
+      ],
+      "answer": 1,
+      "explanation": "SUM() calculates the total sum of all values in a specified column.",
+      "hint": "What operation does 'sum' represent?"
+    },
+    {
+      "id": 44,
+      "question": "You want to find the departments with more than 10 employees. The table 'Employees' has 'DepartmentID'. Which statement is correct?",
+      "options": [
+        "SELECT DepartmentID FROM Employees WHERE COUNT(*) > 10",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID HAVING COUNT(*) > 10",
+        "SELECT DepartmentID FROM Employees HAVING COUNT(*) > 10",
+        "SELECT DepartmentID FROM Employees GROUP BY DepartmentID WHERE COUNT(*) > 10"
+      ],
+      "answer": 1,
+      "explanation": "HAVING is used to filter groups created by GROUP BY, based on aggregate function results.",
+      "hint": "Remember the difference between WHERE and HAVING."
+    },
+    {
+      "id": 45,
+      "question": "What is the main advantage of using JOINs over subqueries for retrieving related data?",
+      "options": [
+        "JOINs are always more readable",
+        "JOINs are generally more efficient",
+        "JOINs can handle more complex conditions",
+        "JOINs are easier to write"
+      ],
+      "answer": 1,
+      "explanation": "JOINs are typically optimized by database systems for combining data from multiple tables, resulting in better performance.",
+      "hint": "Think about performance implications when dealing with large datasets."
+    },
+    {
+      "id": 46,
+      "question": "What does the AVG() function do?",
+      "options": [
+        "Calculates the sum of values",
+        "Calculates the average of values",
+        "Finds the maximum value",
+        "Finds the minimum value"
+      ],
+      "answer": 1,
+      "explanation": "AVG() calculates the arithmetic mean of a set of numeric values.",
+      "hint": "What does 'average' mean?"
+    },
+    {
+      "id": 47,
+      "question": "You have a table 'Orders' with 'OrderID', 'CustomerID', and 'OrderTotal'. How would you find the total order total for each customer?",
+      "options": [
+        "SELECT CustomerID, SUM(OrderTotal) FROM Orders",
+        "SELECT OrderID, SUM(OrderTotal) FROM Orders GROUP BY CustomerID",
+        "SELECT CustomerID, AVG(OrderTotal) FROM Orders GROUP BY CustomerID",
+        "SELECT OrderID FROM Orders GROUP BY OrderTotal"
+      ],
+      "answer": 0,
+      "explanation": "You need to use GROUP BY to group the orders by CustomerID and then use SUM() to calculate the total order total for each customer.",
+      "hint": "You need to group by customer to get a total for each one."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the MIN() function?",
+      "options": [
+        "Calculates the average of a set of numbers",
+        "Calculates the total of a set of numbers",
+        "Finds the largest number in a set",
+        "Finds the smallest number in a set"
+      ],
+      "answer": 3,
+      "explanation": "MIN() returns the smallest value in a specified column or expression.",
+      "hint": "What function would you use to find the lowest value?"
+    },
+    {
+      "id": 49,
+      "question": "You want to find all products that have never been ordered. The tables are 'Products' (ProductID) and 'Orders' (ProductID). How would you achieve this using a subquery?",
+      "options": [
+        "SELECT * FROM Products WHERE ProductID IN (SELECT ProductID FROM Orders)",
+        "SELECT * FROM Products WHERE ProductID NOT IN (SELECT ProductID FROM Orders)",
+        "SELECT * FROM Orders WHERE ProductID IN (SELECT ProductID FROM Products)",
+        "SELECT * FROM Orders WHERE ProductID NOT IN (SELECT ProductID FROM Products)"
+      ],
+      "answer": 1,
+      "explanation": "The subquery selects all ProductIDs from the Orders table, and the outer query selects products whose ProductID is *not* in that list.",
+      "hint": "You need to find products whose IDs are missing from the Orders table."
+    },
+    {
+      "id": 50,
+      "question": "Which of the following is the most appropriate scenario for using a correlated subquery?",
+      "options": [
+        "Retrieving a single value from a table",
+        "Calculating a simple aggregate function",
+        "Comparing values across multiple tables",
+        "Performing a row-by-row comparison with a dependent calculation"
+      ],
+      "answer": 3,
+      "explanation": "Correlated subqueries are ideal when the subquery's logic depends on the current row being processed in the outer query, enabling row-by-row comparisons.",
+      "hint": "Think about scenarios where the subquery's result changes for each row of the outer query."
+    }
+  ]
+}
