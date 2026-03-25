@@ -9,7 +9,7 @@ export default function ResultScreen() {
     return null
   }
 
-  const { results, subjectId, selectedUnits } = state
+  const { results, categoryId, subjectId, selectedUnits } = state
   const score    = results.filter(r => r.correct).length
   const total    = results.length
   const skipped  = results.filter(r => r.skipped).length
@@ -25,8 +25,8 @@ export default function ResultScreen() {
   const { label, cls } = getGrade()
 
   function retryQuiz() {
-    navigate(`/quiz/${subjectId}`, {
-      state: { selectedUnits, questionCount: total }
+    navigate(`/category/${categoryId}/quiz/${subjectId}`, {
+      state: { selectedUnits, questionCount: total, categoryId }
     })
   }
 
@@ -49,7 +49,7 @@ export default function ResultScreen() {
         <button className="btn btn-retry" onClick={retryQuiz}>
           🔄 Try Again
         </button>
-        <button className="btn btn-units" onClick={() => navigate(`/subject/${subjectId}`)}>
+        <button className="btn btn-units" onClick={() => navigate(`/category/${categoryId}/subject/${subjectId}`)}>
           📚 Units
         </button>
       </div>
