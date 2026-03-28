@@ -1,0 +1,671 @@
+{
+  "subject": "HTML, CSS and JavaScript",
+  "unit": "Unit 1: HTML Fundamentals",
+  "unitId": "web-u1",
+  "categoryId": "cs",
+  "topics": [
+    "HTML document structure and semantic markup",
+    "Basic text tags — h1 to h6, p, br, hr",
+    "Links and images — a, img tags",
+    "Semantic elements — header, nav, main, section, article, aside, footer",
+    "Collapsible content, figure captions, time elements",
+    "Tables — thead, tbody, tfoot, captions, merged cells",
+    "Lists — UL, OL, DL and nested lists",
+    "Forms — text inputs, radio buttons, checkboxes, select, textarea, datalist",
+    "Form submission, input attributes, fieldsets",
+    "Media elements — video, audio, iframe, embed, canvas, svg"
+  ],
+  "generatedAt": "2026-03-28T08:51:18Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which HTML tag is used to define a self-contained composition in a document, like a blog post or news article?",
+      "options": [
+        "<section>",
+        "<article>",
+        "<div>",
+        "<aside>"
+      ],
+      "answer": 1,
+      "explanation": "The `<article>` tag specifically represents a self-contained composition that is independently distributable or reusable.",
+      "hint": "Think about what constitutes a complete, standalone piece of content."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of using semantic HTML elements like `<header>`, `<nav>`, `<main>`, etc.?",
+      "options": [
+        "To improve visual styling.",
+        "To enhance SEO and accessibility.",
+        "To reduce code complexity.",
+        "To speed up page loading."
+      ],
+      "answer": 1,
+      "explanation": "Semantic elements provide meaning to the content, which helps search engines and assistive technologies understand the page structure.",
+      "hint": "Consider how screen readers and search engines interpret HTML."
+    },
+    {
+      "id": 3,
+      "question": "Which attribute is essential for providing alternative text for an image, improving accessibility?",
+      "options": [
+        "src",
+        "href",
+        "alt",
+        "title"
+      ],
+      "answer": 2,
+      "explanation": "The `alt` attribute provides a text description of the image, which is read by screen readers and displayed if the image fails to load.",
+      "hint": "Think about users who cannot see the image."
+    },
+    {
+      "id": 4,
+      "question": "What is the correct way to create a hyperlink to 'https://www.example.com' with the text 'Example Website'?",
+      "options": [
+        "<a href='https://www.example.com'>Example Website</a>",
+        "<link url='https://www.example.com'>Example Website</link>",
+        "<a url='https://www.example.com'>Example Website</a>",
+        "<hyperlink href='https://www.example.com'>Example Website</hyperlink>"
+      ],
+      "answer": 0,
+      "explanation": "The `<a>` tag with the `href` attribute is the standard way to create hyperlinks in HTML.",
+      "hint": "Remember the basic syntax for creating links."
+    },
+    {
+      "id": 5,
+      "question": "Which tag is used to define a horizontal rule in HTML?",
+      "options": [
+        "<break>",
+        "<hr>",
+        "<line>",
+        "<rule>"
+      ],
+      "answer": 1,
+      "explanation": "The `<hr>` tag represents a thematic break between elements, typically displayed as a horizontal rule.",
+      "hint": "It's a simple tag for visual separation."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of the `<time>` element?",
+      "options": [
+        "To display the current time.",
+        "To represent a specific date and/or time.",
+        "To format text as bold.",
+        "To create a timer."
+      ],
+      "answer": 1,
+      "explanation": "The `<time>` element represents a specific date and/or time, often used for machine-readable dates.",
+      "hint": "Consider how you might mark up a publication date."
+    },
+    {
+      "id": 7,
+      "question": "How do you create a nested unordered list in HTML?",
+      "options": [
+        "<ul><li><ul><li>Item</li></ul></li></ul>",
+        "<ul><li>Item<ul><li>Item</li></ul></li></ul>",
+        "<ol><li><ol><li>Item</li></ol></li></ol>",
+        "<list><li><list><li>Item</li></list></li></list>"
+      ],
+      "answer": 1,
+      "explanation": "Nested lists are created by placing one list (UL or OL) inside another list item.",
+      "hint": "Think about how list items can contain other elements."
+    },
+    {
+      "id": 8,
+      "question": "What is the function of the `colspan` attribute in a `<td>` tag?",
+      "options": [
+        "To change the text color.",
+        "To merge cells horizontally.",
+        "To merge cells vertically.",
+        "To set the cell width."
+      ],
+      "answer": 1,
+      "explanation": "The `colspan` attribute specifies how many columns a table cell should span.",
+      "hint": "It's related to the structure of the table."
+    },
+    {
+      "id": 9,
+      "question": "Which form input type is best suited for allowing users to select a file from their computer?",
+      "options": [
+        "text",
+        "password",
+        "file",
+        "email"
+      ],
+      "answer": 2,
+      "explanation": "The `file` input type allows users to choose a file for upload.",
+      "hint": "Think about what input is needed for file uploads."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the `<datalist>` tag?",
+      "options": [
+        "To create a data table.",
+        "To provide a list of predefined options for an input field.",
+        "To store data on the client-side.",
+        "To define a data structure."
+      ],
+      "answer": 1,
+      "explanation": "The `<datalist>` tag provides a list of predefined options that can be used with an `<input>` element, offering autocomplete functionality.",
+      "hint": "It's often used with the `<input>` tag to suggest values."
+    },
+    {
+      "id": 11,
+      "question": "What does the `required` attribute do when added to an input field?",
+      "options": [
+        "It sets a default value for the field.",
+        "It makes the field read-only.",
+        "It forces the user to fill in the field before submitting the form.",
+        "It validates the field's format."
+      ],
+      "answer": 2,
+      "explanation": "The `required` attribute ensures that the input field must be filled in before the form can be submitted.",
+      "hint": "Think about form validation."
+    },
+    {
+      "id": 12,
+      "question": "Which tag is used to group related form elements together?",
+      "options": [
+        "<div>",
+        "<section>",
+        "<fieldset>",
+        "<form>"
+      ],
+      "answer": 2,
+      "explanation": "The `<fieldset>` tag is used to group related elements in a form, often with a `<legend>` to provide a caption.",
+      "hint": "It helps organize form elements logically."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of the `muted` attribute on a `<video>` or `<audio>` element?",
+      "options": [
+        "To loop the media.",
+        "To control the playback speed.",
+        "To initially silence the media.",
+        "To display controls."
+      ],
+      "answer": 2,
+      "explanation": "The `muted` attribute specifies that the audio should be initially muted.",
+      "hint": "Consider user experience and autoplay policies."
+    },
+    {
+      "id": 14,
+      "question": "What is the primary use of the `<iframe>` tag?",
+      "options": [
+        "To display images.",
+        "To embed another HTML document within the current page.",
+        "To create a hyperlink.",
+        "To define a section of content."
+      ],
+      "answer": 1,
+      "explanation": "The `<iframe>` tag is used to embed another HTML document within the current page, effectively creating an inline frame.",
+      "hint": "Think about embedding content from other sources."
+    },
+    {
+      "id": 15,
+      "question": "Which element is used to draw graphics on a web page using JavaScript?",
+      "options": [
+        "<svg>",
+        "<canvas>",
+        "<img>",
+        "<video>"
+      ],
+      "answer": 1,
+      "explanation": "The `<canvas>` element provides a bitmap area that can be dynamically rendered using JavaScript.",
+      "hint": "It's a blank slate for drawing."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of the `<svg>` element?",
+      "options": [
+        "To display raster images.",
+        "To define vector graphics.",
+        "To play video content.",
+        "To create interactive forms."
+      ],
+      "answer": 1,
+      "explanation": "The `<svg>` element is used to define vector-based graphics, which are scalable without losing quality.",
+      "hint": "Think about images that don't pixelate when zoomed."
+    },
+    {
+      "id": 17,
+      "question": "Which HTML tag is used to define a navigation menu?",
+      "options": [
+        "<section>",
+        "<aside>",
+        "<nav>",
+        "<footer>"
+      ],
+      "answer": 2,
+      "explanation": "The `<nav>` tag represents a section of a page that contains navigation links.",
+      "hint": "It's where you'd put your website's menu."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `<div>` and `<section>`?",
+      "options": [
+        "`<div>` is semantic, `<section>` is not.",
+        "`<section>` is semantic, `<div>` is not.",
+        "They are interchangeable.",
+        "`<div>` is used for inline elements, `<section>` for block elements."
+      ],
+      "answer": 1,
+      "explanation": "`<section>` represents a thematic grouping of content, while `<div>` is a generic container with no semantic meaning.",
+      "hint": "Consider the purpose and meaning of each element."
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of the `<caption>` tag in an HTML table?",
+      "options": [
+        "To define the table header.",
+        "To define the table footer.",
+        "To provide a title or description for the table.",
+        "To merge table cells."
+      ],
+      "answer": 2,
+      "explanation": "The `<caption>` tag provides a title or description for the table, helping users understand its content.",
+      "hint": "It's like a title for the entire table."
+    },
+    {
+      "id": 20,
+      "question": "Which attribute of the `<input>` tag specifies the maximum number of characters allowed in a text field?",
+      "options": [
+        "min",
+        "max",
+        "length",
+        "size"
+      ],
+      "answer": 1,
+      "explanation": "The `maxlength` attribute limits the number of characters a user can enter into a text input field.",
+      "hint": "It controls the input length."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the `loop` attribute in the `<audio>` or `<video>` tag?",
+      "options": [
+        "To control the volume.",
+        "To enable subtitles.",
+        "To make the media play continuously.",
+        "To pause the media."
+      ],
+      "answer": 2,
+      "explanation": "The `loop` attribute causes the media to play repeatedly when it reaches the end.",
+      "hint": "Think about how to make a video or audio clip repeat."
+    },
+    {
+      "id": 22,
+      "question": "Consider the following HTML: `<p>This is <b>bold text</b> and <strong>important text</strong>.</p>`. What is the semantic difference between `<b>` and `<strong>`?",
+      "options": [
+        "`<b>` makes text bold, `<strong>` makes text italic.",
+        "`<b>` is semantic, `<strong>` is presentational.",
+        "`<strong>` indicates importance, `<b>` simply makes text bold.",
+        "`<b>` and `<strong>` are interchangeable."
+      ],
+      "answer": 2,
+      "explanation": "`<strong>` indicates that the text has strong importance, while `<b>` simply makes the text bold without conveying semantic meaning.",
+      "hint": "Think about the meaning behind the styling."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the `type` attribute in a `<button>` tag?",
+      "options": [
+        "To specify the button's text.",
+        "To specify the button's color.",
+        "To define the button's behavior (submit, reset, button).",
+        "To set the button's size."
+      ],
+      "answer": 2,
+      "explanation": "The `type` attribute defines the button's behavior, such as submitting a form, resetting a form, or performing a JavaScript action.",
+      "hint": "It determines what happens when the button is clicked."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is the correct way to create a radio button group where only one option can be selected?",
+      "options": [
+        "<input type='checkbox' name='option'>",
+        "<input type='radio' name='option'>",
+        "<input type='text' name='option'>",
+        "<input type='password' name='option'>"
+      ],
+      "answer": 1,
+      "explanation": "Radio buttons with the same `name` attribute create a group where only one option can be selected.",
+      "hint": "Think about how radio buttons behave in forms."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the `id` attribute in HTML?",
+      "options": [
+        "To apply CSS styles.",
+        "To uniquely identify an element on the page.",
+        "To create a hyperlink.",
+        "To define a class."
+      ],
+      "answer": 1,
+      "explanation": "The `id` attribute provides a unique identifier for an element, allowing it to be targeted by CSS, JavaScript, or internal links.",
+      "hint": "It's used for specific targeting."
+    },
+    {
+      "id": 26,
+      "question": "What is the function of the `<thead>` element within an HTML table?",
+      "options": [
+        "To define the table body.",
+        "To define the table footer.",
+        "To define the table header.",
+        "To define the table caption."
+      ],
+      "answer": 2,
+      "explanation": "The `<thead>` element contains the header rows of a table, typically containing column headings.",
+      "hint": "It's where you put the column titles."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `value` attribute in an `<input>` tag?",
+      "options": [
+        "To display a placeholder text.",
+        "To specify the initial value of the input field.",
+        "To define the input field's width.",
+        "To set the input field's color."
+      ],
+      "answer": 1,
+      "explanation": "The `value` attribute sets the initial value of the input field, which can be pre-filled or submitted with the form.",
+      "hint": "It's the default content of the input."
+    },
+    {
+      "id": 28,
+      "question": "Which tag is used to create a definition list?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<dl>",
+        "<li>"
+      ],
+      "answer": 2,
+      "explanation": "The `<dl>` tag represents a definition list, typically used for displaying a list of terms and their definitions.",
+      "hint": "Think about lists of terms and their explanations."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `formaction` attribute in an `<input type='submit'>` tag?",
+      "options": [
+        "To specify the form's method.",
+        "To specify the URL to which the form data is submitted.",
+        "To specify the form's encoding type.",
+        "To specify the form's target window."
+      ],
+      "answer": 1,
+      "explanation": "The `formaction` attribute allows you to override the form's `action` attribute for a specific submit button.",
+      "hint": "It's useful for submitting to different URLs based on the button clicked."
+    },
+    {
+      "id": 30,
+      "question": "What is the difference between `colspan` and `rowspan` attributes in a table?",
+      "options": [
+        "`colspan` merges cells horizontally, `rowspan` merges cells vertically.",
+        "`colspan` merges cells vertically, `rowspan` merges cells horizontally.",
+        "They both merge cells horizontally.",
+        "They both merge cells vertically."
+      ],
+      "answer": 0,
+      "explanation": "`colspan` makes a cell span multiple columns, while `rowspan` makes a cell span multiple rows.",
+      "hint": "Think about the direction of the merging."
+    },
+    {
+      "id": 31,
+      "question": "You want to create a collapsible section. Which HTML elements would be most appropriate to achieve this without JavaScript?",
+      "options": [
+        "`<details>` and `<summary>`",
+        "`<div>` and `<span>`",
+        "`<h1>` and `<p>`",
+        "`<table>` and `<tr>`"
+      ],
+      "answer": 0,
+      "explanation": "The `<details>` element creates a disclosure widget, and the `<summary>` element provides a visible heading for the collapsible content.",
+      "hint": "Look for elements designed for revealing/hiding content."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `poster` attribute in the `<video>` tag?",
+      "options": [
+        "To specify the video's duration.",
+        "To specify the video's volume.",
+        "To display an image before the video starts playing.",
+        "To enable subtitles."
+      ],
+      "answer": 2,
+      "explanation": "The `poster` attribute specifies an image to be displayed while the video is downloading or before it is played.",
+      "hint": "It's a placeholder image for the video."
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is NOT a semantic HTML element?",
+      "options": [
+        "<article>",
+        "<div>",
+        "<aside>",
+        "<nav>"
+      ],
+      "answer": 1,
+      "explanation": "The `<div>` element is a generic container and does not have any inherent semantic meaning.",
+      "hint": "Consider which element describes the *meaning* of the content."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the `autocomplete` attribute in an `<input>` tag?",
+      "options": [
+        "To automatically submit the form.",
+        "To provide suggestions as the user types.",
+        "To validate the input.",
+        "To encrypt the input."
+      ],
+      "answer": 1,
+      "explanation": "The `autocomplete` attribute enables or disables autocomplete functionality for the input field.",
+      "hint": "Think about how browsers suggest values as you type."
+    },
+    {
+      "id": 35,
+      "question": "What is the primary benefit of using semantic HTML over using only `<div>` elements?",
+      "options": [
+        "Faster page loading speeds.",
+        "Improved SEO and accessibility.",
+        "Simpler CSS styling.",
+        "Reduced code size."
+      ],
+      "answer": 1,
+      "explanation": "Semantic HTML provides meaning to the content, which improves SEO, accessibility, and maintainability.",
+      "hint": "Consider how search engines and assistive technologies interpret HTML."
+    },
+    {
+      "id": 36,
+      "question": "You have a table with complex data. Which attribute would you use to provide a descriptive label for the entire table?",
+      "options": [
+        "<thead>",
+        "<tbody>",
+        "<tfoot>",
+        "<caption>"
+      ],
+      "answer": 3,
+      "explanation": "The `<caption>` tag provides a title or description for the table, making it more accessible and understandable.",
+      "hint": "It's like a title for the whole table."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `enctype` attribute in the `<form>` tag?",
+      "options": [
+        "To specify the form's method.",
+        "To specify the URL to which the form data is submitted.",
+        "To specify the encoding type of the form data.",
+        "To specify the form's target window."
+      ],
+      "answer": 2,
+      "explanation": "The `enctype` attribute specifies how the form data should be encoded when submitting it to the server.",
+      "hint": "It's related to how the data is transmitted."
+    },
+    {
+      "id": 38,
+      "question": "Which HTML element is used to define a section of a document that is intended to be displayed as a sidebar?",
+      "options": [
+        "<nav>",
+        "<aside>",
+        "<header>",
+        "<footer>"
+      ],
+      "answer": 1,
+      "explanation": "The `<aside>` element represents a section of a page that is tangentially related to the main content.",
+      "hint": "Think about content that's related but not central."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `download` attribute in the `<a>` tag?",
+      "options": [
+        "To specify the file type.",
+        "To force the browser to download the linked file.",
+        "To open the linked file in a new tab.",
+        "To display a download progress bar."
+      ],
+      "answer": 1,
+      "explanation": "The `download` attribute indicates that the browser should download the linked file instead of navigating to it.",
+      "hint": "It's used for providing downloadable files."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `<figure>` and `<figcaption>` elements?",
+      "options": [
+        "To create a table.",
+        "To create a list.",
+        "To encapsulate self-contained content like images and provide a caption.",
+        "To create a form."
+      ],
+      "answer": 2,
+      "explanation": "The `<figure>` element represents self-contained content, and the `<figcaption>` element provides a caption for that content.",
+      "hint": "Think about images with descriptive text."
+    },
+    {
+      "id": 41,
+      "question": "What is the difference between `<ol>` and `<ul>`?",
+      "options": [
+        "`<ol>` creates an ordered list, `<ul>` creates an unordered list.",
+        "`<ul>` creates an ordered list, `<ol>` creates an unordered list.",
+        "They are interchangeable.",
+        "`<ol>` is for definitions, `<ul>` is for items."
+      ],
+      "answer": 0,
+      "explanation": "`<ol>` creates a numbered list, while `<ul>` creates a bulleted list.",
+      "hint": "Consider the visual appearance of each list type."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `formmethod` attribute in the `<form>` tag?",
+      "options": [
+        "To specify the form's action.",
+        "To specify the encoding type.",
+        "To specify the HTTP method used to submit the form (GET or POST).",
+        "To specify the form's target window."
+      ],
+      "answer": 2,
+      "explanation": "The `method` attribute specifies the HTTP method used to submit the form data, typically 'GET' or 'POST'.",
+      "hint": "It determines how the data is sent to the server."
+    },
+    {
+      "id": 43,
+      "question": "Which attribute is used to specify a keyboard shortcut for an element?",
+      "options": [
+        "shortcut",
+        "key",
+        "accesskey",
+        "hotkey"
+      ],
+      "answer": 2,
+      "explanation": "The `accesskey` attribute assigns a keyboard shortcut to an element, allowing users to access it quickly.",
+      "hint": "It's used for accessibility and efficiency."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `scope` attribute in a `<th>` (table header) element?",
+      "options": [
+        "To specify the header's text color.",
+        "To specify whether the header applies to a row or column.",
+        "To specify the header's width.",
+        "To specify the header's height."
+      ],
+      "answer": 1,
+      "explanation": "The `scope` attribute indicates whether the header applies to a row (`row`) or a column (`col`) of the table.",
+      "hint": "It helps assistive technologies understand the table structure."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `controls` attribute in the `<video>` or `<audio>` tag?",
+      "options": [
+        "To loop the media.",
+        "To control the playback speed.",
+        "To display playback controls (play, pause, volume).",
+        "To mute the media."
+      ],
+      "answer": 2,
+      "explanation": "The `controls` attribute adds default playback controls to the video or audio element.",
+      "hint": "It allows the user to interact with the media."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the `<mark>` element?",
+      "options": [
+        "To define a section of a document.",
+        "To highlight a portion of text.",
+        "To create a hyperlink.",
+        "To define a table."
+      ],
+      "answer": 1,
+      "explanation": "The `<mark>` element represents text that should be highlighted or marked for reference purposes.",
+      "hint": "It's used to draw attention to specific text."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `target` attribute in the `<a>` tag?",
+      "options": [
+        "To specify the link's text.",
+        "To specify the link's URL.",
+        "To specify where to open the linked document.",
+        "To specify the link's color."
+      ],
+      "answer": 2,
+      "explanation": "The `target` attribute specifies where to open the linked document, such as in a new tab (`_blank`) or the same frame (`_self`).",
+      "hint": "It controls where the link opens."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the `placeholder` attribute in an `<input>` tag?",
+      "options": [
+        "To set the input's default value.",
+        "To display a hint inside the input field before the user enters text.",
+        "To validate the input.",
+        "To encrypt the input."
+      ],
+      "answer": 1,
+      "explanation": "The `placeholder` attribute displays a hint inside the input field that disappears when the user starts typing.",
+      "hint": "It's a helpful guide for the user."
+    },
+    {
+      "id": 49,
+      "question": "Which attribute is used to specify a unique name for a form element?",
+      "options": [
+        "id",
+        "class",
+        "name",
+        "value"
+      ],
+      "answer": 2,
+      "explanation": "The `name` attribute is used to identify form elements when submitting the form data to the server.",
+      "hint": "It's how the server recognizes the input."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `<progress>` element?",
+      "options": [
+        "To display a progress bar.",
+        "To display a timer.",
+        "To display a calendar.",
+        "To display a chart."
+      ],
+      "answer": 0,
+      "explanation": "The `<progress>` element represents the progress of a task, typically displayed as a progress bar.",
+      "hint": "It's used to show how much of a task is complete."
+    }
+  ]
+}

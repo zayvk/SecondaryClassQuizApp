@@ -1,0 +1,673 @@
+{
+  "subject": "HTML, CSS and JavaScript",
+  "unit": "Unit 5: Objects and DOM Manipulation",
+  "unitId": "web-u5",
+  "categoryId": "cs",
+  "topics": [
+    "Object literals — what they are and how to create them",
+    "Accessing and updating object properties",
+    "Object methods and how to call them",
+    "The 'this' keyword and why it is used",
+    "Arrays of objects — storing, looping, editing, deleting",
+    "What is the DOM and why it matters for dynamic webpages",
+    "The 'document' object in JavaScript",
+    "DOM methods — getElementById, querySelector, querySelectorAll, innerHTML, innerText",
+    "DOM events — what they are and how they work",
+    "addEventListener and types of events — click, input, submit, keydown, mouseover",
+    "Reading and writing XML files in JavaScript",
+    "What is an XML file and why it is used"
+  ],
+  "generatedAt": "2026-03-28T08:59:33Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of using object literals in JavaScript?",
+      "options": [
+        "To define classes",
+        "To create reusable functions",
+        "To represent data structures with properties and methods",
+        "To declare variables"
+      ],
+      "answer": 2,
+      "explanation": "Object literals provide a concise way to create objects, grouping related data (properties) and functions (methods) together.",
+      "hint": "Think about how you would represent a real-world entity like a 'car' in code."
+    },
+    {
+      "id": 2,
+      "question": "How do you access a property of an object named 'myObject' with the key 'name'?",
+      "options": [
+        "myObject.name",
+        "myObject['name']",
+        "name(myObject)",
+        "myObject->name"
+      ],
+      "answer": 0,
+      "explanation": "Dot notation (myObject.name) is the most common and readable way to access object properties.",
+      "hint": "Consider the standard way to access members of a structure in other programming languages."
+    },
+    {
+      "id": 3,
+      "question": "What is the role of the 'this' keyword within an object method?",
+      "options": [
+        "It refers to the global object",
+        "It refers to the object that the method is called on",
+        "It refers to the function itself",
+        "It refers to the parent object"
+      ],
+      "answer": 1,
+      "explanation": "'this' provides a reference to the object context in which the method is being executed.",
+      "hint": "Imagine a method inside an object; 'this' helps it know which object it belongs to."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is the correct way to add a new property to an existing JavaScript object?",
+      "options": [
+        "object.newProperty = value;",
+        "object.addProperty(value);",
+        "new object.property = value;",
+        "object[value] = newProperty;"
+      ],
+      "answer": 0,
+      "explanation": "You can directly assign a value to a new property using dot notation or bracket notation.",
+      "hint": "Think about how you would assign a value to a variable."
+    },
+    {
+      "id": 5,
+      "question": "What happens when you try to access a non-existent property of an object?",
+      "options": [
+        "An error is thrown",
+        "The property is automatically created with a value of null",
+        "The property returns 'undefined'",
+        "The program crashes"
+      ],
+      "answer": 2,
+      "explanation": "Accessing a non-existent property returns 'undefined', indicating that the property has not been assigned a value.",
+      "hint": "Consider what a function would return if it couldn't find a requested value."
+    },
+    {
+      "id": 6,
+      "question": "How can you iterate over the properties of an object?",
+      "options": [
+        "Using a for loop with index",
+        "Using a for...in loop",
+        "Using a while loop",
+        "Using a foreach loop"
+      ],
+      "answer": 1,
+      "explanation": "The 'for...in' loop is specifically designed to iterate over the enumerable properties of an object.",
+      "hint": "Think about loops designed for iterating over collections."
+    },
+    {
+      "id": 7,
+      "question": "What is the DOM?",
+      "options": [
+        "A JavaScript library",
+        "A programming language",
+        "A tree-like representation of the HTML document",
+        "A database management system"
+      ],
+      "answer": 2,
+      "explanation": "The Document Object Model (DOM) represents the structure of an HTML document as a tree, allowing JavaScript to interact with it.",
+      "hint": "Consider how a webpage is structured and how JavaScript needs to access its parts."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the 'document' object in JavaScript?",
+      "options": [
+        "It represents the browser window",
+        "It represents the current URL",
+        "It represents the HTML document",
+        "It represents the user's screen"
+      ],
+      "answer": 2,
+      "explanation": "The 'document' object is the root of the DOM tree and provides access to all elements within the HTML document.",
+      "hint": "Think about where you would start looking to find elements on a webpage."
+    },
+    {
+      "id": 9,
+      "question": "Which DOM method would you use to retrieve an element with a specific ID?",
+      "options": [
+        "querySelector()",
+        "getElementsByClassName()",
+        "getElementById()",
+        "getElementsByTagName()"
+      ],
+      "answer": 2,
+      "explanation": "'getElementById()' is specifically designed to retrieve an element based on its unique ID attribute.",
+      "hint": "The name of the method suggests its purpose."
+    },
+    {
+      "id": 10,
+      "question": "What does 'querySelector()' return if no matching element is found?",
+      "options": [
+        "null",
+        "undefined",
+        "An empty string",
+        "An error"
+      ],
+      "answer": 0,
+      "explanation": "If 'querySelector()' doesn't find a matching element, it returns 'null'.",
+      "hint": "Consider what a search function would return if it couldn't find the requested item."
+    },
+    {
+      "id": 11,
+      "question": "What is the difference between 'innerHTML' and 'innerText'?",
+      "options": [
+        "'innerHTML' returns the text content, while 'innerText' returns the HTML content",
+        "'innerHTML' returns the HTML content, while 'innerText' returns the text content",
+        "They both return the same thing",
+        "They both return only text content"
+      ],
+      "answer": 1,
+      "explanation": "'innerHTML' gets or sets the HTML content of an element, while 'innerText' gets or sets only the visible text content.",
+      "hint": "Think about whether you want to include HTML tags in the returned value."
+    },
+    {
+      "id": 12,
+      "question": "What is an event in the context of the DOM?",
+      "options": [
+        "A JavaScript function",
+        "A user interaction or browser event",
+        "An HTML attribute",
+        "A CSS style"
+      ],
+      "answer": 1,
+      "explanation": "DOM events represent actions or occurrences that happen in the browser, such as clicks, key presses, or page loads.",
+      "hint": "Consider what triggers a change on a webpage."
+    },
+    {
+      "id": 13,
+      "question": "How do you attach an event listener to an HTML element?",
+      "options": [
+        "element.event = function()",
+        "element.addEventListener(event, function)",
+        "element.onclick = function()",
+        "element.listen(event, function)"
+      ],
+      "answer": 1,
+      "explanation": "'addEventListener()' is the standard method for attaching event listeners to elements, allowing multiple listeners for the same event.",
+      "hint": "The name of the method suggests its purpose."
+    },
+    {
+      "id": 14,
+      "question": "Which event is triggered when a form is submitted?",
+      "options": [
+        "click",
+        "input",
+        "submit",
+        "keydown"
+      ],
+      "answer": 2,
+      "explanation": "The 'submit' event is fired when a form is submitted, typically by clicking a submit button.",
+      "hint": "Think about what happens when you press the 'Submit' button on a form."
+    },
+    {
+      "id": 15,
+      "question": "What is event bubbling?",
+      "options": [
+        "Events only trigger on the target element",
+        "Events trigger on the target element and then propagate up the DOM tree",
+        "Events trigger on the parent element first",
+        "Events are cancelled after the first listener"
+      ],
+      "answer": 1,
+      "explanation": "Event bubbling is the process where an event starts at the target element and then propagates up the DOM tree, triggering event listeners on parent elements.",
+      "hint": "Imagine a ripple effect starting from a point and expanding outwards."
+    },
+    {
+      "id": 16,
+      "question": "What is an XML file?",
+      "options": [
+        "A JavaScript file",
+        "A style sheet file",
+        "A markup language for storing and transporting data",
+        "An image file"
+      ],
+      "answer": 2,
+      "explanation": "XML (Extensible Markup Language) is a markup language designed for encoding documents in a format that is both human-readable and machine-readable.",
+      "hint": "Think about how data can be structured and transported between systems."
+    },
+    {
+      "id": 17,
+      "question": "Why would you use XML files in JavaScript?",
+      "options": [
+        "To style webpages",
+        "To add interactivity to webpages",
+        "To store and transport data",
+        "To define JavaScript functions"
+      ],
+      "answer": 2,
+      "explanation": "XML files are often used to store configuration data, exchange data between web servers and clients, and represent complex data structures.",
+      "hint": "Consider scenarios where you need to share data between different applications."
+    },
+    {
+      "id": 18,
+      "question": "What is the primary difference between HTML and XML?",
+      "options": [
+        "HTML is stricter in its syntax than XML",
+        "XML is stricter in its syntax than HTML",
+        "HTML is designed for data storage, while XML is for display",
+        "XML is designed for data storage, while HTML is for display"
+      ],
+      "answer": 1,
+      "explanation": "XML requires well-formed documents with proper nesting and closing tags, while HTML is more forgiving.",
+      "hint": "Think about the rules for creating valid documents in each language."
+    },
+    {
+      "id": 19,
+      "question": "Which JavaScript object is commonly used to parse XML data?",
+      "options": [
+        "JSON",
+        "DOMParser",
+        "XMLHttpRequest",
+        "localStorage"
+      ],
+      "answer": 1,
+      "explanation": "The 'DOMParser' object is used to parse XML strings into a DOM tree, allowing you to access and manipulate the XML data.",
+      "hint": "The name of the object suggests its purpose."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the 'readyState' property in an XMLHttpRequest object?",
+      "options": [
+        "It indicates the size of the XML file",
+        "It indicates the status of the request",
+        "It indicates the URL of the XML file",
+        "It indicates the type of XML file"
+      ],
+      "answer": 1,
+      "explanation": "The 'readyState' property indicates the current state of the XMLHttpRequest, from uninitialized to completed.",
+      "hint": "Think about the different stages of making a request to a server."
+    },
+    {
+      "id": 21,
+      "question": "Consider the following object: `let person = {name: 'Alice', age: 30};`. How would you change Alice's age to 31?",
+      "options": [
+        "person.age = 31;",
+        "person['age'] = 31;",
+        "person.addAge(31);",
+        "person.age++"
+      ],
+      "answer": 0,
+      "explanation": "You can directly modify the value of an object property using dot notation or bracket notation.",
+      "hint": "Think about how you would update a variable's value."
+    },
+    {
+      "id": 22,
+      "question": "What will be the output of the following code? `let obj = {a: 1, b: 2}; console.log(obj.c);`",
+      "options": [
+        "1",
+        "2",
+        "undefined",
+        "Error"
+      ],
+      "answer": 2,
+      "explanation": "Accessing a non-existent property of an object returns 'undefined'.",
+      "hint": "Consider what happens when you try to access a key that doesn't exist in an object."
+    },
+    {
+      "id": 23,
+      "question": "What is the benefit of using methods within an object?",
+      "options": [
+        "They allow you to store data",
+        "They allow you to perform actions related to the object's data",
+        "They allow you to define the object's properties",
+        "They allow you to create new objects"
+      ],
+      "answer": 1,
+      "explanation": "Methods encapsulate behavior related to the object, promoting code organization and reusability.",
+      "hint": "Think about how methods relate to the data they operate on."
+    },
+    {
+      "id": 24,
+      "question": "What is the output of the following code? `let obj = {x: 10}; let y = obj.x; y = 20; console.log(obj.x);`",
+      "options": [
+        "10",
+        "20",
+        "undefined",
+        "Error"
+      ],
+      "answer": 0,
+      "explanation": "Changing the value of 'y' does not affect the value of 'x' in the original object, as 'y' holds a copy of the value.",
+      "hint": "Consider the difference between assigning a value and creating a reference."
+    },
+    {
+      "id": 25,
+      "question": "How would you create an array of objects, where each object represents a student with properties 'name' and 'grade'?",
+      "options": [
+        "let students = []; students.push({name: 'John', grade: 'A'});",
+        "let students = {}; students.name = 'John'; students.grade = 'A';",
+        "let students = [ 'John', 'A' ];",
+        "let students = new Array('John', 'A');"
+      ],
+      "answer": 0,
+      "explanation": "You create an empty array and then push objects with the desired properties into it.",
+      "hint": "Think about how to store multiple items in a collection."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of `querySelectorAll()` compared to `querySelector()`?",
+      "options": [
+        "`querySelectorAll()` returns only the first matching element, while `querySelector()` returns all matching elements.",
+        "`querySelectorAll()` returns all matching elements, while `querySelector()` returns only the first matching element.",
+        "They both return the same result.",
+        "`querySelectorAll()` is used for IDs, while `querySelector()` is used for classes."
+      ],
+      "answer": 1,
+      "explanation": "`querySelector()` returns the first element that matches a specified CSS selector, while `querySelectorAll()` returns a NodeList of all matching elements.",
+      "hint": "Consider the 'All' in the name of one of the methods."
+    },
+    {
+      "id": 27,
+      "question": "What is the difference between `event.preventDefault()` and `event.stopPropagation()`?",
+      "options": [
+        "`preventDefault()` stops the event from triggering the default action, while `stopPropagation()` prevents the event from bubbling up the DOM tree.",
+        "`stopPropagation()` stops the event from triggering the default action, while `preventDefault()` prevents the event from bubbling up the DOM tree.",
+        "They both do the same thing.",
+        "They both prevent the event from happening."
+      ],
+      "answer": 0,
+      "explanation": "`preventDefault()` prevents the browser's default behavior for an event (e.g., submitting a form), while `stopPropagation()` stops the event from propagating to parent elements.",
+      "hint": "Think about controlling the default behavior of an event versus controlling its path through the DOM."
+    },
+    {
+      "id": 28,
+      "question": "Which event listener is best suited for handling real-time changes in an input field?",
+      "options": [
+        "click",
+        "submit",
+        "keydown",
+        "input"
+      ],
+      "answer": 3,
+      "explanation": "The 'input' event is fired whenever the value of an input field changes, making it ideal for real-time updates.",
+      "hint": "Consider which event is triggered with every keystroke or change in the input field."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `onload` event in an `XMLHttpRequest` object?",
+      "options": [
+        "It is triggered when the request is initialized.",
+        "It is triggered when the request fails.",
+        "It is triggered when the request completes successfully.",
+        "It is triggered when the request is aborted."
+      ],
+      "answer": 2,
+      "explanation": "The `onload` event is triggered when the `XMLHttpRequest` has successfully completed and the response is available.",
+      "hint": "Think about when you would want to process the data received from the server."
+    },
+    {
+      "id": 30,
+      "question": "What is the potential security risk when directly manipulating the DOM with user-provided data?",
+      "options": [
+        "Data loss",
+        "Cross-Site Scripting (XSS) attacks",
+        "Database corruption",
+        "Network congestion"
+      ],
+      "answer": 1,
+      "explanation": "Directly inserting user-provided data into the DOM without proper sanitization can lead to XSS attacks, where malicious scripts are executed in the user's browser.",
+      "hint": "Consider how attackers might inject malicious code through user input."
+    },
+    {
+      "id": 31,
+      "question": "Consider this code: `let obj = {a: 1}; let newObj = obj; newObj.a = 2; console.log(obj.a);`. What will be the output?",
+      "options": [
+        "1",
+        "2",
+        "undefined",
+        "Error"
+      ],
+      "answer": 2,
+      "explanation": "Because `newObj` is assigned a reference to `obj`, modifying `newObj.a` also modifies `obj.a`.",
+      "hint": "Think about the difference between copying a value and creating a reference."
+    },
+    {
+      "id": 32,
+      "question": "What is the best practice for handling errors when parsing XML data in JavaScript?",
+      "options": [
+        "Ignore the errors and continue processing.",
+        "Use a try...catch block to handle potential parsing errors.",
+        "Rely on the browser's default error handling.",
+        "Log the errors to the console and refresh the page."
+      ],
+      "answer": 1,
+      "explanation": "Using a `try...catch` block allows you to gracefully handle parsing errors and prevent the script from crashing.",
+      "hint": "Consider how to prevent unexpected errors from disrupting your application."
+    },
+    {
+      "id": 33,
+      "question": "Which DOM method is most efficient for adding a new element to the end of a list?",
+      "options": [
+        "insertBefore()",
+        "appendChild()",
+        "replaceChild()",
+        "removeChild()"
+      ],
+      "answer": 1,
+      "explanation": "`appendChild()` is specifically designed for adding a new child element to the end of a parent element, making it the most efficient option.",
+      "hint": "Think about the purpose of each method and which one directly addresses the task."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of using 'use strict' in JavaScript?",
+      "options": [
+        "To enable more features",
+        "To disable debugging",
+        "To enforce stricter parsing and error handling",
+        "To optimize performance"
+      ],
+      "answer": 2,
+      "explanation": "'use strict' enables stricter parsing and error handling, helping to catch common coding mistakes and improve code quality.",
+      "hint": "Consider how to write more robust and maintainable code."
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between `==` and `===` in JavaScript?",
+      "options": [
+        "`==` compares values and types, while `===` compares only values.",
+        "`===` compares values and types, while `==` compares only values.",
+        "They are identical.",
+        "`==` is used for numbers, while `===` is used for strings."
+      ],
+      "answer": 1,
+      "explanation": "`===` (strict equality) compares both the value and the type, while `==` (loose equality) performs type coercion before comparing values.",
+      "hint": "Consider the importance of data types in comparisons."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the `defer` attribute in a `<script>` tag?",
+      "options": [
+        "To execute the script immediately",
+        "To execute the script after the page has loaded",
+        "To execute the script asynchronously",
+        "To disable the script"
+      ],
+      "answer": 1,
+      "explanation": "The `defer` attribute tells the browser to download the script in parallel with parsing the HTML, but to execute it only after the HTML parsing is complete.",
+      "hint": "Think about how to improve page loading performance."
+    },
+    {
+      "id": 37,
+      "question": "What is the benefit of using CSS classes instead of inline styles?",
+      "options": [
+        "Inline styles are easier to maintain",
+        "CSS classes allow for better separation of concerns and reusability",
+        "Inline styles are more performant",
+        "CSS classes are only for simple styling"
+      ],
+      "answer": 1,
+      "explanation": "CSS classes promote separation of concerns, allowing you to define styles in a central location and apply them to multiple elements, improving maintainability and reusability.",
+      "hint": "Consider the principles of good web development practices."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `bind()` method in JavaScript?",
+      "options": [
+        "To create a new function",
+        "To call a function immediately",
+        "To set the 'this' value for a function",
+        "To convert a function to a string"
+      ],
+      "answer": 2,
+      "explanation": "The `bind()` method creates a new function that, when called, has its 'this' keyword set to the provided value.",
+      "hint": "Think about controlling the context in which a function is executed."
+    },
+    {
+      "id": 39,
+      "question": "What is the difference between `localStorage` and `sessionStorage`?",
+      "options": [
+        "`localStorage` stores data for one session, while `sessionStorage` stores data permanently.",
+        "`sessionStorage` stores data for one session, while `localStorage` stores data permanently.",
+        "They both store data permanently.",
+        "They both store data for one session."
+      ],
+      "answer": 1,
+      "explanation": "`sessionStorage` stores data for only one session (until the browser tab or window is closed), while `localStorage` stores data permanently (until explicitly deleted).",
+      "hint": "Consider the lifespan of the data you want to store."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `map()` method on arrays?",
+      "options": [
+        "To filter elements from an array",
+        "To reduce an array to a single value",
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `map()` method transforms each element of an array and returns a new array with the transformed values.",
+      "hint": "Think about how to apply a function to every item in a collection."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of the `reduce()` method on arrays?",
+      "options": [
+        "To filter elements from an array",
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `reduce()` method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.",
+      "hint": "Think about how to combine all elements of an array into a single result."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `filter()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To sort an array",
+        "To create a new array with all elements that pass the test implemented by the provided function"
+      ],
+      "answer": 3,
+      "explanation": "The `filter()` method creates a new array with all elements that pass the test implemented by the provided function.",
+      "hint": "Think about how to select specific elements from an array based on a condition."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `forEach()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To execute a provided function once for each array element",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `forEach()` method executes a provided function once for each array element.",
+      "hint": "Think about how to perform an action on each element of an array."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `find()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To return the first element in the array that satisfies the provided testing function",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `find()` method returns the first element in the array that satisfies the provided testing function.",
+      "hint": "Think about how to search for a specific element in an array."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `some()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To test whether at least one element in the array passes the test implemented by the provided function",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `some()` method tests whether at least one element in the array passes the test implemented by the provided function.",
+      "hint": "Think about how to check if any element in an array meets a certain condition."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the `every()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To test whether all elements in the array pass the test implemented by the provided function",
+        "To sort an array"
+      ],
+      "answer": 2,
+      "explanation": "The `every()` method tests whether all elements in the array pass the test implemented by the provided function.",
+      "hint": "Think about how to check if all elements in an array meet a certain condition."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `sort()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To sort the elements of an array in place",
+        "To filter elements from an array"
+      ],
+      "answer": 2,
+      "explanation": "The `sort()` method sorts the elements of an array in place (modifies the original array).",
+      "hint": "Think about how to arrange elements in a specific order."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the `splice()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To add or remove elements from an array",
+        "To filter elements from an array"
+      ],
+      "answer": 2,
+      "explanation": "The `splice()` method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.",
+      "hint": "Think about how to modify an array by adding or removing elements."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `slice()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To extract a section of an array and return it as a new array",
+        "To filter elements from an array"
+      ],
+      "answer": 2,
+      "explanation": "The `slice()` method returns a shallow copy of a portion of an array into a new array object.",
+      "hint": "Think about how to create a subset of an array without modifying the original."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `concat()` method on arrays?",
+      "options": [
+        "To create a new array with the results of calling a provided function on every element in the original array",
+        "To reduce an array to a single value",
+        "To merge two or more arrays and return a new array",
+        "To filter elements from an array"
+      ],
+      "answer": 2,
+      "explanation": "The `concat()` method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.",
+      "hint": "Think about how to combine multiple arrays into a single array."
+    }
+  ]
+}

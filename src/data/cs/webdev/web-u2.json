@@ -1,0 +1,672 @@
+{
+  "subject": "HTML, CSS and JavaScript",
+  "unit": "Unit 2: CSS Styling and Layouts",
+  "unitId": "web-u2",
+  "categoryId": "cs",
+  "topics": [
+    "Typography and Google Fonts integration",
+    "Color codes — RGB, HSL, hexadecimal",
+    "Linear, radial and conic gradients",
+    "CSS Flexbox — flex containers, justify-content, align-items",
+    "Card-based design with hover animations",
+    "CSS Grid layout — grid-column, grid-row, grid positioning",
+    "Object-fit and responsive image galleries",
+    "Advanced CSS positioning — fixed, absolute, relative",
+    "Circular images with border-radius, viewport heights",
+    "Fixed sidebar navigation with flex layouts",
+    "Hover effects and transitions"
+  ],
+  "generatedAt": "2026-03-28T08:53:25Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which CSS property is used to specify the font family for text?",
+      "options": [
+        "font-style",
+        "font-size",
+        "font-family",
+        "text-decoration"
+      ],
+      "answer": 2,
+      "explanation": "The `font-family` property defines the font for text. It accepts a list of font names as fallbacks.",
+      "hint": "Think about which property directly controls the typeface used for text."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary benefit of using Google Fonts?",
+      "options": [
+        "They are pre-installed on all operating systems.",
+        "They offer a wide variety of free, web-optimized fonts.",
+        "They automatically improve website SEO.",
+        "They reduce website loading times."
+      ],
+      "answer": 1,
+      "explanation": "Google Fonts provides a large library of free, open-source fonts optimized for web use, improving design flexibility.",
+      "hint": "Consider the accessibility and variety of fonts available online."
+    },
+    {
+      "id": 3,
+      "question": "Which color code represents a shade of red with maximum intensity?",
+      "options": [
+        "#0000FF",
+        "#FF0000",
+        "#00FF00",
+        "#FFFF00"
+      ],
+      "answer": 1,
+      "explanation": "#FF0000 represents pure red in the hexadecimal color model, with maximum red and no green or blue.",
+      "hint": "Remember the order of RGB in hexadecimal color codes."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between RGB and HSL color models?",
+      "options": [
+        "RGB defines colors based on hue, saturation, and lightness, while HSL uses red, green, and blue.",
+        "HSL defines colors based on hue, saturation, and lightness, while RGB uses red, green, and blue.",
+        "RGB is only for print, while HSL is for web.",
+        "There is no difference; they are interchangeable."
+      ],
+      "answer": 1,
+      "explanation": "HSL (Hue, Saturation, Lightness) provides a more intuitive way to define colors based on perceptual qualities, while RGB uses additive color mixing.",
+      "hint": "Think about how humans perceive color – is it more natural to think in terms of shades and tones or primary colors?"
+    },
+    {
+      "id": 5,
+      "question": "Which CSS property creates a smooth transition between two states?",
+      "options": [
+        "animation",
+        "transform",
+        "transition",
+        "keyframes"
+      ],
+      "answer": 2,
+      "explanation": "The `transition` property allows you to specify how property changes should be animated over a given duration.",
+      "hint": "This property is used to create visual effects when properties change."
+    },
+    {
+      "id": 6,
+      "question": "What does `justify-content: space-between;` do in a flex container?",
+      "options": [
+        "Distributes items evenly with equal space around them.",
+        "Distributes items evenly with space at the beginning and end.",
+        "Distributes items evenly with space between each item.",
+        "Aligns items to the start of the container."
+      ],
+      "answer": 2,
+      "explanation": "`justify-content: space-between;` distributes space evenly between flex items, with the first and last items aligned to the container's edges.",
+      "hint": "Consider how the space is allocated among the flex items."
+    },
+    {
+      "id": 7,
+      "question": "Which property controls the vertical alignment of items within a flex container?",
+      "options": [
+        "justify-content",
+        "align-items",
+        "flex-direction",
+        "flex-wrap"
+      ],
+      "answer": 1,
+      "explanation": "`align-items` controls the vertical alignment of flex items along the cross axis.",
+      "hint": "Think about which axis controls vertical positioning in a flex container."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of a card-based design?",
+      "options": [
+        "To create a linear, scrolling layout.",
+        "To present content in visually distinct, self-contained blocks.",
+        "To maximize screen real estate.",
+        "To simplify website navigation."
+      ],
+      "answer": 1,
+      "explanation": "Card-based designs organize content into visually separate cards, improving readability and user experience.",
+      "hint": "Consider how information is grouped and presented in modern web designs."
+    },
+    {
+      "id": 9,
+      "question": "How can you create a hover effect on a card that changes its background color?",
+      "options": [
+        "Using the `:hover` pseudo-class and the `background-color` property.",
+        "Using JavaScript event listeners.",
+        "Using the `animation` property.",
+        "Using the `transform` property."
+      ],
+      "answer": 0,
+      "explanation": "The `:hover` pseudo-class allows you to apply styles when the mouse cursor is over an element, and `background-color` changes the background.",
+      "hint": "Think about CSS pseudo-classes that respond to user interactions."
+    },
+    {
+      "id": 10,
+      "question": "What is the main difference between CSS Flexbox and CSS Grid?",
+      "options": [
+        "Flexbox is for one-dimensional layouts, while Grid is for two-dimensional layouts.",
+        "Grid is for one-dimensional layouts, while Flexbox is for two-dimensional layouts.",
+        "Flexbox is only for aligning items, while Grid is for creating entire page layouts.",
+        "There is no significant difference between them."
+      ],
+      "answer": 0,
+      "explanation": "Flexbox excels at arranging items in a single row or column, while Grid provides control over both rows and columns for complex layouts.",
+      "hint": "Consider the dimensionality of the layouts each system is designed for."
+    },
+    {
+      "id": 11,
+      "question": "In CSS Grid, what do `grid-column-start` and `grid-column-end` define?",
+      "options": [
+        "The number of rows an item spans.",
+        "The starting and ending grid lines for a column.",
+        "The alignment of an item within a grid cell.",
+        "The gap between grid items."
+      ],
+      "answer": 1,
+      "explanation": "`grid-column-start` and `grid-column-end` specify the grid lines where a grid item begins and ends in the column direction.",
+      "hint": "Think about how grid lines define the structure of a grid layout."
+    },
+    {
+      "id": 12,
+      "question": "What does the `object-fit` property control?",
+      "options": [
+        "The size of the container.",
+        "How an image or video should be resized to fit its container.",
+        "The alignment of text within an element.",
+        "The spacing between grid items."
+      ],
+      "answer": 1,
+      "explanation": "`object-fit` determines how the content of an element (like an image) should be resized to fit its container, options include 'cover', 'contain', 'fill', etc.",
+      "hint": "Consider how images are scaled and cropped within their containers."
+    },
+    {
+      "id": 13,
+      "question": "Which `object-fit` value ensures the entire image is visible within its container, potentially leaving empty space?",
+      "options": [
+        "cover",
+        "contain",
+        "fill",
+        "none"
+      ],
+      "answer": 1,
+      "explanation": "`object-fit: contain;` scales the image to fit within the container while maintaining its aspect ratio, potentially leaving empty space.",
+      "hint": "Think about which value prioritizes showing the entire image."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of using `viewport` units (e.g., `vh`, `vw`)?",
+      "options": [
+        "To specify sizes relative to the root element.",
+        "To specify sizes relative to the viewport.",
+        "To specify sizes in pixels.",
+        "To specify sizes in ems."
+      ],
+      "answer": 1,
+      "explanation": "Viewport units (`vh` and `vw`) are relative to the viewport's height and width, making them useful for responsive design.",
+      "hint": "Consider how these units relate to the browser window size."
+    },
+    {
+      "id": 15,
+      "question": "How can you create a fixed sidebar navigation that remains visible while scrolling?",
+      "options": [
+        "Using `position: relative;`.",
+        "Using `position: absolute;`.",
+        "Using `position: fixed;`.",
+        "Using `position: static;`."
+      ],
+      "answer": 2,
+      "explanation": "`position: fixed;` removes the element from the normal document flow and positions it relative to the viewport, keeping it fixed during scrolling.",
+      "hint": "Think about which positioning value keeps an element in a constant location on the screen."
+    },
+    {
+      "id": 16,
+      "question": "What is the difference between `position: relative;` and `position: static;`?",
+      "options": [
+        "`relative` positions the element relative to its normal position, while `static` is the default positioning.",
+        "`static` positions the element relative to its normal position, while `relative` is the default positioning.",
+        "They are identical.",
+        "`relative` is used for fixed positioning, while `static` is for absolute positioning."
+      ],
+      "answer": 0,
+      "explanation": "`position: static;` is the default, meaning the element is positioned according to the normal document flow. `position: relative;` allows you to offset the element from its normal position.",
+      "hint": "Consider how each positioning value affects the element's placement in the document."
+    },
+    {
+      "id": 17,
+      "question": "How can you create a circular image using CSS?",
+      "options": [
+        "Using the `shape-outside` property.",
+        "Using the `border-radius: 50%;` property.",
+        "Using the `clip-path` property.",
+        "Using the `transform: rotate(360deg);` property."
+      ],
+      "answer": 1,
+      "explanation": "Setting `border-radius: 50%;` on an image with equal width and height will create a circular shape.",
+      "hint": "Think about which property controls the rounding of corners."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of CSS gradients?",
+      "options": [
+        "To add shadows to elements.",
+        "To create smooth transitions between colors.",
+        "To define the background color of an element.",
+        "To animate elements on the page."
+      ],
+      "answer": 1,
+      "explanation": "CSS gradients create a smooth transition between two or more colors, adding visual interest to backgrounds and other elements.",
+      "hint": "Consider how gradients create a visual effect of blending colors."
+    },
+    {
+      "id": 19,
+      "question": "Which type of gradient creates a color transition from a central point?",
+      "options": [
+        "Linear gradient",
+        "Radial gradient",
+        "Conic gradient",
+        "Repeating gradient"
+      ],
+      "answer": 1,
+      "explanation": "A radial gradient transitions colors from a central point, creating a circular or elliptical effect.",
+      "hint": "Think about the shape of the color transition."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the `conic-gradient()` function in CSS?",
+      "options": [
+        "To create a gradient that transitions colors along a line.",
+        "To create a gradient that transitions colors around a center point in a circular fashion.",
+        "To create a repeating linear gradient.",
+        "To create a gradient with sharp color boundaries."
+      ],
+      "answer": 1,
+      "explanation": "The `conic-gradient()` function creates a gradient that transitions colors around a center point, similar to a color wheel.",
+      "hint": "Consider the shape and direction of the color transition."
+    },
+    {
+      "id": 21,
+      "question": "What is the effect of `transition: all 0.3s ease;`?",
+      "options": [
+        "Applies a 0.3-second transition to all properties with an ease timing function.",
+        "Applies a 0.3-second transition to only the background color.",
+        "Applies a 0.3-second transition to only the width and height.",
+        "Disables all transitions."
+      ],
+      "answer": 0,
+      "explanation": "This CSS rule applies a smooth 0.3-second transition to all animatable properties, using the 'ease' timing function for a natural acceleration/deceleration effect.",
+      "hint": "Think about what 'all' means in the context of CSS transitions."
+    },
+    {
+      "id": 22,
+      "question": "Given the following CSS: `.card { width: 200px; height: 300px; overflow: hidden; } .card img { width: 100%; height: auto; }`, what will happen to an image inside the card if the image's aspect ratio doesn't match the card's?",
+      "options": [
+        "The image will be stretched to fit the card.",
+        "The image will be cropped to fit the card.",
+        "The image will overflow the card.",
+        "The image will be scaled down to fit within the card while maintaining its aspect ratio."
+      ],
+      "answer": 3,
+      "explanation": "The `overflow: hidden;` property on the card will hide any part of the image that extends beyond the card's boundaries, and `height: auto;` maintains the aspect ratio.",
+      "hint": "Consider the interaction between `overflow: hidden;` and `height: auto;`."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the `align-content` property in Flexbox?",
+      "options": [
+        "To align items along the main axis.",
+        "To align items along the cross axis.",
+        "To distribute space between lines of flex items.",
+        "To control the order of flex items."
+      ],
+      "answer": 2,
+      "explanation": "`align-content` controls how flex lines are distributed along the cross axis when there is extra space in the flex container.",
+      "hint": "Think about how this property affects multiple lines of flex items."
+    },
+    {
+      "id": 24,
+      "question": "Which CSS property is used to add space between grid items?",
+      "options": [
+        "margin",
+        "padding",
+        "grid-gap",
+        "border-spacing"
+      ],
+      "answer": 2,
+      "explanation": "`grid-gap` (or `grid-row-gap` and `grid-column-gap`) is used to specify the space between grid items.",
+      "hint": "Consider properties specifically designed for grid layouts."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between `em` and `rem` units in CSS?",
+      "options": [
+        "`em` is relative to the root element, while `rem` is relative to the parent element.",
+        "`rem` is relative to the root element, while `em` is relative to the parent element.",
+        "They are identical.",
+        "`em` is used for font sizes, while `rem` is used for margins and padding."
+      ],
+      "answer": 1,
+      "explanation": "`rem` (root em) is relative to the font size of the root element (`<html>`), providing consistent scaling, while `em` is relative to the font size of the parent element.",
+      "hint": "Think about the base element each unit references."
+    },
+    {
+      "id": 26,
+      "question": "What does `z-index` property control?",
+      "options": [
+        "The size of an element.",
+        "The stacking order of elements.",
+        "The transparency of an element.",
+        "The animation speed of an element."
+      ],
+      "answer": 1,
+      "explanation": "The `z-index` property specifies the stack order of an element, controlling which elements appear in front of others.",
+      "hint": "Consider how elements overlap on a webpage."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `::before` and `::after` pseudo-elements?",
+      "options": [
+        "To style the first and last child elements.",
+        "To insert content before or after an element's content.",
+        "To create hover effects.",
+        "To add animations to elements."
+      ],
+      "answer": 1,
+      "explanation": "The `::before` and `::after` pseudo-elements allow you to insert content (text, images, etc.) before or after the content of an element.",
+      "hint": "Think about how you can add content without modifying the HTML."
+    },
+    {
+      "id": 28,
+      "question": "Which CSS property is used to make an element transparent?",
+      "options": [
+        "color",
+        "background-color",
+        "opacity",
+        "visibility"
+      ],
+      "answer": 2,
+      "explanation": "The `opacity` property controls the transparency of an element, with values ranging from 0 (fully transparent) to 1 (fully opaque).",
+      "hint": "Consider which property affects the overall visibility of an element."
+    },
+    {
+      "id": 29,
+      "question": "What is the effect of `display: none;`?",
+      "options": [
+        "Hides the element but still takes up space in the layout.",
+        "Completely removes the element from the document flow.",
+        "Makes the element transparent.",
+        "Disables the element's functionality."
+      ],
+      "answer": 1,
+      "explanation": "`display: none;` removes the element from the document flow, meaning it doesn't take up any space and is not rendered.",
+      "hint": "Think about how this property affects the layout of the page."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the `box-sizing` property?",
+      "options": [
+        "To control the size of the box model.",
+        "To control the spacing between elements.",
+        "To control the alignment of elements.",
+        "To control the color of the box model."
+      ],
+      "answer": 0,
+      "explanation": "The `box-sizing` property determines how the total width and height of an element are calculated, with `border-box` including padding and border in the specified dimensions.",
+      "hint": "Consider how padding and border affect the overall size of an element."
+    },
+    {
+      "id": 31,
+      "question": "What is the primary advantage of using CSS variables (custom properties)?",
+      "options": [
+        "They improve website security.",
+        "They allow for easier theme switching and code maintainability.",
+        "They reduce website loading times.",
+        "They automatically optimize images."
+      ],
+      "answer": 1,
+      "explanation": "CSS variables allow you to define reusable values that can be easily updated throughout your stylesheet, simplifying theme changes and code maintenance.",
+      "hint": "Think about how you can make your CSS more flexible and reusable."
+    },
+    {
+      "id": 32,
+      "question": "Given the following CSS: `.container { display: grid; grid-template-columns: repeat(3, 1fr); }`, what does this code do?",
+      "options": [
+        "Creates a flex container with three equal-width items.",
+        "Creates a grid container with three equal-width columns.",
+        "Creates a container with a fixed width of 300px.",
+        "Creates a container with three rows."
+      ],
+      "answer": 1,
+      "explanation": "This code creates a grid container with three columns, each taking up an equal fraction (1fr) of the available space.",
+      "hint": "Consider the meaning of `grid-template-columns` and `repeat()`."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the `clamp()` function in CSS?",
+      "options": [
+        "To create a gradient.",
+        "To limit a value within a specified range.",
+        "To animate an element.",
+        "To change the font size."
+      ],
+      "answer": 1,
+      "explanation": "The `clamp()` function limits a value between a minimum, preferred, and maximum value, useful for responsive typography and sizing.",
+      "hint": "Think about how you can ensure a value stays within certain bounds."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between `visibility: hidden;` and `display: none;`?",
+      "options": [
+        "`visibility: hidden;` removes the element from the document flow, while `display: none;` hides it but keeps its space.",
+        "`display: none;` removes the element from the document flow, while `visibility: hidden;` hides it but keeps its space.",
+        "They are identical.",
+        "Neither property hides the element."
+      ],
+      "answer": 1,
+      "explanation": "`display: none;` removes the element from the document flow, while `visibility: hidden;` hides the element but it still occupies space in the layout.",
+      "hint": "Consider how each property affects the layout of the page."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `filter` property in CSS?",
+      "options": [
+        "To change the color of an element.",
+        "To apply visual effects like blur, grayscale, and contrast.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `filter` property allows you to apply various visual effects to an element, such as blur, grayscale, contrast, and more.",
+      "hint": "Think about how you can modify the appearance of an element without changing its content."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the `backdrop-filter` property in CSS?",
+      "options": [
+        "To filter the element itself.",
+        "To filter the content behind the element.",
+        "To add a shadow to the element.",
+        "To animate the element."
+      ],
+      "answer": 1,
+      "explanation": "The `backdrop-filter` property applies visual effects to the area behind an element, creating a blurred or frosted glass effect.",
+      "hint": "Consider how this property affects the background of an element."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `will-change` property in CSS?",
+      "options": [
+        "To change the color of an element.",
+        "To inform the browser about upcoming changes to an element.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `will-change` property informs the browser about upcoming changes to an element, allowing it to optimize performance.",
+      "hint": "Think about how you can improve the performance of animations and transitions."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `content` property in CSS when used with pseudo-elements?",
+      "options": [
+        "To specify the color of the pseudo-element.",
+        "To insert text or other content into the pseudo-element.",
+        "To control the size of the pseudo-element.",
+        "To animate the pseudo-element."
+      ],
+      "answer": 1,
+      "explanation": "The `content` property is used to insert text, images, or other content into pseudo-elements like `::before` and `::after`.",
+      "hint": "Think about how you can add content without modifying the HTML."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `caret-color` property in CSS?",
+      "options": [
+        "To change the color of the text.",
+        "To change the color of the cursor.",
+        "To change the color of the text selection caret.",
+        "To animate the text."
+      ],
+      "answer": 2,
+      "explanation": "The `caret-color` property specifies the color of the text selection caret (the blinking cursor).",
+      "hint": "Consider which part of the text is affected by this property."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `hyphens` property in CSS?",
+      "options": [
+        "To control the alignment of text.",
+        "To control the spacing between letters.",
+        "To control how words are broken at the end of a line.",
+        "To change the font size."
+      ],
+      "answer": 2,
+      "explanation": "The `hyphens` property controls how words are broken at the end of a line, improving readability in justified text.",
+      "hint": "Think about how words are split when they reach the end of a line."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of the `writing-mode` property in CSS?",
+      "options": [
+        "To control the alignment of text.",
+        "To control the direction of text.",
+        "To control the spacing between letters.",
+        "To change the font size."
+      ],
+      "answer": 1,
+      "explanation": "The `writing-mode` property specifies the direction of text, allowing for vertical or horizontal writing.",
+      "hint": "Consider how text can be displayed in different orientations."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `text-wrap: balance;` property in CSS?",
+      "options": [
+        "To wrap text evenly across multiple lines.",
+        "To balance the last line of text in a paragraph.",
+        "To prevent text from wrapping.",
+        "To control the spacing between words."
+      ],
+      "answer": 1,
+      "explanation": "The `text-wrap: balance;` property attempts to distribute text evenly across multiple lines, improving visual balance.",
+      "hint": "Think about how this property affects the appearance of paragraphs."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `shape-outside` property in CSS?",
+      "options": [
+        "To change the shape of an element.",
+        "To define the shape around which text will wrap.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `shape-outside` property defines a shape around which text will wrap, creating interesting visual effects.",
+      "hint": "Consider how text can flow around an element with a custom shape."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `mask-image` property in CSS?",
+      "options": [
+        "To change the color of an element.",
+        "To use an image to mask an element's transparency.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `mask-image` property uses an image to define the transparency of an element, creating complex shapes and effects.",
+      "hint": "Think about how you can use an image to control the visibility of an element."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `scroll-snap-type` property in CSS?",
+      "options": [
+        "To control the scrolling speed.",
+        "To create a snapping effect when scrolling.",
+        "To add a shadow to the scrollbar.",
+        "To animate the scrollbar."
+      ],
+      "answer": 1,
+      "explanation": "The `scroll-snap-type` property creates a snapping effect when scrolling, making it easier to navigate to specific sections.",
+      "hint": "Consider how this property affects the user's scrolling experience."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the `initial-letter` property in CSS?",
+      "options": [
+        "To change the color of the first letter.",
+        "To create a drop cap effect for the first letter of a paragraph.",
+        "To add a shadow to the first letter.",
+        "To animate the first letter."
+      ],
+      "answer": 1,
+      "explanation": "The `initial-letter` property creates a drop cap effect, making the first letter of a paragraph larger and more prominent.",
+      "hint": "Think about how you can visually emphasize the beginning of a paragraph."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `text-emphasis-color` property in CSS?",
+      "options": [
+        "To change the color of the text.",
+        "To change the color of the text selection.",
+        "To highlight specific characters in the text.",
+        "To add a shadow to the text."
+      ],
+      "answer": 2,
+      "explanation": "The `text-emphasis-color` property highlights specific characters in the text, such as punctuation marks or emphasis markers.",
+      "hint": "Consider how you can draw attention to specific parts of the text."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the `line-clamp` property in CSS?",
+      "options": [
+        "To control the line height.",
+        "To limit the number of lines of text displayed.",
+        "To control the spacing between lines.",
+        "To change the font size."
+      ],
+      "answer": 1,
+      "explanation": "The `line-clamp` property limits the number of lines of text displayed, adding an ellipsis (...) to indicate truncated content.",
+      "hint": "Think about how you can truncate long text blocks."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `contain: layout;` property in CSS?",
+      "options": [
+        "To contain the overflow of an element.",
+        "To isolate an element's layout from the rest of the page.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `contain: layout;` property isolates an element's layout from the rest of the page, improving performance by preventing unnecessary recalculations.",
+      "hint": "Consider how you can optimize rendering performance."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `accent-color` property in CSS?",
+      "options": [
+        "To change the color of the text.",
+        "To change the color of form controls.",
+        "To add a shadow to an element.",
+        "To animate an element."
+      ],
+      "answer": 1,
+      "explanation": "The `accent-color` property allows you to customize the color of form controls, such as checkboxes, radio buttons, and sliders.",
+      "hint": "Consider how you can style form elements to match your website's design."
+    }
+  ]
+}

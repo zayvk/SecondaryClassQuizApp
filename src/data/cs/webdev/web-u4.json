@@ -1,0 +1,669 @@
+{
+  "subject": "HTML, CSS and JavaScript",
+  "unit": "Unit 4: Loops, Functions and Arrays",
+  "unitId": "web-u4",
+  "categoryId": "cs",
+  "topics": [
+    "Loops — for, while, do-while",
+    "break and continue statements and best practices",
+    "What are functions and why we use them",
+    "Function declaration, parameters, return values, function expressions",
+    "What are Arrays and array methods — push, pop, shift, unshift, splice, slice, map, filter, reduce",
+    "Looping through arrays — for loop and forEach",
+    "What is browser caching and how JavaScript relates to caching",
+    "Arrow functions and their differences from regular functions"
+  ],
+  "generatedAt": "2026-03-28T08:57:29Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which loop is guaranteed to execute at least once?",
+      "options": [
+        "for loop",
+        "while loop",
+        "do-while loop",
+        "for...in loop"
+      ],
+      "answer": 2,
+      "explanation": "The do-while loop executes the code block at least once before checking the condition, ensuring execution even if the condition is initially false.",
+      "hint": "Consider the order in which the condition is checked in each loop type."
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the 'break' statement?",
+      "options": [
+        "To skip to the next iteration of a loop",
+        "To terminate the current loop",
+        "To define a new function",
+        "To declare a variable"
+      ],
+      "answer": 1,
+      "explanation": "The 'break' statement immediately terminates the loop it is contained within, transferring control to the statement immediately following the loop.",
+      "hint": "Think about how you would exit a loop prematurely based on a condition."
+    },
+    {
+      "id": 3,
+      "question": "What is the primary benefit of using functions in JavaScript?",
+      "options": [
+        "To reduce code duplication and improve readability",
+        "To increase execution speed",
+        "To automatically handle browser caching",
+        "To create dynamic HTML elements"
+      ],
+      "answer": 0,
+      "explanation": "Functions allow you to encapsulate reusable blocks of code, reducing redundancy and making your code more organized and easier to understand.",
+      "hint": "Consider the principles of good software design."
+    },
+    {
+      "id": 4,
+      "question": "What is a function expression?",
+      "options": [
+        "A function declared with the 'function' keyword followed by a name",
+        "A function assigned to a variable",
+        "A function that returns no value",
+        "A function that takes no parameters"
+      ],
+      "answer": 1,
+      "explanation": "A function expression defines a function as part of an expression, typically assigning it to a variable.",
+      "hint": "Think about how functions can be treated as values in JavaScript."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between 'return' and 'console.log'?",
+      "options": [
+        "'return' displays output to the console, while 'console.log' returns a value",
+        "'return' returns a value from a function, while 'console.log' displays output to the console",
+        "They both do the same thing",
+        "'return' is used for debugging, while 'console.log' is for production code"
+      ],
+      "answer": 1,
+      "explanation": "'return' specifies the value a function sends back to its caller, while 'console.log' is used for debugging and displays information in the browser's console.",
+      "hint": "Consider the purpose of each statement in the context of a function's execution."
+    },
+    {
+      "id": 6,
+      "question": "Which array method removes the last element from an array and returns that element?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "answer": 1,
+      "explanation": "The 'pop()' method removes the last element from an array and returns that element, modifying the original array.",
+      "hint": "Think about the direction from which elements are removed."
+    },
+    {
+      "id": 7,
+      "question": "What does the 'splice()' method do?",
+      "options": [
+        "Removes the first element of an array",
+        "Adds elements to the beginning of an array",
+        "Removes or replaces elements in an array",
+        "Creates a new array with a subset of elements"
+      ],
+      "answer": 2,
+      "explanation": "The 'splice()' method can be used to remove elements from an array, replace existing elements, or add new elements at a specified index.",
+      "hint": "Consider its versatility in modifying array content."
+    },
+    {
+      "id": 8,
+      "question": "What is the purpose of the 'slice()' method?",
+      "options": [
+        "Modifies the original array",
+        "Returns a shallow copy of a portion of an array",
+        "Adds elements to the end of an array",
+        "Sorts the elements of an array"
+      ],
+      "answer": 1,
+      "explanation": "The 'slice()' method returns a new array containing a portion of the original array, without modifying the original array.",
+      "hint": "Think about whether the original array is altered."
+    },
+    {
+      "id": 9,
+      "question": "What does the 'map()' method do?",
+      "options": [
+        "Filters elements based on a condition",
+        "Transforms each element of an array and returns a new array",
+        "Reduces an array to a single value",
+        "Removes duplicate elements from an array"
+      ],
+      "answer": 1,
+      "explanation": "The 'map()' method iterates over an array and applies a provided function to each element, returning a new array with the transformed values.",
+      "hint": "Consider how it changes each element individually."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the 'filter()' method?",
+      "options": [
+        "Transforms each element of an array",
+        "Reduces an array to a single value",
+        "Creates a new array with elements that pass a test",
+        "Sorts the elements of an array"
+      ],
+      "answer": 2,
+      "explanation": "The 'filter()' method creates a new array containing only the elements from the original array that satisfy a provided condition.",
+      "hint": "Think about selecting elements based on a criteria."
+    },
+    {
+      "id": 11,
+      "question": "What does the 'reduce()' method do?",
+      "options": [
+        "Filters elements based on a condition",
+        "Transforms each element of an array",
+        "Combines array elements into a single value",
+        "Sorts the elements of an array"
+      ],
+      "answer": 2,
+      "explanation": "The 'reduce()' method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.",
+      "hint": "Consider how it accumulates a result over the array."
+    },
+    {
+      "id": 12,
+      "question": "How do you loop through an array using the 'forEach' method?",
+      "options": [
+        "Using a 'for' loop with an index",
+        "Providing a callback function to 'forEach'",
+        "Using a 'while' loop",
+        "Using a 'do-while' loop"
+      ],
+      "answer": 1,
+      "explanation": "The 'forEach' method takes a callback function as an argument, which is executed for each element in the array.",
+      "hint": "Think about how 'forEach' handles iteration internally."
+    },
+    {
+      "id": 13,
+      "question": "What is browser caching and how does it relate to JavaScript?",
+      "options": [
+        "Browser caching stores static assets to reduce load times; JavaScript can control cache behavior with headers and service workers.",
+        "Browser caching only stores images; JavaScript has no control over it.",
+        "Browser caching is a server-side process; JavaScript cannot interact with it.",
+        "Browser caching is disabled by default; JavaScript must explicitly enable it."
+      ],
+      "answer": 0,
+      "explanation": "Browser caching stores static assets (HTML, CSS, JavaScript, images) to reduce load times. JavaScript can influence caching through techniques like setting cache control headers and using service workers for more advanced control.",
+      "hint": "Consider how frequently updated resources are handled."
+    },
+    {
+      "id": 14,
+      "question": "What is an arrow function?",
+      "options": [
+        "A traditional function declaration",
+        "A more concise way to write functions",
+        "A function that can only be used in loops",
+        "A function that cannot return a value"
+      ],
+      "answer": 1,
+      "explanation": "Arrow functions provide a more concise syntax for writing functions, especially for simple expressions.",
+      "hint": "Think about the syntax differences compared to regular functions."
+    },
+    {
+      "id": 15,
+      "question": "What is the main difference between a regular function and an arrow function regarding 'this'?",
+      "options": [
+        "Regular functions bind 'this' dynamically, while arrow functions lexically bind 'this'",
+        "Arrow functions bind 'this' dynamically, while regular functions lexically bind 'this'",
+        "There is no difference",
+        "'this' is not used in arrow functions"
+      ],
+      "answer": 0,
+      "explanation": "Regular functions determine the value of 'this' based on how they are called, while arrow functions inherit 'this' from the surrounding scope (lexical binding).",
+      "hint": "Consider the context in which 'this' is evaluated."
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is the correct way to declare a function that takes no arguments?",
+      "options": [
+        "function myFunction() {}",
+        "function myFunction(args) {}",
+        "function myFunction([]) {}",
+        "function myFunction(null) {}"
+      ],
+      "answer": 0,
+      "explanation": "The correct way to declare a function that takes no arguments is to use empty parentheses: `function myFunction() {}`.",
+      "hint": "Think about what empty parentheses signify in a function declaration."
+    },
+    {
+      "id": 17,
+      "question": "What will be the output of the following code? `for (let i = 0; i < 5; i++) { if (i === 3) { continue; } console.log(i); }`",
+      "options": [
+        "0 1 2 3 4",
+        "0 1 2 4",
+        "1 2 3 4",
+        "0 1 3 4"
+      ],
+      "answer": 1,
+      "explanation": "The loop iterates from 0 to 4. When i is 3, the 'continue' statement skips the rest of the current iteration and moves to the next, so 3 is not printed.",
+      "hint": "Pay attention to the 'continue' statement and its effect on the loop."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of the 'unshift()' method?",
+      "options": [
+        "Removes the last element of an array",
+        "Adds elements to the beginning of an array",
+        "Removes the first element of an array",
+        "Adds elements to the end of an array"
+      ],
+      "answer": 1,
+      "explanation": "The 'unshift()' method adds one or more elements to the beginning of an array and returns the new length of the array.",
+      "hint": "Think about the direction in which elements are added."
+    },
+    {
+      "id": 19,
+      "question": "Consider the following code: `const arr = [1, 2, 3]; const newArr = arr.map(x => x * 2); console.log(newArr);` What will be the output?",
+      "options": [
+        "[1, 2, 3]",
+        "[2, 4, 6]",
+        "[1, 4, 9]",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "The 'map()' method iterates through the array and multiplies each element by 2, creating a new array with the doubled values.",
+      "hint": "Think about what the arrow function is doing to each element."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between '===' and '==' in JavaScript?",
+      "options": [
+        "'===' checks for equality without type conversion, while '==' allows type conversion",
+        "'==' checks for equality without type conversion, while '===' allows type conversion",
+        "They are identical",
+        "Only '===' can be used with strings"
+      ],
+      "answer": 0,
+      "explanation": "The '===' operator (strict equality) checks for equality without performing type coercion, while '==' (loose equality) allows type conversion before comparison.",
+      "hint": "Consider the implications of type coercion."
+    },
+    {
+      "id": 21,
+      "question": "Which loop is most suitable for iterating over an array when you need to access both the index and the value of each element?",
+      "options": [
+        "forEach",
+        "for...of",
+        "for...in",
+        "while"
+      ],
+      "answer": 0,
+      "explanation": "While all can iterate, `forEach` provides direct access to both the index and value through its callback function parameters.",
+      "hint": "Consider the parameters provided by each loop type."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the 'continue' statement within a loop?",
+      "options": [
+        "To terminate the loop entirely",
+        "To skip the current iteration and proceed to the next",
+        "To restart the loop from the beginning",
+        "To pause the loop execution"
+      ],
+      "answer": 1,
+      "explanation": "The 'continue' statement skips the remaining code within the current iteration of a loop and proceeds to the next iteration.",
+      "hint": "Think about how it affects the flow of execution within the loop."
+    },
+    {
+      "id": 23,
+      "question": "What is the primary advantage of using function parameters?",
+      "options": [
+        "They allow functions to return multiple values",
+        "They make functions more reusable and flexible",
+        "They automatically document the function's purpose",
+        "They improve the function's execution speed"
+      ],
+      "answer": 1,
+      "explanation": "Function parameters allow you to pass data into a function, making it more versatile and reusable with different inputs.",
+      "hint": "Consider how parameters enable functions to operate on different data."
+    },
+    {
+      "id": 24,
+      "question": "What will be the output of the following code? `const arr = [1, 2, 3, 4, 5]; const newArr = arr.filter(x => x % 2 === 0); console.log(newArr);`",
+      "options": [
+        "[1, 3, 5]",
+        "[2, 4]",
+        "[1, 2, 3, 4, 5]",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "The 'filter()' method creates a new array containing only the elements from the original array that are even (divisible by 2).",
+      "hint": "Think about the condition used in the filter function."
+    },
+    {
+      "id": 25,
+      "question": "How can you prevent caching of a specific JavaScript file in a browser?",
+      "options": [
+        "Set the 'Cache-Control' header to 'no-cache'",
+        "Rename the file every time it's updated",
+        "Disable browser caching globally",
+        "Use a different file extension"
+      ],
+      "answer": 0,
+      "explanation": "Setting the 'Cache-Control' header to 'no-cache' instructs the browser not to cache the file, forcing it to download the latest version each time.",
+      "hint": "Consider how HTTP headers control caching behavior."
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between 'let' and 'var' in JavaScript?",
+      "options": [
+        "'let' has block scope, while 'var' has function scope",
+        "'var' has block scope, while 'let' has function scope",
+        "They are identical",
+        "'let' can only be used in loops"
+      ],
+      "answer": 0,
+      "explanation": "'let' declares variables with block scope, meaning they are only accessible within the block they are defined in. 'var' declares variables with function scope, making them accessible throughout the entire function.",
+      "hint": "Consider the scope of variables declared with each keyword."
+    },
+    {
+      "id": 27,
+      "question": "What will be the output of the following code? `const arr = [1, 2, 3]; arr.push(4, 5); console.log(arr);`",
+      "options": [
+        "[1, 2, 3]",
+        "[1, 2, 3, 4]",
+        "[1, 2, 3, 4, 5]",
+        "Error"
+      ],
+      "answer": 2,
+      "explanation": "The 'push()' method adds one or more elements to the end of an array, modifying the original array.",
+      "hint": "Think about where 'push' adds elements."
+    },
+    {
+      "id": 28,
+      "question": "Which array method returns a new array containing a portion of the original array without modifying it?",
+      "options": [
+        "splice()",
+        "slice()",
+        "pop()",
+        "shift()"
+      ],
+      "answer": 1,
+      "explanation": "The 'slice()' method returns a shallow copy of a portion of an array, leaving the original array unchanged.",
+      "hint": "Consider whether the original array is altered."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of a 'return' statement in a function?",
+      "options": [
+        "To print output to the console",
+        "To terminate the function and optionally return a value",
+        "To declare a variable",
+        "To call another function"
+      ],
+      "answer": 1,
+      "explanation": "The 'return' statement terminates the execution of a function and optionally returns a value to the caller.",
+      "hint": "Think about how functions provide results."
+    },
+    {
+      "id": 30,
+      "question": "What is the benefit of using arrow functions over traditional functions when dealing with event handlers?",
+      "options": [
+        "Arrow functions are faster",
+        "Arrow functions automatically bind 'this' to the event target",
+        "Arrow functions can only be used with anonymous functions",
+        "Arrow functions are more verbose"
+      ],
+      "answer": 1,
+      "explanation": "Arrow functions lexically bind 'this', meaning 'this' refers to the surrounding scope, which is often the desired behavior in event handlers.",
+      "hint": "Consider the challenges of 'this' binding in event handlers."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of the 'unshift()' method?",
+      "options": [
+        "Removes the last element of an array",
+        "Adds elements to the beginning of an array",
+        "Removes the first element of an array",
+        "Adds elements to the end of an array"
+      ],
+      "answer": 1,
+      "explanation": "The 'unshift()' method adds one or more elements to the beginning of an array and returns the new length of the array.",
+      "hint": "Think about the direction in which elements are added."
+    },
+    {
+      "id": 32,
+      "question": "What is the difference between 'null' and 'undefined' in JavaScript?",
+      "options": [
+        "'null' is a value assigned to a variable, while 'undefined' means a variable has been declared but not assigned a value",
+        "'undefined' is a value assigned to a variable, while 'null' means a variable has been declared but not assigned a value",
+        "They are identical",
+        "Both represent an empty string"
+      ],
+      "answer": 0,
+      "explanation": "'null' is an assignment value representing the intentional absence of a value, while 'undefined' means a variable has been declared but has not been assigned a value.",
+      "hint": "Consider the intentionality behind each value."
+    },
+    {
+      "id": 33,
+      "question": "What will be the output of the following code? `let i = 0; while (i < 5) { console.log(i); i++; }`",
+      "options": [
+        "0 1 2 3 4",
+        "1 2 3 4 5",
+        "0 1 2 3",
+        "Error"
+      ],
+      "answer": 0,
+      "explanation": "The 'while' loop iterates as long as the condition (i < 5) is true, printing the value of 'i' in each iteration and incrementing it until it reaches 5.",
+      "hint": "Trace the value of 'i' through each iteration."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the 'reduce()' method in array manipulation?",
+      "options": [
+        "To filter elements based on a condition",
+        "To map each element to a new value",
+        "To combine array elements into a single value",
+        "To sort the array elements"
+      ],
+      "answer": 2,
+      "explanation": "The 'reduce()' method applies a function against an accumulator and each element in the array to reduce it to a single value.",
+      "hint": "Think about accumulating a result over the array."
+    },
+    {
+      "id": 35,
+      "question": "How does browser caching improve website performance?",
+      "options": [
+        "By reducing the amount of JavaScript code",
+        "By storing static assets locally, reducing download times",
+        "By automatically optimizing images",
+        "By compressing HTML code"
+      ],
+      "answer": 1,
+      "explanation": "Browser caching stores static assets (HTML, CSS, JavaScript, images) locally, so the browser doesn't need to download them every time the user visits the website, reducing load times.",
+      "hint": "Consider how repeated requests for the same resources are handled."
+    },
+    {
+      "id": 36,
+      "question": "What is the primary difference between a 'for' loop and a 'for...of' loop?",
+      "options": [
+        "'for' loop iterates over indices, while 'for...of' iterates over values",
+        "'for...of' loop iterates over indices, while 'for' loop iterates over values",
+        "They are identical",
+        "'for' loop can only be used with arrays"
+      ],
+      "answer": 0,
+      "explanation": "A 'for' loop typically iterates over array indices, while a 'for...of' loop directly iterates over the values of an iterable object (like an array).",
+      "hint": "Consider what each loop type provides access to."
+    },
+    {
+      "id": 37,
+      "question": "What will be the output of the following code? `const arr = [1, 2, 3]; const removed = arr.splice(1, 1); console.log(arr); console.log(removed);`",
+      "options": [
+        "arr: [1, 3], removed: [2]",
+        "arr: [1, 2], removed: [3]",
+        "arr: [1, 2, 3], removed: []",
+        "Error"
+      ],
+      "answer": 0,
+      "explanation": "The 'splice()' method removes 1 element starting from index 1 (which is 2). The original array is modified to [1, 3], and the removed element [2] is returned.",
+      "hint": "Pay attention to the start index and the number of elements to remove."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the 'forEach' method?",
+      "options": [
+        "To create a new array with filtered elements",
+        "To execute a provided function once for each array element",
+        "To reduce an array to a single value",
+        "To sort the elements of an array"
+      ],
+      "answer": 1,
+      "explanation": "The 'forEach' method executes a provided function once for each element in an array, in ascending order.",
+      "hint": "Think about how it iterates through the array."
+    },
+    {
+      "id": 39,
+      "question": "What is the significance of using 'strict mode' in JavaScript?",
+      "options": [
+        "It improves code readability",
+        "It enables faster execution speed",
+        "It enforces stricter parsing and error handling",
+        "It automatically optimizes JavaScript code"
+      ],
+      "answer": 2,
+      "explanation": "'Strict mode' enforces stricter parsing and error handling, helping to prevent common coding mistakes and improve code quality.",
+      "hint": "Consider how it affects the behavior of JavaScript code."
+    },
+    {
+      "id": 40,
+      "question": "What will be the output of the following code? `function test(a, b = 5) { return a + b; } console.log(test(2));`",
+      "options": [
+        "7",
+        "5",
+        "Error",
+        "25"
+      ],
+      "answer": 0,
+      "explanation": "The function 'test' takes two arguments, 'a' and 'b'. 'b' has a default value of 5. When only 'a' is provided, 'b' defaults to 5, and the function returns 2 + 5 = 7.",
+      "hint": "Consider the default parameter value."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following best describes the purpose of the 'break' statement within a loop?",
+      "options": [
+        "To skip to the next iteration of the loop.",
+        "To immediately terminate the loop's execution.",
+        "To restart the loop from the beginning.",
+        "To pause the loop indefinitely."
+      ],
+      "answer": 1,
+      "explanation": "The 'break' statement is used to exit a loop prematurely, transferring control to the statement immediately following the loop.",
+      "hint": "Think about how you would stop a loop based on a condition."
+    },
+    {
+      "id": 42,
+      "question": "What is the primary advantage of using functions in JavaScript?",
+      "options": [
+        "To increase the execution speed of the code.",
+        "To reduce code duplication and improve code organization.",
+        "To automatically handle browser caching.",
+        "To create dynamic HTML elements."
+      ],
+      "answer": 1,
+      "explanation": "Functions promote code reusability and modularity, leading to better organization and easier maintenance.",
+      "hint": "Consider the principles of good software design."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the 'unshift()' method in JavaScript arrays?",
+      "options": [
+        "To remove the last element of the array.",
+        "To add one or more elements to the beginning of the array.",
+        "To remove the first element of the array.",
+        "To add one or more elements to the end of the array."
+      ],
+      "answer": 1,
+      "explanation": "The 'unshift()' method adds elements to the beginning of an array, shifting existing elements to higher indices.",
+      "hint": "Think about the direction in which elements are added."
+    },
+    {
+      "id": 44,
+      "question": "What is the key difference between 'map()' and 'forEach()' methods in JavaScript arrays?",
+      "options": [
+        "'map()' modifies the original array, while 'forEach()' creates a new array.",
+        "'map()' returns a new array, while 'forEach()' does not.",
+        "'forEach()' returns a new array, while 'map()' does not.",
+        "They are identical in functionality."
+      ],
+      "answer": 1,
+      "explanation": "'map()' transforms each element of an array and returns a new array with the transformed values, while 'forEach()' iterates over the array and executes a provided function for each element but does not return a new array.",
+      "hint": "Consider what each method returns."
+    },
+    {
+      "id": 45,
+      "question": "How can JavaScript interact with browser caching mechanisms?",
+      "options": [
+        "JavaScript cannot directly control browser caching.",
+        "JavaScript can set cache control headers for specific files.",
+        "JavaScript can clear the browser cache on demand.",
+        "JavaScript can only read from the browser cache."
+      ],
+      "answer": 1,
+      "explanation": "JavaScript can influence browser caching by setting HTTP headers (e.g., Cache-Control) or using service workers to manage caching behavior.",
+      "hint": "Consider how HTTP headers control caching."
+    },
+    {
+      "id": 46,
+      "question": "What is the primary benefit of using arrow functions over traditional functions?",
+      "options": [
+        "Arrow functions are always faster.",
+        "Arrow functions have a more concise syntax.",
+        "Arrow functions lexically bind 'this'.",
+        "Arrow functions can be used as constructors."
+      ],
+      "answer": 2,
+      "explanation": "Arrow functions inherit the 'this' value from the surrounding scope, which can simplify code and avoid common 'this' binding issues.",
+      "hint": "Consider the challenges of 'this' binding in JavaScript."
+    },
+    {
+      "id": 47,
+      "question": "What will be the output of the following code? `const arr = [1, 2, 3, 4, 5]; const sum = arr.reduce((acc, curr) => acc + curr, 0); console.log(sum);`",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "Error"
+      ],
+      "answer": 2,
+      "explanation": "The 'reduce()' method accumulates the sum of all elements in the array, starting with an initial value of 0.",
+      "hint": "Consider how the accumulator is updated in each iteration."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the 'continue' statement in a loop?",
+      "options": [
+        "To terminate the loop entirely.",
+        "To skip the current iteration and proceed to the next.",
+        "To restart the loop from the beginning.",
+        "To pause the loop indefinitely."
+      ],
+      "answer": 1,
+      "explanation": "The 'continue' statement skips the remaining code within the current iteration and proceeds to the next iteration of the loop.",
+      "hint": "Think about how it affects the flow of execution within the loop."
+    },
+    {
+      "id": 49,
+      "question": "What is the difference between 'slice()' and 'splice()' methods in JavaScript arrays?",
+      "options": [
+        "'slice()' modifies the original array, while 'splice()' creates a new array.",
+        "'slice()' creates a new array, while 'splice()' modifies the original array.",
+        "They are identical in functionality.",
+        "Neither method modifies the original array."
+      ],
+      "answer": 1,
+      "explanation": "'slice()' returns a new array containing a portion of the original array without modifying it, while 'splice()' modifies the original array by removing or replacing elements.",
+      "hint": "Consider whether the original array is altered."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of using default parameters in JavaScript functions?",
+      "options": [
+        "To enforce strict type checking.",
+        "To provide a fallback value if an argument is not provided.",
+        "To automatically document the function's parameters.",
+        "To improve the function's execution speed."
+      ],
+      "answer": 1,
+      "explanation": "Default parameters allow you to specify a default value for a function parameter, which is used if the caller does not provide a value for that parameter.",
+      "hint": "Consider how to handle missing arguments."
+    }
+  ]
+}

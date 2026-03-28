@@ -1,0 +1,671 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 6: Sorting Algorithms",
+  "unitId": "dsa-u6",
+  "categoryId": "cs",
+  "topics": [
+    "Bubble Sort — compare adjacent elements, swap if wrong order",
+    "Bubble Sort time complexity — Best O(n), Worst O(n²)",
+    "Selection Sort — find minimum and place at correct position",
+    "Selection Sort time complexity — Best and Worst O(n²)",
+    "Insertion Sort — pick each element and insert into sorted part",
+    "Insertion Sort time complexity — Best O(n), Worst O(n²)",
+    "Divide and Conquer — Divide, Conquer, Combine",
+    "Merge Sort — split recursively then merge in sorted order, O(n log n)",
+    "Quick Sort — pivot element, sort left and right, Best O(n log n) Worst O(n²)",
+    "Comparing all sorting algorithms"
+  ],
+  "generatedAt": "2026-03-28T08:47:24Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the best-case time complexity of Bubble Sort?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Bubble Sort's best case occurs when the input array is already sorted, requiring only one pass to confirm this, resulting in O(n) complexity.",
+      "hint": "Consider the scenario where the array is already in the desired order."
+    },
+    {
+      "id": 2,
+      "question": "Selection Sort's time complexity remains consistent regardless of the initial order of the input. What is this complexity?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Selection Sort always iterates through the unsorted portion to find the minimum, leading to a consistent O(n²) complexity in all cases.",
+      "hint": "Think about how Selection Sort works, even if the data is pre-sorted."
+    },
+    {
+      "id": 3,
+      "question": "In Insertion Sort, where is the element inserted in each iteration?",
+      "options": [
+        "At the end of the sorted portion",
+        "At the beginning of the sorted portion",
+        "In the middle of the sorted portion",
+        "Randomly within the sorted portion"
+      ],
+      "answer": 1,
+      "explanation": "Insertion Sort maintains a sorted portion and inserts each new element at the correct position within that sorted portion.",
+      "hint": "Consider how Insertion Sort builds up a sorted sub-array."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following best describes the 'Divide and Conquer' paradigm?",
+      "options": [
+        "Iteratively refining a solution",
+        "Breaking a problem into smaller subproblems, solving them recursively, and combining the results",
+        "Using dynamic programming to store intermediate results",
+        "Greedily selecting the best option at each step"
+      ],
+      "answer": 1,
+      "explanation": "Divide and Conquer involves recursively breaking down a problem into smaller, independent subproblems, solving them, and then combining their solutions.",
+      "hint": "Think about how complex problems can be simplified by breaking them down."
+    },
+    {
+      "id": 5,
+      "question": "What is the time complexity of Merge Sort?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "answer": 1,
+      "explanation": "Merge Sort divides the array into halves recursively (log n) and then merges them in linear time (n), resulting in O(n log n) complexity.",
+      "hint": "Consider the recursive nature of Merge Sort and the merging process."
+    },
+    {
+      "id": 6,
+      "question": "In Quick Sort, what is the role of the pivot element?",
+      "options": [
+        "To find the minimum element",
+        "To divide the array into two sub-arrays based on its value",
+        "To merge the sorted sub-arrays",
+        "To determine the best-case time complexity"
+      ],
+      "answer": 1,
+      "explanation": "The pivot element is used to partition the array into two sub-arrays: elements less than the pivot and elements greater than the pivot.",
+      "hint": "Think about how Quick Sort rearranges the array around a central element."
+    },
+    {
+      "id": 7,
+      "question": "What is the worst-case time complexity of Quick Sort?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Quick Sort's worst case occurs when the pivot consistently results in highly unbalanced partitions, leading to O(n²) complexity.",
+      "hint": "Consider a scenario where the pivot is always the smallest or largest element."
+    },
+    {
+      "id": 8,
+      "question": "Which sorting algorithm is generally preferred for large datasets due to its efficiency?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort consistently provides O(n log n) performance, making it suitable for large datasets where efficiency is crucial.",
+      "hint": "Think about algorithms with logarithmic components in their time complexity."
+    },
+    {
+      "id": 9,
+      "question": "Bubble Sort is often considered inefficient. In what scenario might it be acceptable to use?",
+      "options": [
+        "Large datasets",
+        "Nearly sorted datasets",
+        "Randomly ordered datasets",
+        "Reverse sorted datasets"
+      ],
+      "answer": 1,
+      "explanation": "Bubble Sort performs well on nearly sorted datasets because it requires minimal swaps to achieve the sorted order.",
+      "hint": "Consider the number of swaps required in different scenarios."
+    },
+    {
+      "id": 10,
+      "question": "Selection Sort minimizes the number of swaps. What is its primary drawback?",
+      "options": [
+        "High memory usage",
+        "Poor performance on nearly sorted data",
+        "Always requires O(n²) comparisons",
+        "Not stable"
+      ],
+      "answer": 3,
+      "explanation": "Selection Sort always performs O(n²) comparisons, regardless of the input data, making it inefficient for large datasets.",
+      "hint": "Think about the number of passes Selection Sort makes through the data."
+    },
+    {
+      "id": 11,
+      "question": "Insertion Sort is efficient for small datasets and nearly sorted data. Why?",
+      "options": [
+        "It uses divide and conquer",
+        "It has a low overhead for small inputs",
+        "It always performs O(n) comparisons",
+        "It's a stable sorting algorithm"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort has a low overhead and performs well when the data is already partially sorted, requiring fewer shifts and comparisons.",
+      "hint": "Consider the operations Insertion Sort performs on each element."
+    },
+    {
+      "id": 12,
+      "question": "Merge Sort requires additional space for merging. What is this space complexity?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort requires temporary space proportional to the size of the input array to store the merged sub-arrays.",
+      "hint": "Think about the merging process and where the temporary data is stored."
+    },
+    {
+      "id": 13,
+      "question": "Quick Sort is often implemented in-place. What does 'in-place' mean?",
+      "options": [
+        "It requires no additional memory",
+        "It uses a small amount of stack space for recursion",
+        "It modifies the original array directly without significant extra space",
+        "It's faster than other algorithms"
+      ],
+      "answer": 2,
+      "explanation": "'In-place' means the algorithm modifies the original array directly with minimal additional memory usage, primarily for the recursion stack.",
+      "hint": "Consider how Quick Sort rearranges the elements within the original array."
+    },
+    {
+      "id": 14,
+      "question": "Which sorting algorithm is stable?",
+      "options": [
+        "Quick Sort",
+        "Selection Sort",
+        "Merge Sort",
+        "Bubble Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort is a stable sorting algorithm, meaning it preserves the relative order of equal elements.",
+      "hint": "Consider how the merging process handles equal elements."
+    },
+    {
+      "id": 15,
+      "question": "What is the primary advantage of using Quick Sort over Merge Sort in practice?",
+      "options": [
+        "Lower space complexity",
+        "Guaranteed O(n log n) time complexity",
+        "Stability",
+        "Simpler implementation"
+      ],
+      "answer": 0,
+      "explanation": "Quick Sort generally has lower space complexity than Merge Sort because it's often implemented in-place.",
+      "hint": "Think about the memory requirements of each algorithm."
+    },
+    {
+      "id": 16,
+      "question": "Consider an array: [5, 1, 4, 2, 8]. How would Bubble Sort modify it in the first pass?",
+      "options": [
+        "[1, 5, 4, 2, 8]",
+        "[5, 1, 4, 2, 8]",
+        "[5, 1, 2, 4, 8]",
+        "[1, 4, 2, 5, 8]"
+      ],
+      "answer": 0,
+      "explanation": "In the first pass, Bubble Sort compares adjacent elements and swaps them if they are in the wrong order. This results in the largest element 'bubbling' to the end.",
+      "hint": "Trace the comparisons and swaps in the first pass."
+    },
+    {
+      "id": 17,
+      "question": "What is the effect of choosing a poor pivot in Quick Sort?",
+      "options": [
+        "Faster execution",
+        "Balanced partitions",
+        "Worst-case O(n²) time complexity",
+        "Improved space complexity"
+      ],
+      "answer": 2,
+      "explanation": "A poor pivot leads to highly unbalanced partitions, causing Quick Sort to degrade to O(n²) time complexity.",
+      "hint": "Think about what happens when the pivot is always the smallest or largest element."
+    },
+    {
+      "id": 18,
+      "question": "Which algorithm is best suited for sorting a nearly sorted array of size n?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort excels at sorting nearly sorted arrays because it requires minimal shifts to place elements in their correct positions.",
+      "hint": "Consider the number of comparisons and swaps needed in each algorithm."
+    },
+    {
+      "id": 19,
+      "question": "What is the main difference between Merge Sort and Quick Sort in terms of their approach to dividing the problem?",
+      "options": [
+        "Merge Sort divides into equal halves, Quick Sort divides based on a pivot",
+        "Quick Sort divides into equal halves, Merge Sort divides based on a pivot",
+        "Both divide based on a pivot",
+        "Both divide into equal halves"
+      ],
+      "answer": 0,
+      "explanation": "Merge Sort consistently divides the array into two equal halves, while Quick Sort partitions the array around a pivot element.",
+      "hint": "Think about the core logic of each algorithm's divide step."
+    },
+    {
+      "id": 20,
+      "question": "You have a very large dataset that doesn't fit into memory. Which sorting algorithm is most suitable?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Bubble Sort"
+      ],
+      "answer": 1,
+      "explanation": "Merge Sort can be adapted for external sorting, where data is read from disk in chunks, sorted, and then merged, making it suitable for large datasets.",
+      "hint": "Consider algorithms that can work with data in smaller chunks."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the 'combine' step in the Divide and Conquer paradigm?",
+      "options": [
+        "To divide the problem into subproblems",
+        "To solve the subproblems recursively",
+        "To merge the solutions of the subproblems into a final solution",
+        "To select the best subproblem solution"
+      ],
+      "answer": 2,
+      "explanation": "The 'combine' step integrates the solutions obtained from the subproblems to produce the overall solution to the original problem.",
+      "hint": "Think about how the individual solutions are brought together."
+    },
+    {
+      "id": 22,
+      "question": "Consider the following code snippet (Insertion Sort): `for i in range(1, len(arr)): key = arr[i]; j = i-1; while j >= 0 and key < arr[j]: arr[j+1] = arr[j]; j -= 1; arr[j+1] = key`. What is the purpose of the `while` loop?",
+      "options": [
+        "To iterate through the entire array",
+        "To find the minimum element",
+        "To shift elements to the right to make space for the key",
+        "To compare the key with the pivot"
+      ],
+      "answer": 2,
+      "explanation": "The `while` loop shifts elements greater than the `key` to the right, creating space to insert the `key` in its correct sorted position.",
+      "hint": "Trace the values of `j` and `arr[j+1]` within the loop."
+    },
+    {
+      "id": 23,
+      "question": "Which sorting algorithm has the best average-case performance?",
+      "options": [
+        "Bubble Sort",
+        "Selection Sort",
+        "Merge Sort",
+        "Insertion Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort consistently provides O(n log n) performance in the average case, making it one of the most efficient sorting algorithms.",
+      "hint": "Consider the time complexities of each algorithm."
+    },
+    {
+      "id": 24,
+      "question": "What is a potential disadvantage of using Quick Sort in a real-time system?",
+      "options": [
+        "High space complexity",
+        "Unpredictable execution time due to worst-case scenario",
+        "Requires a stable sort",
+        "Not suitable for large datasets"
+      ],
+      "answer": 1,
+      "explanation": "Quick Sort's worst-case O(n²) time complexity can lead to unpredictable execution times, which is undesirable in real-time systems.",
+      "hint": "Think about the importance of predictable performance in real-time applications."
+    },
+    {
+      "id": 25,
+      "question": "How does the choice of pivot affect Quick Sort's performance?",
+      "options": [
+        "It has no effect",
+        "A good pivot leads to balanced partitions and faster sorting",
+        "A good pivot always results in O(n) complexity",
+        "A good pivot reduces space complexity"
+      ],
+      "answer": 1,
+      "explanation": "A well-chosen pivot divides the array into roughly equal partitions, leading to faster sorting and O(n log n) average-case performance.",
+      "hint": "Consider what happens when the partitions are significantly unbalanced."
+    },
+    {
+      "id": 26,
+      "question": "What is the space complexity of Selection Sort?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "Selection Sort sorts the array in-place, requiring only a constant amount of extra space for temporary variables.",
+      "hint": "Think about whether Selection Sort needs additional memory proportional to the input size."
+    },
+    {
+      "id": 27,
+      "question": "Which of the following statements is true about Bubble Sort?",
+      "options": [
+        "It is the most efficient sorting algorithm",
+        "It is a stable sorting algorithm",
+        "It is suitable for large datasets",
+        "It has a time complexity of O(n log n)"
+      ],
+      "answer": 1,
+      "explanation": "Bubble Sort is a stable sorting algorithm, meaning it preserves the relative order of equal elements.",
+      "hint": "Consider how Bubble Sort handles elements with the same value."
+    },
+    {
+      "id": 28,
+      "question": "What is the primary advantage of using Merge Sort over Quick Sort when stability is a requirement?",
+      "options": [
+        "Lower space complexity",
+        "Faster average-case performance",
+        "Stability",
+        "Simpler implementation"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort is a stable sorting algorithm, while Quick Sort is not, making Merge Sort the preferred choice when stability is crucial.",
+      "hint": "Think about which algorithm preserves the original order of equal elements."
+    },
+    {
+      "id": 29,
+      "question": "Consider an array [3, 7, 4, 8, 6]. After one iteration of Selection Sort, what will the array look like?",
+      "options": [
+        "[3, 7, 4, 8, 6]",
+        "[3, 4, 7, 8, 6]",
+        "[3, 7, 4, 6, 8]",
+        "[4, 7, 3, 8, 6]"
+      ],
+      "answer": 1,
+      "explanation": "Selection Sort finds the minimum element (3) and places it at the beginning of the array in the first iteration.",
+      "hint": "Trace the process of finding the minimum element and swapping it."
+    },
+    {
+      "id": 30,
+      "question": "Which sorting algorithm is most sensitive to the initial order of the input data?",
+      "options": [
+        "Merge Sort",
+        "Quick Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort's performance is highly dependent on the initial order of the data; it performs best on nearly sorted arrays.",
+      "hint": "Consider how the number of comparisons and swaps changes with different input orders."
+    },
+    {
+      "id": 31,
+      "question": "What is the main drawback of using Bubble Sort for large datasets?",
+      "options": [
+        "High space complexity",
+        "Poor performance due to O(n²) time complexity",
+        "Not stable",
+        "Requires a pivot element"
+      ],
+      "answer": 1,
+      "explanation": "Bubble Sort's O(n²) time complexity makes it inefficient for large datasets, as the number of comparisons and swaps grows quadratically with the input size.",
+      "hint": "Think about how the execution time scales with the size of the input."
+    },
+    {
+      "id": 32,
+      "question": "In Quick Sort, what is the purpose of the partitioning step?",
+      "options": [
+        "To divide the array into equal halves",
+        "To find the minimum element",
+        "To rearrange the array so that all elements less than the pivot are before it, and all elements greater than the pivot are after it",
+        "To merge the sorted sub-arrays"
+      ],
+      "answer": 2,
+      "explanation": "The partitioning step rearranges the array around the pivot, ensuring that elements smaller than the pivot are placed before it and elements larger than the pivot are placed after it.",
+      "hint": "Consider how the pivot is used to divide the array."
+    },
+    {
+      "id": 33,
+      "question": "Which sorting algorithm is often used as a subroutine in more complex sorting algorithms like Quick Sort?",
+      "options": [
+        "Bubble Sort",
+        "Selection Sort",
+        "Insertion Sort",
+        "Merge Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort is often used to sort small sub-arrays in Quick Sort, as it is efficient for small inputs.",
+      "hint": "Think about how Quick Sort handles small partitions."
+    },
+    {
+      "id": 34,
+      "question": "What is the primary advantage of using Merge Sort in situations where memory is limited?",
+      "options": [
+        "It's in-place",
+        "It's stable",
+        "It can be adapted for external sorting",
+        "It has O(n) time complexity"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort can be adapted for external sorting, allowing it to sort datasets that are too large to fit into memory.",
+      "hint": "Consider how Merge Sort can work with data stored on disk."
+    },
+    {
+      "id": 35,
+      "question": "Consider the following array: [8, 4, 2, 1]. How many comparisons would Bubble Sort perform in the worst case?",
+      "options": [
+        "3",
+        "6",
+        "10",
+        "12"
+      ],
+      "answer": 6,
+      "explanation": "In the worst case, Bubble Sort compares each adjacent pair of elements in each pass. For an array of size n, it performs (n-1) + (n-2) + ... + 1 comparisons.",
+      "hint": "Calculate the number of comparisons in each pass and sum them up."
+    },
+    {
+      "id": 36,
+      "question": "What is the key characteristic that distinguishes Merge Sort from other divide-and-conquer sorting algorithms?",
+      "options": [
+        "Its in-place nature",
+        "Its use of a pivot element",
+        "Its guaranteed O(n log n) time complexity",
+        "Its stability"
+      ],
+      "answer": 3,
+      "explanation": "Merge Sort consistently provides O(n log n) time complexity, regardless of the input data, making it a reliable choice.",
+      "hint": "Consider the time complexity of other divide-and-conquer algorithms."
+    },
+    {
+      "id": 37,
+      "question": "Which sorting algorithm is most likely to perform poorly on a reverse-sorted array?",
+      "options": [
+        "Merge Sort",
+        "Quick Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort performs poorly on reverse-sorted arrays because it requires a large number of shifts to insert each element into its correct position.",
+      "hint": "Think about how Insertion Sort handles elements that need to be moved far from their initial position."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the 'divide' step in the Divide and Conquer paradigm?",
+      "options": [
+        "To combine the solutions of subproblems",
+        "To solve the subproblems recursively",
+        "To break down the original problem into smaller, independent subproblems",
+        "To select the best subproblem solution"
+      ],
+      "answer": 2,
+      "explanation": "The 'divide' step breaks down the original problem into smaller, independent subproblems that can be solved recursively.",
+      "hint": "Think about how a complex problem can be simplified by breaking it down."
+    },
+    {
+      "id": 39,
+      "question": "You are given a dataset with many duplicate values. Which sorting algorithm might be most efficient in this scenario?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Radix Sort (not covered, but a good distractor)"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort can be efficient with duplicate values as it only needs to shift elements when encountering a smaller value.",
+      "hint": "Consider how the algorithm handles equal elements."
+    },
+    {
+      "id": 40,
+      "question": "What is the primary reason to choose Merge Sort over Quick Sort when dealing with very large files that cannot fit into memory?",
+      "options": [
+        "Merge Sort is faster",
+        "Merge Sort is more stable",
+        "Merge Sort can be implemented using external sorting",
+        "Merge Sort has lower space complexity"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort's ability to be implemented using external sorting allows it to handle datasets that are too large to fit into memory.",
+      "hint": "Think about how external sorting works."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following is a characteristic of Selection Sort?",
+      "options": [
+        "It is a stable sort",
+        "It performs well on nearly sorted data",
+        "It minimizes the number of swaps",
+        "It has a best-case time complexity of O(n)"
+      ],
+      "answer": 2,
+      "explanation": "Selection Sort minimizes the number of swaps by finding the minimum element and placing it in its correct position.",
+      "hint": "Consider how Selection Sort rearranges the array."
+    },
+    {
+      "id": 42,
+      "question": "What is the worst-case scenario for Quick Sort and how can it be mitigated?",
+      "options": [
+        "Pivot always being the largest element; use a random pivot",
+        "Pivot always being the smallest element; use a random pivot",
+        "Unbalanced partitions; use a random pivot",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "The worst-case scenario for Quick Sort is unbalanced partitions, which can be mitigated by using a random pivot to avoid consistently choosing poor pivots.",
+      "hint": "Think about how the pivot affects the balance of the partitions."
+    },
+    {
+      "id": 43,
+      "question": "How does the space complexity of Quick Sort compare to Merge Sort?",
+      "options": [
+        "Quick Sort has higher space complexity",
+        "Merge Sort has higher space complexity",
+        "They have the same space complexity",
+        "Space complexity depends on the pivot selection"
+      ],
+      "answer": 1,
+      "explanation": "Merge Sort requires additional space for merging, while Quick Sort can be implemented in-place, resulting in lower space complexity.",
+      "hint": "Consider the memory requirements of each algorithm."
+    },
+    {
+      "id": 44,
+      "question": "What is the primary advantage of using Insertion Sort for small datasets?",
+      "options": [
+        "Low overhead",
+        "Guaranteed O(n log n) time complexity",
+        "Stability",
+        "In-place sorting"
+      ],
+      "answer": 0,
+      "explanation": "Insertion Sort has low overhead and performs well for small datasets because the overhead of more complex algorithms is not significant.",
+      "hint": "Consider the overhead of different algorithms."
+    },
+    {
+      "id": 45,
+      "question": "Which sorting algorithm is best suited for sorting a linked list?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort is well-suited for sorting linked lists because it only requires shifting pointers, which is efficient in a linked list structure.",
+      "hint": "Consider the limitations of accessing elements in a linked list."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of the 'conquer' step in the Divide and Conquer paradigm?",
+      "options": [
+        "To divide the problem into subproblems",
+        "To combine the solutions of subproblems",
+        "To recursively solve the subproblems",
+        "To select the best subproblem solution"
+      ],
+      "answer": 2,
+      "explanation": "The 'conquer' step involves recursively solving the smaller subproblems that were created in the 'divide' step.",
+      "hint": "Think about how the subproblems are solved."
+    },
+    {
+      "id": 47,
+      "question": "Consider an array [5, 2, 8, 1, 9]. After the first partition in Quick Sort (using the first element as the pivot), what might the array look like?",
+      "options": [
+        "[1, 2, 8, 5, 9]",
+        "[1, 2, 5, 8, 9]",
+        "[5, 2, 8, 1, 9]",
+        "[9, 8, 5, 1, 2]"
+      ],
+      "answer": 1,
+      "explanation": "After partitioning with 5 as the pivot, elements less than 5 (1, 2) are placed before it, and elements greater than 5 (8, 9) are placed after it.",
+      "hint": "Trace the partitioning process based on the pivot value."
+    },
+    {
+      "id": 48,
+      "question": "Which sorting algorithm is generally preferred when memory usage is a critical constraint?",
+      "options": [
+        "Merge Sort",
+        "Quick Sort",
+        "Insertion Sort",
+        "Bubble Sort"
+      ],
+      "answer": 1,
+      "explanation": "Quick Sort, when implemented in-place, generally has the lowest memory usage among these algorithms.",
+      "hint": "Consider the space complexity of each algorithm."
+    },
+    {
+      "id": 49,
+      "question": "What is the primary difference between a stable and an unstable sorting algorithm?",
+      "options": [
+        "Stable algorithms are faster",
+        "Stable algorithms preserve the relative order of equal elements",
+        "Unstable algorithms require more memory",
+        "Unstable algorithms are always in-place"
+      ],
+      "answer": 1,
+      "explanation": "A stable sorting algorithm preserves the relative order of equal elements, while an unstable algorithm may not.",
+      "hint": "Consider how the algorithm handles elements with the same value."
+    },
+    {
+      "id": 50,
+      "question": "You need to sort a large array of integers, and you know that the data is almost sorted. Which algorithm would likely be the fastest?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Insertion Sort is highly efficient on nearly sorted data because it requires minimal shifts to place elements in their correct positions.",
+      "hint": "Think about how the algorithm performs when the input is already partially ordered."
+    }
+  ]
+}

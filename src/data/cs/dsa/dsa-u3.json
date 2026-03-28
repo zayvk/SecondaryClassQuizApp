@@ -1,0 +1,670 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 3: Arrays and Linked Lists",
+  "unitId": "dsa-u3",
+  "categoryId": "cs",
+  "topics": [
+    "What is an Array — fixed size, contiguous memory, index-based access",
+    "Array operations — Traversal, Insertion, Deletion, Searching",
+    "Problems with arrays — expensive insertion, fixed size",
+    "Why Linked Lists exist as a solution",
+    "Structure of a Node — Data and Next pointer",
+    "Singly Linked List",
+    "Doubly Linked List",
+    "Circular Linked List",
+    "Comparing arrays vs linked lists — trade-offs"
+  ],
+  "generatedAt": "2026-03-28T08:41:29Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following is a primary characteristic of an array?",
+      "options": [
+        "Dynamic size",
+        "Non-contiguous memory allocation",
+        "Index-based access",
+        "Linked node structure"
+      ],
+      "answer": 2,
+      "explanation": "Arrays are defined by their index-based access to elements, allowing for direct access based on position.",
+      "hint": "Think about how you access elements within an array in code."
+    },
+    {
+      "id": 2,
+      "question": "What is the time complexity of accessing an element in an array by its index?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "Accessing an element by index in an array takes constant time because the memory address can be calculated directly.",
+      "hint": "Consider how the array stores its elements in memory."
+    },
+    {
+      "id": 3,
+      "question": "Inserting an element at the beginning of an array requires, on average:",
+      "options": [
+        "Constant time",
+        "Logarithmic time",
+        "Linear time",
+        "Quadratic time"
+      ],
+      "answer": 2,
+      "explanation": "Inserting at the beginning requires shifting all existing elements, resulting in linear time complexity.",
+      "hint": "What needs to happen to the existing elements when you insert at the start?"
+    },
+    {
+      "id": 4,
+      "question": "What is a major drawback of using a fixed-size array?",
+      "options": [
+        "Inefficient searching",
+        "Limited flexibility in size",
+        "Complex insertion operations",
+        "Difficulty in accessing elements"
+      ],
+      "answer": 1,
+      "explanation": "Fixed-size arrays cannot easily grow or shrink, leading to wasted space or potential overflow errors.",
+      "hint": "Think about what happens if you try to store more elements than the array can hold."
+    },
+    {
+      "id": 5,
+      "question": "Linked lists were developed primarily to address which limitation of arrays?",
+      "options": [
+        "Slow search times",
+        "Fixed size and expensive insertions/deletions",
+        "Complex memory management",
+        "Lack of support for dynamic data"
+      ],
+      "answer": 1,
+      "explanation": "Linked lists overcome the fixed size and costly insertion/deletion operations inherent in arrays.",
+      "hint": "Consider the performance implications of adding or removing elements from an array."
+    },
+    {
+      "id": 6,
+      "question": "What are the two essential components of a node in a linked list?",
+      "options": [
+        "Key and Value",
+        "Data and Address",
+        "Pointer and Size",
+        "Data and Next pointer"
+      ],
+      "answer": 3,
+      "explanation": "A linked list node contains the data it stores and a pointer to the next node in the sequence.",
+      "hint": "Think about how a linked list maintains its order without relying on contiguous memory."
+    },
+    {
+      "id": 7,
+      "question": "In a singly linked list, how do you traverse to the previous node?",
+      "options": [
+        "Using a 'prev' pointer",
+        "By iterating from the head",
+        "It's not possible without a doubly linked list",
+        "Using a hash table"
+      ],
+      "answer": 3,
+      "explanation": "Singly linked lists only have a 'next' pointer, making it impossible to directly access the previous node.",
+      "hint": "What information does a singly linked list node provide about its predecessor?"
+    },
+    {
+      "id": 8,
+      "question": "What is the primary advantage of a doubly linked list over a singly linked list?",
+      "options": [
+        "Reduced memory usage",
+        "Faster traversal",
+        "Ability to traverse in both directions",
+        "Simpler implementation"
+      ],
+      "answer": 2,
+      "explanation": "Doubly linked lists allow traversal in both forward and backward directions, improving efficiency for certain operations.",
+      "hint": "How does the addition of a 'prev' pointer change the capabilities of the list?"
+    },
+    {
+      "id": 9,
+      "question": "What distinguishes a circular linked list from a standard singly linked list?",
+      "options": [
+        "It uses a doubly linked structure",
+        "The last node points back to the head",
+        "It has a fixed size",
+        "It stores only integer values"
+      ],
+      "answer": 1,
+      "explanation": "In a circular linked list, the last node's 'next' pointer points back to the first node, creating a loop.",
+      "hint": "Imagine a list where you can keep going around and around indefinitely."
+    },
+    {
+      "id": 10,
+      "question": "Which data structure generally offers faster random access?",
+      "options": [
+        "Singly linked list",
+        "Doubly linked list",
+        "Array",
+        "Circular linked list"
+      ],
+      "answer": 2,
+      "explanation": "Arrays provide direct access to elements via their index, making random access much faster than linked lists.",
+      "hint": "Consider how each structure stores its elements in memory."
+    },
+    {
+      "id": 11,
+      "question": "What is the time complexity of inserting a new node at the head of a singly linked list?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "Inserting at the head only requires updating the head pointer, which takes constant time.",
+      "hint": "Think about what needs to be changed when adding a new element at the beginning."
+    },
+    {
+      "id": 12,
+      "question": "Deleting a node from a singly linked list requires updating the 'next' pointer of the preceding node. What is the time complexity of finding the preceding node?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case, you might need to traverse the entire list to find the node before the one you want to delete.",
+      "hint": "How do you locate the node that needs to be updated?"
+    },
+    {
+      "id": 13,
+      "question": "Which of the following is a disadvantage of linked lists compared to arrays?",
+      "options": [
+        "Higher memory usage due to pointers",
+        "Slower insertion and deletion",
+        "Difficulty in dynamic resizing",
+        "Inefficient random access"
+      ],
+      "answer": 3,
+      "explanation": "Linked lists require extra memory for pointers, and while insertion/deletion are efficient, random access is slower than arrays.",
+      "hint": "Think about the overhead associated with storing pointers in each node."
+    },
+    {
+      "id": 14,
+      "question": "Consider a scenario where you frequently need to access elements at random positions. Which data structure would be more suitable?",
+      "options": [
+        "Singly linked list",
+        "Doubly linked list",
+        "Array",
+        "Circular linked list"
+      ],
+      "answer": 2,
+      "explanation": "Arrays excel at random access due to their contiguous memory allocation and index-based access.",
+      "hint": "Which structure allows you to directly calculate the memory address of an element?"
+    },
+    {
+      "id": 15,
+      "question": "What is the space complexity of an array storing 'n' elements?",
+      "options": [
+        "O(log n)",
+        "O(n^2)",
+        "O(1)",
+        "O(n)"
+      ],
+      "answer": 3,
+      "explanation": "Arrays store 'n' elements, so the space required grows linearly with the number of elements.",
+      "hint": "How does the amount of memory used change as you add more elements?"
+    },
+    {
+      "id": 16,
+      "question": "You are implementing a function to search for a specific value in a sorted array. Which search algorithm would be most efficient?",
+      "options": [
+        "Linear search",
+        "Binary search",
+        "Bubble sort",
+        "Insertion sort"
+      ],
+      "answer": 1,
+      "explanation": "Binary search is highly efficient for sorted arrays, dividing the search space in half with each comparison.",
+      "hint": "Take advantage of the sorted nature of the array."
+    },
+    {
+      "id": 17,
+      "question": "What is the primary benefit of using a circular linked list in a resource allocation system?",
+      "options": [
+        "Simplified memory management",
+        "Efficient queue implementation",
+        "Faster searching",
+        "Reduced pointer overhead"
+      ],
+      "answer": 1,
+      "explanation": "Circular linked lists are ideal for implementing queues where elements are added and removed in a circular fashion.",
+      "hint": "Think about how a circular list can naturally represent a repeating sequence."
+    },
+    {
+      "id": 18,
+      "question": "Which of the following operations is generally more efficient in a linked list than in an array?",
+      "options": [
+        "Accessing an element by index",
+        "Inserting an element at the beginning",
+        "Searching for an element",
+        "Deleting an element at the end"
+      ],
+      "answer": 1,
+      "explanation": "Inserting at the beginning of a linked list is O(1), while in an array, it requires shifting elements.",
+      "hint": "Consider the need to shift elements when inserting into an array."
+    },
+    {
+      "id": 19,
+      "question": "Consider the following code snippet (C++): `int arr[5] = {1, 2, 3, 4, 5};`. What is the value of `arr[2]`?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "explanation": "Array indices start at 0, so `arr[2]` accesses the third element, which is 3.",
+      "hint": "Remember that array indexing starts from zero."
+    },
+    {
+      "id": 20,
+      "question": "What is the main difference between a stack and a queue in terms of data access?",
+      "options": [
+        "Stack is FIFO, Queue is LIFO",
+        "Stack is LIFO, Queue is FIFO",
+        "Both are FIFO",
+        "Both are LIFO"
+      ],
+      "answer": 1,
+      "explanation": "A stack follows Last-In, First-Out (LIFO), while a queue follows First-In, First-Out (FIFO).",
+      "hint": "Think about how elements are added and removed from each structure."
+    },
+    {
+      "id": 21,
+      "question": "You need to store a list of student IDs that will rarely change after initialization. Which data structure is most appropriate?",
+      "options": [
+        "Singly linked list",
+        "Array",
+        "Doubly linked list",
+        "Circular linked list"
+      ],
+      "answer": 1,
+      "explanation": "An array is suitable for storing a fixed set of data that doesn't require frequent modifications.",
+      "hint": "Consider the frequency of insertions and deletions."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the 'next' pointer in a linked list node?",
+      "options": [
+        "To store the data value",
+        "To point to the previous node",
+        "To point to the next node",
+        "To indicate the end of the list"
+      ],
+      "answer": 2,
+      "explanation": "The 'next' pointer establishes the link between consecutive nodes in the list.",
+      "hint": "How does the list maintain its sequence?"
+    },
+    {
+      "id": 23,
+      "question": "In a doubly linked list, what does the 'prev' pointer allow you to do?",
+      "options": [
+        "Access the next node",
+        "Traverse backwards through the list",
+        "Store additional data",
+        "Increase memory efficiency"
+      ],
+      "answer": 1,
+      "explanation": "The 'prev' pointer enables bidirectional traversal, allowing you to move backwards through the list.",
+      "hint": "How does the 'prev' pointer complement the 'next' pointer?"
+    },
+    {
+      "id": 24,
+      "question": "What is the time complexity of searching for an element in an unsorted linked list?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case, you might need to traverse the entire list to find the element.",
+      "hint": "Consider the need to examine each element in the list."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following is a potential memory leak issue when working with linked lists?",
+      "options": [
+        "Insufficient memory allocation",
+        "Forgetting to deallocate memory after use",
+        "Incorrect pointer arithmetic",
+        "Using the wrong data type"
+      ],
+      "answer": 1,
+      "explanation": "If memory allocated for nodes is not freed when they are no longer needed, it leads to a memory leak.",
+      "hint": "Think about the responsibility of managing dynamically allocated memory."
+    },
+    {
+      "id": 26,
+      "question": "You are designing a system to manage a playlist of songs. Frequent additions and removals of songs are expected. Which data structure would be most suitable?",
+      "options": [
+        "Array",
+        "Singly linked list",
+        "Doubly linked list",
+        "Circular array"
+      ],
+      "answer": 2,
+      "explanation": "A doubly linked list allows efficient insertion and deletion of songs at any position in the playlist.",
+      "hint": "Consider the performance implications of adding and removing songs."
+    },
+    {
+      "id": 27,
+      "question": "What is the primary advantage of using a circular linked list for implementing a rotating buffer?",
+      "options": [
+        "Reduced memory usage",
+        "Simplified boundary conditions",
+        "Faster searching",
+        "Improved data security"
+      ],
+      "answer": 1,
+      "explanation": "The circular nature eliminates the need to handle wrap-around conditions when reaching the end of the buffer.",
+      "hint": "Think about how a circular list can seamlessly loop back to the beginning."
+    },
+    {
+      "id": 28,
+      "question": "Consider the following C++ code: `int arr[10]; for (int i = 0; i < 10; i++) { arr[i] = i * 2; }`. What is the value of `arr[5]`?",
+      "options": [
+        "5",
+        "8",
+        "10",
+        "12"
+      ],
+      "answer": 3,
+      "explanation": "The loop calculates `i * 2` for each index, so `arr[5]` will be `5 * 2 = 10`.",
+      "hint": "Trace the execution of the loop to determine the value assigned to `arr[5]`."
+    },
+    {
+      "id": 29,
+      "question": "What is the difference between contiguous and non-contiguous memory allocation?",
+      "options": [
+        "Contiguous memory is faster, non-contiguous is slower",
+        "Contiguous memory is allocated in a single block, non-contiguous is scattered",
+        "Non-contiguous memory is easier to manage",
+        "Contiguous memory is used for linked lists"
+      ],
+      "answer": 1,
+      "explanation": "Contiguous memory allocation reserves a single block of memory, while non-contiguous allocation uses scattered blocks.",
+      "hint": "Think about how arrays and linked lists store their data in memory."
+    },
+    {
+      "id": 30,
+      "question": "Which of the following best describes the trade-off between arrays and linked lists?",
+      "options": [
+        "Arrays offer faster insertion, linked lists offer faster access",
+        "Arrays offer faster access, linked lists offer faster insertion/deletion",
+        "Arrays are more flexible, linked lists are more efficient",
+        "Arrays are simpler to implement, linked lists are more robust"
+      ],
+      "answer": 1,
+      "explanation": "Arrays provide fast access due to contiguous memory, while linked lists excel at insertion and deletion.",
+      "hint": "Consider the strengths and weaknesses of each structure."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of a sentinel node in a linked list?",
+      "options": [
+        "To store the data value",
+        "To mark the end of the list",
+        "To simplify certain operations by avoiding boundary checks",
+        "To improve memory efficiency"
+      ],
+      "answer": 2,
+      "explanation": "A sentinel node simplifies operations by providing a guaranteed starting or ending point, avoiding null pointer checks.",
+      "hint": "Think about how a sentinel node can reduce the complexity of list manipulation."
+    },
+    {
+      "id": 32,
+      "question": "You are implementing a function to reverse a singly linked list. What is the time complexity of the most efficient approach?",
+      "options": [
+        "O(n^2)",
+        "O(n log n)",
+        "O(n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Reversing a linked list requires iterating through each node once, resulting in linear time complexity.",
+      "hint": "Consider how many times you need to visit each node during the reversal process."
+    },
+    {
+      "id": 33,
+      "question": "What is the primary disadvantage of using a circular linked list?",
+      "options": [
+        "Increased memory usage",
+        "Complexity in traversal",
+        "Difficulty in detecting loops",
+        "Limited functionality"
+      ],
+      "answer": 2,
+      "explanation": "Detecting loops in a circular linked list can be challenging without careful implementation.",
+      "hint": "Think about how you would determine if a list is circular."
+    },
+    {
+      "id": 34,
+      "question": "Consider a scenario where you need to store a large number of elements, but memory is limited. Which data structure might be more suitable?",
+      "options": [
+        "Array",
+        "Singly linked list",
+        "Doubly linked list",
+        "Hash table"
+      ],
+      "answer": 1,
+      "explanation": "Linked lists can dynamically allocate memory as needed, making them more suitable for limited memory scenarios.",
+      "hint": "Consider the memory allocation strategy of each structure."
+    },
+    {
+      "id": 35,
+      "question": "What is the role of the head pointer in a linked list?",
+      "options": [
+        "To store the data value",
+        "To point to the last node",
+        "To point to the first node",
+        "To indicate the end of the list"
+      ],
+      "answer": 2,
+      "explanation": "The head pointer is the entry point to the linked list, pointing to the first node.",
+      "hint": "How do you access the first element of the list?"
+    },
+    {
+      "id": 36,
+      "question": "You are given a sorted array and need to find the index of a specific element. What is the best algorithm to use?",
+      "options": [
+        "Linear search",
+        "Binary search",
+        "Bubble sort",
+        "Selection sort"
+      ],
+      "answer": 1,
+      "explanation": "Binary search is the most efficient algorithm for searching in a sorted array, with a time complexity of O(log n).",
+      "hint": "Leverage the sorted property of the array."
+    },
+    {
+      "id": 37,
+      "question": "What is the space complexity of a singly linked list storing 'n' elements?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "Each node in a linked list requires space for data and a pointer, resulting in linear space complexity.",
+      "hint": "How does the memory usage grow with the number of elements?"
+    },
+    {
+      "id": 38,
+      "question": "Which of the following is a potential advantage of using a doubly linked list over a singly linked list for implementing an undo/redo functionality?",
+      "options": [
+        "Reduced memory usage",
+        "Faster traversal",
+        "Easier navigation back and forth",
+        "Simpler implementation"
+      ],
+      "answer": 2,
+      "explanation": "Doubly linked lists allow easy navigation back and forth, which is crucial for undo/redo operations.",
+      "hint": "Think about how you would need to move between states in an undo/redo system."
+    },
+    {
+      "id": 39,
+      "question": "Consider the following code snippet (Python): `arr = [1, 2, 3, 4, 5]`. What is the output of `arr[3]`?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Array indices start at 0, so `arr[3]` accesses the fourth element, which is 4.",
+      "hint": "Remember that array indexing starts from zero."
+    },
+    {
+      "id": 40,
+      "question": "What is the primary difference between a static array and a dynamic array?",
+      "options": [
+        "Static arrays can change size, dynamic arrays cannot",
+        "Dynamic arrays can change size, static arrays cannot",
+        "Static arrays are faster, dynamic arrays are slower",
+        "Dynamic arrays are simpler to implement"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic arrays can resize themselves during runtime, while static arrays have a fixed size determined at compile time.",
+      "hint": "Consider the flexibility of each type of array."
+    },
+    {
+      "id": 41,
+      "question": "You are tasked with implementing a function to find the middle element of a singly linked list. What is the most efficient approach?",
+      "options": [
+        "Traverse the list and store the length, then traverse again to the middle",
+        "Use two pointers, one moving twice as fast as the other",
+        "Recursively find the middle element",
+        "Convert the linked list to an array"
+      ],
+      "answer": 1,
+      "explanation": "Using two pointers, one moving twice as fast as the other, allows you to find the middle element in a single traversal.",
+      "hint": "Think about how you can use different speeds to converge at the middle."
+    },
+    {
+      "id": 42,
+      "question": "What is the main drawback of using a circular linked list for implementing a queue?",
+      "options": [
+        "Increased memory usage",
+        "Complexity in handling empty queue conditions",
+        "Difficulty in detecting loops",
+        "Limited functionality"
+      ],
+      "answer": 1,
+      "explanation": "Managing the head and tail pointers in a circular linked list queue can be complex, especially when the queue is empty.",
+      "hint": "Consider the edge cases when the queue is empty or full."
+    },
+    {
+      "id": 43,
+      "question": "Consider a scenario where you need to frequently insert and delete elements at arbitrary positions. Which data structure is most appropriate?",
+      "options": [
+        "Array",
+        "Singly linked list",
+        "Doubly linked list",
+        "Hash table"
+      ],
+      "answer": 2,
+      "explanation": "Doubly linked lists provide efficient insertion and deletion at any position due to the 'prev' pointer.",
+      "hint": "Think about the need to update pointers when inserting or deleting elements."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the 'next' pointer in a doubly linked list node?",
+      "options": [
+        "To store the data value",
+        "To point to the previous node",
+        "To point to the next node",
+        "To indicate the end of the list"
+      ],
+      "answer": 2,
+      "explanation": "The 'next' pointer establishes the link between consecutive nodes in the list, allowing forward traversal.",
+      "hint": "How does the list maintain its sequence?"
+    },
+    {
+      "id": 45,
+      "question": "You are given a sorted array and need to find the first occurrence of a specific element. What is the best algorithm to use?",
+      "options": [
+        "Linear search",
+        "Binary search",
+        "Bubble sort",
+        "Selection sort"
+      ],
+      "answer": 1,
+      "explanation": "Binary search is the most efficient algorithm for searching in a sorted array, and can be modified to find the first occurrence.",
+      "hint": "Leverage the sorted property of the array and consider how to handle duplicate elements."
+    },
+    {
+      "id": 46,
+      "question": "What is the time complexity of deleting a node from a doubly linked list, given a pointer to the node to be deleted?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 0,
+      "explanation": "Deleting a node with a direct pointer only requires updating the 'next' and 'prev' pointers of adjacent nodes, which takes constant time.",
+      "hint": "Consider what needs to be changed when you have a direct pointer to the node."
+    },
+    {
+      "id": 47,
+      "question": "What is the primary advantage of using a sentinel node in a circular linked list?",
+      "options": [
+        "Reduced memory usage",
+        "Simplified loop detection",
+        "Easier traversal",
+        "Improved data security"
+      ],
+      "answer": 1,
+      "explanation": "A sentinel node can help simplify the detection of loops in a circular linked list.",
+      "hint": "Think about how a sentinel node can help identify the end of the list."
+    },
+    {
+      "id": 48,
+      "question": "You are designing a system to manage a stack of tasks. Frequent additions and removals of tasks are expected. Which data structure would be most suitable?",
+      "options": [
+        "Array",
+        "Singly linked list",
+        "Doubly linked list",
+        "Queue"
+      ],
+      "answer": 1,
+      "explanation": "A singly linked list allows efficient insertion and deletion at the beginning, which is ideal for stack operations.",
+      "hint": "Consider the LIFO nature of a stack."
+    },
+    {
+      "id": 49,
+      "question": "What is the main difference between a stack and a heap in terms of memory allocation?",
+      "options": [
+        "Stack is allocated at compile time, heap is allocated at runtime",
+        "Heap is allocated at compile time, stack is allocated at runtime",
+        "Stack is faster, heap is slower",
+        "Heap is simpler to manage"
+      ],
+      "answer": 0,
+      "explanation": "The stack is allocated at compile time for local variables, while the heap is allocated at runtime for dynamic memory.",
+      "hint": "Consider when memory is allocated for each structure."
+    },
+    {
+      "id": 50,
+      "question": "Consider the following C++ code: `int arr[5] = {10, 20, 30, 40, 50}; int *ptr = arr;`. What is the value of `*(ptr + 2)`?",
+      "options": [
+        "10",
+        "20",
+        "30",
+        "40"
+      ],
+      "answer": 2,
+      "explanation": "`ptr + 2` points to the third element of the array, and dereferencing it (`*`) gives the value 30.",
+      "hint": "Remember that pointer arithmetic is based on the size of the data type."
+    }
+  ]
+}

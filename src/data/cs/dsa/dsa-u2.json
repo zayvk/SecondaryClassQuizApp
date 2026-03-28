@@ -1,0 +1,670 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 2: Complexity and Big O Notation",
+  "unitId": "dsa-u2",
+  "categoryId": "cs",
+  "topics": [
+    "Why time and space complexity matters",
+    "Big O Notation — what it is and how to read it",
+    "O(1) — Constant Time",
+    "O(log n) — Logarithmic Time",
+    "O(n) — Linear Time",
+    "O(n log n) — Linearithmic Time",
+    "O(n²) — Quadratic Time",
+    "Comparing algorithms using Big O",
+    "Best case, worst case and average case complexity"
+  ],
+  "generatedAt": "2026-03-28T08:39:34Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Why is understanding time and space complexity crucial in software engineering?",
+      "options": [
+        "It allows developers to write code faster.",
+        "It helps in predicting the performance of algorithms with increasing input size.",
+        "It ensures code readability and maintainability.",
+        "It automatically optimizes code for better performance."
+      ],
+      "answer": 1,
+      "explanation": "Time and space complexity analysis allows us to estimate how an algorithm's resource usage will scale with larger inputs, which is vital for performance.",
+      "hint": "Think about how an algorithm's performance changes as the data it processes grows."
+    },
+    {
+      "id": 2,
+      "question": "What does Big O notation represent?",
+      "options": [
+        "The exact runtime of an algorithm.",
+        "The upper bound of an algorithm's growth rate.",
+        "The lower bound of an algorithm's growth rate.",
+        "The average runtime of an algorithm."
+      ],
+      "answer": 1,
+      "explanation": "Big O notation describes the worst-case scenario for an algorithm's growth rate, providing an upper bound on its performance.",
+      "hint": "Consider what Big O aims to tell us about an algorithm's scalability."
+    },
+    {
+      "id": 3,
+      "question": "An algorithm that always takes the same amount of time regardless of the input size has a time complexity of:",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "O(1) represents constant time complexity, meaning the execution time doesn't depend on the input size.",
+      "hint": "What does 'constant' mean in the context of algorithm execution time?"
+    },
+    {
+      "id": 4,
+      "question": "Binary search has a time complexity of:",
+      "options": [
+        "O(n)",
+        "O(n²)",
+        "O(log n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Binary search repeatedly divides the search interval in half, resulting in logarithmic time complexity.",
+      "hint": "How does binary search reduce the search space with each step?"
+    },
+    {
+      "id": 5,
+      "question": "Which of the following operations typically has a linear time complexity?",
+      "options": [
+        "Accessing an element in an array by index.",
+        "Searching for an element in a sorted array using binary search.",
+        "Iterating through all elements in a linked list.",
+        "Calculating the square root of a number."
+      ],
+      "answer": 2,
+      "explanation": "Iterating through a linked list requires visiting each node once, making it a linear operation.",
+      "hint": "Think about how the number of operations scales with the number of elements."
+    },
+    {
+      "id": 6,
+      "question": "Merge sort has a time complexity of:",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "answer": 1,
+      "explanation": "Merge sort divides the input into smaller subproblems, sorts them recursively, and then merges them, resulting in O(n log n) complexity.",
+      "hint": "Consider the divide-and-conquer nature of merge sort."
+    },
+    {
+      "id": 7,
+      "question": "An algorithm that compares every element in a list to every other element has a time complexity of:",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 3,
+      "explanation": "Nested loops that iterate through all pairs of elements result in quadratic time complexity.",
+      "hint": "How many comparisons are made as the input size 'n' increases?"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is generally the most efficient algorithm for searching in a sorted array?",
+      "options": [
+        "Linear search",
+        "Binary search",
+        "Bubble sort",
+        "Insertion sort"
+      ],
+      "answer": 1,
+      "explanation": "Binary search is the most efficient for sorted arrays due to its logarithmic time complexity.",
+      "hint": "Think about how the algorithm utilizes the sorted nature of the data."
+    },
+    {
+      "id": 9,
+      "question": "If algorithm A has a time complexity of O(n) and algorithm B has a time complexity of O(n²), which algorithm will perform better for large values of n?",
+      "options": [
+        "Algorithm A",
+        "Algorithm B",
+        "Both algorithms will perform equally well.",
+        "It depends on the specific input data."
+      ],
+      "answer": 0,
+      "explanation": "O(n) grows linearly, while O(n²) grows quadratically. For large n, O(n) will be significantly faster.",
+      "hint": "Consider the growth rates of the two functions as 'n' becomes very large."
+    },
+    {
+      "id": 10,
+      "question": "What is the best-case time complexity of insertion sort?",
+      "options": [
+        "O(n²)",
+        "O(n log n)",
+        "O(n)",
+        "O(1)"
+      ],
+      "answer": 3,
+      "explanation": "The best case for insertion sort is when the array is already sorted, requiring only O(n) comparisons.",
+      "hint": "What happens when the input is already in the desired order?"
+    },
+    {
+      "id": 11,
+      "question": "What is the worst-case time complexity of quicksort?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "answer": 2,
+      "explanation": "Quicksort's worst-case occurs when the pivot selection consistently results in unbalanced partitions, leading to O(n²) complexity.",
+      "hint": "Think about what pivot selection strategy could lead to the worst performance."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following statements about average-case complexity is true?",
+      "options": [
+        "It is always equal to the worst-case complexity.",
+        "It is always equal to the best-case complexity.",
+        "It represents the expected performance over all possible inputs.",
+        "It is only applicable to sorting algorithms."
+      ],
+      "answer": 2,
+      "explanation": "Average-case complexity provides a more realistic estimate of performance by considering all possible inputs and their probabilities.",
+      "hint": "What does 'average' imply in the context of algorithm analysis?"
+    },
+    {
+      "id": 13,
+      "question": "A hash table with a good hash function typically has an average-case time complexity of O(1) for insertion, deletion, and search. What can cause this to degrade to O(n)?",
+      "options": [
+        "A large number of elements.",
+        "A poorly designed hash function leading to collisions.",
+        "Using a linked list instead of an array.",
+        "The size of the hash table."
+      ],
+      "answer": 1,
+      "explanation": "Collisions in a hash table force elements to be stored in the same location, leading to linear search in the worst case.",
+      "hint": "What happens when many keys map to the same index?"
+    },
+    {
+      "id": 14,
+      "question": "Consider a function that iterates through a nested loop where the outer loop runs 'n' times and the inner loop runs 'm' times. What is the time complexity?",
+      "options": [
+        "O(n)",
+        "O(m)",
+        "O(n + m)",
+        "O(n * m)"
+      ],
+      "answer": 3,
+      "explanation": "The total number of operations is proportional to the product of the number of iterations in each loop, resulting in O(n * m).",
+      "hint": "How do nested loops affect the overall number of operations?"
+    },
+    {
+      "id": 15,
+      "question": "What is the space complexity of an algorithm that uses a fixed amount of memory regardless of the input size?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "O(1) space complexity indicates that the algorithm uses a constant amount of memory.",
+      "hint": "What does 'constant' mean in the context of memory usage?"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following data structures generally has the highest space complexity?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "Hash tables can have high space complexity due to the need for a large table size to minimize collisions.",
+      "hint": "Consider the potential for unused space in the data structure."
+    },
+    {
+      "id": 17,
+      "question": "You are given two sorted arrays of size 'n'. What is the time complexity of merging them into a single sorted array?",
+      "options": [
+        "O(n log n)",
+        "O(n²)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "answer": 2,
+      "explanation": "Merging two sorted arrays requires comparing and placing elements from both arrays into a new array, which takes linear time.",
+      "hint": "How many elements need to be examined during the merge process?"
+    },
+    {
+      "id": 18,
+      "question": "What is the Big O notation for finding the minimum element in an unsorted array of size 'n'?",
+      "options": [
+        "O(log n)",
+        "O(n²)",
+        "O(1)",
+        "O(n)"
+      ],
+      "answer": 3,
+      "explanation": "Finding the minimum element requires iterating through the array once, resulting in linear time complexity.",
+      "hint": "How many comparisons are needed to find the minimum value?"
+    },
+    {
+      "id": 19,
+      "question": "A recursive function that calls itself twice in each step typically has a time complexity of:",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)",
+        "O(2^n)"
+      ],
+      "answer": 3,
+      "explanation": "Each call branches into two more calls, leading to exponential growth in the number of operations.",
+      "hint": "Think about how the number of function calls increases with each level of recursion."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a common technique to reduce the time complexity of an algorithm?",
+      "options": [
+        "Using more memory.",
+        "Using a less efficient programming language.",
+        "Using appropriate data structures and algorithms.",
+        "Increasing the input size."
+      ],
+      "answer": 2,
+      "explanation": "Choosing the right data structures and algorithms is crucial for optimizing performance and reducing time complexity.",
+      "hint": "What can you change about the algorithm itself to make it faster?"
+    },
+    {
+      "id": 21,
+      "question": "Consider the following code snippet: `for (int i = 0; i < n; i++) { for (int j = 0; j < n; j++) { // Some operation } }`. What is the time complexity?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "The nested loops each iterate 'n' times, resulting in n * n = n² operations.",
+      "hint": "How many times does the inner loop execute for each iteration of the outer loop?"
+    },
+    {
+      "id": 22,
+      "question": "What is the primary difference between best-case, worst-case, and average-case complexity?",
+      "options": [
+        "They all represent the same complexity.",
+        "They analyze performance under different input conditions.",
+        "They only apply to sorting algorithms.",
+        "They are used to measure space complexity."
+      ],
+      "answer": 1,
+      "explanation": "These complexities analyze an algorithm's performance under the most favorable, least favorable, and typical input scenarios, respectively.",
+      "hint": "Think about how different inputs can affect an algorithm's runtime."
+    },
+    {
+      "id": 23,
+      "question": "You need to store a large number of unique items and frequently check if an item exists. Which data structure would be most efficient in terms of time complexity?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Binary Search Tree"
+      ],
+      "answer": 2,
+      "explanation": "A hash table provides O(1) average-case time complexity for insertion, deletion, and search.",
+      "hint": "Consider the trade-offs between different data structures for this specific task."
+    },
+    {
+      "id": 24,
+      "question": "What is the time complexity of traversing a binary tree in a breadth-first manner?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 1,
+      "explanation": "Breadth-first traversal visits each node in the tree once, resulting in linear time complexity.",
+      "hint": "How many nodes are there in a binary tree?"
+    },
+    {
+      "id": 25,
+      "question": "Which sorting algorithm has a time complexity of O(n log n) in all cases (best, average, and worst)?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge sort consistently exhibits O(n log n) time complexity due to its divide-and-conquer approach.",
+      "hint": "Think about algorithms that consistently perform well regardless of the input."
+    },
+    {
+      "id": 26,
+      "question": "If an algorithm's runtime doubles when the input size is doubled, what is its approximate time complexity?",
+      "options": [
+        "O(log n)",
+        "O(n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 1,
+      "explanation": "A linear relationship between runtime and input size indicates O(n) complexity.",
+      "hint": "How does the runtime scale with the input size?"
+    },
+    {
+      "id": 27,
+      "question": "What is the space complexity of an iterative algorithm that uses a constant number of variables?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "Iterative algorithms with a fixed number of variables use constant space, regardless of the input size.",
+      "hint": "Does the amount of memory used change with the input size?"
+    },
+    {
+      "id": 28,
+      "question": "You are designing a system to handle a large number of concurrent requests. Which data structure would be most suitable for managing a queue of requests?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 1,
+      "explanation": "A linked list allows for efficient insertion and deletion at both ends, making it ideal for a queue.",
+      "hint": "What operations are frequently performed on a queue?"
+    },
+    {
+      "id": 29,
+      "question": "Consider the following code: `int result = 1; for (int i = 0; i < n; i++) { result *= i; }`. What is the time complexity?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "The loop iterates 'n' times, performing a constant number of operations in each iteration.",
+      "hint": "How many times does the loop execute?"
+    },
+    {
+      "id": 30,
+      "question": "Which of the following algorithms is generally preferred for sorting a large dataset when memory is a constraint?",
+      "options": [
+        "Quicksort",
+        "Mergesort",
+        "Heapsort",
+        "Bubblesort"
+      ],
+      "answer": 2,
+      "explanation": "Heapsort has a space complexity of O(1), making it suitable for situations with limited memory.",
+      "hint": "Consider the memory usage of each algorithm."
+    },
+    {
+      "id": 31,
+      "question": "What is the time complexity of searching for an element in a sorted array using interpolation search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "answer": 1,
+      "explanation": "Interpolation search, when effective, has a time complexity of O(log log n), but in the worst case, it can degrade to O(n). However, O(log n) is the most appropriate general answer.",
+      "hint": "How does interpolation search refine its search range?"
+    },
+    {
+      "id": 32,
+      "question": "You have a function that recursively divides a problem into subproblems of half the size. What is the general form of its time complexity?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(log n)",
+        "O(2^n)"
+      ],
+      "answer": 2,
+      "explanation": "Dividing the problem size in half at each step leads to logarithmic time complexity.",
+      "hint": "Think about how the problem size decreases with each recursive call."
+    },
+    {
+      "id": 33,
+      "question": "What is the space complexity of a recursive function that creates a call stack of depth 'n'?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "answer": 1,
+      "explanation": "The call stack grows linearly with the depth of recursion, resulting in O(n) space complexity.",
+      "hint": "How does the memory usage increase with each recursive call?"
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is a disadvantage of using a hash table?",
+      "options": [
+        "Slow search time.",
+        "High space complexity.",
+        "Difficulty handling collisions.",
+        "Inability to store unique keys."
+      ],
+      "answer": 2,
+      "explanation": "Collisions can degrade the performance of a hash table, requiring collision resolution techniques.",
+      "hint": "What happens when two keys map to the same index?"
+    },
+    {
+      "id": 35,
+      "question": "Consider a scenario where you need to find the k-th largest element in an unsorted array. Which algorithm would be most efficient?",
+      "options": [
+        "Sorting the array and then accessing the k-th element.",
+        "Using a min-heap of size k.",
+        "Using a max-heap of size k.",
+        "Linear search."
+      ],
+      "answer": 2,
+      "explanation": "Using a max-heap of size k allows you to efficiently maintain the k largest elements seen so far.",
+      "hint": "How can a heap help you keep track of the largest elements?"
+    },
+    {
+      "id": 36,
+      "question": "What is the time complexity of deleting an element from the beginning of a singly linked list?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "answer": 1,
+      "explanation": "Deleting from the beginning only requires updating the head pointer, which takes constant time.",
+      "hint": "What operations are needed to remove the first element?"
+    },
+    {
+      "id": 37,
+      "question": "You are given a graph with 'n' vertices and 'm' edges. What is the time complexity of performing a depth-first search (DFS)?",
+      "options": [
+        "O(n)",
+        "O(m)",
+        "O(n + m)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "DFS visits each vertex and edge once, resulting in a time complexity of O(n + m).",
+      "hint": "How many vertices and edges need to be visited during DFS?"
+    },
+    {
+      "id": 38,
+      "question": "What is the primary advantage of using a binary search tree over a linear search?",
+      "options": [
+        "It can store more data.",
+        "It has a lower space complexity.",
+        "It has a faster search time for sorted data.",
+        "It is easier to implement."
+      ],
+      "answer": 2,
+      "explanation": "Binary search trees allow for efficient searching of sorted data with a time complexity of O(log n).",
+      "hint": "How does the structure of a binary search tree aid in searching?"
+    },
+    {
+      "id": 39,
+      "question": "You are implementing a caching system. Which data structure would be most suitable for storing frequently accessed data?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "A hash table provides fast access to cached data with an average time complexity of O(1).",
+      "hint": "What is the most important requirement for a caching system?"
+    },
+    {
+      "id": 40,
+      "question": "Consider the following code: `for (int i = 0; i < n; i++) { for (int j = i; j < n; j++) { // Some operation } }`. What is the time complexity?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(n³)"
+      ],
+      "answer": 2,
+      "explanation": "The inner loop iterates from 'i' to 'n', resulting in approximately n²/2 operations.",
+      "hint": "How many times does the inner loop execute for each value of 'i'?"
+    },
+    {
+      "id": 41,
+      "question": "Which of the following algorithms is a divide-and-conquer algorithm?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge sort recursively divides the input into smaller subproblems, sorts them, and then merges them.",
+      "hint": "Think about algorithms that break down a problem into smaller, similar subproblems."
+    },
+    {
+      "id": 42,
+      "question": "What is the time complexity of finding the maximum element in a binary search tree?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 1,
+      "explanation": "Finding the maximum element in a BST requires traversing to the rightmost node, which takes logarithmic time.",
+      "hint": "Where is the maximum element located in a binary search tree?"
+    },
+    {
+      "id": 43,
+      "question": "You are given a sorted array and need to find the first occurrence of a specific element. What algorithm would be most efficient?",
+      "options": [
+        "Linear Search",
+        "Binary Search",
+        "Interpolation Search",
+        "Bubble Sort"
+      ],
+      "answer": 1,
+      "explanation": "Binary search efficiently narrows down the search space in a sorted array.",
+      "hint": "How can you leverage the sorted nature of the array to speed up the search?"
+    },
+    {
+      "id": 44,
+      "question": "What is the space complexity of an in-place sorting algorithm?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n²)"
+      ],
+      "answer": 2,
+      "explanation": "In-place sorting algorithms modify the input array directly without using significant additional memory.",
+      "hint": "What does 'in-place' mean in the context of sorting?"
+    },
+    {
+      "id": 45,
+      "question": "You are designing a system to store and retrieve user profiles. What data structure would be most suitable if you need to quickly access profiles by user ID?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "A hash table allows for fast retrieval of profiles using the user ID as the key.",
+      "hint": "What is the primary access pattern for user profiles?"
+    },
+    {
+      "id": 46,
+      "question": "Consider a recursive function with the following recurrence relation: T(n) = 2T(n/2) + n. What is the time complexity?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "answer": 1,
+      "explanation": "This recurrence relation represents the time complexity of merge sort, which is O(n log n).",
+      "hint": "This is a classic recurrence relation often seen in divide-and-conquer algorithms."
+    },
+    {
+      "id": 47,
+      "question": "What is the primary difference between a stack and a queue?",
+      "options": [
+        "A stack follows FIFO, while a queue follows LIFO.",
+        "A stack follows LIFO, while a queue follows FIFO.",
+        "A stack can only store numbers, while a queue can store any data type.",
+        "A stack is faster than a queue."
+      ],
+      "answer": 1,
+      "explanation": "A stack operates on a Last-In, First-Out (LIFO) principle, while a queue operates on a First-In, First-Out (FIFO) principle.",
+      "hint": "Think about the order in which elements are added and removed from each data structure."
+    },
+    {
+      "id": 48,
+      "question": "You are given a very large dataset that doesn't fit into memory. Which sorting algorithm would be most suitable?",
+      "options": [
+        "Quicksort",
+        "Mergesort",
+        "Heapsort",
+        "Radix Sort"
+      ],
+      "answer": 3,
+      "explanation": "Radix sort can be implemented to sort large datasets efficiently with limited memory.",
+      "hint": "Consider algorithms that can operate on data in smaller chunks."
+    },
+    {
+      "id": 49,
+      "question": "What is the time complexity of inserting an element into a sorted array?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "answer": 1,
+      "explanation": "Inserting into a sorted array requires shifting elements to make space for the new element, resulting in linear time complexity.",
+      "hint": "What needs to happen to maintain the sorted order after insertion?"
+    },
+    {
+      "id": 50,
+      "question": "You are designing a system that requires frequent lookups of data based on a key. You anticipate a high number of concurrent users. What is the most important consideration when choosing a data structure?",
+      "options": [
+        "Space complexity",
+        "Implementation complexity",
+        "Time complexity for lookups",
+        "Ease of debugging"
+      ],
+      "answer": 2,
+      "explanation": "For frequent lookups with concurrent users, minimizing lookup time is crucial for performance and scalability.",
+      "hint": "What operation will be performed most often in this system?"
+    }
+  ]
+}

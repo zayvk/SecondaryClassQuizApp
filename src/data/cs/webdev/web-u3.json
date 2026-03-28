@@ -1,0 +1,670 @@
+{
+  "subject": "HTML, CSS and JavaScript",
+  "unit": "Unit 3: JavaScript Fundamentals",
+  "unitId": "web-u3",
+  "categoryId": "cs",
+  "topics": [
+    "What is JavaScript, why and how it works in a webpage",
+    "Different ways to implement JavaScript, linking JS to HTML",
+    "console.log, alert, document.write",
+    "Running JavaScript without HTML",
+    "Variables — let, const, var and their differences",
+    "Data types in JavaScript — string, number, boolean, null, undefined, object, symbol",
+    "How to find the type of a variable — typeof",
+    "Operators and their types — arithmetic, comparison, logical, assignment",
+    "Control flow — if, else if, else, switch"
+  ],
+  "generatedAt": "2026-03-28T08:55:21Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes the primary role of JavaScript in web development?",
+      "options": [
+        "Server-side logic",
+        "Database management",
+        "Adding interactivity and dynamic behavior to webpages",
+        "Styling webpage elements"
+      ],
+      "answer": 2,
+      "explanation": "JavaScript is primarily used to make webpages interactive and dynamic, responding to user actions and manipulating the DOM.",
+      "hint": "Think about what makes a webpage 'come alive' and respond to your actions."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between `let` and `var` in JavaScript?",
+      "options": [
+        "`let` is function-scoped, `var` is block-scoped",
+        "`let` is block-scoped, `var` is function-scoped",
+        "`let` can be redeclared, `var` cannot",
+        "`let` is used for constants, `var` for variables"
+      ],
+      "answer": 1,
+      "explanation": "`let` has block scope, meaning it's only accessible within the block it's defined in, while `var` has function scope.",
+      "hint": "Consider how scope affects variable accessibility within different parts of your code."
+    },
+    {
+      "id": 3,
+      "question": "Which method is commonly used to display information for debugging purposes in JavaScript?",
+      "options": [
+        "`alert()`",
+        "`document.write()`",
+        "`console.log()`",
+        "`prompt()`"
+      ],
+      "answer": 2,
+      "explanation": "`console.log()` is the standard method for displaying debugging information in the browser's developer console.",
+      "hint": "Think about where developers typically look for error messages and variable values."
+    },
+    {
+      "id": 4,
+      "question": "What data type does the following JavaScript expression result in: `5 + '2'`?",
+      "options": [
+        "Number",
+        "Boolean",
+        "String",
+        "Object"
+      ],
+      "answer": 2,
+      "explanation": "In JavaScript, adding a number to a string results in string concatenation.",
+      "hint": "JavaScript's type coercion rules can sometimes lead to unexpected results."
+    },
+    {
+      "id": 5,
+      "question": "How can you include JavaScript code directly within an HTML document?",
+      "options": [
+        "Using the `<link>` tag",
+        "Using the `<script>` tag",
+        "Using the `<style>` tag",
+        "Using the `<iframe>` tag"
+      ],
+      "answer": 1,
+      "explanation": "The `<script>` tag is used to embed or reference JavaScript code within an HTML document.",
+      "hint": "This tag specifically tells the browser to interpret the content as JavaScript."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of the `typeof` operator in JavaScript?",
+      "options": [
+        "To convert a variable to a different data type",
+        "To check if a variable is defined",
+        "To determine the data type of a variable",
+        "To assign a value to a variable"
+      ],
+      "answer": 2,
+      "explanation": "The `typeof` operator returns a string indicating the data type of the operand.",
+      "hint": "It's a built-in operator designed for introspection of variable types."
+    },
+    {
+      "id": 7,
+      "question": "Which of the following is a valid way to declare a constant in JavaScript?",
+      "options": [
+        "`variable myConstant = 10;`",
+        "`let myConstant = 10;`",
+        "`const myConstant = 10;`",
+        "`var myConstant = 10;`"
+      ],
+      "answer": 2,
+      "explanation": "The `const` keyword is used to declare a constant variable, whose value cannot be reassigned.",
+      "hint": "Constants are meant to hold values that shouldn't change during program execution."
+    },
+    {
+      "id": 8,
+      "question": "What will be the output of the following code: `console.log(2 == '2');`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 0,
+      "explanation": "The `==` operator performs type coercion, so the string '2' is converted to the number 2 before comparison, resulting in `true`.",
+      "hint": "Pay attention to the difference between `==` and `===`."
+    },
+    {
+      "id": 9,
+      "question": "Which operator is used for strict equality comparison in JavaScript?",
+      "options": [
+        "`==`",
+        "`!=`",
+        "`===`",
+        "`!==`"
+      ],
+      "answer": 2,
+      "explanation": "The `===` operator checks for equality without type coercion, meaning the operands must be of the same type and value.",
+      "hint": "This operator is often preferred for more predictable comparisons."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of the `document.write()` method?",
+      "options": [
+        "To write data to the browser's console",
+        "To write data directly into the HTML document",
+        "To prompt the user for input",
+        "To create a new HTML element"
+      ],
+      "answer": 1,
+      "explanation": "`document.write()` writes HTML content directly into the document stream, but its use is generally discouraged in modern web development.",
+      "hint": "Consider the potential drawbacks of modifying the document stream after the page has loaded."
+    },
+    {
+      "id": 11,
+      "question": "How can you run JavaScript code outside of a web browser?",
+      "options": [
+        "Using a text editor",
+        "Using Node.js",
+        "Using an HTML file",
+        "Using a CSS file"
+      ],
+      "answer": 1,
+      "explanation": "Node.js is a JavaScript runtime environment that allows you to execute JavaScript code on the server-side or as standalone scripts.",
+      "hint": "Think about environments where you might need to run JavaScript without a browser."
+    },
+    {
+      "id": 12,
+      "question": "What is the result of `true && false`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 1,
+      "explanation": "The logical AND operator (`&&`) returns `true` only if both operands are `true`. Otherwise, it returns `false`.",
+      "hint": "Remember the truth table for logical AND."
+    },
+    {
+      "id": 13,
+      "question": "What is the difference between `null` and `undefined` in JavaScript?",
+      "options": [
+        "They are interchangeable",
+        "`null` is an assigned value, `undefined` means a variable has not been assigned a value",
+        "`undefined` is an assigned value, `null` means a variable has not been assigned a value",
+        "Both represent empty values"
+      ],
+      "answer": 1,
+      "explanation": "`null` is an assignment value representing the intentional absence of a value, while `undefined` means a variable has been declared but not assigned a value.",
+      "hint": "Consider the intent behind each value – is it intentionally empty, or simply uninitialized?"
+    },
+    {
+      "id": 14,
+      "question": "What will be the output of the following code: `console.log(5 % 2);`?",
+      "options": [
+        "`2`",
+        "`3`",
+        "`1`",
+        "`0`"
+      ],
+      "answer": 2,
+      "explanation": "The modulo operator (`%`) returns the remainder of a division. 5 divided by 2 has a remainder of 1.",
+      "hint": "Think about what the modulo operator calculates."
+    },
+    {
+      "id": 15,
+      "question": "Which control flow statement is best suited for selecting one of several code blocks to execute based on different conditions?",
+      "options": [
+        "`if...else`",
+        "`for` loop",
+        "`while` loop",
+        "`switch` statement"
+      ],
+      "answer": 3,
+      "explanation": "The `switch` statement provides a concise way to select one of several code blocks to execute based on the value of an expression.",
+      "hint": "Consider scenarios where you have multiple possible values for a single variable."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of the increment operator (`++`) in JavaScript?",
+      "options": [
+        "To decrement a variable's value by 1",
+        "To multiply a variable's value by 2",
+        "To increment a variable's value by 1",
+        "To divide a variable's value by 2"
+      ],
+      "answer": 2,
+      "explanation": "The increment operator (`++`) increases the value of a variable by 1.",
+      "hint": "It's a shorthand for adding 1 to a variable."
+    },
+    {
+      "id": 17,
+      "question": "What is a Symbol in JavaScript?",
+      "options": [
+        "A primitive data type representing textual data",
+        "A primitive data type representing truth values",
+        "A primitive data type representing unique identifiers",
+        "A complex data type representing collections of data"
+      ],
+      "answer": 2,
+      "explanation": "Symbols are primitive values that are guaranteed to be unique and immutable, often used as object property keys to avoid naming collisions.",
+      "hint": "Think about situations where you need to create unique identifiers for object properties."
+    },
+    {
+      "id": 18,
+      "question": "What will be the output of the following code: `console.log(1 + 2 + '3');`?",
+      "options": [
+        "`6`",
+        "`33`",
+        "`123`",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "JavaScript performs the addition first (1 + 2 = 3), then concatenates the result with the string '3', resulting in '33'.",
+      "hint": "Pay attention to the order of operations and type coercion."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a primitive data type in JavaScript?",
+      "options": [
+        "String",
+        "Number",
+        "Boolean",
+        "Array"
+      ],
+      "answer": 3,
+      "explanation": "Arrays are objects in JavaScript, not primitive data types. Primitive data types include string, number, boolean, null, undefined, symbol, and bigint.",
+      "hint": "Consider what constitutes a fundamental, immutable data type."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the ternary operator (`? :`) in JavaScript?",
+      "options": [
+        "To define a function",
+        "To create a loop",
+        "To provide a concise way to write an `if...else` statement",
+        "To declare a variable"
+      ],
+      "answer": 2,
+      "explanation": "The ternary operator is a shorthand for writing an `if...else` statement, allowing you to assign a value based on a condition.",
+      "hint": "It's a compact way to express conditional logic."
+    },
+    {
+      "id": 21,
+      "question": "Consider a scenario where you need to dynamically update a webpage's content based on user input. Which JavaScript feature is most crucial for this?",
+      "options": [
+        "CSS selectors",
+        "HTML attributes",
+        "DOM manipulation",
+        "JavaScript comments"
+      ],
+      "answer": 2,
+      "explanation": "DOM (Document Object Model) manipulation allows JavaScript to access and modify the structure, style, and content of a webpage.",
+      "hint": "Think about how JavaScript interacts with the elements of a webpage."
+    },
+    {
+      "id": 22,
+      "question": "What is the difference between `==` and `===` in JavaScript, and why is using `===` generally recommended?",
+      "options": [
+        "`==` compares values, `===` compares types",
+        "`==` compares types, `===` compares values",
+        "`==` performs type coercion, `===` does not",
+        "`==` is faster, `===` is slower"
+      ],
+      "answer": 2,
+      "explanation": "`==` performs type coercion before comparison, which can lead to unexpected results. `===` checks for equality without coercion, making it more predictable.",
+      "hint": "Type coercion can sometimes hide subtle bugs in your code."
+    },
+    {
+      "id": 23,
+      "question": "You have a variable `x = 10`. What is the value of `x` after executing `x -= 5;`?",
+      "options": [
+        "`15`",
+        "`5`",
+        "`-5`",
+        "`0`"
+      ],
+      "answer": 1,
+      "explanation": "The `-=` operator is a shorthand for `x = x - 5`. Therefore, 10 - 5 = 5.",
+      "hint": "Remember what compound assignment operators do."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the `break` statement in a loop?",
+      "options": [
+        "To skip to the next iteration of the loop",
+        "To terminate the loop entirely",
+        "To define a new loop",
+        "To continue the loop indefinitely"
+      ],
+      "answer": 1,
+      "explanation": "The `break` statement immediately terminates the loop it is contained within.",
+      "hint": "Think about how you might want to exit a loop prematurely based on a certain condition."
+    },
+    {
+      "id": 25,
+      "question": "What is the output of the following code snippet? `console.log(typeof null);`",
+      "options": [
+        "`null`",
+        "`undefined`",
+        "`object`",
+        "`string`"
+      ],
+      "answer": 2,
+      "explanation": "This is a known quirk in JavaScript. `typeof null` incorrectly returns 'object'.",
+      "hint": "JavaScript has some historical inconsistencies; this is one of them."
+    },
+    {
+      "id": 26,
+      "question": "Which of the following is the correct way to define a function in JavaScript?",
+      "options": [
+        "`function = myFunction() {}`",
+        "`myFunction() function {}`",
+        "`function myFunction() {}`",
+        "`myFunction {} function()`"
+      ],
+      "answer": 2,
+      "explanation": "The correct syntax for defining a function is `function functionName() {}`.",
+      "hint": "Remember the keyword used to declare a function."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `continue` statement in a loop?",
+      "options": [
+        "To terminate the loop entirely",
+        "To skip the current iteration and proceed to the next",
+        "To define a new loop",
+        "To restart the loop from the beginning"
+      ],
+      "answer": 1,
+      "explanation": "The `continue` statement skips the rest of the current iteration of the loop and proceeds to the next iteration.",
+      "hint": "Think about how you might want to bypass certain code within a loop based on a condition."
+    },
+    {
+      "id": 28,
+      "question": "What is the result of `!true`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 1,
+      "explanation": "The `!` operator is the logical NOT operator. It inverts the boolean value, so `!true` evaluates to `false`.",
+      "hint": "Consider the truth table for the NOT operator."
+    },
+    {
+      "id": 29,
+      "question": "You need to store a collection of unique values in a JavaScript variable. Which data type is most appropriate?",
+      "options": [
+        "Array",
+        "Object",
+        "String",
+        "Number"
+      ],
+      "answer": 0,
+      "explanation": "Arrays can store a collection of values, and while they don't enforce uniqueness by default, you can implement logic to ensure uniqueness.",
+      "hint": "Think about data structures designed to hold multiple values."
+    },
+    {
+      "id": 30,
+      "question": "What will be the output of the following code: `console.log(0.1 + 0.2 == 0.3);`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 1,
+      "explanation": "Due to the way floating-point numbers are represented in binary, the result of 0.1 + 0.2 is not exactly 0.3, leading to a `false` comparison.",
+      "hint": "Be aware of the limitations of floating-point arithmetic."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is a valid way to comment out a single line of code in JavaScript?",
+      "options": [
+        "`/* This is a comment */`",
+        "`// This is a comment`",
+        "`<!-- This is a comment -->`",
+        "`## This is a comment`"
+      ],
+      "answer": 1,
+      "explanation": "Double slashes (`//`) are used to create single-line comments in JavaScript.",
+      "hint": "This is the standard way to add explanatory notes to your code."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `else if` clause in an `if` statement?",
+      "options": [
+        "To execute code if the initial `if` condition is false",
+        "To define a default case",
+        "To create a loop",
+        "To declare a variable"
+      ],
+      "answer": 0,
+      "explanation": "The `else if` clause allows you to check multiple conditions sequentially, executing the corresponding code block if a condition is true.",
+      "hint": "Think about how you might want to handle multiple possible scenarios."
+    },
+    {
+      "id": 33,
+      "question": "What is the difference between a local variable and a global variable in JavaScript?",
+      "options": [
+        "Local variables are accessible from anywhere in the code, global variables are only accessible within a function",
+        "Global variables are accessible from anywhere in the code, local variables are only accessible within a function",
+        "Local variables are declared with `const`, global variables with `var`",
+        "Global variables are declared with `let`, local variables with `var`"
+      ],
+      "answer": 1,
+      "explanation": "Global variables are declared outside of any function and are accessible from anywhere in the code, while local variables are declared within a function and are only accessible within that function.",
+      "hint": "Consider the scope of each variable – where can it be accessed?"
+    },
+    {
+      "id": 34,
+      "question": "What will be the output of the following code: `console.log(2 * '2');`?",
+      "options": [
+        "`4`",
+        "`22`",
+        "`NaN`",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "JavaScript converts the string '2' to the number 2 before performing the multiplication, resulting in 4.",
+      "hint": "JavaScript's type coercion rules apply here."
+    },
+    {
+      "id": 35,
+      "question": "Which operator is used to check if two values are not equal in JavaScript?",
+      "options": [
+        "`==`",
+        "`===`",
+        "`!=`",
+        "`!==`"
+      ],
+      "answer": 2,
+      "explanation": "The `!=` operator checks for inequality, performing type coercion if necessary.",
+      "hint": "This operator is the opposite of the equality operator."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the `NaN` value in JavaScript?",
+      "options": [
+        "To represent a null value",
+        "To represent an undefined value",
+        "To represent a value that is 'Not a Number'",
+        "To represent a boolean value"
+      ],
+      "answer": 2,
+      "explanation": "`NaN` (Not a Number) represents a value that is not a valid number, often resulting from an invalid mathematical operation.",
+      "hint": "Think about what happens when you try to perform an operation that doesn't result in a number."
+    },
+    {
+      "id": 37,
+      "question": "What is the output of the following code: `console.log(5 > 3 > 1);`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 0,
+      "explanation": "JavaScript evaluates comparisons from left to right. `5 > 3` is `true` (which is coerced to 1), and `1 > 1` is `false`.",
+      "hint": "Pay attention to the order of operations and how comparisons are chained."
+    },
+    {
+      "id": 38,
+      "question": "You want to create a variable that cannot be reassigned after its initial value is set. Which keyword should you use?",
+      "options": [
+        "`var`",
+        "`let`",
+        "`const`",
+        "`function`"
+      ],
+      "answer": 2,
+      "explanation": "The `const` keyword declares a constant variable, meaning its value cannot be changed after initialization.",
+      "hint": "Think about the purpose of constants in programming."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `switch` statement?",
+      "options": [
+        "To execute a block of code repeatedly",
+        "To define a function",
+        "To select one of several code blocks to execute based on a condition",
+        "To declare a variable"
+      ],
+      "answer": 2,
+      "explanation": "The `switch` statement provides a concise way to select one of several code blocks to execute based on the value of an expression.",
+      "hint": "Consider scenarios where you have multiple possible values for a single variable."
+    },
+    {
+      "id": 40,
+      "question": "What is the result of `true || false`?",
+      "options": [
+        "`true`",
+        "`false`",
+        "Error",
+        "Undefined"
+      ],
+      "answer": 0,
+      "explanation": "The logical OR operator (`||`) returns `true` if at least one of the operands is `true`. Otherwise, it returns `false`.",
+      "hint": "Remember the truth table for logical OR."
+    },
+    {
+      "id": 41,
+      "question": "What is the primary advantage of using `const` over `let` when declaring variables?",
+      "options": [
+        "`const` variables can be reassigned",
+        "`const` variables have block scope",
+        "`const` prevents accidental reassignment of the variable's value",
+        "`const` is faster than `let`"
+      ],
+      "answer": 2,
+      "explanation": "Using `const` helps prevent accidental modification of a variable's value, improving code reliability and maintainability.",
+      "hint": "Think about the benefits of immutability."
+    },
+    {
+      "id": 42,
+      "question": "What will be the output of the following code: `console.log(typeof([]));`?",
+      "options": [
+        "`array`",
+        "`object`",
+        "`string`",
+        "`undefined`"
+      ],
+      "answer": 1,
+      "explanation": "In JavaScript, arrays are considered objects.",
+      "hint": "Consider how JavaScript classifies different data structures."
+    },
+    {
+      "id": 43,
+      "question": "Which of the following is the correct way to add a comment that spans multiple lines in JavaScript?",
+      "options": [
+        "`// This is a comment`",
+        "`/* This is a comment */`",
+        "`<!-- This is a comment -->`",
+        "`## This is a comment`"
+      ],
+      "answer": 1,
+      "explanation": "Multi-line comments are created using `/*` to start the comment and `*/` to end it.",
+      "hint": "This allows you to write comments that cover several lines of code."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `else` clause in an `if` statement?",
+      "options": [
+        "To define a default case",
+        "To execute code if the `if` condition is true",
+        "To create a loop",
+        "To declare a variable"
+      ],
+      "answer": 0,
+      "explanation": "The `else` clause executes a block of code if the `if` condition is false.",
+      "hint": "Think about what should happen when the initial condition is not met."
+    },
+    {
+      "id": 45,
+      "question": "What is the result of `10 / 0` in JavaScript?",
+      "options": [
+        "`0`",
+        "`1`",
+        "`Infinity`",
+        "Error"
+      ],
+      "answer": 2,
+      "explanation": "Dividing a number by zero results in `Infinity` in JavaScript.",
+      "hint": "Consider the mathematical implications of dividing by zero."
+    },
+    {
+      "id": 46,
+      "question": "You need to store a key-value pair in a JavaScript variable. Which data type is most appropriate?",
+      "options": [
+        "Array",
+        "Object",
+        "String",
+        "Number"
+      ],
+      "answer": 1,
+      "explanation": "Objects are designed to store key-value pairs, allowing you to associate data with specific identifiers.",
+      "hint": "Think about data structures designed to represent relationships between data."
+    },
+    {
+      "id": 47,
+      "question": "What will be the output of the following code: `console.log(2 + 2 * 2);`?",
+      "options": [
+        "`8`",
+        "`6`",
+        "`4`",
+        "Error"
+      ],
+      "answer": 1,
+      "explanation": "JavaScript follows the order of operations (PEMDAS/BODMAS). Multiplication is performed before addition, so 2 * 2 = 4, and then 2 + 4 = 6.",
+      "hint": "Remember the order of operations."
+    },
+    {
+      "id": 48,
+      "question": "Which operator is used to assign a value to a variable in JavaScript?",
+      "options": [
+        "`==`",
+        "`===`",
+        "`=`",
+        "`!=`"
+      ],
+      "answer": 2,
+      "explanation": "The `=` operator is used to assign a value to a variable.",
+      "hint": "This is the fundamental operator for variable assignment."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `void` operator in JavaScript?",
+      "options": [
+        "To declare a variable",
+        "To return a value from a function",
+        "To evaluate an expression and return `undefined`",
+        "To create a loop"
+      ],
+      "answer": 2,
+      "explanation": "The `void` operator evaluates an expression but returns `undefined`. It's often used to prevent the execution of a JavaScript statement.",
+      "hint": "Think about scenarios where you want to evaluate an expression without its side effects."
+    },
+    {
+      "id": 50,
+      "question": "What is the output of the following code: `console.log(typeof(123.45));`?",
+      "options": [
+        "`integer`",
+        "`float`",
+        "`number`",
+        "`string`"
+      ],
+      "answer": 2,
+      "explanation": "JavaScript treats all numeric values, including those with decimal points, as the `number` data type.",
+      "hint": "Consider how JavaScript classifies numeric values."
+    }
+  ]
+}

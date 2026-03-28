@@ -1,0 +1,669 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 1: Foundations — Data, Structures and Algorithms",
+  "unitId": "dsa-u1",
+  "categoryId": "cs",
+  "topics": [
+    "What is Data?",
+    "What is a Data Structure?",
+    "What is an Algorithm?",
+    "Difference between Data Structure and Algorithm",
+    "Types of Data Structures — Primitive: int, float, char, bool",
+    "Types of Data Structures — Non-Primitive Linear: Array, Linked List, Stack, Queue",
+    "Types of Data Structures — Non-Primitive Non-Linear: Tree, Graph",
+    "Algorithm characteristics — Input, Output, Definiteness, Finiteness, Effectiveness"
+  ],
+  "generatedAt": "2026-03-28T08:37:38Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best defines 'data' in the context of computer science?",
+      "options": [
+        "Processed information",
+        "Raw, unorganized facts",
+        "Instructions for a computer",
+        "A type of algorithm"
+      ],
+      "answer": 1,
+      "explanation": "Data refers to raw, unorganized facts that need to be processed to become meaningful information.",
+      "hint": "Think about what a computer receives *before* it does anything with it."
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of a data structure?",
+      "options": [
+        "To execute algorithms efficiently",
+        "To store and organize data for efficient access and modification",
+        "To define the input and output of a program",
+        "To translate high-level code into machine code"
+      ],
+      "answer": 1,
+      "explanation": "Data structures are designed to organize data in a specific format, enabling efficient storage and retrieval.",
+      "hint": "Consider how different arrangements of information impact how quickly you can find something."
+    },
+    {
+      "id": 3,
+      "question": "Which characteristic is NOT essential for an algorithm?",
+      "options": [
+        "Definiteness",
+        "Finiteness",
+        "Effectiveness",
+        "Complexity"
+      ],
+      "answer": 3,
+      "explanation": "While complexity is important for analysis, it's not a fundamental requirement for an algorithm to be valid; definiteness, finiteness, and effectiveness are.",
+      "hint": "Focus on the core properties that *define* a valid set of instructions."
+    },
+    {
+      "id": 4,
+      "question": "What is the key difference between a data structure and an algorithm?",
+      "options": [
+        "A data structure is a set of instructions, while an algorithm is a way to organize data",
+        "A data structure organizes data, while an algorithm manipulates data",
+        "They are interchangeable terms",
+        "Algorithms are hardware-specific, while data structures are software-specific"
+      ],
+      "answer": 1,
+      "explanation": "Data structures provide a way to store and organize data, while algorithms define the steps to process that data.",
+      "hint": "Think about the difference between *how* you store something and *what* you do with it."
+    },
+    {
+      "id": 5,
+      "question": "Which of the following is a primitive data type?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Integer",
+        "Graph"
+      ],
+      "answer": 2,
+      "explanation": "Primitive data types are basic building blocks like integers, floats, characters, and booleans, directly supported by the programming language.",
+      "hint": "Consider the most fundamental types of data a computer can directly handle."
+    },
+    {
+      "id": 6,
+      "question": "An array is a classic example of a linear data structure. What is its primary limitation?",
+      "options": [
+        "Fixed size",
+        "Cannot store different data types",
+        "Inefficient for insertions and deletions",
+        "Requires a linked list"
+      ],
+      "answer": 0,
+      "explanation": "Arrays typically have a fixed size determined at the time of creation, making it difficult to dynamically adjust their capacity.",
+      "hint": "Think about what happens when you try to add more elements than an array can hold."
+    },
+    {
+      "id": 7,
+      "question": "In a linked list, each element is called a node. What does each node typically contain?",
+      "options": [
+        "Only the data",
+        "Only a pointer to the next node",
+        "Data and a pointer to the next node",
+        "Data and a pointer to the previous node"
+      ],
+      "answer": 2,
+      "explanation": "Each node in a linked list stores both the data it holds and a pointer (or reference) to the next node in the sequence.",
+      "hint": "How does a linked list maintain its order without relying on contiguous memory locations?"
+    },
+    {
+      "id": 8,
+      "question": "Which data structure follows the LIFO (Last-In, First-Out) principle?",
+      "options": [
+        "Queue",
+        "Linked List",
+        "Stack",
+        "Array"
+      ],
+      "answer": 2,
+      "explanation": "A stack operates on the LIFO principle, meaning the last element added is the first one removed.",
+      "hint": "Think of a stack of plates – which one do you take off first?"
+    },
+    {
+      "id": 9,
+      "question": "A queue operates on the FIFO (First-In, First-Out) principle. Where is this commonly used?",
+      "options": [
+        "Undo/Redo functionality",
+        "Expression evaluation",
+        "Breadth-First Search",
+        "Sorting algorithms"
+      ],
+      "answer": 2,
+      "explanation": "Queues are frequently used in Breadth-First Search (BFS) algorithms to manage the order of nodes to visit.",
+      "hint": "Consider scenarios where you need to process items in the order they were received."
+    },
+    {
+      "id": 10,
+      "question": "What is the main advantage of a tree data structure over a linear data structure like a linked list?",
+      "options": [
+        "Simpler implementation",
+        "More efficient searching in sorted data",
+        "Lower memory usage",
+        "Easier to iterate through all elements"
+      ],
+      "answer": 1,
+      "explanation": "Trees, especially balanced trees, allow for more efficient searching, insertion, and deletion operations compared to linear structures when dealing with sorted data.",
+      "hint": "Think about how branching structures can help you narrow down your search faster."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a non-linear data structure?",
+      "options": [
+        "Array",
+        "Stack",
+        "Queue",
+        "Graph"
+      ],
+      "answer": 3,
+      "explanation": "Graphs are non-linear data structures consisting of nodes (vertices) and edges, representing relationships between them.",
+      "hint": "Consider structures where elements can have multiple connections, not just a single next element."
+    },
+    {
+      "id": 12,
+      "question": "What is the purpose of 'definiteness' in algorithm characteristics?",
+      "options": [
+        "The algorithm must terminate after a finite number of steps",
+        "Each step of the algorithm must be precisely and unambiguously defined",
+        "The algorithm must be effective in solving the problem",
+        "The algorithm must have a clear input and output"
+      ],
+      "answer": 1,
+      "explanation": "Definiteness means that each instruction in the algorithm must be clear, precise, and unambiguous, leaving no room for interpretation.",
+      "hint": "Think about what would happen if an instruction could be understood in multiple ways."
+    },
+    {
+      "id": 13,
+      "question": "What does 'finiteness' ensure in an algorithm?",
+      "options": [
+        "The algorithm is easy to understand",
+        "The algorithm will always produce a correct output",
+        "The algorithm will terminate after a finite number of steps",
+        "The algorithm can handle any type of input"
+      ],
+      "answer": 2,
+      "explanation": "Finiteness guarantees that an algorithm will eventually stop executing after a limited number of steps, preventing infinite loops.",
+      "hint": "Consider the consequences of an algorithm that never ends."
+    },
+    {
+      "id": 14,
+      "question": "What is meant by 'effectiveness' in the context of algorithm characteristics?",
+      "options": [
+        "The algorithm must be efficient in terms of time and space",
+        "Each step of the algorithm must be basic and feasible",
+        "The algorithm must be easy to implement",
+        "The algorithm must be well-documented"
+      ],
+      "answer": 1,
+      "explanation": "Effectiveness means that each step of the algorithm must be basic enough to be carried out in a finite amount of time and with finite resources.",
+      "hint": "Think about whether each instruction is actually something a computer can *do*."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following best describes the input of an algorithm?",
+      "options": [
+        "The output produced by the algorithm",
+        "The set of instructions the algorithm follows",
+        "The data provided to the algorithm to process",
+        "The memory allocated to the algorithm"
+      ],
+      "answer": 2,
+      "explanation": "The input is the data that the algorithm receives to operate on and produce a result.",
+      "hint": "What does an algorithm need to *start* working?"
+    },
+    {
+      "id": 16,
+      "question": "Consider a scenario where you need to store a list of student IDs. Which data structure would be most appropriate if you need to frequently search for a specific ID?",
+      "options": [
+        "Linked List",
+        "Stack",
+        "Array",
+        "Queue"
+      ],
+      "answer": 2,
+      "explanation": "An array allows for efficient searching, especially if the IDs are sorted, using techniques like binary search.",
+      "hint": "Think about how the arrangement of data affects search speed."
+    },
+    {
+      "id": 17,
+      "question": "You are implementing a function to reverse a string. Which data structure would be most helpful?",
+      "options": [
+        "Array",
+        "Queue",
+        "Stack",
+        "Linked List"
+      ],
+      "answer": 2,
+      "explanation": "A stack's LIFO property makes it ideal for reversing a string – push each character onto the stack, then pop them off to get the reversed string.",
+      "hint": "Consider the order in which you need to process the characters."
+    },
+    {
+      "id": 18,
+      "question": "What is the primary use case for a queue data structure?",
+      "options": [
+        "Implementing undo/redo functionality",
+        "Managing tasks in a specific order",
+        "Storing hierarchical data",
+        "Representing network connections"
+      ],
+      "answer": 1,
+      "explanation": "Queues are used to manage tasks or items in a specific order, ensuring they are processed in the order they were received.",
+      "hint": "Think about situations where 'first come, first served' is important."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is a disadvantage of using a linked list compared to an array?",
+      "options": [
+        "Linked lists are more memory-efficient",
+        "Linked lists allow for faster random access",
+        "Linked lists require contiguous memory allocation",
+        "Linked lists require more memory overhead due to pointers"
+      ],
+      "answer": 3,
+      "explanation": "Linked lists don't require contiguous memory, but they do require extra memory to store pointers, leading to more overhead.",
+      "hint": "Consider how memory is allocated and managed in each structure."
+    },
+    {
+      "id": 20,
+      "question": "In a binary tree, what is the maximum number of children a node can have?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Unlimited"
+      ],
+      "answer": 1,
+      "explanation": "A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.",
+      "hint": "The 'binary' in 'binary tree' is a key clue."
+    },
+    {
+      "id": 21,
+      "question": "What is the time complexity of searching for an element in a sorted array using binary search?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "Binary search repeatedly divides the search interval in half, resulting in a logarithmic time complexity of O(log n).",
+      "hint": "Think about how quickly the search space is reduced with each comparison."
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is a common application of graphs?",
+      "options": [
+        "Storing a list of numbers",
+        "Implementing a stack",
+        "Representing social networks",
+        "Managing a queue of tasks"
+      ],
+      "answer": 2,
+      "explanation": "Graphs are well-suited for representing relationships between entities, making them ideal for modeling social networks, maps, and other interconnected systems.",
+      "hint": "Think about structures where connections between items are important."
+    },
+    {
+      "id": 23,
+      "question": "What is the difference between a directed and an undirected graph?",
+      "options": [
+        "Directed graphs have cycles, while undirected graphs do not",
+        "Directed graphs have edges with a specific direction, while undirected graphs do not",
+        "Undirected graphs are more efficient to traverse",
+        "Directed graphs can only have two nodes"
+      ],
+      "answer": 1,
+      "explanation": "In a directed graph, edges have a specific direction, indicating a one-way relationship, while undirected graphs have edges without direction.",
+      "hint": "Consider whether the relationship between two nodes is one-way or two-way."
+    },
+    {
+      "id": 24,
+      "question": "Consider the following code snippet (Python): `my_list = [1, 2, 3, 4, 5]`. What is the time complexity of accessing the element at index 2?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Accessing an element in an array by its index takes constant time, O(1), because arrays provide direct access to elements.",
+      "hint": "Arrays allow you to directly calculate the memory address of an element given its index."
+    },
+    {
+      "id": 25,
+      "question": "Which data structure is best suited for implementing a priority queue?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Heap",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "Heaps are specifically designed to efficiently manage elements with priorities, allowing for quick retrieval of the highest (or lowest) priority element.",
+      "hint": "Think about structures that can quickly find the maximum or minimum value."
+    },
+    {
+      "id": 26,
+      "question": "What is the main advantage of using a hash table?",
+      "options": [
+        "Guaranteed sorted order",
+        "Fast average-case lookup time",
+        "Efficient storage of hierarchical data",
+        "Simple implementation"
+      ],
+      "answer": 1,
+      "explanation": "Hash tables provide very fast average-case lookup, insertion, and deletion operations, making them ideal for scenarios where quick access is crucial.",
+      "hint": "Consider how hash functions can map keys to specific locations in memory."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of a collision resolution technique in a hash table?",
+      "options": [
+        "To prevent memory leaks",
+        "To handle cases where different keys map to the same index",
+        "To sort the elements in the hash table",
+        "To improve the efficiency of insertion"
+      ],
+      "answer": 1,
+      "explanation": "Collision resolution techniques are used to handle situations where two or more keys hash to the same index in a hash table.",
+      "hint": "What happens when two different items want to occupy the same spot?"
+    },
+    {
+      "id": 28,
+      "question": "You are designing a system to track website visits. Which data structure would be most suitable for storing the order of visits for each user?",
+      "options": [
+        "Array",
+        "Stack",
+        "Queue",
+        "Linked List"
+      ],
+      "answer": 3,
+      "explanation": "A linked list can dynamically grow and maintain the order of visits as each user navigates the website.",
+      "hint": "Think about needing to add new visits without knowing the total number in advance."
+    },
+    {
+      "id": 29,
+      "question": "What is the primary difference between depth-first search (DFS) and breadth-first search (BFS)?",
+      "options": [
+        "DFS explores all neighbors of a node before moving to the next level, while BFS explores one level at a time",
+        "BFS explores all neighbors of a node before moving to the next level, while DFS explores one level at a time",
+        "DFS is only used for directed graphs, while BFS is only used for undirected graphs",
+        "DFS is more efficient than BFS in all cases"
+      ],
+      "answer": 0,
+      "explanation": "DFS explores as far as possible along each branch before backtracking, while BFS explores all the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.",
+      "hint": "Think about how each algorithm approaches exploring a tree or graph."
+    },
+    {
+      "id": 30,
+      "question": "Which of the following is a characteristic of a well-designed algorithm?",
+      "options": [
+        "High complexity",
+        "Ambiguous instructions",
+        "Limited applicability",
+        "Clear and concise steps"
+      ],
+      "answer": 3,
+      "explanation": "A well-designed algorithm should have clear, concise, and unambiguous steps that are easy to understand and implement.",
+      "hint": "Think about what makes an algorithm easy to use and maintain."
+    },
+    {
+      "id": 31,
+      "question": "What is the space complexity of an algorithm?",
+      "options": [
+        "The time it takes to execute the algorithm",
+        "The amount of memory the algorithm requires",
+        "The number of lines of code in the algorithm",
+        "The number of inputs the algorithm accepts"
+      ],
+      "answer": 1,
+      "explanation": "Space complexity refers to the amount of memory an algorithm needs to execute, considering both input and auxiliary space.",
+      "hint": "Think about how much memory the algorithm uses as the input size grows."
+    },
+    {
+      "id": 32,
+      "question": "Consider a stack with the following elements (top to bottom): 3, 1, 5. After popping two elements, what will be the top element?",
+      "options": [
+        "3",
+        "1",
+        "5",
+        "Empty Stack"
+      ],
+      "answer": 2,
+      "explanation": "Popping two elements removes 3 and 1, leaving 5 as the top element.",
+      "hint": "Remember that stacks follow the LIFO principle."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of using recursion in algorithm design?",
+      "options": [
+        "To reduce code complexity",
+        "To avoid using loops",
+        "To solve problems by breaking them down into smaller, self-similar subproblems",
+        "To improve algorithm performance"
+      ],
+      "answer": 2,
+      "explanation": "Recursion involves defining a function that calls itself to solve smaller instances of the same problem, ultimately leading to a base case.",
+      "hint": "Think about problems that can be naturally broken down into smaller, identical parts."
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is a potential drawback of using recursion?",
+      "options": [
+        "Increased code readability",
+        "Reduced memory usage",
+        "Potential for stack overflow",
+        "Improved performance"
+      ],
+      "answer": 2,
+      "explanation": "Excessive recursion can lead to a stack overflow error if the recursion depth exceeds the stack's capacity.",
+      "hint": "Consider the memory implications of repeatedly calling a function."
+    },
+    {
+      "id": 35,
+      "question": "What is the difference between a linear search and a binary search?",
+      "options": [
+        "Linear search requires a sorted array, while binary search does not",
+        "Binary search requires a sorted array, while linear search does not",
+        "Linear search is more efficient than binary search",
+        "Binary search is only used for linked lists"
+      ],
+      "answer": 1,
+      "explanation": "Binary search requires the array to be sorted to efficiently narrow down the search space, while linear search can be used on unsorted arrays.",
+      "hint": "Think about how the order of elements affects the search strategy."
+    },
+    {
+      "id": 36,
+      "question": "You are given an unsorted array of integers. Which sorting algorithm has an average time complexity of O(n log n)?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "answer": 2,
+      "explanation": "Merge Sort is a divide-and-conquer algorithm with an average and worst-case time complexity of O(n log n).",
+      "hint": "Consider algorithms that efficiently divide the problem into smaller subproblems."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of using a graph in a route-finding application (like Google Maps)?",
+      "options": [
+        "To store a list of addresses",
+        "To represent the network of roads and intersections",
+        "To calculate distances between cities",
+        "To display map images"
+      ],
+      "answer": 1,
+      "explanation": "Graphs are used to model the network of roads and intersections, where nodes represent locations and edges represent roads.",
+      "hint": "Think about how you would represent a map as a collection of interconnected points."
+    },
+    {
+      "id": 38,
+      "question": "Consider the following code snippet (Python): `queue = [] ; queue.append(1) ; queue.append(2) ; print(queue.pop(0))`. What will be the output?",
+      "options": [
+        "2",
+        "1",
+        "Error",
+        "Empty Queue"
+      ],
+      "answer": 1,
+      "explanation": "The `pop(0)` method removes and returns the first element of the list, which is 1 in this case, adhering to the FIFO principle of a queue.",
+      "hint": "Remember that queues operate on a first-come, first-served basis."
+    },
+    {
+      "id": 39,
+      "question": "What is the primary advantage of using a tree structure to represent hierarchical data?",
+      "options": [
+        "Efficient storage of sequential data",
+        "Easy traversal in a linear order",
+        "Natural representation of parent-child relationships",
+        "Fast searching for specific elements"
+      ],
+      "answer": 2,
+      "explanation": "Trees naturally represent hierarchical relationships, making them ideal for organizing data with parent-child connections.",
+      "hint": "Think about how organizational charts or file systems are structured."
+    },
+    {
+      "id": 40,
+      "question": "Which of the following is a common application of a stack?",
+      "options": [
+        "Implementing a priority queue",
+        "Managing a list of tasks in order of arrival",
+        "Evaluating arithmetic expressions",
+        "Representing a social network"
+      ],
+      "answer": 2,
+      "explanation": "Stacks are used to evaluate arithmetic expressions by keeping track of operators and operands in a LIFO manner.",
+      "hint": "Think about how parentheses and operator precedence are handled in expressions."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of using a 'hint function' in algorithm design?",
+      "options": [
+        "To optimize the algorithm's performance",
+        "To provide guidance to the user",
+        "To improve code readability",
+        "To help debug the algorithm"
+      ],
+      "answer": 0,
+      "explanation": "Hint functions are used to provide clues or suggestions to guide the algorithm towards a solution, especially in complex problems.",
+      "hint": "Think about how you might give someone a nudge in the right direction without giving away the answer."
+    },
+    {
+      "id": 42,
+      "question": "You need to store a collection of unique items and quickly check if an item already exists. Which data structure is most suitable?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "Hash tables provide very fast average-case lookup, making them ideal for checking the existence of unique items.",
+      "hint": "Consider structures that can quickly determine if an element is present."
+    },
+    {
+      "id": 43,
+      "question": "What is the time complexity of inserting an element at the beginning of a linked list?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Inserting at the beginning of a linked list only requires updating the head pointer, which takes constant time, O(1).",
+      "hint": "Think about how much work is involved in adding an element to the front of the list."
+    },
+    {
+      "id": 44,
+      "question": "What is the main difference between a linear and a non-linear data structure?",
+      "options": [
+        "Linear structures have a fixed size, while non-linear structures do not",
+        "Linear structures store data in a sequential order, while non-linear structures do not",
+        "Non-linear structures are more efficient than linear structures",
+        "Linear structures are only used for primitive data types"
+      ],
+      "answer": 1,
+      "explanation": "Linear data structures arrange data in a sequential manner, while non-linear structures allow for more complex relationships between elements.",
+      "hint": "Consider how the elements are connected to each other."
+    },
+    {
+      "id": 45,
+      "question": "Which of the following is an example of a non-primitive data type?",
+      "options": [
+        "int",
+        "float",
+        "char",
+        "Array"
+      ],
+      "answer": 3,
+      "explanation": "Arrays are constructed from primitive data types and are therefore considered non-primitive data types.",
+      "hint": "Think about data types that are built from other data types."
+    },
+    {
+      "id": 46,
+      "question": "You are implementing a spell checker. Which data structure would be most efficient for storing a dictionary of valid words?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Hash Table",
+        "Stack"
+      ],
+      "answer": 2,
+      "explanation": "A hash table provides fast lookup times, allowing you to quickly check if a word is in the dictionary.",
+      "hint": "Consider the need for quick word verification."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of using a 'base case' in a recursive algorithm?",
+      "options": [
+        "To initialize the algorithm",
+        "To terminate the recursion",
+        "To handle invalid input",
+        "To improve algorithm performance"
+      ],
+      "answer": 1,
+      "explanation": "The base case provides a stopping condition for the recursion, preventing infinite loops.",
+      "hint": "Think about what needs to happen to stop the function from calling itself endlessly."
+    },
+    {
+      "id": 48,
+      "question": "Consider a scenario where you need to process a large number of requests in the order they are received. Which data structure is most appropriate?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "A queue follows the FIFO principle, ensuring that requests are processed in the order they were received.",
+      "hint": "Think about 'first come, first served'."
+    },
+    {
+      "id": 49,
+      "question": "What is the primary advantage of using a balanced binary search tree over an unbalanced binary search tree?",
+      "options": [
+        "Simpler implementation",
+        "Guaranteed O(1) search time",
+        "More efficient search, insertion, and deletion operations",
+        "Lower memory usage"
+      ],
+      "answer": 2,
+      "explanation": "Balanced trees maintain a relatively equal height on all branches, ensuring logarithmic time complexity for search, insertion, and deletion.",
+      "hint": "Think about how the shape of the tree affects search performance."
+    },
+    {
+      "id": 50,
+      "question": "You are designing a system to represent a network of computers. Each computer is a node, and the connections between them are edges. Which data structure is most suitable?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Stack",
+        "Graph"
+      ],
+      "answer": 3,
+      "explanation": "Graphs are specifically designed to represent relationships between entities, making them ideal for modeling networks.",
+      "hint": "Think about structures that can represent connections between items."
+    }
+  ]
+}

@@ -3,49 +3,151 @@
     "label": "Cambridge · Grade 9",
     "subjects": [
       {
-        "id": "mathematics", "name": "Mathematics", "icon": "📐", "units": 15,
+        "id": "mathematics",
+        "name": "Mathematics",
+        "icon": "📐",
+        "units": 15,
         "unitList": [
-          { "id": "math-u1",  "name": "Number and Calculation" },
-          { "id": "math-u2",  "name": "Expressions and Formulae" },
-          { "id": "math-u3",  "name": "Decimals, Percentages and Rounding" },
-          { "id": "math-u4",  "name": "Equations and Inequalities" },
-          { "id": "math-u5",  "name": "Angles" },
-          { "id": "math-u6",  "name": "Statistical Investigations" },
-          { "id": "math-u7",  "name": "Shapes and Measurements" },
-          { "id": "math-u8",  "name": "Fractions" },
-          { "id": "math-u9",  "name": "Sequences and Functions" },
-          { "id": "math-u10", "name": "Graphs" },
-          { "id": "math-u11", "name": "Ratio and Proportion" },
-          { "id": "math-u12", "name": "Probability" },
-          { "id": "math-u13", "name": "Position and Transformation" },
-          { "id": "math-u14", "name": "Volume, Surface Area and Symmetry" },
-          { "id": "math-u15", "name": "Interpreting and Discussing Results" }
+          {
+            "id": "math-u1",
+            "name": "Number and Calculation"
+          },
+          {
+            "id": "math-u2",
+            "name": "Expressions and Formulae"
+          },
+          {
+            "id": "math-u3",
+            "name": "Decimals, Percentages and Rounding"
+          },
+          {
+            "id": "math-u4",
+            "name": "Equations and Inequalities"
+          },
+          {
+            "id": "math-u5",
+            "name": "Angles"
+          },
+          {
+            "id": "math-u6",
+            "name": "Statistical Investigations"
+          },
+          {
+            "id": "math-u7",
+            "name": "Shapes and Measurements"
+          },
+          {
+            "id": "math-u8",
+            "name": "Fractions"
+          },
+          {
+            "id": "math-u9",
+            "name": "Sequences and Functions"
+          },
+          {
+            "id": "math-u10",
+            "name": "Graphs"
+          },
+          {
+            "id": "math-u11",
+            "name": "Ratio and Proportion"
+          },
+          {
+            "id": "math-u12",
+            "name": "Probability"
+          },
+          {
+            "id": "math-u13",
+            "name": "Position and Transformation"
+          },
+          {
+            "id": "math-u14",
+            "name": "Volume, Surface Area and Symmetry"
+          },
+          {
+            "id": "math-u15",
+            "name": "Interpreting and Discussing Results"
+          }
         ]
       },
       {
-        "id": "science", "name": "Science", "icon": "🔬", "units": 9,
+        "id": "science",
+        "name": "Science",
+        "icon": "🔬",
+        "units": 9,
         "unitList": [
-          { "id": "sci-u1", "name": "Photosynthesis and the Carbon Cycle" },
-          { "id": "sci-u2", "name": "Properties of Materials" },
-          { "id": "sci-u3", "name": "Forces and Energy" },
-          { "id": "sci-u4", "name": "Maintaining Life" },
-          { "id": "sci-u5", "name": "Reactivity" },
-          { "id": "sci-u6", "name": "Sound and Space" },
-          { "id": "sci-u7", "name": "Genes and Inheritance" },
-          { "id": "sci-u8", "name": "Rates of Reaction" },
-          { "id": "sci-u9", "name": "Electricity" }
+          {
+            "id": "sci-u1",
+            "name": "Photosynthesis and the Carbon Cycle"
+          },
+          {
+            "id": "sci-u2",
+            "name": "Properties of Materials"
+          },
+          {
+            "id": "sci-u3",
+            "name": "Forces and Energy"
+          },
+          {
+            "id": "sci-u4",
+            "name": "Maintaining Life"
+          },
+          {
+            "id": "sci-u5",
+            "name": "Reactivity"
+          },
+          {
+            "id": "sci-u6",
+            "name": "Sound and Space"
+          },
+          {
+            "id": "sci-u7",
+            "name": "Genes and Inheritance"
+          },
+          {
+            "id": "sci-u8",
+            "name": "Rates of Reaction"
+          },
+          {
+            "id": "sci-u9",
+            "name": "Electricity"
+          }
         ]
       },
       {
-        "id": "geography", "name": "Geography", "icon": "🌍", "units": 7,
+        "id": "geography",
+        "name": "Geography",
+        "icon": "🌍",
+        "units": 7,
         "unitList": [
-          { "id": "geo-u1", "name": "From Rock to Soil" },
-          { "id": "geo-u2", "name": "Using Earth's Resources" },
-          { "id": "geo-u3", "name": "Earning a Living" },
-          { "id": "geo-u4", "name": "International Development" },
-          { "id": "geo-u5", "name": "Our Restless Planet" },
-          { "id": "geo-u6", "name": "About Russia" },
-          { "id": "geo-u7", "name": "The Middle East" }
+          {
+            "id": "geo-u1",
+            "name": "From Rock to Soil"
+          },
+          {
+            "id": "geo-u2",
+            "name": "Using Earth's Resources"
+          },
+          {
+            "id": "geo-u3",
+            "name": "Earning a Living"
+          },
+          {
+            "id": "geo-u4",
+            "name": "International Development"
+          },
+          {
+            "id": "geo-u5",
+            "name": "Our Restless Planet"
+          },
+          {
+            "id": "geo-u6",
+            "name": "About Russia"
+          },
+          {
+            "id": "geo-u7",
+            "name": "The Middle East"
+          }
         ]
       }
     ]
@@ -54,26 +156,135 @@
     "label": "Computer Science Engineering",
     "subjects": [
       {
-        "id": "oop", "name": "Object-Oriented Programming", "icon": "💡", "units": 7,
+        "id": "oop",
+        "name": "Object-Oriented Programming",
+        "icon": "💡",
+        "units": 7,
         "unitList": [
-          { "id": "oop-u1", "name": "OOP Fundamentals" },
-          { "id": "oop-u2", "name": "Encapsulation" },
-          { "id": "oop-u3", "name": "Inheritance" },
-          { "id": "oop-u4", "name": "Polymorphism" },
-          { "id": "oop-u5", "name": "Abstraction and Interfaces" },
-          { "id": "oop-u6", "name": "Constructors and Destructors" },
-          { "id": "oop-u7", "name": "OOP Design Principles" }
+          {
+            "id": "oop-u1",
+            "name": "OOP Fundamentals"
+          },
+          {
+            "id": "oop-u2",
+            "name": "Encapsulation"
+          },
+          {
+            "id": "oop-u3",
+            "name": "Inheritance"
+          },
+          {
+            "id": "oop-u4",
+            "name": "Polymorphism"
+          },
+          {
+            "id": "oop-u5",
+            "name": "Abstraction and Interfaces"
+          },
+          {
+            "id": "oop-u6",
+            "name": "Constructors and Destructors"
+          },
+          {
+            "id": "oop-u7",
+            "name": "OOP Design Principles"
+          }
         ]
       },
       {
-        "id": "sql", "name": "SQL and Databases", "icon": "🗄️", "units": 6,
+        "id": "sql",
+        "name": "SQL and Databases",
+        "icon": "🗄️",
+        "units": 6,
         "unitList": [
-          { "id": "sql-u1", "name": "Database and SQL Fundamentals" },
-          { "id": "sql-u2", "name": "Table Design and Constraints" },
-          { "id": "sql-u3", "name": "Filtering, Updating and Deleting" },
-          { "id": "sql-u4", "name": "Normalisation and Anomalies" },
-          { "id": "sql-u5", "name": "Joins" },
-          { "id": "sql-u6", "name": "Aggregates, Grouping and Subqueries" }
+          {
+            "id": "sql-u1",
+            "name": "Database and SQL Fundamentals"
+          },
+          {
+            "id": "sql-u2",
+            "name": "Table Design and Constraints"
+          },
+          {
+            "id": "sql-u3",
+            "name": "Filtering, Updating and Deleting"
+          },
+          {
+            "id": "sql-u4",
+            "name": "Normalisation and Anomalies"
+          },
+          {
+            "id": "sql-u5",
+            "name": "Joins"
+          },
+          {
+            "id": "sql-u6",
+            "name": "Aggregates, Grouping and Subqueries"
+          }
+        ]
+      },
+      {
+        "id": "dsa",
+        "name": "Data Structures and Algorithms",
+        "icon": "🧩",
+        "units": 7,
+        "unitList": [
+          {
+            "id": "dsa-u1",
+            "name": "Foundations — Data, Structures and Algorithms"
+          },
+          {
+            "id": "dsa-u2",
+            "name": "Complexity and Big O Notation"
+          },
+          {
+            "id": "dsa-u3",
+            "name": "Arrays and Linked Lists"
+          },
+          {
+            "id": "dsa-u4",
+            "name": "Stacks and Queues"
+          },
+          {
+            "id": "dsa-u5",
+            "name": "Recursion and Searching"
+          },
+          {
+            "id": "dsa-u6",
+            "name": "Sorting Algorithms"
+          },
+          {
+            "id": "dsa-u7",
+            "name": "Trees and Hash Tables"
+          }
+        ]
+      },
+      {
+        "id": "webdev",
+        "name": "HTML, CSS and JavaScript",
+        "icon": "🌐",
+        "units": 5,
+        "unitList": [
+          {
+            "id": "web-u1",
+            "name": "HTML Fundamentals"
+          },
+          {
+            "id": "web-u2",
+            "name": "CSS Styling and Layouts"
+          },
+          {
+            "id": "web-u3",
+            "name": "JavaScript Fundamentals"
+          },
+          {
+            "id": "web-u4",
+            "name": "Loops, Functions and Arrays"
+          },
+          {
+            "id": "web-u5",
+            "name": "Objects and DOM Manipulation"
+          }
         ]
       }
     ]

@@ -1,0 +1,670 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 5: Recursion and Searching",
+  "unitId": "dsa-u5",
+  "categoryId": "cs",
+  "topics": [
+    "What is Recursion — a function calling itself",
+    "Base condition and recursive call",
+    "Factorial using recursion",
+    "Fibonacci using recursion",
+    "Sum of numbers using recursion — O(n) time complexity",
+    "Introduction to Dynamic Programming",
+    "Linear Search — concept and O(n) time complexity",
+    "Binary Search — requirement of sorted array and O(log n) time complexity",
+    "Comparing Linear Search vs Binary Search"
+  ],
+  "generatedAt": "2026-03-28T08:45:23Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the fundamental principle behind recursion?",
+      "options": [
+        "Iterative looping",
+        "A function calling itself",
+        "Using global variables",
+        "Data encapsulation"
+      ],
+      "answer": 1,
+      "explanation": "Recursion is a programming technique where a function calls itself to solve smaller subproblems of the same type.",
+      "hint": "Think about how a problem can be broken down into smaller, self-similar instances."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is essential for a recursive function to terminate?",
+      "options": [
+        "Infinite loop",
+        "Base case",
+        "Recursive call",
+        "Stack overflow"
+      ],
+      "answer": 1,
+      "explanation": "A base case provides a stopping condition for the recursion, preventing infinite calls and ensuring the function eventually returns a value.",
+      "hint": "Without a stopping point, the function will keep calling itself indefinitely."
+    },
+    {
+      "id": 3,
+      "question": "What is the time complexity of a recursive function to calculate the sum of 'n' numbers?",
+      "options": [
+        "O(log n)",
+        "O(n^2)",
+        "O(n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "The recursive sum function makes 'n' calls, each performing a constant amount of work, resulting in a linear time complexity.",
+      "hint": "Consider how many times the function calls itself in relation to the input size."
+    },
+    {
+      "id": 4,
+      "question": "What is Dynamic Programming primarily used for?",
+      "options": [
+        "Reducing code complexity",
+        "Optimizing recursive solutions by storing intermediate results",
+        "Improving code readability",
+        "Enhancing user interface design"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Programming avoids redundant calculations by storing the results of subproblems and reusing them when needed, optimizing recursive solutions.",
+      "hint": "Think about how you can avoid recalculating the same thing multiple times."
+    },
+    {
+      "id": 5,
+      "question": "In Linear Search, what is the worst-case time complexity?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case, Linear Search might have to iterate through the entire array to find the element or determine it's not present, resulting in O(n) complexity.",
+      "hint": "Consider the scenario where the element is at the very end of the array or not present."
+    },
+    {
+      "id": 6,
+      "question": "Binary Search requires the input array to be…",
+      "options": [
+        "Unsorted",
+        "Randomly ordered",
+        "Sorted",
+        "Partially sorted"
+      ],
+      "answer": 2,
+      "explanation": "Binary Search relies on the sorted nature of the array to efficiently narrow down the search space by repeatedly dividing it in half.",
+      "hint": "Think about how the algorithm works – it needs to compare the target with the middle element."
+    },
+    {
+      "id": 7,
+      "question": "What is the time complexity of Binary Search?",
+      "options": [
+        "O(n)",
+        "O(n^2)",
+        "O(log n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "Binary Search repeatedly divides the search interval in half, leading to a logarithmic time complexity of O(log n).",
+      "hint": "Consider how the search space is reduced with each comparison."
+    },
+    {
+      "id": 8,
+      "question": "Which search algorithm is generally more efficient for large, sorted datasets?",
+      "options": [
+        "Linear Search",
+        "Binary Search",
+        "Both are equally efficient",
+        "Neither is efficient"
+      ],
+      "answer": 1,
+      "explanation": "Binary Search's logarithmic time complexity makes it significantly more efficient than Linear Search's linear time complexity for large, sorted datasets.",
+      "hint": "Think about how the performance scales as the dataset grows."
+    },
+    {
+      "id": 9,
+      "question": "What is a stack overflow error in the context of recursion?",
+      "options": [
+        "Insufficient memory to store variables",
+        "Infinite recursion due to a missing base case",
+        "Division by zero",
+        "Invalid data type"
+      ],
+      "answer": 1,
+      "explanation": "A stack overflow occurs when a recursive function calls itself too many times, exceeding the stack's memory capacity.",
+      "hint": "Think about the call stack and how it grows with each recursive call."
+    },
+    {
+      "id": 10,
+      "question": "Consider a recursive function to calculate factorial. What is the base case?",
+      "options": [
+        "n = 1",
+        "n = 0",
+        "n = -1",
+        "n = 2"
+      ],
+      "answer": 1,
+      "explanation": "The base case for factorial is typically n = 1 (or n = 0), where the function returns 1 without making further recursive calls.",
+      "hint": "What is the simplest case for which you know the answer without calculation?"
+    },
+    {
+      "id": 11,
+      "question": "What is tail recursion?",
+      "options": [
+        "Recursion that uses a loop",
+        "Recursion where the recursive call is the very last operation",
+        "Recursion with multiple base cases",
+        "Recursion that uses global variables"
+      ],
+      "answer": 1,
+      "explanation": "Tail recursion is a specific form of recursion where the recursive call is the very last operation performed in the function, allowing for potential optimization.",
+      "hint": "Think about the order of operations within the recursive function."
+    },
+    {
+      "id": 12,
+      "question": "How does Dynamic Programming differ from a naive recursive approach?",
+      "options": [
+        "It always uses more memory",
+        "It avoids redundant calculations",
+        "It is always slower",
+        "It cannot solve the same problems"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Programming optimizes recursive solutions by storing and reusing the results of subproblems, avoiding redundant calculations.",
+      "hint": "Consider the concept of memoization."
+    },
+    {
+      "id": 13,
+      "question": "What is memoization?",
+      "options": [
+        "A technique for debugging recursive functions",
+        "A technique for optimizing recursive functions by storing results",
+        "A type of data structure",
+        "A method for sorting arrays"
+      ],
+      "answer": 1,
+      "explanation": "Memoization is an optimization technique used in dynamic programming where the results of expensive function calls are cached and reused when the same inputs occur again.",
+      "hint": "Think about storing the results of function calls to avoid recalculating them."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following best describes the 'top-down' approach in Dynamic Programming?",
+      "options": [
+        "Solving the smallest subproblems first",
+        "Starting with the original problem and breaking it down recursively",
+        "Using iteration instead of recursion",
+        "Optimizing code for speed"
+      ],
+      "answer": 1,
+      "explanation": "The top-down approach in Dynamic Programming starts with the original problem and recursively breaks it down into smaller subproblems, memoizing the results along the way.",
+      "hint": "Think about starting from the main problem and working your way down."
+    },
+    {
+      "id": 15,
+      "question": "What is the primary disadvantage of using recursion?",
+      "options": [
+        "It is always slower than iteration",
+        "It can lead to stack overflow errors",
+        "It is difficult to understand",
+        "It cannot be used for searching"
+      ],
+      "answer": 1,
+      "explanation": "Recursion can consume significant memory due to the call stack, potentially leading to stack overflow errors, especially for deep recursion.",
+      "hint": "Consider the memory usage associated with each recursive call."
+    },
+    {
+      "id": 16,
+      "question": "Consider the following code snippet (in pseudocode): `function fibonacci(n): if n <= 1: return n; else: return fibonacci(n-1) + fibonacci(n-2)`. What is the time complexity of this implementation?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(2^n)",
+        "O(1)"
+      ],
+      "answer": 2,
+      "explanation": "This naive recursive Fibonacci implementation has exponential time complexity (O(2^n)) due to redundant calculations of the same subproblems.",
+      "hint": "Draw the recursion tree to visualize the number of calls."
+    },
+    {
+      "id": 17,
+      "question": "How can Dynamic Programming be used to improve the Fibonacci sequence calculation?",
+      "options": [
+        "By using iteration instead of recursion",
+        "By memoizing the results of subproblems",
+        "By using a different mathematical formula",
+        "By increasing the stack size"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Programming can significantly improve Fibonacci calculation by storing the results of previously computed Fibonacci numbers, avoiding redundant calculations.",
+      "hint": "Think about how you can store and reuse previously calculated values."
+    },
+    {
+      "id": 18,
+      "question": "In Linear Search, if the element is found at the first position, what is the time complexity?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Even if the element is found at the first position, Linear Search still has a best-case time complexity of O(1), but the average and worst-case remain O(n).",
+      "hint": "Consider the number of comparisons made in the best-case scenario."
+    },
+    {
+      "id": 19,
+      "question": "What is the main advantage of Binary Search over Linear Search?",
+      "options": [
+        "It works on unsorted arrays",
+        "It is simpler to implement",
+        "It has a lower time complexity for sorted arrays",
+        "It requires less memory"
+      ],
+      "answer": 2,
+      "explanation": "Binary Search's logarithmic time complexity (O(log n)) makes it significantly faster than Linear Search's linear time complexity (O(n)) for sorted arrays.",
+      "hint": "Think about how the search space is reduced with each comparison."
+    },
+    {
+      "id": 20,
+      "question": "What happens if you apply Binary Search to an unsorted array?",
+      "options": [
+        "It will still work correctly",
+        "It may produce incorrect results",
+        "It will cause a runtime error",
+        "It will automatically sort the array"
+      ],
+      "answer": 1,
+      "explanation": "Binary Search relies on the sorted property of the array. Applying it to an unsorted array will likely produce incorrect results as the comparisons will be meaningless.",
+      "hint": "Think about the fundamental assumption Binary Search makes about the input data."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following is a common application of recursion?",
+      "options": [
+        "Iterating through an array",
+        "Sorting a list of numbers",
+        "Traversing tree structures",
+        "Calculating the average of a dataset"
+      ],
+      "answer": 2,
+      "explanation": "Recursion is particularly well-suited for traversing tree-like data structures, as the structure naturally lends itself to recursive definitions.",
+      "hint": "Think about how a tree can be broken down into smaller, self-similar subtrees."
+    },
+    {
+      "id": 22,
+      "question": "What is the space complexity of a recursive function?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "Depends on the implementation"
+      ],
+      "answer": 3,
+      "explanation": "The space complexity of a recursive function is often determined by the maximum depth of the recursion, which can be O(n) in some cases, but can also be O(log n) for balanced recursive structures.",
+      "hint": "Consider the memory used by the call stack."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the base case in a recursive function?",
+      "options": [
+        "To call the function recursively",
+        "To initialize variables",
+        "To provide a stopping condition",
+        "To handle errors"
+      ],
+      "answer": 2,
+      "explanation": "The base case provides a condition that stops the recursive calls, preventing infinite recursion and ensuring the function eventually returns a value.",
+      "hint": "Without it, the function would call itself forever."
+    },
+    {
+      "id": 24,
+      "question": "How does Dynamic Programming help to avoid redundant computations?",
+      "options": [
+        "By using loops instead of recursion",
+        "By storing the results of subproblems",
+        "By using a different algorithm",
+        "By increasing the stack size"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Programming stores the results of subproblems in a table or memo, so they can be reused later without recalculating them.",
+      "hint": "Think about caching the results of expensive function calls."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between 'top-down' and 'bottom-up' Dynamic Programming?",
+      "options": [
+        "Top-down uses recursion, bottom-up uses iteration",
+        "Top-down is faster, bottom-up is slower",
+        "Top-down is more memory-efficient, bottom-up is less",
+        "They are the same thing"
+      ],
+      "answer": 0,
+      "explanation": "Top-down Dynamic Programming uses recursion and memoization, while bottom-up Dynamic Programming uses iteration and builds up the solution from the smallest subproblems.",
+      "hint": "Consider the order in which the subproblems are solved."
+    },
+    {
+      "id": 26,
+      "question": "If an array is sorted in descending order, can you directly apply Binary Search?",
+      "options": [
+        "Yes, without any modification",
+        "No, Binary Search only works on ascending order",
+        "Yes, but you need to reverse the array first",
+        "Yes, but you need to modify the comparison logic"
+      ],
+      "answer": 3,
+      "explanation": "Binary Search requires a sorted array, but the order (ascending or descending) can be handled by adjusting the comparison logic within the algorithm.",
+      "hint": "Think about how the comparison operator affects the search direction."
+    },
+    {
+      "id": 27,
+      "question": "Consider a recursive function that calculates the sum of digits of a number. What would be a suitable base case?",
+      "options": [
+        "Number is negative",
+        "Number is zero",
+        "Number is greater than 10",
+        "Number is a prime number"
+      ],
+      "answer": 1,
+      "explanation": "When the number becomes zero, there are no more digits to sum, so it's a natural base case to return 0.",
+      "hint": "What is the simplest case where the sum of digits is trivially known?"
+    },
+    {
+      "id": 28,
+      "question": "What is the primary benefit of using tail recursion?",
+      "options": [
+        "It always improves performance",
+        "It allows for optimization by compilers",
+        "It reduces memory usage",
+        "It simplifies the code"
+      ],
+      "answer": 1,
+      "explanation": "Tail recursion allows compilers to optimize the recursive call into a simple jump, avoiding the overhead of creating a new stack frame.",
+      "hint": "Think about how the compiler can treat the recursive call as a loop."
+    },
+    {
+      "id": 29,
+      "question": "In Dynamic Programming, what does 'optimal substructure' refer to?",
+      "options": [
+        "The problem can be broken down into smaller, overlapping subproblems",
+        "The solution to the problem is always unique",
+        "The problem is easy to solve",
+        "The problem has a large input size"
+      ],
+      "answer": 0,
+      "explanation": "Optimal substructure means that the optimal solution to the overall problem can be constructed from the optimal solutions to its subproblems.",
+      "hint": "Think about how the solution to the whole problem depends on the solutions to its parts."
+    },
+    {
+      "id": 30,
+      "question": "What is the time complexity of searching for an element in a sorted array of size 'n' using Linear Search in the worst case?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case, Linear Search has to examine every element in the array, resulting in a time complexity of O(n).",
+      "hint": "Consider the scenario where the element is not present or is at the very end."
+    },
+    {
+      "id": 31,
+      "question": "Which of the following is NOT a characteristic of a well-defined recursive function?",
+      "options": [
+        "A base case",
+        "A recursive call",
+        "Infinite recursion",
+        "Progress towards the base case"
+      ],
+      "answer": 2,
+      "explanation": "Infinite recursion is a flaw in a recursive function, indicating a missing or incorrect base case or a failure to progress towards it.",
+      "hint": "Think about what prevents a recursive function from running forever."
+    },
+    {
+      "id": 32,
+      "question": "What is the main difference between memoization and tabulation in Dynamic Programming?",
+      "options": [
+        "Memoization is top-down, tabulation is bottom-up",
+        "Memoization is faster, tabulation is slower",
+        "Memoization uses more memory, tabulation uses less",
+        "They are the same technique"
+      ],
+      "answer": 0,
+      "explanation": "Memoization is a top-down approach that stores results as they are computed, while tabulation is a bottom-up approach that builds a table of results iteratively.",
+      "hint": "Consider the order in which the subproblems are solved and the storage mechanism."
+    },
+    {
+      "id": 33,
+      "question": "Suppose you have a very large dataset that is frequently searched. Which search algorithm would be most appropriate?",
+      "options": [
+        "Linear Search",
+        "Binary Search",
+        "Both are equally good",
+        "Neither is suitable"
+      ],
+      "answer": 1,
+      "explanation": "For large, frequently searched datasets, Binary Search is the most appropriate choice due to its logarithmic time complexity, assuming the data is sorted.",
+      "hint": "Think about the scalability of the algorithms as the dataset grows."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the recursive step in a recursive function?",
+      "options": [
+        "To terminate the recursion",
+        "To call the function itself with a smaller input",
+        "To initialize variables",
+        "To handle errors"
+      ],
+      "answer": 1,
+      "explanation": "The recursive step calls the function itself with a modified input, bringing the problem closer to the base case.",
+      "hint": "Think about how the problem is broken down into smaller subproblems."
+    },
+    {
+      "id": 35,
+      "question": "In Dynamic Programming, what is 'overlapping subproblems'?",
+      "options": [
+        "Subproblems that are independent of each other",
+        "Subproblems that are solved only once",
+        "Subproblems that are solved repeatedly",
+        "Subproblems that have no solution"
+      ],
+      "answer": 2,
+      "explanation": "Overlapping subproblems occur when the same subproblems are encountered multiple times during the recursive computation, making memoization or tabulation beneficial.",
+      "hint": "Think about how the recursion tree might have repeated branches."
+    },
+    {
+      "id": 36,
+      "question": "What is the time complexity of finding the minimum element in an unsorted array using Linear Search?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "Linear Search requires examining each element in the array to find the minimum, resulting in a time complexity of O(n).",
+      "hint": "Consider the worst-case scenario where the minimum element is at the end."
+    },
+    {
+      "id": 37,
+      "question": "Consider a recursive function to calculate the power of a number (x^n). What is a good base case?",
+      "options": [
+        "n = 1",
+        "n = 0",
+        "x = 0",
+        "x = 1"
+      ],
+      "answer": 1,
+      "explanation": "When n = 1, x^1 = x, which is a known value without further recursion.",
+      "hint": "What is the simplest case for exponentiation?"
+    },
+    {
+      "id": 38,
+      "question": "What is the potential drawback of using Dynamic Programming with memoization?",
+      "options": [
+        "It always increases execution time",
+        "It can consume significant memory",
+        "It is difficult to implement",
+        "It cannot solve all problems"
+      ],
+      "answer": 1,
+      "explanation": "Memoization stores the results of subproblems, which can consume a significant amount of memory, especially for problems with a large number of subproblems.",
+      "hint": "Think about the memory overhead of storing intermediate results."
+    },
+    {
+      "id": 39,
+      "question": "If you need to search for an element in a large, frequently updated dataset, which search algorithm might be most suitable?",
+      "options": [
+        "Linear Search",
+        "Binary Search",
+        "Hash Table",
+        "Tree Search"
+      ],
+      "answer": 2,
+      "explanation": "Hash Tables provide very fast average-case search, insertion, and deletion operations, making them suitable for frequently updated datasets.",
+      "hint": "Consider the trade-offs between search speed and update cost."
+    },
+    {
+      "id": 40,
+      "question": "What is the role of the call stack in recursion?",
+      "options": [
+        "To store the input data",
+        "To manage function calls and local variables",
+        "To optimize the code",
+        "To handle errors"
+      ],
+      "answer": 1,
+      "explanation": "The call stack is used to store information about active function calls, including local variables and return addresses, during recursion.",
+      "hint": "Think about how the function keeps track of its state during recursive calls."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following scenarios would benefit most from using Dynamic Programming?",
+      "options": [
+        "A simple loop to calculate the sum of numbers",
+        "A recursive function with many overlapping subproblems",
+        "A linear search in a small array",
+        "A single function call with no recursion"
+      ],
+      "answer": 1,
+      "explanation": "Dynamic Programming is most effective when dealing with recursive functions that have overlapping subproblems, as it avoids redundant calculations.",
+      "hint": "Think about the key characteristics of problems suitable for Dynamic Programming."
+    },
+    {
+      "id": 42,
+      "question": "What is the primary advantage of Binary Search over Linear Search when searching for a specific value in a sorted array?",
+      "options": [
+        "Linear Search is simpler to implement",
+        "Binary Search can handle unsorted arrays",
+        "Binary Search has a lower time complexity",
+        "Linear Search requires less memory"
+      ],
+      "answer": 2,
+      "explanation": "Binary Search's logarithmic time complexity (O(log n)) is significantly more efficient than Linear Search's linear time complexity (O(n)) for sorted arrays.",
+      "hint": "Consider how the search space is reduced with each comparison."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of a base case in a recursive function?",
+      "options": [
+        "To initiate the recursive process",
+        "To define the input parameters",
+        "To provide a stopping condition for the recursion",
+        "To handle potential errors"
+      ],
+      "answer": 2,
+      "explanation": "The base case provides a condition that stops the recursive calls, preventing infinite recursion and ensuring the function eventually returns a value.",
+      "hint": "Without a base case, the function would call itself indefinitely."
+    },
+    {
+      "id": 44,
+      "question": "Consider the following code snippet: `int recursiveFunction(int n) { if (n == 0) return 0; else return n + recursiveFunction(n - 1); }`. What is the time complexity of this function?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "The function makes 'n' recursive calls, each performing a constant amount of work, resulting in a linear time complexity of O(n).",
+      "hint": "Trace the function calls for a small value of 'n'."
+    },
+    {
+      "id": 45,
+      "question": "What is the main difference between recursion and iteration?",
+      "options": [
+        "Recursion uses loops, iteration uses function calls",
+        "Recursion repeats a block of code, iteration calls itself",
+        "Recursion solves problems by breaking them down into smaller subproblems, iteration repeats a process",
+        "Recursion is always faster than iteration"
+      ],
+      "answer": 2,
+      "explanation": "Recursion solves problems by breaking them down into smaller, self-similar subproblems, while iteration repeats a process until a condition is met.",
+      "hint": "Think about how each approach handles repetition."
+    },
+    {
+      "id": 46,
+      "question": "What is the space complexity of Binary Search?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 0,
+      "explanation": "Binary Search typically has a space complexity of O(1) because it only requires a constant amount of extra space for variables.",
+      "hint": "Consider the amount of additional memory used by the algorithm."
+    },
+    {
+      "id": 47,
+      "question": "Which of the following is a potential issue with using recursion?",
+      "options": [
+        "Increased code readability",
+        "Reduced memory usage",
+        "Stack overflow error",
+        "Improved performance"
+      ],
+      "answer": 2,
+      "explanation": "Recursion can lead to a stack overflow error if the recursion depth becomes too large, exceeding the stack's capacity.",
+      "hint": "Think about the call stack and its limitations."
+    },
+    {
+      "id": 48,
+      "question": "In Dynamic Programming, what is the purpose of storing the results of subproblems?",
+      "options": [
+        "To reduce code complexity",
+        "To avoid redundant calculations",
+        "To improve memory usage",
+        "To enhance user interface design"
+      ],
+      "answer": 1,
+      "explanation": "Storing the results of subproblems in Dynamic Programming avoids redundant calculations by reusing previously computed values.",
+      "hint": "Think about the concept of memoization."
+    },
+    {
+      "id": 49,
+      "question": "What is the best-case time complexity of Linear Search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the best case, Linear Search finds the element at the first position, resulting in a time complexity of O(1).",
+      "hint": "Consider the scenario where the element is found immediately."
+    },
+    {
+      "id": 50,
+      "question": "What is the key requirement for applying Binary Search effectively?",
+      "options": [
+        "The array must be unsorted",
+        "The array must be of a fixed size",
+        "The array must be sorted",
+        "The array must contain only unique elements"
+      ],
+      "answer": 2,
+      "explanation": "Binary Search relies on the sorted property of the array to efficiently narrow down the search space.",
+      "hint": "Think about how the algorithm works – it needs to compare the target with the middle element."
+    }
+  ]
+}

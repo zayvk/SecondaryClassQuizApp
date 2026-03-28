@@ -1,0 +1,670 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 7: Trees and Hash Tables",
+  "unitId": "dsa-u7",
+  "categoryId": "cs",
+  "topics": [
+    "Tree terminology — Root, Parent, Child, Leaf, Height",
+    "Binary Tree — each node has at most 2 children",
+    "Tree Traversal — Inorder: Left Root Right",
+    "Tree Traversal — Preorder: Root Left Right",
+    "Tree Traversal — Postorder: Left Right Root",
+    "Binary Search Tree — Left < Root < Right rule",
+    "BST operations — Insert and Search",
+    "Hash Tables — Key to Value mapping concept",
+    "Hash functions and collision handling basics"
+  ],
+  "generatedAt": "2026-03-28T08:49:24Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In a binary tree, what is the maximum number of nodes at a level 'h' (root is at level 0)?",
+      "options": [
+        "2^h",
+        "h+1",
+        "2h",
+        "h^2"
+      ],
+      "answer": 0,
+      "explanation": "Each level of a binary tree can have at most twice the number of nodes as the previous level, starting with 1 at the root (level 0).",
+      "hint": "Think about how the number of nodes doubles with each level."
+    },
+    {
+      "id": 2,
+      "question": "Which tree traversal algorithm processes the root node first?",
+      "options": [
+        "Inorder",
+        "Postorder",
+        "Preorder",
+        "Level Order"
+      ],
+      "answer": 2,
+      "explanation": "Preorder traversal follows the Root-Left-Right order, meaning the root is visited before its children.",
+      "hint": "Consider the order in which each traversal visits the root."
+    },
+    {
+      "id": 3,
+      "question": "What is the primary characteristic of a Binary Search Tree (BST)?",
+      "options": [
+        "Nodes are arranged alphabetically",
+        "Left child is always greater than the root",
+        "Left child is always less than the root",
+        "Nodes are stored in a specific order based on their memory address"
+      ],
+      "answer": 2,
+      "explanation": "A BST maintains a specific ordering: for every node, all nodes in its left subtree are less than the node, and all nodes in its right subtree are greater.",
+      "hint": "Focus on the relationship between a node and its children's values."
+    },
+    {
+      "id": 4,
+      "question": "In a hash table, what is the purpose of a hash function?",
+      "options": [
+        "To encrypt the data",
+        "To map keys to indices in the table",
+        "To sort the keys",
+        "To compress the data"
+      ],
+      "answer": 1,
+      "explanation": "A hash function takes a key as input and returns an index into the hash table where the corresponding value should be stored.",
+      "hint": "Think about how a hash table organizes data based on keys."
+    },
+    {
+      "id": 5,
+      "question": "What is collision handling in hash tables?",
+      "options": [
+        "Deleting elements from the table",
+        "Finding the minimum key",
+        "Resolving multiple keys mapping to the same index",
+        "Sorting the keys"
+      ],
+      "answer": 2,
+      "explanation": "Collision handling refers to the techniques used to deal with situations where different keys hash to the same index in the hash table.",
+      "hint": "Consider what happens when two different keys produce the same hash value."
+    },
+    {
+      "id": 6,
+      "question": "Which traversal method is commonly used for creating a sorted copy of a Binary Search Tree?",
+      "options": [
+        "Preorder",
+        "Postorder",
+        "Inorder",
+        "Level Order"
+      ],
+      "answer": 2,
+      "explanation": "Inorder traversal visits nodes in ascending order in a BST, making it ideal for creating a sorted copy.",
+      "hint": "Think about the ordering property of a BST and how traversals affect that order."
+    },
+    {
+      "id": 7,
+      "question": "What is the height of a tree with only one node (the root)?",
+      "options": [
+        "1",
+        "0",
+        "2",
+        "-1"
+      ],
+      "answer": 0,
+      "explanation": "The height of a tree is the length of the longest path from the root to a leaf. A single-node tree has a height of 0.",
+      "hint": "Remember that the height is measured in edges, not nodes."
+    },
+    {
+      "id": 8,
+      "question": "Consider a BST. If you insert a new node with a value equal to an existing node, where will it typically be inserted?",
+      "options": [
+        "Left subtree",
+        "Right subtree",
+        "It will replace the existing node",
+        "Insertion is not allowed"
+      ],
+      "answer": 1,
+      "explanation": "Typically, if a duplicate key is encountered during insertion in a BST, it's inserted into the right subtree to maintain the BST property.",
+      "hint": "Think about maintaining the BST property when duplicates are allowed."
+    },
+    {
+      "id": 9,
+      "question": "What is the worst-case time complexity for searching for an element in a hash table?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case (all keys hash to the same index), searching in a hash table degrades to linear time complexity, O(n).",
+      "hint": "Consider the scenario where all keys collide."
+    },
+    {
+      "id": 10,
+      "question": "Which of the following is NOT a common collision resolution technique in hash tables?",
+      "options": [
+        "Separate Chaining",
+        "Linear Probing",
+        "Quadratic Probing",
+        "Binary Search"
+      ],
+      "answer": 3,
+      "explanation": "Binary search is a search algorithm, not a collision resolution technique. Separate chaining, linear probing, and quadratic probing are all methods for handling collisions.",
+      "hint": "Think about what happens *after* a collision occurs."
+    },
+    {
+      "id": 11,
+      "question": "What is the time complexity of inserting a node into a balanced BST?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Balanced BSTs (like AVL trees or Red-Black trees) maintain a logarithmic height, resulting in O(log n) insertion time.",
+      "hint": "Consider the impact of balancing on the tree's height."
+    },
+    {
+      "id": 12,
+      "question": "In a postorder traversal, in what order are the nodes visited?",
+      "options": [
+        "Root, Left, Right",
+        "Left, Root, Right",
+        "Left, Right, Root",
+        "Right, Left, Root"
+      ],
+      "answer": 2,
+      "explanation": "Postorder traversal visits the left subtree, then the right subtree, and finally the root.",
+      "hint": "Remember the order: Left, Right, Root."
+    },
+    {
+      "id": 13,
+      "question": "What is the main advantage of using a hash table over a BST?",
+      "options": [
+        "BSTs always have better worst-case performance",
+        "Hash tables provide faster average-case lookup",
+        "BSTs are easier to implement",
+        "Hash tables can efficiently find the minimum and maximum values"
+      ],
+      "answer": 1,
+      "explanation": "Hash tables offer O(1) average-case lookup, insertion, and deletion, which is faster than the O(log n) average-case performance of BSTs.",
+      "hint": "Think about the typical performance of each data structure."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of 'load factor' in hash tables?",
+      "options": [
+        "To measure the size of the hash table",
+        "To determine the quality of the hash function",
+        "To indicate how full the hash table is",
+        "To calculate the number of collisions"
+      ],
+      "answer": 2,
+      "explanation": "The load factor (number of elements / table size) indicates how full the hash table is, influencing performance and the need for resizing.",
+      "hint": "Consider how the number of elements relates to the table's capacity."
+    },
+    {
+      "id": 15,
+      "question": "Which of the following statements is true about a complete binary tree?",
+      "options": [
+        "All levels are completely filled except possibly the last level",
+        "All levels are completely filled",
+        "It is always a BST",
+        "It has only leaf nodes"
+      ],
+      "answer": 0,
+      "explanation": "A complete binary tree has all levels completely filled except possibly the last level, which is filled from left to right.",
+      "hint": "Think about how a complete binary tree differs from a full binary tree."
+    },
+    {
+      "id": 16,
+      "question": "Consider the following code snippet (Java): `public int searchBST(Node root, int key) { ... }`. What is the typical base case for a recursive BST search?",
+      "options": [
+        "root == null",
+        "root.data == key",
+        "root.left == null",
+        "root.right == null"
+      ],
+      "answer": 0,
+      "explanation": "The base case for a recursive BST search is when the root is null, indicating that the key is not found.",
+      "hint": "Think about when the recursion should stop."
+    },
+    {
+      "id": 17,
+      "question": "What is the primary disadvantage of using linear probing for collision resolution?",
+      "options": [
+        "It requires extra memory",
+        "It can lead to primary clustering",
+        "It is difficult to implement",
+        "It is slow for small hash tables"
+      ],
+      "answer": 1,
+      "explanation": "Linear probing can cause primary clustering, where consecutive slots become occupied, leading to longer search times.",
+      "hint": "Consider how consecutive collisions affect performance."
+    },
+    {
+      "id": 18,
+      "question": "If a hash function consistently produces the same hash value for different keys, what is the result?",
+      "options": [
+        "Improved performance",
+        "Reduced collisions",
+        "All keys will be stored in the same slot",
+        "The hash table will automatically resize"
+      ],
+      "answer": 2,
+      "explanation": "A poor hash function that maps all keys to the same slot results in all keys being stored in the same slot, leading to O(n) performance.",
+      "hint": "Think about the impact of a non-uniform distribution of hash values."
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between a full binary tree and a complete binary tree?",
+      "options": [
+        "A full binary tree has all levels completely filled, while a complete binary tree may have missing nodes on the last level.",
+        "A complete binary tree has all levels completely filled, while a full binary tree may have missing nodes on the last level.",
+        "They are the same.",
+        "A full binary tree is always a BST, while a complete binary tree is not."
+      ],
+      "answer": 0,
+      "explanation": "A full binary tree requires every node to have either 0 or 2 children, resulting in all levels being completely filled. A complete binary tree can have missing nodes on the last level.",
+      "hint": "Consider the filling requirements of each type of tree."
+    },
+    {
+      "id": 20,
+      "question": "Which tree traversal is useful for getting a prefix expression of a binary tree?",
+      "options": [
+        "Inorder",
+        "Postorder",
+        "Preorder",
+        "Level Order"
+      ],
+      "answer": 2,
+      "explanation": "Preorder traversal (Root-Left-Right) directly corresponds to the structure of a prefix expression.",
+      "hint": "Think about how the root, left, and right subtrees relate to operators and operands in a prefix expression."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of separate chaining in hash tables?",
+      "options": [
+        "To reduce the size of the hash table",
+        "To store multiple elements at the same index using linked lists",
+        "To improve the hash function",
+        "To sort the keys"
+      ],
+      "answer": 1,
+      "explanation": "Separate chaining uses linked lists (or other data structures) to store multiple elements that hash to the same index, resolving collisions.",
+      "hint": "Consider how linked lists can handle multiple values at a single index."
+    },
+    {
+      "id": 22,
+      "question": "In a BST, what is the minimum possible height of a tree with 'n' nodes?",
+      "options": [
+        "n",
+        "log n",
+        "sqrt(n)",
+        "0"
+      ],
+      "answer": 1,
+      "explanation": "The minimum height of a BST with 'n' nodes is achieved when the tree is perfectly balanced, resulting in a height of log n.",
+      "hint": "Think about the most efficient arrangement of nodes in a BST."
+    },
+    {
+      "id": 23,
+      "question": "What is the main drawback of using quadratic probing for collision resolution?",
+      "options": [
+        "It is slow for small hash tables",
+        "It can lead to secondary clustering",
+        "It requires extra memory",
+        "It is difficult to implement"
+      ],
+      "answer": 1,
+      "explanation": "Quadratic probing can lead to secondary clustering, where keys that hash to the same initial index follow the same probe sequence.",
+      "hint": "Consider how the probing sequence affects the distribution of keys."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a characteristic of a leaf node in a tree?",
+      "options": [
+        "It is the root node",
+        "It has no children",
+        "It has only one child",
+        "It is the first node visited in an inorder traversal"
+      ],
+      "answer": 1,
+      "explanation": "A leaf node is a node with no children.",
+      "hint": "Think about the definition of a leaf in a tree structure."
+    },
+    {
+      "id": 25,
+      "question": "What is the time complexity of searching for an element in a sorted array using binary search, and how does it relate to searching in a balanced BST?",
+      "options": [
+        "O(n), slower than BST",
+        "O(log n), same as BST",
+        "O(n^2), slower than BST",
+        "O(1), faster than BST"
+      ],
+      "answer": 1,
+      "explanation": "Both binary search in a sorted array and searching in a balanced BST have a time complexity of O(log n).",
+      "hint": "Consider the efficiency of both search algorithms."
+    },
+    {
+      "id": 26,
+      "question": "Consider a hash table with 10 slots and a hash function that always returns 0. What will be the performance of searching for an element?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "All elements will collide in the same slot, resulting in a linear search through the elements in that slot, hence O(n).",
+      "hint": "Think about what happens when all keys map to the same index."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of tree balancing algorithms (e.g., AVL trees, Red-Black trees)?",
+      "options": [
+        "To reduce the memory usage of the tree",
+        "To ensure the tree remains a BST",
+        "To prevent the tree from becoming skewed and maintain logarithmic time complexity",
+        "To simplify the tree traversal algorithms"
+      ],
+      "answer": 2,
+      "explanation": "Tree balancing algorithms prevent the tree from becoming skewed, ensuring that the height remains logarithmic and maintaining efficient search, insertion, and deletion operations.",
+      "hint": "Consider the impact of tree shape on performance."
+    },
+    {
+      "id": 28,
+      "question": "In a hash table using separate chaining, what data structure is typically used to store the elements at each index?",
+      "options": [
+        "Array",
+        "Stack",
+        "Queue",
+        "Linked List"
+      ],
+      "answer": 3,
+      "explanation": "Linked lists are commonly used in separate chaining to store multiple elements that hash to the same index.",
+      "hint": "Think about a data structure that can dynamically grow to accommodate multiple elements."
+    },
+    {
+      "id": 29,
+      "question": "What is the time complexity of inserting a node into an unbalanced BST in the worst case?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case (e.g., inserting nodes in ascending order), an unbalanced BST can degenerate into a linked list, resulting in O(n) insertion time.",
+      "hint": "Consider the scenario where the tree becomes highly skewed."
+    },
+    {
+      "id": 30,
+      "question": "Which traversal method is useful for creating a postfix expression of a binary tree?",
+      "options": [
+        "Inorder",
+        "Postorder",
+        "Preorder",
+        "Level Order"
+      ],
+      "answer": 1,
+      "explanation": "Postorder traversal (Left-Right-Root) directly corresponds to the structure of a postfix expression.",
+      "hint": "Think about how the root, left, and right subtrees relate to operators and operands in a postfix expression."
+    },
+    {
+      "id": 31,
+      "question": "What is the primary advantage of using a hash table over a BST for frequent lookups?",
+      "options": [
+        "BSTs are simpler to implement",
+        "Hash tables guarantee O(log n) lookup time",
+        "Hash tables offer O(1) average-case lookup time",
+        "BSTs can efficiently find the minimum and maximum values"
+      ],
+      "answer": 2,
+      "explanation": "Hash tables provide O(1) average-case lookup time, making them ideal for frequent lookups.",
+      "hint": "Consider the typical performance of each data structure for lookup operations."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of resizing a hash table?",
+      "options": [
+        "To reduce the memory usage",
+        "To improve the hash function",
+        "To maintain a low load factor and prevent performance degradation",
+        "To sort the keys"
+      ],
+      "answer": 2,
+      "explanation": "Resizing a hash table increases its capacity to maintain a low load factor, preventing collisions and ensuring efficient performance.",
+      "hint": "Consider how the load factor affects performance."
+    },
+    {
+      "id": 33,
+      "question": "In a binary tree, what is the maximum number of nodes at level 'h' if the tree is a full binary tree?",
+      "options": [
+        "2^h",
+        "2^(h-1)",
+        "h+1",
+        "h^2"
+      ],
+      "answer": 0,
+      "explanation": "A full binary tree has 2^h nodes at level h.",
+      "hint": "Think about how the number of nodes doubles with each level in a full binary tree."
+    },
+    {
+      "id": 34,
+      "question": "What is the main difference between a min-heap and a max-heap?",
+      "options": [
+        "Min-heap stores the smallest element at the root, max-heap stores the largest",
+        "Min-heap is used for sorting, max-heap is used for searching",
+        "Min-heap is a type of BST, max-heap is not",
+        "They are the same"
+      ],
+      "answer": 0,
+      "explanation": "A min-heap has the smallest element at the root, while a max-heap has the largest element at the root.",
+      "hint": "Consider the ordering property of each type of heap."
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a disadvantage of using separate chaining for collision resolution?",
+      "options": [
+        "It can lead to primary clustering",
+        "It requires extra memory for linked lists",
+        "It is difficult to implement",
+        "It is slow for small hash tables"
+      ],
+      "answer": 1,
+      "explanation": "Separate chaining requires extra memory to store the linked lists used to resolve collisions.",
+      "hint": "Consider the memory overhead associated with linked lists."
+    },
+    {
+      "id": 36,
+      "question": "What is the time complexity of deleting a node from a balanced BST?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Deleting a node from a balanced BST takes O(log n) time due to the logarithmic height of the tree.",
+      "hint": "Consider the impact of balancing on the tree's height."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of a good hash function?",
+      "options": [
+        "To minimize the number of collisions",
+        "To encrypt the keys",
+        "To sort the keys",
+        "To compress the data"
+      ],
+      "answer": 0,
+      "explanation": "A good hash function aims to distribute keys uniformly across the hash table, minimizing collisions and ensuring efficient performance.",
+      "hint": "Consider how a hash function affects the distribution of keys."
+    },
+    {
+      "id": 38,
+      "question": "In a BST, if you want to find the node with the smallest key, where do you start your search?",
+      "options": [
+        "The root node",
+        "The rightmost node",
+        "The leftmost node",
+        "A random node"
+      ],
+      "answer": 2,
+      "explanation": "The node with the smallest key in a BST is always located at the leftmost node.",
+      "hint": "Think about the ordering property of a BST."
+    },
+    {
+      "id": 39,
+      "question": "What is the main difference between a hash table and a map (dictionary) data structure?",
+      "options": [
+        "They are the same",
+        "Hash tables use arrays, maps use trees",
+        "Maps guarantee ordering, hash tables do not",
+        "Hash tables are faster for lookups"
+      ],
+      "answer": 2,
+      "explanation": "Maps (dictionaries) typically maintain the order of insertion or a sorted order, while hash tables do not guarantee any specific order.",
+      "hint": "Consider the ordering properties of each data structure."
+    },
+    {
+      "id": 40,
+      "question": "What is the worst-case time complexity for inserting an element into a hash table that uses linear probing and is nearly full?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "When a hash table is nearly full and uses linear probing, collisions are frequent, leading to a linear search for an empty slot, resulting in O(n) insertion time.",
+      "hint": "Consider the impact of a high load factor and linear probing."
+    },
+    {
+      "id": 41,
+      "question": "Which tree traversal is useful for creating a copy of a tree?",
+      "options": [
+        "Inorder",
+        "Postorder",
+        "Preorder",
+        "Level Order"
+      ],
+      "answer": 2,
+      "explanation": "Preorder traversal allows for reconstructing the tree structure because it visits the root before its children.",
+      "hint": "Think about how the root-left-right order can be used to rebuild the tree."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the 'mod' operator (%) in a hash function?",
+      "options": [
+        "To encrypt the key",
+        "To ensure the hash value is positive",
+        "To map the hash value to a valid index within the hash table's bounds",
+        "To compress the key"
+      ],
+      "answer": 2,
+      "explanation": "The 'mod' operator ensures that the hash value falls within the range of valid indices for the hash table.",
+      "hint": "Consider how the hash value relates to the table size."
+    },
+    {
+      "id": 43,
+      "question": "In a BST, what is the time complexity of finding the minimum element?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Finding the minimum element in a BST involves traversing down the left subtree until a node with no left child is found, which takes O(log n) time in a balanced tree.",
+      "hint": "Consider where the minimum element is located in a BST."
+    },
+    {
+      "id": 44,
+      "question": "What is the advantage of using quadratic probing over linear probing?",
+      "options": [
+        "Quadratic probing is simpler to implement",
+        "Quadratic probing reduces primary clustering",
+        "Quadratic probing requires less memory",
+        "Quadratic probing is faster for small hash tables"
+      ],
+      "answer": 1,
+      "explanation": "Quadratic probing reduces primary clustering by using a quadratic function to determine the next probe location.",
+      "hint": "Consider how the probing sequence affects the distribution of keys."
+    },
+    {
+      "id": 45,
+      "question": "What is the time complexity of searching for an element in a hash table with separate chaining in the average case?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 0,
+      "explanation": "With separate chaining, the average-case search time is O(1) if the hash function distributes keys uniformly.",
+      "hint": "Consider the impact of a good hash function on performance."
+    },
+    {
+      "id": 46,
+      "question": "What is the primary purpose of using a hash function in cryptography?",
+      "options": [
+        "To encrypt data",
+        "To compress data",
+        "To create a one-way function that generates a fixed-size output from an input",
+        "To sort data"
+      ],
+      "answer": 2,
+      "explanation": "In cryptography, hash functions are used to create a one-way function that generates a fixed-size output (hash) from an input, making it difficult to reverse engineer the original input.",
+      "hint": "Think about the properties of a cryptographic hash function."
+    },
+    {
+      "id": 47,
+      "question": "What is the difference between a directed and undirected tree?",
+      "options": [
+        "A directed tree has a root, an undirected tree does not",
+        "A directed tree has edges with a specific direction, an undirected tree does not",
+        "An undirected tree is always a BST",
+        "A directed tree is used for searching, an undirected tree is not"
+      ],
+      "answer": 1,
+      "explanation": "A directed tree has edges with a specific direction, indicating a parent-child relationship, while an undirected tree has edges without a specific direction.",
+      "hint": "Consider the directionality of the edges."
+    },
+    {
+      "id": 48,
+      "question": "You are designing a hash table to store student IDs (integers). Which hash function would likely perform the best?",
+      "options": [
+        "hash(key) = key % 10",
+        "hash(key) = key * 10",
+        "hash(key) = key / 10",
+        "hash(key) = 10"
+      ],
+      "answer": 0,
+      "explanation": "Using the modulo operator (%) with a prime number (or a number relatively prime to the expected number of keys) generally provides a good distribution of hash values.",
+      "hint": "Think about how to distribute keys evenly across the hash table."
+    },
+    {
+      "id": 49,
+      "question": "What is the main advantage of using a self-balancing BST (like AVL or Red-Black) over a regular BST?",
+      "options": [
+        "Self-balancing BSTs are simpler to implement",
+        "Self-balancing BSTs guarantee O(1) search time",
+        "Self-balancing BSTs prevent the tree from becoming skewed, ensuring O(log n) performance",
+        "Self-balancing BSTs require less memory"
+      ],
+      "answer": 2,
+      "explanation": "Self-balancing BSTs automatically adjust their structure to maintain a balanced height, ensuring O(log n) performance for search, insertion, and deletion operations.",
+      "hint": "Consider the impact of tree shape on performance."
+    },
+    {
+      "id": 50,
+      "question": "Consider a hash table with separate chaining. If the average chain length is 'k', what is the average time complexity for searching for an element?",
+      "options": [
+        "O(1)",
+        "O(log k)",
+        "O(k)",
+        "O(n)"
+      ],
+      "answer": 2,
+      "explanation": "With separate chaining, the average search time is proportional to the average chain length, which is 'k'.",
+      "hint": "Think about how the chain length affects the search time."
+    }
+  ]
+}

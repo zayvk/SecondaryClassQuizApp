@@ -1,0 +1,669 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "unit": "Unit 4: Stacks and Queues",
+  "unitId": "dsa-u4",
+  "categoryId": "cs",
+  "topics": [
+    "Stack — LIFO principle",
+    "Stack real-world examples — undo operation, browser history, plate stack",
+    "Stack operations — Push, Pop, Peek, IsEmpty",
+    "Queue — FIFO principle",
+    "Queue real-world examples — printer queue, ticket line, task scheduling",
+    "Queue operations — Enqueue, Dequeue, Peek, IsEmpty",
+    "Differences between Stack and Queue",
+    "Applications of Stack and Queue in computing"
+  ],
+  "generatedAt": "2026-03-28T08:43:25Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which principle does a stack primarily follow?",
+      "options": [
+        "FIFO (First-In, First-Out)",
+        "LIFO (Last-In, First-Out)",
+        "Priority-Based",
+        "Random Access"
+      ],
+      "answer": 1,
+      "explanation": "Stacks operate on the LIFO principle, meaning the last element added is the first one removed.",
+      "hint": "Think about how a stack of plates works – which plate do you usually take off first?"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the 'Peek' operation in a stack?",
+      "options": [
+        "Remove the top element",
+        "Add an element to the top",
+        "View the top element without removing it",
+        "Check if the stack is empty"
+      ],
+      "answer": 2,
+      "explanation": "The Peek operation allows you to inspect the top element of the stack without modifying the stack's contents.",
+      "hint": "Consider what you'd do if you wanted to see what's on top of a stack without disturbing it."
+    },
+    {
+      "id": 3,
+      "question": "Which of the following is a real-world example of a stack?",
+      "options": [
+        "Printer queue",
+        "Browser history",
+        "Ticket line",
+        "Task scheduling"
+      ],
+      "answer": 1,
+      "explanation": "Browser history utilizes a stack; each new page is 'pushed' onto the stack, and the 'back' button 'pops' the last visited page.",
+      "hint": "Think about how the 'back' button in a web browser functions."
+    },
+    {
+      "id": 4,
+      "question": "What is the primary difference between a stack and a queue?",
+      "options": [
+        "Stacks use FIFO, queues use LIFO",
+        "Stacks use LIFO, queues use FIFO",
+        "Stacks are implemented with arrays, queues with linked lists",
+        "Stacks are faster than queues"
+      ],
+      "answer": 1,
+      "explanation": "Stacks follow the Last-In, First-Out (LIFO) principle, while queues follow the First-In, First-Out (FIFO) principle.",
+      "hint": "Focus on the order in which elements are added and removed from each data structure."
+    },
+    {
+      "id": 5,
+      "question": "Which operation adds an element to the rear of a queue?",
+      "options": [
+        "Dequeue",
+        "Peek",
+        "Enqueue",
+        "IsEmpty"
+      ],
+      "answer": 2,
+      "explanation": "Enqueue adds an element to the rear (end) of the queue, maintaining the FIFO order.",
+      "hint": "Think about how items join the back of a line."
+    },
+    {
+      "id": 6,
+      "question": "What does the 'IsEmpty' operation do for both stacks and queues?",
+      "options": [
+        "Removes all elements",
+        "Returns the size",
+        "Checks if the data structure is empty",
+        "Adds a new element"
+      ],
+      "answer": 2,
+      "explanation": "The IsEmpty operation checks whether the stack or queue contains any elements, returning a boolean value.",
+      "hint": "Consider what you'd need to know before attempting to remove an element."
+    },
+    {
+      "id": 7,
+      "question": "A printer queue is an example of which data structure?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "A printer queue follows the FIFO principle, processing print jobs in the order they were received.",
+      "hint": "Think about how print jobs are handled – which one gets printed first?"
+    },
+    {
+      "id": 8,
+      "question": "What happens if you attempt to 'Pop' from an empty stack?",
+      "options": [
+        "The stack grows",
+        "An error occurs (underflow)",
+        "The top element is returned",
+        "The stack remains unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Attempting to pop from an empty stack results in a stack underflow error, as there are no elements to remove.",
+      "hint": "Consider the consequences of trying to take something from an empty container."
+    },
+    {
+      "id": 9,
+      "question": "What happens if you attempt to 'Dequeue' from an empty queue?",
+      "options": [
+        "The queue grows",
+        "An error occurs (underflow)",
+        "The front element is returned",
+        "The queue remains unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Attempting to dequeue from an empty queue results in a queue underflow error, as there are no elements to remove.",
+      "hint": "Similar to a stack, what happens if you try to remove from nothing?"
+    },
+    {
+      "id": 10,
+      "question": "Which of the following best describes the use of stacks in function call management?",
+      "options": [
+        "Storing function arguments",
+        "Managing return addresses",
+        "Allocating memory",
+        "Implementing queues"
+      ],
+      "answer": 1,
+      "explanation": "Stacks are used to store return addresses during function calls, allowing the program to return to the correct location after a function completes.",
+      "hint": "Think about how a program knows where to go after a function finishes executing."
+    },
+    {
+      "id": 11,
+      "question": "Consider a stack with the following operations: Push(1), Push(2), Pop(), Push(3). What is the top element?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Empty"
+      ],
+      "answer": 2,
+      "explanation": "Push(1) and Push(2) add 1 and 2. Pop() removes 2. Push(3) adds 3. Therefore, the top element is 3.",
+      "hint": "Trace the operations step-by-step."
+    },
+    {
+      "id": 12,
+      "question": "Consider a queue with the following operations: Enqueue(1), Enqueue(2), Dequeue(), Enqueue(3). What is the front element?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "Empty"
+      ],
+      "answer": 2,
+      "explanation": "Enqueue(1) and Enqueue(2) add 1 and 2. Dequeue() removes 1. Enqueue(3) adds 3. Therefore, the front element is 2.",
+      "hint": "Trace the operations step-by-step."
+    },
+    {
+      "id": 13,
+      "question": "What is a potential disadvantage of using a stack for implementing an undo/redo feature?",
+      "options": [
+        "Limited memory capacity",
+        "Slow push/pop operations",
+        "Difficulty handling complex operations",
+        "Inability to store multiple states"
+      ],
+      "answer": 1,
+      "explanation": "Stacks have a limited memory capacity, and storing an unlimited number of undo states can lead to memory exhaustion.",
+      "hint": "Think about the memory implications of storing a large history of actions."
+    },
+    {
+      "id": 14,
+      "question": "In task scheduling, how can a queue be used?",
+      "options": [
+        "Prioritizing tasks based on urgency",
+        "Storing completed tasks",
+        "Managing tasks in the order they were received",
+        "Randomly assigning tasks to processors"
+      ],
+      "answer": 2,
+      "explanation": "Queues are used to manage tasks in the order they were submitted, ensuring fair processing based on arrival time.",
+      "hint": "Think about how a waiting line works – who gets served first?"
+    },
+    {
+      "id": 15,
+      "question": "Which of the following is NOT a typical application of a queue?",
+      "options": [
+        "Breadth-First Search (BFS)",
+        "Depth-First Search (DFS)",
+        "Print spooling",
+        "Call center hold system"
+      ],
+      "answer": 1,
+      "explanation": "Depth-First Search (DFS) typically uses a stack, while BFS uses a queue.",
+      "hint": "Consider the traversal order of DFS and BFS."
+    },
+    {
+      "id": 16,
+      "question": "What is the time complexity of the 'Push' operation in a stack implemented using an array?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Pushing an element onto an array-based stack typically takes constant time, O(1), assuming there's available space.",
+      "hint": "Think about how an array stores elements – is adding to the top usually fast?"
+    },
+    {
+      "id": 17,
+      "question": "What is the time complexity of the 'Enqueue' operation in a queue implemented using a linked list?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Enqueuing an element into a linked list-based queue takes constant time, O(1), as you simply add a new node to the rear.",
+      "hint": "Think about how linked lists handle adding new elements."
+    },
+    {
+      "id": 18,
+      "question": "How can a stack be used to check for balanced parentheses in an expression?",
+      "options": [
+        "By storing the expression in the stack",
+        "By pushing opening parentheses and popping when a closing parenthesis is encountered",
+        "By counting the number of parentheses",
+        "By using a queue instead of a stack"
+      ],
+      "answer": 1,
+      "explanation": "Opening parentheses are pushed onto the stack, and when a closing parenthesis is encountered, the stack is popped. If the stack is empty at the end, the parentheses are balanced.",
+      "hint": "Think about how matching pairs of parentheses should correspond."
+    },
+    {
+      "id": 19,
+      "question": "What is the main advantage of using a circular queue over a regular queue?",
+      "options": [
+        "Increased memory usage",
+        "Reduced complexity",
+        "Efficient use of memory space",
+        "Faster enqueue/dequeue operations"
+      ],
+      "answer": 2,
+      "explanation": "Circular queues reuse empty spaces at the beginning of the queue, leading to more efficient memory utilization.",
+      "hint": "Think about how a regular queue can waste space when elements are dequeued."
+    },
+    {
+      "id": 20,
+      "question": "Which data structure is most suitable for implementing a recursive function call?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "Stacks are used to manage function calls in a recursive manner, storing return addresses and local variables.",
+      "hint": "Think about how recursion works – what keeps track of where to return to?"
+    },
+    {
+      "id": 21,
+      "question": "Consider the following code snippet (Python): `stack = []; stack.append(1); stack.append(2); print(stack.pop()); print(stack.pop());`. What is the output?",
+      "options": [
+        "1 2",
+        "2 1",
+        "Error",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "The code pushes 1 and 2 onto the stack, then pops and prints 2, followed by popping and printing 1.",
+      "hint": "Trace the stack operations step-by-step."
+    },
+    {
+      "id": 22,
+      "question": "Consider the following code snippet (Java): `Queue<Integer> q = new LinkedList<>(); q.offer(1); q.offer(2); System.out.println(q.poll()); System.out.println(q.poll());`. What is the output?",
+      "options": [
+        "1 2",
+        "2 1",
+        "Error",
+        "1"
+      ],
+      "answer": 1,
+      "explanation": "The code enqueues 1 and 2 into the queue, then dequeues and prints 1, followed by dequeuing and printing 2.",
+      "hint": "Trace the queue operations step-by-step."
+    },
+    {
+      "id": 23,
+      "question": "In a stack implementation, what is the potential issue with using a dynamic array that automatically resizes?",
+      "options": [
+        "Increased memory usage",
+        "Slower push operations due to resizing",
+        "Difficulty in implementing the Peek operation",
+        "Inability to handle large data sets"
+      ],
+      "answer": 1,
+      "explanation": "Resizing a dynamic array involves allocating new memory and copying elements, which can be time-consuming and increase memory usage.",
+      "hint": "Think about what happens when a dynamic array runs out of space."
+    },
+    {
+      "id": 24,
+      "question": "What is the primary benefit of using a linked list to implement a queue?",
+      "options": [
+        "Faster access to elements",
+        "Efficient memory usage",
+        "No need for resizing",
+        "Simpler implementation"
+      ],
+      "answer": 2,
+      "explanation": "Linked lists dynamically allocate memory, eliminating the need for resizing and potentially improving memory efficiency.",
+      "hint": "Think about how linked lists handle adding and removing elements without shifting others."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following scenarios would be best suited for a stack?",
+      "options": [
+        "Managing customer service requests",
+        "Processing network packets",
+        "Evaluating postfix expressions",
+        "Implementing a file system"
+      ],
+      "answer": 2,
+      "explanation": "Evaluating postfix expressions requires a stack to store operands and perform operations in the correct order.",
+      "hint": "Think about the order of operations in a postfix expression."
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between 'poll()' and 'remove()' methods in a Java Queue?",
+      "options": [
+        "'poll()' throws an exception if the queue is empty, 'remove()' returns null",
+        "'poll()' returns null if the queue is empty, 'remove()' throws an exception",
+        "They are identical",
+        "Only 'poll()' can be used with LinkedList"
+      ],
+      "answer": 1,
+      "explanation": "'poll()' returns null if the queue is empty, providing a safe way to check for emptiness, while 'remove()' throws an exception.",
+      "hint": "Consider how you might want to handle an empty queue without crashing your program."
+    },
+    {
+      "id": 27,
+      "question": "A stack is used to reverse a string. What is the time complexity of this operation?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Pushing each character onto the stack takes O(n) time, and popping each character takes O(n) time, resulting in a total time complexity of O(n).",
+      "hint": "Think about how many operations are needed to process each character in the string."
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of a priority queue?",
+      "options": [
+        "To store elements in FIFO order",
+        "To store elements in LIFO order",
+        "To store elements based on their priority",
+        "To store elements randomly"
+      ],
+      "answer": 2,
+      "explanation": "A priority queue stores elements based on their priority, allowing the element with the highest priority to be dequeued first.",
+      "hint": "Think about how you would handle tasks with different levels of importance."
+    },
+    {
+      "id": 29,
+      "question": "Which of the following is a limitation of using stacks and queues for complex data management?",
+      "options": [
+        "Limited search capabilities",
+        "Difficulty in handling dynamic data",
+        "Inefficient memory usage",
+        "Slow access times"
+      ],
+      "answer": 1,
+      "explanation": "Stacks and queues offer limited search capabilities, as you typically need to remove elements to access those deeper within the structure.",
+      "hint": "Think about how you would find a specific element in the middle of a stack or queue."
+    },
+    {
+      "id": 30,
+      "question": "How does the choice between an array-based and linked-list-based queue implementation affect performance when the queue is frequently full?",
+      "options": [
+        "Array-based queues are faster",
+        "Linked-list queues are faster",
+        "Array-based queues require resizing, linked-list queues do not",
+        "Linked-list queues require resizing, array-based queues do not"
+      ],
+      "answer": 2,
+      "explanation": "Array-based queues require resizing when full, which can be costly. Linked-list queues dynamically allocate memory, avoiding this issue.",
+      "hint": "Think about what happens when you try to add an element to a full array."
+    },
+    {
+      "id": 31,
+      "question": "What is the space complexity of a stack containing 'n' elements?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "The space complexity of a stack is O(n) because it needs to store 'n' elements.",
+      "hint": "Consider how the memory usage grows with the number of elements."
+    },
+    {
+      "id": 32,
+      "question": "You are designing a system to handle incoming requests. Requests need to be processed in the order they arrive. Which data structure is most appropriate?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "A queue is the most appropriate data structure for handling requests in the order they arrive (FIFO).",
+      "hint": "Think about how a waiting line works."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the 'isEmpty()' method in both stack and queue?",
+      "options": [
+        "To remove all elements",
+        "To return the number of elements",
+        "To check if the data structure is empty",
+        "To add a new element"
+      ],
+      "answer": 2,
+      "explanation": "The 'isEmpty()' method checks if the stack or queue contains any elements and returns a boolean value.",
+      "hint": "Consider what you need to know before attempting to remove an element."
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is a potential application of a stack in compiler design?",
+      "options": [
+        "Syntax analysis",
+        "Code generation",
+        "Memory allocation",
+        "Debugging"
+      ],
+      "answer": 0,
+      "explanation": "Stacks are used in syntax analysis (parsing) to keep track of operators and operands.",
+      "hint": "Think about how compilers process expressions."
+    },
+    {
+      "id": 35,
+      "question": "What is the main difference between a stack and a queue in terms of access to elements?",
+      "options": [
+        "Stacks allow access to any element, queues only allow access to the front element",
+        "Stacks only allow access to the top element, queues only allow access to the front element",
+        "Both allow access to any element",
+        "Both only allow access to the top/front element"
+      ],
+      "answer": 1,
+      "explanation": "Stacks only allow access to the top element (LIFO), while queues only allow access to the front element (FIFO).",
+      "hint": "Consider the principles of LIFO and FIFO."
+    },
+    {
+      "id": 36,
+      "question": "What is the time complexity of searching for a specific element in a stack (without knowing its position)?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "In the worst case, you might need to pop all elements from the stack to find a specific element, resulting in O(n) time complexity.",
+      "hint": "Think about how you would search for an element in a stack without knowing its location."
+    },
+    {
+      "id": 37,
+      "question": "You are implementing a text editor's undo feature. Which data structure is most suitable?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Binary Tree"
+      ],
+      "answer": 1,
+      "explanation": "A stack is ideal for implementing undo/redo functionality because of its LIFO nature.",
+      "hint": "Think about how the undo feature works – which action is undone first?"
+    },
+    {
+      "id": 38,
+      "question": "What is the primary advantage of using a circular queue over a linear queue?",
+      "options": [
+        "Reduced memory usage",
+        "Faster enqueue/dequeue operations",
+        "Avoids the problem of queue overflow",
+        "Simpler implementation"
+      ],
+      "answer": 0,
+      "explanation": "A circular queue reuses the space freed by dequeued elements, reducing memory usage.",
+      "hint": "Think about how a circular queue can avoid wasting space."
+    },
+    {
+      "id": 39,
+      "question": "Consider a scenario where you need to process a large number of tasks with varying priorities. Which data structure would be most appropriate?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Priority Queue",
+        "Linked List"
+      ],
+      "answer": 2,
+      "explanation": "A priority queue allows you to process tasks based on their priority, ensuring that the most important tasks are handled first.",
+      "hint": "Think about how you would handle tasks with different levels of urgency."
+    },
+    {
+      "id": 40,
+      "question": "What is the potential drawback of using a stack for expression evaluation?",
+      "options": [
+        "Difficulty handling parentheses",
+        "Slow push/pop operations",
+        "Limited memory capacity",
+        "Inability to handle multiple operators"
+      ],
+      "answer": 0,
+      "explanation": "Incorrect handling of parentheses can lead to incorrect expression evaluation results.",
+      "hint": "Think about how parentheses affect the order of operations."
+    },
+    {
+      "id": 41,
+      "question": "Which of the following operations is NOT typically associated with a queue?",
+      "options": [
+        "Enqueue",
+        "Dequeue",
+        "Peek",
+        "Pop"
+      ],
+      "answer": 3,
+      "explanation": "'Pop' is an operation associated with stacks, not queues.",
+      "hint": "Recall the standard operations for queues."
+    },
+    {
+      "id": 42,
+      "question": "What is the time complexity of the 'Peek' operation in a queue implemented using an array?",
+      "options": [
+        "O(n)",
+        "O(1)",
+        "O(log n)",
+        "O(n^2)"
+      ],
+      "answer": 1,
+      "explanation": "Peeking at the front element of an array-based queue takes constant time, O(1).",
+      "hint": "Think about how quickly you can access the first element of an array."
+    },
+    {
+      "id": 43,
+      "question": "How can a queue be used to implement a Breadth-First Search (BFS) algorithm?",
+      "options": [
+        "Storing visited nodes",
+        "Storing nodes to be visited",
+        "Storing the parent of each node",
+        "Storing the depth of each node"
+      ],
+      "answer": 1,
+      "explanation": "BFS uses a queue to store nodes that need to be visited, ensuring that nodes are explored level by level.",
+      "hint": "Think about the order in which nodes are visited in BFS."
+    },
+    {
+      "id": 44,
+      "question": "What is the primary difference between a stack and a queue in terms of their use cases?",
+      "options": [
+        "Stacks are used for processing data in order, queues are used for reversing data",
+        "Stacks are used for reversing data, queues are used for processing data in order",
+        "Stacks are used for priority-based processing, queues are used for random access",
+        "Stacks and queues have the same use cases"
+      ],
+      "answer": 1,
+      "explanation": "Stacks are used for reversing data or managing function calls (LIFO), while queues are used for processing data in order (FIFO).",
+      "hint": "Consider the principles of LIFO and FIFO."
+    },
+    {
+      "id": 45,
+      "question": "You are designing a system to manage a series of events in chronological order. Which data structure is most suitable?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "A queue is the most suitable data structure for managing events in chronological order (FIFO).",
+      "hint": "Think about how events are typically processed – which one happens first?"
+    },
+    {
+      "id": 46,
+      "question": "What is the potential issue with using a stack to store an unbounded number of function calls?",
+      "options": [
+        "Stack overflow",
+        "Memory leaks",
+        "Segmentation faults",
+        "Data corruption"
+      ],
+      "answer": 0,
+      "explanation": "If the recursion depth is too large, the stack can overflow, leading to a program crash.",
+      "hint": "Think about the limited size of the stack."
+    },
+    {
+      "id": 47,
+      "question": "What is the time complexity of finding the minimum element in a queue (without modifying the queue)?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n^2)"
+      ],
+      "answer": 2,
+      "explanation": "You need to iterate through all the elements in the queue to find the minimum, resulting in O(n) time complexity.",
+      "hint": "Think about how you would find the minimum element without changing the queue."
+    },
+    {
+      "id": 48,
+      "question": "In a real-time operating system, how can a queue be used for interrupt handling?",
+      "options": [
+        "Storing interrupt vectors",
+        "Scheduling interrupts based on priority",
+        "Buffering interrupt data",
+        "Disabling interrupts"
+      ],
+      "answer": 2,
+      "explanation": "Queues can be used to buffer interrupt data, ensuring that no interrupts are lost while the system is processing other tasks.",
+      "hint": "Think about how interrupts need to be handled even when the system is busy."
+    },
+    {
+      "id": 49,
+      "question": "What is the primary advantage of using a doubly-linked list to implement a queue compared to a singly-linked list?",
+      "options": [
+        "Faster enqueue operations",
+        "Faster dequeue operations",
+        "Ability to traverse the queue in both directions",
+        "Reduced memory usage"
+      ],
+      "answer": 2,
+      "explanation": "A doubly-linked list allows you to traverse the queue in both directions, which can be useful for certain operations.",
+      "hint": "Think about the difference between singly and doubly linked lists."
+    },
+    {
+      "id": 50,
+      "question": "You are designing a system to simulate a multi-server call center. Calls arrive randomly and need to be assigned to available agents. Which data structure is most appropriate for managing the waiting calls?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Tree",
+        "Graph"
+      ],
+      "answer": 1,
+      "explanation": "A queue is the most appropriate data structure for managing waiting calls, ensuring that calls are handled in the order they arrived (FIFO).",
+      "hint": "Think about how a waiting line works in a call center."
+    }
+  ]
+}
