@@ -1,0 +1,679 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 6: Validation, Error Handling and Security",
+  "unitId": "aspnet-u6",
+  "categoryId": "cs",
+  "topics": [
+    "Model validation with Data Annotations — Required, Range, StringLength, RegularExpression",
+    "ModelState.IsValid and handling validation errors",
+    "Custom validation attributes",
+    "Global exception handling middleware",
+    "Try-catch in controllers vs middleware error handling",
+    "Problem Details for API error responses",
+    "Authentication vs Authorization",
+    "Basic login and logout flow",
+    "Session-based vs token-based authentication concepts",
+    "Protecting routes with Authorize attribute"
+  ],
+  "generatedAt": "2026-04-22T02:09:27Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which Data Annotation is used to specify that a property must have a value?",
+      "options": [
+        "StringLength",
+        "Range",
+        "Required",
+        "RegularExpression"
+      ],
+      "answer": 2,
+      "explanation": "The `Required` attribute enforces that a property cannot be null or empty.",
+      "hint": "Think about what attribute directly indicates a field *must* contain data."
+    },
+    {
+      "id": 2,
+      "question": "What does `ModelState.IsValid` return?",
+      "options": [
+        "True if all validation attributes pass, False otherwise",
+        "True if at least one validation attribute passes, False otherwise",
+        "A list of validation errors",
+        "The number of validation errors"
+      ],
+      "answer": 0,
+      "explanation": "`ModelState.IsValid` returns a boolean indicating whether the model satisfies all validation rules defined by Data Annotations and custom validators.",
+      "hint": "Consider what 'IsValid' generally means in a validation context."
+    },
+    {
+      "id": 3,
+      "question": "How can you access validation error messages in a controller?",
+      "options": [
+        "`ModelState.Errors`",
+        "`ViewBag.Errors`",
+        "`TempData.Errors`",
+        "`Session.Errors`"
+      ],
+      "answer": 0,
+      "explanation": "Validation errors are stored in the `ModelState.Errors` collection, allowing you to access them and display them in the view.",
+      "hint": "Where would you expect validation results to be stored after a model binding attempt?"
+    },
+    {
+      "id": 4,
+      "question": "What is the primary purpose of a custom validation attribute?",
+      "options": [
+        "To override default Data Annotations",
+        "To implement complex validation logic not covered by built-in attributes",
+        "To simplify existing Data Annotations",
+        "To automatically fix invalid data"
+      ],
+      "answer": 1,
+      "explanation": "Custom validation attributes allow developers to define specific validation rules tailored to their application's needs, beyond the standard Data Annotations.",
+      "hint": "Think about scenarios where the built-in validation attributes aren't sufficient."
+    },
+    {
+      "id": 5,
+      "question": "Which approach is generally preferred for global exception handling in ASP.NET Core?",
+      "options": [
+        "Try-catch blocks in each controller action",
+        "A centralized exception handling middleware",
+        "Using `OnException` filters",
+        "Logging exceptions in the controller"
+      ],
+      "answer": 1,
+      "explanation": "Middleware provides a centralized and reusable way to handle exceptions globally, promoting cleaner code and consistent error handling.",
+      "hint": "Consider the benefits of a single point of control for handling errors."
+    },
+    {
+      "id": 6,
+      "question": "What is the main difference between handling exceptions in a controller action versus using middleware?",
+      "options": [
+        "Middleware handles exceptions before they reach the controller, while controller actions handle exceptions after binding.",
+        "Controller actions handle exceptions globally, while middleware handles them locally.",
+        "Middleware is only for unhandled exceptions, while controller actions handle all exceptions.",
+        "There is no difference; both approaches are equally effective."
+      ],
+      "answer": 0,
+      "explanation": "Middleware intercepts exceptions before they reach the controller action, allowing for early handling, while controller actions handle exceptions that occur during action execution.",
+      "hint": "Think about the order in which requests are processed in the ASP.NET Core pipeline."
+    },
+    {
+      "id": 7,
+      "question": "What is the purpose of `ProblemDetails` in ASP.NET Core Web API?",
+      "options": [
+        "To provide a standardized format for error responses",
+        "To log detailed error information",
+        "To automatically fix invalid data",
+        "To redirect users to an error page"
+      ],
+      "answer": 0,
+      "explanation": "`ProblemDetails` provides a structured way to return error responses, adhering to RFC 7807, making it easier for clients to understand and handle errors.",
+      "hint": "Consider how a client application would best consume error information from an API."
+    },
+    {
+      "id": 8,
+      "question": "What is the key distinction between Authentication and Authorization?",
+      "options": [
+        "Authentication verifies identity, Authorization determines access rights",
+        "Authentication determines access rights, Authorization verifies identity",
+        "Both processes are identical",
+        "Authentication is only for web applications, Authorization is for APIs"
+      ],
+      "answer": 0,
+      "explanation": "Authentication confirms *who* the user is, while Authorization determines *what* the user is allowed to do.",
+      "hint": "Think about the difference between proving you are who you say you are, and having permission to do something."
+    },
+    {
+      "id": 9,
+      "question": "In a basic login flow, what is typically stored in a session?",
+      "options": [
+        "The user's password",
+        "The user's email address",
+        "A user identifier or principal",
+        "The user's full profile information"
+      ],
+      "answer": 2,
+      "explanation": "A session typically stores a user identifier or principal to maintain the user's logged-in state without storing sensitive information like passwords.",
+      "hint": "What minimal information is needed to identify a logged-in user without compromising security?"
+    },
+    {
+      "id": 10,
+      "question": "What is a major drawback of session-based authentication?",
+      "options": [
+        "It is not scalable",
+        "It is less secure than token-based authentication",
+        "It requires server-side storage",
+        "It is difficult to implement"
+      ],
+      "answer": 2,
+      "explanation": "Session-based authentication relies on server-side storage to maintain user sessions, which can become a bottleneck in highly scalable applications.",
+      "hint": "Consider the implications of storing user state on the server for a large number of users."
+    },
+    {
+      "id": 11,
+      "question": "What is the primary advantage of token-based authentication (e.g., JWT)?",
+      "options": [
+        "It is more secure than session-based authentication",
+        "It eliminates the need for server-side storage",
+        "It is easier to implement",
+        "It is faster than session-based authentication"
+      ],
+      "answer": 1,
+      "explanation": "Token-based authentication stores user state on the client-side, reducing the server's load and improving scalability.",
+      "hint": "Where is the user's authentication information stored in a token-based system?"
+    },
+    {
+      "id": 12,
+      "question": "What does the `[Authorize]` attribute do in ASP.NET Core?",
+      "options": [
+        "Encrypts sensitive data",
+        "Validates user input",
+        "Restricts access to a controller or action based on authentication and authorization",
+        "Logs user activity"
+      ],
+      "answer": 2,
+      "explanation": "The `[Authorize]` attribute ensures that only authenticated and authorized users can access the protected resource.",
+      "hint": "Think about how you would control access to specific parts of your application."
+    },
+    {
+      "id": 13,
+      "question": "Which Data Annotation would you use to limit the length of a string property?",
+      "options": [
+        "Range",
+        "Required",
+        "RegularExpression",
+        "StringLength"
+      ],
+      "answer": 3,
+      "explanation": "The `StringLength` attribute specifies the minimum and maximum allowed length of a string property.",
+      "hint": "What attribute directly relates to the number of characters in a string?"
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the `RegularExpression` Data Annotation?",
+      "options": [
+        "To validate numeric ranges",
+        "To validate string lengths",
+        "To validate strings against a specified pattern",
+        "To ensure a property is not null"
+      ],
+      "answer": 2,
+      "explanation": "The `RegularExpression` attribute allows you to validate a string property against a defined regular expression pattern.",
+      "hint": "Think about how you would validate a field to ensure it matches a specific format (e.g., email address)."
+    },
+    {
+      "id": 15,
+      "question": "How can you create a custom validation attribute that checks if a property value is a valid email address?",
+      "options": [
+        "Inherit from `ValidationAttribute` and override `IsValid`",
+        "Inherit from `DataTypeAttribute` and override `IsValid`",
+        "Inherit from `DisplayAttribute` and override `IsValid`",
+        "Inherit from `RangeAttribute` and override `IsValid`"
+      ],
+      "answer": 0,
+      "explanation": "To create a custom validation attribute, you must inherit from the `ValidationAttribute` class and override the `IsValid` method to implement your validation logic.",
+      "hint": "What base class provides the foundation for creating custom validation rules?"
+    },
+    {
+      "id": 16,
+      "question": "What is the benefit of using a middleware for exception handling compared to using try-catch blocks within each controller action?",
+      "options": [
+        "Middleware is more efficient",
+        "Middleware is easier to debug",
+        "Middleware promotes code reusability and separation of concerns",
+        "Middleware is more secure"
+      ],
+      "answer": 2,
+      "explanation": "Middleware allows you to centralize exception handling logic, promoting code reusability and separating error handling concerns from your controller logic.",
+      "hint": "Consider the principles of good software design – what promotes maintainability and reduces duplication?"
+    },
+    {
+      "id": 17,
+      "question": "You have a Web API endpoint that returns a 400 Bad Request error. What is the best way to format the error response using `ProblemDetails`?",
+      "options": [
+        "Return a plain text error message",
+        "Return a JSON object with a generic 'error' field",
+        "Return a `ProblemDetails` object with a `Type`, `Title`, `Status`, and `Detail`",
+        "Return a custom error code"
+      ],
+      "answer": 2,
+      "explanation": "Using a `ProblemDetails` object provides a standardized and informative error response format, adhering to RFC 7807.",
+      "hint": "What is the purpose of the `ProblemDetails` class in ASP.NET Core?"
+    },
+    {
+      "id": 18,
+      "question": "What is the role of a policy in ASP.NET Core Authorization?",
+      "options": [
+        "To define authentication methods",
+        "To define authorization rules and requirements",
+        "To encrypt sensitive data",
+        "To validate user input"
+      ],
+      "answer": 1,
+      "explanation": "Policies define authorization rules, specifying which users or roles are allowed to access specific resources.",
+      "hint": "Think about how you would group and manage different access control rules."
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between `ClaimsPrincipal` and `ClaimsIdentity`?",
+      "options": [
+        "`ClaimsPrincipal` represents the user's identity, `ClaimsIdentity` represents the user's roles",
+        "`ClaimsPrincipal` represents the user's roles, `ClaimsIdentity` represents the user's identity",
+        "`ClaimsPrincipal` is the user's overall identity, including multiple identities, while `ClaimsIdentity` represents a single identity provider",
+        "`ClaimsPrincipal` and `ClaimsIdentity` are interchangeable terms"
+      ],
+      "answer": 2,
+      "explanation": "`ClaimsPrincipal` represents the user's overall identity, potentially from multiple sources, while `ClaimsIdentity` represents a single identity provider (e.g., a local database or a social login provider).",
+      "hint": "Consider how a user might authenticate using multiple methods (e.g., Google and Facebook)."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is NOT a common use case for custom validation attributes?",
+      "options": [
+        "Validating complex data formats",
+        "Performing database lookups during validation",
+        "Enforcing business rules",
+        "Automatically correcting invalid data"
+      ],
+      "answer": 3,
+      "explanation": "Custom validation attributes are primarily for *validating* data, not for automatically correcting it. Correction should happen after validation.",
+      "hint": "What is the primary purpose of validation – to confirm data is correct, or to fix it?"
+    },
+    {
+      "id": 21,
+      "question": "You need to validate that a date property is in the future. Which Data Annotation is most appropriate?",
+      "options": [
+        "Range",
+        "Required",
+        "StringLength",
+        "RegularExpression"
+      ],
+      "answer": 0,
+      "explanation": "The `Range` attribute can be used to specify a minimum and maximum value for a date property, allowing you to ensure it's in the future.",
+      "hint": "How can you define a numerical boundary for a date value?"
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of the `[BindProperty]` attribute in a controller?",
+      "options": [
+        "To automatically validate model properties",
+        "To specify which properties should be bound from the request",
+        "To encrypt model properties",
+        "To log model properties"
+      ],
+      "answer": 1,
+      "explanation": "The `[BindProperty]` attribute allows you to control which properties of a model are bound from the request data.",
+      "hint": "How do you control which data from a request is mapped to your model?"
+    },
+    {
+      "id": 23,
+      "question": "What is the role of the `IExceptionHandler` interface in ASP.NET Core?",
+      "options": [
+        "To handle exceptions in controller actions",
+        "To provide a centralized way to handle unhandled exceptions",
+        "To log exceptions to a database",
+        "To display error messages to the user"
+      ],
+      "answer": 1,
+      "explanation": "The `IExceptionHandler` interface allows you to implement custom exception handling logic for unhandled exceptions in your application.",
+      "hint": "Think about how you would create a global error handler."
+    },
+    {
+      "id": 24,
+      "question": "You are designing an API that requires users to be authenticated and have a specific role (e.g., 'Admin'). How would you implement this using ASP.NET Core?",
+      "options": [
+        "Use the `[Authorize(Roles = ",
+        "Admin",
+        "attribute",
+        "Use the `[RequireHttps]` attribute",
+        "Use the `[ValidateAntiForgeryToken]` attribute",
+        "Use the `[BindProperty]` attribute"
+      ],
+      "answer": 0,
+      "explanation": "The `[Authorize(Roles = \"Admin\")]` attribute restricts access to the controller or action to users who have the 'Admin' role.",
+      "hint": "How do you specify role-based access control in ASP.NET Core?"
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the `Startup.cs` file in an ASP.NET Core application?",
+      "options": [
+        "To define the application's routes",
+        "To configure the application's services and middleware pipeline",
+        "To define the application's models",
+        "To define the application's views"
+      ],
+      "answer": 1,
+      "explanation": "The `Startup.cs` file is responsible for configuring the application's services (e.g., dependency injection) and defining the middleware pipeline.",
+      "hint": "Where do you configure the core components of your ASP.NET Core application?"
+    },
+    {
+      "id": 26,
+      "question": "What is the difference between `AddModelError` and `AddModelStateError`?",
+      "options": [
+        "`AddModelError` adds a global error, `AddModelStateError` adds an error to a specific property",
+        "`AddModelStateError` adds a global error, `AddModelError` adds an error to a specific property",
+        "They are identical",
+        "Only `AddModelError` is used in ASP.NET Core"
+      ],
+      "answer": 0,
+      "explanation": "`AddModelError` adds a general error message to the `ModelState`, while `AddModelStateError` adds an error specifically associated with a particular model property.",
+      "hint": "Consider how you would indicate an error related to a specific field in a form."
+    },
+    {
+      "id": 27,
+      "question": "You want to validate that a property is a valid credit card number. Which approach is most suitable?",
+      "options": [
+        "Use the `Range` attribute",
+        "Use the `StringLength` attribute",
+        "Create a custom validation attribute with a regular expression",
+        "Use the `Required` attribute"
+      ],
+      "answer": 2,
+      "explanation": "Credit card number validation requires a specific pattern, making a custom validation attribute with a regular expression the most appropriate solution.",
+      "hint": "Credit card numbers have a specific format – how would you enforce that?"
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of the `app.UseExceptionHandler()` middleware?",
+      "options": [
+        "To handle all exceptions in the application",
+        "To handle unhandled exceptions and display an error page",
+        "To log exceptions to a file",
+        "To redirect users to a login page"
+      ],
+      "answer": 1,
+      "explanation": "`app.UseExceptionHandler()` middleware catches unhandled exceptions and allows you to customize the error handling process, often by displaying an error page.",
+      "hint": "What does 'exception handling' generally involve?"
+    },
+    {
+      "id": 29,
+      "question": "What is the benefit of using a token-based authentication system with a stateless API?",
+      "options": [
+        "It simplifies session management",
+        "It improves security",
+        "It eliminates the need for server-side session storage",
+        "It reduces network traffic"
+      ],
+      "answer": 2,
+      "explanation": "Token-based authentication allows a stateless API to authenticate requests without relying on server-side session storage, improving scalability.",
+      "hint": "What does 'stateless' mean in the context of an API?"
+    },
+    {
+      "id": 30,
+      "question": "You have a controller action that requires a user to be logged in and have the 'Editor' role. How would you implement this using the `[Authorize]` attribute?",
+      "options": [
+        "`[Authorize(Roles = ",
+        "Editor",
+        ", ",
+        [
+          "Authorize"
+        ],
+        ", \"`[Authorize(AuthenticationSchemes = \"Editor",
+        ", \"`[Authorize(Policy = \"Editor",
+        "],\n    \"answer\": 0,\n    \"explanation\": \"The `[Authorize(Roles = \"Editor",
+        "attribute restricts access to users who have the 'Editor' role.",
+        {
+          "hint": "How do you specify role-based access control using the `Authorize` attribute?"
+        },
+        {
+          "id": 31,
+          "question": "What is the purpose of the `[FromBody]` attribute in a controller action parameter?",
+          "options": [
+            "To bind the parameter from the query string",
+            "To bind the parameter from the request body",
+            "To validate the parameter",
+            "To encrypt the parameter"
+          ],
+          "answer": 1,
+          "explanation": "The `[FromBody]` attribute indicates that the parameter should be bound from the request body, typically used for POST and PUT requests.",
+          "hint": "Where is the data typically located in a POST request?"
+        },
+        {
+          "id": 32,
+          "question": "What is the primary advantage of using `ProblemDetails` over custom error responses?",
+          "options": [
+            "Custom responses are more secure",
+            "ProblemDetails are easier to implement",
+            "ProblemDetails provide a standardized error format",
+            "Custom responses are more flexible"
+          ],
+          "answer": 2,
+          "explanation": "ProblemDetails provide a standardized error format, making it easier for clients to understand and handle errors consistently.",
+          "hint": "Consider the benefits of a common, well-defined error structure."
+        },
+        {
+          "id": 33,
+          "question": "You need to validate that a property is a valid email address using a custom validation attribute. What should you override in the attribute class?",
+          "options": [
+            "`OnActionExecuting`",
+            "`IsValid`",
+            "`OnResultExecuting`",
+            "`OnException`"
+          ],
+          "answer": 1,
+          "explanation": "The `IsValid` method is overridden in a custom validation attribute to implement the specific validation logic.",
+          "hint": "What method is responsible for determining if a validation rule passes?"
+        },
+        {
+          "id": 34,
+          "question": "What is the purpose of the `app.UseRouting()` middleware in ASP.NET Core?",
+          "options": [
+            "To handle exceptions",
+            "To parse the request and match it to a route",
+            "To authenticate users",
+            "To authorize access to resources"
+          ],
+          "answer": 1,
+          "explanation": "`app.UseRouting()` middleware parses the request and matches it to a defined route, determining which controller action should handle the request.",
+          "hint": "What is the role of routing in a web application?"
+        },
+        {
+          "id": 35,
+          "question": "What is the difference between `HttpContext.Session` and `HttpContext.Request.Cookies`?",
+          "options": [
+            "`HttpContext.Session` stores data on the server, `HttpContext.Request.Cookies` stores data on the client",
+            "`HttpContext.Request.Cookies` stores data on the server, `HttpContext.Session` stores data on the client",
+            "They are identical",
+            "Only `HttpContext.Session` is used in ASP.NET Core"
+          ],
+          "answer": 0,
+          "explanation": "`HttpContext.Session` provides a server-side storage mechanism for user data, while `HttpContext.Request.Cookies` allows access to cookies stored on the client's browser.",
+          "hint": "Where is the data physically stored for each of these options?"
+        },
+        {
+          "id": 36,
+          "question": "You are building an API and want to return a 401 Unauthorized error when a user is not authenticated. What should you do?",
+          "options": [
+            "Return a 403 Forbidden error",
+            "Return a 400 Bad Request error",
+            "Return a `ProblemDetails` object with a 401 status code",
+            "Redirect the user to the login page"
+          ],
+          "answer": 2,
+          "explanation": "Returning a `ProblemDetails` object with a 401 status code is the correct way to indicate that the user is not authenticated.",
+          "hint": "What HTTP status code specifically indicates an authentication failure?"
+        },
+        {
+          "id": 37,
+          "question": "What is the purpose of the `[ApiController]` attribute?",
+          "options": [
+            "To enable automatic model validation",
+            "To simplify controller creation",
+            "To indicate that a controller is an API controller and enable API-specific features",
+            "To encrypt controller actions"
+          ],
+          "answer": 2,
+          "explanation": "The `[ApiController]` attribute signals that a controller is an API controller, enabling features like automatic model validation and parameter binding.",
+          "hint": "What distinguishes an API controller from a traditional MVC controller?"
+        },
+        {
+          "id": 38,
+          "question": "You have a custom validation attribute that needs to access other properties of the model during validation. How can you achieve this?",
+          "options": [
+            "Use the `HttpContext`",
+            "Pass the model instance to the attribute constructor",
+            "Use the `ViewData`",
+            "Use the `TempData`"
+          ],
+          "answer": 1,
+          "explanation": "Passing the model instance to the attribute constructor allows you to access other properties of the model during validation.",
+          "hint": "How can you provide the attribute with access to the entire model being validated?"
+        },
+        {
+          "id": 39,
+          "question": "What is the role of the `app.UseAuthentication()` middleware?",
+          "options": [
+            "To handle routing",
+            "To authenticate users",
+            "To authorize access to resources",
+            "To handle exceptions"
+          ],
+          "answer": 1,
+          "explanation": "`app.UseAuthentication()` middleware authenticates users based on configured authentication schemes.",
+          "hint": "What is the primary function of authentication?"
+        },
+        {
+          "id": 40,
+          "question": "What is the benefit of using policies for authorization instead of directly using the `[Authorize(Roles = \"...\")]` attribute?",
+          "options": [
+            "Policies are more secure",
+            "Policies are easier to read",
+            "Policies allow for more flexible and reusable authorization rules",
+            "Policies are faster"
+          ],
+          "answer": 2,
+          "explanation": "Policies allow you to define authorization rules in a centralized location and reuse them across multiple controllers and actions, promoting flexibility and maintainability.",
+          "hint": "Consider the benefits of abstracting authorization logic into reusable components."
+        },
+        {
+          "id": 41,
+          "question": "What is the purpose of the `[Required]` attribute?",
+          "options": [
+            "To validate the length of a string",
+            "To ensure a property has a value",
+            "To validate a numeric range",
+            "To validate a regular expression"
+          ],
+          "answer": 1,
+          "explanation": "The `[Required]` attribute ensures that a property cannot be null or empty.",
+          "hint": "What does 'required' mean in the context of data validation?"
+        },
+        {
+          "id": 42,
+          "question": "What is the difference between `Try-catch` blocks in controllers and global exception handling middleware?",
+          "options": [
+            "`Try-catch` blocks handle exceptions locally, middleware handles exceptions globally",
+            "`Try-catch` blocks handle exceptions globally, middleware handles exceptions locally",
+            "They are identical",
+            "Only `Try-catch` blocks are used in ASP.NET Core"
+          ],
+          "answer": 0,
+          "explanation": "`Try-catch` blocks handle exceptions within a specific controller action, while middleware provides a centralized way to handle exceptions across the entire application.",
+          "hint": "Consider the scope of each approach – local versus global."
+        },
+        {
+          "id": 43,
+          "question": "What is the purpose of the `[HttpPut]` attribute in a controller?",
+          "options": [
+            "To handle GET requests",
+            "To handle POST requests",
+            "To handle PUT requests (used for updating resources)",
+            "To handle DELETE requests"
+          ],
+          "answer": 2,
+          "explanation": "The `[HttpPut]` attribute specifies that a controller action should handle HTTP PUT requests, typically used for updating existing resources.",
+          "hint": "What HTTP method is commonly used for updating data?"
+        },
+        {
+          "id": 44,
+          "question": "You want to validate that a property is within a specific range (e.g., between 1 and 100). Which Data Annotation is most appropriate?",
+          "options": [
+            "StringLength",
+            "Required",
+            "Range",
+            "RegularExpression"
+          ],
+          "answer": 2,
+          "explanation": "The `Range` attribute allows you to specify a minimum and maximum value for a numeric property.",
+          "hint": "How can you define a numerical boundary for a value?"
+        },
+        {
+          "id": 45,
+          "question": "What is the purpose of the `app.UseHttpsRedirection()` middleware?",
+          "options": [
+            "To handle exceptions",
+            "To redirect all HTTP requests to HTTPS",
+            "To authenticate users",
+            "To authorize access to resources"
+          ],
+          "answer": 1,
+          "explanation": "`app.UseHttpsRedirection()` middleware automatically redirects all HTTP requests to their HTTPS equivalents, improving security.",
+          "hint": "What does HTTPS provide that HTTP does not?"
+        },
+        {
+          "id": 46,
+          "question": "What is the role of the `ClaimsIdentity` class in ASP.NET Core Identity?",
+          "options": [
+            "To store user credentials",
+            "To represent a user's claims (e.g., roles, permissions)",
+            "To manage user sessions",
+            "To encrypt user data"
+          ],
+          "answer": 1,
+          "explanation": "The `ClaimsIdentity` class represents a user's claims, which are statements about the user's identity and permissions.",
+          "hint": "What kind of information does a 'claim' typically represent?"
+        },
+        {
+          "id": 47,
+          "question": "You are designing an API that requires a user to be authenticated. What is the recommended approach for handling unauthenticated requests?",
+          "options": [
+            "Return a 403 Forbidden error",
+            "Return a 404 Not Found error",
+            "Return a `ProblemDetails` object with a 401 Unauthorized status code",
+            "Redirect the user to the login page"
+          ],
+          "answer": 2,
+          "explanation": "Returning a `ProblemDetails` object with a 401 Unauthorized status code is the standard way to indicate that the user is not authenticated.",
+          "hint": "What HTTP status code specifically indicates an authentication failure?"
+        },
+        {
+          "id": 48,
+          "question": "What is the purpose of the `[NonAction]` attribute?",
+          "options": [
+            "To prevent a method from being called as an action",
+            "To encrypt a method",
+            "To validate a method",
+            "To log a method"
+          ],
+          "answer": 0,
+          "explanation": "The `[NonAction]` attribute prevents a method from being considered as an action that can be invoked by a request.",
+          "hint": "What does 'action' mean in the context of an MVC controller?"
+        },
+        {
+          "id": 49,
+          "question": "What is the primary benefit of using a token-based authentication system with a microservices architecture?",
+          "options": [
+            "It simplifies session management",
+            "It improves security",
+            "It enables stateless communication between services",
+            "It reduces network traffic"
+          ],
+          "answer": 2,
+          "explanation": "Token-based authentication allows microservices to communicate with each other without relying on shared session state, enabling stateless communication.",
+          "hint": "Consider the challenges of managing session state across multiple independent services."
+        },
+        {
+          "id": 50,
+          "question": "You need to validate that a property is a valid US phone number. Which approach is most suitable?",
+          "options": [
+            "Use the `Range` attribute",
+            "Use the `StringLength` attribute",
+            "Create a custom validation attribute with a regular expression",
+            "Use the `Required` attribute"
+          ],
+          "answer": 2,
+          "explanation": "Validating a US phone number requires a specific pattern, making a custom validation attribute with a regular expression the most appropriate solution.",
+          "hint": "Phone numbers have a specific format – how would you enforce that?"
+        }
+      ]
+    }
+  ]
+}

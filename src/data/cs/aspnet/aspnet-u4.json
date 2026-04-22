@@ -1,0 +1,670 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 4: Views, Razor and Data Passing",
+  "unitId": "aspnet-u4",
+  "categoryId": "cs",
+  "topics": [
+    "Razor syntax — @ expressions, code blocks, directives",
+    "Views and Layouts — _Layout.cshtml, RenderBody, RenderSection",
+    "Partial views and view components",
+    "Passing data to views — ViewBag, ViewData, strongly typed models",
+    "Dynamic rendering with loops and conditionals in Razor",
+    "Tag Helpers — asp-for, asp-action, asp-controller",
+    "Forms in Razor — GET vs POST, model binding",
+    "Display and Editor templates"
+  ],
+  "generatedAt": "2026-04-22T02:04:52Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of the `RenderBody()` method in an ASP.NET Core MVC layout?",
+      "options": [
+        "To render the layout's header",
+        "To render the content of the current view",
+        "To render the layout's footer",
+        "To render all partial views"
+      ],
+      "answer": 1,
+      "explanation": "`RenderBody()` is a placeholder in the `_Layout.cshtml` file where the specific view content is injected when a controller action returns a view.",
+      "hint": "Think about how a layout provides a consistent structure for multiple views."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is the correct Razor syntax for displaying a variable named 'message'?",
+      "options": [
+        "@message",
+        "<% message %>",
+        "${message}",
+        "&message;"
+      ],
+      "answer": 0,
+      "explanation": "In Razor, the `@` symbol is used to transition from HTML markup to C# code, allowing you to directly output the value of a variable.",
+      "hint": "Razor uses a specific symbol to embed server-side code within HTML."
+    },
+    {
+      "id": 3,
+      "question": "What is the difference between `ViewBag` and `ViewData` in ASP.NET Core MVC?",
+      "options": [
+        "`ViewBag` is strongly typed, while `ViewData` is dynamically typed.",
+        "`ViewBag` uses reflection, while `ViewData` uses direct property access.",
+        "`ViewData` is strongly typed, while `ViewBag` is dynamically typed.",
+        "`ViewBag` is only for simple data, while `ViewData` can hold complex objects."
+      ],
+      "answer": 0,
+      "explanation": "`ViewBag` uses dynamic properties, offering convenience but lacking compile-time type checking, while `ViewData` is a dictionary object that requires casting.",
+      "hint": "Consider how each approach handles type safety."
+    },
+    {
+      "id": 4,
+      "question": "How can you define a section in a layout that allows views to provide their own content?",
+      "options": [
+        "Using `@Section()` and `@RenderSection()`",
+        "Using `@ViewSection()` and `@RenderViewSection()`",
+        "Using `<section>` and `</section>` tags",
+        "Using `@LayoutSection()` and `@RenderLayoutSection()`"
+      ],
+      "answer": 0,
+      "explanation": "`@Section()` defines a section in a view, and `@RenderSection()` renders that section in the layout, allowing views to customize specific parts of the layout.",
+      "hint": "Sections enable views to override parts of the layout."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of a partial view in ASP.NET Core MVC?",
+      "options": [
+        "To render the entire layout",
+        "To render a reusable portion of a view",
+        "To handle form submissions",
+        "To define the controller logic"
+      ],
+      "answer": 1,
+      "explanation": "Partial views are designed to encapsulate reusable UI components, promoting code organization and reducing redundancy.",
+      "hint": "Think about how you might avoid repeating the same HTML code in multiple views."
+    },
+    {
+      "id": 6,
+      "question": "Which Tag Helper is used to create an HTML form that posts data back to a specific action method?",
+      "options": [
+        "`<form asp-action=\"Index\" asp-controller=\"Home\">`",
+        "`<form asp-for=\"MyModel\">`",
+        "`<form asp-route-id=\"1\">`",
+        "`<form asp-validation-summary=\"All\">`"
+      ],
+      "answer": 0,
+      "explanation": "The `asp-action` and `asp-controller` attributes within the `<form>` tag specify the action method and controller to which the form data will be submitted.",
+      "hint": "Focus on the attributes that define the form's destination."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between the GET and POST HTTP methods in the context of ASP.NET Core MVC forms?",
+      "options": [
+        "GET is used for submitting data, while POST is used for retrieving data.",
+        "GET appends data to the URL, while POST sends data in the request body.",
+        "GET is more secure than POST.",
+        "POST is used for caching, while GET is not."
+      ],
+      "answer": 1,
+      "explanation": "GET requests append data to the URL, making them visible in the browser's address bar, while POST requests send data in the request body, making them more suitable for sensitive information.",
+      "hint": "Consider how each method handles data transmission."
+    },
+    {
+      "id": 8,
+      "question": "What is model binding in ASP.NET Core MVC?",
+      "options": [
+        "The process of converting HTTP request data into model properties.",
+        "The process of validating user input.",
+        "The process of rendering a view.",
+        "The process of handling exceptions."
+      ],
+      "answer": 0,
+      "explanation": "Model binding automatically maps data from HTTP requests (e.g., form data, query strings) to the properties of your model classes.",
+      "hint": "Think about how the controller receives data from the user."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of Display Templates in ASP.NET Core MVC?",
+      "options": [
+        "To define how a model property is edited in a form.",
+        "To define how a model property is displayed in a view.",
+        "To validate model properties.",
+        "To handle AJAX requests."
+      ],
+      "answer": 1,
+      "explanation": "Display templates control the visual representation of model properties when they are displayed in a view, allowing for customized formatting.",
+      "hint": "Consider how you might want to format a date or currency value."
+    },
+    {
+      "id": 10,
+      "question": "What is the role of the `[BindProperty]` attribute in a controller action?",
+      "options": [
+        "It automatically validates the model.",
+        "It specifies which properties of the model should be bound from the request.",
+        "It renders a view.",
+        "It handles exceptions."
+      ],
+      "answer": 1,
+      "explanation": "The `[BindProperty]` attribute allows you to selectively bind properties from the HTTP request to your model, providing control over which data is populated.",
+      "hint": "Think about scenarios where you only want to update specific model properties."
+    },
+    {
+      "id": 11,
+      "question": "Which Razor directive is used to include another file in the current view?",
+      "options": [
+        "`@include`",
+        "`@render`",
+        "`@section`",
+        "`@inject`"
+      ],
+      "answer": 0,
+      "explanation": "`@include` directive allows you to include the content of another file directly into the current Razor view.",
+      "hint": "Think about how to reuse common code snippets across multiple views."
+    },
+    {
+      "id": 12,
+      "question": "How do you iterate through a list of strings called 'names' in a Razor view?",
+      "options": [
+        "`@foreach (var name in names) { ... }`",
+        "`@for (int i = 0; i < names.Length; i++) { ... }`",
+        "`@while (names.Count > 0) { ... }`",
+        "`@do { ... } while (names.Count > 0);`"
+      ],
+      "answer": 0,
+      "explanation": "The `foreach` loop is the most concise and readable way to iterate through a collection in Razor.",
+      "hint": "Consider the standard way to loop through a collection in C#."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of the `asp-validation-for` Tag Helper?",
+      "options": [
+        "To display validation messages for a specific model property.",
+        "To validate the entire model.",
+        "To format the display of a model property.",
+        "To create a form."
+      ],
+      "answer": 0,
+      "explanation": "The `asp-validation-for` Tag Helper dynamically displays validation messages associated with a specific model property, based on the validation attributes defined in the model.",
+      "hint": "Think about how to show error messages to the user."
+    },
+    {
+      "id": 14,
+      "question": "What is the primary advantage of using strongly typed models over `ViewBag` or `ViewData`?",
+      "options": [
+        "Strongly typed models provide compile-time type checking.",
+        "Strongly typed models are easier to debug.",
+        "Strongly typed models are more flexible.",
+        "Strongly typed models require less code."
+      ],
+      "answer": 0,
+      "explanation": "Strongly typed models allow the compiler to verify the correctness of your code, catching type-related errors at compile time rather than runtime.",
+      "hint": "Consider the benefits of type safety."
+    },
+    {
+      "id": 15,
+      "question": "How can you conditionally render a section of a view based on a boolean value 'isAdmin'?",
+      "options": [
+        "`@if (isAdmin) { @RenderSection(\"AdminSection\") }`",
+        "`@if (isAdmin) { @Section(\"AdminSection\") }`",
+        "`@if (isAdmin) { <section>@RenderSection(\"AdminSection\")</section> }`",
+        "`@if (isAdmin) { @RenderSection(\"AdminSection\", true) }`"
+      ],
+      "answer": 0,
+      "explanation": "The `@if` statement allows you to conditionally render content, and `@RenderSection()` renders the content of a section defined in the view.",
+      "hint": "Combine conditional logic with section rendering."
+    },
+    {
+      "id": 16,
+      "question": "What is a View Component in ASP.NET Core MVC and how does it differ from a Partial View?",
+      "options": [
+        "View Components have their own controller logic, while Partial Views do not.",
+        "Partial Views can access the controller's data, while View Components cannot.",
+        "View Components are reusable UI components with associated logic, while Partial Views are primarily for presentation.",
+        "View Components are only for static content, while Partial Views can be dynamic."
+      ],
+      "answer": 0,
+      "explanation": "View Components encapsulate both the UI and the associated logic, making them more self-contained and reusable than Partial Views, which are primarily focused on presentation.",
+      "hint": "Think about the level of independence and functionality each component offers."
+    },
+    {
+      "id": 17,
+      "question": "What does the `asp-for` Tag Helper attribute do?",
+      "options": [
+        "It generates an HTML input element for a specific model property.",
+        "It specifies the action method to call.",
+        "It sets the controller to use.",
+        "It defines the validation rules for a property."
+      ],
+      "answer": 0,
+      "explanation": "`asp-for` generates an HTML input element (or other appropriate element) based on the specified model property, automatically handling name and value attributes.",
+      "hint": "Focus on how it relates to model properties and HTML input elements."
+    },
+    {
+      "id": 18,
+      "question": "Consider the following Razor code: `@Model.Name.ToUpper()`. What does this code do?",
+      "options": [
+        "Displays the value of the 'Name' property in lowercase.",
+        "Displays the value of the 'Name' property in uppercase.",
+        "Displays the type of the 'Name' property.",
+        "Displays the length of the 'Name' property."
+      ],
+      "answer": 1,
+      "explanation": "The `.ToUpper()` method is a C# string method that converts the string to uppercase.",
+      "hint": "Think about common string manipulation methods in C#."
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of Editor Templates?",
+      "options": [
+        "To define how a model property is displayed.",
+        "To define how a model property is edited in a form.",
+        "To validate model properties.",
+        "To handle AJAX requests."
+      ],
+      "answer": 1,
+      "explanation": "Editor Templates define the HTML markup used to render input elements for editing a specific model property, allowing for customized input controls.",
+      "hint": "Consider how you might want to customize the input field for a date or email address."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is the correct way to use a `RenderSection` in a layout when the view doesn't define a corresponding `Section`?",
+      "options": [
+        "The `RenderSection` will render nothing.",
+        "The `RenderSection` will throw an error.",
+        "The `RenderSection` will render a default message.",
+        "The `RenderSection` will render the entire layout."
+      ],
+      "answer": 0,
+      "explanation": "If a view doesn't define a section corresponding to a `RenderSection` in the layout, the `RenderSection` call will simply be ignored and nothing will be rendered.",
+      "hint": "Think about how sections are optional."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the `@inject` directive in Razor?",
+      "options": [
+        "To inject dependencies into the view.",
+        "To include another file.",
+        "To define a section.",
+        "To render a partial view."
+      ],
+      "answer": 0,
+      "explanation": "The `@inject` directive allows you to inject services (like database contexts or configuration providers) directly into your Razor views.",
+      "hint": "Think about dependency injection and how it applies to views."
+    },
+    {
+      "id": 22,
+      "question": "How can you prevent cross-site scripting (XSS) vulnerabilities when displaying user-provided data in a Razor view?",
+      "options": [
+        "Use `@Html.Raw()`",
+        "Use `@Html.Encode()`",
+        "Use `@Model.Data`",
+        "Use `@ViewBag.Data`"
+      ],
+      "answer": 1,
+      "explanation": "`@Html.Encode()` encodes potentially harmful characters in user-provided data, preventing them from being interpreted as HTML code.",
+      "hint": "Consider how to sanitize user input before displaying it."
+    },
+    {
+      "id": 23,
+      "question": "What is the difference between `_ViewStart.cshtml` and `_Layout.cshtml`?",
+      "options": [
+        "`_ViewStart.cshtml` defines the layout for all views, while `_Layout.cshtml` defines shared code for all views.",
+        "`_ViewStart.cshtml` runs before every view, while `_Layout.cshtml` defines the overall page structure.",
+        "`_Layout.cshtml` runs before every view, while `_ViewStart.cshtml` defines the overall page structure.",
+        "They are interchangeable."
+      ],
+      "answer": 1,
+      "explanation": "`_ViewStart.cshtml` is executed before each view, allowing you to set up common configurations or inject dependencies, while `_Layout.cshtml` defines the overall page structure and is used by `RenderBody()`.",
+      "hint": "Think about the order in which these files are processed."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the `[AutoValidateModel]` attribute in a controller action?",
+      "options": [
+        "It automatically validates the model before rendering the view.",
+        "It automatically validates the model before executing the action.",
+        "It disables model validation.",
+        "It only validates specific model properties."
+      ],
+      "answer": 1,
+      "explanation": "The `[AutoValidateModel]` attribute automatically triggers model validation before the action method is executed, ensuring that the model is in a valid state.",
+      "hint": "Consider when you want to ensure the model is valid before processing."
+    },
+    {
+      "id": 25,
+      "question": "Which Tag Helper is used to create a link to another action method?",
+      "options": [
+        "`<a asp-action=\"Index\" asp-controller=\"Home\">`",
+        "`<a href=\"@Url.Action(\"Index\", \"Home\")\">`",
+        "`<a asp-route-id=\"1\">`",
+        "`<a asp-for=\"MyModel\">`"
+      ],
+      "answer": 0,
+      "explanation": "The `asp-action` and `asp-controller` attributes within the `<a>` tag generate a URL to the specified action method and controller.",
+      "hint": "Focus on the attributes that define the link's destination."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of the `@functions` block in a Razor view?",
+      "options": [
+        "To define helper methods and properties for the view.",
+        "To define the layout for the view.",
+        "To define the model for the view.",
+        "To define the CSS styles for the view."
+      ],
+      "answer": 0,
+      "explanation": "The `@functions` block allows you to define custom helper methods and properties that can be used within the Razor view, promoting code reuse and organization.",
+      "hint": "Think about how to add custom logic to a view."
+    },
+    {
+      "id": 27,
+      "question": "What is the benefit of using Tag Helpers over Razor syntax for generating HTML?",
+      "options": [
+        "Tag Helpers are more concise.",
+        "Tag Helpers provide better type safety and intellisense.",
+        "Tag Helpers are easier to debug.",
+        "Tag Helpers are faster."
+      ],
+      "answer": 1,
+      "explanation": "Tag Helpers provide a type-safe and intellisense-rich way to generate HTML, reducing errors and improving developer productivity.",
+      "hint": "Consider the advantages of using a strongly typed approach."
+    },
+    {
+      "id": 28,
+      "question": "Consider the following code: `@if (ViewBag.ShowMessage) { <p>@ViewBag.Message</p> }`. What will happen if `ViewBag.ShowMessage` is null?",
+      "options": [
+        "The code will throw an error.",
+        "The code will render the message.",
+        "The code will render nothing.",
+        "The code will render 'null' as the message."
+      ],
+      "answer": 2,
+      "explanation": "If `ViewBag.ShowMessage` is null, the `if` condition will evaluate to false, and the code inside the block will not be executed.",
+      "hint": "Think about how null values are handled in C#."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `DataAnnotations` namespace in ASP.NET Core MVC?",
+      "options": [
+        "To define database schemas.",
+        "To define validation rules for model properties.",
+        "To define routing rules.",
+        "To define authentication policies."
+      ],
+      "answer": 1,
+      "explanation": "The `DataAnnotations` namespace provides attributes that can be applied to model properties to define validation rules, such as required fields, string length limits, and data type constraints.",
+      "hint": "Consider how to enforce data integrity in your models."
+    },
+    {
+      "id": 30,
+      "question": "How can you access the current `HttpContext` within a Razor view?",
+      "options": [
+        "`@HttpContext`",
+        "`@Context`",
+        "`@ViewContext.HttpContext`",
+        "`@Request`"
+      ],
+      "answer": 2,
+      "explanation": "You can access the `HttpContext` through the `ViewContext` property of the view, which provides access to the underlying HTTP request and response objects.",
+      "hint": "Think about how to access request-specific information."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of the `PartialViewAsync` method in a controller?",
+      "options": [
+        "To render a complete view.",
+        "To render a partial view asynchronously.",
+        "To redirect to another action.",
+        "To return a JSON result."
+      ],
+      "answer": 1,
+      "explanation": "The `PartialViewAsync` method renders a partial view asynchronously, improving performance by avoiding blocking the main thread.",
+      "hint": "Consider the benefits of asynchronous operations."
+    },
+    {
+      "id": 32,
+      "question": "What is the difference between `ViewData[\"Name\"]` and `@ViewBag.Name`?",
+      "options": [
+        "They are identical.",
+        "`ViewData` requires casting, while `@ViewBag` is dynamically typed.",
+        "`ViewBag` requires casting, while `ViewData` is dynamically typed.",
+        "`ViewData` is used for complex objects, while `@ViewBag` is used for simple values."
+      ],
+      "answer": 1,
+      "explanation": "`ViewData` is a dictionary object that requires explicit casting to the correct type, while `@ViewBag` uses dynamic properties, providing a more convenient but less type-safe approach.",
+      "hint": "Consider the type safety implications of each approach."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the `asp-validation-summary` Tag Helper?",
+      "options": [
+        "To display validation messages for a specific model property.",
+        "To display a summary of all validation errors.",
+        "To validate the entire model.",
+        "To format the display of a model property."
+      ],
+      "answer": 1,
+      "explanation": "The `asp-validation-summary` Tag Helper displays a list of all validation errors that occurred during model validation.",
+      "hint": "Think about how to provide a comprehensive overview of validation errors to the user."
+    },
+    {
+      "id": 34,
+      "question": "What is the role of the `_ViewImports.cshtml` file?",
+      "options": [
+        "It defines the layout for all views.",
+        "It specifies the namespaces that are automatically imported into all views.",
+        "It defines the model for all views.",
+        "It defines the CSS styles for all views."
+      ],
+      "answer": 1,
+      "explanation": "The `_ViewImports.cshtml` file allows you to specify namespaces that are automatically imported into all views in a specific area, reducing the need to explicitly include them in each view.",
+      "hint": "Think about how to avoid repetitive namespace declarations."
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is the correct way to render a partial view named 'MyPartial' with a model of type 'MyModel'?",
+      "options": [
+        "`@Html.Partial(\"MyPartial\", Model)`",
+        "`@Partial(\"MyPartial\", Model)`",
+        "`@RenderPartial(\"MyPartial\", Model)`",
+        "`@ViewBag.MyPartial`"
+      ],
+      "answer": 1,
+      "explanation": "`@Partial(",
+      "MyPartial": "Model)` is the correct syntax for rendering a partial view with a model.",
+      "hint": "Consider the standard syntax for rendering partial views."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the `[HttpPost]` attribute in a controller action?",
+      "options": [
+        "To specify that the action can only be accessed via GET requests.",
+        "To specify that the action can only be accessed via POST requests.",
+        "To validate the model.",
+        "To redirect to another action."
+      ],
+      "answer": 1,
+      "explanation": "The `[HttpPost]` attribute restricts access to the action method to only POST requests, ensuring that the action is only executed when data is submitted via a form.",
+      "hint": "Consider how to handle form submissions correctly."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `asp-for` Tag Helper when used with a checkbox?",
+      "options": [
+        "It generates a hidden input field.",
+        "It generates a checkbox with the correct name and value based on the model property.",
+        "It generates a text input field.",
+        "It generates a radio button."
+      ],
+      "answer": 1,
+      "explanation": "When used with a checkbox, `asp-for` generates a checkbox input element with the correct name and value, ensuring that the model property is correctly bound when the form is submitted.",
+      "hint": "Think about how checkboxes are represented in HTML."
+    },
+    {
+      "id": 38,
+      "question": "What is the difference between `RenderSection` and `RenderBody`?",
+      "options": [
+        "`RenderSection` renders content from a specific section defined in the view, while `RenderBody` renders the main content of the view.",
+        "`RenderBody` renders content from a specific section, while `RenderSection` renders the main content.",
+        "They are interchangeable.",
+        "Neither renders any content."
+      ],
+      "answer": 0,
+      "explanation": "`RenderBody` is the main placeholder for view content in a layout, while `RenderSection` renders content from sections defined in the view.",
+      "hint": "Consider their respective roles in the layout and view structure."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `@model` directive in a Razor view?",
+      "options": [
+        "To define the layout for the view.",
+        "To specify the model type that the view expects.",
+        "To define the CSS styles for the view.",
+        "To define the JavaScript code for the view."
+      ],
+      "answer": 1,
+      "explanation": "The `@model` directive specifies the type of the model that the view expects to receive from the controller, enabling strong typing and intellisense.",
+      "hint": "Think about how the view knows what data it will be working with."
+    },
+    {
+      "id": 40,
+      "question": "What is the benefit of using View Components over Partial Views when you need to perform complex logic?",
+      "options": [
+        "View Components are easier to test.",
+        "View Components can have their own controller logic.",
+        "Partial Views are more performant.",
+        "Partial Views are more reusable."
+      ],
+      "answer": 1,
+      "explanation": "View Components allow you to encapsulate both the UI and the associated logic, making them suitable for complex scenarios that require more than just presentation.",
+      "hint": "Consider the need for self-contained components with their own logic."
+    },
+    {
+      "id": 41,
+      "question": "You have a model with a property `DateOfBirth` of type `DateTime?`. How would you display it in a Razor view, handling the case where it's null?",
+      "options": [
+        "`@Model.DateOfBirth.ToString()`",
+        "`@Model.DateOfBirth?.ToString()`",
+        "`@if (Model.DateOfBirth != null) { @Model.DateOfBirth.ToString() }`",
+        "All of the above"
+      ],
+      "answer": 2,
+      "explanation": "Using an `if` statement ensures that you only attempt to access the `ToString()` method if `DateOfBirth` is not null, preventing a `NullReferenceException`.",
+      "hint": "Think about how to handle nullable types safely."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `[BindRequired]` attribute?",
+      "options": [
+        "It makes a property required for validation.",
+        "It specifies the order in which properties are bound.",
+        "It disables model binding for a property.",
+        "It automatically encodes the property value."
+      ],
+      "answer": 0,
+      "explanation": "The `[BindRequired]` attribute marks a property as required, meaning that model binding will fail if the property is not present in the request.",
+      "hint": "Consider how to enforce required fields in your model."
+    },
+    {
+      "id": 43,
+      "question": "What is the primary difference between `EditorFor` and `DisplayFor` Tag Helpers?",
+      "options": [
+        "`EditorFor` renders an input field for editing, while `DisplayFor` renders the value for display.",
+        "`DisplayFor` renders an input field for editing, while `EditorFor` renders the value for display.",
+        "They are interchangeable.",
+        "Neither renders any HTML."
+      ],
+      "answer": 0,
+      "explanation": "`EditorFor` generates HTML input elements for editing a model property, while `DisplayFor` generates HTML to display the value of a model property.",
+      "hint": "Consider their respective roles in editing and displaying data."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `_ValidationScriptsPartial` partial view?",
+      "options": [
+        "To define the validation rules for the model.",
+        "To include the necessary JavaScript files for client-side validation.",
+        "To render the validation summary.",
+        "To handle AJAX validation requests."
+      ],
+      "answer": 1,
+      "explanation": "The `_ValidationScriptsPartial` partial view includes the JavaScript files required for client-side validation, enabling validation to occur in the browser before submitting the form.",
+      "hint": "Think about how to enable client-side validation."
+    },
+    {
+      "id": 45,
+      "question": "You want to create a custom Tag Helper. Which interface must your Tag Helper class implement?",
+      "options": [
+        "`ITagHelper`",
+        "`IViewComponentHelper`",
+        "`IModelBinder`",
+        "`IActionFilter`"
+      ],
+      "answer": 0,
+      "explanation": "All custom Tag Helpers must implement the `ITagHelper` interface to be recognized and processed by the ASP.NET Core MVC framework.",
+      "hint": "Consider the core interface for creating custom HTML elements."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the `Html.ActionLink` method?",
+      "options": [
+        "To create a form.",
+        "To create a link to an action method.",
+        "To render a partial view.",
+        "To validate the model."
+      ],
+      "answer": 1,
+      "explanation": "The `Html.ActionLink` method generates an HTML anchor tag that links to a specific action method and controller.",
+      "hint": "Think about how to create links to other parts of your application."
+    },
+    {
+      "id": 47,
+      "question": "What is the benefit of using strongly typed views over using `ViewBag` or `ViewData`?",
+      "options": [
+        "Strongly typed views offer better performance.",
+        "Strongly typed views provide compile-time error checking.",
+        "Strongly typed views are easier to write.",
+        "Strongly typed views require less code."
+      ],
+      "answer": 1,
+      "explanation": "Strongly typed views allow the compiler to verify the correctness of your code, catching type-related errors at compile time rather than runtime, leading to more robust applications.",
+      "hint": "Consider the advantages of type safety and early error detection."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the `[FromForm]` attribute in a controller action parameter?",
+      "options": [
+        "It specifies that the parameter should be bound from the query string.",
+        "It specifies that the parameter should be bound from the request body (form data).",
+        "It validates the parameter.",
+        "It encrypts the parameter."
+      ],
+      "answer": 1,
+      "explanation": "The `[FromForm]` attribute explicitly indicates that the parameter should be bound from the form data submitted in the request body.",
+      "hint": "Consider how to explicitly bind parameters from form data."
+    },
+    {
+      "id": 49,
+      "question": "You have a complex model with nested objects. How can you create custom display templates for specific properties within those nested objects?",
+      "options": [
+        "By creating a template named `DisplayTemplates/NestedObjectType.cshtml`.",
+        "By creating a template named `DisplayTemplates/ModelType-PropertyName.cshtml`.",
+        "By creating a template named `DisplayTemplates/PropertyName.cshtml`.",
+        "Custom display templates cannot be created for nested objects."
+      ],
+      "answer": 1,
+      "explanation": "You can create custom display templates for specific properties within nested objects by naming the template `DisplayTemplates/ModelType-PropertyName.cshtml`.",
+      "hint": "Think about how to target specific properties within nested models."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `asp-prefix` attribute in a Tag Helper?",
+      "options": [
+        "It specifies the action method to call.",
+        "It adds a prefix to the name of the generated HTML element.",
+        "It sets the controller to use.",
+        "It defines the validation rules for a property."
+      ],
+      "answer": 1,
+      "explanation": "The `asp-prefix` attribute adds a prefix to the name of the generated HTML element, which is useful when working with nested models or complex forms.",
+      "hint": "Consider how to manage naming conflicts in complex forms."
+    }
+  ]
+}

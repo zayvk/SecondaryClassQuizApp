@@ -1,0 +1,670 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 1: ASP.NET Core Fundamentals",
+  "unitId": "aspnet-u1",
+  "categoryId": "cs",
+  "topics": [
+    "What is ASP.NET Core and how it differs from ASP.NET Framework",
+    "Project structure overview — wwwroot, Controllers, Views, Program.cs",
+    "Program.cs flow and application startup",
+    "Running and launching the application",
+    "Debugging basics — breakpoints, step over, step into, watching variables",
+    "Middleware concept and pipeline",
+    "Dependency Injection — what it is and basic usage",
+    "Built-in middleware vs custom middleware",
+    "Logging requests using custom middleware"
+  ],
+  "generatedAt": "2026-04-22T01:58:06Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which of the following best describes a key difference between ASP.NET Core and ASP.NET Framework?",
+      "options": [
+        "ASP.NET Core is exclusively Windows-based.",
+        "ASP.NET Core is open-source and cross-platform.",
+        "ASP.NET Framework supports only HTTP/1.1.",
+        "ASP.NET Core uses only Web Forms."
+      ],
+      "answer": 1,
+      "explanation": "ASP.NET Core is designed to be cross-platform, running on Windows, macOS, and Linux, and is open-source, unlike the Windows-only and largely closed-source ASP.NET Framework.",
+      "hint": "Consider the operating systems each framework supports."
+    },
+    {
+      "id": 2,
+      "question": "In an ASP.NET Core MVC project, where are view templates typically stored?",
+      "options": [
+        "In the Controllers folder",
+        "In the Models folder",
+        "In the Views folder",
+        "In the wwwroot folder"
+      ],
+      "answer": 2,
+      "explanation": "View templates (e.g., .cshtml files) are conventionally located within the 'Views' folder, organized by controller name.",
+      "hint": "Think about the separation of concerns in MVC."
+    },
+    {
+      "id": 3,
+      "question": "What is the primary purpose of the 'wwwroot' folder in an ASP.NET Core project?",
+      "options": [
+        "It contains the server-side code.",
+        "It stores static files like CSS, JavaScript, and images.",
+        "It holds the database connection strings.",
+        "It defines the application's routes."
+      ],
+      "answer": 1,
+      "explanation": "The 'wwwroot' folder serves as the root directory for static assets that are directly accessible by the client (browser).",
+      "hint": "Consider what types of files a web browser directly requests."
+    },
+    {
+      "id": 4,
+      "question": "What is the role of 'Program.cs' in an ASP.NET Core application?",
+      "options": [
+        "It defines the application's database schema.",
+        "It contains the main entry point and configures the web host.",
+        "It handles user authentication.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "'Program.cs' is the starting point of the application, responsible for creating and configuring the web host, and setting up the application pipeline.",
+      "hint": "Think about where the application begins execution."
+    },
+    {
+      "id": 5,
+      "question": "During application startup, what is the purpose of the 'ConfigureServices' method in 'Program.cs'?",
+      "options": [
+        "It defines the application's routes.",
+        "It configures the HTTP request pipeline.",
+        "It registers services with the dependency injection container.",
+        "It handles exceptions."
+      ],
+      "answer": 2,
+      "explanation": "The 'ConfigureServices' method is used to register dependencies and services that the application needs, making them available through dependency injection.",
+      "hint": "Consider how components get access to other components."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of the 'UseRouting' middleware in the ASP.NET Core pipeline?",
+      "options": [
+        "It handles authentication.",
+        "It parses incoming requests and maps them to controllers.",
+        "It serves static files.",
+        "It logs requests."
+      ],
+      "answer": 1,
+      "explanation": "'UseRouting' is responsible for matching incoming request paths to defined routes, determining which controller action should handle the request.",
+      "hint": "Think about how a request gets directed to the correct handler."
+    },
+    {
+      "id": 7,
+      "question": "What is Dependency Injection (DI)?",
+      "options": [
+        "A design pattern where components create their own dependencies.",
+        "A technique for managing database connections.",
+        "A design pattern where dependencies are provided to a component.",
+        "A method for handling exceptions."
+      ],
+      "answer": 2,
+      "explanation": "Dependency Injection is a design pattern where a component receives its dependencies from external sources rather than creating them itself, promoting loose coupling.",
+      "hint": "Consider the benefits of loose coupling."
+    },
+    {
+      "id": 8,
+      "question": "How do you register a service with the Dependency Injection container in ASP.NET Core?",
+      "options": [
+        "Using the 'using' statement.",
+        "Using the 'static' keyword.",
+        "Using the 'AddSingleton', 'AddScoped', or 'AddTransient' methods.",
+        "Using the 'try-catch' block."
+      ],
+      "answer": 2,
+      "explanation": "Services are registered using methods like 'AddSingleton', 'AddScoped', and 'AddTransient' within the 'ConfigureServices' method, specifying their lifetime.",
+      "hint": "Think about the 'ConfigureServices' method and its purpose."
+    },
+    {
+      "id": 9,
+      "question": "What is the difference between 'AddSingleton', 'AddScoped', and 'AddTransient' service lifetimes?",
+      "options": [
+        "They all create a new instance for each request.",
+        "Singleton creates one instance per application, Scoped per request, Transient per dependency.",
+        "Transient creates one instance per application, Scoped per request, Singleton per dependency.",
+        "They are interchangeable and have no functional difference."
+      ],
+      "answer": 1,
+      "explanation": "Singleton creates a single instance for the entire application lifetime, Scoped creates a new instance for each request, and Transient creates a new instance every time it's requested.",
+      "hint": "Consider how often a new instance of the service is created."
+    },
+    {
+      "id": 10,
+      "question": "What is middleware in ASP.NET Core?",
+      "options": [
+        "A type of database connection.",
+        "A component that handles requests and responses in the HTTP pipeline.",
+        "A method for defining routes.",
+        "A way to create views."
+      ],
+      "answer": 1,
+      "explanation": "Middleware components are executed sequentially in the HTTP pipeline to handle requests and responses, modifying or processing them as needed.",
+      "hint": "Think about the flow of a request through the application."
+    },
+    {
+      "id": 11,
+      "question": "How do you add custom middleware to the ASP.NET Core pipeline?",
+      "options": [
+        "Using the 'app.UseRouting()' method.",
+        "Using the 'app.UseMiddleware<T>()' method.",
+        "Using the 'app.Run()' method.",
+        "Using the 'app.UseStaticFiles()' method."
+      ],
+      "answer": 1,
+      "explanation": "Custom middleware is added to the pipeline using the 'app.UseMiddleware<T>()' method, where 'T' is the type of your middleware class.",
+      "hint": "Consider how you would integrate your own code into the request processing flow."
+    },
+    {
+      "id": 12,
+      "question": "What is the purpose of built-in middleware like 'UseStaticFiles'? ",
+      "options": [
+        "To handle database connections.",
+        "To serve static assets like CSS and JavaScript.",
+        "To manage user authentication.",
+        "To define application routes."
+      ],
+      "answer": 1,
+      "explanation": "'UseStaticFiles' middleware is responsible for serving static files from the 'wwwroot' directory, making them accessible to the client.",
+      "hint": "Think about what files a web browser directly requests."
+    },
+    {
+      "id": 13,
+      "question": "You need to log every incoming request's URL and timestamp. Which is the best approach?",
+      "options": [
+        "Use the built-in logging framework directly in the controller.",
+        "Create a custom middleware that intercepts the request and logs the information.",
+        "Log the information in the 'Program.cs' file.",
+        "Use a database trigger."
+      ],
+      "answer": 1,
+      "explanation": "Custom middleware is ideal for intercepting requests and performing actions like logging before the request reaches the controller, providing a centralized logging mechanism.",
+      "hint": "Consider where you can intercept every request."
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of the 'Ilogger' interface in ASP.NET Core?",
+      "options": [
+        "It defines the application's routes.",
+        "It provides a standardized way to log messages.",
+        "It handles user authentication.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "The 'ILogger' interface provides a consistent and flexible way to log messages at different levels (e.g., Debug, Information, Warning, Error).",
+      "hint": "Think about how you would record events and errors in your application."
+    },
+    {
+      "id": 15,
+      "question": "What is the role of the 'Startup.cs' file in older versions of ASP.NET Core (prior to .NET 6)?",
+      "options": [
+        "It defines the application's database schema.",
+        "It contains the main entry point and configures the web host.",
+        "It handles user authentication.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "In older versions, 'Startup.cs' contained the 'ConfigureServices' and 'Configure' methods, responsible for configuring the dependency injection container and the HTTP request pipeline, respectively.",
+      "hint": "Think about where application configuration used to reside."
+    },
+    {
+      "id": 16,
+      "question": "You've set a breakpoint in your controller action. What does 'Step Into' do?",
+      "options": [
+        "Executes the current line and moves to the next line in the same method.",
+        "Executes the current line and moves into the method call on that line.",
+        "Executes the current line and moves out of the current method.",
+        "Stops the debugging process."
+      ],
+      "answer": 1,
+      "explanation": "'Step Into' executes the current line of code and, if that line contains a method call, moves the debugger's execution point inside that method.",
+      "hint": "Consider what happens when you encounter a function call."
+    },
+    {
+      "id": 17,
+      "question": "What does 'Step Over' do during debugging?",
+      "options": [
+        "Executes the current line and moves into the method call on that line.",
+        "Executes the current line and moves to the next line in the same method.",
+        "Executes the current line and moves out of the current method.",
+        "Stops the debugging process."
+      ],
+      "answer": 1,
+      "explanation": "'Step Over' executes the current line of code, including any method calls, but does not move the debugger's execution point inside those methods.",
+      "hint": "Consider how this differs from 'Step Into'."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of 'watching' variables during debugging?",
+      "options": [
+        "To change the value of a variable during runtime.",
+        "To monitor the value of a variable as the code executes.",
+        "To delete a variable.",
+        "To rename a variable."
+      ],
+      "answer": 1,
+      "explanation": "'Watching' variables allows you to monitor their values as the code executes, helping you understand the program's state and identify potential issues.",
+      "hint": "Think about how you can track the state of your program."
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a valid lifetime scope for services registered with Dependency Injection?",
+      "options": [
+        "Singleton",
+        "Scoped",
+        "Transient",
+        "Persistent"
+      ],
+      "answer": 3,
+      "explanation": "'Persistent' is not a valid lifetime scope. The valid scopes are Singleton, Scoped, and Transient.",
+      "hint": "Recall the standard service lifetime options."
+    },
+    {
+      "id": 20,
+      "question": "You have a service that needs to be recreated for each HTTP request. Which lifetime scope should you use?",
+      "options": [
+        "Singleton",
+        "Scoped",
+        "Transient",
+        "Any of the above"
+      ],
+      "answer": 2,
+      "explanation": "Transient creates a new instance of the service every time it's requested, making it suitable for request-specific dependencies.",
+      "hint": "Consider the frequency of instance creation."
+    },
+    {
+      "id": 21,
+      "question": "Consider the following middleware pipeline: `app.UseRouting(); app.UseEndpoints(); app.UseAuthentication();`. What will happen if `app.UseAuthentication()` is moved before `app.UseRouting()`?",
+      "options": [
+        "The application will throw an error.",
+        "Authentication will not work correctly.",
+        "Routing will not work correctly.",
+        "The application will function as expected."
+      ],
+      "answer": 2,
+      "explanation": "Routing needs to happen before authentication because routing determines the endpoint, and authentication needs to know the endpoint to apply authorization rules.",
+      "hint": "Think about the order in which these components need to operate."
+    },
+    {
+      "id": 22,
+      "question": "What is the primary benefit of using middleware?",
+      "options": [
+        "Improved database performance.",
+        "Modular and reusable request processing logic.",
+        "Simplified view rendering.",
+        "Enhanced security through encryption."
+      ],
+      "answer": 1,
+      "explanation": "Middleware promotes modularity and reusability by encapsulating request processing logic into independent components that can be easily added, removed, or reordered.",
+      "hint": "Consider how middleware contributes to code organization."
+    },
+    {
+      "id": 23,
+      "question": "You want to create a middleware that adds a custom header to every response. What interface must your middleware class implement?",
+      "options": [
+        "IController",
+        "IViewComponent",
+        "IEndpoint",
+        "IMiddleware"
+      ],
+      "answer": 3,
+      "explanation": "Custom middleware classes must implement the 'IMiddleware' interface, which defines the 'Invoke' method that handles the request and response.",
+      "hint": "Think about the core requirement for a middleware component."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the 'InvokeAsync' method in a middleware component?",
+      "options": [
+        "It handles exceptions.",
+        "It defines the application's routes.",
+        "It processes the request and passes it to the next middleware in the pipeline.",
+        "It renders the view."
+      ],
+      "answer": 2,
+      "explanation": "The 'InvokeAsync' method is the core of a middleware component, responsible for processing the request and either handling it or passing it on to the next middleware in the pipeline.",
+      "hint": "Consider the flow of a request through the middleware pipeline."
+    },
+    {
+      "id": 25,
+      "question": "Which of the following best describes the role of the 'Configure' method in 'Program.cs'?",
+      "options": [
+        "It registers services with the dependency injection container.",
+        "It defines the application's routes.",
+        "It configures the HTTP request pipeline.",
+        "It handles user authentication."
+      ],
+      "answer": 2,
+      "explanation": "The 'Configure' method is responsible for defining the HTTP request pipeline, adding middleware components to handle incoming requests and outgoing responses.",
+      "hint": "Think about how the application processes requests."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of the 'app.Run()' method in the 'Configure' method?",
+      "options": [
+        "It starts the application.",
+        "It defines the application's routes.",
+        "It adds middleware to the pipeline.",
+        "It handles the final request and sends the response."
+      ],
+      "answer": 3,
+      "explanation": "'app.Run()' is typically used as the last middleware in the pipeline to handle the final request and send the response.",
+      "hint": "Consider where the request processing ends."
+    },
+    {
+      "id": 27,
+      "question": "You are debugging an application and notice a variable's value is changing unexpectedly. What debugging technique would be most helpful?",
+      "options": [
+        "Step Into",
+        "Step Over",
+        "Watch",
+        "Continue"
+      ],
+      "answer": 2,
+      "explanation": "Using the 'Watch' window allows you to continuously monitor the value of a variable as the code executes, helping you identify when and where it changes.",
+      "hint": "Think about how to track a variable's value over time."
+    },
+    {
+      "id": 28,
+      "question": "What is the benefit of using custom middleware for logging requests?",
+      "options": [
+        "It automatically logs all requests without any configuration.",
+        "It allows you to customize the logging format and destination.",
+        "It improves the application's performance.",
+        "It simplifies the debugging process."
+      ],
+      "answer": 1,
+      "explanation": "Custom middleware allows you to tailor the logging process to your specific needs, controlling the information logged and where it's stored.",
+      "hint": "Consider the flexibility of custom solutions."
+    },
+    {
+      "id": 29,
+      "question": "In ASP.NET Core, what is the role of the 'IActionResult' interface?",
+      "options": [
+        "It defines the structure of a view.",
+        "It represents the result of a controller action.",
+        "It handles database connections.",
+        "It manages user authentication."
+      ],
+      "answer": 1,
+      "explanation": "'IActionResult' represents the result of a controller action, allowing you to return different types of responses (e.g., ViewResult, JsonResult, ContentResult).",
+      "hint": "Think about what a controller action returns."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the 'UseHttpsRedirection' middleware?",
+      "options": [
+        "It enables HTTPS for the application.",
+        "It redirects all HTTP requests to HTTPS.",
+        "It disables HTTPS for the application.",
+        "It manages SSL certificates."
+      ],
+      "answer": 1,
+      "explanation": "'UseHttpsRedirection' automatically redirects all incoming HTTP requests to their HTTPS equivalents, ensuring secure communication.",
+      "hint": "Consider the importance of secure connections."
+    },
+    {
+      "id": 31,
+      "question": "You have a complex application with many dependencies. Which DI lifetime scope would be most appropriate for a service that should be reused across multiple requests but should not be a singleton?",
+      "options": [
+        "Singleton",
+        "Scoped",
+        "Transient",
+        "None of the above"
+      ],
+      "answer": 1,
+      "explanation": "Scoped lifetime creates a new instance of the service for each request, ensuring that it's reused within a single request but not shared across multiple requests.",
+      "hint": "Think about the scope of the dependency."
+    },
+    {
+      "id": 32,
+      "question": "What is the primary difference between built-in and custom middleware?",
+      "options": [
+        "Built-in middleware is more efficient.",
+        "Built-in middleware is pre-defined by ASP.NET Core, while custom middleware is created by developers.",
+        "Custom middleware is easier to debug.",
+        "Built-in middleware is always preferred."
+      ],
+      "answer": 1,
+      "explanation": "Built-in middleware provides common functionality out-of-the-box, while custom middleware allows developers to implement specific logic tailored to their application's needs.",
+      "hint": "Consider who creates each type of middleware."
+    },
+    {
+      "id": 33,
+      "question": "You're experiencing performance issues in your ASP.NET Core application. Which debugging technique would be most helpful in identifying bottlenecks?",
+      "options": [
+        "Setting breakpoints",
+        "Using the 'Watch' window",
+        "Profiling the application",
+        "Stepping through the code"
+      ],
+      "answer": 2,
+      "explanation": "Profiling the application allows you to identify performance bottlenecks by measuring the execution time of different parts of the code.",
+      "hint": "Think about tools that measure performance."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the 'appsettings.json' file?",
+      "options": [
+        "It defines the application's routes.",
+        "It stores configuration settings for the application.",
+        "It contains the application's database schema.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "'appsettings.json' is used to store configuration settings such as connection strings, API keys, and other environment-specific values.",
+      "hint": "Think about where you would store application settings."
+    },
+    {
+      "id": 35,
+      "question": "You need to log sensitive information (e.g., passwords) in your application. What is the best practice?",
+      "options": [
+        "Log the information directly to the console.",
+        "Log the information to a file.",
+        "Avoid logging sensitive information altogether.",
+        "Encrypt the information before logging it."
+      ],
+      "answer": 2,
+      "explanation": "Logging sensitive information is a security risk. The best practice is to avoid logging it altogether. If absolutely necessary, encrypt it before logging.",
+      "hint": "Consider the security implications of logging sensitive data."
+    },
+    {
+      "id": 36,
+      "question": "Consider this middleware snippet: `public async Task InvokeAsync(HttpContext context) { await context.Response.WriteAsync(\"Middleware executed!\"); }`. What will happen when this middleware is added to the pipeline?",
+      "options": [
+        "The application will crash.",
+        "Every request will return \"Middleware executed!\".",
+        "The middleware will only execute for specific routes.",
+        "The middleware will only execute for static files."
+      ],
+      "answer": 1,
+      "explanation": "This middleware writes \"Middleware executed!\" to the response stream for every request that passes through it, effectively overriding the application's response.",
+      "hint": "Think about what the middleware does to the response."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the 'IWebHostEnvironment' interface?",
+      "options": [
+        "It provides access to the application's configuration settings.",
+        "It provides information about the environment the application is running in (e.g., Development, Production).",
+        "It handles user authentication.",
+        "It defines the application's routes."
+      ],
+      "answer": 1,
+      "explanation": "'IWebHostEnvironment' provides information about the environment the application is running in, allowing you to adapt the application's behavior based on the environment.",
+      "hint": "Think about how the application might behave differently in different environments."
+    },
+    {
+      "id": 38,
+      "question": "You want to create a middleware that only executes for requests to a specific path (e.g., '/admin'). How would you achieve this?",
+      "options": [
+        "Use an 'if' statement to check the request path in the 'InvokeAsync' method.",
+        "Use the 'app.Map()' method to route requests to the middleware.",
+        "Use the 'app.UseWhen()' method to conditionally add the middleware.",
+        "Use the 'app.UseEndpointRouting()' method."
+      ],
+      "answer": 2,
+      "explanation": "'app.UseWhen()' allows you to conditionally add middleware to the pipeline based on a predicate, such as checking the request path.",
+      "hint": "Consider how to selectively apply middleware."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the 'UseDeveloperExceptionPage' middleware?",
+      "options": [
+        "It redirects all HTTP requests to HTTPS.",
+        "It displays detailed error information in the browser during development.",
+        "It logs all requests to a file.",
+        "It handles user authentication."
+      ],
+      "answer": 1,
+      "explanation": "'UseDeveloperExceptionPage' displays detailed error information in the browser during development, making it easier to debug issues. It should not be used in production.",
+      "hint": "Think about what you want to see when an error occurs during development."
+    },
+    {
+      "id": 40,
+      "question": "What is the difference between 'AddTransient' and 'AddScoped' when registering a dependency that interacts with a database context?",
+      "options": [
+        "'AddTransient' is always the better choice.",
+        "'AddScoped' ensures a new database context is created for each request, while 'AddTransient' creates a new context for each dependency.",
+        "'AddTransient' ensures a new database context is created for each request, while 'AddScoped' creates a new context for each dependency.",
+        "There is no difference."
+      ],
+      "answer": 1,
+      "explanation": "'AddScoped' is generally preferred for database contexts to ensure that a new context is created for each request, preventing potential threading issues.",
+      "hint": "Consider the lifecycle of a database connection."
+    },
+    {
+      "id": 41,
+      "question": "You've implemented a custom middleware that throws an exception. How can you ensure that this exception is handled gracefully and doesn't crash the application?",
+      "options": [
+        "Catch the exception in the 'InvokeAsync' method and log it.",
+        "Use the 'try-catch' block around the entire pipeline.",
+        "Rely on the default exception handler.",
+        "Disable exception handling."
+      ],
+      "answer": 0,
+      "explanation": "Catching the exception within the 'InvokeAsync' method allows you to log the error and potentially send a custom error response to the client, preventing the application from crashing.",
+      "hint": "Think about error handling within the middleware itself."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the 'IConfiguration' interface?",
+      "options": [
+        "It defines the application's routes.",
+        "It provides access to configuration data from various sources (e.g., appsettings.json, environment variables).",
+        "It handles user authentication.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "The 'IConfiguration' interface provides a unified way to access configuration data from different sources, making it easy to manage application settings.",
+      "hint": "Think about how the application reads its settings."
+    },
+    {
+      "id": 43,
+      "question": "You need to access a configuration value in your controller. How would you do it?",
+      "options": [
+        "Use the 'HttpContext.Configuration' property.",
+        "Inject 'IConfiguration' into the controller's constructor.",
+        "Read the value directly from 'appsettings.json'.",
+        "Use the 'Environment.GetEnvironmentVariable()' method."
+      ],
+      "answer": 1,
+      "explanation": "Injecting 'IConfiguration' into the controller's constructor allows you to access configuration values in a type-safe and testable manner.",
+      "hint": "Consider the benefits of dependency injection."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the 'EndpointRouting' middleware?",
+      "options": [
+        "It handles authentication.",
+        "It maps incoming requests to endpoint configurations.",
+        "It serves static files.",
+        "It logs requests."
+      ],
+      "answer": 1,
+      "explanation": "The 'EndpointRouting' middleware is responsible for matching incoming requests to defined endpoints, which are then handled by the appropriate controller actions.",
+      "hint": "Think about how requests are routed to specific handlers."
+    },
+    {
+      "id": 45,
+      "question": "You've noticed that your application is logging too much information, including sensitive data. What should you do?",
+      "options": [
+        "Disable logging altogether.",
+        "Configure the logging level to filter out unnecessary information.",
+        "Encrypt the log files.",
+        "Ignore the issue."
+      ],
+      "answer": 1,
+      "explanation": "Configuring the logging level allows you to control the amount of information logged, filtering out unnecessary details and protecting sensitive data.",
+      "hint": "Consider the importance of controlling log output."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of the 'UseAuthorization' middleware?",
+      "options": [
+        "It handles request routing.",
+        "It enforces authorization policies.",
+        "It serves static files.",
+        "It logs requests."
+      ],
+      "answer": 1,
+      "explanation": "'UseAuthorization' middleware enforces authorization policies, ensuring that only authorized users can access specific resources.",
+      "hint": "Think about how access control is implemented."
+    },
+    {
+      "id": 47,
+      "question": "You are designing an application that requires a single instance of a complex object throughout the application's lifetime. Which dependency injection scope should you use?",
+      "options": [
+        "Transient",
+        "Scoped",
+        "Singleton",
+        "Any of the above"
+      ],
+      "answer": 2,
+      "explanation": "Singleton ensures that only one instance of the object is created and shared throughout the application's lifetime, making it ideal for complex objects that are expensive to create.",
+      "hint": "Consider the need for a single, shared instance."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the 'IActivatedRouteParameters' interface?",
+      "options": [
+        "It provides access to the application's configuration settings.",
+        "It provides access to route parameters extracted from the URL.",
+        "It handles user authentication.",
+        "It defines the application's views."
+      ],
+      "answer": 1,
+      "explanation": "The 'IActivatedRouteParameters' interface provides access to route parameters extracted from the URL, allowing you to access values passed in the route.",
+      "hint": "Think about how you would access values from the URL."
+    },
+    {
+      "id": 49,
+      "question": "You want to add a middleware that modifies the request body before it reaches the controller. Where should you place this middleware in the pipeline?",
+      "options": [
+        "After 'UseRouting' and before 'UseEndpoints'.",
+        "After 'UseEndpoints'.",
+        "Before 'UseRouting'.",
+        "It doesn't matter where you place it."
+      ],
+      "answer": 0,
+      "explanation": "The middleware should be placed before 'UseEndpoints' to intercept and modify the request body before it's processed by the controller.",
+      "hint": "Consider the order in which the request body needs to be modified."
+    },
+    {
+      "id": 50,
+      "question": "What is the primary benefit of using a structured logging framework (e.g., Serilog, NLog) instead of the built-in 'ILogger'?",
+      "options": [
+        "Improved performance.",
+        "More flexible configuration and output options.",
+        "Simplified debugging.",
+        "Reduced code complexity."
+      ],
+      "answer": 1,
+      "explanation": "Structured logging frameworks offer more flexible configuration options, allowing you to customize the logging format, destination, and filtering rules.",
+      "hint": "Consider the limitations of the built-in logging framework."
+    }
+  ]
+}

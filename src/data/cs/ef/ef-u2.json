@@ -1,0 +1,668 @@
+{
+  "subject": "Entity Framework Core",
+  "unit": "Unit 2: Entity Modeling and Migrations",
+  "unitId": "ef-u2",
+  "categoryId": "cs",
+  "topics": [
+    "Entity modeling basics — classes as tables",
+    "Primary keys — conventions and explicit configuration",
+    "Required vs optional fields",
+    "Data Annotations — Key, Required, MaxLength, Column, Table",
+    "Fluent API configuration vs Data Annotations",
+    "Conventions vs explicit configuration",
+    "What are Migrations and why they are needed",
+    "Creating and applying migrations — Add-Migration, Update-Database",
+    "Rolling back migrations",
+    "Seeding data with migrations"
+  ],
+  "generatedAt": "2026-04-22T02:16:12Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In Entity Framework Core, what is the primary purpose of migrations?",
+      "options": [
+        "To manage database connections",
+        "To track changes to your data model and apply them to the database",
+        "To optimize database query performance",
+        "To handle user authentication"
+      ],
+      "answer": 1,
+      "explanation": "Migrations provide a way to evolve your database schema in a controlled and versioned manner, keeping it synchronized with your application's data model.",
+      "hint": "Think about how your database needs to change when you update your application's code."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is the default convention EF Core uses to determine the primary key of an entity?",
+      "options": [
+        "A property named 'ID'",
+        "A property named 'EntityId'",
+        "A property named 'PrimaryKey'",
+        "A property with the 'Key' data annotation"
+      ],
+      "answer": 0,
+      "explanation": "By convention, EF Core assumes a property named 'ID' (or the entity name + 'Id') is the primary key if no explicit configuration is provided.",
+      "hint": "Consider what EF Core would do if you didn't specify a primary key."
+    },
+    {
+      "id": 3,
+      "question": "What does the `[Required]` data annotation signify in EF Core?",
+      "options": [
+        "The property can be null",
+        "The property is the primary key",
+        "The property must have a value and cannot be null",
+        "The property is used for filtering data"
+      ],
+      "answer": 2,
+      "explanation": "The `[Required]` annotation enforces that a property must have a value and cannot be left null when creating or updating an entity.",
+      "hint": "Think about what 'required' means in general programming terms."
+    },
+    {
+      "id": 4,
+      "question": "How can you explicitly configure a primary key using the Fluent API?",
+      "options": [
+        "Using the `[Key]` data annotation",
+        "Using the `HasKey()` method in the `OnModelCreating()` method",
+        "Using the `PrimaryKey()` method in the entity constructor",
+        "Using the `IsPrimaryKey()` extension method"
+      ],
+      "answer": 1,
+      "explanation": "The `HasKey()` method within the `OnModelCreating()` method of your `DbContext` allows you to explicitly define the primary key for an entity.",
+      "hint": "The Fluent API is used for configuration within your DbContext class."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the `Update-Database` command in EF Core?",
+      "options": [
+        "To create a new migration",
+        "To apply the latest migration to the database",
+        "To roll back the last migration",
+        "To seed the database with initial data"
+      ],
+      "answer": 1,
+      "explanation": "`Update-Database` applies the changes defined in your pending migrations to the actual database schema.",
+      "hint": "This command is used after you've created a migration."
+    },
+    {
+      "id": 6,
+      "question": "Which approach generally offers more control over entity modeling: Data Annotations or Fluent API?",
+      "options": [
+        "Data Annotations",
+        "Fluent API",
+        "They offer the same level of control",
+        "Neither offers significant control"
+      ],
+      "answer": 1,
+      "explanation": "The Fluent API provides greater flexibility and control over entity modeling, allowing for more complex configurations and relationships.",
+      "hint": "Consider where you would define more complex database logic."
+    },
+    {
+      "id": 7,
+      "question": "What happens if you run `Add-Migration` without specifying a name?",
+      "options": [
+        "It fails with an error",
+        "It uses a default name based on the current timestamp",
+        "It prompts you for a name",
+        "It applies the migration immediately"
+      ],
+      "answer": 1,
+      "explanation": "If no name is provided, `Add-Migration` automatically generates a name based on the current date and time.",
+      "hint": "Think about how EF Core needs to uniquely identify each migration."
+    },
+    {
+      "id": 8,
+      "question": "How can you roll back the last applied migration?",
+      "options": [
+        "Using the `Update-Database` command with a rollback flag",
+        "Using the `Add-Migration` command with a rollback flag",
+        "Using the `Drop-Migration` command",
+        "Using the `Revert-Migration` command"
+      ],
+      "answer": 0,
+      "explanation": "The `Update-Database` command can be used with the `--rollback` flag to revert the last applied migration.",
+      "hint": "You've used 'Update-Database' to apply, how might you undo it?"
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of seeding data with migrations?",
+      "options": [
+        "To create the database schema",
+        "To populate the database with initial or default data",
+        "To optimize database performance",
+        "To encrypt sensitive data"
+      ],
+      "answer": 1,
+      "explanation": "Seeding data allows you to populate your database with initial data, such as lookup values or default user accounts, during the migration process.",
+      "hint": "Think about what data you might want in your database from the very beginning."
+    },
+    {
+      "id": 10,
+      "question": "Consider the following entity class. What will be the default column name for the 'Name' property in the database? \n\n`public class Product { public string Name { get; set; } }`",
+      "options": [
+        "Product.Name",
+        "Name",
+        "ProductName",
+        "Product_Name"
+      ],
+      "answer": 1,
+      "explanation": "By convention, EF Core uses the property name directly as the column name in the database.",
+      "hint": "EF Core tries to be simple and intuitive by default."
+    },
+    {
+      "id": 11,
+      "question": "What does the `[MaxLength(50)]` data annotation do?",
+      "options": [
+        "Specifies the data type of the property",
+        "Sets the maximum length of a string property",
+        "Specifies the primary key",
+        "Defines a foreign key relationship"
+      ],
+      "answer": 1,
+      "explanation": "The `[MaxLength(50)]` annotation limits the number of characters that can be stored in a string property in the database.",
+      "hint": "Think about how you would limit the size of a text field."
+    },
+    {
+      "id": 12,
+      "question": "You have a property `public string? Description { get; set; }`. How does EF Core interpret this in terms of nullability?",
+      "options": [
+        "It will create a NOT NULL column in the database",
+        "It will create a nullable column in the database",
+        "It will ignore the property",
+        "It will throw an error during migration"
+      ],
+      "answer": 1,
+      "explanation": "The `?` after the string type indicates a nullable reference type, which translates to a nullable column in the database.",
+      "hint": "Consider the meaning of the '?' in C#."
+    },
+    {
+      "id": 13,
+      "question": "What is the benefit of using explicit configuration over relying solely on conventions?",
+      "options": [
+        "It makes the code more concise",
+        "It reduces the amount of code needed",
+        "It provides greater control and clarity over the database schema",
+        "It improves database performance"
+      ],
+      "answer": 2,
+      "explanation": "Explicit configuration allows you to precisely define the database schema, avoiding ambiguity and ensuring it matches your application's requirements.",
+      "hint": "Think about the potential problems with relying on assumptions."
+    },
+    {
+      "id": 14,
+      "question": "Which method in `DbContext` is used to override the default behavior of EF Core and configure your entities?",
+      "options": [
+        "`OnConfiguring()`",
+        "`OnModelCreating()`",
+        "`OnActionExecuting()`",
+        "`OnStartup()`"
+      ],
+      "answer": 1,
+      "explanation": "`OnModelCreating()` is the method where you use the Fluent API to configure your entities, relationships, and constraints.",
+      "hint": "This method is specifically designed for model configuration."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the `migrationHistory` table that EF Core creates?",
+      "options": [
+        "To store user authentication information",
+        "To track which migrations have been applied to the database",
+        "To store application settings",
+        "To cache database queries"
+      ],
+      "answer": 1,
+      "explanation": "The `migrationHistory` table keeps a record of which migrations have already been applied to the database, preventing them from being reapplied.",
+      "hint": "Think about how EF Core knows what changes have already been made."
+    },
+    {
+      "id": 16,
+      "question": "You want to rename a table using EF Core. Which approach is best suited for this?",
+      "options": [
+        "Using the `[Table]` data annotation",
+        "Using the Fluent API in `OnModelCreating()`",
+        "Modifying the database directly",
+        "Using SQL scripts"
+      ],
+      "answer": 1,
+      "explanation": "The Fluent API in `OnModelCreating()` provides the most controlled and maintainable way to rename tables within your EF Core model.",
+      "hint": "Consider the benefits of managing schema changes through code."
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between `Add-Migration` and `Script-Migration`?",
+      "options": [
+        "`Add-Migration` applies changes, `Script-Migration` creates a script",
+        "`Add-Migration` creates a script, `Script-Migration` applies changes",
+        "They are identical commands",
+        "One is for SQL Server, the other for other databases"
+      ],
+      "answer": 0,
+      "explanation": "`Add-Migration` generates a migration file, while `Script-Migration` generates a SQL script containing the changes defined in the migration.",
+      "hint": "Think about the output of each command."
+    },
+    {
+      "id": 18,
+      "question": "You have a migration that fails to apply. What is the first step you should take?",
+      "options": [
+        "Delete the migration file",
+        "Rollback the previous migration",
+        "Update the database manually",
+        "Restart the application"
+      ],
+      "answer": 1,
+      "explanation": "Rolling back the previous migration will revert the database to a known good state before attempting to apply the failing migration again.",
+      "hint": "You need to undo the changes before trying again."
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of the `DbContextOptionsBuilder`?",
+      "options": [
+        "To build the database schema",
+        "To configure the connection string and other options for the `DbContext`",
+        "To create migrations",
+        "To seed data"
+      ],
+      "answer": 1,
+      "explanation": "The `DbContextOptionsBuilder` is used to configure the connection string, database provider, and other options for your `DbContext` instance.",
+      "hint": "This builder is used during the setup of your DbContext."
+    },
+    {
+      "id": 20,
+      "question": "Consider this Fluent API configuration: `modelBuilder.Entity<Product>().Property(p => p.Price).HasColumnType(",
+      "do?": "options\": [\"Sets the primary key of the Product entity",
+      "Specifies the maximum length of the Price property": "Defines the data type of the Price column as decimal with precision 18 and scale 2",
+      "Makes the Price property required": "",
+      "answer": 2,
+      "explanation": "This configuration explicitly sets the data type of the 'Price' column in the database to `decimal(18,2)`, ensuring accurate storage of decimal values.",
+      "hint": "Pay attention to the `HasColumnType()` method."
+    },
+    {
+      "id": 21,
+      "question": "What is the primary difference between `Include()` and `Load()` in EF Core when eager loading?",
+      "options": [
+        "`Include()` loads related entities in a single query, `Load()` loads them in separate queries",
+        "`Include()` loads related entities in separate queries, `Load()` loads them in a single query",
+        "They are identical",
+        "`Include()` is used for filtering, `Load()` for sorting"
+      ],
+      "answer": 0,
+      "explanation": "`Include()` performs eager loading within the initial query, while `Load()` loads related entities in a separate query after the initial query has completed.",
+      "hint": "Consider the performance implications of each approach."
+    },
+    {
+      "id": 22,
+      "question": "You want to define a unique constraint on a column using the Fluent API. How would you do it?",
+      "options": [
+        "Using the `[Unique]` data annotation",
+        "Using the `HasIndex()` method with `IsUnique()`",
+        "Using the `HasConstraint()` method",
+        "Using the `Unique()` extension method"
+      ],
+      "answer": 1,
+      "explanation": "The `HasIndex()` method, combined with `IsUnique()`, allows you to define a unique constraint on a column or set of columns.",
+      "hint": "Think about how you would enforce uniqueness in a database."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the `using` statement when working with `DbContext`?",
+      "options": [
+        "To automatically commit changes to the database",
+        "To ensure the `DbContext` is disposed of properly, releasing database resources",
+        "To enable lazy loading",
+        "To cache database queries"
+      ],
+      "answer": 1,
+      "explanation": "The `using` statement ensures that the `DbContext` is disposed of correctly when it's no longer needed, releasing database connections and other resources.",
+      "hint": "Proper resource management is crucial in database interactions."
+    },
+    {
+      "id": 24,
+      "question": "What is the role of the `SaveChanges()` method in `DbContext`?",
+      "options": [
+        "To retrieve data from the database",
+        "To apply changes made to entities to the database",
+        "To create a new migration",
+        "To roll back the last migration"
+      ],
+      "answer": 1,
+      "explanation": "`SaveChanges()` persists the changes made to tracked entities to the underlying database.",
+      "hint": "This method is essential for making your changes permanent."
+    },
+    {
+      "id": 25,
+      "question": "You have a nullable foreign key property. What does this imply about the relationship?",
+      "options": [
+        "The relationship is required",
+        "The relationship is optional",
+        "The foreign key must always have a value",
+        "The foreign key cannot be updated"
+      ],
+      "answer": 1,
+      "explanation": "A nullable foreign key indicates that the relationship is optional, meaning the entity can exist without being related to another entity.",
+      "hint": "Think about what 'nullable' means in the context of relationships."
+    },
+    {
+      "id": 26,
+      "question": "What is the purpose of the `OnModelCreating()` method's `modelBuilder` parameter?",
+      "options": [
+        "It's used to connect to the database",
+        "It provides access to the model being built, allowing for configuration",
+        "It's used to seed data",
+        "It's used to execute SQL queries"
+      ],
+      "answer": 1,
+      "explanation": "The `modelBuilder` parameter in `OnModelCreating()` provides access to the model being built, allowing you to configure entities, relationships, and constraints.",
+      "hint": "This parameter is your gateway to customizing the database schema."
+    },
+    {
+      "id": 27,
+      "question": "Which of the following is a potential drawback of relying heavily on EF Core conventions?",
+      "options": [
+        "Increased code verbosity",
+        "Reduced flexibility and control over the database schema",
+        "Slower database performance",
+        "Increased development time"
+      ],
+      "answer": 1,
+      "explanation": "Relying too much on conventions can lead to a database schema that doesn't perfectly match your application's requirements, reducing flexibility and control.",
+      "hint": "Consider the trade-offs between simplicity and customization."
+    },
+    {
+      "id": 28,
+      "question": "You need to seed a large amount of data. Which approach is generally more efficient?",
+      "options": [
+        "Seeding data directly in the `OnModelCreating()` method",
+        "Using a separate seeding method called after applying migrations",
+        "Using SQL scripts",
+        "Using a third-party seeding library"
+      ],
+      "answer": 1,
+      "explanation": "A separate seeding method called after applying migrations allows for more organized and efficient seeding of large datasets.",
+      "hint": "Think about separating concerns and optimizing performance."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `HasConversion()` method in the Fluent API?",
+      "options": [
+        "To convert data types between the application and the database",
+        "To define a foreign key relationship",
+        "To specify the primary key",
+        "To set the maximum length of a property"
+      ],
+      "answer": 0,
+      "explanation": "The `HasConversion()` method allows you to map between different data types in your application and the database, such as converting a string to a JSON object.",
+      "hint": "This is useful when you need to store data in a different format in the database."
+    },
+    {
+      "id": 30,
+      "question": "What happens if you attempt to apply a migration that has already been applied?",
+      "options": [
+        "It applies the migration again, potentially causing errors",
+        "It skips the migration",
+        "It throws an exception",
+        "It rolls back the previous migration"
+      ],
+      "answer": 2,
+      "explanation": "EF Core checks the `migrationHistory` table and throws an exception if you attempt to apply a migration that has already been applied.",
+      "hint": "The `migrationHistory` table is there to prevent this."
+    },
+    {
+      "id": 31,
+      "question": "You have a one-to-many relationship between `Author` and `Book`. How would you configure this using the Fluent API?",
+      "options": [
+        "`modelBuilder.Entity<Author>().HasMany(a => a.Books).WithOne(b => b.Author);`",
+        "`modelBuilder.Entity<Book>().HasMany(b => b.Authors).WithOne(a => a.Author);`",
+        "`modelBuilder.Entity<Author>().HasOne(a => a.Book).WithMany(b => b.Authors);`",
+        "`modelBuilder.Entity<Book>().HasOne(b => b.Author).WithMany(a => a.Books);`"
+      ],
+      "answer": 0,
+      "explanation": "This configuration correctly defines the one-to-many relationship, indicating that an author can have many books, and each book has one author.",
+      "hint": "Think about which side of the relationship has the 'many' side."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `IsDeleted` property pattern in EF Core?",
+      "options": [
+        "To mark entities as permanently deleted from the database",
+        "To implement soft deletes, allowing entities to be logically deleted without physical removal",
+        "To track changes to entities",
+        "To encrypt sensitive data"
+      ],
+      "answer": 1,
+      "explanation": "The `IsDeleted` property pattern allows you to implement soft deletes, where entities are marked as deleted but remain in the database for auditing or recovery purposes.",
+      "hint": "Consider the benefits of not physically deleting data."
+    },
+    {
+      "id": 33,
+      "question": "You want to create a composite primary key. How do you configure this using the Fluent API?",
+      "options": [
+        "Using a single `[Key]` annotation on one of the properties",
+        "Using the `HasKey()` method and specifying all properties in the key",
+        "Using the `IsPrimaryKey()` extension method",
+        "It's not possible to create composite keys in EF Core"
+      ],
+      "answer": 1,
+      "explanation": "The `HasKey()` method allows you to specify multiple properties that together form the composite primary key.",
+      "hint": "A composite key consists of multiple columns."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between `AsNoTracking()` and not using it when querying?",
+      "options": [
+        "`AsNoTracking()` improves performance by disabling change tracking",
+        "`AsNoTracking()` enables change tracking",
+        "There is no difference",
+        "`AsNoTracking()` only works with read-only properties"
+      ],
+      "answer": 0,
+      "explanation": "`AsNoTracking()` optimizes read-only queries by disabling change tracking, which reduces overhead and improves performance.",
+      "hint": "Think about whether you need to update the entities you're querying."
+    },
+    {
+      "id": 35,
+      "question": "You have a migration that introduces a new column with a default value. What is the best practice for handling existing data?",
+      "options": [
+        "Leave the existing data as null",
+        "Provide a default value in the migration code to populate existing rows",
+        "Manually update the existing data after applying the migration",
+        "Delete the existing data and re-seed it"
+      ],
+      "answer": 1,
+      "explanation": "Providing a default value in the migration code ensures that existing rows are populated with a meaningful value when the new column is added.",
+      "hint": "Consider the impact on existing data when adding a new column."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of the `ValueConverter` in EF Core?",
+      "options": [
+        "To convert data types between the application and the database",
+        "To encrypt sensitive data",
+        "To validate data before saving it",
+        "To cache database queries"
+      ],
+      "answer": 0,
+      "explanation": "A `ValueConverter` allows you to map between different data types in your application and the database, providing flexibility in how data is stored.",
+      "hint": "This is similar to `HasConversion()` but more flexible."
+    },
+    {
+      "id": 37,
+      "question": "You want to prevent EF Core from automatically generating a foreign key constraint. How do you achieve this?",
+      "options": [
+        "Using the `[NotMapped]` data annotation",
+        "Using the `Ignore()` method in the Fluent API",
+        "Using the `HasNoKey()` method",
+        "It's not possible to prevent automatic foreign key generation"
+      ],
+      "answer": 1,
+      "explanation": "The `Ignore()` method in the Fluent API allows you to exclude a relationship from being automatically configured as a foreign key constraint.",
+      "hint": "Think about how to tell EF Core to ignore a relationship."
+    },
+    {
+      "id": 38,
+      "question": "What is the potential issue with using long-running migrations in a production environment?",
+      "options": [
+        "They can cause database downtime",
+        "They can slow down application performance",
+        "They can corrupt the database",
+        "They can cause security vulnerabilities"
+      ],
+      "answer": 0,
+      "explanation": "Long-running migrations can block database operations and cause significant downtime for your application.",
+      "hint": "Consider the impact on users while the migration is running."
+    },
+    {
+      "id": 39,
+      "question": "You need to define a custom index with a specific name. How do you do this using the Fluent API?",
+      "options": [
+        "Using the `HasIndex()` method with a name parameter",
+        "Using the `CreateIndex()` method",
+        "Using the `AddIndex()` method",
+        "It's not possible to specify a custom index name"
+      ],
+      "answer": 0,
+      "explanation": "The `HasIndex()` method allows you to specify a custom name for the index, providing more control over the database schema.",
+      "hint": "Look for a method that allows you to name the index."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `DbContextPool` in EF Core?",
+      "options": [
+        "To manage database connections and improve performance",
+        "To seed data",
+        "To create migrations",
+        "To encrypt sensitive data"
+      ],
+      "answer": 0,
+      "explanation": "The `DbContextPool` manages a pool of `DbContext` instances, reducing the overhead of creating and disposing of contexts for each request.",
+      "hint": "This is related to performance optimization."
+    },
+    {
+      "id": 41,
+      "question": "You have a property `public int? Age { get; set; }`. What does the question mark signify in the context of EF Core and database mapping?",
+      "options": [
+        "It indicates a primary key",
+        "It indicates a foreign key",
+        "It indicates a nullable integer column in the database",
+        "It indicates a unique constraint"
+      ],
+      "answer": 2,
+      "explanation": "The question mark signifies a nullable integer type, which translates to a column in the database that can accept null values.",
+      "hint": "Think about what 'nullable' means in terms of database columns."
+    },
+    {
+      "id": 42,
+      "question": "What is the primary advantage of using code-first migrations over database-first approach?",
+      "options": [
+        "Faster development cycle",
+        "Better control over database schema",
+        "Easier to manage complex relationships",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Code-first migrations offer a faster development cycle, better control over the database schema, and easier management of complex relationships compared to the database-first approach.",
+      "hint": "Consider the flexibility and control offered by code-first."
+    },
+    {
+      "id": 43,
+      "question": "You want to define a default value for a column using the Fluent API. How would you do it?",
+      "options": [
+        "Using the `HasDefaultValue()` method",
+        "Using the `HasColumnType()` method",
+        "Using the `IsRequired()` method",
+        "It's not possible to define default values using the Fluent API"
+      ],
+      "answer": 0,
+      "explanation": "The `HasDefaultValue()` method allows you to specify a default value for a column in the database.",
+      "hint": "Look for a method specifically designed for setting default values."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of the `ShadowProperty` in EF Core?",
+      "options": [
+        "To hide a property from the application code",
+        "To define a property that exists only in the database and is not part of the entity class",
+        "To encrypt a property",
+        "To validate a property"
+      ],
+      "answer": 1,
+      "explanation": "A `ShadowProperty` is a property that exists only in the database schema and is not defined in the entity class, allowing you to store additional data without modifying the entity.",
+      "hint": "Think about properties that are database-specific and not part of your application logic."
+    },
+    {
+      "id": 45,
+      "question": "You are experiencing performance issues with eager loading. What could be a potential solution?",
+      "options": [
+        "Use lazy loading",
+        "Use `AsNoTracking()`",
+        "Use explicit loading",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Using lazy loading, `AsNoTracking()`, or explicit loading can help improve performance by reducing the amount of data loaded from the database.",
+      "hint": "Consider different loading strategies and their performance implications."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of the `migrationHistory` table in preventing issues during concurrent database updates?",
+      "options": [
+        "It prevents multiple migrations from running simultaneously",
+        "It ensures that migrations are applied in the correct order",
+        "It tracks which migrations have been applied by each user",
+        "It encrypts the migration scripts"
+      ],
+      "answer": 1,
+      "explanation": "The `migrationHistory` table ensures that migrations are applied in the correct order, preventing conflicts and data inconsistencies during concurrent database updates.",
+      "hint": "Think about the importance of order when applying changes to a database."
+    },
+    {
+      "id": 47,
+      "question": "You need to define a unique index on multiple columns. How do you configure this using the Fluent API?",
+      "options": [
+        "Using the `HasIndex()` method and specifying the columns with `IsUnique()`, `HasName()`",
+        "Using the `CreateIndex()` method with multiple columns",
+        "Using the `AddIndex()` method with multiple columns",
+        "It's not possible to create unique indexes on multiple columns"
+      ],
+      "answer": 0,
+      "explanation": "The `HasIndex()` method allows you to specify multiple columns and configure the index as unique using `IsUnique()` and give it a name using `HasName()`. ",
+      "hint": "Think about how to specify multiple columns for the index."
+    },
+    {
+      "id": 48,
+      "question": "What is the difference between `SaveChanges()` and `SaveChangesAsync()` in EF Core?",
+      "options": [
+        "`SaveChanges()` is synchronous, `SaveChangesAsync()` is asynchronous",
+        "`SaveChanges()` is asynchronous, `SaveChangesAsync()` is synchronous",
+        "They are identical",
+        "One is for SQL Server, the other for other databases"
+      ],
+      "answer": 0,
+      "explanation": "`SaveChanges()` executes synchronously, blocking the current thread until the changes are persisted, while `SaveChangesAsync()` executes asynchronously, allowing the thread to remain responsive.",
+      "hint": "Consider the implications of blocking vs. non-blocking operations."
+    },
+    {
+      "id": 49,
+      "question": "You want to use a different column name in the database than the property name in your entity. Which approach is preferred?",
+      "options": [
+        "Using the `[Column]` data annotation",
+        "Using the Fluent API in `OnModelCreating()`",
+        "Modifying the database directly",
+        "Using SQL scripts"
+      ],
+      "answer": 1,
+      "explanation": "Using the Fluent API in `OnModelCreating()` provides a more maintainable and controlled way to map property names to different column names in the database.",
+      "hint": "Consider the benefits of managing schema changes through code."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `HasData()` method in the Fluent API?",
+      "options": [
+        "To define a default value for a column",
+        "To seed data during migration",
+        "To encrypt sensitive data",
+        "To validate data before saving it"
+      ],
+      "answer": 1,
+      "explanation": "The `HasData()` method allows you to seed data directly into the database during migration, providing a convenient way to populate tables with initial values.",
+      "hint": "Think about how to add initial data to your database."
+    }
+  ]
+}

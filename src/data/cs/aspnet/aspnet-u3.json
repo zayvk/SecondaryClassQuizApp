@@ -1,0 +1,272 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 3: MVC Pattern — Controllers and Routing",
+  "unitId": "aspnet-u3",
+  "categoryId": "cs",
+  "topics": [
+    "MVC pattern — role of Model, View and Controller",
+    "Controllers and Action methods",
+    "IActionResult and return types — Ok, NotFound, BadRequest, Redirect",
+    "Routing basics — convention-based and attribute routing",
+    "Route parameters and constraints",
+    "Action filters and their use cases",
+    "Areas in MVC"
+  ],
+  "generatedAt": "2026-04-22T02:02:32Z",
+  "questions": [
+    [
+      {
+        "id": 1,
+        "question": "Which component in the MVC pattern is responsible for handling user input and interacting with the model?",
+        "options": [
+          "Model",
+          "View",
+          "Controller",
+          "Routing Engine"
+        ],
+        "answer": 2,
+        "explanation": "The Controller receives user input, processes it, and updates the Model accordingly, acting as an intermediary between the View and Model.",
+        "hint": "Think about which part of the pattern directly responds to user actions."
+      },
+      {
+        "id": 2,
+        "question": "What is the primary purpose of the 'Model' in the MVC pattern?",
+        "options": [
+          "Displaying data to the user",
+          "Handling user requests",
+          "Representing the application's data and business logic",
+          "Managing the application's routes"
+        ],
+        "answer": 2,
+        "explanation": "The Model encapsulates the application's data and the rules for manipulating that data, independent of the user interface.",
+        "hint": "Consider what part of the pattern holds the core data of your application."
+      },
+      {
+        "id": 3,
+        "question": "Which of the following is a valid return type for an Action Method in an ASP.NET Core MVC controller?",
+        "options": [
+          "String",
+          "Integer",
+          "IActionResult",
+          "Boolean"
+        ],
+        "answer": 2,
+        "explanation": "IActionResult is the base interface for all action result types, allowing for flexible return values like ViewResult, JsonResult, etc.",
+        "hint": "Think about what allows you to return different types of responses from your action."
+      },
+      {
+        "id": 4,
+        "question": "What does the 'Ok()' result in an ASP.NET Core MVC controller typically represent?",
+        "options": [
+          "An error occurred",
+          "The action was successful and returns data",
+          "The requested resource was not found",
+          "The request was invalid"
+        ],
+        "answer": 1,
+        "explanation": "Ok() returns a status code of 200 (OK) and optionally serializes an object to the response body, indicating success.",
+        "hint": "Consider the HTTP status code associated with a successful request."
+      },
+      {
+        "id": 5,
+        "question": "What is the purpose of the 'NotFound()' result in an ASP.NET Core MVC controller?",
+        "options": [
+          "To redirect the user to another page",
+          "To indicate a server error",
+          "To return a 404 Not Found error",
+          "To validate user input"
+        ],
+        "answer": 2,
+        "explanation": "NotFound() returns a 404 Not Found HTTP status code, signaling that the requested resource could not be located.",
+        "hint": "Think about what HTTP status code indicates a resource doesn't exist."
+      },
+      {
+        "id": 6,
+        "question": "What is the primary difference between convention-based routing and attribute routing in ASP.NET Core MVC?",
+        "options": [
+          "Convention-based routing uses attributes, while attribute routing uses configuration files",
+          "Attribute routing is more flexible and explicit, while convention-based routing relies on predefined rules",
+          "Convention-based routing is more performant than attribute routing",
+          "Attribute routing is only for Web API, while convention-based routing is for MVC"
+        ],
+        "answer": 1,
+        "explanation": "Attribute routing allows you to define routes directly on action methods using attributes, providing more control and clarity compared to convention-based routing's reliance on predefined rules.",
+        "hint": "Consider where the routing rules are defined in each approach."
+      },
+      {
+        "id": 7,
+        "question": "In attribute routing, what does the '[Route(",
+        "api/[controller]/{id}": " attribute signify?\",\n    \"options\": [\"Routes to the 'api' controller with no ID parameter\", \"Routes to the controller named 'api' with an 'id' parameter\", \"Routes to the current controller with an 'id' parameter, prefixed with 'api'\", \"Routes to the 'id' controller with an 'api' parameter\"],\n    \"answer\": 2,\n    \"explanation\": \"[controller] is a token that is replaced with the name of the controller, and {id} represents a route parameter.\",\n    \"hint\": \"Pay attention to the "
+      },
+      {
+        "id": 8,
+        "question": "What is a route constraint used for?",
+        "options": [
+          "To define the HTTP method for a route",
+          "To restrict the values that a route parameter can accept",
+          "To specify the order of route parameters",
+          "To define the controller for a route"
+        ],
+        "answer": 1,
+        "explanation": "Route constraints allow you to limit the possible values for route parameters, ensuring that only valid data is passed to the action method.",
+        "hint": "Think about how you can validate the input within a route."
+      },
+      {
+        "id": 9,
+        "question": "Which of the following is a valid route constraint for an integer ID?",
+        "options": [
+          "{id:alpha}",
+          "{id:bool}",
+          "{id:int}",
+          "{id:datetime}"
+        ],
+        "answer": 2,
+        "explanation": "{id:int}\" specifies that the 'id' route parameter must be an integer.",
+        "hint": "Consider the data type you want to restrict the parameter to."
+      },
+      {
+        "id": 10,
+        "question": "What is the purpose of Action Filters in ASP.NET Core MVC?",
+        "options": [
+          "To handle routing logic",
+          "To validate model data",
+          "To add pre- or post-processing logic to action methods",
+          "To render views"
+        ],
+        "answer": 2,
+        "explanation": "Action filters allow you to execute code before or after an action method is executed, enabling cross-cutting concerns like logging, authentication, and authorization.",
+        "hint": "Think about how you can add functionality that applies to multiple actions."
+      },
+      {
+        "id": 11,
+        "question": "Which type of Action Filter is executed *before* an action method?",
+        "options": [
+          "Result Filter",
+          "Exception Filter",
+          "Action Filter",
+          "Authorization Filter"
+        ],
+        "answer": 3,
+        "explanation": "Action Filters, when implemented correctly, can execute logic before the action method is invoked, allowing for pre-processing tasks.",
+        "hint": "Consider the order of execution in the action pipeline."
+      },
+      {
+        "id": 12,
+        "question": "What is the primary benefit of using Areas in an ASP.NET Core MVC application?",
+        "options": [
+          "To improve performance",
+          "To organize related functionality into logical groups",
+          "To simplify routing configuration",
+          "To reduce code duplication"
+        ],
+        "answer": 1,
+        "explanation": "Areas allow you to modularize a large MVC application by grouping related controllers, views, and models into separate areas, improving organization and maintainability.",
+        "hint": "Think about how you would structure a very large application."
+      },
+      {
+        "id": 13,
+        "question": "How do Areas affect the routing structure in an ASP.NET Core MVC application?",
+        "options": [
+          "They remove the need for routing configuration",
+          "They add a segment to the URL representing the area name",
+          "They automatically generate routes based on controller names",
+          "They only affect the view rendering process"
+        ],
+        "answer": 1,
+        "explanation": "Areas prepend the area name to the URL, creating a hierarchical structure that reflects the application's modular organization.",
+        "hint": "Consider how the URL changes when using areas."
+      },
+      {
+        "id": 14,
+        "question": "What is the difference between `RedirectToAction` and `RedirectToRouteResult`?",
+        "options": [
+          "`RedirectToAction` redirects to a specific route name, while `RedirectToRouteResult` redirects to an action method.",
+          "`RedirectToAction` redirects to an action method, while `RedirectToRouteResult` redirects to a specific route name.",
+          "They are interchangeable.",
+          "Neither can be used for redirection."
+        ],
+        "answer": 1,
+        "explanation": "`RedirectToAction` takes the action name and controller name as parameters, while `RedirectToRouteResult` takes route values to determine the destination.",
+        "hint": "Think about what information each method requires to perform the redirect."
+      },
+      {
+        "id": 15,
+        "question": "Which of the following best describes the role of the `ViewBag`?",
+        "options": [
+          "A strongly-typed model passed to the view",
+          "A dynamic property bag for passing data to the view",
+          "A caching mechanism for view data",
+          "A method for handling form submissions"
+        ],
+        "answer": 1,
+        "explanation": "The `ViewBag` is a dynamic property that allows you to pass data to the view without defining a strongly-typed model.",
+        "hint": "Consider how data is passed from the controller to the view without a specific model."
+      },
+      {
+        "id": 16,
+        "question": "What is the purpose of the `[BindProperty]` attribute?",
+        "options": [
+          "To automatically validate model data",
+          "To specify which properties of the model should be bound from the request",
+          "To encrypt sensitive data in the model",
+          "To cache model data"
+        ],
+        "answer": 1,
+        "explanation": "The `[BindProperty]` attribute allows you to control which properties of a model are populated from the HTTP request data.",
+        "hint": "Think about how you can selectively populate a model from request data."
+      },
+      {
+        "id": 17,
+        "question": "Consider the following route: `[Route(",
+        "Products/{category}/{id": "int}",
+        "Products/Books/abc`?": "options",
+        "The route will match successfully.": "The route will not match because 'abc' is not an integer.",
+        "The route will match, and 'abc' will be converted to 0.": "The route will throw an exception."
+      }
+    ],
+    {
+      "id": "int}` requires the 'id' parameter to be an integer. Since 'abc' is not an integer, the route will not match.",
+      "hint": "Pay attention to the route constraint on the 'id' parameter."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `[Bind]` attribute?",
+      "options": [
+        "To automatically validate model data",
+        "To specify which properties of the model should be bound from the request, allowing for whitelisting or blacklisting.",
+        "To encrypt sensitive data in the model",
+        "To cache model data"
+      ],
+      "answer": 1,
+      "explanation": "The `[Bind]` attribute allows you to explicitly specify which properties of a model should be bound from the request, providing more control over the binding process.",
+      "hint": "Think about how you can selectively populate a model from request data with more control than `[FromBody]`."
+    },
+    {
+      "id": 43,
+      "question": "Consider the following route: `[Route(",
+      "api/users/{id": "guid}",
+      "options": [
+        "The route will match successfully.",
+        "The route will not match because 'invalid-guid' is not a valid GUID.",
+        "The route will match, and 'invalid-guid' will be converted to a default GUID.",
+        "The route will throw an exception."
+      ],
+      "answer": 1,
+      "explanation": "The route constraint `{id:guid}` requires the 'id' parameter to be a valid GUID. Since 'invalid-guid' is not a valid GUID, the route will not match.",
+      "hint": "Pay attention to the route constraint on the 'id' parameter."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `[HttpDelete]` attribute?",
+      "options": [
+        "To specify the route for a GET request",
+        "To specify the route for a POST request",
+        "To specify the route for a DELETE request",
+        "To validate model data"
+      ],
+      "answer": 2,
+      "explanation": "The `[HttpDelete]` attribute restricts the action method to handle only HTTP DELETE requests, typically used for deleting existing resources.",
+      "hint": "Consider which HTTP method is used for deleting resources."
+    }
+  ]
+}

@@ -286,6 +286,70 @@
             "name": "Objects and DOM Manipulation"
           }
         ]
+      },
+      {
+        "id": "aspnet",
+        "name": "ASP.NET Core, MVC and Web API",
+        "icon": "🔷",
+        "units": 7,
+        "unitList": [
+          {
+            "id": "aspnet-u1",
+            "name": "ASP.NET Core Fundamentals"
+          },
+          {
+            "id": "aspnet-u2",
+            "name": "Web and HTTP Fundamentals"
+          },
+          {
+            "id": "aspnet-u3",
+            "name": "MVC Pattern — Controllers and Routing"
+          },
+          {
+            "id": "aspnet-u4",
+            "name": "Views, Razor and Data Passing"
+          },
+          {
+            "id": "aspnet-u5",
+            "name": "Web API"
+          },
+          {
+            "id": "aspnet-u6",
+            "name": "Validation, Error Handling and Security"
+          },
+          {
+            "id": "aspnet-u7",
+            "name": "Database Integration and Deployment"
+          }
+        ]
+      },
+      {
+        "id": "ef",
+        "name": "Entity Framework Core",
+        "icon": "🗃️",
+        "units": 5,
+        "unitList": [
+          {
+            "id": "ef-u1",
+            "name": "EF Core Fundamentals"
+          },
+          {
+            "id": "ef-u2",
+            "name": "Entity Modeling and Migrations"
+          },
+          {
+            "id": "ef-u3",
+            "name": "CRUD Operations"
+          },
+          {
+            "id": "ef-u4",
+            "name": "Relationships and Querying"
+          },
+          {
+            "id": "ef-u5",
+            "name": "Loading Strategies and Best Practices"
+          }
+        ]
       }
     ]
   },

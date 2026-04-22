@@ -1,0 +1,670 @@
+{
+  "subject": "Entity Framework Core",
+  "unit": "Unit 1: EF Core Fundamentals",
+  "unitId": "ef-u1",
+  "categoryId": "cs",
+  "topics": [
+    "What is an ORM and why it exists",
+    "What is Entity Framework Core",
+    "EF Core vs raw SQL — when to use each",
+    "Code First vs Database First vs Model First approaches",
+    "What is DbContext and its role",
+    "What is DbSet and how it maps to a table",
+    "DbContext lifecycle — why it should be short-lived",
+    "Registering DbContext with Dependency Injection",
+    "Connection strings and configuring the database provider"
+  ],
+  "generatedAt": "2026-04-22T02:13:58Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of an Object-Relational Mapper (ORM)?",
+      "options": [
+        "To directly execute SQL queries.",
+        "To map objects to relational database tables.",
+        "To manage database server infrastructure.",
+        "To provide a graphical interface for database design."
+      ],
+      "answer": 1,
+      "explanation": "ORMs bridge the gap between object-oriented programming and relational databases by mapping objects to database tables, reducing the need for manual SQL.",
+      "hint": "Think about how you represent data in your code versus how it's stored in a database."
+    },
+    {
+      "id": 2,
+      "question": "Which of the following is a key benefit of using an ORM like Entity Framework Core?",
+      "options": [
+        "Increased database performance in all scenarios.",
+        "Reduced development time and improved code maintainability.",
+        "Complete elimination of the need for database administration.",
+        "Guaranteed protection against SQL injection attacks without any additional effort."
+      ],
+      "answer": 1,
+      "explanation": "ORMs automate database interactions, leading to faster development and cleaner code, though performance gains aren't guaranteed and security still requires careful consideration.",
+      "hint": "Consider the repetitive tasks involved in database access without an ORM."
+    },
+    {
+      "id": 3,
+      "question": "When would using raw SQL queries be more appropriate than using Entity Framework Core?",
+      "options": [
+        "When performing simple CRUD operations.",
+        "When needing to optimize performance for complex queries.",
+        "When working with a small database.",
+        "When rapid prototyping is the primary goal."
+      ],
+      "answer": 1,
+      "explanation": "Raw SQL allows for fine-grained control over query execution, which can be crucial for optimizing performance in complex scenarios where the ORM's generated SQL is inefficient.",
+      "hint": "Think about situations where you need absolute control over the SQL that's executed."
+    },
+    {
+      "id": 4,
+      "question": "What is the main difference between the Code First and Database First approaches in Entity Framework Core?",
+      "options": [
+        "Code First starts with the database schema, while Database First starts with the code.",
+        "Code First starts with the code, while Database First starts with the database schema.",
+        "Code First is only for new projects, while Database First is for existing databases.",
+        "Code First is more performant than Database First."
+      ],
+      "answer": 1,
+      "explanation": "Code First defines the database schema through code, while Database First generates code from an existing database schema.",
+      "hint": "Consider where the initial definition of your data model originates."
+    },
+    {
+      "id": 5,
+      "question": "In the Model First approach, how is the database schema defined?",
+      "options": [
+        "Through C# code.",
+        "Visually using a modeling tool.",
+        "By reverse engineering an existing database.",
+        "Automatically by EF Core based on code conventions."
+      ],
+      "answer": 1,
+      "explanation": "Model First involves designing the database schema visually using a modeling tool, and then EF Core generates the code and database schema from that model.",
+      "hint": "Think about a visual designer for your database."
+    },
+    {
+      "id": 6,
+      "question": "What is the role of the `DbContext` class in Entity Framework Core?",
+      "options": [
+        "It represents a single table in the database.",
+        "It represents a session of interaction with the database.",
+        "It defines the data models.",
+        "It handles the physical storage of the database."
+      ],
+      "answer": 1,
+      "explanation": "The `DbContext` class is the main entry point for interacting with the database, representing a session of interaction and managing changes to entities.",
+      "hint": "Think of it as a gateway to your database."
+    },
+    {
+      "id": 7,
+      "question": "What is a `DbSet` in Entity Framework Core?",
+      "options": [
+        "A collection of connection strings.",
+        "A representation of a database table as a collection of entities.",
+        "A class that defines the database schema.",
+        "A method for executing raw SQL queries."
+      ],
+      "answer": 1,
+      "explanation": "A `DbSet` represents a table in the database and provides methods for querying and manipulating the entities in that table.",
+      "hint": "Consider how you would access data from a specific table."
+    },
+    {
+      "id": 8,
+      "question": "Why is it generally recommended to keep the `DbContext` lifecycle short-lived?",
+      "options": [
+        "To reduce memory consumption.",
+        "To avoid potential concurrency issues.",
+        "To ensure proper resource disposal.",
+        "All of the above."
+      ],
+      "answer": 3,
+      "explanation": "Short-lived `DbContext` instances help manage resources efficiently, prevent concurrency problems, and ensure proper disposal of database connections.",
+      "hint": "Think about the resources a `DbContext` holds and how long they should be held for."
+    },
+    {
+      "id": 9,
+      "question": "How can you register a `DbContext` with Dependency Injection (DI) in ASP.NET Core?",
+      "options": [
+        "By creating an instance of the `DbContext` directly in the controller.",
+        "By adding the `DbContext` to the `services` collection in `Startup.cs`.",
+        "By using a static factory method.",
+        "By creating a singleton instance of the `DbContext`."
+      ],
+      "answer": 1,
+      "explanation": "Registering the `DbContext` with DI allows ASP.NET Core to manage its lifecycle and provide instances where needed, promoting loose coupling and testability.",
+      "hint": "Think about how ASP.NET Core manages dependencies."
+    },
+    {
+      "id": 10,
+      "question": "What is the purpose of a connection string in Entity Framework Core?",
+      "options": [
+        "To define the data models.",
+        "To specify the database server and credentials.",
+        "To configure the ORM mapping.",
+        "To define the database schema."
+      ],
+      "answer": 1,
+      "explanation": "A connection string provides the necessary information for EF Core to connect to the database, including the server address, database name, and authentication credentials.",
+      "hint": "Think about what information is needed to connect to a database."
+    },
+    {
+      "id": 11,
+      "question": "Which method is used to configure the database provider (e.g., SQL Server, PostgreSQL) in EF Core?",
+      "options": [
+        "Using the `UseInMemoryDatabase` method.",
+        "Using the `UseSqlServer` or `UseNpgsql` methods in `OnConfiguring`.",
+        "By specifying the provider in the connection string.",
+        "Automatically detected by EF Core."
+      ],
+      "answer": 1,
+      "explanation": "The `UseSqlServer`, `UseNpgsql`, etc., methods are used in the `OnConfiguring` method of the `DbContext` to specify the database provider.",
+      "hint": "Consider where you would tell EF Core which database system you're using."
+    },
+    {
+      "id": 12,
+      "question": "Consider the following code snippet. What will happen when `SaveChanges()` is called? \n```csharp\nvar context = new MyDbContext();\ncontext.Products.Add(new Product { Name = \"Test Product\" });\ncontext.SaveChanges();\n```",
+      "options": [
+        "The product will be added to the database.",
+        "The product will be added to the in-memory cache.",
+        "An exception will be thrown.",
+        "Nothing will happen."
+      ],
+      "answer": 0,
+      "explanation": "The `SaveChanges()` method persists the changes made in the context to the database.",
+      "hint": "Think about the purpose of the `SaveChanges()` method."
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of the `OnModelCreating` method in a `DbContext`?",
+      "options": [
+        "To configure the database connection.",
+        "To define the data models.",
+        "To customize the database schema and relationships.",
+        "To handle exceptions during database operations."
+      ],
+      "answer": 2,
+      "explanation": "The `OnModelCreating` method allows you to configure the database schema, define relationships between entities, and apply other customizations to the model.",
+      "hint": "Think about where you would define relationships between your entities."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following best describes the relationship between a `DbContext` and a database connection?",
+      "options": [
+        "A `DbContext` always uses a single, persistent database connection.",
+        "A `DbContext` can use multiple database connections.",
+        "A `DbContext` creates a new database connection for each operation.",
+        "A `DbContext` relies on a connection pool managed by the database provider."
+      ],
+      "answer": 3,
+      "explanation": "EF Core typically uses a connection pool managed by the database provider to efficiently manage database connections, and a `DbContext` utilizes connections from this pool.",
+      "hint": "Consider the performance implications of creating a new connection for every operation."
+    },
+    {
+      "id": 15,
+      "question": "What is the benefit of using migrations in Entity Framework Core?",
+      "options": [
+        "To automatically generate database code.",
+        "To track changes to the database schema over time.",
+        "To improve database performance.",
+        "To simplify data access code."
+      ],
+      "answer": 1,
+      "explanation": "Migrations allow you to evolve your database schema in a controlled and versioned manner, making it easier to manage changes and collaborate with others.",
+      "hint": "Think about how you would update your database schema when your code changes."
+    },
+    {
+      "id": 16,
+      "question": "What does the `HasKey()` method do in the `OnModelCreating` method?",
+      "options": [
+        "Defines a foreign key relationship.",
+        "Specifies the primary key for an entity.",
+        "Creates an index on a column.",
+        "Sets the data type of a column."
+      ],
+      "answer": 1,
+      "explanation": "The `HasKey()` method is used to explicitly define the primary key for an entity in the database schema.",
+      "hint": "Think about how you identify a unique record in a table."
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of the `Include()` method in a LINQ query with EF Core?",
+      "options": [
+        "To filter the results of the query.",
+        "To sort the results of the query.",
+        "To eagerly load related entities.",
+        "To project the results into a different type."
+      ],
+      "answer": 2,
+      "explanation": "The `Include()` method allows you to eagerly load related entities, reducing the number of database queries and improving performance.",
+      "hint": "Think about how to avoid the N+1 problem."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `AsNoTracking()` and a regular query in EF Core?",
+      "options": [
+        "`AsNoTracking()` returns a read-only result set.",
+        "`AsNoTracking()` caches the results.",
+        "`AsNoTracking()` executes the query asynchronously.",
+        "`AsNoTracking()` uses a different database connection."
+      ],
+      "answer": 0,
+      "explanation": "`AsNoTracking()` optimizes read-only queries by preventing EF Core from tracking changes to the entities, improving performance.",
+      "hint": "Think about scenarios where you only need to read data and don't need to update it."
+    },
+    {
+      "id": 19,
+      "question": "Consider a scenario where you need to perform a complex calculation on the database server. Which approach would be most efficient?",
+      "options": [
+        "Retrieve all the data to the application and perform the calculation in memory.",
+        "Use raw SQL to perform the calculation directly on the database server.",
+        "Use EF Core's LINQ to SQL translation.",
+        "Use a stored procedure called from the application."
+      ],
+      "answer": 1,
+      "explanation": "Performing calculations on the database server using raw SQL or stored procedures is generally more efficient than retrieving data to the application and performing calculations in memory.",
+      "hint": "Think about where the data resides and where the processing power is located."
+    },
+    {
+      "id": 20,
+      "question": "What is the potential drawback of using a long-lived `DbContext`?",
+      "options": [
+        "Increased memory consumption.",
+        "Potential for concurrency issues and deadlocks.",
+        "Reduced database performance.",
+        "Difficulty in testing."
+      ],
+      "answer": 1,
+      "explanation": "Long-lived `DbContext` instances can lead to concurrency issues and deadlocks, especially in multi-threaded environments, as they hold database connections open for extended periods.",
+      "hint": "Think about how multiple users might interact with the same database context."
+    },
+    {
+      "id": 21,
+      "question": "What is the purpose of the `SaveChanges()` method returning an `int`?",
+      "options": [
+        "It indicates the number of rows affected by the changes.",
+        "It represents the primary key of the newly inserted row.",
+        "It indicates the number of entities saved.",
+        "It represents the execution time of the save operation."
+      ],
+      "answer": 0,
+      "explanation": "The `int` returned by `SaveChanges()` represents the number of rows affected by the insert, update, or delete operations.",
+      "hint": "Think about what information you might want to know after saving changes."
+    },
+    {
+      "id": 22,
+      "question": "Which of the following is NOT a valid database provider for Entity Framework Core?",
+      "options": [
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL",
+        "Oracle 8i"
+      ],
+      "answer": 3,
+      "explanation": "Oracle 8i is an older version of Oracle and is not officially supported by EF Core. Current versions of Oracle are supported.",
+      "hint": "Consider the current versions of database systems supported by EF Core."
+    },
+    {
+      "id": 23,
+      "question": "What is the role of the `IEntityTypeConfiguration` interface?",
+      "options": [
+        "It defines the connection string.",
+        "It allows you to configure the mapping for a specific entity.",
+        "It handles database migrations.",
+        "It provides a generic repository pattern."
+      ],
+      "answer": 1,
+      "explanation": "The `IEntityTypeConfiguration` interface allows you to define specific configurations for an entity, such as column mappings, constraints, and relationships.",
+      "hint": "Think about how you would customize the mapping for a specific entity."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the `QueryTrackingBehavior` option when configuring EF Core?",
+      "options": [
+        "To control the level of logging.",
+        "To control how EF Core tracks changes to entities.",
+        "To control the database provider.",
+        "To control the connection string."
+      ],
+      "answer": 1,
+      "explanation": "The `QueryTrackingBehavior` option allows you to specify whether EF Core should track changes to entities when querying the database.",
+      "hint": "Think about the performance implications of tracking changes."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the `UseLazyLoadingProxies()` method?",
+      "options": [
+        "To enable eager loading of related entities.",
+        "To enable lazy loading of related entities.",
+        "To improve database performance.",
+        "To simplify data access code."
+      ],
+      "answer": 1,
+      "explanation": "The `UseLazyLoadingProxies()` method enables lazy loading of related entities, meaning that related entities are only loaded when they are accessed.",
+      "hint": "Think about when you want to load related data."
+    },
+    {
+      "id": 26,
+      "question": "In Code First, what happens if you add a new property to an entity and then call `SaveChanges()`?",
+      "options": [
+        "An exception is thrown.",
+        "The new column is automatically added to the database.",
+        "The new property is ignored.",
+        "EF Core creates a migration to add the new column."
+      ],
+      "answer": 3,
+      "explanation": "EF Core detects the change and creates a migration that adds the new column to the database.",
+      "hint": "Think about how EF Core manages schema changes."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `HasOne()` and `WithMany()` methods in `OnModelCreating`?",
+      "options": [
+        "To define a one-to-one relationship.",
+        "To define a one-to-many relationship.",
+        "To define a many-to-many relationship.",
+        "To define a self-referencing relationship."
+      ],
+      "answer": 1,
+      "explanation": "These methods are used to define a one-to-many relationship between entities.",
+      "hint": "Think about how to represent a relationship where one entity can be associated with multiple other entities."
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between `Find()` and `FirstOrDefault()` when querying with EF Core?",
+      "options": [
+        "`Find()` uses the primary key to retrieve an entity, while `FirstOrDefault()` uses a LINQ expression.",
+        "`Find()` returns a queryable result, while `FirstOrDefault()` returns an entity.",
+        "`Find()` is only for read-only queries, while `FirstOrDefault()` can be used for updates.",
+        "`Find()` is more efficient than `FirstOrDefault()` in all cases."
+      ],
+      "answer": 0,
+      "explanation": "`Find()` is optimized for retrieving entities by their primary key, while `FirstOrDefault()` uses a LINQ expression to find the first entity that matches the specified criteria.",
+      "hint": "Think about how you would retrieve an entity if you know its primary key."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `DbContextOptionsBuilder`?",
+      "options": [
+        "To build the database schema.",
+        "To configure the `DbContext`.",
+        "To create database migrations.",
+        "To execute raw SQL queries."
+      ],
+      "answer": 1,
+      "explanation": "The `DbContextOptionsBuilder` is used to configure the `DbContext`, including the database provider, connection string, and other options.",
+      "hint": "Think about how you would set up the `DbContext` before using it."
+    },
+    {
+      "id": 30,
+      "question": "What is the potential issue with using `Attach()` without proper handling?",
+      "options": [
+        "It can lead to duplicate data in the database.",
+        "It can cause concurrency conflicts.",
+        "It can result in orphaned records.",
+        "It can lead to performance issues."
+      ],
+      "answer": 1,
+      "explanation": "If an entity is attached to the context and modified by another process, it can lead to concurrency conflicts when `SaveChanges()` is called.",
+      "hint": "Think about what happens if multiple users modify the same data simultaneously."
+    },
+    {
+      "id": 31,
+      "question": "You have a large table with millions of records. You need to retrieve only the first 10 records. Which EF Core method is most efficient?",
+      "options": [
+        "`ToList()` followed by taking the first 10 elements.",
+        "`Take(10)` applied directly to the query.",
+        "`Skip(0).Take(10)`",
+        "`Where(x => x.Id < 11)`"
+      ],
+      "answer": 1,
+      "explanation": "`Take(10)` applied directly to the query translates to a `LIMIT` clause in SQL, retrieving only the required records from the database.",
+      "hint": "Consider how to minimize the amount of data transferred from the database."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `OwnedEntity` configuration in EF Core?",
+      "options": [
+        "To define a separate table for the owned entity.",
+        "To embed an entity within another entity without creating a separate table.",
+        "To define a one-to-one relationship.",
+        "To define a many-to-many relationship."
+      ],
+      "answer": 1,
+      "explanation": "An owned entity is embedded within another entity and doesn't have its own primary key or table.",
+      "hint": "Think about scenarios where you have a small entity that is always associated with another entity."
+    },
+    {
+      "id": 33,
+      "question": "What is the role of the `migration` folder in an EF Core project?",
+      "options": [
+        "It contains the data models.",
+        "It contains the connection strings.",
+        "It contains the scripts for evolving the database schema.",
+        "It contains the raw SQL queries."
+      ],
+      "answer": 2,
+      "explanation": "The `migrations` folder contains the scripts generated by EF Core that describe the changes made to the database schema over time.",
+      "hint": "Think about how EF Core tracks changes to your database."
+    },
+    {
+      "id": 34,
+      "question": "You are experiencing performance issues with a complex query in EF Core. What is one potential optimization technique?",
+      "options": [
+        "Increase the database server's memory.",
+        "Use raw SQL queries for the specific performance-critical parts.",
+        "Disable change tracking.",
+        "Use a different database provider."
+      ],
+      "answer": 1,
+      "explanation": "Using raw SQL queries allows for fine-grained control over query execution and can often improve performance for complex queries.",
+      "hint": "Think about where you have the most control over the SQL that's executed."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `ValueConverter` in EF Core?",
+      "options": [
+        "To convert data types between the database and the application.",
+        "To encrypt sensitive data.",
+        "To compress data before storing it in the database.",
+        "To validate data before saving it to the database."
+      ],
+      "answer": 0,
+      "explanation": "A `ValueConverter` allows you to customize how values are converted between the .NET type and the database type.",
+      "hint": "Think about scenarios where you need to store a .NET type in a different database type."
+    },
+    {
+      "id": 36,
+      "question": "What is the primary benefit of using a repository pattern with EF Core?",
+      "options": [
+        "Improved database performance.",
+        "Reduced code complexity and increased testability.",
+        "Automatic database schema generation.",
+        "Simplified data access code."
+      ],
+      "answer": 1,
+      "explanation": "The repository pattern abstracts the data access logic, making the code more maintainable, testable, and independent of the underlying data access technology.",
+      "hint": "Think about how to separate your data access logic from your business logic."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `ShadowProperty` in EF Core?",
+      "options": [
+        "To hide a property from the application code.",
+        "To add a property to the database schema without a corresponding property in the entity class.",
+        "To encrypt a property in the database.",
+        "To validate a property before saving it to the database."
+      ],
+      "answer": 1,
+      "explanation": "A shadow property is a property that exists in the database schema but doesn't have a corresponding property in the entity class.",
+      "hint": "Think about scenarios where you need to store additional metadata in the database."
+    },
+    {
+      "id": 38,
+      "question": "You need to implement optimistic concurrency control. Which EF Core feature would be most helpful?",
+      "options": [
+        "Using a timestamp column.",
+        "Using a sequence generator.",
+        "Using a trigger.",
+        "Using a stored procedure."
+      ],
+      "answer": 0,
+      "explanation": "A timestamp column (or row version) can be used to detect concurrent modifications to the same record.",
+      "hint": "Think about how to detect if a record has been modified by another user since you last read it."
+    },
+    {
+      "id": 39,
+      "question": "What is the difference between `SaveChangesAsync()` and `SaveChanges()`?",
+      "options": [
+        "`SaveChangesAsync()` is asynchronous, while `SaveChanges()` is synchronous.",
+        "`SaveChangesAsync()` only saves changes to the database, while `SaveChanges()` also validates the data.",
+        "`SaveChangesAsync()` is only for read-only operations, while `SaveChanges()` is for write operations.",
+        "`SaveChangesAsync()` is more efficient than `SaveChanges()` in all cases."
+      ],
+      "answer": 0,
+      "explanation": "`SaveChangesAsync()` is an asynchronous version of `SaveChanges()`, allowing the application to remain responsive while the database operation is in progress.",
+      "hint": "Think about the benefits of asynchronous programming."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `HasConversion()` method in `OnModelCreating`?",
+      "options": [
+        "To define a foreign key relationship.",
+        "To specify a custom conversion between a .NET type and a database type.",
+        "To create an index on a column.",
+        "To set the data type of a column."
+      ],
+      "answer": 1,
+      "explanation": "The `HasConversion()` method allows you to define a custom conversion between a .NET type and a database type, such as converting a string to a JSON column.",
+      "hint": "Think about scenarios where you need to store a .NET type in a different database type."
+    },
+    {
+      "id": 41,
+      "question": "What is the potential drawback of using lazy loading extensively?",
+      "options": [
+        "Increased memory consumption.",
+        "The N+1 problem.",
+        "Reduced database performance.",
+        "Difficulty in testing."
+      ],
+      "answer": 1,
+      "explanation": "Lazy loading can lead to the N+1 problem, where one query is executed to retrieve the initial entity, and then N additional queries are executed to retrieve the related entities.",
+      "hint": "Think about the number of database queries that are executed when you access related entities."
+    },
+    {
+      "id": 42,
+      "question": "You need to store a complex object (e.g., an address) as a single column in the database. Which EF Core feature would be most suitable?",
+      "options": [
+        "Using a foreign key relationship.",
+        "Using an owned entity.",
+        "Using a shadow property.",
+        "Using a value converter."
+      ],
+      "answer": 1,
+      "explanation": "An owned entity allows you to embed a complex object within another entity without creating a separate table.",
+      "hint": "Think about scenarios where you have a small entity that is always associated with another entity."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `QueryFilter` in EF Core?",
+      "options": [
+        "To filter the results of a query based on user permissions.",
+        "To filter the results of a query based on a specific condition.",
+        "To optimize database performance.",
+        "To validate data before saving it to the database."
+      ],
+      "answer": 0,
+      "explanation": "A `QueryFilter` allows you to automatically apply a filter to all queries for a specific entity, often used to implement multi-tenancy or row-level security.",
+      "hint": "Think about scenarios where you need to restrict access to data based on user roles."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between `Add()` and `Update()` methods in `DbSet`?",
+      "options": [
+        "`Add()` inserts a new entity, while `Update()` modifies an existing entity.",
+        "`Add()` modifies an existing entity, while `Update()` inserts a new entity.",
+        "`Add()` is only for read-only operations, while `Update()` is for write operations.",
+        "`Add()` is more efficient than `Update()` in all cases."
+      ],
+      "answer": 0,
+      "explanation": "`Add()` inserts a new entity into the database, while `Update()` modifies an existing entity.",
+      "hint": "Think about the purpose of each method in terms of database operations."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `DbContextPool`?",
+      "options": [
+        "To manage database connections.",
+        "To cache database queries.",
+        "To store database migrations.",
+        "To validate data before saving it to the database."
+      ],
+      "answer": 0,
+      "explanation": "The `DbContextPool` is a pool of `DbContext` instances that can be reused, improving performance and reducing resource consumption.",
+      "hint": "Think about how to avoid creating a new `DbContext` for every request."
+    },
+    {
+      "id": 46,
+      "question": "You have a one-to-many relationship between `Customer` and `Order`. How would you configure this relationship using fluent API in `OnModelCreating`?",
+      "options": [
+        "`modelBuilder.Entity<Customer>().HasMany(c => c.Orders).WithOne(o => o.Customer);`",
+        "`modelBuilder.Entity<Order>().HasMany(o => o.Customers).WithOne(c => c.Order);`",
+        "`modelBuilder.Entity<Customer>().HasOne(c => c.Order).WithMany(o => o.Customers);`",
+        "`modelBuilder.Entity<Order>().HasOne(o => o.Customer).WithMany(c => c.Orders);`"
+      ],
+      "answer": 0,
+      "explanation": "This configuration correctly defines the one-to-many relationship, indicating that a customer can have many orders, and each order belongs to one customer.",
+      "hint": "Think about which entity is the 'one' side and which is the 'many' side of the relationship."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `IsDeleted` property pattern in EF Core?",
+      "options": [
+        "To mark an entity as deleted without physically removing it from the database.",
+        "To encrypt sensitive data.",
+        "To compress data before storing it in the database.",
+        "To validate data before saving it to the database."
+      ],
+      "answer": 0,
+      "explanation": "The `IsDeleted` property pattern allows you to soft-delete entities by marking them as deleted without physically removing them from the database, preserving data for auditing or recovery purposes.",
+      "hint": "Think about scenarios where you need to keep a record of deleted data."
+    },
+    {
+      "id": 48,
+      "question": "What is the benefit of using a separate project for your database migrations?",
+      "options": [
+        "Improved code organization and reusability.",
+        "Reduced database performance.",
+        "Simplified data access code.",
+        "Automatic database schema generation."
+      ],
+      "answer": 0,
+      "explanation": "Separating migrations into a dedicated project improves code organization, allows for easier collaboration, and enables you to manage migrations independently of your application code.",
+      "hint": "Think about how to manage database schema changes in a team environment."
+    },
+    {
+      "id": 49,
+      "question": "You are using EF Core with a large database and are experiencing slow query performance. You suspect that the database indexes are not optimal. What is the best approach to identify and address this issue?",
+      "options": [
+        "Manually review the database schema and add indexes based on your understanding.",
+        "Use EF Core's profiling tools to identify slow queries and analyze their execution plans.",
+        "Increase the database server's memory.",
+        "Switch to a different database provider."
+      ],
+      "answer": 1,
+      "explanation": "EF Core's profiling tools can help you identify slow queries and analyze their execution plans, revealing missing or inefficient indexes.",
+      "hint": "Think about how to diagnose performance issues in a database."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `GlobalQueryFilters` feature in EF Core?",
+      "options": [
+        "To apply a filter to all queries for a specific entity, regardless of the query's conditions.",
+        "To encrypt sensitive data.",
+        "To compress data before storing it in the database.",
+        "To validate data before saving it to the database."
+      ],
+      "answer": 0,
+      "explanation": "GlobalQueryFilters allow you to apply a filter to all queries for a specific entity, such as filtering out deleted records or only retrieving data for a specific tenant.",
+      "hint": "Think about scenarios where you need to consistently apply a filter to all queries for a specific entity."
+    }
+  ]
+}

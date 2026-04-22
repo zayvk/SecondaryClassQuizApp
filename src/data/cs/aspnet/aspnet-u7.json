@@ -1,0 +1,669 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 7: Database Integration and Deployment",
+  "unitId": "aspnet-u7",
+  "categoryId": "cs",
+  "topics": [
+    "Connecting to a database from ASP.NET Core — connection strings",
+    "Running raw SQL queries inside C#",
+    "Full CRUD flow in MVC with database",
+    "Publishing an ASP.NET Core application",
+    "Hosting basics — IIS, Kestrel, reverse proxy",
+    "Environment configuration — Development vs Production",
+    "appsettings.json and environment variables",
+    "Deployment considerations and common pitfalls"
+  ],
+  "generatedAt": "2026-04-22T02:11:41Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary purpose of connection strings in ASP.NET Core database integration?",
+      "options": [
+        "To define the database schema",
+        "To specify the credentials and location of the database server",
+        "To manage database transactions",
+        "To optimize SQL query performance"
+      ],
+      "answer": 1,
+      "explanation": "Connection strings provide the necessary information for an application to connect to a specific database instance, including server address, database name, and authentication details.",
+      "hint": "Think about what information an application needs to *find* and *access* a database."
+    },
+    {
+      "id": 2,
+      "question": "Which method is commonly used to execute raw SQL queries directly within C# code in ASP.NET Core?",
+      "options": [
+        "LINQ to SQL",
+        "Entity Framework Core's `ExecuteSqlRaw`",
+        "Stored Procedures",
+        "ORM Lite"
+      ],
+      "answer": 1,
+      "explanation": "Entity Framework Core's `ExecuteSqlRaw` method allows you to directly execute SQL queries against the database, providing flexibility when LINQ isn't sufficient.",
+      "hint": "Consider methods within Entity Framework Core designed for direct database interaction."
+    },
+    {
+      "id": 3,
+      "question": "In an MVC application, where is the logic for handling database interactions typically placed?",
+      "options": [
+        "In the View",
+        "In the Model",
+        "In the Controller",
+        "In the ViewModel"
+      ],
+      "answer": 1,
+      "explanation": "The Model layer is responsible for encapsulating the data and business logic, including database interactions, separating it from the presentation and control layers.",
+      "hint": "Remember the separation of concerns in MVC – which layer deals with data?"
+    },
+    {
+      "id": 4,
+      "question": "What is the main benefit of using Entity Framework Core migrations?",
+      "options": [
+        "They automatically optimize database queries",
+        "They allow you to version control your database schema",
+        "They provide a graphical interface for database management",
+        "They improve the security of your database connection"
+      ],
+      "answer": 1,
+      "explanation": "Migrations track changes to your database schema over time, allowing you to apply and revert changes in a controlled manner, and ensuring consistency across environments.",
+      "hint": "Think about how you manage changes to your database structure as your application evolves."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of `appsettings.json` in an ASP.NET Core application?",
+      "options": [
+        "To define the application's routes",
+        "To store configuration settings",
+        "To manage user authentication",
+        "To define the application's layout"
+      ],
+      "answer": 1,
+      "explanation": "`appsettings.json` is a configuration file used to store application settings, such as database connection strings, API keys, and other environment-specific values.",
+      "hint": "Consider where you would store settings that might change between different environments."
+    },
+    {
+      "id": 6,
+      "question": "Which hosting environment is generally preferred for production ASP.NET Core applications?",
+      "options": [
+        "Kestrel",
+        "IIS",
+        "Console Application",
+        "ASP.NET Core CLI"
+      ],
+      "answer": 1,
+      "explanation": "IIS (Internet Information Services) is a robust and feature-rich web server commonly used for hosting production ASP.NET Core applications, offering scalability and security features.",
+      "hint": "Think about the requirements for a stable, scalable, and secure production environment."
+    },
+    {
+      "id": 7,
+      "question": "What is a reverse proxy and why is it used with ASP.NET Core applications?",
+      "options": [
+        "A database management tool",
+        "A server that sits in front of one or more web servers, handling requests and forwarding them",
+        "A caching mechanism",
+        "A security firewall"
+      ],
+      "answer": 1,
+      "explanation": "A reverse proxy improves security, performance, and scalability by handling incoming requests, caching content, and load balancing across multiple servers.",
+      "hint": "Consider how you might improve the performance and security of a web application without modifying the application itself."
+    },
+    {
+      "id": 8,
+      "question": "How do environment variables differ from settings in `appsettings.json`?",
+      "options": [
+        "Environment variables are only used for debugging",
+        "Environment variables take precedence over settings in `appsettings.json`",
+        "Settings in `appsettings.json` are encrypted",
+        "Environment variables are specific to the development environment"
+      ],
+      "answer": 1,
+      "explanation": "Environment variables allow you to override settings defined in `appsettings.json`, making them ideal for configuring applications for different environments without modifying the configuration file.",
+      "hint": "Think about how you would configure different settings for development, staging, and production environments."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the `IWebHostEnvironment` interface in ASP.NET Core?",
+      "options": [
+        "To manage database connections",
+        "To determine the current hosting environment (Development, Production, etc.)",
+        "To handle user authentication",
+        "To define the application's routes"
+      ],
+      "answer": 1,
+      "explanation": "The `IWebHostEnvironment` interface provides access to information about the current hosting environment, allowing you to tailor application behavior based on where it's running.",
+      "hint": "Consider how your application might behave differently in development versus production."
+    },
+    {
+      "id": 10,
+      "question": "What is a common pitfall when deploying an ASP.NET Core application to IIS?",
+      "options": [
+        "Forgetting to publish the application",
+        "Incorrectly configuring the application pool",
+        "Using the wrong version of .NET runtime",
+        "Not including the `appsettings.json` file"
+      ],
+      "answer": 2,
+      "explanation": "Using an incorrect .NET runtime version in IIS can lead to application errors and prevent the application from starting correctly. Ensure the runtime version matches the application's target framework.",
+      "hint": "Think about the dependencies your application needs to run on the server."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is NOT a typical step in a full CRUD (Create, Read, Update, Delete) flow in an MVC application?",
+      "options": [
+        "Displaying a form for creating new data",
+        "Directly manipulating the database from the View",
+        "Handling form submissions in the Controller",
+        "Updating the database with modified data"
+      ],
+      "answer": 1,
+      "explanation": "Views should not directly manipulate the database. Database interactions should be handled by the Model layer, accessed through the Controller.",
+      "hint": "Remember the separation of concerns in MVC."
+    },
+    {
+      "id": 12,
+      "question": "What is the benefit of using asynchronous database operations (e.g., `ToListAsync()`) in ASP.NET Core?",
+      "options": [
+        "They reduce the amount of code required",
+        "They improve the application's responsiveness and scalability",
+        "They automatically optimize database queries",
+        "They simplify error handling"
+      ],
+      "answer": 1,
+      "explanation": "Asynchronous operations allow the application to continue processing other requests while waiting for database operations to complete, improving responsiveness and scalability.",
+      "hint": "Think about how to prevent your application from blocking while waiting for database operations."
+    },
+    {
+      "id": 13,
+      "question": "When publishing an ASP.NET Core application, what does the `--output` parameter in the `dotnet publish` command specify?",
+      "options": [
+        "The target framework",
+        "The configuration to use (Debug, Release)",
+        "The directory where the published files will be placed",
+        "The runtime identifier (RID)"
+      ],
+      "answer": 2,
+      "explanation": "The `--output` parameter specifies the directory where the published application files will be copied, allowing you to control the deployment location.",
+      "hint": "Consider where you want the final, deployable application files to be located."
+    },
+    {
+      "id": 14,
+      "question": "What is the role of Kestrel in an ASP.NET Core application?",
+      "options": [
+        "It's a database server",
+        "It's a cross-platform web server",
+        "It's an ORM",
+        "It's a front-end framework"
+      ],
+      "answer": 1,
+      "explanation": "Kestrel is a cross-platform, high-performance web server that can be used to host ASP.NET Core applications directly, or behind a reverse proxy like IIS.",
+      "hint": "Think about what component is responsible for listening for and responding to web requests."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of using Dependency Injection (DI) in the context of database access in ASP.NET Core?",
+      "options": [
+        "To encrypt database connections",
+        "To simplify unit testing and improve code maintainability",
+        "To automatically generate database schemas",
+        "To optimize SQL query performance"
+      ],
+      "answer": 1,
+      "explanation": "DI allows you to easily swap out different database implementations (e.g., mock databases for testing) and promotes loose coupling, making your code more testable and maintainable.",
+      "hint": "Consider how DI can help you write more flexible and testable code."
+    },
+    {
+      "id": 16,
+      "question": "You need to store sensitive information like database passwords. Which approach is the MOST secure?",
+      "options": [
+        "Storing them directly in `appsettings.json`",
+        "Storing them as environment variables",
+        "Encrypting them in `appsettings.json`",
+        "Hardcoding them in the C# code"
+      ],
+      "answer": 1,
+      "explanation": "Environment variables are generally the most secure way to store sensitive information, as they are not stored in the application's code or configuration files.",
+      "hint": "Think about where sensitive information should be stored to minimize the risk of exposure."
+    },
+    {
+      "id": 17,
+      "question": "What is the benefit of using a Database Context in Entity Framework Core?",
+      "options": [
+        "It automatically generates SQL scripts",
+        "It represents a single instance of a database connection",
+        "It provides a strongly-typed representation of your database schema",
+        "It handles user authentication"
+      ],
+      "answer": 2,
+      "explanation": "The Database Context provides a strongly-typed representation of your database tables and relationships, allowing you to interact with the database using C# objects.",
+      "hint": "Think about how Entity Framework Core maps your database tables to C# classes."
+    },
+    {
+      "id": 18,
+      "question": "What is the purpose of the `UseRouting()` middleware in the ASP.NET Core pipeline?",
+      "options": [
+        "To handle database connections",
+        "To parse incoming requests and map them to controllers",
+        "To serve static files",
+        "To handle authentication"
+      ],
+      "answer": 1,
+      "explanation": "`UseRouting()` is responsible for parsing incoming requests and matching them to the appropriate controller actions based on the defined routes.",
+      "hint": "Consider what component is responsible for determining which controller action should handle a specific request."
+    },
+    {
+      "id": 19,
+      "question": "You are deploying an ASP.NET Core Web API to Azure App Service. What is a common configuration setting you would need to adjust?",
+      "options": [
+        "The database schema",
+        "The connection string to the Azure SQL Database",
+        "The application's routes",
+        "The front-end framework"
+      ],
+      "answer": 1,
+      "explanation": "When deploying to Azure App Service, you need to configure the connection string to point to the Azure SQL Database instance.",
+      "hint": "Think about what information needs to be updated to connect to the database in the cloud."
+    },
+    {
+      "id": 20,
+      "question": "What is the difference between `Development` and `Production` environments in ASP.NET Core?",
+      "options": [
+        "They use different programming languages",
+        "They have different security settings and logging levels",
+        "They use different database servers",
+        "They have different front-end frameworks"
+      ],
+      "answer": 1,
+      "explanation": "The `Development` environment is typically used for debugging and testing, while the `Production` environment is optimized for performance and security.",
+      "hint": "Consider what settings you would want to be different in a live, public-facing application."
+    },
+    {
+      "id": 21,
+      "question": "Consider the following code snippet. What is the potential issue? `string connectionString = Configuration.GetConnectionString(\"MyDatabase\"); DbContextOptionsBuilder<MyDbContext> optionsBuilder = new DbContextOptionsBuilder<MyDbContext>(); optionsBuilder.UseSqlServer(connectionString); MyDbContext context = new MyDbContext(optionsBuilder.Options);`",
+      "options": [
+        "The connection string is not being used",
+        "The `DbContextOptionsBuilder` is not being configured correctly",
+        "The `MyDbContext` class is not defined",
+        "The code is missing error handling"
+      ],
+      "answer": 0,
+      "explanation": "The code snippet doesn't show where `Configuration` is being initialized. Without proper initialization, `Configuration` will be null, leading to a `NullReferenceException` when trying to get the connection string.",
+      "hint": "Trace the flow of execution and identify potential null reference issues."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of using a ViewModel in an MVC application?",
+      "options": [
+        "To directly interact with the database",
+        "To encapsulate the data required for a specific view",
+        "To handle user authentication",
+        "To define the application's routes"
+      ],
+      "answer": 1,
+      "explanation": "A ViewModel is a class that encapsulates the data required for a specific view, reducing the complexity of the view and improving maintainability.",
+      "hint": "Think about how to separate the data presentation logic from the data access logic."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is a best practice for handling database connections in ASP.NET Core?",
+      "options": [
+        "Creating a new connection for each database operation",
+        "Using a connection pool to reuse connections",
+        "Storing the connection string in the code",
+        "Closing the connection only when the application shuts down"
+      ],
+      "answer": 1,
+      "explanation": "Using a connection pool improves performance by reusing existing database connections, reducing the overhead of establishing new connections for each operation.",
+      "hint": "Consider the performance implications of repeatedly opening and closing database connections."
+    },
+    {
+      "id": 24,
+      "question": "What is the role of the `Startup.cs` file in an ASP.NET Core application?",
+      "options": [
+        "It defines the application's routes",
+        "It configures the application's services and middleware pipeline",
+        "It contains the application's views",
+        "It handles user authentication"
+      ],
+      "answer": 1,
+      "explanation": "The `Startup.cs` file is responsible for configuring the application's services (e.g., database context, dependency injection) and defining the middleware pipeline.",
+      "hint": "Think about where you would configure the core components of your application."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of using `UseHttpsRedirection()` middleware in ASP.NET Core?",
+      "options": [
+        "To encrypt database connections",
+        "To redirect all HTTP requests to HTTPS",
+        "To handle user authentication",
+        "To optimize static file serving"
+      ],
+      "answer": 1,
+      "explanation": "`UseHttpsRedirection()` automatically redirects all incoming HTTP requests to their HTTPS equivalents, improving security.",
+      "hint": "Consider how to ensure that all communication with your application is encrypted."
+    },
+    {
+      "id": 26,
+      "question": "You are experiencing slow database performance in your ASP.NET Core application. What is a potential cause?",
+      "options": [
+        "Using synchronous database operations",
+        "Not using a database context",
+        "Using a connection pool",
+        "Using environment variables"
+      ],
+      "answer": 0,
+      "explanation": "Synchronous database operations can block the main thread, leading to slow performance. Using asynchronous operations allows the application to continue processing other requests while waiting for database operations to complete.",
+      "hint": "Think about how to prevent your application from blocking while waiting for database operations."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `dotnet ef migrations add <MigrationName>` command?",
+      "options": [
+        "To apply database migrations",
+        "To create a new database migration",
+        "To revert database migrations",
+        "To view the current database schema"
+      ],
+      "answer": 1,
+      "explanation": "This command creates a new migration file based on the changes you've made to your database context, allowing you to track and apply schema changes.",
+      "hint": "Consider how you would record changes to your database schema."
+    },
+    {
+      "id": 28,
+      "question": "What is the benefit of using a code-first approach with Entity Framework Core?",
+      "options": [
+        "It automatically generates database schemas from existing databases",
+        "It allows you to define your database schema using C# code",
+        "It simplifies database administration",
+        "It improves database security"
+      ],
+      "answer": 1,
+      "explanation": "The code-first approach allows you to define your database schema using C# classes, and Entity Framework Core will generate the corresponding database schema.",
+      "hint": "Think about how you can define your database structure using code."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `[ApiController]` attribute in ASP.NET Core Web API?",
+      "options": [
+        "To enable CORS",
+        "To automatically validate model state",
+        "To indicate that a controller is an API controller",
+        "To handle authentication"
+      ],
+      "answer": 2,
+      "explanation": "The `[ApiController]` attribute indicates that a controller is an API controller and enables features like automatic model state validation and parameter binding.",
+      "hint": "Consider what features are specifically designed for building APIs."
+    },
+    {
+      "id": 30,
+      "question": "What is a common issue when deploying an ASP.NET Core application with relative paths?",
+      "options": [
+        "The application may not find static files",
+        "The database connection may fail",
+        "The application may not start",
+        "The application may not handle user authentication"
+      ],
+      "answer": 0,
+      "explanation": "Relative paths can cause issues when the application is deployed to a different directory structure, as the paths may no longer be valid. It's best to use absolute paths or configure the application to resolve relative paths correctly.",
+      "hint": "Think about how the application's file paths might change when deployed to a different environment."
+    },
+    {
+      "id": 31,
+      "question": "What is the purpose of the `IConfiguration` interface in ASP.NET Core?",
+      "options": [
+        "To manage database connections",
+        "To access application configuration settings",
+        "To handle user authentication",
+        "To define the application's routes"
+      ],
+      "answer": 1,
+      "explanation": "The `IConfiguration` interface provides a way to access application configuration settings from various sources, such as `appsettings.json` and environment variables.",
+      "hint": "Consider how your application retrieves its settings."
+    },
+    {
+      "id": 32,
+      "question": "You need to implement a feature that requires complex database queries. Which approach is generally preferred?",
+      "options": [
+        "Using raw SQL queries directly in the Controller",
+        "Using Stored Procedures",
+        "Using Entity Framework Core with LINQ",
+        "Using a separate database management tool"
+      ],
+      "answer": 2,
+      "explanation": "Entity Framework Core with LINQ provides a type-safe and maintainable way to build complex database queries, reducing the risk of SQL injection and improving code readability.",
+      "hint": "Think about the benefits of using an ORM like Entity Framework Core."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the `dotnet build` command?",
+      "options": [
+        "To run the application",
+        "To publish the application",
+        "To compile the application code",
+        "To create a new project"
+      ],
+      "answer": 2,
+      "explanation": "The `dotnet build` command compiles the application code and creates the necessary assemblies for deployment.",
+      "hint": "Consider what step is required to transform your source code into an executable application."
+    },
+    {
+      "id": 34,
+      "question": "What is the benefit of using a separate staging environment before deploying to production?",
+      "options": [
+        "It reduces the cost of deployment",
+        "It allows you to test the application in a production-like environment",
+        "It simplifies database administration",
+        "It improves database security"
+      ],
+      "answer": 1,
+      "explanation": "A staging environment allows you to test the application with realistic data and configurations, identifying potential issues before they impact production users.",
+      "hint": "Think about how to minimize the risk of deploying a broken application to production."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `[FromBody]` attribute in an ASP.NET Core Web API controller action?",
+      "options": [
+        "To bind data from the query string",
+        "To bind data from the request body",
+        "To bind data from the route",
+        "To validate model state"
+      ],
+      "answer": 1,
+      "explanation": "The `[FromBody]` attribute indicates that the parameter should be bound from the request body, typically used for receiving data from POST, PUT, and PATCH requests.",
+      "hint": "Consider where the data is typically sent when submitting a form or making an API request."
+    },
+    {
+      "id": 36,
+      "question": "What is the purpose of using a logging framework (e.g., Serilog, NLog) in an ASP.NET Core application?",
+      "options": [
+        "To encrypt database connections",
+        "To monitor application performance and diagnose issues",
+        "To handle user authentication",
+        "To optimize static file serving"
+      ],
+      "answer": 1,
+      "explanation": "Logging frameworks allow you to record application events and errors, providing valuable insights for monitoring performance, diagnosing issues, and debugging.",
+      "hint": "Think about how you would track what's happening inside your application."
+    },
+    {
+      "id": 37,
+      "question": "You are using Entity Framework Core and need to filter a list of entities based on a complex condition. Which approach is most efficient?",
+      "options": [
+        "Retrieving all entities and filtering them in memory",
+        "Using a stored procedure",
+        "Using LINQ to SQL to perform the filtering on the database server",
+        "Using raw SQL queries"
+      ],
+      "answer": 2,
+      "explanation": "Using LINQ to SQL allows the database server to perform the filtering, reducing the amount of data transferred to the application and improving performance.",
+      "hint": "Think about where the filtering should happen – in the application or on the database server."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `dotnet restore` command?",
+      "options": [
+        "To build the application",
+        "To publish the application",
+        "To download and install project dependencies",
+        "To create a new project"
+      ],
+      "answer": 2,
+      "explanation": "The `dotnet restore` command downloads and installs the project's dependencies from NuGet packages.",
+      "hint": "Consider what step is required to get all the necessary libraries for your project."
+    },
+    {
+      "id": 39,
+      "question": "What is the potential security risk of storing API keys directly in `appsettings.json`?",
+      "options": [
+        "The API keys may be exposed if the file is accidentally committed to a public repository",
+        "The API keys may be encrypted",
+        "The API keys may be automatically updated",
+        "The API keys may be validated"
+      ],
+      "answer": 0,
+      "explanation": "If `appsettings.json` is committed to a public repository (e.g., GitHub), the API keys could be exposed to unauthorized users.",
+      "hint": "Think about the risks of storing sensitive information in a file that could be publicly accessible."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `UseEndpoints()` middleware in the ASP.NET Core pipeline?",
+      "options": [
+        "To handle database connections",
+        "To configure the application's endpoints (routes)",
+        "To serve static files",
+        "To handle authentication"
+      ],
+      "answer": 1,
+      "explanation": "`UseEndpoints()` configures the application's endpoints, mapping routes to controller actions and enabling features like API versioning.",
+      "hint": "Consider how the application maps incoming requests to specific controller actions."
+    },
+    {
+      "id": 41,
+      "question": "You are designing an API that needs to support multiple versions. What is a common approach in ASP.NET Core?",
+      "options": [
+        "Using different database schemas for each version",
+        "Using different controllers for each version",
+        "Using different connection strings for each version",
+        "Using different front-end frameworks for each version"
+      ],
+      "answer": 1,
+      "explanation": "Creating separate controllers for each API version allows you to maintain backward compatibility and introduce new features without breaking existing clients.",
+      "hint": "Think about how to support different clients with different requirements."
+    },
+    {
+      "id": 42,
+      "question": "What is the purpose of the `[Required]` attribute in a model class?",
+      "options": [
+        "To encrypt the data",
+        "To validate that a property has a value",
+        "To format the data",
+        "To display the data"
+      ],
+      "answer": 1,
+      "explanation": "The `[Required]` attribute indicates that a property must have a value and will trigger validation errors if it's missing.",
+      "hint": "Consider how to ensure that required data is provided by the user."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `dotnet watch run` command?",
+      "options": [
+        "To build the application",
+        "To publish the application",
+        "To run the application and automatically restart on file changes",
+        "To create a new project"
+      ],
+      "answer": 2,
+      "explanation": "The `dotnet watch run` command runs the application and automatically restarts it whenever you make changes to the code, making development more efficient.",
+      "hint": "Consider how to automate the process of restarting your application during development."
+    },
+    {
+      "id": 44,
+      "question": "What is the purpose of using a Content Delivery Network (CDN) when deploying an ASP.NET Core application?",
+      "options": [
+        "To encrypt database connections",
+        "To improve application performance by caching static assets closer to users",
+        "To handle user authentication",
+        "To optimize static file serving"
+      ],
+      "answer": 1,
+      "explanation": "A CDN caches static assets (e.g., images, CSS, JavaScript) on servers around the world, reducing latency and improving application performance for users in different locations.",
+      "hint": "Think about how to improve the loading speed of your application for users worldwide."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `[ProducesResponseType]` attribute in an ASP.NET Core Web API controller action?",
+      "options": [
+        "To specify the content type of the response",
+        "To document the possible HTTP response codes and types",
+        "To handle authentication",
+        "To validate model state"
+      ],
+      "answer": 1,
+      "explanation": "The `[ProducesResponseType]` attribute allows you to document the possible HTTP response codes and types for a controller action, improving API discoverability and usability.",
+      "hint": "Consider how to make your API easier to understand and use by other developers."
+    },
+    {
+      "id": 46,
+      "question": "You are experiencing intermittent database connection errors in your production environment. What could be a potential cause?",
+      "options": [
+        "Incorrect connection string",
+        "Database server overload",
+        "Network connectivity issues",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Intermittent database connection errors can be caused by a variety of factors, including incorrect connection strings, database server overload, and network connectivity issues.",
+      "hint": "Think about all the potential points of failure in the database connection process."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `IOptions<T>` interface in ASP.NET Core?",
+      "options": [
+        "To manage database connections",
+        "To access configuration settings in a type-safe manner",
+        "To handle user authentication",
+        "To define the application's routes"
+      ],
+      "answer": 1,
+      "explanation": "The `IOptions<T>` interface provides a type-safe way to access configuration settings, allowing you to inject configuration values into your application components.",
+      "hint": "Consider how to access configuration settings in a clean and type-safe way."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of using a database transaction?",
+      "options": [
+        "To encrypt database connections",
+        "To ensure that a series of database operations are treated as a single unit of work",
+        "To optimize SQL query performance",
+        "To handle user authentication"
+      ],
+      "answer": 1,
+      "explanation": "A database transaction ensures that either all of the operations within the transaction succeed, or none of them do, maintaining data consistency.",
+      "hint": "Think about how to ensure that your database remains in a consistent state even if errors occur."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `dotnet ef database update` command?",
+      "options": [
+        "To create a new database migration",
+        "To apply pending database migrations to the database",
+        "To revert database migrations",
+        "To view the current database schema"
+      ],
+      "answer": 1,
+      "explanation": "The `dotnet ef database update` command applies any pending database migrations to the database, updating the schema to match the latest changes in your code.",
+      "hint": "Consider how to apply the changes you've defined in your migrations to the actual database."
+    },
+    {
+      "id": 50,
+      "question": "You are deploying an ASP.NET Core application to a production environment and want to ensure that sensitive information is not exposed. What is the best practice?",
+      "options": [
+        "Storing sensitive information in `appsettings.json`",
+        "Storing sensitive information in environment variables",
+        "Hardcoding sensitive information in the code",
+        "Using a public repository for the application code"
+      ],
+      "answer": 1,
+      "explanation": "Storing sensitive information in environment variables is the best practice, as it keeps the information separate from the application code and configuration files, reducing the risk of exposure.",
+      "hint": "Think about the most secure way to store sensitive information in a production environment."
+    }
+  ]
+}

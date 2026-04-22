@@ -1,0 +1,668 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 2: Web and HTTP Fundamentals",
+  "unitId": "aspnet-u2",
+  "categoryId": "cs",
+  "topics": [
+    "HTTP vs HTTPS",
+    "Request and Response lifecycle in ASP.NET Core",
+    "HTTP status codes — 200, 201, 400, 401, 403, 404, 500",
+    "REST principles — GET, POST, PUT, DELETE, PATCH",
+    "Stateless nature of HTTP",
+    "Headers, query strings and request body",
+    "Content negotiation and media types"
+  ],
+  "generatedAt": "2026-04-22T02:00:20Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary difference between HTTP and HTTPS?",
+      "options": [
+        "HTTP uses port 80, while HTTPS uses port 443.",
+        "HTTPS provides encryption, while HTTP does not.",
+        "HTTP supports more complex request methods.",
+        "HTTPS is faster than HTTP."
+      ],
+      "answer": 1,
+      "explanation": "HTTPS uses TLS/SSL to encrypt communication, providing security and integrity, while HTTP transmits data in plain text.",
+      "hint": "Think about the 'S' in HTTPS – what does that typically stand for in networking?"
+    },
+    {
+      "id": 2,
+      "question": "In the ASP.NET Core request pipeline, what is the role of middleware?",
+      "options": [
+        "To handle database interactions.",
+        "To process incoming requests and outgoing responses.",
+        "To manage server configuration.",
+        "To define the application's routes."
+      ],
+      "answer": 1,
+      "explanation": "Middleware components are executed sequentially in the pipeline to handle requests and responses, modifying them or short-circuiting the pipeline.",
+      "hint": "Consider middleware as a series of steps a request goes through."
+    },
+    {
+      "id": 3,
+      "question": "What does an HTTP 401 status code indicate?",
+      "options": [
+        "Not Found",
+        "Unauthorized",
+        "Bad Request",
+        "Internal Server Error"
+      ],
+      "answer": 1,
+      "explanation": "A 401 status code signifies that the request requires authentication, and the client has not provided valid credentials.",
+      "hint": "Think about scenarios where access is restricted and requires login."
+    },
+    {
+      "id": 4,
+      "question": "Which HTTP method is typically used to update an existing resource?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": 2,
+      "explanation": "PUT is used to replace the entire resource with the provided payload, effectively updating it.",
+      "hint": "Consider what action you'd take if you wanted to completely replace a file with a new version."
+    },
+    {
+      "id": 5,
+      "question": "What is the key characteristic of the stateless nature of HTTP?",
+      "options": [
+        "The server remembers all previous requests from a client.",
+        "Each request from a client contains all the information needed to be understood.",
+        "The server stores client session data.",
+        "HTTP requires a persistent connection."
+      ],
+      "answer": 1,
+      "explanation": "HTTP is stateless, meaning each request is independent and contains all necessary information for the server to process it, without relying on previous interactions.",
+      "hint": "Think about how a web server handles millions of users simultaneously."
+    },
+    {
+      "id": 6,
+      "question": "What is the purpose of HTTP headers?",
+      "options": [
+        "To define the HTML structure of a webpage.",
+        "To carry metadata about the request or response.",
+        "To store the application's code.",
+        "To encrypt the data transmission."
+      ],
+      "answer": 1,
+      "explanation": "HTTP headers provide additional information about the request or response, such as content type, caching directives, and authentication details.",
+      "hint": "Headers are like labels attached to a package, providing extra information."
+    },
+    {
+      "id": 7,
+      "question": "What is a query string in a URL?",
+      "options": [
+        "The part of the URL that specifies the protocol.",
+        "The part of the URL that identifies the resource.",
+        "The part of the URL that contains parameters passed to the server.",
+        "The part of the URL that specifies the domain name."
+      ],
+      "answer": 2,
+      "explanation": "A query string is used to pass data to the server as part of the URL, typically after a question mark (?) and consisting of key-value pairs.",
+      "hint": "Look at a typical search URL – what comes after the '?' character?"
+    },
+    {
+      "id": 8,
+      "question": "What is content negotiation?",
+      "options": [
+        "The process of compressing data before transmission.",
+        "The process of determining the best format for a response based on client preferences.",
+        "The process of authenticating the client.",
+        "The process of caching responses."
+      ],
+      "answer": 1,
+      "explanation": "Content negotiation allows the server to determine the most appropriate format (e.g., JSON, XML, HTML) for a response based on the client's Accept headers.",
+      "hint": "Think about a client requesting data and the server offering different versions."
+    },
+    {
+      "id": 9,
+      "question": "What does the 'media type' in HTTP refer to?",
+      "options": [
+        "The size of the data being transmitted.",
+        "The format of the data being transmitted (e.g., application/json).",
+        "The encoding of the data.",
+        "The speed of the data transmission."
+      ],
+      "answer": 1,
+      "explanation": "Media types, also known as MIME types, specify the format of the data being transmitted, allowing the client to interpret it correctly.",
+      "hint": "Consider how a browser knows whether a file is an image, a video, or a text document."
+    },
+    {
+      "id": 10,
+      "question": "An ASP.NET Core application returns a 201 status code. What does this typically signify?",
+      "options": [
+        "The request was successful, but no content is returned.",
+        "The request was successful and a new resource was created.",
+        "The server encountered an error.",
+        "The requested resource was not found."
+      ],
+      "answer": 1,
+      "explanation": "A 201 Created status code indicates that the request was successful and a new resource has been created as a result.",
+      "hint": "Think about what happens when you successfully submit a form to create a new item."
+    },
+    {
+      "id": 11,
+      "question": "What is the purpose of the PATCH method in RESTful APIs?",
+      "options": [
+        "To retrieve a resource.",
+        "To create a new resource.",
+        "To update a resource partially.",
+        "To delete a resource."
+      ],
+      "answer": 2,
+      "explanation": "PATCH is used to apply partial modifications to a resource, sending only the changes instead of the entire resource.",
+      "hint": "Consider updating only a single field in a database record."
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is NOT a typical use case for HTTP headers?",
+      "options": [
+        "Specifying the caching policy for a resource.",
+        "Storing user session information.",
+        "Indicating the preferred language for the response.",
+        "Defining the content type of the response."
+      ],
+      "answer": 1,
+      "explanation": "While cookies (often managed via headers) can store session information, headers themselves are not designed for persistent session storage; cookies or server-side session management are used.",
+      "hint": "Think about the limitations of headers in terms of storage capacity and persistence."
+    },
+    {
+      "id": 13,
+      "question": "What is the difference between `www-form-urlencoded` and `application/json` content types?",
+      "options": [
+        "`www-form-urlencoded` is for binary data, `application/json` is for text data.",
+        "`www-form-urlencoded` is for simple key-value pairs, `application/json` is for complex structured data.",
+        "`application/json` is for form submissions, `www-form-urlencoded` is for API requests.",
+        "They are interchangeable and have the same functionality."
+      ],
+      "answer": 1,
+      "explanation": "`www-form-urlencoded` is commonly used for submitting form data, encoding key-value pairs, while `application/json` is used for transmitting structured data in JSON format.",
+      "hint": "Consider how data is typically sent from an HTML form versus a modern API request."
+    },
+    {
+      "id": 14,
+      "question": "You are designing a REST API. A client sends a DELETE request to `/products/123`. What is the expected behavior?",
+      "options": [
+        "The server should return the product with ID 123.",
+        "The server should create a new product with ID 123.",
+        "The server should delete the product with ID 123.",
+        "The server should update the product with ID 123."
+      ],
+      "answer": 2,
+      "explanation": "DELETE requests are used to remove the specified resource, in this case, the product with ID 123.",
+      "hint": "Think about the meaning of the 'DELETE' HTTP method."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the `Accept` header in an HTTP request?",
+      "options": [
+        "To specify the character encoding of the request body.",
+        "To indicate the preferred media types the client can handle.",
+        "To authenticate the client.",
+        "To specify the HTTP version being used."
+      ],
+      "answer": 1,
+      "explanation": "The `Accept` header tells the server which media types the client is willing to accept in the response, allowing for content negotiation.",
+      "hint": "Think about how a browser tells a server it prefers HTML over XML."
+    },
+    {
+      "id": 16,
+      "question": "An ASP.NET Core Web API endpoint returns a 500 status code. What does this indicate?",
+      "options": [
+        "The client sent a bad request.",
+        "The server encountered an unexpected error.",
+        "The requested resource was not found.",
+        "The client is not authorized to access the resource."
+      ],
+      "answer": 1,
+      "explanation": "A 500 Internal Server Error indicates that the server encountered an unexpected condition that prevented it from fulfilling the request.",
+      "hint": "Think about situations where something goes wrong on the server-side."
+    },
+    {
+      "id": 17,
+      "question": "What is the primary benefit of using HTTPS over HTTP?",
+      "options": [
+        "Improved performance.",
+        "Enhanced security and data privacy.",
+        "Simpler configuration.",
+        "Reduced server load."
+      ],
+      "answer": 1,
+      "explanation": "HTTPS encrypts the communication between the client and server, protecting sensitive data from eavesdropping and tampering.",
+      "hint": "Consider the risks of transmitting passwords or credit card details over an insecure connection."
+    },
+    {
+      "id": 18,
+      "question": "In ASP.NET Core, how can you access request headers?",
+      "options": [
+        "Through the `Request.Query` property.",
+        "Through the `Request.Body` property.",
+        "Through the `Request.Headers` property.",
+        "Through the `Response.Headers` property."
+      ],
+      "answer": 2,
+      "explanation": "The `Request.Headers` property provides access to a collection of HTTP headers sent with the request.",
+      "hint": "Think about where the server would store information sent *with* the request."
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of the `Content-Type` header in an HTTP response?",
+      "options": [
+        "To specify the character encoding of the response body.",
+        "To indicate the size of the response body.",
+        "To specify the media type of the response body.",
+        "To specify the caching policy for the response."
+      ],
+      "answer": 2,
+      "explanation": "The `Content-Type` header tells the client the format of the data being sent in the response body, such as `application/json` or `text/html`.",
+      "hint": "Consider how a browser knows how to display the content it receives."
+    },
+    {
+      "id": 20,
+      "question": "You are building a REST API. A client sends a GET request to `/users`. The API should return a list of all users. What is the most appropriate HTTP status code for a successful response?",
+      "options": [
+        "200 OK",
+        "201 Created",
+        "204 No Content",
+        "404 Not Found"
+      ],
+      "answer": 0,
+      "explanation": "200 OK is the standard status code for a successful GET request, indicating that the request was processed successfully and the response body contains the requested data.",
+      "hint": "Think about what status code is typically used when you successfully retrieve data."
+    },
+    {
+      "id": 21,
+      "question": "What is the main difference between PUT and PATCH requests?",
+      "options": [
+        "PUT creates a new resource, PATCH updates an existing one.",
+        "PUT replaces the entire resource, PATCH applies partial modifications.",
+        "PATCH replaces the entire resource, PUT applies partial modifications.",
+        "They are identical."
+      ],
+      "answer": 1,
+      "explanation": "PUT is used to replace the entire resource with the provided payload, while PATCH is used to apply partial modifications to the resource.",
+      "hint": "Consider the scope of the changes being made to the resource."
+    },
+    {
+      "id": 22,
+      "question": "What is the role of the `StatusCodeResult` in ASP.NET Core?",
+      "options": [
+        "It handles database connections.",
+        "It sets the HTTP status code of the response.",
+        "It manages user authentication.",
+        "It defines the application's routes."
+      ],
+      "answer": 1,
+      "explanation": "The `StatusCodeResult` class allows you to explicitly set the HTTP status code returned in an ASP.NET Core action result.",
+      "hint": "Think about how you would programmatically return a 404 error."
+    },
+    {
+      "id": 23,
+      "question": "What does an HTTP 403 Forbidden status code indicate?",
+      "options": [
+        "The requested resource does not exist.",
+        "The client is not authorized to access the resource.",
+        "The server encountered an error.",
+        "The request requires authentication."
+      ],
+      "answer": 1,
+      "explanation": "A 403 Forbidden status code indicates that the server understands the request, but refuses to authorize it, even if the client is authenticated.",
+      "hint": "Think about scenarios where a user is logged in but doesn't have permission to access a specific resource."
+    },
+    {
+      "id": 24,
+      "question": "Which of the following is a valid example of a query string?",
+      "options": [
+        "/products",
+        "products?id=123&category=electronics",
+        "products/123",
+        "products.html"
+      ],
+      "answer": 1,
+      "explanation": "A query string starts with a question mark (?) and consists of key-value pairs separated by ampersands (&).",
+      "hint": "Look for the '?' character in the URL."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the `[ApiController]` attribute in ASP.NET Core?",
+      "options": [
+        "It enables routing.",
+        "It automatically validates model state.",
+        "It indicates that the controller handles API requests.",
+        "It enables authentication."
+      ],
+      "answer": 2,
+      "explanation": "The `[ApiController]` attribute provides features specifically designed for building APIs, such as automatic model state validation and parameter binding.",
+      "hint": "Think about what distinguishes an API controller from a regular MVC controller."
+    },
+    {
+      "id": 26,
+      "question": "You need to send a large file to a client. Which HTTP method is most appropriate?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": 0,
+      "explanation": "GET is generally used for retrieving data, while POST is suitable for sending data, including large files, to the server.",
+      "hint": "Consider the typical use cases for each HTTP method."
+    },
+    {
+      "id": 27,
+      "question": "What is the significance of the `ETag` header in HTTP caching?",
+      "options": [
+        "It specifies the character encoding of the response.",
+        "It provides a unique identifier for a specific version of a resource.",
+        "It indicates the maximum age of the cached response.",
+        "It specifies the caching policy for the response."
+      ],
+      "answer": 1,
+      "explanation": "The `ETag` header provides a unique identifier for a specific version of a resource, allowing the client to check if its cached version is still valid.",
+      "hint": "Think about how a browser can determine if a cached file has been updated."
+    },
+    {
+      "id": 28,
+      "question": "What is the difference between authentication and authorization?",
+      "options": [
+        "Authentication verifies identity, authorization determines access rights.",
+        "Authorization verifies identity, authentication determines access rights.",
+        "They are the same thing.",
+        "Authentication is done on the client-side, authorization is done on the server-side."
+      ],
+      "answer": 0,
+      "explanation": "Authentication confirms who the user is, while authorization determines what resources they are allowed to access.",
+      "hint": "Think about logging in (authentication) versus what you can do after logging in (authorization)."
+    },
+    {
+      "id": 29,
+      "question": "In ASP.NET Core, how do you handle exceptions globally in a Web API?",
+      "options": [
+        "Using `try-catch` blocks in each action method.",
+        "Using exception filters.",
+        "Using middleware.",
+        "Using the `Error` controller."
+      ],
+      "answer": 2,
+      "explanation": "Middleware can be used to catch exceptions that are not handled by action methods, providing a centralized way to handle errors.",
+      "hint": "Think about a component that intercepts errors before they reach the client."
+    },
+    {
+      "id": 30,
+      "question": "What is the purpose of the `[FromBody]` attribute in an ASP.NET Core Web API action parameter?",
+      "options": [
+        "It indicates that the parameter should be read from the query string.",
+        "It indicates that the parameter should be read from the request body.",
+        "It indicates that the parameter is optional.",
+        "It indicates that the parameter should be validated."
+      ],
+      "answer": 1,
+      "explanation": "The `[FromBody]` attribute tells ASP.NET Core to bind the parameter value from the request body, typically in JSON or XML format.",
+      "hint": "Consider how data is sent in a POST or PUT request."
+    },
+    {
+      "id": 31,
+      "question": "What is the primary advantage of using RESTful APIs?",
+      "options": [
+        "Increased security.",
+        "Improved scalability.",
+        "Simplicity and interoperability.",
+        "Faster performance."
+      ],
+      "answer": 2,
+      "explanation": "RESTful APIs are designed to be simple, stateless, and use standard HTTP methods, making them highly interoperable and easy to integrate with various clients.",
+      "hint": "Think about the benefits of using a standardized approach to API design."
+    },
+    {
+      "id": 32,
+      "question": "You are designing an API endpoint to retrieve a user profile. What HTTP method should you use?",
+      "options": [
+        "POST",
+        "PUT",
+        "DELETE",
+        "GET"
+      ],
+      "answer": 3,
+      "explanation": "GET is the standard HTTP method for retrieving data from a server.",
+      "hint": "Think about what you do when you want to view information."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the `[Route]` attribute in ASP.NET Core?",
+      "options": [
+        "It defines the database connection string.",
+        "It maps HTTP requests to specific action methods.",
+        "It handles user authentication.",
+        "It manages server configuration."
+      ],
+      "answer": 1,
+      "explanation": "The `[Route]` attribute defines the URL pattern that maps incoming HTTP requests to a specific action method in a controller.",
+      "hint": "Think about how a request is directed to the correct part of your application."
+    },
+    {
+      "id": 34,
+      "question": "What is the difference between `application/xml` and `text/xml` media types?",
+      "options": [
+        "`application/xml` is for XML documents, `text/xml` is for plain text.",
+        "`application/xml` is for structured XML data, `text/xml` is for unparsed XML text.",
+        "They are interchangeable.",
+        "`text/xml` is for XML documents, `application/xml` is for plain text."
+      ],
+      "answer": 1,
+      "explanation": "`application/xml` is typically used for structured XML data that the server will parse, while `text/xml` is for raw XML text that the client should handle.",
+      "hint": "Consider how the server might process the XML data."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `[ProducesResponseType]` attribute in ASP.NET Core?",
+      "options": [
+        "It specifies the HTTP method the action supports.",
+        "It documents the possible HTTP response types and status codes.",
+        "It handles exception filtering.",
+        "It validates the request parameters."
+      ],
+      "answer": 1,
+      "explanation": "The `[ProducesResponseType]` attribute allows you to document the possible HTTP response types and status codes for an action, improving API discoverability and usability.",
+      "hint": "Think about how developers can understand what to expect from your API endpoint."
+    },
+    {
+      "id": 36,
+      "question": "What is the role of CORS (Cross-Origin Resource Sharing)?",
+      "options": [
+        "To encrypt data transmission.",
+        "To allow or restrict requests from different domains.",
+        "To cache responses.",
+        "To authenticate users."
+      ],
+      "answer": 1,
+      "explanation": "CORS is a mechanism that allows or restricts web pages from making requests to a different domain than the one which served the web page.",
+      "hint": "Think about security implications of a website accessing resources from another website."
+    },
+    {
+      "id": 37,
+      "question": "You are designing an API that requires authentication. Which of the following is a common approach?",
+      "options": [
+        "Using cookies.",
+        "Using JWT (JSON Web Tokens).",
+        "Using session variables.",
+        "Using local storage."
+      ],
+      "answer": 1,
+      "explanation": "JWTs are a popular choice for authentication in APIs due to their stateless nature and ability to securely transmit information between parties.",
+      "hint": "Consider the benefits of a stateless authentication mechanism."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `[Required]` attribute in ASP.NET Core model binding?",
+      "options": [
+        "It specifies the data type of the property.",
+        "It indicates that the property is optional.",
+        "It indicates that the property must have a value.",
+        "It specifies the maximum length of the property."
+      ],
+      "answer": 2,
+      "explanation": "The `[Required]` attribute indicates that a property must have a value and cannot be null or empty.",
+      "hint": "Think about how you would enforce data validation in your API."
+    },
+    {
+      "id": 39,
+      "question": "What is the difference between `415 Unsupported Media Type` and `400 Bad Request`?",
+      "options": [
+        "`415` indicates the server cannot process the media type, `400` indicates a general client error.",
+        "`400` indicates the server cannot process the media type, `415` indicates a general client error.",
+        "They are interchangeable.",
+        "Both indicate server-side errors."
+      ],
+      "answer": 0,
+      "explanation": "`415 Unsupported Media Type` specifically indicates that the server refuses to accept the request because the payload format is not supported, while `400 Bad Request` is a more general error indicating a problem with the client's request.",
+      "hint": "Consider the specificity of the error message."
+    },
+    {
+      "id": 40,
+      "question": "What is the benefit of using asynchronous programming (async/await) in ASP.NET Core Web APIs?",
+      "options": [
+        "Improved code readability.",
+        "Increased performance and scalability.",
+        "Reduced memory usage.",
+        "Simplified error handling."
+      ],
+      "answer": 1,
+      "explanation": "Asynchronous programming allows the server to handle multiple requests concurrently without blocking threads, leading to improved performance and scalability.",
+      "hint": "Think about how a server can handle many requests simultaneously."
+    },
+    {
+      "id": 41,
+      "question": "What is the purpose of the `[ApiController]` attribute's automatic model validation?",
+      "options": [
+        "It automatically encrypts the request body.",
+        "It automatically validates the request parameters and returns a `BadRequestResult` if invalid.",
+        "It automatically authenticates the user.",
+        "It automatically caches the response."
+      ],
+      "answer": 1,
+      "explanation": "The `[ApiController]` attribute automatically validates the request parameters based on data annotations (like `[Required]`) and returns a `BadRequestResult` if validation fails.",
+      "hint": "Think about how you can ensure that the data received by your API is valid."
+    },
+    {
+      "id": 42,
+      "question": "You are designing an API endpoint that returns a large dataset. What strategy can you use to improve performance?",
+      "options": [
+        "Return the entire dataset at once.",
+        "Implement pagination.",
+        "Use synchronous programming.",
+        "Disable caching."
+      ],
+      "answer": 1,
+      "explanation": "Pagination involves dividing the dataset into smaller chunks and returning them one at a time, reducing the amount of data transferred and improving response times.",
+      "hint": "Think about how you would handle a very large list of items."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `[NonAction]` attribute in ASP.NET Core?",
+      "options": [
+        "It indicates that the method is an action method.",
+        "It prevents the method from being exposed as an API endpoint.",
+        "It enables caching for the method.",
+        "It validates the request parameters."
+      ],
+      "answer": 1,
+      "explanation": "The `[NonAction]` attribute prevents a method from being exposed as an API endpoint, allowing you to define helper methods that are not directly accessible via HTTP requests.",
+      "hint": "Think about methods that are used internally within a controller but shouldn't be part of the public API."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between `httpOnly` and `secure` flags for cookies?",
+      "options": [
+        "`httpOnly` prevents client-side JavaScript access, `secure` requires HTTPS.",
+        "`secure` prevents client-side JavaScript access, `httpOnly` requires HTTPS.",
+        "They are interchangeable.",
+        "Both flags are related to caching."
+      ],
+      "answer": 0,
+      "explanation": "`httpOnly` prevents client-side JavaScript from accessing the cookie, mitigating XSS attacks, while `secure` ensures the cookie is only transmitted over HTTPS.",
+      "hint": "Consider the security implications of cookies."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `IActionFilter` interface in ASP.NET Core?",
+      "options": [
+        "It defines the routing rules for the application.",
+        "It allows you to execute code before and after an action method.",
+        "It handles database connections.",
+        "It manages user authentication."
+      ],
+      "answer": 1,
+      "explanation": "The `IActionFilter` interface allows you to intercept the execution pipeline of an action method, enabling you to perform tasks such as logging, validation, or authorization.",
+      "hint": "Think about how you can add custom logic to your API endpoints."
+    },
+    {
+      "id": 46,
+      "question": "You are receiving a 405 Method Not Allowed error. What does this indicate?",
+      "options": [
+        "The requested resource does not exist.",
+        "The server does not support the HTTP method used in the request.",
+        "The client is not authorized to access the resource.",
+        "The server encountered an error."
+      ],
+      "answer": 1,
+      "explanation": "A 405 Method Not Allowed error indicates that the server knows the requested resource exists, but does not support the HTTP method (e.g., GET, POST, PUT, DELETE) used in the request.",
+      "hint": "Think about whether the API endpoint is configured to handle the method you are using."
+    },
+    {
+      "id": 47,
+      "question": "What is the purpose of the `[BindProperty]` attribute in ASP.NET Core?",
+      "options": [
+        "It specifies the data type of the property.",
+        "It binds a request parameter to a specific property in the controller.",
+        "It validates the request parameters.",
+        "It encrypts the request body."
+      ],
+      "answer": 1,
+      "explanation": "The `[BindProperty]` attribute allows you to explicitly bind a request parameter (e.g., from the query string or request body) to a specific property in the controller.",
+      "hint": "Think about how you can map incoming data to your controller's properties."
+    },
+    {
+      "id": 48,
+      "question": "What is the difference between `Content-Length` and `Transfer-Encoding: chunked` headers?",
+      "options": [
+        "`Content-Length` specifies the size of the response, `chunked` sends data in multiple chunks.",
+        "`chunked` specifies the size of the response, `Content-Length` sends data in multiple chunks.",
+        "They are interchangeable.",
+        "Both are related to caching."
+      ],
+      "answer": 0,
+      "explanation": "`Content-Length` specifies the total size of the response body, while `Transfer-Encoding: chunked` allows the server to send data in multiple chunks without knowing the total size in advance.",
+      "hint": "Consider scenarios where the server doesn't know the size of the response before sending it."
+    },
+    {
+      "id": 49,
+      "question": "You are designing a REST API that needs to support versioning. What is a common approach?",
+      "options": [
+        "Using query parameters (e.g., `/users?version=1`).",
+        "Using different subdomains (e.g., `v1.example.com`).",
+        "Using the `Accept` header.",
+        "Using different ports."
+      ],
+      "answer": 0,
+      "explanation": "Using query parameters to specify the API version is a common and flexible approach, allowing clients to request specific versions of the API.",
+      "hint": "Think about how you can easily identify which version of the API a client is requesting."
+    },
+    {
+      "id": 50,
+      "question": "What is the purpose of the `launchSettings.json` file in an ASP.NET Core project?",
+      "options": [
+        "It defines the database connection string.",
+        "It configures the application's logging settings.",
+        "It specifies the environment variables for the application.",
+        "It defines the launch profiles for debugging and running the application."
+      ],
+      "answer": 3,
+      "explanation": "The `launchSettings.json` file defines the launch profiles for debugging and running the application, including settings such as the URL, environment variables, and launch browser.",
+      "hint": "Think about how you configure your application when running it in different environments."
+    }
+  ]
+}

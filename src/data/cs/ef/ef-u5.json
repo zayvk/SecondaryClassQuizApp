@@ -1,0 +1,671 @@
+{
+  "subject": "Entity Framework Core",
+  "unit": "Unit 5: Loading Strategies and Best Practices",
+  "unitId": "ef-u5",
+  "categoryId": "cs",
+  "topics": [
+    "Eager loading with Include and ThenInclude",
+    "Lazy loading — concept and pitfalls",
+    "Explicit loading — when and how to use it",
+    "N+1 query problem and how to avoid it",
+    "Over-fetching vs projection — why Select matters for performance",
+    "When NOT to use EF Core — raw SQL with FromSqlRaw",
+    "Repository pattern with EF Core",
+    "Unit of Work pattern concept",
+    "Why DbContext should not be a singleton",
+    "Testing with EF Core — InMemory database"
+  ],
+  "generatedAt": "2026-04-22T02:22:56Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary benefit of using eager loading with `Include` in Entity Framework Core?",
+      "options": [
+        "Reduced database round trips",
+        "Simplified data mapping",
+        "Automatic change tracking",
+        "Improved code readability"
+      ],
+      "answer": 0,
+      "explanation": "Eager loading fetches related entities in a single query, reducing the number of database round trips and improving performance.",
+      "hint": "Think about how many queries are executed when accessing related data without `Include`."
+    },
+    {
+      "id": 2,
+      "question": "Lazy loading in EF Core is generally discouraged. What is the main reason for this?",
+      "options": [
+        "It always leads to over-fetching of data",
+        "It can cause the N+1 query problem",
+        "It's incompatible with asynchronous operations",
+        "It requires more complex configuration"
+      ],
+      "answer": 1,
+      "explanation": "Lazy loading can trigger a separate query for each related entity accessed in a loop, resulting in the N+1 query problem.",
+      "hint": "Consider what happens when you iterate through a collection and access a navigation property."
+    },
+    {
+      "id": 3,
+      "question": "When would you choose explicit loading over eager loading?",
+      "options": [
+        "When you always need all related data",
+        "When you only need related data in specific scenarios",
+        "When you want to avoid change tracking",
+        "When you're using a disconnected scenario"
+      ],
+      "answer": 1,
+      "explanation": "Explicit loading is useful when you only need related data conditionally, allowing you to control when the additional queries are executed.",
+      "hint": "Think about situations where you don't always require the related entities."
+    },
+    {
+      "id": 4,
+      "question": "What is the N+1 query problem, and how does it impact performance?",
+      "options": [
+        "It fetches N+1 unrelated tables, slowing down the initial query",
+        "It executes one query for the initial data and N additional queries for related data",
+        "It causes the database to lock N tables simultaneously",
+        "It results in N duplicate records being returned"
+      ],
+      "answer": 1,
+      "explanation": "The N+1 query problem occurs when fetching a collection of entities and then querying for related data for each entity individually, leading to N+1 database queries.",
+      "hint": "Imagine loading a list of blog posts and then querying for the author of each post separately."
+    },
+    {
+      "id": 5,
+      "question": "How can you effectively avoid the N+1 query problem?",
+      "options": [
+        "Use lazy loading",
+        "Use explicit loading",
+        "Use eager loading with `Include`",
+        "Disable change tracking"
+      ],
+      "answer": 2,
+      "explanation": "Eager loading with `Include` fetches related data in a single query, preventing the N+1 query problem.",
+      "hint": "Think about fetching all necessary data in a single database trip."
+    },
+    {
+      "id": 6,
+      "question": "What is the difference between over-fetching and projection in EF Core?",
+      "options": [
+        "Over-fetching retrieves only the necessary columns, while projection retrieves all columns",
+        "Over-fetching retrieves all columns, while projection retrieves only the necessary columns",
+        "Over-fetching is faster, while projection is more memory-efficient",
+        "Over-fetching is used for read-only scenarios, while projection is used for updates"
+      ],
+      "answer": 1,
+      "explanation": "Over-fetching retrieves all columns from a table, even if they are not needed, while projection allows you to select only the required columns.",
+      "hint": "Consider the amount of data transferred from the database."
+    },
+    {
+      "id": 7,
+      "question": "Why does using `Select` for projection improve performance in EF Core?",
+      "options": [
+        "It reduces the amount of data transferred from the database",
+        "It enables caching of query results",
+        "It simplifies the data mapping process",
+        "It allows for parallel query execution"
+      ],
+      "answer": 0,
+      "explanation": "Using `Select` reduces the amount of data transferred from the database, leading to faster query execution and reduced memory consumption.",
+      "hint": "Think about the size of the result set."
+    },
+    {
+      "id": 8,
+      "question": "In what scenarios might you choose to use raw SQL with `FromSqlRaw` instead of EF Core's LINQ?",
+      "options": [
+        "When you need to perform complex database-specific operations",
+        "When you want to leverage EF Core's change tracking",
+        "When you need to work with a relational database",
+        "When you want to simplify your code"
+      ],
+      "answer": 0,
+      "explanation": "Raw SQL is useful when you need to perform complex database-specific operations that are difficult or impossible to express using LINQ.",
+      "hint": "Consider situations where the database has unique features or optimizations."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the Repository pattern when used with EF Core?",
+      "options": [
+        "To directly access and manipulate the database",
+        "To abstract the data access logic from the business logic",
+        "To enforce data validation rules",
+        "To manage database connections"
+      ],
+      "answer": 1,
+      "explanation": "The Repository pattern provides an abstraction layer between the business logic and the data access layer, making the code more maintainable and testable.",
+      "hint": "Think about separating concerns in your application."
+    },
+    {
+      "id": 10,
+      "question": "What is the Unit of Work pattern, and how does it relate to EF Core's `DbContext`?",
+      "options": [
+        "It's a design pattern for managing database connections",
+        "It's a design pattern for coordinating changes across multiple repositories",
+        "It's a design pattern for caching query results",
+        "It's a design pattern for implementing optimistic concurrency control"
+      ],
+      "answer": 1,
+      "explanation": "The Unit of Work pattern ensures that all changes made to the data are persisted together as a single atomic unit, typically managed by the `DbContext`.",
+      "hint": "Consider how you would handle multiple database operations that need to succeed or fail together."
+    },
+    {
+      "id": 11,
+      "question": "Why is it generally a bad practice to make the `DbContext` a singleton?",
+      "options": [
+        "It can lead to thread-safety issues",
+        "It can cause memory leaks",
+        "It can prevent change tracking from working correctly",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "A singleton `DbContext` can lead to thread-safety issues, memory leaks, and incorrect change tracking because it's not designed to be shared across multiple threads or requests.",
+      "hint": "Think about the lifecycle of a `DbContext` and its internal state."
+    },
+    {
+      "id": 12,
+      "question": "How can you effectively test EF Core code without connecting to a real database?",
+      "options": [
+        "Use a mock database",
+        "Use an in-memory database",
+        "Use a file-based database",
+        "Use a different ORM"
+      ],
+      "answer": 1,
+      "explanation": "The in-memory database provides a lightweight and fast way to test EF Core code without requiring a real database connection.",
+      "hint": "Think about creating a database in memory for testing purposes."
+    },
+    {
+      "id": 13,
+      "question": "Consider the following code: `context.Blogs.Include(b => b.Posts).ToList()`. What loading strategy is being used?",
+      "options": [
+        "Lazy loading",
+        "Explicit loading",
+        "Eager loading",
+        "Projection"
+      ],
+      "answer": 2,
+      "explanation": "The `Include` method specifies eager loading, which fetches the related `Posts` entities along with the `Blogs` entities in a single query.",
+      "hint": "Look for the `Include` keyword."
+    },
+    {
+      "id": 14,
+      "question": "What is the primary disadvantage of using `ThenInclude`?",
+      "options": [
+        "It can only be used with one level of navigation",
+        "It can lead to complex and difficult-to-read queries",
+        "It always results in over-fetching",
+        "It's incompatible with asynchronous operations"
+      ],
+      "answer": 1,
+      "explanation": "Using multiple `ThenInclude` calls can create complex queries that are hard to understand and maintain.",
+      "hint": "Think about the readability of your queries when chaining `ThenInclude` calls."
+    },
+    {
+      "id": 15,
+      "question": "You need to retrieve only the `Name` and `Id` properties of a `Product` entity. Which approach is most efficient?",
+      "options": [
+        "`context.Products.ToList()` and then manually select the properties",
+        "`context.Products.Select(p => new { p.Name, p.Id }).ToList()`",
+        "`context.Products.Include(p => p.Name).ToList()`",
+        "`context.Products.AsNoTracking().ToList()`"
+      ],
+      "answer": 1,
+      "explanation": "Using `Select` performs projection, retrieving only the specified properties from the database, minimizing data transfer and improving performance.",
+      "hint": "Think about retrieving only the necessary data."
+    },
+    {
+      "id": 16,
+      "question": "What is the purpose of `AsNoTracking()` in EF Core?",
+      "options": [
+        "To disable change tracking",
+        "To enable optimistic concurrency control",
+        "To force eager loading",
+        "To use a different database provider"
+      ],
+      "answer": 0,
+      "explanation": "`AsNoTracking()` disables change tracking, which can improve performance when you only need to read data and don't intend to modify it.",
+      "hint": "Think about scenarios where you don't need to track changes."
+    },
+    {
+      "id": 17,
+      "question": "You have a scenario where you need to update multiple entities within a single transaction. How would you achieve this using EF Core?",
+      "options": [
+        "Use multiple `SaveChanges()` calls",
+        "Wrap the updates in a `try-catch` block",
+        "Use the `DbContext.Database.BeginTransaction()` method",
+        "Use a separate transaction manager"
+      ],
+      "answer": 2,
+      "explanation": "Using `DbContext.Database.BeginTransaction()` allows you to explicitly control the transaction scope, ensuring that all updates are committed or rolled back together.",
+      "hint": "Think about ensuring atomicity of your database operations."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `SaveChangesAsync()` and `SaveChanges()` in EF Core?",
+      "options": [
+        "`SaveChangesAsync()` is asynchronous, while `SaveChanges()` is synchronous",
+        "`SaveChanges()` is asynchronous, while `SaveChangesAsync()` is synchronous",
+        "They both perform the same operation",
+        "`SaveChangesAsync()` only works with in-memory databases"
+      ],
+      "answer": 0,
+      "explanation": "`SaveChangesAsync()` is an asynchronous method that allows the calling thread to remain responsive while the database operations are performed.",
+      "hint": "Think about non-blocking operations."
+    },
+    {
+      "id": 19,
+      "question": "You are experiencing performance issues with a query that retrieves a large number of entities. What is the first thing you should investigate?",
+      "options": [
+        "The database server's CPU usage",
+        "The EF Core configuration",
+        "The query itself for potential N+1 problems or over-fetching",
+        "The network connection speed"
+      ],
+      "answer": 2,
+      "explanation": "The query itself is the most likely source of performance issues, so it's important to analyze it for potential problems like N+1 queries or over-fetching.",
+      "hint": "Start with the code that interacts with the database."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the `DbContextOptionsBuilder`?",
+      "options": [
+        "To configure the database connection string",
+        "To configure the entity mappings",
+        "To configure the change tracking options",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "The `DbContextOptionsBuilder` allows you to configure various aspects of the `DbContext`, including the database connection string, entity mappings, and change tracking options.",
+      "hint": "Think about how you set up your `DbContext`."
+    },
+    {
+      "id": 21,
+      "question": "Consider a scenario where you need to retrieve a specific entity by its primary key. Which method is most efficient?",
+      "options": [
+        "`context.Entities.FirstOrDefault()`",
+        "`context.Entities.Where(e => e.Id == id).FirstOrDefault()`",
+        "`context.Entities.Find(id)`",
+        "`context.Entities.SingleOrDefault()`"
+      ],
+      "answer": 2,
+      "explanation": "`Find()` is optimized for retrieving entities by their primary key and is generally more efficient than other methods.",
+      "hint": "Think about methods specifically designed for primary key lookups."
+    },
+    {
+      "id": 22,
+      "question": "What is the role of migrations in EF Core?",
+      "options": [
+        "To automatically generate database schemas",
+        "To track changes to the database schema over time",
+        "To manage database backups",
+        "To optimize database queries"
+      ],
+      "answer": 1,
+      "explanation": "Migrations track changes to your database schema over time, allowing you to apply those changes to different environments.",
+      "hint": "Think about how you manage database schema updates."
+    },
+    {
+      "id": 23,
+      "question": "You have a complex query with multiple joins and filters. How can you improve its performance?",
+      "options": [
+        "Use eager loading",
+        "Use projection with `Select`",
+        "Use explicit loading",
+        "Use lazy loading"
+      ],
+      "answer": 1,
+      "explanation": "Projection with `Select` can significantly improve performance by retrieving only the necessary columns, reducing data transfer and processing overhead.",
+      "hint": "Focus on minimizing the amount of data retrieved."
+    },
+    {
+      "id": 24,
+      "question": "What is the purpose of the `ChangeTracker` in EF Core?",
+      "options": [
+        "To track changes made to entities",
+        "To manage database connections",
+        "To cache query results",
+        "To validate data"
+      ],
+      "answer": 0,
+      "explanation": "The `ChangeTracker` tracks changes made to entities, allowing EF Core to generate the appropriate SQL statements to update the database.",
+      "hint": "Think about how EF Core knows which entities have been modified."
+    },
+    {
+      "id": 25,
+      "question": "You need to execute a stored procedure in EF Core. Which method should you use?",
+      "options": [
+        "`context.Database.ExecuteSqlCommand()`",
+        "`context.Database.ExecuteSqlRaw()`",
+        "`context.Database.ExecuteStoredProcedure()`",
+        "`context.Database.SqlQuery()`"
+      ],
+      "answer": 2,
+      "explanation": "`ExecuteStoredProcedure()` is specifically designed for executing stored procedures in EF Core.",
+      "hint": "Look for a method named 'StoredProcedure'."
+    },
+    {
+      "id": 26,
+      "question": "What is the benefit of using `Owned Entities` in EF Core?",
+      "options": [
+        "They are automatically tracked by the change tracker",
+        "They don't require a separate primary key",
+        "They are always eager loaded",
+        "They simplify complex relationships"
+      ],
+      "answer": 1,
+      "explanation": "Owned entities don't require a separate primary key as they are owned by another entity, simplifying the data model.",
+      "hint": "Think about entities that are logically part of another entity."
+    },
+    {
+      "id": 27,
+      "question": "You have a one-to-many relationship between `Author` and `Book`. How would you configure this relationship using the Fluent API?",
+      "options": [
+        "`modelBuilder.Entity<Author>().HasMany(a => a.Books).WithOne(b => b.Author);`",
+        "`modelBuilder.Entity<Book>().HasOne(b => b.Author).WithMany(a => a.Books);`",
+        "`modelBuilder.Entity<Author>().HasOne(a => a.Books).WithMany(b => b.Author);`",
+        "`modelBuilder.Entity<Book>().HasMany(b => b.Author).WithOne(a => a.Books);`"
+      ],
+      "answer": 0,
+      "explanation": "This configuration correctly defines the one-to-many relationship, specifying that an `Author` can have many `Books`, and each `Book` belongs to one `Author`.",
+      "hint": "Think about which side of the relationship has the 'many' side."
+    },
+    {
+      "id": 28,
+      "question": "What is the purpose of `OnModelCreating` method in a `DbContext`?",
+      "options": [
+        "To configure the database connection",
+        "To define the entity mappings and relationships",
+        "To handle database migrations",
+        "To manage change tracking"
+      ],
+      "answer": 1,
+      "explanation": "The `OnModelCreating` method is used to configure the entity mappings and relationships using either the Fluent API or Data Annotations.",
+      "hint": "Think about where you define your data model structure."
+    },
+    {
+      "id": 29,
+      "question": "You are using EF Core with a database that supports spatial data types. How can you work with spatial data?",
+      "options": [
+        "Use the `System.Spatial` namespace",
+        "Use the `Microsoft.EntityFrameworkCore.SqlServer.Spatial` package",
+        "Use a custom data type mapping",
+        "Spatial data is not supported by EF Core"
+      ],
+      "answer": 1,
+      "explanation": "The `Microsoft.EntityFrameworkCore.SqlServer.Spatial` package provides support for working with spatial data types in EF Core when using SQL Server.",
+      "hint": "Look for a package specifically designed for spatial data."
+    },
+    {
+      "id": 30,
+      "question": "What is the difference between `Add()` and `Update()` methods in EF Core?",
+      "options": [
+        "`Add()` inserts a new entity, while `Update()` modifies an existing entity",
+        "`Update()` inserts a new entity, while `Add()` modifies an existing entity",
+        "They both perform the same operation",
+        "`Add()` only works with detached entities"
+      ],
+      "answer": 0,
+      "explanation": "`Add()` is used to insert a new entity into the database, while `Update()` is used to modify an existing entity.",
+      "hint": "Think about the purpose of each method in the context of database operations."
+    },
+    {
+      "id": 31,
+      "question": "You have a scenario where you need to perform a complex filtering operation that cannot be easily expressed using LINQ. What is a possible solution?",
+      "options": [
+        "Use a stored procedure",
+        "Use raw SQL with `FromSqlRaw`",
+        "Use a custom data type mapping",
+        "Use a different ORM"
+      ],
+      "answer": 1,
+      "explanation": "Raw SQL with `FromSqlRaw` allows you to execute arbitrary SQL queries, providing flexibility for complex filtering operations.",
+      "hint": "Think about using SQL directly when LINQ is insufficient."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `HasConversion` method in the Fluent API?",
+      "options": [
+        "To convert data types between the database and the entity model",
+        "To configure relationships between entities",
+        "To define indexes",
+        "To enable change tracking"
+      ],
+      "answer": 0,
+      "explanation": "The `HasConversion` method allows you to map between different data types in the database and the entity model, for example, converting a string to an enum.",
+      "hint": "Think about scenarios where the database and entity model have different data type representations."
+    },
+    {
+      "id": 33,
+      "question": "You are using EF Core with a large database and are experiencing slow query performance. What can you do to improve performance?",
+      "options": [
+        "Add indexes to frequently queried columns",
+        "Use eager loading",
+        "Use projection with `Select`",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Adding indexes, using eager loading, and using projection with `Select` can all contribute to improved query performance in a large database.",
+      "hint": "Consider multiple optimization techniques."
+    },
+    {
+      "id": 34,
+      "question": "What is the purpose of the `QueryFilter` method in EF Core?",
+      "options": [
+        "To apply a global filter to all queries for a specific entity",
+        "To filter data based on user roles",
+        "To optimize query performance",
+        "To enable change tracking"
+      ],
+      "answer": 0,
+      "explanation": "The `QueryFilter` method allows you to apply a global filter to all queries for a specific entity, for example, to filter out deleted records.",
+      "hint": "Think about applying a filter that should always be applied to a specific entity."
+    },
+    {
+      "id": 35,
+      "question": "You need to implement optimistic concurrency control in EF Core. How can you achieve this?",
+      "options": [
+        "Use a timestamp column",
+        "Use a version column",
+        "Use a row version column",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "A row version column (typically a `timestamp` or `rowversion` data type) is used to track changes to a row, allowing EF Core to detect concurrent updates.",
+      "hint": "Think about how to detect if a record has been modified by another user."
+    },
+    {
+      "id": 36,
+      "question": "What is the difference between `Attach` and `Update` methods in EF Core?",
+      "options": [
+        "`Attach` adds a new entity, while `Update` modifies an existing entity",
+        "`Update` attaches a detached entity to the context, while `Attach` modifies an existing entity",
+        "`Attach` attaches a detached entity to the context, while `Update` marks an existing entity as modified",
+        "They both perform the same operation"
+      ],
+      "answer": 2,
+      "explanation": "`Attach` attaches a detached entity to the context, while `Update` marks an existing entity (already tracked) as modified.",
+      "hint": "Consider the state of the entity before calling the method."
+    },
+    {
+      "id": 37,
+      "question": "You are designing a system with a complex data model. What is the benefit of using the Repository pattern and Unit of Work pattern together?",
+      "options": [
+        "They simplify database migrations",
+        "They improve code readability",
+        "They provide a clean separation of concerns and manage transactions",
+        "They enable lazy loading"
+      ],
+      "answer": 2,
+      "explanation": "The Repository pattern abstracts data access logic, while the Unit of Work pattern manages transactions, providing a clean separation of concerns and ensuring data consistency.",
+      "hint": "Think about how these patterns work together to manage data access and transactions."
+    },
+    {
+      "id": 38,
+      "question": "You have a scenario where you need to retrieve a large number of records and process them in batches. How can you achieve this efficiently with EF Core?",
+      "options": [
+        "Use `AsEnumerable()` and process the results in memory",
+        "Use `AsStreaming()` and process the results in a stream",
+        "Use `ToList()` and process the results in memory",
+        "Use `ToArray()` and process the results in memory"
+      ],
+      "answer": 1,
+      "explanation": "`AsStreaming()` allows you to process the results in a stream, avoiding loading the entire result set into memory, which is more efficient for large datasets.",
+      "hint": "Think about processing data without loading everything into memory at once."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `DbContextPool` in EF Core?",
+      "options": [
+        "To cache database connections",
+        "To manage database migrations",
+        "To improve performance by reusing `DbContext` instances",
+        "To enable change tracking"
+      ],
+      "answer": 2,
+      "explanation": "The `DbContextPool` improves performance by reusing `DbContext` instances, reducing the overhead of creating and disposing of them.",
+      "hint": "Think about reusing resources to improve performance."
+    },
+    {
+      "id": 40,
+      "question": "You are using EF Core in a web application. What is the recommended scope for the `DbContext`?",
+      "options": [
+        "Singleton",
+        "Scoped",
+        "Transient",
+        "Any of the above"
+      ],
+      "answer": 1,
+      "explanation": "Scoped lifetime ensures that a new `DbContext` instance is created for each request, providing isolation and preventing thread-safety issues.",
+      "hint": "Think about the lifecycle of a request in a web application."
+    },
+    {
+      "id": 41,
+      "question": "What is the primary advantage of using Data Table Valued Parameters (TVPs) with EF Core?",
+      "options": [
+        "Improved security",
+        "Reduced network traffic",
+        "Enhanced query performance for bulk operations",
+        "Simplified data mapping"
+      ],
+      "answer": 2,
+      "explanation": "TVPs allow you to pass a table of data to a stored procedure, significantly improving performance for bulk insert, update, or delete operations.",
+      "hint": "Consider scenarios where you need to process a large number of records at once."
+    },
+    {
+      "id": 42,
+      "question": "You are experiencing deadlocks in your EF Core application. What is a common cause of deadlocks?",
+      "options": [
+        "Incorrectly configured database indexes",
+        "Long-running transactions",
+        "Concurrent access to the same resources",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Concurrent access to the same resources by multiple transactions can lead to deadlocks if they are waiting for each other to release locks.",
+      "hint": "Think about scenarios where multiple transactions are trying to access the same data."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `Interceptor` pattern in EF Core?",
+      "options": [
+        "To intercept and modify database commands",
+        "To cache query results",
+        "To manage database connections",
+        "To validate data"
+      ],
+      "answer": 0,
+      "explanation": "Interceptors allow you to intercept and modify database commands before they are executed, enabling you to log queries, modify SQL, or implement custom behavior.",
+      "hint": "Think about modifying the behavior of EF Core without changing the core code."
+    },
+    {
+      "id": 44,
+      "question": "You need to implement auditing in your EF Core application. What is a common approach?",
+      "options": [
+        "Use database triggers",
+        "Use EF Core Interceptors",
+        "Use a separate auditing table",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "A combination of database triggers, EF Core Interceptors, and a separate auditing table can provide a comprehensive auditing solution.",
+      "hint": "Consider different ways to track changes to your data."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `ValueConverter` in EF Core?",
+      "options": [
+        "To convert data types between the database and the entity model",
+        "To configure relationships between entities",
+        "To define indexes",
+        "To enable change tracking"
+      ],
+      "answer": 0,
+      "explanation": "Value converters allow you to map between different data types in the database and the entity model, similar to `HasConversion` but more flexible.",
+      "hint": "Think about scenarios where you need custom data type conversions."
+    },
+    {
+      "id": 46,
+      "question": "You are using EF Core with a NoSQL database. What are the limitations?",
+      "options": [
+        "EF Core is not designed for NoSQL databases",
+        "EF Core may not support all NoSQL features",
+        "EF Core may require custom providers",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "EF Core is primarily designed for relational databases, and using it with NoSQL databases may require custom providers and may not support all NoSQL features.",
+      "hint": "Think about the differences between relational and NoSQL databases."
+    },
+    {
+      "id": 47,
+      "question": "What is the benefit of using `SplitQuery` in EF Core?",
+      "options": [
+        "It splits a large query into smaller chunks",
+        "It improves performance when loading related data",
+        "It reduces memory consumption",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "`SplitQuery` helps to reduce memory consumption and improve performance when loading related data by splitting a large query into smaller chunks.",
+      "hint": "Think about scenarios where you are loading a large number of related entities."
+    },
+    {
+      "id": 48,
+      "question": "You are using EF Core in a microservices architecture. What is a common approach to data access?",
+      "options": [
+        "Use a single shared `DbContext`",
+        "Use a separate `DbContext` for each microservice",
+        "Use a database per microservice",
+        "All of the above"
+      ],
+      "answer": 2,
+      "explanation": "Database per microservice is a common approach in microservices architectures to ensure data isolation and independence.",
+      "hint": "Think about the principles of microservices and data ownership."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `QueryCaching` feature in EF Core?",
+      "options": [
+        "To cache database connections",
+        "To cache query results",
+        "To manage database migrations",
+        "To validate data"
+      ],
+      "answer": 1,
+      "explanation": "Query caching stores the results of frequently executed queries, reducing the load on the database and improving performance.",
+      "hint": "Think about storing query results to avoid repeated database calls."
+    },
+    {
+      "id": 50,
+      "question": "You are designing a system that requires high scalability and performance. Would you prioritize using EF Core or raw SQL?",
+      "options": [
+        "EF Core, due to its ease of use",
+        "Raw SQL, for greater control and optimization",
+        "It depends on the specific requirements of the system",
+        "Both approaches are equally suitable"
+      ],
+      "answer": 2,
+      "explanation": "The choice between EF Core and raw SQL depends on the specific requirements of the system. Raw SQL offers greater control and optimization potential for high-performance scenarios, while EF Core provides ease of use and development speed.",
+      "hint": "Consider the trade-offs between development speed and performance."
+    }
+  ]
+}

@@ -1,0 +1,667 @@
+{
+  "subject": "Entity Framework Core",
+  "unit": "Unit 4: Relationships and Querying",
+  "unitId": "ef-u4",
+  "categoryId": "cs",
+  "topics": [
+    "One-to-many relationships — navigation properties and foreign keys",
+    "One-to-one relationships",
+    "Many-to-many relationships",
+    "Configuring relationships with Fluent API",
+    "How LINQ works with EF Core — SQL translation concept",
+    "Filtering with Where",
+    "Fetching data — FirstOrDefault, SingleOrDefault, ToList, ToListAsync",
+    "Projection with Select — choosing specific columns",
+    "Ordering with OrderBy and OrderByDescending",
+    "Pagination with Skip and Take"
+  ],
+  "generatedAt": "2026-04-22T02:20:43Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "In EF Core, what is the primary purpose of navigation properties?",
+      "options": [
+        "To define primary keys",
+        "To establish relationships between entities",
+        "To map entities to database tables",
+        "To handle database migrations"
+      ],
+      "answer": 1,
+      "explanation": "Navigation properties allow you to traverse relationships between entities in your object model, making it easy to access related data.",
+      "hint": "Think about how you would access related data from an entity without using foreign keys directly."
+    },
+    {
+      "id": 2,
+      "question": "Which method is used to retrieve a single entity from a DbSet if it's expected to exist, otherwise returning null?",
+      "options": [
+        "FirstOrDefault()",
+        "SingleOrDefault()",
+        "First()",
+        "Single()"
+      ],
+      "answer": 0,
+      "explanation": "FirstOrDefault() returns the first element of a sequence, or a default value (null for reference types) if no element is found.",
+      "hint": "Consider the scenario where the query might not return any results."
+    },
+    {
+      "id": 3,
+      "question": "What is the role of a foreign key in a one-to-many relationship?",
+      "options": [
+        "It uniquely identifies the primary entity",
+        "It links the many side to the one side",
+        "It defines the primary key of the many side",
+        "It enforces data integrity on the one side"
+      ],
+      "answer": 1,
+      "explanation": "The foreign key on the 'many' side of the relationship references the primary key of the 'one' side, establishing the link.",
+      "hint": "Think about which side of the relationship needs to 'point' to the other."
+    },
+    {
+      "id": 4,
+      "question": "How does EF Core translate a LINQ query into a database operation?",
+      "options": [
+        "It directly executes the LINQ query on the database",
+        "It converts the LINQ query to a SQL query",
+        "It uses an ORM mapper to translate the query",
+        "It relies on stored procedures"
+      ],
+      "answer": 1,
+      "explanation": "EF Core's LINQ provider translates LINQ expressions into equivalent SQL queries that are then executed against the database.",
+      "hint": "Consider the underlying technology that allows EF Core to interact with different database systems."
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the `Include()` method in EF Core?",
+      "options": [
+        "To filter data based on a condition",
+        "To specify the columns to retrieve",
+        "To eagerly load related entities",
+        "To order the results of a query"
+      ],
+      "answer": 2,
+      "explanation": "Include() allows you to specify related entities that should be loaded along with the primary entity in a single query, avoiding the N+1 problem.",
+      "hint": "Think about performance implications when accessing related data."
+    },
+    {
+      "id": 6,
+      "question": "In a one-to-one relationship, how is the relationship typically implemented?",
+      "options": [
+        "Using a join table",
+        "Using a foreign key in both entities",
+        "Using a foreign key in one entity",
+        "Using a shared primary key"
+      ],
+      "answer": 2,
+      "explanation": "A one-to-one relationship is usually implemented by adding a foreign key to one of the entities, referencing the primary key of the other.",
+      "hint": "Consider the simplicity and efficiency of representing a one-to-one link."
+    },
+    {
+      "id": 7,
+      "question": "What is the difference between `ToListAsync()` and `ToList()` in EF Core?",
+      "options": [
+        "`ToListAsync()` executes the query asynchronously, while `ToList()` executes it synchronously.",
+        "`ToList()` executes the query asynchronously, while `ToListAsync()` executes it synchronously.",
+        "They both execute the query synchronously.",
+        "They both execute the query asynchronously."
+      ],
+      "answer": 0,
+      "explanation": "`ToListAsync()` returns a Task representing the asynchronous operation of retrieving the data, improving application responsiveness, while `ToList()` blocks until the query completes.",
+      "hint": "Think about the benefits of asynchronous operations in a web application."
+    },
+    {
+      "id": 8,
+      "question": "Which Fluent API method is used to configure a one-to-many relationship?",
+      "options": [
+        "HasKey()",
+        "HasOne()",
+        "HasMany()",
+        "WithOwner()"
+      ],
+      "answer": 2,
+      "explanation": "HasMany() is used to define the 'many' side of a one-to-many relationship, specifying the navigation property and the relationship configuration.",
+      "hint": "Consider which side of the relationship represents multiple entities."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of the `Select()` method in LINQ when used with EF Core?",
+      "options": [
+        "To filter the results of a query",
+        "To project the results into a different type",
+        "To order the results of a query",
+        "To group the results of a query"
+      ],
+      "answer": 1,
+      "explanation": "Select() allows you to choose specific columns or create new objects based on the data retrieved from the database.",
+      "hint": "Think about how you would retrieve only specific properties of an entity."
+    },
+    {
+      "id": 10,
+      "question": "How are many-to-many relationships typically implemented in a relational database?",
+      "options": [
+        "Using a foreign key in both tables",
+        "Using a join table",
+        "Using a shared primary key",
+        "Using a composite key"
+      ],
+      "answer": 1,
+      "explanation": "Many-to-many relationships are implemented using a join table (also known as a linking table) that contains foreign keys referencing both tables.",
+      "hint": "Consider how to represent multiple associations between two entities."
+    },
+    {
+      "id": 11,
+      "question": "What does the `OrderByDescending()` method do?",
+      "options": [
+        "Sorts the results in ascending order",
+        "Sorts the results in descending order",
+        "Filters the results based on a condition",
+        "Groups the results based on a key"
+      ],
+      "answer": 1,
+      "explanation": "`OrderByDescending()` sorts the results of a query in descending order based on the specified property.",
+      "hint": "Think about the opposite of `OrderBy()`."
+    },
+    {
+      "id": 12,
+      "question": "What is the purpose of the `Skip()` and `Take()` methods when used together?",
+      "options": [
+        "To filter the results based on a condition",
+        "To sort the results of a query",
+        "To implement pagination",
+        "To group the results based on a key"
+      ],
+      "answer": 2,
+      "explanation": "Skip() and Take() are used together to implement pagination, allowing you to retrieve a specific page of results from a larger dataset.",
+      "hint": "Consider how you would display a large dataset in smaller chunks."
+    },
+    {
+      "id": 13,
+      "question": "Which of the following best describes the N+1 problem in EF Core?",
+      "options": [
+        "A database connection issue",
+        "Inefficient querying of related entities",
+        "A problem with data validation",
+        "A conflict in database schema"
+      ],
+      "answer": 1,
+      "explanation": "The N+1 problem occurs when EF Core executes one query to retrieve the initial entities and then N additional queries to retrieve the related entities for each of those entities.",
+      "hint": "Think about the performance impact of loading related data in a loop."
+    },
+    {
+      "id": 14,
+      "question": "How can you prevent the N+1 problem in EF Core?",
+      "options": [
+        "Using `ToList()` instead of `ToListAsync()`",
+        "Using the `Include()` method to eagerly load related entities",
+        "Using stored procedures",
+        "Using raw SQL queries"
+      ],
+      "answer": 1,
+      "explanation": "Eager loading with `Include()` retrieves related entities in a single query, avoiding the N+1 problem.",
+      "hint": "Consider loading related data upfront instead of on demand."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the `Where()` method in LINQ?",
+      "options": [
+        "To order the results of a query",
+        "To project the results into a different type",
+        "To filter the results based on a condition",
+        "To group the results based on a key"
+      ],
+      "answer": 2,
+      "explanation": "The `Where()` method filters the results of a query based on a specified condition.",
+      "hint": "Think about how you would retrieve only the entities that meet certain criteria."
+    },
+    {
+      "id": 16,
+      "question": "Consider the following scenario: You have a `Blog` entity and a `Post` entity with a one-to-many relationship. How would you configure this relationship using Fluent API?",
+      "options": [
+        "`modelBuilder.Entity<Blog>().HasMany(b => b.Posts).WithOne(p => p.Blog);`",
+        "`modelBuilder.Entity<Post>().HasMany(p => p.Blogs).WithOne(b => b.Post);`",
+        "`modelBuilder.Entity<Blog>().HasOne(b => b.Post).WithMany(p => p.Blogs);`",
+        "`modelBuilder.Entity<Post>().HasOne(p => p.Blog).WithMany(b => b.Posts);`"
+      ],
+      "answer": 0,
+      "explanation": "This configuration correctly defines the one-to-many relationship, indicating that a Blog can have many Posts, and each Post belongs to one Blog.",
+      "hint": "Remember which side is 'one' and which side is 'many'."
+    },
+    {
+      "id": 17,
+      "question": "What is the difference between `Single()` and `SingleOrDefault()`?",
+      "options": [
+        "`Single()` returns the only element, or null if none exists; `SingleOrDefault()` throws an exception if more than one element exists.",
+        "`Single()` throws an exception if more than one element exists; `SingleOrDefault()` returns the only element, or null if none exists.",
+        "They both return the only element, or null if none exists.",
+        "They both throw an exception if more than one element exists."
+      ],
+      "answer": 1,
+      "explanation": "`Single()` throws an exception if the query returns zero or more than one element, while `SingleOrDefault()` returns the single element if it exists, or null if no element is found.",
+      "hint": "Consider the scenarios where you expect exactly one result."
+    },
+    {
+      "id": 18,
+      "question": "You need to retrieve only the `Id` and `Name` properties of all `Product` entities. Which LINQ method would you use?",
+      "options": [
+        "`Where()`",
+        "`OrderBy()`",
+        "`Select()`",
+        "`GroupBy()`"
+      ],
+      "answer": 2,
+      "explanation": "`Select()` allows you to project the results into a different type, selecting only the desired properties.",
+      "hint": "Think about how to choose specific columns from a table."
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of the `HasForeignKey()` method in Fluent API?",
+      "options": [
+        "To define the primary key of an entity",
+        "To specify the foreign key column in a relationship",
+        "To configure the data type of a column",
+        "To define the index of a column"
+      ],
+      "answer": 1,
+      "explanation": "The `HasForeignKey()` method is used to explicitly specify the foreign key column that establishes the relationship between entities.",
+      "hint": "Consider how EF Core knows which column links two tables together."
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is a benefit of using asynchronous methods (e.g., `ToListAsync()`) in EF Core?",
+      "options": [
+        "Improved database performance",
+        "Reduced memory usage",
+        "Increased application responsiveness",
+        "Simplified code complexity"
+      ],
+      "answer": 2,
+      "explanation": "Asynchronous methods allow the application to continue processing other tasks while waiting for the database operation to complete, improving responsiveness.",
+      "hint": "Think about how asynchronous operations can prevent blocking the main thread."
+    },
+    {
+      "id": 21,
+      "question": "What happens if you try to save changes to the database with conflicting data (e.g., violating a unique constraint)?",
+      "options": [
+        "EF Core automatically resolves the conflict",
+        "An exception is thrown",
+        "The conflicting data is ignored",
+        "The save operation succeeds with partial changes"
+      ],
+      "answer": 1,
+      "explanation": "EF Core will throw a `DbUpdateException` when attempting to save changes that violate database constraints.",
+      "hint": "Consider how the database enforces data integrity."
+    },
+    {
+      "id": 22,
+      "question": "How can you explicitly specify the join type when using LINQ with EF Core?",
+      "options": [
+        "Using the `Join()` method",
+        "Using the `Include()` method",
+        "Using the `Where()` method",
+        "It's not possible to specify the join type explicitly"
+      ],
+      "answer": 0,
+      "explanation": "The `Join()` method allows you to explicitly specify the join type (e.g., inner join, left join) when querying related entities.",
+      "hint": "Think about how to control the way tables are joined in a SQL query."
+    },
+    {
+      "id": 23,
+      "question": "What is the purpose of the `AsNoTracking()` method?",
+      "options": [
+        "To disable change tracking",
+        "To enable optimistic concurrency",
+        "To force eager loading",
+        "To disable lazy loading"
+      ],
+      "answer": 0,
+      "explanation": "`AsNoTracking()` disables change tracking, which can improve performance when you only need to read data and don't intend to modify it.",
+      "hint": "Consider scenarios where you only need to retrieve data without making changes."
+    },
+    {
+      "id": 24,
+      "question": "You have a `Customer` entity and an `Address` entity with a one-to-one relationship. The `Customer` entity has a navigation property to the `Address` entity. How would you retrieve a customer and their address in a single query?",
+      "options": [
+        "`context.Customers.Include(c => c.Address).FirstOrDefault(c => c.Id == customerId);`",
+        "`context.Addresses.Include(a => a.Customer).FirstOrDefault(a => a.Id == addressId);`",
+        "`context.Customers.FirstOrDefault(c => c.Id == customerId); context.Addresses.FirstOrDefault(a => a.CustomerId == customerId);`",
+        "It's not possible to retrieve both entities in a single query."
+      ],
+      "answer": 0,
+      "explanation": "Using `Include()` with the navigation property allows you to eagerly load the related `Address` entity along with the `Customer` entity in a single query.",
+      "hint": "Think about how to avoid the N+1 problem when retrieving related data."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between `SaveChanges()` and `SaveChangesAsync()`?",
+      "options": [
+        "`SaveChanges()` is asynchronous, while `SaveChangesAsync()` is synchronous.",
+        "`SaveChangesAsync()` is asynchronous, while `SaveChanges()` is synchronous.",
+        "They both execute synchronously.",
+        "They both execute asynchronously."
+      ],
+      "answer": 1,
+      "explanation": "`SaveChangesAsync()` executes the save operation asynchronously, allowing the application to remain responsive, while `SaveChanges()` blocks until the operation completes.",
+      "hint": "Consider the benefits of asynchronous operations in a web application."
+    },
+    {
+      "id": 26,
+      "question": "In a many-to-many relationship, what information is typically stored in the join table?",
+      "options": [
+        "The primary keys of both entities",
+        "The foreign keys of both entities",
+        "All columns from both entities",
+        "Only the primary key of one entity"
+      ],
+      "answer": 1,
+      "explanation": "The join table stores foreign keys referencing the primary keys of both entities involved in the many-to-many relationship.",
+      "hint": "Think about how to represent multiple associations between two entities."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `OwnedEntity()` method in Fluent API?",
+      "options": [
+        "To define a one-to-one relationship",
+        "To define a many-to-many relationship",
+        "To define an owned entity",
+        "To define a complex type"
+      ],
+      "answer": 2,
+      "explanation": "The `OwnedEntity()` method is used to configure an owned entity, which is a type that is owned by another entity and doesn't have its own primary key.",
+      "hint": "Consider scenarios where you have a nested entity that is logically part of another entity."
+    },
+    {
+      "id": 28,
+      "question": "You want to retrieve the top 10 customers with the highest order total. How would you achieve this using LINQ?",
+      "options": [
+        "`context.Customers.OrderByDescending(c => c.OrderTotal).Take(10).ToList();`",
+        "`context.Customers.Where(c => c.OrderTotal > 0).Take(10).ToList();`",
+        "`context.Customers.OrderBy(c => c.OrderTotal).Take(10).ToList();`",
+        "`context.Customers.Select(c => c.OrderTotal).Take(10).ToList();`"
+      ],
+      "answer": 0,
+      "explanation": "This query orders the customers by `OrderTotal` in descending order and then takes the top 10 results.",
+      "hint": "Think about using `OrderByDescending()` and `Take()` together."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `UseQueryTrackingBehavior()` method in EF Core?",
+      "options": [
+        "To configure the database provider",
+        "To control change tracking behavior",
+        "To enable optimistic concurrency",
+        "To disable lazy loading"
+      ],
+      "answer": 1,
+      "explanation": "`UseQueryTrackingBehavior()` allows you to globally configure whether change tracking is enabled or disabled for all queries.",
+      "hint": "Consider how to optimize performance by controlling change tracking."
+    },
+    {
+      "id": 30,
+      "question": "What is the difference between `Find()` and `FirstOrDefault()`?",
+      "options": [
+        "`Find()` uses the primary key to retrieve an entity, while `FirstOrDefault()` uses a LINQ expression.",
+        "`FirstOrDefault()` uses the primary key to retrieve an entity, while `Find()` uses a LINQ expression.",
+        "They both retrieve entities using a LINQ expression.",
+        "They both retrieve entities using the primary key."
+      ],
+      "answer": 0,
+      "explanation": "`Find()` is optimized for retrieving entities by their primary key, while `FirstOrDefault()` allows you to use a LINQ expression to specify a more complex condition.",
+      "hint": "Consider the efficiency of retrieving an entity by its primary key."
+    },
+    {
+      "id": 31,
+      "question": "You have a complex object graph with multiple levels of nested relationships. What is a potential performance issue when loading this graph?",
+      "options": [
+        "Increased memory usage",
+        "The N+1 problem",
+        "Slow database connection",
+        "Data validation errors"
+      ],
+      "answer": 1,
+      "explanation": "Loading complex object graphs can easily lead to the N+1 problem, where multiple queries are executed to retrieve related entities.",
+      "hint": "Think about how EF Core loads related data by default."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `OnModelCreating()` method in a DbContext class?",
+      "options": [
+        "To configure the database connection",
+        "To define the entities in the model",
+        "To seed the database with initial data",
+        "To handle database migrations"
+      ],
+      "answer": 1,
+      "explanation": "The `OnModelCreating()` method is used to configure the entities and relationships in the EF Core model, typically using Fluent API.",
+      "hint": "Consider where you would define the structure of your database model."
+    },
+    {
+      "id": 33,
+      "question": "Which of the following is a best practice for designing relationships in EF Core?",
+      "options": [
+        "Using implicit relationships whenever possible",
+        "Using explicit relationships with navigation properties",
+        "Avoiding the use of foreign keys",
+        "Using only one-to-one relationships"
+      ],
+      "answer": 1,
+      "explanation": "Explicit relationships with navigation properties provide better control and clarity, making it easier to understand and maintain the relationships between entities.",
+      "hint": "Think about the benefits of clear and well-defined relationships."
+    },
+    {
+      "id": 34,
+      "question": "What is optimistic concurrency?",
+      "options": [
+        "A technique to prevent data conflicts by locking rows",
+        "A technique to detect and handle data conflicts during updates",
+        "A technique to improve database performance",
+        "A technique to validate data before saving"
+      ],
+      "answer": 1,
+      "explanation": "Optimistic concurrency assumes that conflicts are rare and detects them during the update process, allowing you to handle them gracefully.",
+      "hint": "Consider how to handle concurrent updates to the same data."
+    },
+    {
+      "id": 35,
+      "question": "How can you implement optimistic concurrency in EF Core?",
+      "options": [
+        "Using a timestamp column",
+        "Using a version column",
+        "Using a row version column",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "EF Core supports optimistic concurrency using timestamp, version, or row version columns to track changes to the data.",
+      "hint": "Think about how to track changes to an entity without locking it."
+    },
+    {
+      "id": 36,
+      "question": "You need to retrieve a list of all `Category` entities and their associated `Products`, but you only need the `ProductId` and `ProductName` from the `Products`. How would you achieve this efficiently?",
+      "options": [
+        "`context.Categories.Include(c => c.Products).ToList();`",
+        "`context.Categories.Select(c => new { c.Name, Products = c.Products.Select(p => new { p.ProductId, p.ProductName }) }).ToList();`",
+        "`context.Products.Where(p => p.CategoryId != null).ToList();`",
+        "`context.Categories.ToList(); context.Products.ToList();`"
+      ],
+      "answer": 1,
+      "explanation": "This query uses `Select()` to project the `Products` into a new type containing only the desired properties, reducing the amount of data transferred from the database.",
+      "hint": "Think about using projection to retrieve only the necessary data."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `Query()` method in EF Core?",
+      "options": [
+        "To execute a raw SQL query",
+        "To disable change tracking",
+        "To create a queryable object",
+        "To configure the database connection"
+      ],
+      "answer": 2,
+      "explanation": "The `Query()` method returns an `IQueryable` object, which represents a query that can be executed against the database.",
+      "hint": "Consider how to create a query that can be modified before execution."
+    },
+    {
+      "id": 38,
+      "question": "What is the difference between `Attach()` and `Update()` methods in EF Core?",
+      "options": [
+        "`Attach()` adds a new entity to the context, while `Update()` modifies an existing entity.",
+        "`Update()` adds a new entity to the context, while `Attach()` modifies an existing entity.",
+        "`Attach()` attaches a detached entity to the context, while `Update()` marks an existing entity as modified.",
+        "`Update()` attaches a detached entity to the context, while `Attach()` marks an existing entity as modified."
+      ],
+      "answer": 2,
+      "explanation": "`Attach()` is used to re-attach a detached entity to the context, while `Update()` marks an existing entity in the context as modified.",
+      "hint": "Consider the state of the entity before and after the operation."
+    },
+    {
+      "id": 39,
+      "question": "You have a large table with millions of records. You need to retrieve a specific page of data using pagination. What is the most efficient way to implement this in EF Core?",
+      "options": [
+        "Loading all records and then filtering in memory",
+        "Using `Skip()` and `Take()` with appropriate indexing",
+        "Using a stored procedure",
+        "Using a custom query with a cursor"
+      ],
+      "answer": 1,
+      "explanation": "Using `Skip()` and `Take()` with appropriate indexing allows the database to efficiently retrieve only the required page of data.",
+      "hint": "Think about how to minimize the amount of data transferred from the database."
+    },
+    {
+      "id": 40,
+      "question": "What is the purpose of the `DbContextOptionsBuilder`?",
+      "options": [
+        "To configure the database connection",
+        "To define the entities in the model",
+        "To seed the database with initial data",
+        "To handle database migrations"
+      ],
+      "answer": 0,
+      "explanation": "The `DbContextOptionsBuilder` is used to configure the options for the `DbContext`, including the database connection string and other settings.",
+      "hint": "Consider how to configure the connection to your database."
+    },
+    {
+      "id": 41,
+      "question": "What is the role of the `IEntityTypeConfiguration` interface?",
+      "options": [
+        "To define the database schema",
+        "To configure the mapping between entities and database tables",
+        "To handle database migrations",
+        "To manage database connections"
+      ],
+      "answer": 1,
+      "explanation": "The `IEntityTypeConfiguration` interface is used to define the mapping between entities and database tables, including column names, data types, and relationships.",
+      "hint": "Think about how to customize the mapping of your entities to the database."
+    },
+    {
+      "id": 42,
+      "question": "You are designing a system with a complex object graph. You anticipate frequent read operations but infrequent updates. Which change tracking strategy would be most appropriate?",
+      "options": [
+        "Always track changes",
+        "Track changes only when explicitly requested",
+        "Never track changes"
+      ],
+      "answer": 2,
+      "explanation": "Disabling change tracking can significantly improve performance for read-heavy scenarios, as it avoids the overhead of tracking changes to entities.",
+      "hint": "Consider the trade-off between performance and the ability to track changes."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `HasConversion()` method in Fluent API?",
+      "options": [
+        "To define a foreign key relationship",
+        "To convert data types between the entity and the database",
+        "To configure the primary key of an entity",
+        "To define a complex type"
+      ],
+      "answer": 1,
+      "explanation": "The `HasConversion()` method allows you to specify a custom conversion between the data type in your entity and the data type in the database.",
+      "hint": "Consider scenarios where you need to store data in a different format in the database."
+    },
+    {
+      "id": 44,
+      "question": "What is the difference between `AsEnumerable()` and `ToList()` when used with EF Core?",
+      "options": [
+        "`AsEnumerable()` executes the query immediately, while `ToList()` defers execution.",
+        "`ToList()` executes the query immediately, while `AsEnumerable()` defers execution.",
+        "They both execute the query immediately.",
+        "They both defer execution."
+      ],
+      "answer": 1,
+      "explanation": "`AsEnumerable()` executes the query immediately and returns an `IEnumerable`, while `ToList()` defers execution until the list is actually accessed.",
+      "hint": "Consider the timing of query execution and the impact on performance."
+    },
+    {
+      "id": 45,
+      "question": "You need to retrieve a list of all `Order` entities that have a status of 'Pending' or 'Processing'. How would you achieve this using LINQ?",
+      "options": [
+        "`context.Orders.Where(o => o.Status == 'Pending' || 'Processing').ToList();`",
+        "`context.Orders.Where(o => o.Status == 'Pending' || o.Status == 'Processing').ToList();`",
+        "`context.Orders.Where(o => o.Status == 'Pending' && o.Status == 'Processing').ToList();`",
+        "`context.Orders.Where(o => o.Status.Contains('Pending') || o.Status.Contains('Processing')).ToList();`"
+      ],
+      "answer": 1,
+      "explanation": "This query correctly uses the `||` (OR) operator to filter the orders based on the specified statuses.",
+      "hint": "Think about how to combine multiple conditions in a `Where()` clause."
+    },
+    {
+      "id": 46,
+      "question": "What is the purpose of the `ShadowProperty()` method in Fluent API?",
+      "options": [
+        "To define a hidden property that is not part of the entity class",
+        "To define a property that is only used for filtering",
+        "To define a property that is automatically generated by the database",
+        "To define a property that is used for optimistic concurrency"
+      ],
+      "answer": 0,
+      "explanation": "The `ShadowProperty()` method allows you to define a property that exists in the database schema but is not explicitly defined in the entity class.",
+      "hint": "Consider scenarios where you need to store additional metadata in the database without modifying the entity class."
+    },
+    {
+      "id": 47,
+      "question": "You are experiencing performance issues with a complex LINQ query. What are some strategies you can use to improve performance?",
+      "options": [
+        "Using eager loading with `Include()`, using projection with `Select()`, using `AsNoTracking()`, all of the above"
+      ],
+      "answer": 3,
+      "explanation": "All of these strategies can help improve performance by reducing the amount of data transferred from the database and optimizing query execution.",
+      "hint": "Think about how to minimize the amount of data retrieved and optimize query execution."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of the `HasDiscriminator()` method in Fluent API?",
+      "options": [
+        "To define a discriminator column for table-per-hierarchy inheritance",
+        "To define a foreign key relationship",
+        "To configure the primary key of an entity",
+        "To define a complex type"
+      ],
+      "answer": 0,
+      "explanation": "The `HasDiscriminator()` method is used to define a discriminator column for table-per-hierarchy inheritance, allowing you to store different entity types in the same table.",
+      "hint": "Consider how to implement inheritance in a relational database."
+    },
+    {
+      "id": 49,
+      "question": "You need to retrieve a list of all `Product` entities that have a price greater than 100 and a name that starts with 'A'. How would you achieve this using LINQ?",
+      "options": [
+        "`context.Products.Where(p => p.Price > 100 && p.Name.StartsWith('A')).ToList();`",
+        "`context.Products.Where(p => p.Price > 100 || p.Name.StartsWith('A')).ToList();`",
+        "`context.Products.Where(p => p.Price > 100).Where(p => p.Name.StartsWith('A')).ToList();`",
+        "`context.Products.Select(p => new { p.Price, p.Name }).Where(p => p.Price > 100 && p.Name.StartsWith('A')).ToList();`"
+      ],
+      "answer": 0,
+      "explanation": "This query correctly uses the `&&` (AND) operator and the `StartsWith()` method to filter the products based on the specified criteria.",
+      "hint": "Think about how to combine multiple conditions in a `Where()` clause."
+    },
+    {
+      "id": 50,
+      "question": "What is the primary benefit of using Fluent API over data annotations for configuring EF Core relationships?",
+      "options": [
+        "Fluent API is easier to learn and use",
+        "Fluent API provides more flexibility and control",
+        "Fluent API is more performant",
+        "Fluent API is automatically generated by EF Core"
+      ],
+      "answer": 1,
+      "explanation": "Fluent API provides more flexibility and control over the configuration of entities and relationships, allowing you to define complex mappings and customizations.",
+      "hint": "Consider the limitations of data annotations for complex configurations."
+    }
+  ]
+}

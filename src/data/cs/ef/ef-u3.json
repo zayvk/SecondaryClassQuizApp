@@ -1,0 +1,670 @@
+{
+  "subject": "Entity Framework Core",
+  "unit": "Unit 3: CRUD Operations",
+  "unitId": "ef-u3",
+  "categoryId": "cs",
+  "topics": [
+    "How EF Core handles CRUD internally",
+    "Adding entities — Add and AddAsync",
+    "Reading entities — Find, FirstOrDefault, SingleOrDefault, ToList",
+    "Updating entities — tracking and modifying properties",
+    "Deleting entities — Remove and cascade behaviour",
+    "SaveChanges vs SaveChangesAsync",
+    "Change tracking — how EF detects modifications",
+    "Entity states — Added, Modified, Deleted, Unchanged, Detached",
+    "Async vs sync operations and why async is preferred"
+  ],
+  "generatedAt": "2026-04-22T02:18:23Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which method is used to add a single entity to the context in Entity Framework Core?",
+      "options": [
+        "AddRange",
+        "Add",
+        "Update",
+        "Remove"
+      ],
+      "answer": 1,
+      "explanation": "The `Add` method is specifically designed to add a single entity to the context, marking it for insertion into the database when `SaveChanges` is called.",
+      "hint": "Consider the naming convention – what would you expect a method called 'Add' to do?"
+    },
+    {
+      "id": 2,
+      "question": "What is the primary purpose of change tracking in EF Core?",
+      "options": [
+        "To automatically back up the database",
+        "To determine which entities have been modified and need to be updated in the database",
+        "To improve query performance",
+        "To enforce data validation rules"
+      ],
+      "answer": 1,
+      "explanation": "Change tracking identifies modifications made to entities within the context, allowing EF Core to generate efficient update statements during `SaveChanges`.",
+      "hint": "Think about what happens when you modify data in memory and then want to persist it to the database."
+    },
+    {
+      "id": 3,
+      "question": "What does the 'Detached' entity state in EF Core signify?",
+      "options": [
+        "The entity is being tracked and its changes will be saved",
+        "The entity is not being tracked by the context",
+        "The entity has been deleted from the database",
+        "The entity is in the process of being updated"
+      ],
+      "answer": 1,
+      "explanation": "A 'Detached' entity is not being monitored by the context, meaning any changes made to it won't be automatically persisted.",
+      "hint": "Consider what happens when you retrieve an entity and then operate on it outside of the original context."
+    },
+    {
+      "id": 4,
+      "question": "Which method is best suited for retrieving a single entity by its primary key?",
+      "options": [
+        "FirstOrDefault",
+        "SingleOrDefault",
+        "Find",
+        "ToList"
+      ],
+      "answer": 2,
+      "explanation": "`Find` is optimized for retrieving entities by their primary key, directly utilizing the index for faster access.",
+      "hint": "Think about the most efficient way to look up a record given its unique identifier."
+    },
+    {
+      "id": 5,
+      "question": "What is the difference between `SaveChanges` and `SaveChangesAsync`?",
+      "options": [
+        "`SaveChangesAsync` is faster than `SaveChanges`",
+        "`SaveChanges` is asynchronous, while `SaveChangesAsync` is synchronous",
+        "`SaveChangesAsync` is asynchronous and non-blocking, while `SaveChanges` is synchronous and blocking",
+        "They are identical"
+      ],
+      "answer": 2,
+      "explanation": "`SaveChangesAsync` uses asynchronous operations, freeing up the calling thread while the database operation completes, improving application responsiveness.",
+      "hint": "Consider the implications of blocking the main thread in a web application."
+    },
+    {
+      "id": 6,
+      "question": "When deleting an entity with related entities, what is 'cascade delete'?",
+      "options": [
+        "Deleting the parent entity automatically deletes all related child entities",
+        "Deleting the parent entity throws an error if related entities exist",
+        "Deleting the parent entity sets the foreign key in related entities to null",
+        "Deleting the parent entity only deletes the specified entity"
+      ],
+      "answer": 0,
+      "explanation": "Cascade delete ensures referential integrity by automatically deleting related entities when a parent entity is deleted, maintaining data consistency.",
+      "hint": "Think about how relational databases handle relationships between tables."
+    },
+    {
+      "id": 7,
+      "question": "What entity state is assigned to an entity after it has been retrieved from the database and is being tracked by the context?",
+      "options": [
+        "Added",
+        "Modified",
+        "Deleted",
+        "Unchanged"
+      ],
+      "answer": 3,
+      "explanation": "When an entity is retrieved, it's initially in the 'Unchanged' state, meaning EF Core assumes it hasn't been modified.",
+      "hint": "Consider what EF Core assumes about an entity's state when it's first loaded."
+    },
+    {
+      "id": 8,
+      "question": "You have an entity with a property that you want to update. How do you ensure EF Core tracks this change?",
+      "options": [
+        "Simply modify the property value",
+        "Call `context.Update(entity)`",
+        "Call `context.Entry(entity).State = EntityState.Modified`",
+        "Call `context.Attach(entity)`"
+      ],
+      "answer": 0,
+      "explanation": "EF Core automatically tracks changes to properties of entities that are being tracked by the context.",
+      "hint": "EF Core's change tracking is quite powerful – it often doesn't require explicit intervention."
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of `context.Entry(entity).State = EntityState.Modified;`?",
+      "options": [
+        "To add a new entity to the context",
+        "To mark an entity as deleted",
+        "To explicitly tell EF Core that an entity has been modified, even if no properties have changed",
+        "To detach an entity from the context"
+      ],
+      "answer": 2,
+      "explanation": "This explicitly sets the entity's state to 'Modified', forcing EF Core to include it in the update operation during `SaveChanges`.",
+      "hint": "This is useful in scenarios where changes are made outside of the normal property assignment process."
+    },
+    {
+      "id": 10,
+      "question": "Which method is most appropriate for retrieving all entities from a table?",
+      "options": [
+        "Find",
+        "FirstOrDefault",
+        "SingleOrDefault",
+        "ToList"
+      ],
+      "answer": 3,
+      "explanation": "`ToList` materializes all entities from the table into a list in memory.",
+      "hint": "Think about what you need to do to get *every* record from a table."
+    },
+    {
+      "id": 11,
+      "question": "What happens if you call `SaveChanges` multiple times without any changes to the context?",
+      "options": [
+        "An exception is thrown",
+        "The database is refreshed",
+        "No database operation is performed",
+        "The context is reset"
+      ],
+      "answer": 2,
+      "explanation": "EF Core is smart enough to detect that no changes have been made and will not execute any unnecessary database operations.",
+      "hint": "Consider the efficiency of database operations – why would EF Core avoid unnecessary calls?"
+    },
+    {
+      "id": 12,
+      "question": "You have a parent-child relationship. If you delete the parent, and cascade delete is *not* configured, what will happen to the child records?",
+      "options": [
+        "They will be automatically deleted",
+        "An exception will be thrown",
+        "They will remain in the database with a null foreign key",
+        "They will be updated to point to a different parent"
+      ],
+      "answer": 1,
+      "explanation": "Without cascade delete configured, attempting to delete a parent with related children will result in a foreign key constraint violation and an exception.",
+      "hint": "Think about referential integrity and what happens when a relationship is broken."
+    },
+    {
+      "id": 13,
+      "question": "What is the benefit of using asynchronous operations (e.g., `SaveChangesAsync`) in a web application?",
+      "options": [
+        "Improved code readability",
+        "Reduced database load",
+        "Increased application responsiveness by freeing up threads",
+        "Automatic error handling"
+      ],
+      "answer": 2,
+      "explanation": "Asynchronous operations prevent blocking the main thread, allowing the application to handle more requests concurrently and maintain responsiveness.",
+      "hint": "Consider the impact of blocking operations on user experience in a web application."
+    },
+    {
+      "id": 14,
+      "question": "Which of the following best describes the 'Added' entity state?",
+      "options": [
+        "The entity exists in the database and has been modified",
+        "The entity does not exist in the database and will be inserted",
+        "The entity has been deleted from the database",
+        "The entity is being tracked but has not been changed"
+      ],
+      "answer": 1,
+      "explanation": "An entity in the 'Added' state represents a new entity that will be inserted into the database when `SaveChanges` is called.",
+      "hint": "Think about what happens when you create a new object and want to persist it."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the `Attach` method in EF Core?",
+      "options": [
+        "To add a new entity to the context",
+        "To track an entity that was not originally retrieved from the context",
+        "To delete an entity from the context",
+        "To update an existing entity in the database"
+      ],
+      "answer": 1,
+      "explanation": "`Attach` allows you to start tracking an entity that wasn't initially retrieved through the context, enabling change tracking and updates.",
+      "hint": "Consider a scenario where you have an entity object created outside of the EF Core context."
+    },
+    {
+      "id": 16,
+      "question": "You are using EF Core in a high-concurrency environment. Why is it generally recommended to use `SaveChangesAsync` over `SaveChanges`?",
+      "options": [
+        "`SaveChangesAsync` is simpler to use",
+        "`SaveChangesAsync` automatically handles database transactions",
+        "`SaveChangesAsync` avoids blocking the thread, improving scalability",
+        "`SaveChanges` is deprecated"
+      ],
+      "answer": 2,
+      "explanation": "In high-concurrency scenarios, blocking the thread with `SaveChanges` can lead to performance bottlenecks. `SaveChangesAsync` allows the thread to remain responsive.",
+      "hint": "Think about how thread blocking impacts the ability of a server to handle multiple requests."
+    },
+    {
+      "id": 17,
+      "question": "What will happen if you attempt to save changes to the database with conflicting data (e.g., a duplicate primary key)?",
+      "options": [
+        "The changes will be saved automatically",
+        "An exception will be thrown",
+        "The conflicting data will be overwritten",
+        "The context will be rolled back"
+      ],
+      "answer": 1,
+      "explanation": "EF Core will typically throw a `DbUpdateException` when attempting to save changes that violate database constraints, such as a duplicate primary key.",
+      "hint": "Consider the role of database constraints in maintaining data integrity."
+    },
+    {
+      "id": 18,
+      "question": "Which method is used to remove an entity from the context?",
+      "options": [
+        "Update",
+        "Add",
+        "Remove",
+        "Find"
+      ],
+      "answer": 2,
+      "explanation": "The `Remove` method marks an entity for deletion from the database when `SaveChanges` is called.",
+      "hint": "Consider the naming convention – what would you expect a method called 'Remove' to do?"
+    },
+    {
+      "id": 19,
+      "question": "What is the difference between `SingleOrDefault` and `FirstOrDefault`?",
+      "options": [
+        "`SingleOrDefault` returns null if no entity is found, while `FirstOrDefault` throws an exception",
+        "`FirstOrDefault` returns null if no entity is found, while `SingleOrDefault` throws an exception if more than one entity is found",
+        "`SingleOrDefault` is faster than `FirstOrDefault`",
+        "They are identical"
+      ],
+      "answer": 1,
+      "explanation": "`FirstOrDefault` returns null if no matching entity is found, while `SingleOrDefault` throws an exception if more than one entity matches the query.",
+      "hint": "Think about the expected behavior when a query returns zero or multiple results."
+    },
+    {
+      "id": 20,
+      "question": "You have a large dataset. What is a potential drawback of using `ToList` to retrieve all entities?",
+      "options": [
+        "It can lead to increased database load",
+        "It can consume a large amount of memory",
+        "It can slow down query performance",
+        "It can cause deadlocks"
+      ],
+      "answer": 1,
+      "explanation": "Loading a large dataset into memory with `ToList` can consume significant resources and potentially lead to out-of-memory errors.",
+      "hint": "Consider the memory implications of loading a large amount of data at once."
+    },
+    {
+      "id": 21,
+      "question": "Consider the following code snippet: `var entity = context.Entities.Find(1); entity.Name = \"New Name\";`. What entity state will `entity` have *before* calling `SaveChanges`?",
+      "options": [
+        "Added",
+        "Modified",
+        "Deleted",
+        "Unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Modifying a property of a tracked entity automatically changes its state to 'Modified'.",
+      "hint": "EF Core automatically detects changes to tracked entities."
+    },
+    {
+      "id": 22,
+      "question": "What is the purpose of using `context.Update(entity)`?",
+      "options": [
+        "To add a new entity to the context",
+        "To explicitly mark an entity as modified, even if no properties have changed",
+        "To delete an entity from the context",
+        "To retrieve an entity from the database"
+      ],
+      "answer": 1,
+      "explanation": "`context.Update(entity)` explicitly tells EF Core that the entity has been modified and should be updated in the database.",
+      "hint": "This is useful when you've made changes to an entity outside of the context's normal tracking mechanism."
+    },
+    {
+      "id": 23,
+      "question": "Which of the following is a potential issue with using long-running synchronous database operations in a web application?",
+      "options": [
+        "Increased database performance",
+        "Improved application scalability",
+        "Blocked threads and reduced responsiveness",
+        "Reduced code complexity"
+      ],
+      "answer": 2,
+      "explanation": "Long-running synchronous operations block the calling thread, preventing it from handling other requests and leading to poor application responsiveness.",
+      "hint": "Think about the impact of blocking operations on user experience."
+    },
+    {
+      "id": 24,
+      "question": "What happens if you try to `Remove` an entity that is not being tracked by the context?",
+      "options": [
+        "The entity is silently ignored",
+        "An exception is thrown",
+        "The entity is added to the context",
+        "The entity is marked as 'Detached'"
+      ],
+      "answer": 1,
+      "explanation": "Attempting to remove an entity not tracked by the context will throw an exception because EF Core cannot locate the entity to remove.",
+      "hint": "EF Core needs to be aware of the entity to perform the removal operation."
+    },
+    {
+      "id": 25,
+      "question": "You need to retrieve a single entity, and you are certain that only one or zero entities will match your criteria. Which method should you use?",
+      "options": [
+        "FirstOrDefault",
+        "Find",
+        "SingleOrDefault",
+        "ToList"
+      ],
+      "answer": 2,
+      "explanation": "`SingleOrDefault` is designed for scenarios where you expect zero or one result and want an exception if more than one is found.",
+      "hint": "Consider the expected number of results and the desired behavior if the expectation is violated."
+    },
+    {
+      "id": 26,
+      "question": "What is the role of `SaveChanges` in the CRUD process?",
+      "options": [
+        "It retrieves data from the database",
+        "It updates data in the database based on tracked changes",
+        "It creates new data in the database",
+        "It deletes data from the database"
+      ],
+      "answer": 1,
+      "explanation": "`SaveChanges` persists the changes made to tracked entities in the context to the database.",
+      "hint": "Think about when changes made in memory are actually applied to the database."
+    },
+    {
+      "id": 27,
+      "question": "What is the purpose of the `EntityState.Unchanged` state?",
+      "options": [
+        "Indicates the entity is new and will be inserted",
+        "Indicates the entity has been modified",
+        "Indicates the entity is being tracked and has not been changed",
+        "Indicates the entity has been deleted"
+      ],
+      "answer": 2,
+      "explanation": "`EntityState.Unchanged` signifies that the entity is being tracked but hasn't undergone any modifications since being retrieved or added.",
+      "hint": "Consider what EF Core assumes about an entity's state when it's initially loaded or added."
+    },
+    {
+      "id": 28,
+      "question": "You have a complex object graph with multiple related entities. What is a potential performance concern when using EF Core?",
+      "options": [
+        "Excessive memory usage due to eager loading",
+        "Slow query execution due to inefficient joins",
+        "Increased database load due to unnecessary updates",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "Complex object graphs can lead to performance issues if not carefully managed, including excessive memory usage, slow queries, and unnecessary updates.",
+      "hint": "Think about the impact of loading and updating large, interconnected datasets."
+    },
+    {
+      "id": 29,
+      "question": "What is the primary advantage of using asynchronous methods like `SaveChangesAsync`?",
+      "options": [
+        "They are simpler to write",
+        "They improve code readability",
+        "They prevent blocking the calling thread, enhancing application responsiveness",
+        "They automatically handle database transactions"
+      ],
+      "answer": 2,
+      "explanation": "Asynchronous methods allow the calling thread to remain free to handle other tasks while the database operation completes, improving application responsiveness.",
+      "hint": "Consider the implications of blocking the main thread in a web application."
+    },
+    {
+      "id": 30,
+      "question": "You need to retrieve an entity by its ID, but you are unsure if it exists. Which method is most appropriate?",
+      "options": [
+        "Find",
+        "FirstOrDefault",
+        "SingleOrDefault",
+        "ToList"
+      ],
+      "answer": 1,
+      "explanation": "`FirstOrDefault` returns the first matching entity or null if no entity is found, making it suitable for scenarios where the entity might not exist.",
+      "hint": "Think about what you want to happen if the entity is not found."
+    },
+    {
+      "id": 31,
+      "question": "What does 'change tracking' help EF Core optimize?",
+      "options": [
+        "Query performance",
+        "Data validation",
+        "Database backups",
+        "Update statements"
+      ],
+      "answer": 3,
+      "explanation": "Change tracking allows EF Core to generate efficient update statements by only sending changes to the database, reducing network traffic and improving performance.",
+      "hint": "Consider how EF Core determines which data needs to be updated."
+    },
+    {
+      "id": 32,
+      "question": "What is the purpose of the `context.Entry(entity).Reload()` method?",
+      "options": [
+        "To add a new entity to the context",
+        "To refresh the entity's data from the database",
+        "To delete an entity from the context",
+        "To mark an entity as modified"
+      ],
+      "answer": 1,
+      "explanation": "`Reload()` fetches the latest data for the entity from the database, overwriting any local changes.",
+      "hint": "Consider a scenario where the data in the database has been changed by another process."
+    },
+    {
+      "id": 33,
+      "question": "You have a scenario where you need to perform a read-only operation on a large dataset. What is a good practice to avoid unnecessary change tracking?",
+      "options": [
+        "Use `AsNoTracking()` in your query",
+        "Disable change tracking globally",
+        "Use synchronous operations",
+        "Increase the database connection timeout"
+      ],
+      "answer": 0,
+      "explanation": "`AsNoTracking()` instructs EF Core to not track changes to the entities returned by the query, reducing memory overhead and improving performance.",
+      "hint": "Think about whether you need to modify the data you are retrieving."
+    },
+    {
+      "id": 34,
+      "question": "What is the 'Deleted' entity state used for?",
+      "options": [
+        "Indicates the entity is new and will be inserted",
+        "Indicates the entity has been modified",
+        "Indicates the entity has been marked for deletion",
+        "Indicates the entity is being tracked but has not been changed"
+      ],
+      "answer": 2,
+      "explanation": "The 'Deleted' state signifies that the entity has been marked for removal from the database when `SaveChanges` is called.",
+      "hint": "Consider what happens when you call `context.Remove(entity)`."
+    },
+    {
+      "id": 35,
+      "question": "Which of the following is a potential drawback of eager loading related entities?",
+      "options": [
+        "Increased query complexity",
+        "Reduced database load",
+        "Increased network traffic and memory usage",
+        "Improved application responsiveness"
+      ],
+      "answer": 2,
+      "explanation": "Eager loading can lead to increased network traffic and memory usage as it retrieves all related entities in a single query.",
+      "hint": "Think about the amount of data being transferred from the database to the application."
+    },
+    {
+      "id": 36,
+      "question": "What happens if you call `SaveChanges` after modifying an entity that is in the 'Detached' state?",
+      "options": [
+        "The changes are saved automatically",
+        "An exception is thrown",
+        "The entity is re-attached to the context and then updated",
+        "The entity is ignored"
+      ],
+      "answer": 1,
+      "explanation": "EF Core cannot track changes to detached entities, so attempting to save changes will result in an exception.",
+      "hint": "Remember that detached entities are not being monitored by the context."
+    },
+    {
+      "id": 37,
+      "question": "You need to update multiple entities in a single database transaction. How can you achieve this using EF Core?",
+      "options": [
+        "Call `SaveChanges` multiple times",
+        "Use a `try-catch` block",
+        "Wrap the changes in a `DbContext.Database.BeginTransaction()` block",
+        "Use asynchronous operations"
+      ],
+      "answer": 2,
+      "explanation": "Using `DbContext.Database.BeginTransaction()` ensures that all changes are committed or rolled back as a single unit, maintaining data consistency.",
+      "hint": "Consider the importance of atomicity in database operations."
+    },
+    {
+      "id": 38,
+      "question": "What is the purpose of the `context.Attach(entity)` method when the entity is already in the database?",
+      "options": [
+        "To add a new entity to the context",
+        "To mark the entity as modified for tracking",
+        "To delete the entity from the context",
+        "To retrieve the entity from the database"
+      ],
+      "answer": 1,
+      "explanation": "Attaching an existing entity allows you to start tracking its changes, even if it wasn't originally retrieved through the context.",
+      "hint": "Consider a scenario where you've modified an entity outside of the EF Core context."
+    },
+    {
+      "id": 39,
+      "question": "You are experiencing performance issues with your EF Core application. What is a potential optimization technique?",
+      "options": [
+        "Disable change tracking for read-only operations",
+        "Use eager loading for all relationships",
+        "Increase the database connection timeout",
+        "Use synchronous operations"
+      ],
+      "answer": 0,
+      "explanation": "Disabling change tracking for read-only operations can significantly reduce memory overhead and improve performance.",
+      "hint": "Think about whether you need to track changes to the data you are retrieving."
+    },
+    {
+      "id": 40,
+      "question": "What is the difference between `Find` and `FirstOrDefault` when searching for an entity by its primary key?",
+      "options": [
+        "`Find` is optimized for primary key lookups, while `FirstOrDefault` is more general",
+        "`FirstOrDefault` is optimized for primary key lookups, while `Find` is more general",
+        "They are identical",
+        "`Find` returns null if no entity is found, while `FirstOrDefault` throws an exception"
+      ],
+      "answer": 0,
+      "explanation": "`Find` is specifically optimized for retrieving entities by their primary key, utilizing the index for faster access, while `FirstOrDefault` is a more general-purpose method.",
+      "hint": "Consider how EF Core can optimize queries based on the primary key."
+    },
+    {
+      "id": 41,
+      "question": "Consider this code: `context.Entities.Remove(entity); context.SaveChanges();`. What happens if another process modifies the same entity *after* the `Remove` call but *before* `SaveChanges`?",
+      "options": [
+        "The `SaveChanges` will succeed, deleting the modified version",
+        "The `SaveChanges` will throw an optimistic concurrency exception",
+        "The `SaveChanges` will ignore the removal",
+        "The `SaveChanges` will update the entity instead of deleting it"
+      ],
+      "answer": 1,
+      "explanation": "EF Core relies on optimistic concurrency. If the entity has been modified by another process, `SaveChanges` will detect the conflict and throw an exception.",
+      "hint": "Think about how EF Core handles concurrent modifications to the database."
+    },
+    {
+      "id": 42,
+      "question": "You want to retrieve a single entity, and you *expect* exactly one result. What should you do if more than one entity matches the query?",
+      "options": [
+        "Use `FirstOrDefault`",
+        "Use `SingleOrDefault`",
+        "Use `ToList` and check the count",
+        "Use `Find`"
+      ],
+      "answer": 1,
+      "explanation": "`SingleOrDefault` will throw an exception if more than one entity matches the query, enforcing the expectation of a single result.",
+      "hint": "Consider the desired behavior when the expectation of a single result is violated."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of using `context.Database.ExecuteSqlRaw()`?",
+      "options": [
+        "To execute a stored procedure",
+        "To execute raw SQL queries directly against the database",
+        "To create a new database",
+        "To update the database schema"
+      ],
+      "answer": 1,
+      "explanation": "`context.Database.ExecuteSqlRaw()` allows you to execute arbitrary SQL queries against the database, bypassing EF Core's query translation.",
+      "hint": "Consider scenarios where you need to perform database operations that are not easily expressed using LINQ."
+    },
+    {
+      "id": 44,
+      "question": "What is the primary benefit of using `SaveChangesAsync` over `SaveChanges` in a web API?",
+      "options": [
+        "Reduced database load",
+        "Improved code readability",
+        "Increased application throughput by avoiding thread blocking",
+        "Automatic error handling"
+      ],
+      "answer": 2,
+      "explanation": "By avoiding thread blocking, `SaveChangesAsync` allows the web API to handle more concurrent requests, increasing throughput.",
+      "hint": "Think about the impact of blocking operations on the responsiveness of a web API."
+    },
+    {
+      "id": 45,
+      "question": "You have a large table with millions of records. You need to retrieve a specific entity by its ID. Which method is the most efficient?",
+      "options": [
+        "FirstOrDefault",
+        "ToList",
+        "Find",
+        "SingleOrDefault"
+      ],
+      "answer": 2,
+      "explanation": "`Find` is optimized for retrieving entities by their primary key, utilizing the index for faster access.",
+      "hint": "Consider how the database index can be used to speed up the lookup process."
+    },
+    {
+      "id": 46,
+      "question": "What is the role of the `DbContext` class in EF Core?",
+      "options": [
+        "It represents a single table in the database",
+        "It represents a connection to the database",
+        "It represents a session of interaction with the database",
+        "It represents a stored procedure"
+      ],
+      "answer": 2,
+      "explanation": "The `DbContext` class represents a session of interaction with the database, providing access to entities and allowing you to perform CRUD operations.",
+      "hint": "Think about how you interact with the database in your application."
+    },
+    {
+      "id": 47,
+      "question": "You've retrieved an entity and modified a property. You then call `context.SaveChanges()`. What happens internally?",
+      "options": [
+        "EF Core generates an INSERT statement",
+        "EF Core generates an UPDATE statement",
+        "EF Core generates a DELETE statement",
+        "EF Core generates a SELECT statement"
+      ],
+      "answer": 1,
+      "explanation": "EF Core detects the change and generates an UPDATE statement to apply the modification to the database.",
+      "hint": "Consider how EF Core determines which database operation is needed."
+    },
+    {
+      "id": 48,
+      "question": "What is the purpose of using `context.Entry(entity).State = EntityState.Detached;`?",
+      "options": [
+        "To add a new entity to the context",
+        "To mark an entity as modified",
+        "To stop tracking changes to an entity",
+        "To delete an entity from the context"
+      ],
+      "answer": 2,
+      "explanation": "Setting the state to 'Detached' removes the entity from the context's change tracker, preventing further modifications from being tracked.",
+      "hint": "Consider scenarios where you want to prevent accidental modifications to an entity."
+    },
+    {
+      "id": 49,
+      "question": "You are designing a system with high write concurrency. What strategy would best mitigate potential optimistic concurrency conflicts?",
+      "options": [
+        "Increase the database transaction timeout",
+        "Use timestamps or version numbers for optimistic concurrency control",
+        "Disable change tracking",
+        "Use eager loading"
+      ],
+      "answer": 1,
+      "explanation": "Using timestamps or version numbers allows EF Core to detect concurrent modifications and prevent data loss.",
+      "hint": "Think about how to reliably detect and handle concurrent updates to the same data."
+    },
+    {
+      "id": 50,
+      "question": "What is the main difference between `context.Update()` and directly modifying a property of a tracked entity?",
+      "options": [
+        "`context.Update()` is only for detached entities",
+        "`context.Update()` explicitly marks the entity as modified, even if no properties changed",
+        "Directly modifying a property is more efficient",
+        "They are functionally identical"
+      ],
+      "answer": 1,
+      "explanation": "`context.Update()` explicitly tells EF Core that the entity has been modified, which is crucial when the entity's state isn't automatically detected.",
+      "hint": "Consider scenarios where changes are made outside of the normal property assignment process."
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+{
+  "subject": "ASP.NET Core, MVC and Web API",
+  "unit": "Unit 5: Web API",
+  "unitId": "aspnet-u5",
+  "categoryId": "cs",
+  "topics": [
+    "What is a Web API and how it differs from MVC",
+    "ApiController attribute and its implications",
+    "Returning JSON — JsonResult vs ObjectResult",
+    "Route parameters and query parameters in APIs",
+    "GET, POST, PUT, DELETE endpoint implementation",
+    "Model binding from body, route and query",
+    "Swagger and OpenAPI — setup and usage with Postman",
+    "Versioning APIs",
+    "CORS — what it is and how to configure it"
+  ],
+  "generatedAt": "2026-04-22T02:07:16Z",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the primary difference between an MVC application and a Web API?",
+      "options": [
+        "MVC applications return views, while Web APIs return data.",
+        "Web APIs are always stateless, while MVC applications can be stateful.",
+        "MVC applications use routing based on conventions, while Web APIs use attribute routing.",
+        "Web APIs are designed for browser interaction, while MVC applications are for server-side logic."
+      ],
+      "answer": 0,
+      "explanation": "MVC applications are designed to return HTML views for rendering in a browser, while Web APIs are designed to return data (typically JSON or XML) to be consumed by other applications.",
+      "hint": "Think about the 'view' component in MVC and what a Web API typically returns."
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of the `[ApiController]` attribute in ASP.NET Core?",
+      "options": [
+        "It enables automatic model validation.",
+        "It automatically handles CORS configuration.",
+        "It provides features like automatic HTTP 400 Bad Request for invalid models and parameter binding.",
+        "It simplifies the creation of unit tests for controllers."
+      ],
+      "answer": 2,
+      "explanation": "The `[ApiController]` attribute adds features like automatic model validation, parameter binding, and HTTP status code handling, making it easier to build RESTful APIs.",
+      "hint": "Consider how this attribute affects request handling and error responses."
+    },
+    {
+      "id": 3,
+      "question": "When should you use `ObjectResult` instead of `JsonResult` when returning data from an API?",
+      "options": [
+        "`JsonResult` is always preferred for performance reasons.",
+        "`ObjectResult` allows you to specify a custom status code.",
+        "`JsonResult` can only return simple data types.",
+        "`ObjectResult` automatically serializes complex objects to JSON."
+      ],
+      "answer": 1,
+      "explanation": "`ObjectResult` allows you to explicitly set the HTTP status code along with the returned object, providing more control over the API response.",
+      "hint": "Think about the level of control you need over the HTTP response."
+    },
+    {
+      "id": 4,
+      "question": "In a Web API, what is the difference between a route parameter and a query parameter?",
+      "options": [
+        "Route parameters are optional, while query parameters are required.",
+        "Route parameters are part of the URL path, while query parameters are appended to the URL after a question mark.",
+        "Route parameters are used for filtering data, while query parameters are used for sorting.",
+        "Route parameters are only used for GET requests, while query parameters are used for POST requests."
+      ],
+      "answer": 1,
+      "explanation": "Route parameters are defined as part of the URL path (e.g., `/products/{id}`), while query parameters are appended to the URL after a question mark (e.g., `/products?category=electronics`).",
+      "hint": "Consider the structure of a typical URL."
+    },
+    {
+      "id": 5,
+      "question": "Which HTTP method is typically used to update an existing resource in a Web API?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "answer": 2,
+      "explanation": "The PUT method is used to replace an existing resource with the data provided in the request body. It requires the complete representation of the resource.",
+      "hint": "Think about the semantics of each HTTP method."
+    },
+    {
+      "id": 6,
+      "question": "What is model binding in the context of ASP.NET Core Web APIs?",
+      "options": [
+        "The process of converting data from a database to an object.",
+        "The process of automatically mapping data from request parameters (body, route, query) to action method parameters.",
+        "The process of validating user input.",
+        "The process of serializing objects to JSON."
+      ],
+      "answer": 1,
+      "explanation": "Model binding automatically maps data from various request sources (body, route, query string) to the parameters of your action methods, simplifying data handling.",
+      "hint": "Consider how the API receives data and how it's used in your controller."
+    },
+    {
+      "id": 7,
+      "question": "How can you bind a complex object from the request body to an action method parameter?",
+      "options": [
+        "Use the `[FromQuery]` attribute.",
+        "Use the `[FromBody]` attribute.",
+        "Use the `[FromRoute]` attribute.",
+        "Model binding happens automatically without any attributes."
+      ],
+      "answer": 1,
+      "explanation": "The `[FromBody]` attribute tells the model binder to attempt to bind the request body to the action method parameter.",
+      "hint": "Think about where the complex object's data is located in the request."
+    },
+    {
+      "id": 8,
+      "question": "What is Swagger and how does it benefit Web API development?",
+      "options": [
+        "It's a database management tool.",
+        "It's a testing framework for unit tests.",
+        "It's a documentation and API exploration tool that allows you to visualize and interact with your API.",
+        "It's a code generation tool."
+      ],
+      "answer": 2,
+      "explanation": "Swagger (now OpenAPI) provides a standardized way to document and explore Web APIs, making it easier for developers to understand and use them.",
+      "hint": "Consider how developers interact with and understand APIs."
+    },
+    {
+      "id": 9,
+      "question": "You've set up Swagger in your ASP.NET Core Web API. What tool can you use to send requests and test your API endpoints?",
+      "options": [
+        "Visual Studio Debugger",
+        "SQL Server Management Studio",
+        "Postman",
+        "NuGet Package Manager"
+      ],
+      "answer": 2,
+      "explanation": "Postman is a popular tool for sending HTTP requests to APIs and inspecting the responses, making it ideal for testing Swagger-documented APIs.",
+      "hint": "Think about tools specifically designed for API testing."
+    },
+    {
+      "id": 10,
+      "question": "What is API versioning and why is it important?",
+      "options": [
+        "It's a way to encrypt API requests.",
+        "It's a way to improve API performance.",
+        "It's a way to manage changes to your API without breaking existing clients.",
+        "It's a way to restrict access to your API."
+      ],
+      "answer": 2,
+      "explanation": "API versioning allows you to introduce new features and changes to your API while maintaining compatibility with older clients that rely on previous versions.",
+      "hint": "Consider the impact of changes on existing applications using your API."
+    },
+    {
+      "id": 11,
+      "question": "Which of the following is a common strategy for API versioning?",
+      "options": [
+        "Using different domain names for each version.",
+        "Using query parameters (e.g., `/api/products?version=1`).",
+        "Using URL segments (e.g., `/api/v1/products`).",
+        "Using cookies to store the version number."
+      ],
+      "answer": 2,
+      "explanation": "Using URL segments (e.g., `/api/v1/products`) is a common and clean way to version APIs, as it's easily understood and doesn't clutter the query string.",
+      "hint": "Think about how the version information is conveyed in the URL."
+    },
+    {
+      "id": 12,
+      "question": "What is CORS and why is it necessary?",
+      "options": [
+        "It's a security feature that prevents cross-site scripting attacks.",
+        "It's a mechanism that allows or prevents web pages from making requests to a different domain than the one which served the web page.",
+        "It's a caching mechanism for API responses.",
+        "It's a load balancing technique."
+      ],
+      "answer": 1,
+      "explanation": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that restricts web pages from making requests to a different domain than the one that served the web page, unless the server explicitly allows it.",
+      "hint": "Consider the 'same-origin policy' in web browsers."
+    },
+    {
+      "id": 13,
+      "question": "How do you configure CORS in ASP.NET Core to allow requests from a specific origin?",
+      "options": [
+        "Using the `[AllowAnonymous]` attribute.",
+        "Using the `Cors` policy in `Startup.cs`.",
+        "Using the `RequireHttps` method.",
+        "Using the `Authorize` attribute."
+      ],
+      "answer": 1,
+      "explanation": "CORS is configured using policies defined in the `Startup.cs` file, specifying allowed origins, headers, and methods.",
+      "hint": "Think about where global configuration settings are typically defined in an ASP.NET Core application."
+    },
+    {
+      "id": 14,
+      "question": "You have a Web API endpoint that accepts a list of integers in the request body. What should you do to ensure the model binding works correctly?",
+      "options": [
+        "Use the `[Required]` attribute on the list property.",
+        "Use the `[FromBody]` attribute on the action method parameter.",
+        "Use the `[FromQuery]` attribute on the action method parameter.",
+        "The model binding will work automatically without any attributes."
+      ],
+      "answer": 1,
+      "explanation": "The `[FromBody]` attribute is essential for binding complex objects from the request body, including lists and arrays.",
+      "hint": "Consider where the list of integers is located in the HTTP request."
+    },
+    {
+      "id": 15,
+      "question": "What is the purpose of the `ProducesResponseType` attribute in ASP.NET Core Web APIs?",
+      "options": [
+        "It specifies the content type of the response.",
+        "It documents the possible HTTP response codes and their corresponding response types.",
+        "It automatically handles error logging.",
+        "It enables caching of API responses."
+      ],
+      "answer": 1,
+      "explanation": "The `ProducesResponseType` attribute is used to document the possible HTTP response codes and their corresponding response types, enhancing API documentation and discoverability.",
+      "hint": "Think about how this attribute contributes to API documentation."
+    },
+    {
+      "id": 16,
+      "question": "Consider the following code snippet. What will be the value of `id` in the `GetProduct` action method if the request URL is `/api/products/123`? \n\n`[HttpGet(\"{id}\")]\npublic IActionResult GetProduct(int id)`",
+      "options": [
+        "123",
+        "0",
+        "null",
+        "An error will occur."
+      ],
+      "answer": 0,
+      "explanation": "The route template `\"{id}\"` maps the value '123' from the URL to the `id` parameter of the `GetProduct` action method.",
+      "hint": "Pay attention to the route template and how it matches the URL."
+    },
+    {
+      "id": 17,
+      "question": "You need to implement a POST endpoint that accepts a JSON object with a nested property. How do you ensure model binding works correctly for the nested property?",
+      "options": [
+        "Use the `[Required]` attribute on the nested property.",
+        "Define a corresponding class for the nested property.",
+        "Use the `[FromForm]` attribute.",
+        "Model binding will automatically handle nested properties without any additional configuration."
+      ],
+      "answer": 1,
+      "explanation": "To correctly bind nested properties, you need to define a corresponding class that represents the structure of the nested object.",
+      "hint": "Think about how complex objects are represented in code."
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between `BadRequestResult` and `NotFoundResult` in ASP.NET Core Web APIs?",
+      "options": [
+        "`BadRequestResult` indicates a client error, while `NotFoundResult` indicates a server error.",
+        "`BadRequestResult` indicates invalid data, while `NotFoundResult` indicates the resource was not found.",
+        "`BadRequestResult` is used for authorization errors, while `NotFoundResult` is used for authentication errors.",
+        "They are interchangeable and can be used interchangeably."
+      ],
+      "answer": 1,
+      "explanation": "`BadRequestResult` (HTTP 400) is used when the client sends invalid data, while `NotFoundResult` (HTTP 404) is used when the requested resource does not exist.",
+      "hint": "Consider the meaning of the HTTP status codes."
+    },
+    {
+      "id": 19,
+      "question": "You want to filter a list of products based on a category provided in the query string. How do you access the category value in your action method?",
+      "options": [
+        "Using `Request.Query[\"category\"]`.",
+        "Using `Request.Form[\"category\"]`.",
+        "Using `Request.Headers[\"category\"]`.",
+        "Using `Request.Body[\"category\"]`."
+      ],
+      "answer": 0,
+      "explanation": "The `Request.Query` collection provides access to the values passed in the query string of the URL.",
+      "hint": "Think about where query parameters are located in the HTTP request."
+    },
+    {
+      "id": 20,
+      "question": "What is the purpose of the `[ApiConventionType]` attribute?",
+      "options": [
+        "It defines the API versioning strategy.",
+        "It enables automatic documentation generation.",
+        "It allows you to define standard conventions for API actions, such as return types and parameter names.",
+        "It configures CORS settings."
+      ],
+      "answer": 2,
+      "explanation": "The `[ApiConventionType]` attribute allows you to define standard conventions for API actions, promoting consistency and reducing code duplication.",
+      "hint": "Consider how this attribute helps maintain a consistent API design."
+    },
+    {
+      "id": 21,
+      "question": "Which of the following best describes the idempotency of HTTP methods?",
+      "options": [
+        "Idempotent methods can be called multiple times without changing the result beyond the initial application.",
+        "Idempotent methods always return the same result, regardless of the number of times they are called.",
+        "Idempotent methods are only used for GET requests.",
+        "Idempotent methods are used for caching API responses."
+      ],
+      "answer": 0,
+      "explanation": "Idempotent methods, like GET, PUT, and DELETE, can be called multiple times without causing unintended side effects beyond the initial application of the request.",
+      "hint": "Think about the implications of repeatedly calling the same API endpoint."
+    },
+    {
+      "id": 22,
+      "question": "You are designing an API that needs to handle file uploads. Which attribute should you use to bind the uploaded file to your action method parameter?",
+      "options": [
+        "`[FromBody]`",
+        "`[FromRoute]`",
+        "`[FromForm]`",
+        "`[FromQuery]`"
+      ],
+      "answer": 2,
+      "explanation": "The `[FromForm]` attribute is used to bind data from a form, including file uploads, to your action method parameter.",
+      "hint": "Consider how files are typically submitted in an HTTP request."
+    },
+    {
+      "id": 23,
+      "question": "What is the primary benefit of using OpenAPI (Swagger) for API documentation?",
+      "options": [
+        "It automatically generates code for your API.",
+        "It allows you to test your API endpoints without writing any code.",
+        "It provides a standardized, machine-readable format for describing your API, enabling automated tooling and integration.",
+        "It improves the performance of your API."
+      ],
+      "answer": 2,
+      "explanation": "OpenAPI provides a standardized, machine-readable format for describing your API, enabling automated tooling for documentation, testing, and code generation.",
+      "hint": "Think about the advantages of a standardized API description format."
+    },
+    {
+      "id": 24,
+      "question": "You have an API endpoint that returns a large dataset. What strategy can you use to improve performance and reduce the load on the server?",
+      "options": [
+        "Return the entire dataset in a single response.",
+        "Implement pagination.",
+        "Use synchronous processing.",
+        "Disable caching."
+      ],
+      "answer": 1,
+      "explanation": "Pagination involves dividing the dataset into smaller chunks and returning them one at a time, improving performance and reducing server load.",
+      "hint": "Consider how to handle large amounts of data efficiently."
+    },
+    {
+      "id": 25,
+      "question": "What is the purpose of the `[Required]` attribute in ASP.NET Core?",
+      "options": [
+        "It specifies the content type of the response.",
+        "It indicates that a property or parameter must have a value.",
+        "It enables caching of API responses.",
+        "It configures CORS settings."
+      ],
+      "answer": 1,
+      "explanation": "The `[Required]` attribute indicates that a property or parameter must have a value; otherwise, model validation will fail.",
+      "hint": "Think about data validation and ensuring required fields are present."
+    },
+    {
+      "id": 26,
+      "question": "Consider the following route: `[HttpGet(",
+      "api/users/{userId": "int}",
+      "signify?": "options\": [\"It specifies the HTTP method.",
+      "It defines a custom route constraint, ensuring the `userId` parameter is an integer.": "It indicates that the parameter is optional.",
+      "It specifies the content type of the response.": "",
+      "answer": 1,
+      "explanation": "The `:int` part is a route constraint that ensures the `userId` parameter is an integer, preventing invalid input.",
+      "hint": "Pay attention to the syntax used in route templates."
+    },
+    {
+      "id": 27,
+      "question": "What is the role of the `IActionFilter` interface in ASP.NET Core?",
+      "options": [
+        "It's used for database access.",
+        "It's used for handling exceptions.",
+        "It's used to add pre- or post-processing logic to action methods.",
+        "It's used for authentication and authorization."
+      ],
+      "answer": 2,
+      "explanation": "The `IActionFilter` interface allows you to add custom logic that executes before or after an action method, enabling tasks like logging, validation, and modification of the action result.",
+      "hint": "Think about how to add cross-cutting concerns to your API."
+    },
+    {
+      "id": 28,
+      "question": "You need to implement a DELETE endpoint that requires confirmation from the user before deleting a resource. How can you achieve this?",
+      "options": [
+        "Use the `[HttpDelete]` attribute.",
+        "Implement a separate confirmation endpoint.",
+        "Use a custom action filter to prompt the user for confirmation.",
+        "Return a 403 Forbidden error if the user is not authorized."
+      ],
+      "answer": 2,
+      "explanation": "A custom action filter can intercept the DELETE request, prompt the user for confirmation (e.g., through a modal dialog), and then proceed with the deletion if confirmed.",
+      "hint": "Consider how to add an interactive step before performing a potentially destructive action."
+    },
+    {
+      "id": 29,
+      "question": "What is the purpose of the `[Produces]` attribute?",
+      "options": [
+        "It specifies the HTTP method.",
+        "It indicates the content types that the API endpoint can return.",
+        "It enables caching of API responses.",
+        "It configures CORS settings."
+      ],
+      "answer": 1,
+      "explanation": "The `[Produces]` attribute specifies the content types (e.g., `application/json`, `application/xml`) that the API endpoint can return, helping clients understand the expected response format.",
+      "hint": "Think about how clients determine the format of the API response."
+    },
+    {
+      "id": 30,
+      "question": "You are designing an API that will be used by both web and mobile clients. What considerations should you keep in mind regarding data transfer size?",
+      "options": [
+        "Always return the complete dataset, regardless of the client.",
+        "Implement pagination and filtering to reduce the amount of data transferred.",
+        "Use synchronous processing to improve performance.",
+        "Disable caching to ensure data consistency."
+      ],
+      "answer": 1,
+      "explanation": "Mobile clients often have limited bandwidth and processing power, so it's important to minimize data transfer size through pagination and filtering.",
+      "hint": "Consider the constraints of different client types."
+    },
+    {
+      "id": 31,
+      "question": "What is the difference between authentication and authorization in the context of Web APIs?",
+      "options": [
+        "Authentication verifies the identity of the user, while authorization determines what resources the user is allowed to access.",
+        "Authentication determines what resources the user is allowed to access, while authorization verifies the identity of the user.",
+        "Authentication and authorization are the same thing.",
+        "Authentication is only used for web applications, while authorization is only used for APIs."
+      ],
+      "answer": 0,
+      "explanation": "Authentication confirms who the user is, while authorization determines what they are permitted to do.",
+      "hint": "Think about the order of operations: first verify identity, then check permissions."
+    },
+    {
+      "id": 32,
+      "question": "You want to implement rate limiting in your Web API to prevent abuse. What is a common approach?",
+      "options": [
+        "Using the `[Authorize]` attribute.",
+        "Using a middleware that tracks requests from each client and limits the number of requests allowed within a specific time window.",
+        "Using the `[Required]` attribute.",
+        "Disabling CORS."
+      ],
+      "answer": 1,
+      "explanation": "Rate limiting is typically implemented using middleware that tracks requests and enforces limits based on client IP address or authentication token.",
+      "hint": "Consider how to control the number of requests from a single source."
+    },
+    {
+      "id": 33,
+      "question": "What is the purpose of the `[BindProperty]` attribute?",
+      "options": [
+        "It specifies the content type of the response.",
+        "It allows you to bind a property to a specific source, such as a form or query string.",
+        "It enables caching of API responses.",
+        "It configures CORS settings."
+      ],
+      "answer": 1,
+      "explanation": "The `[BindProperty]` attribute allows you to explicitly bind a property to a specific source, giving you more control over model binding.",
+      "hint": "Think about scenarios where you need to bind to a specific request source."
+    },
+    {
+      "id": 34,
+      "question": "You are designing an API that needs to support multiple versions. You choose to use URL segments for versioning (e.g., `/api/v1/products`). What are the potential drawbacks of this approach?",
+      "options": [
+        "It can make URLs longer and less readable.",
+        "It can be difficult to implement.",
+        "It requires changes to the client code when a new version is released.",
+        "It is not supported by Swagger."
+      ],
+      "answer": 0,
+      "explanation": "Using URL segments for versioning can result in longer and less readable URLs, especially as the version number increases.",
+      "hint": "Consider the impact on URL structure and client compatibility."
+    },
+    {
+      "id": 35,
+      "question": "What is the purpose of the `[FromBody]` attribute when used with a complex object?",
+      "options": [
+        "It tells the model binder to look for the object in the query string.",
+        "It tells the model binder to deserialize the object from the request body.",
+        "It tells the model binder to look for the object in the route parameters.",
+        "It automatically validates the object."
+      ],
+      "answer": 1,
+      "explanation": "The `[FromBody]` attribute instructs the model binder to deserialize the complex object from the request body, typically in JSON or XML format.",
+      "hint": "Think about where complex data is usually sent in an HTTP request."
+    },
+    {
+      "id": 36,
+      "question": "You have an API endpoint that returns a list of products. You want to allow clients to filter the products based on multiple criteria (e.g., category, price range). What is the best way to handle this?",
+      "options": [
+        "Create separate endpoints for each filter combination.",
+        "Use query parameters to specify the filter criteria.",
+        "Use the `[FromBody]` attribute to accept a filter object.",
+        "Return the entire dataset and let the client filter it."
+      ],
+      "answer": 1,
+      "explanation": "Using query parameters allows clients to specify multiple filter criteria in a flexible and standardized way.",
+      "hint": "Consider how to handle multiple optional parameters."
+    },
+    {
+      "id": 37,
+      "question": "What is the purpose of the `[ApiController]` attribute's automatic HTTP 400 Bad Request behavior?",
+      "options": [
+        "It automatically handles CORS configuration.",
+        "It automatically returns a 400 error if the model validation fails.",
+        "It automatically logs all API requests.",
+        "It automatically caches API responses."
+      ],
+      "answer": 1,
+      "explanation": "The `[ApiController]` attribute automatically returns an HTTP 400 Bad Request error if the model validation fails, simplifying error handling.",
+      "hint": "Think about how the attribute simplifies error handling for invalid input."
+    },
+    {
+      "id": 38,
+      "question": "You are designing an API that needs to handle large file uploads. What considerations should you keep in mind regarding memory usage?",
+      "options": [
+        "Load the entire file into memory before processing it.",
+        "Use streaming to process the file in chunks.",
+        "Disable caching.",
+        "Use synchronous processing."
+      ],
+      "answer": 1,
+      "explanation": "Using streaming allows you to process the file in chunks, reducing memory usage and preventing out-of-memory errors.",
+      "hint": "Consider how to handle large files without consuming excessive memory."
+    },
+    {
+      "id": 39,
+      "question": "What is the purpose of the `[HttpPut]` attribute?",
+      "options": [
+        "It's used to retrieve data from the server.",
+        "It's used to create a new resource on the server.",
+        "It's used to update an existing resource on the server.",
+        "It's used to delete a resource from the server."
+      ],
+      "answer": 2,
+      "explanation": "The `[HttpPut]` attribute is used to update an existing resource on the server. It typically requires the complete representation of the resource.",
+      "hint": "Think about the semantics of the PUT HTTP method."
+    },
+    {
+      "id": 40,
+      "question": "You are using Swagger to document your API. How can you customize the appearance of the Swagger UI?",
+      "options": [
+        "By modifying the `Startup.cs` file.",
+        "By creating a custom CSS file and referencing it in the Swagger configuration.",
+        "By using the `[Produces]` attribute.",
+        "By disabling CORS."
+      ],
+      "answer": 1,
+      "explanation": "You can customize the appearance of the Swagger UI by creating a custom CSS file and referencing it in the Swagger configuration.",
+      "hint": "Think about how to modify the visual presentation of the Swagger UI."
+    },
+    {
+      "id": 41,
+      "question": "What is the primary difference between `JsonResult` and `ObjectResult` in terms of flexibility?",
+      "options": [
+        "`JsonResult` can only return JSON, while `ObjectResult` can return other formats.",
+        "`JsonResult` automatically sets the status code to 200, while `ObjectResult` allows you to specify a custom status code.",
+        "`JsonResult` is faster than `ObjectResult`.",
+        "`JsonResult` is only for simple data types, while `ObjectResult` can handle complex objects."
+      ],
+      "answer": 1,
+      "explanation": "`ObjectResult` provides more flexibility by allowing you to explicitly set the HTTP status code, while `JsonResult` typically defaults to 200 OK.",
+      "hint": "Consider the level of control you need over the HTTP response."
+    },
+    {
+      "id": 42,
+      "question": "You need to implement a search endpoint that accepts multiple search terms. How can you efficiently handle this in your API?",
+      "options": [
+        "Use a single query parameter with a comma-separated list of terms.",
+        "Use multiple query parameters, one for each search term.",
+        "Use the `[FromBody]` attribute to accept a list of search terms.",
+        "Return the entire dataset and let the client filter it."
+      ],
+      "answer": 1,
+      "explanation": "Using multiple query parameters, one for each search term, provides a clear and standardized way to handle multiple search criteria.",
+      "hint": "Think about how to represent multiple values for a single parameter."
+    },
+    {
+      "id": 43,
+      "question": "What is the purpose of the `[NonValidatedModel]` attribute?",
+      "options": [
+        "It disables model validation for the entire controller.",
+        "It disables model validation for a specific action method.",
+        "It enables model validation for a specific property.",
+        "It configures CORS settings."
+      ],
+      "answer": 1,
+      "explanation": "The `[NonValidatedModel]` attribute disables model validation for a specific action method, allowing you to bypass validation checks when needed.",
+      "hint": "Think about scenarios where you might want to skip model validation."
+    },
+    {
+      "id": 44,
+      "question": "You are designing an API that needs to support different content types (e.g., JSON, XML). How can you achieve this?",
+      "options": [
+        "Use the `[Produces]` attribute.",
+        "Use the `[Consumes]` attribute.",
+        "Use the `[FromBody]` attribute.",
+        "Use the `[FromQuery]` attribute."
+      ],
+      "answer": 0,
+      "explanation": "The `[Produces]` attribute specifies the content types that the API endpoint can return, allowing clients to negotiate the desired format.",
+      "hint": "Think about how clients request specific content types."
+    },
+    {
+      "id": 45,
+      "question": "What is the purpose of the `[Consumes]` attribute?",
+      "options": [
+        "It specifies the content types that the API endpoint can return.",
+        "It specifies the content types that the API endpoint can accept in the request body.",
+        "It enables caching of API responses.",
+        "It configures CORS settings."
+      ],
+      "answer": 1,
+      "explanation": "The `[Consumes]` attribute specifies the content types that the API endpoint can accept in the request body, informing clients about the expected input format.",
+      "hint": "Think about what the API expects to receive in the request."
+    },
+    {
+      "id": 46,
+      "question": "You have an API endpoint that returns a large dataset. You implement pagination, but clients are still experiencing performance issues. What could be the problem?",
+      "options": [
+        "The database query is not optimized.",
+        "The server does not have enough memory.",
+        "The client is not caching the responses.",
+        "All of the above."
+      ],
+      "answer": 3,
+      "explanation": "Performance issues with pagination can be caused by unoptimized database queries, insufficient server memory, or a lack of client-side caching.",
+      "hint": "Consider all potential bottlenecks in the request-response cycle."
+    },
+    {
+      "id": 47,
+      "question": "What is the role of the `IModelBinder` interface?",
+      "options": [
+        "It's used for database access.",
+        "It's used for handling exceptions.",
+        "It's used to create custom model binding logic.",
+        "It's used for authentication and authorization."
+      ],
+      "answer": 2,
+      "explanation": "The `IModelBinder` interface allows you to create custom model binding logic, providing fine-grained control over how data is mapped to action method parameters.",
+      "hint": "Think about how to customize the model binding process."
+    },
+    {
+      "id": 48,
+      "question": "You are designing an API that needs to support different versions. You choose to use header-based versioning. What are the potential drawbacks of this approach?",
+      "options": [
+        "It can make URLs longer and less readable.",
+        "It can be difficult to implement.",
+        "It requires changes to the client code when a new version is released.",
+        "It is not supported by Swagger."
+      ],
+      "answer": 2,
+      "explanation": "Header-based versioning requires clients to explicitly specify the version in the request header, which may require changes to the client code when a new version is released.",
+      "hint": "Consider the impact on client compatibility."
+    },
+    {
+      "id": 49,
+      "question": "What is the purpose of the `[ServiceFilter]` attribute?",
+      "options": [
+        "It's used for database access.",
+        "It's used to apply custom filters to the request pipeline.",
+        "It's used for authentication and authorization.",
+        "It's used for caching API responses."
+      ],
+      "answer": 1,
+      "explanation": "The `[ServiceFilter]` attribute allows you to apply custom filters to the request pipeline, enabling tasks like logging, validation, and modification of the request or response.",
+      "hint": "Think about how to add cross-cutting concerns to your API."
+    },
+    {
+      "id": 50,
+      "question": "You are designing an API that needs to handle a large number of concurrent requests. What strategies can you use to improve scalability?",
+      "options": [
+        "Use synchronous processing.",
+        "Use caching.",
+        "Disable CORS.",
+        "Load the entire dataset into memory."
+      ],
+      "answer": 1,
+      "explanation": "Caching can significantly improve scalability by reducing the load on the server and database, as frequently accessed data can be served from the cache.",
+      "hint": "Consider how to reduce the load on the server and database."
+    }
+  ]
+}

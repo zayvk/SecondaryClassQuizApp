@@ -740,6 +740,198 @@
               ]
             }
           ]
+        },
+        {
+          "id": "aspnet",
+          "name": "ASP.NET Core, MVC and Web API",
+          "icon": "🔷",
+          "units": [
+            {
+              "id": "aspnet-u1",
+              "name": "Unit 1: ASP.NET Core Fundamentals",
+              "topics": [
+                "What is ASP.NET Core and how it differs from ASP.NET Framework",
+                "Project structure overview — wwwroot, Controllers, Views, Program.cs",
+                "Program.cs flow and application startup",
+                "Running and launching the application",
+                "Debugging basics — breakpoints, step over, step into, watching variables",
+                "Middleware concept and pipeline",
+                "Dependency Injection — what it is and basic usage",
+                "Built-in middleware vs custom middleware",
+                "Logging requests using custom middleware"
+              ]
+            },
+            {
+              "id": "aspnet-u2",
+              "name": "Unit 2: Web and HTTP Fundamentals",
+              "topics": [
+                "HTTP vs HTTPS",
+                "Request and Response lifecycle in ASP.NET Core",
+                "HTTP status codes — 200, 201, 400, 401, 403, 404, 500",
+                "REST principles — GET, POST, PUT, DELETE, PATCH",
+                "Stateless nature of HTTP",
+                "Headers, query strings and request body",
+                "Content negotiation and media types"
+              ]
+            },
+            {
+              "id": "aspnet-u3",
+              "name": "Unit 3: MVC Pattern — Controllers and Routing",
+              "topics": [
+                "MVC pattern — role of Model, View and Controller",
+                "Controllers and Action methods",
+                "IActionResult and return types — Ok, NotFound, BadRequest, Redirect",
+                "Routing basics — convention-based and attribute routing",
+                "Route parameters and constraints",
+                "Action filters and their use cases",
+                "Areas in MVC"
+              ]
+            },
+            {
+              "id": "aspnet-u4",
+              "name": "Unit 4: Views, Razor and Data Passing",
+              "topics": [
+                "Razor syntax — @ expressions, code blocks, directives",
+                "Views and Layouts — _Layout.cshtml, RenderBody, RenderSection",
+                "Partial views and view components",
+                "Passing data to views — ViewBag, ViewData, strongly typed models",
+                "Dynamic rendering with loops and conditionals in Razor",
+                "Tag Helpers — asp-for, asp-action, asp-controller",
+                "Forms in Razor — GET vs POST, model binding",
+                "Display and Editor templates"
+              ]
+            },
+            {
+              "id": "aspnet-u5",
+              "name": "Unit 5: Web API",
+              "topics": [
+                "What is a Web API and how it differs from MVC",
+                "ApiController attribute and its implications",
+                "Returning JSON — JsonResult vs ObjectResult",
+                "Route parameters and query parameters in APIs",
+                "GET, POST, PUT, DELETE endpoint implementation",
+                "Model binding from body, route and query",
+                "Swagger and OpenAPI — setup and usage with Postman",
+                "Versioning APIs",
+                "CORS — what it is and how to configure it"
+              ]
+            },
+            {
+              "id": "aspnet-u6",
+              "name": "Unit 6: Validation, Error Handling and Security",
+              "topics": [
+                "Model validation with Data Annotations — Required, Range, StringLength, RegularExpression",
+                "ModelState.IsValid and handling validation errors",
+                "Custom validation attributes",
+                "Global exception handling middleware",
+                "Try-catch in controllers vs middleware error handling",
+                "Problem Details for API error responses",
+                "Authentication vs Authorization",
+                "Basic login and logout flow",
+                "Session-based vs token-based authentication concepts",
+                "Protecting routes with Authorize attribute"
+              ]
+            },
+            {
+              "id": "aspnet-u7",
+              "name": "Unit 7: Database Integration and Deployment",
+              "topics": [
+                "Connecting to a database from ASP.NET Core — connection strings",
+                "Running raw SQL queries inside C#",
+                "Full CRUD flow in MVC with database",
+                "Publishing an ASP.NET Core application",
+                "Hosting basics — IIS, Kestrel, reverse proxy",
+                "Environment configuration — Development vs Production",
+                "appsettings.json and environment variables",
+                "Deployment considerations and common pitfalls"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ef",
+          "name": "Entity Framework Core",
+          "icon": "🗃️",
+          "units": [
+            {
+              "id": "ef-u1",
+              "name": "Unit 1: EF Core Fundamentals",
+              "topics": [
+                "What is an ORM and why it exists",
+                "What is Entity Framework Core",
+                "EF Core vs raw SQL — when to use each",
+                "Code First vs Database First vs Model First approaches",
+                "What is DbContext and its role",
+                "What is DbSet and how it maps to a table",
+                "DbContext lifecycle — why it should be short-lived",
+                "Registering DbContext with Dependency Injection",
+                "Connection strings and configuring the database provider"
+              ]
+            },
+            {
+              "id": "ef-u2",
+              "name": "Unit 2: Entity Modeling and Migrations",
+              "topics": [
+                "Entity modeling basics — classes as tables",
+                "Primary keys — conventions and explicit configuration",
+                "Required vs optional fields",
+                "Data Annotations — Key, Required, MaxLength, Column, Table",
+                "Fluent API configuration vs Data Annotations",
+                "Conventions vs explicit configuration",
+                "What are Migrations and why they are needed",
+                "Creating and applying migrations — Add-Migration, Update-Database",
+                "Rolling back migrations",
+                "Seeding data with migrations"
+              ]
+            },
+            {
+              "id": "ef-u3",
+              "name": "Unit 3: CRUD Operations",
+              "topics": [
+                "How EF Core handles CRUD internally",
+                "Adding entities — Add and AddAsync",
+                "Reading entities — Find, FirstOrDefault, SingleOrDefault, ToList",
+                "Updating entities — tracking and modifying properties",
+                "Deleting entities — Remove and cascade behaviour",
+                "SaveChanges vs SaveChangesAsync",
+                "Change tracking — how EF detects modifications",
+                "Entity states — Added, Modified, Deleted, Unchanged, Detached",
+                "Async vs sync operations and why async is preferred"
+              ]
+            },
+            {
+              "id": "ef-u4",
+              "name": "Unit 4: Relationships and Querying",
+              "topics": [
+                "One-to-many relationships — navigation properties and foreign keys",
+                "One-to-one relationships",
+                "Many-to-many relationships",
+                "Configuring relationships with Fluent API",
+                "How LINQ works with EF Core — SQL translation concept",
+                "Filtering with Where",
+                "Fetching data — FirstOrDefault, SingleOrDefault, ToList, ToListAsync",
+                "Projection with Select — choosing specific columns",
+                "Ordering with OrderBy and OrderByDescending",
+                "Pagination with Skip and Take"
+              ]
+            },
+            {
+              "id": "ef-u5",
+              "name": "Unit 5: Loading Strategies and Best Practices",
+              "topics": [
+                "Eager loading with Include and ThenInclude",
+                "Lazy loading — concept and pitfalls",
+                "Explicit loading — when and how to use it",
+                "N+1 query problem and how to avoid it",
+                "Over-fetching vs projection — why Select matters for performance",
+                "When NOT to use EF Core — raw SQL with FromSqlRaw",
+                "Repository pattern with EF Core",
+                "Unit of Work pattern concept",
+                "Why DbContext should not be a singleton",
+                "Testing with EF Core — InMemory database"
+              ]
+            }
+          ]
         }
       ]
     },
